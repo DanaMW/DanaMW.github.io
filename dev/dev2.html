@@ -1,0 +1,728 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!--
+ CSS Gradient Editor
+ 
+ Written by Alex Sirota (alex @ iosart.com)
+
+ Copyright (c) Alex Sirota 2010, All Rights Reserved
+
+ Please do not use without permission
+-->
+<head>
+
+<title>Ultimate CSS Gradient Generator - ColorZilla.com</title>
+
+<meta property="og:title" content="Ultimate CSS Gradient Generator from ColorZilla">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.colorzilla.com/gradient-editor/">
+<meta property="og:image" content="https://www.colorzilla.com/firefox/images/logo-50.png">
+<meta property="og:site_name" content="ColorZilla">
+<meta property="og:description" content="A powerful Photoshop-like CSS gradient editor">
+<meta name="Description" content="A powerful Photoshop-like CSS gradient editor">
+
+
+<script src="/js/gradient-editor/combo.567852a7.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/gradient-editor/combo.8867eb0c.css">
+
+</head>
+<body>
+<div id="editor-heading" class="info-panel">
+<h1>Ultimate CSS Gradient Generator</h1>
+<p>
+A powerful Photoshop-like CSS gradient editor from <a href="/">ColorZilla</a>.
+ <div id="main-nav" class="main-nav clearfix">
+        <ul>
+            <li><a class="navigation-link" href="/firefox/">For Firefox</a></li>
+            <li><a class="navigation-link" href="/chrome/">For Chrome</a></li>
+            <li class="last"><a class="navigation-link active" href="/gradient-editor/">Gradient Generator</a></li>
+        </ul>
+</div>
+</div>
+<div id="gradient-control-1" class="gradient-control clearfix">
+  <div class="column left">
+    <div class="presets dialog-panel clearfix noselect">
+        <div class="panel-label">Presets</div>
+        <div class="presets-container"></div>
+    </div>
+    <div class="gradient-name">
+        Name: <input class="name-input" type="text">
+        <button class="save-new-preset" autocomplete="off">save</button>
+    </div>
+
+    <div class="stop-markers-deleter stop-markers-opacity-deleter noselect"></div>
+    <div class="stop-markers stop-markers-opacity noselect" title="Click to add an opacity stop"></div>
+    <div class="gradient-panel-background gradient-background">
+        <div class="gradient-panel noselect clearfix"></div>
+    </div>
+    <div class="stop-markers stop-markers-color noselect" title="Click to add a color stop"></div>
+    <div class="stop-markers-deleter stop-markers-color-deleter noselect"></div>
+
+    <div class="gradient-adjustments-panel clearfix">
+      <div class="adjustment-ops-panel">
+            <a href="#" onclick="return false" class="adjust-hue-sat">hue/saturation</a>
+            <a href="#" onclick="return false" class="adjust-reverse">reverse</a>
+            <a href="#" onclick="return false" class="import import-css">import css</a>
+            <a href="#" onclick="return false" class="import import-image">import image</a>
+      </div>
+
+      <div class="inner-sub-panel import-css-input-panel clearfix" style="display:none">
+          <div>
+              <h3>Enter existing gradient CSS to import</h3>
+             Use Mozilla, Webkit, Opera, W3C or IE format
+          </div>
+            <textarea class="import-css-text"></textarea>
+            <div class="dialog-button-panel">
+              <button class="ok" autocomplete="off">import</button>
+              <button class="cancel" autocomplete="off">cancel</button>
+            </div>
+      </div>
+        
+      <div class="inner-sub-panel import-image-input-panel clearfix" style="display:none">
+        <div>
+          <h3>Import from an image-based gradient</h3>
+          Analyzes the image and converts found gradient to CSS
+        </div>
+            <p>
+            <form class="import-image-form" enctype="multipart/form-data" action="/gradient-editor/import/" method="POST">
+                <input type="hidden" name="MAX_FILE_SIZE" value="512000">
+                    upload a gradient image:<br> 
+                    <input class="import-image-file-input" name="gradfile" type="file">
+                    <p>
+                    <strong>or</strong> specify gradient image URL: <br>
+                    <input class="import-image-url-input" name="gradurl" type="text">
+            </form>
+
+            <iframe id="import-image-upload-target" name="import-image-upload-target" src="" style="width:0;height:0;border:0px solid #fff;"></iframe>
+
+            <div class="dialog-button-panel">
+              <button class="ok" autocomplete="off">import</button>
+              <button class="cancel" autocomplete="off">cancel</button>
+            </div>
+            
+      </div>
+        
+      <div class="adjust-hue-saturation-panel inner-sub-panel clearfix"  style="display:none">  
+        <div class="hue-adjust-container adjustment-slider-control-containter">
+          <span class="adjustment-slider-title">Hue:</span>
+          <input class="hue-adjust-value adjustment-slider-value" type="text" value="0">
+          <div class="hue-adjust-bar-container adjustment-slider-bar-containter noselect">
+              <div class="hue-adjust-bar adjustment-slider-bar"></div>
+          </div>
+        </div>
+
+        <div class="sat-adjust-container adjustment-slider-control-containter">
+          <span class="adjustment-slider-title">Saturation:</span>
+          <input class="sat-adjust-value adjustment-slider-value" type="text" value="0">
+          <div class="sat-adjust-bar-container adjustment-slider-bar-containter noselect">
+              <div class="sat-adjust-bar adjustment-slider-bar"></div>
+          </div>
+        </div>
+
+        <div class="light-adjust-container adjustment-slider-control-containter">
+          <span class="adjustment-slider-title">Lightness:</span>
+          <input class="light-adjust-value adjustment-slider-value" type="text" value="0">
+          <div class="light-adjust-bar-container adjustment-slider-bar-containter noselect">
+              <div class="light-adjust-bar adjustment-slider-bar"></div>
+          </div>
+        </div>
+
+        <div class="dialog-button-panel">
+              <button class="ok" autocomplete="off">ok</button>
+              <button class="cancel" autocomplete="off">cancel</button>
+        </div>
+
+       </div>
+
+    </div>
+    
+    
+    <div class="stop-details dialog-panel clearfix">
+        <div class="panel-label">Stops</div>
+        <div class="stop-details-opacity clearfix">
+            <div class="details-panel">
+                <div class="opacity-label stop-type-label">Opacity:</div>
+                <input size="3" class="opacity-value">
+                <div class="opacity-adjust-open-button"></div>
+            </div>
+            <div class="details-panel position-details">Location: <input size="3" class="position opacity-position">%</div>
+            <div class="details-panel delete-button"><button autocomplete="off">delete</button></div>
+        </div>
+
+        <div class="stop-details-color clearfix">
+            <div class="details-panel"><div class="color-label stop-type-label">Color:</div> <div class="color"></div></div>
+            <div class="details-panel position-details">Location: <input size="3" class="position color-position">%</div>
+            <div class="details-panel delete-button color-delete-button"><button autocomplete="off">delete</button></div>
+        </div>
+    </div>
+
+ <div class="gradient-ad-panel dialog-panel clearfix">
+    <div class="panel-label">Sponsor</div>
+    <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=colorzillacomgradienteditor" id="_carbonads_js"></script></div> 
+
+
+  </div> <!-- left col -->
+
+  <div class="column right">
+    <div class="preview dialog-panel clearfix">
+        <div class="panel-label">Preview</div>
+        <div class="preview-panel-background gradient-background">
+            <div class="preview-panel"></div>
+            <div class="preview-panel-handle"></div>
+        </div>
+        <div class="output-options">
+            Orientation: 
+            <select class="orientation">
+                 <option value="horizontal">horizontal&nbsp;&nbsp;&#8594;</option>
+                 <option value="vertical">vertical&nbsp;&nbsp;&#8595;</option>
+                 <option value="diagonal">diagonal&nbsp;&nbsp;&#8600;</option>
+                 <option value="diagonal-bottom">diagonal&nbsp;&nbsp;&#8599;</option>
+                 <option value="radial">radial&nbsp;&nbsp;&#9675;</option>
+            </select>
+            <span class="label">Size: </span>
+            <input class="dimension dimension-width" type="text" value="350">
+            x
+            <input class="dimension dimension-height" type="text" value="50">
+
+            <input type="checkbox" class="preview-as-ie"> <span class="preview-as-ie">IE</span>
+            
+        </div>
+       
+    </div>
+    <div class="css-output dialog-panel clearfix">
+        <div class="panel-label current-output-format">CSS</div>
+        <div class="panel-label right"><a href="#" class="switch-output-format">switch to sass</a></div>
+        <div class="css-output-text-container">
+            <div class="css-output-text initial">
+                <div>background: -moz-linear-gradient(); /* FF3.6-15 */</div>
+                <div>background: -webkit-gradient(); /* Chrome4-9,Safari4-5 */</div>
+                <div>background: -webkit-linear-gradient(); /* Chrome10-25,Safari5.1-6 */</div>
+                <div>background: -o-linear-gradient(); /* Opera 11.10-11.50 */</div>
+                <div>background: -ms-linear-gradient(); /* IE10 preview */</div>
+                <div>background: linear-gradient(); /* W3C, IE10+, FF16+, Chrome 26+, Opera 12+, Safari 7+ */</div>
+                <div>filter: progid:DXImageTransform.Microsoft.gradient(); /* IE6-9 */</div>
+            </div>
+             <div class="copy-status-container clearfix">
+                <div class="copy-status" style="display:none">&#10004; copied to clipboard</div>
+             </div>
+            <div class="copy-button-container clearfix">            
+               <div class="copy-button noselect">copy</div>
+            </div>
+        </div>
+        <div class="css-notes" style="display:none;">
+            <span class="css-notes-text"></span>
+            <div class="small-close-button"></div>
+        </div>
+        <div class="css-options clearfix">
+            Color format: 
+            <select class="color-format">
+                 <option>hex</option>
+                 <option>rgb</option>
+                 <option>rgba</option>
+                 <option>hsl</option>
+                 <option>hsla</option>
+            </select>
+            <input type="checkbox" id="css-comments" class="css-comments"> <label for="css-comments" class="css-comments">Comments</label>
+        </div>
+    </div> 
+
+    <style>
+        .loop-panel { padding: 1em; font-size: 12px; line-height: 135%; }
+        .loop-title { font-weight: bold }
+        .loop-image { float: left; margin: 0 1em 1em 0; }
+    </style>
+
+    <div class="permalink-panel">
+        <span>Link to, save or share the current gradient using its <a href="#" target="_blank" class="permalink">permalink</a>.</span>
+    </div>
+      
+    <div class="share-links">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.colorzilla.com/gradient-editor/" data-via="colorzilla" data-related="iosart" data-dnt="true">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.colorzilla.com%2Fgradient-editor%2F&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+
+
+        <div class="su-badge-wrapper">
+                <ul class="su-badge">
+                    <li><a class="su-logo" target="_blank" href="http://www.stumbleupon.com/badge/?url=http%3A%2F%2Fwww.colorzilla.com%2Fgradient-editor%2F">StumbleUpon</a></li>
+                    <li><a class="su-count" target="_blank" href="http://www.stumbleupon.com/badge/?url=http%3A%2F%2Fwww.colorzilla.com%2Fgradient-editor%2F">27K</a></li>
+                </ul>
+        </div>
+
+
+        
+        <a href="https://twitter.com/colorzilla" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @colorzilla</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    </div>
+
+  </div> <!-- right col -->
+</div> 
+
+<div id="transparent-screen" style="display:none"></div>
+<div class="opacity-stop-adjust-container inner-sub-panel" style="display:none;">
+  <div class="opacity-slider-container noselect">
+      <div class="opacity-slider-bar-background gradient-background">
+          <div class="opacity-slider-bar"></div>
+      </div>
+  </div>
+</div>
+
+<!-- COLOR PICKER -->
+	   <div id="colorpicker-1" class="colorpicker dialog_content" style="display:none">
+		<table>
+			<tr>
+				<td valign="top" class="color-map">
+					<div id="cp1_ColorMap" style="width:256px;"></div>
+				</td>
+				<td valign="top" class="color-bar">
+					<div id="cp1_ColorBar"></div>
+				</td>
+	
+				<td valign="top" class="color-entry-boxes">
+	
+					<table>
+						<tr>
+							<td colspan="3">
+								<div id="cp1_Preview" style="background-color: #fff; width: 60px; height: 60px; padding: 0; margin: 0; border: solid 1px #000;">
+									<br />
+								</div>
+							</td>
+						</tr>
+
+	                    <tr> <td colspan="3" height="10"> </td> </tr>
+
+						<tr>
+							<td>
+								<input type="radio" id="cp1_HueRadio" name="cp1_Mode" value="0" />
+							</td>
+							<td>
+								<label for="cp1_HueRadio">H:</label>
+							</td>
+							<td>
+								<input type="text" id="cp1_Hue" value="0" style="width: 40px;" /> &deg;
+							</td>
+						</tr>
+	
+						<tr>
+							<td>
+								<input type="radio" id="cp1_SaturationRadio" name="cp1_Mode" value="1" />
+							</td>
+							<td>
+								<label for="cp1_SaturationRadio">S:</label>
+							</td>
+							<td>
+								<input type="text" id="cp1_Saturation" value="100" style="width: 40px;" /> %
+							</td>
+						</tr>
+	
+						<tr>
+							<td>
+								<input type="radio" id="cp1_BrightnessRadio" name="cp1_Mode" value="2" />
+							</td>
+							<td>
+								<label for="cp1_BrightnessRadio">B:</label>
+							</td>
+							<td>
+								<input type="text" id="cp1_Brightness" value="100" style="width: 40px;" /> %
+							</td>
+						</tr>
+	
+						<tr> <td colspan="3" height="5"> </td> </tr>
+	
+						<tr>
+							<td>
+								<input type="radio" id="cp1_RedRadio" name="cp1_Mode" value="r" />
+							</td>
+							<td>
+								<label for="cp1_RedRadio">R:</label>
+							</td>
+							<td>
+								<input type="text" id="cp1_Red" value="255" style="width: 40px;" />
+							</td>
+						</tr>
+	
+						<tr>
+							<td>
+								<input type="radio" id="cp1_GreenRadio" name="cp1_Mode" value="g" />
+							</td>
+							<td>
+								<label for="cp1_GreenRadio">G:</label>
+							</td>
+							<td>
+								<input type="text" id="cp1_Green" value="0" style="width: 40px;" />
+							</td>
+						</tr>
+	
+						<tr>
+							<td>
+								<input type="radio" id="cp1_BlueRadio" name="cp1_Mode" value="b" />
+							</td>
+							<td>
+								<label for="cp1_BlueRadio">B:</label>
+							</td>
+							<td>
+								<input type="text" id="cp1_Blue" value="0" style="width: 40px;" />
+							</td>
+						</tr>
+	
+	
+						<tr> <td colspan="3" height="5"> </td> </tr>
+
+						<tr>
+							<td align="right">
+								#:
+							</td>
+							<td colspan="2">
+								<input type="text" id="cp1_Hex" value="FF0000" style="width: 60px;" />
+							</td>
+						</tr>
+	
+					</table>
+				</td>
+                <td valign="top">
+                    <table>
+                    <tr><td><button class="dialog-button ok-button" autocomplete="off">OK</button></td></tr>
+                    <tr><td><button class="dialog-button cancel-button" autocomplete="off">Cancel</button></td></tr>
+                    </table>
+                </td>
+			</tr>
+		</table>
+       </div>
+
+<div class="info-panel browser-compatibility">
+    <h2><a name="browser-compatibility"></a>Browser compatibility</h2>
+    <table>
+        <tr>
+            <th>IE</th>
+            <th>Edge</th>
+            <th>Firefox</th>
+            <th>Chrome</th>
+            <th>Safari</th>
+            <th>Opera</th>
+            <th>iOS Safari</th>
+            <th>Android Browser</th>
+            <th>Chrome for Android</th>
+        </tr>
+        <tr>
+            <td class="partial">6 - 8
+                <div class="more-info">
+                    Partial support using <span class="syntax">filter</span> syntax<br>
+                    Browser usage:  1.33%<br>
+                </div>
+            </td>
+            <td class="empty"></td>
+            <td class="empty"></td>
+            <td class="prefixed compatibility-mode">4 - 9
+                <div class="more-info">
+                    Support using old <span class="syntax">-webkit-</span> syntax <br>
+                    Browser usage: 0.06%<br>
+                    Select "Maximize compatibility" to support
+                </div>
+            </td>
+            <td class="prefixed compatibility-mode">4 - 5
+                <div class="more-info">
+                    Support using old <span class="syntax">-webkit-</span> syntax <br>
+                    Browser usage: 0.1%<br>
+                    Select "Maximize compatibility" to support
+                </div>
+            </td>
+            <td class="empty"></td>
+            <td class="prefixed compatibility-mode">3.2 - 4.3
+                <div class="more-info">
+                    Support using old <span class="syntax">-webkit-</span> syntax <br>
+                    Browser usage: less than 0.1%<br>
+                    Select "Maximize compatibility" to support
+                </div>
+            </td>
+            <td class="prefixed compatibility-mode">2.1 - 3
+                 <div class="more-info">
+                    Support using old <span class="syntax">-webkit-</span> syntax <br>
+                    Browser usage: 0.06%<br>
+                    Select "Maximize compatibility" to support
+                </div>
+            </td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td class="partial ie9-support-mode">9
+                <div class="more-info">
+                    Partial support using <span class="syntax">filter</span> syntax<br>
+                    Full support using <span class="syntax">SVG</span> (select "IE9 support")<br>
+                    Browser usage: 1%<br>
+                </div>
+            </td>
+            <td class="empty"></td>
+            <td class="prefixed">3.6 - 15
+                <div class="more-info">
+                    Support using <span class="syntax">-moz-</span> prefix<br>
+                    Browser usage:  0.25%<br>
+                </div>
+            </td>
+            <td class="prefixed">10 - 25
+                <div class="more-info">
+                    Support using <span class="syntax">-webkit-</span> prefix<br>
+                    Browser usage: 0.36%
+                </div>
+            </td>
+            <td class="prefixed">5.1 - 6
+                <div class="more-info">
+                    Support using <span class="syntax">-webkit-</span> prefix<br>
+                    Browser usage: 0.2%
+                </div>
+            </td>
+            <td class="prefixed compatibility-mode">11.1 - 11.5
+             <div class="more-info">
+                    Support using <span class="syntax">-o-</span> prefix <br>
+                    Browser usage: 0.01%<br>
+                    Select "Maximize compatibility" to support
+                </div>
+            </td>
+            <td class="prefixed">5.1 - 6.1
+                <div class="more-info">
+                    Support using <span class="syntax">-webkit-</span> prefix<br>
+                    Browser usage: 0.04%
+                </div>
+            </td>
+            <td class="prefixed">4 - 4.3
+                <div class="more-info">
+                    Support using <span class="syntax">-webkit-</span> prefix<br>
+                    Browser usage: 2.06%
+                </div>
+            </td>
+            <td class="empty"></td>
+        </tr>
+        <tr>
+            <td>10+
+              <div class="more-info">Full support (unprefixed)</div>
+            </td>
+            <td>12+
+              <div class="more-info">Full support (unprefixed)</div>
+            </td>
+            <td>16+
+              <div class="more-info">Full support (unprefixed)</div>            
+            </td>
+            <td>26+
+              <div class="more-info">Full support (unprefixed)</div>            
+            </td>
+            <td>6.1+
+              <div class="more-info">Full support (unprefixed)</div>
+            </td>
+            <td>12+
+              <div class="more-info">Full support (unprefixed)</div>            
+            </td>
+            <td>7.1+
+              <div class="more-info">Full support (unprefixed)</div>            
+            </td>
+            <td>4.4+
+              <div class="more-info">Full support (unprefixed)</div>            
+            </td>
+            <td>46+
+              <div class="more-info">Full support (unprefixed)</div>            
+            </td>
+        </tr>
+    </table>
+    <p>
+        <input type="checkbox" id="css-ie9-support" class="css-comments"> <label for="css-ie9-support" class="css-comments">IE9 support</label> <span class="css-ie9-support-help"> (<a href="#">?</a>) </span>
+        <input type="checkbox" id="maximize-css-compatibility" class="css-comments"> <label for="css-ie9-support" class="css-comments">Maximize compatibility</label>
+
+        <div class="css-notes" style="display:none">
+            <span class="css-notes-text"></span>
+            <div class="small-close-button"></div>
+        </div>
+    </p>
+    <p>
+    Links to CSS gradients documentation: <a href="http://dev.w3.org/csswg/css-images-3/#gradients">W3C</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient">Firefox</a>, <a href="http://www.webkit.org/blog/1424/css3-gradients/">Safari and Chrome (Webkit)</a>,  <a href="http://msdn.microsoft.com/en-us/library/ms532997(VS.85,loband).aspx">Internet Explorer</a> and <a href="http://www.opera.com/docs/specs/presto28/css/imagevalues/#gradients">Opera</a> [<a href="http://dev.opera.com/articles/view/css3-linear-gradients/">2</a>].
+
+</div>
+<div class="info-panel whats-new">
+<h2><a name="whats-new"></a>What's new</h2>
+   <ul>
+     <li>&#187; Don't generate older Opera, IE10 Preview, Webkit syntax by default (turn back on using "Maximize compatibility" mode)</li>
+     <li>&#187; Browser Compatibility panel showing supported browser versions, usage stats etc.</li>
+     <li>&#187; Support for <strong>radial</strong> and <strong>diagonal</strong> linear gradients</li>
+     <li>&#187; Support for full multi-stop gradients in <strong>Internet Explorer 9</strong> (IE9) using SVG</li>
+     <li>&#187; Support for <strong><a href="http://sass-lang.com/">Sass</a></strong> SCSS format using <a href="http://compass-style.org/">Compass</a> <a href="http://compass-style.org/reference/compass/css3/images/">mixins</a> (needs latest beta of Compass)</li>
+     <li>&#187; <strong>Copy to clipboard</strong> button for quickly grabbing the generated code</li>
+     <li>&#187; Easy resizing of preview panel by dragging its corner</li>
+   </ul>
+
+<div class="show-more-less-container">
+<a class="show-more" href="#" onclick="return Gradient.UIUtils.showHideLinkTrigger(event, '.whats-new-previous');">show more...</a>
+<a class="show-less" href="#" onclick="return Gradient.UIUtils.showHideLinkTrigger(event, '.whats-new-previous');">show less...</a>
+</div>
+<div class="whats-new-previous" style="display:none">
+<h3>Previous versions</h3>
+<hr>
+<ul>
+<li>&#187; <strong>Opacity support</strong>
+  <ul>
+        <li>&middot; Create transparent css gradients, or add fade-in, fade-out, semi-transparency and similar effects</li>
+        <li>&middot; Add any number of opacity stops to your gradient</li>
+        <li>&middot; Supports opacity stops at any position - completely independent of color stops</li>
+        <li>&middot; Automatically switch to rgba/hsla color output mode when transparency is used</li>
+        <li>&middot; Outputs older Internet Explorer opacity format (yes, this will even work with IE6!)</li>
+        <li>&middot; Opacity support when importing from CSS</li>
+        <li>&middot; Supports importing gradients with transparency from an image</li>
+  </ul>
+</li>
+<li>&#187; <strong>Double click on CSS text</strong> output to select all of it for easy copying</li>
+<li>&#187; More robust new algorithm for converting gradient images to CSS, including alpha support</li>
+</ul>
+<hr>
+<ul>
+<li>&#187; <strong>New 'Adjustments' panel</strong> - tweak your gradient or create new flavors</strong>
+  <ul>
+        <li>&middot; Adjust hue, saturation and lightness</li>
+        <li>&middot; Reverse current gradient</li>
+  </ul>
+</li>
+<li>&#187; Added <strong>hsl</strong> and <strong>hsla</strong> color format support in CSS output</li>
+<li>&#187; Added a <strong>unique permalink</strong> to each gradient for linking to, saving or sharing specific gradients.</li>
+<li>&#187; Added the ability to toggle CSS comments on/off.</li>
+</ul>
+<hr>
+
+<ul>
+<li>&#187; Added support for <strong>4 new gradient formats</strong>:
+    <ul>
+        <li>&middot; IE 10+</li>
+        <li>&middot; Newer Webkit</li>
+        <li>&middot; Opera 11.10+</li>
+        <li>&middot; W3C</li>
+    </ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>&#187; <strong>Import from an image</strong> - convert an existing gradient image to CSS
+   <ul>
+     <li>&middot; Supports complex multi-stop gradients</li>
+     <li>&middot; Upload an image or import from an image URL</li>
+   </ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>&#187; <strong>Import from CSS</strong> - enter existing gradient CSS in various formats and import it into the tool</li>
+<li>&#187; <strong>Save your gradients</strong> as new presets
+   <ul>
+     <li>&middot; Edit your gradient, enter its name and hit 'new'</li>
+     <li>&middot; Remove any of your preset gradients using its context menu (right click)</li>
+     <li>&middot; Your gradient presets will be persisted in the tool across sessions</li>
+   </ul>
+</li>
+<li>&#187; Added <strong>rgb</strong> and <strong>rgba</strong> color format support in CSS output</li>
+<li>&#187; Persist settings across sessions - gradient orientation, preview panel dimensions, output color format etc.</li> 
+<li>&#187; Keyboard shortcuts - press up/down in color stop entry box to increase/decrease value</li>
+</ul>
+<hr>
+</div> <!-- whats-new-previous -->
+<p>
+</div>
+
+
+<div class="info-panel">
+<h2>About</h2>
+<p>
+The Ultimate CSS Gradient Editor was created by <a href="http://www.iosart.com/">Alex Sirota (iosart)</a>. If you like this tool, <a href="/">check out ColorZilla</a> for more advanced tools such as eyedroppers, color pickers, palette editors and website analyzers.
+<p>
+As you might know, <a href="http://www.html5rocks.com/">HTML5</a> introduced many exciting features for Web developers. One of the features is the ability to specify gradients using pure CSS3, without having to create any images and use them as repeating backgrounds for gradient effects. 
+<p>
+<strong>Important:</strong> You'll need a recent version of Firefox, Chrome, Safari, Opera or IE to use this Gradient Generator. The resulting CSS gradients are cross-browser - they will work in these browsers and will also fall back to a simpler gradient in older versions of Internet Explorer.
+</div>
+
+<a name="features"></a>
+<div class="info-panel info-panel-features">
+<h2>Features</h2>
+<div class="contents">
+<ul>
+<li>Powerful Photoshop-like interface</li>
+<li>Cross browser CSS output</li>
+<li>Horizontal, vertical, diagonal and radial gradients</li>
+<li>Complex multi-stop gradients</li>
+<li>Opacity support with multiple opacity stops  </li>
+<li>Hex, rgb, rgba, hsl, hsla color formats</li>
+<li>Support for full multi-stop gradients with IE9</li>
+<li>Import from image (convert image gradient to CSS)</li>
+<li>Import from existing CSS</li>
+<li>Adjust gradient by hue, saturation, lightness </li>
+<li>More than 135 gradient presets</li>
+<li>Saving custom gradient presets</li>
+<li>Sass output</li>
+<li>Flexible preview panel</li>
+<li>Gradient permalinks for sending and sharing  </li>
+<li class="more">More soon!</li>
+</ul>
+</div>
+</div>
+
+<div class="info-panel">
+<h2>Help</h2>
+<p>
+The main gradient control allows you to:
+<ul>
+   <li>&#187; Adjust the gradient stop position by dragging the stop marker
+   <li>&#187; Adjust the stop color by double clicking on the stop marker
+   <li>&#187; Delete a stop by draggin the stop marker up or down
+   <li>&#187; Add a new stop by clicking anywhere in between the existing stop markers
+</ul>
+
+You can use the 'Stops' panel to conrol the color and the position of the currently selected stop more precisely.
+<p>
+The 'Preview' panel allows previewing the current gradient as a vertical or horizontal one, and also allows quickly previewing how the Internet Explorer fallback gradient will look in IE.
+<p>
+Finally, the 'CSS' panel always has the CSS for the current gradient for easy copying and pasting into your stylesheet. You can also use this panel to import an existing gradient CSS into the tool.
+</div>
+
+<div class="info-panel">
+<h2>Credits</h2>
+<p>
+The 'Ultimate Web 2.0 Gradients' preset gradients were derived from work by <a href="http://www.dezinerfolio.com/2007/05/06/ultimate-web-20-layer-styles">deziner folio</a> and <a target="_blank" href="http://sglider12.blogspot.com/">SGlider12</a>. 
+
+<p>
+The Color Picker is a minor adaptation of <a href="http://johndyer.name/post/2007/09/PhotoShop-like-JavaScript-Color-Picker.aspx">John Dyer's Color Picker</a>.
+
+<p>
+The Base-64 encoder function is from <a href="http://www.webtoolkit.info/javascript-base64.html">webtoolkit</a>.
+
+<p>
+    Some icons by <a href="http://p.yusukekamiyamane.com/">Yusuke Kamiyamane</a>.
+</p>
+</div>
+
+<div id="tags">
+Tags: CSS Gradient Editor, CSS Gradient Generator, HTML5 Gradient Generator, CSS3 Gradient Generator, CSS Gradient Maker, CSS Gradient Creator, Linear Gradients, Radial Gradients, IE6, IE7, IE8, IE9, IE10, SVG Gradients, ColorZilla
+</div>
+
+<div id="footer">
+    <span class="copyright">Copyright &copy; <span class="current-year">2019</span> <a href="http://www.iosart.com/">iosart labs llc</a>, All Rights Reserved</span>
+    <p>
+    <a href="/contact/">contact</a> 
+    | <a href="/terms.html">terms of use</a>
+    | <a href="/privacy.html">privacy policy</a>
+</div>
+
+<div class="scrollbar-measure"></div>
+
+<script type="text/javascript">
+var gGradientEditor = new Gradient.Editor('gradient-control-1');
+if (!gGradientEditor.cssGradientsSupported()) {
+    Dialog.alert("Looks like your browser doesn't fully support CSS gradients. You need a recent version of Firefox, Chrome or Safari to use this tool.", {width:300, height:110, okLabel: "OK", ok:function(win) {return true;}}); 
+}
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1155620-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</body>
+</html>
