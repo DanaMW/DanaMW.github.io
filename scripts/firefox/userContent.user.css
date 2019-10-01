@@ -1,10 +1,10 @@
 /* ==UserStyle==
 @name        UserContent File
-@namespace   http://192.168.0.3/scripts/firefox/userContent.user.css
-@version     0.0.15
+@namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
+@version     0.0.16
 @description Mozilla UserContent File
 @author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@homepageURL https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document url-prefix("about"),
