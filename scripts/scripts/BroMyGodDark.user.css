@@ -1,0 +1,85 @@
+/* ==UserStyle==
+@name        BroMyGod Dark
+@namespace   http://192.168.0.3/scripts/scripts/BroMyGodDark.user.css
+@updateURL   http://192.168.0.3/scripts/scripts/BroMyGodDark.user.css
+@version     0.0.2
+@description BroMyGod
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("bromygod.com") {
+    div[class="td-main-content-wrap td-container-wrap"],
+    body {
+        color: var(--MyW) !important;
+        background-color: var(--Myback) !important;
+    }
+    div#om-pof3wpqdo4-lightbox,
+    div#om-lightbox-bullseye-optin,
+    div#om-lightbox-bullseye-optin-wrap {
+        display: none !important;
+    }
+    div#layout,
+    .td_block_related_posts,
+    footer,
+    div[class="td-sub-footer-container td-container-wrap "],
+    div[class="td-footer-wrapper td-container-wrap "],
+    div.td-more-articles-box.td-front-end-display-block,
+    script[src*="//cdn.goroost.com/roostjs"] {
+        display: none !important;
+    }
+    /* -----------BANNER------------------- */
+    div.td-banner-wrap-full.td-logo-wrap-full.td-container-wrap {
+        background-color: var(--Myred2) !important;
+        color: var(--MyW) !important;
+        top: -35px !important;
+        max-height: 110px !important;
+        height: 110px !important;
+    }
+    #main-nav,
+    div#layout {
+        opacity: 0 !important;
+        display: none !important;
+    }
+    a.sf-with-ul,
+    li.menu-item,
+    div.entry-crumbs,
+    div.td-header-menu-wrap.td-header-gradient {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+        margin-top: -35px !important;
+        max-height: 40px !important;
+        height: 40px !important;
+    }
+    a.sf-with-ul,
+    div.td-crumb-container {
+        margin-top: -17px !important;
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    div.td-item {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+        border: 2px solid var(--Myred1) !important;
+        margin-bottom: -15px !important;
+    }
+    td-post-content {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+        /*border: 2px solid var(--Myred1) !important;*/
+    }
+    div.td-post-sharing.td-post-sharing-top,
+    div#disqus_thread {
+        max-height: 0 !important;
+        height: 0 !important;
+    }
+    .td-social-sharing-buttons {
+        opacity: 0 !important;
+        position: fixed !important;
+        left: 0 !important;
+        top: 50% !important;
+    }
+    .td-post-header {
+        height: 75px !important;
+    }
+}

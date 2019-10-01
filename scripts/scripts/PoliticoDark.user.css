@@ -1,0 +1,62 @@
+/* ==UserStyle==
+@name         Politico Dark
+@namespace    http://192.168.0.3/Scripts/scripts/PoliticoDark.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/PoliticoDark.user.css
+@version      0.0.6
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("politico.com") {
+    div[class*="container"],
+    #main,
+    .super {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    #js-top-header,
+    .global-header {
+        height: 75px;
+        background-color: var(--Myred3) !important;
+    }
+    .bt-icon.bt-icon--politico.is-emphasized {
+        margin-top: -50px !important;
+    }
+    .hamburger {
+        filter: invert(1);
+    }
+    .hamburger:hover {
+        filter: invert(0.5);
+    }
+    a {
+        color: var(--MyW) !important;
+    }
+    span[itemprop="headline"],
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    p {
+        color: var(--Mygreen1) !important;
+    }
+    p.subhead {
+        color: var(--Myred2) !important;
+    }
+    .row {
+        background-color: var(--Mygray2) !important;
+    }
+    .user-tools,
+    .promo {
+        display: none !important;
+    }
+    .widget-content,
+    li a::after {
+        background-color: var(--Myred3) !important;
+    }
+    #search-input,
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+    }
+}

@@ -1,0 +1,37 @@
+@-moz-document url-prefix("moz-extension://adf98b20-28a4-4224-a7e9-543600fe1e38/"),
+url-prefix("moz-extension://5c25fe92-919a-4ca0-b30b-04860ae5e410/") {
+    body {
+        color: var(--MyW) !important;
+        background: var(--Mygray3) !important;
+    }
+     ::-moz-scrollbar-track,
+     ::-webkit-scrollbar-track {
+        background-color: var(--Myred3) !important;
+        opacity: .5;
+    }
+     ::-moz-scrollbar-thumb,
+     ::-webkit-scrollbar-thumb {
+        border-radius: 50px;
+        background-color: var(--Myred1) !important;
+        opacity: .5;
+    }
+     ::-moz-scrollbar-thumb:hover,
+     ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--Mygreen1) !important;
+    }
+     ::-moz-scrollbar,
+     ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    ul.video-list li.video-item .video-title {
+        color: var(--MyW) !important;
+    }
+    ul.video-list li.video-item .download {
+        color: var(--Myblue1) !important;
+        background: var(--Mygray3) !important;
+    }
+    ul.video-list li.hr {
+        background: var(--Mygray3) !important;
+    }
+}

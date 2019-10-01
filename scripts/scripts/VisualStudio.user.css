@@ -1,0 +1,183 @@
+/* ==UserStyle==
+@name         VisualStudio
+@namespace    http://192.168.0.3/Scripts/scripts/VisualStudio.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/VisualStudio.user.css
+@version      0.0.13
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("visualstudio.com"),
+domain("my.visualstudio.com") {
+    .vs-categories,
+    div[id*="react_"],
+    .swimlane,
+    html,
+    body,
+    .content-section {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3);
+    }
+    /*
+    .breadcrumb,
+    */
+    .vs-bar,
+    ul[role="tablist"],
+    a[title="Search here"],
+    .right {
+        background-color: transparent !important;
+    }
+    .main-content,
+    #ux-footer,
+    .tabs-control-content {
+        background-color: var(--Myback) !important;
+    }
+    .vs-banner.free {
+        display: none !important;
+    }
+    .carousel {
+        background-color: var(--Mygray2) !important;
+    }
+    div[role="navigation"] .gallery-centered-content,
+    div[id*="vss_"]>div:nth-child(1)>div:nth-child(1),
+    div.benefit {
+        background-image: none !important;
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    .updates-banner,
+    .alert {
+        background-color: var(--Myred2) !important;
+    }
+    .ux-updated-date,
+    label,
+    div[class*="c-heading"] {
+        color: var(--Myred1) !important;
+    }
+    .react-read-more-text,
+    .ux-user-name,
+    .c-cell,
+    div[class*="text"],
+    p,
+    div[class*="spacing-container"],
+    a,
+    h2,
+    h1 {
+        color: var(--MyW) !important;
+    }
+    input,
+    .homepage-searchbox-container {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+    }
+    ul {
+        color: var(--Myred1) !important;
+    }
+    ul li {
+        color: var(--MyW) !important;
+    }
+    .ux-item-details,
+    #section-banner {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .gallery-item-cardHomePage {
+        background-color: var(--Myred3) !important;
+    }
+    .btn {
+        background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray3)) !important;
+    }
+    .btn:hover {
+        background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred3)) !important;
+        color: var(--MyW) !important;
+    }
+    .upperBandContent div.left {
+        color: var(--MyB) !important;
+        font-weight: bolder !important;
+    }
+    .upperBand,
+    #ux-header,
+    .header-section {
+        background: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    h3 {
+        color: var(--Myred1) !important;
+    }
+    li {
+        color: var(--MyW) !important;
+    }
+    strong {
+        color: var(--Mygreen1) !important;
+    }
+    .c-select,
+    a[href]:not([href="#review-details"]):not([target="_blank"]),
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred2) !important;
+        border-left: 1px solid var(--Myred2) !important;
+        border-bottom: 1px solid var(--Myred3) !important;
+        border-right: 1px solid var(--Myred3) !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    .c-select:hover,
+    a[href]:hover:not([href="#review-details"]):not([target="_blank"]),
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred3) !important;
+        border-left: 1px solid var(--Myred3) !important;
+        border-bottom: 1px solid var(--Myred2) !important;
+        border-right: 1px solid var(--Myred2) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    .c-select:active,
+    a[href]:active:not([href="#review-details"]):not([target="_blank"]),
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Mygreen2) !important;
+        border-left: 1px solid var(--Mygreen2) !important;
+        border-bottom: 1px solid var(--Mygreen3) !important;
+        border-right: 1px solid var(--Mygreen3) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+}

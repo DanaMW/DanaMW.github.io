@@ -1,0 +1,158 @@
+/* ==UserStyle==
+@name         FlickrDark
+@namespace    http://192.168.0.3/scripts/scripts/FlickrDark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/FlickrDark.user.css
+@version      0.0.6
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("flickr.com") {
+    .view.group-pool-page-view,
+    html,
+    body {
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+    a {
+        color: var(--MyW) !important;
+    }
+    .advanced-panel,
+    .search-subnav.using-slender-advanced-panel,
+    .tool-bar.fluid-centered,
+    div[role="toolbar"],
+    .nav,
+    .fluid-modal-nav-bar,
+    .testimonials-list,
+    .global-nav-content,
+    div[role="navigation"] {
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+        border-radius: 25px !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    form {
+        background-color: transparent !important;
+    }
+    .result-card.linked.reboot-restyle,
+    .result-card.linked.reboot-restyle .text-content,
+    .empty-showcase-bg,
+    .empty-popular-container {
+        background-color: transparent !important;
+        color: transparent !important;
+        box-shadow: none !important;
+    }
+    a[class*="click-anywhere"],
+    .result-card.linked.reboot-restyle,
+    .buttons,
+    .drop-zone,
+    .bio-description.section,
+    .activity-card {
+        background-color: var(--Mygray2) !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    .text-content:hover div {
+        background-color: transparent !important;
+    }
+    a[class*="click-anywhere"]:hover,
+    .content.text-only,
+    .activity-card:hover {
+        background-color: var(--MyX1) !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+    div[role="menu"] {
+        background-color: var(--MyX1) !important;
+    }
+    .button-container button {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .title {
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+    .title:not([data-track="groupCardOtherClick"]):not(.title-link-included),
+    li.menuitem,
+    li[role="menuitem"],
+    li[role="menuitem"] a,
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred2) !important;
+        border-left: 1px solid var(--Myred2) !important;
+        border-bottom: 1px solid var(--Myred3) !important;
+        border-right: 1px solid var(--Myred3) !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    .title:hover:not([data-track="groupCardOtherClick"]):not(.title-link-included),
+    li.menuitem a:hover,
+    li[role="menuitem"] a:hover,
+    li[role="menuitem"]:hover,
+    li[role="menuitem"].selected-item:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred3) !important;
+        border-left: 1px solid var(--Myred3) !important;
+        border-bottom: 1px solid var(--Myred2) !important;
+        border-right: 1px solid var(--Myred2) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    li.menuitem a:active,
+    li[role="menuitem"]:active,
+    li[role="menuitem"] a:active,
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Mygreen2) !important;
+        border-left: 1px solid var(--Mygreen2) !important;
+        border-bottom: 1px solid var(--Mygreen3) !important;
+        border-right: 1px solid var(--Mygreen3) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .title[data-track="groupCardOtherClick"] {
+        color: var(--MyB) !important;
+    }
+}

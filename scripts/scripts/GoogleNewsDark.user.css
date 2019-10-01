@@ -1,0 +1,156 @@
+/* ==UserStyle==
+@name         Google News Dark
+@namespace    http://192.168.0.3/Scripts/scripts/GoogleNewsDark.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/GoogleNewsDark.user.css
+@version      0.0.10
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("news.google.com") {
+    c-wiz,
+    .T4LgNb,
+    .zQTmif.SSPGKf.eejsDc,
+    .FVeGwb.CVnAc {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    #gb,
+    header {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    h2,
+    h3,
+    a {
+        color: var(--MyW) !important;
+    }
+    h3:hover,
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    form {
+        background-color: transparent !important;
+    }
+    button.gb_2e,
+    button.gb_Ve {
+        border-radius: 50% !important;
+        height: 48px !important;
+        width: 48px !important;
+    }
+    input.Ax4B8.ZAGvjd {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray3) !important;
+        height: 25px !important;
+        margin-top: 8px !important;
+        border: 2px solid var(--Myborder) !important;
+        border-radius: 15px !important;
+        text-align: center !important;
+    }
+    div[aria-label="Main menu"],
+    a[class="FKF6mc TpQm9d ZqhUjb ztUP4e vXfEse kTeh9 dHeVVb V3dfMc lSLCF MDgEWb "],
+    a.gb_D.gb_If,
+    a.gb_c,
+    div[class="U26fgb YOnsCc waNn5b ZqhUjb ztUP4e hdhZuc dHeVVb lSLCF ed3MWc RDPZE M9Bg4d qs41qe"],
+    div[class="U26fgb YOnsCc waNn5b ZqhUjb ztUP4e hdhZuc dHeVVb lSLCF ed3MWc RDPZE M9Bg4d"],
+    div[class="U26fgb YOnsCc waNn5b ZqhUjb ztUP4e vXfEse dHeVVb V3dfMc w0hkKb p2ZcO M9Bg4d"],
+    .SFllF,
+    button:not([aria-label="Search"]):not([title="Advanced search"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred2) !important;
+        border-left: 1px solid var(--Myred2) !important;
+        border-bottom: 1px solid var(--Myred3) !important;
+        border-right: 1px solid var(--Myred3) !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    div[aria-label="Main menu"]:hover,
+    a[class="FKF6mc TpQm9d ZqhUjb ztUP4e vXfEse kTeh9 dHeVVb V3dfMc lSLCF MDgEWb "]:hover,
+    a.gb_D.gb_If:hover,
+    a.gb_c:hover,
+    div[aria-selected="true"],
+    .MkjOTb.oKubKe:hover,
+    div[class="U26fgb YOnsCc waNn5b ZqhUjb ztUP4e hdhZuc dHeVVb lSLCF ed3MWc RDPZE M9Bg4d"]:hover,
+    div[class="U26fgb YOnsCc waNn5b ZqhUjb ztUP4e vXfEse dHeVVb V3dfMc w0hkKb p2ZcO M9Bg4d"]:hover,
+    .SFllF:hover,
+    .SFllF.KKjvXb,
+    .gb_Zd.gb_ve.gb_7d,
+    #gb,
+    header,
+    button:hover:not([aria-label="Search"]):not([title="Advanced search"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred3) !important;
+        border-left: 1px solid var(--Myred3) !important;
+        border-bottom: 1px solid var(--Myred2) !important;
+        border-right: 1px solid var(--Myred2) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    div[aria-label="Main menu"]:active,
+    a[class="FKF6mc TpQm9d ZqhUjb ztUP4e vXfEse kTeh9 dHeVVb V3dfMc lSLCF MDgEWb "]:active,
+    a.gb_D.gb_If:active,
+    a.gb_c:active,
+    .MkjOTb.oKubKe:active,
+    div[class="U26fgb YOnsCc waNn5b ZqhUjb ztUP4e hdhZuc dHeVVb lSLCF ed3MWc RDPZE M9Bg4d"]:active,
+    div[class="U26fgb YOnsCc waNn5b ZqhUjb ztUP4e vXfEse dHeVVb V3dfMc w0hkKb p2ZcO M9Bg4d"]:active,
+    button:active:not([aria-label="Search"]):not([title="Advanced search"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Mygreen2) !important;
+        border-left: 1px solid var(--Mygreen2) !important;
+        border-bottom: 1px solid var(--Mygreen3) !important;
+        border-right: 1px solid var(--Mygreen3) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .pjBVq {
+        background-color: var(--Myred3) !important;
+    }
+    .b42OPe {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    #nngdp12,
+    input:not(.yNVtPc) {
+        color: var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    .gb_m {
+        background-color: transparent !important;
+    }
+    .gb_C.gb_u {
+        background-color: var(--Mygray3) !important;
+    }
+}

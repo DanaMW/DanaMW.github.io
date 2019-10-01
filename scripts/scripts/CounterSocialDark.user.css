@@ -1,0 +1,270 @@
+/* ==UserStyle==
+@name         CounterSocialDark
+@namespace    http://192.168.0.3/scripts/scripts/CounterSocialDark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/CounterSocialDark.user.css
+@version      0.0.20
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("counter.social") {
+    *,
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3);
+        text-decoration: none !important;
+    }
+    #pagepeel,
+    div#slide-out-div.slide-out-div {
+        display: none !important;
+    }
+    .columns-area,
+    body.app-body {
+        background-image: none !important;
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+    }
+    iframe[src*="https://counter.social/badges/accbadge.php"],
+    iframe.verifiedbadge,
+    img[src="https://counter.social/CustomStuff/jactual.png"],
+    a[href="https://keybase.io/th3j35t3r"],
+    #cosocombox,
+    #cbp-contentslider.cbp-contentslider,
+    .getting-started__footer,
+    #gippy.gippy {
+        display: none !important;
+    }
+    strong,
+    a {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
+    }
+    strong:hover,
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    .column {
+        height: 99% !important;
+        margin-bottom: 10px !important;
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    .getting-started,
+    .empty-column-indicator,
+    .container,
+    .main,
+    #slide-out-div.slide-out-div.open,
+    .drawer__pager,
+    .compose-form {
+        background-color: transparent !important;
+    }
+    input[id*="account_fields_attributes"],
+    input#account_display_name,
+    .emoji-mart-search>input,
+    #pilogo.pilogo,
+    input.search__input {
+        background-color: var(--Myback) !important;
+        color: var(--MyXW) !important;
+        border: 1px solid var(--MyW) !important;
+        border-radius: 15px !important;
+        text-align: center !important;
+    }
+    /*
+    .compose-form {
+        z-index: 1000;
+    }
+    */
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    .compose-form__uploads-wrapper,
+    .compose-form__buttons-wrapper {
+        background-color: var(--Mygray1) !important;
+    }
+    .column-header,
+    .navigation-bar {
+        background-color: var(--Myred3) !important;
+        border: 1px solid var(--MyW) !important;
+        border-radius: 5px !important;
+    }
+    .scrollable {
+        background-color: transparent !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3);
+    }
+    .account__section-headline a.active::after {
+        border-color: var(--Myred1) !important;
+    }
+    div[role="button"],
+    .account__section-headline a[href],
+    li a,
+    a.column-link,
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    div[role="button"]:hover,
+    .account__section-headline a[href]:hover,
+    .account__section-headline a[aria-current="page"],
+    ul a[href]:hover,
+    a.selected,
+    a.selected:hover,
+    a.column-link:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    div[role="button"]:active,
+    .account__section-headline a[href]:active,
+    ul a[href]:active,
+    a.selected:active,
+    a.column-link:active,
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    button[aria-pressed="true"] {
+        color: var(--Mygreen1) !important;
+    }
+    /*div.column[aria-labelledby="Getting-started"] {*/
+    .column:last-child,
+    .drawer:last-child {
+        overflow-y: auto;
+        width: 240px !important;
+        height: 50% !important;
+        -moz-transition: ease-in-out width 1000ms, height 500ms !important;
+        -webkit-transition: ease-in-out width 500ms, height 500ms !important;
+        transition-timing-function: linear !important;
+    }
+    .column:last-child:hover,
+    .drawer:last-child:hover {
+        overflow-y: auto;
+        width: 323px !important;
+        height: 99% !important;
+        -moz-transition: ease-in-out width 500ms, height 500ms !important;
+        -webkit-transition: ease-in-out width 500ms, height 500ms !important;
+        transition-timing-function: linear !important;
+    }
+    .search-results__section,
+    .search-results .search-results__section {
+        z-index: 100000 !important;
+    }
+    .detailed-status,
+    .status,
+    .notification {
+        border-radius: 5px !important;
+        border: 1px solid var(--MyW) !important;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+    .confirmation-modal__container,
+    .column-header__collapsible-inner,
+    .setting-toggle {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .confirmation-modal__action-bar,
+    .detailed-status,
+    .emoji-mart-search,
+    .emoji-mart-scroll,
+    .status,
+    .notification,
+    .batch-table__row,
+    .content-wrapper,
+    .column,
+    .empty-column-indicator,
+    .account,
+    .search-results__section,
+    .search-results .search-results__section,
+    .search-results .search-results__header {
+        background-image: linear-gradient(to top, rgba(20, 20, 20, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .confirmation-modal__container,
+    .drawer__inner,
+    div[aria-label="Compose new toot"],
+    .detailed-status__action-bar,
+    iframe[src*="https://counter.social/CustomStuff/sliderlibs/sliderframes/master.html"],
+    .column-header__collapsible-inner,
+    .emoji-mart-category-label>span,
+    .emoji-mart-bar,
+    div[class*="status-card"]:hover:not(.status-card__image-image),
+    .account__header__bar,
+    .card__bar,
+    .batch-table__toolbar,
+    .sidebar-wrapper,
+    .flash-message.notice,
+    h5,
+    .search-popout {
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .detailed-status:hover,
+    .img,
+    .status:hover,
+    .notification:hover {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) 100%, transparent) !important;
+        border-color: var(--Myred1) !important;
+    }
+    .setting-toggle {
+        background-color: transparent !important;
+        background-image: none !important;
+    }
+    .react-toggle-thumb {
+        background-color: var(--Myred2) !important;
+    }
+    .react-toggle-track {
+        background-color: var(--Myblue3) !important;
+    }
+    .react-toggle.react-toggle--checked .react-toggle-thumb {
+        background-color: var(--Mygreen1) !important;
+    }
+    .react-toggle.react-toggle--checked .react-toggle-track {
+        background-color: var(--Myblue1) !important;
+    }
+    input[id*="account_fields_attributes"]:focus {
+        border-color: var(--Myblue1) !important;
+    }
+    .character-counter {
+        color: var(--Mygreen1) !important;
+    }
+}

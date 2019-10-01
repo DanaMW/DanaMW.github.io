@@ -1,0 +1,202 @@
+/* ==UserStyle==
+@name         GoogleTranslateDark
+@namespace   http://192.168.0.3/Scripts/scripts/GoogleTranslateDark.user.css
+@updateURL   http://192.168.0.3/Scripts/scripts/GoogleTranslateDark.user.css
+@version      0.0.7
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("translate.google.com") {
+    .frame,
+    body {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    .cd-expand-label,
+    .gt-card-ttl-txt,
+    q,
+    .gt-def-row,
+    .tlid-translation,
+    a {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
+    }
+    .gt-cd-tl,
+    q::before,
+    q::after,
+    .gt-ct-text,
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    .sugg-fade,
+    .ls-left-arrow,
+    .ls-right-arrow,
+    .swap-wrap {
+        display: none !important;
+    }
+    .gt-cd-cl,
+    .gt-baf-cell,
+    .gb_uc,
+    #gb,
+    li[role="menuitem"]:hover,
+    li[role="menuitem"] {
+        background-image: none !important;
+        background-color: transparent !important;
+        color: var(--MyW) !important;
+    }
+    .gt-baf-hl,
+    .gt-baf-cell.gt-baf-word-clickable,
+    .gt-baf-word-clickable,
+    .gt-baf-term-text.gt-baf-word-selected,
+    .gt-baf-word-selected,
+    .trans-target-highlight,
+    .gt-cd-cl {
+        background-color: var(--MyX1) !important;
+    }
+    .gt-baf-back,
+    .language_list_item,
+    li[role="menuitem"]:hover a {
+        color: var(--MyW) !important;
+    }
+    div[role="button"],
+    .language_list_item_wrapper,
+    li[role="menuitem"],
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred2) !important;
+        border-left: 1px solid var(--Myred2) !important;
+        border-bottom: 1px solid var(--Myred3) !important;
+        border-right: 1px solid var(--Myred3) !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    .gb_6d.gb_Ae.gb_ee.gb_de {
+        border: none !important;
+    }
+    .gb_uc,
+    div[role="button"][aria-pressed="true"],
+    div[role="button"]:hover,
+    #gb,
+    .language_list_item_wrapper:hover,
+    div[class*="item-selected"],
+    li[role="menuitem"]:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred3) !important;
+        border-left: 1px solid var(--Myred3) !important;
+        border-bottom: 1px solid var(--Myred2) !important;
+        border-right: 1px solid var(--Myred2) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    div[role="button"]:active,
+    .language_list_item_wrapper:active,
+    div[class*="item-selected"]:active,
+    li[role="menuitem"]:active,
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Mygreen2) !important;
+        border-left: 1px solid var(--Mygreen2) !important;
+        border-bottom: 1px solid var(--Mygreen3) !important;
+        border-right: 1px solid var(--Mygreen3) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .gb_rc,
+    div[role="menu"] {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    #spelling-correction,
+    .gt-score-dot {
+        background-color: var(--Myred2) !important;
+    }
+    .starbutton {
+        color: var(--Myred1) !important;
+    }
+    .gt-def-synonym-title,
+    div[id*="sugg-item"] {
+        color: var(--Myred1) !important;
+    }
+    .filled.gt-score-dot {
+        background-color: var(--Myred1) !important;
+    }
+    .jfk-button-img,
+    svg {
+        filter: invert(1);
+    }
+    jfk-button-img:hover {
+        filter: invert(0);
+    }
+    .gt-cd,
+    .gt-cc-t {
+        background-color: var(--Myred3) !important;
+        box-shadow: var(--Myred3) !important;
+    }
+    #tl_list-search-box,
+    .language-list-search-box,
+    .language_list_languages.language_list_tl_list.tw-ll-top,
+    .language_list_languages.language_list_sl_list.tw-ll-top,
+    div.language-list {
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    .ls-right-arrow {
+        box-shadow: none !important;
+    }
+    .sl-wrap,
+    .tl-wrap,
+    .gt-cc-t,
+    .source-wrap,
+    .tlid-results-container.results-container.empty,
+    .tlid-result.result-dict-wrapper,
+    .result.tlid-copy-target,
+    .source-input,
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    input[placeholder="Search languages"],
+    #tl_list-search-box[placeholder="Search languages"] {
+        color: var(--MyW) !important;
+    }
+    .result.tlid-copy-target,
+    textarea {
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--MyW) !important;
+        color: var(--MyW) !important;
+    }
+}

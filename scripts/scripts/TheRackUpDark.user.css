@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name        The RackUp Dark
+@namespace   http://192.168.0.3/Scripts/scripts/TheRackUpDark.user.css
+@updateURL   http://192.168.0.3/Scripts/scripts/TheRackUpDark.user.css
+@version     0.0.3
+@description The Rack Up
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document url-prefix("http://www.therackup.com") {
+    #td-outer-wrap,
+    body {
+        color: var(--MyW) !important;
+        background-color: var(--Myback) !important;
+    }
+    .td-pb-span.td-sub-footer-copy,
+    #menu-footer-navigation {
+        display: none !important;
+    }
+    /*
+    .td-pb-span.td-sub-footer-menu,
+    div.td-container,
+    div[class="td-sub-footer-container td-container-wrap td_stretch_container"],
+    div[class="td-footer-wrapper td-container-wrap td-footer-template-14 td_stretch_container"] {
+        max-height: 0 !important;
+        height: 0 !important;
+        margin-bottom: -150px !important;
+    }
+    .td-search-wrap-mob {
+        bottom: -150px !important;
+    }
+    .td-container::before {
+        margin-top: -400px !important;
+        margin-bottom: -900px !important;
+    }
+    */
+}

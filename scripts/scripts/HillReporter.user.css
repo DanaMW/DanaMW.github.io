@@ -1,0 +1,41 @@
+/* ==UserStyle==
+@name         HillReporter
+@namespace   http://192.168.0.3/Scripts/scripts/HillReporter.user.css
+@updateURL   http://192.168.0.3/Scripts/scripts/HillReporter.user.css
+@version      0.0.3
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("hillreporter.com") {
+    body {
+        background-color: var(--Myback) !important;
+    }
+    .wp-caption,
+    div[id*="mcdPlayer"],
+    pb-mcd.pbs {
+        display: none !important;
+    }
+    a[href*="http"],
+    p,
+    h1 {
+        color: var(--MyW) !important;
+    }
+    a[href*="http"]:hover {
+        color: var(--Myred1) !important;
+    }
+    #header {
+        background-color: var(--Myred3) !important;
+    }
+    .mobile-menu,
+    .drawer-hamburger-icon {
+        color: var(--MyW) !important;
+    }
+    .drawer-nav {
+        background-color: var(--Mygray2) !important;
+    }
+    .author-date {
+        color: var(--Myblue1) !important;
+    }
+}

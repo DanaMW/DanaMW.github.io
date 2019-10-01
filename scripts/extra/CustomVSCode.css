@@ -1,0 +1,16 @@
+.ActivityBar {
+    background-image: linear-gradient(to top, rgb(65, 21, 21), rgb(97, 22, 22), rgb(189, 38, 38) 100%, transparent) !important;
+}
+
+.monaco-workbench .monaco-scrollable-element>.scrollbar>.slider {
+    border-radius: 25px !important;
+}
+
+.monaco-workbench .monaco-scrollable-element>.scrollbar>.slider:active {
+    border-radius: 25px !important;
+    background-color: rgba(23, 114, 0, 0.9) !important;
+}
+
+.monaco-workbench .monaco-scrollable-element>.scrollbar {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}

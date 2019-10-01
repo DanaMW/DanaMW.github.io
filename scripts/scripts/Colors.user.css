@@ -1,0 +1,147 @@
+/* ==UserStyle==
+@name         Colors
+@namespace    http://192.168.0.3/scripts/scripts/Colors.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/Colors.user.css
+@description  My Variable Colors For My Scripts
+@version      0.1.0
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
+==/UserStyle== */
+
+:root {
+    --TwitterBlue: hsl(203, 89%, 53%) !important;
+    --TwitterRed: hsl(341, 75%, 51%) !important;
+    --DanaMW: SSmYsEcErTSS;
+    --MyB: rgb(0, 0, 0);
+    --MyW: rgb(255, 255, 255);
+    --Myback: rgb(25, 25, 25);
+    --Mytext: rgb(229, 229, 229);
+    --Myred1: hsl(0, 100%, 50%);
+    --Myred2: rgb(153, 0, 0);
+    --Myred3: rgb(76, 0, 0);
+    --Mypurple1: rgb(255, 0, 255);
+    --Mypurple2: rgb(153, 0, 153);
+    --Mypurple3: rgb(76, 0, 76);
+    --Mygreen1: rgb(0, 255, 0);
+    --Mygreen2: rgb(0, 153, 0);
+    --Mygreen3: rgb(0, 76, 0);
+    --Myblue1: rgb(0, 0, 255);
+    --Myblue2: rgb(0, 0, 153);
+    --Myblue3: rgb(0, 0, 76);
+    --Mygray1: rgb(127, 127, 127);
+    --Mygray2: rgb(76, 76, 76);
+    --Mygray3: rgb(38, 38, 38);
+    --Myeditback: rgb(70, 1, 1);
+    --Mydialog: rgb(63, 63, 63);
+    --Myborder: rgb(153, 153, 153);
+    --MyX1: rgba(255, 0, 0, 0.4);
+    --MyX2: rgba(0, 255, 0, 0.4);
+    --MyX3: rgba(0, 0, 255, 0.4);
+    --MyX4: rgba(89, 89, 89, 0.4);
+    --MyX5: rgba(255, 0, 255, 0.4);
+    --MyXB: rgba(0, 0, 0, 0.4);
+    --MyXW: rgba(255, 255, 255, 0.4);
+    --Progress-bar-color: rgb(255, 0, 0);
+    --card-outline-color: rgb(255, 0, 0) !important;
+    --in-content-border-focus: rgb(255, 0, 0) !important;
+    --primary-background: rgb(25, 25, 25) !important;
+    --secondary-background: rgb(25, 25, 25) !important;
+    --primary-font-color: rgb(255, 255, 255) !important;
+    --highlighted-font-color: rgb(255, 255, 255) !important;
+    --primary-border: 1px solid rgb(255, 0, 0) !important;
+    --bright-border: 1px solid rgb(255, 0, 0) !important;
+    --border-color: rgb(255, 0, 0) !important;
+    --bright-border-color: rgb(255, 0, 0) !important;
+    --primary-icon-color: rgb(0, 203, 255) !important;
+    --faded-bright-border-color: rgba(0, 208, 255, 0.65) !important;
+    /* end guess good colors */
+    --toolbar-bgcolor: rgb(38, 38, 38) !important;
+    --opacity: 0.8 !important;
+    --fore-opaque: rgb(255, 255, 255) !important;
+    --fore-transp: rgba(255, 255, 255, 0.8) !important;
+    --page-background: rgb(38, 38, 38) !important;
+    --back-opaque: rgba(22, 22, 22, 0.8) !important;
+    --back-trans1: rgba(22, 22, 22, 0.4) !important;
+    --back-trans2: rgba(83, 64, 49, 0.8) !important;
+    --lwt-accent-color: rgb(255, 0, 0) !important;
+    --lwt-accent-color-inactive: rgb(102, 0, 0) !important;
+    --in-content-page-color: rgb(28, 28, 28) !important;
+    --in-content-page-background: rgb(28, 28, 28) !important;
+    --in-content-text-color: rgb(224, 224, 224) !important;
+    --in-content-selected-text: rgb(255, 255, 255) !important;
+    --in-content-box-background: rgb(79, 79, 79) !important;
+    --in-content-box-background-odd: rgb(51, 51, 51) !important;
+    --in-content-box-background-hover: rgb(255, 0, 0) !important;
+    --in-content-box-background-active: rgb(28, 28, 28) !important;
+    --in-content-box-border-color: rgb(224, 224, 224) !important;
+    --in-content-item-hover: rgba(219, 0, 0, 0.411) !important;
+    --in-content-item-selected: rgb(255, 0, 0) !important;
+    --in-content-border-highlight: rgb(255, 0, 0) !important;
+    --in-content-border-color: rgb(224, 224, 224) !important;
+    --in-content-category-outline-focus: 1px dotted rgb(255, 0, 0) !important;
+    --in-content-category-text: hsl(0, 0%, 88%) !important;
+    --in-content-category-text-active: rgb(255, 0, 0) !important;
+    --in-content-category-text-selected: rgb(255, 0, 0) !important;
+    --in-content-category-text-selected-active: rgb(255, 0, 0) !important;
+    --in-content-category-background-hover: rgb(255, 0, 0) !important;
+    --in-content-category-background-active: rgba(219, 10, 10, 0.541) !important;
+    --in-content-category-background-selected-hover: rgb(255, 0, 0) !important;
+    --in-content-category-background-selected-active: rgba(199, 24, 24, 0.541) !important;
+    --in-content-tab-color: rgb(255, 0, 0) !important;
+    --in-content-link-color: rgb(178, 0, 0) !important;
+    --in-content-link-color-hover: rgb(255, 0, 0) !important;
+    --in-content-link-color-active: rgb(255, 0, 0) !important;
+    --in-content-link-color-visited: rgb(178, 0, 0) !important;
+    --in-content-primary-button-background: rgb(255, 0, 0) !important;
+    --in-content-primary-button-background-hover: rgb(255, 0, 0) !important;
+    --in-content-primary-button-background-active: rgb(255, 0, 0) !important;
+    --in-content-table-border-dark-color: hsl(0, 0%, 11%) !important;
+    --in-content-table-header-background: rgb(28, 28, 28) !important;
+    --toolbarbutton-icon-fill-attention: rgb(255, 0, 0) !important;
+    --lwt-toolbarbutton-icon-fill-attention: rgb(255, 0, 0) !important;
+    --panel-disabled-color: rgba(249, 249, 250, 0.5) !important;
+    --arrowpanel-background: rgb(76, 76, 76) !important;
+    --arrowpanel-color: rgb(255, 255, 255) !important;
+    --arrowpanel-border-color: rgb(255, 0, 0) !important;
+    --lwt-toolbar-field-background-color: rgb(38, 38, 38) !important;
+    --lwt-toolbar-field-color: rgb(249, 249, 250) !important;
+    --lwt-toolbar-field-border-color: rgba(249, 249, 250, 0.2) !important;
+    --lwt-text-color: rgb(255, 255, 255) !important;
+    --cfr-active-color: rgb(255, 0, 0) !important;
+    --urlbar-popup-url-color: rgb(255, 0, 0) !important;
+    --urlbar-popup-action-color: rgb(84, 255, 0) !important;
+    --toolbar-bgcolor: rgb(38, 38, 38) !important;
+    --urlbar-separator-color: rgb(0, 0, 0) !important;
+    --chrome-content-separator-color: rgba(249, 249, 250, 0.7) !important;
+    --lwt-toolbarbutton-icon-fill: rgba(249, 249, 250, 0.7) !important;
+    --autocomplete-popup-background: rgb(38, 38, 38) !important;
+    --autocomplete-popup-color: rgb(255, 255, 255) !important;
+    --autocomplete-popup-border-color: rgba(249, 249, 250, 0.7) !important;
+    --autocomplete-popup-highlight-background: rgb(255, 0, 0) !important;
+    --toolbar-non-lwt-bgcolor: rgb(38, 38, 38) !important;
+    --toolbar-non-lwt-textcolor: rgb(38, 38, 38) !important;
+    --toolbar-non-lwt-bgimage: none;
+    --theme-tab-toolbar-background: rgb(38, 38, 38) !important;
+    --theme-toolbar-background: rgb(38, 38, 38) !important;
+    --theme-selection-background: rgb(255, 0, 0) !important;
+    --theme-selection-color: rgb(255, 255, 255) !important;
+    --theme-splitter-color: rgb(255, 255, 255) !important;
+    --theme-comment: rgb(255, 0, 0) !important;
+    --theme-body-background: rgb(25, 25, 25) !important;
+    --theme-sidebar-background: rgb(25, 25, 25) !important;
+    --theme-contrast-background: rgb(66, 60, 60) !important;
+    --theme-body-color: rgb(155, 155, 155) !important;
+    --theme-body-color-alt: rgb(254, 76, 76) !important;
+    --theme-content-color1: rgb(255, 132, 132) !important;
+    --theme-content-color2: rgb(84, 255, 0) !important;
+    --theme-content-color3: rgb(0, 182, 255) !important;
+    --theme-highlight-blue: rgb(0, 255, 127) !important;
+    --theme-highlight-purple: rgb(255, 101, 221) !important;
+    --theme-highlight-pink: rgb(223, 107, 107) !important;
+    --theme-highlight-red: rgb(255, 101, 101) !important;
+    --theme-highlight-orange: rgb(254, 76, 76) !important;
+    --theme-highlight-lightorange: rgb(246, 85, 85) !important;
+    --theme-highlight-green: rgb(59, 178, 0) !important;
+    --theme-highlight-bluegrey: rgb(133, 168, 207) !important;
+    --theme-highlight-yellow: rgb(185, 185, 49) !important;
+}

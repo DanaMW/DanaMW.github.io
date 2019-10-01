@@ -1,0 +1,55 @@
+/* ==UserStyle==
+@name         GreasyForkDark
+@namespace    http://192.168.0.3/scripts/scripts/GreasyForkDark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/GreasyForkDark.user.css
+@version      0.0.2
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("greasyfork.org") {
+    body,
+    html {
+        background: var(--MyB) !important;
+    }
+    * {
+        text-decoration: none !important;
+    }
+    ul li,
+    li a,
+    li.list-option a,
+    .list-option-group ul {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    ul li.list-option.list-current,
+    .script-list li {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .script-list li:hover {
+        background-color: var(--MyB) !important;
+        border-color: var(--Myred1) !important;
+    }
+    li a:hover,
+    li.list-option a:hover,
+    .list-option-group ul {
+        color: var(--MyB) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    h2 a {
+        color: var(--Myred1) !important;
+    }
+    a {
+        color: var(--MyW) !important;
+    }
+    input,
+    form,
+    select {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .ad.carbon-ad {
+        display: none !important;
+    }
+}

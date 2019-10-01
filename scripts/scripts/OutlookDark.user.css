@@ -1,0 +1,475 @@
+/* ==UserStyle==
+@name        Outlook Dark
+@namespace   http://192.168.0.3/Scripts/scripts/OutlookDark.user.css
+@updateURL   http://192.168.0.3/Scripts/scripts/OutlookDark.user.css
+@version     0.0.13
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("outlook.live.com") {
+    .ms-Fabric {
+        --black: #ffffff;
+        --blackTranslucent40: rgba(255, 255, 255, 0.4);
+        --white: #333333;
+        --whiteTranslucent40: rgba(33, 33, 33, 0.4);
+        --neutralDark: #ffffff;
+        --neutralPrimary: #ffffff;
+        --neutralPrimaryAlt: #f8f8f8;
+        --neutralSecondary: #f4f4f4;
+        --neutralTertiary: #eaeaea;
+        --neutralTertiaryAlt: #c8c8c8;
+        --neutralQuaternary: #2e2e2e;
+        --neutralQuaternaryAlt: #2e2e2e;
+        --neutralLight: #000000;
+        --neutralLighter: #212121;
+        --neutralLighterAlt: #212121;
+        --redDark: #e81123;
+        --flaggedMessage: #242100;
+        --richUserContentBackground: #eaeaea;
+        --composeNeutralBackground: #212121;
+        --composeNeutralLighterBackground: #fff;
+        --themeDarker: #fcb3b3;
+        --themeDark: #fcb3b3;
+        --themeDarkAlt: #fcb3b3;
+        --themePrimary: #e56969;
+        --themeSecondary: #d82424;
+        --themeTertiary: #d70000;
+        --themeLight: #be1010;
+        --themeLighter: #9e0000;
+        --themeLighterAlt: #780000;
+        --headerBackground: #d70000;
+        --headerBackgroundSearch: #be1010;
+        --headerBrandText: #fff;
+        --headerTextIcons: #fff;
+        --headerSearchBoxBackground: rgba(33, 33, 33, 0.7);
+        --headerSearchBoxIcon: #eff6fc;
+        --headerSearchPlaceholderText: #eff6fc;
+        --headerSearchButtonBackground: #e56969;
+        --headerSearchButtonBackgroundHover: #fcb3b3;
+        --headerSearchButtonIcon: #000;
+        --headerSearchFilters: #e56969;
+        --headerSearchFiltersHover: #eff6fc;
+        --headerButtonsBackground: #d70000;
+        --headerButtonsBackgroundHover: #be1010;
+        --headerButtonsBackgroundSearch: #be1010;
+        --headerButtonsBackgroundSearchHover: #9e0000;
+        --headerBadgeBackground: #eff6fc;
+        --headerBadgeText: #fff;
+        --headerSearchIcon: #fff;
+        --searchBoxBackground: rgba(33, 33, 33, 0.7);
+        --fallback-black: #000;
+        --fallback-blackTranslucent40: rgba(0, 0, 0, 0.4);
+        --fallback-white: #fff;
+        --fallback-whiteTranslucent40: rgba(255, 255, 255, 0.4);
+        --fallback-neutralDark: #212121;
+        --fallback-neutralPrimary: #333333;
+        --fallback-neutralPrimaryAlt: #3c3c3c;
+        --fallback-neutralSecondary: #666666;
+        --fallback-neutralTertiary: #a6a6a6;
+        --fallback-neutralTertiaryAlt: #c8c8c8;
+        --fallback-neutralQuaternary: #d0d0d0;
+        --fallback-neutralQuaternaryAlt: #dadada;
+        --fallback-neutralLight: #eaeaea;
+        --fallback-neutralLighter: #f4f4f4;
+        --fallback-neutralLighterAlt: #f8f8f8;
+        --fallback-redDark: #a80000;
+        --fallback-flaggedMessage: #fffdd9;
+        --fallback-richUserContentBackground: #fff;
+        --fallback-composeNeutralBackground: #fff;
+        --fallback-composeNeutralLighterBackground: #f4f4f4;
+        --fallback-themeDarker: #780000;
+        --fallback-themeDark: rgb(158, 0, 0);
+        --fallback-themeDarkAlt: rgb(190, 16, 16);
+        --fallback-themePrimary: rgb(215, 0, 0);
+        --fallback-themeSecondary: rgb(216, 43, 43);
+        --fallback-themeTertiary: rgb(229, 113, 113);
+        --fallback-themeLight: #C7E0F4;
+        --fallback-themeLighter: #DEECF9;
+        --fallback-themeLighterAlt: #EFF6FC;
+        --fallback-headerBackground: rgb(215, 0, 0);
+        --fallback-headerBackgroundSearch: rgb(158, 0, 0);
+        --fallback-headerBrandText: #FFFFFF;
+        --fallback-headerTextIcons: #FFFFFF;
+        --fallback-headerSearchBoxBackground: rgba(255, 255, 255, .7);
+        --fallback-headerSearchBoxIcon: #780000;
+        --fallback-headerSearchPlaceholderText: #780000;
+        --fallback-headerSearchButtonBackground: rgb(215, 0, 0);
+        --fallback-headerSearchButtonBackgroundHover: #780000;
+        --fallback-headerSearchButtonIcon: #FFFFFF;
+        --fallback-headerSearchFilters: rgb(215, 0, 0);
+        --fallback-headerSearchFiltersHover: #780000;
+        --fallback-headerButtonsBackground: rgb(215, 0, 0);
+        --fallback-headerButtonsBackgroundHover: rgb(158, 0, 0);
+        --fallback-headerButtonsBackgroundSearch: rgb(158, 0, 0);
+        --fallback-headerButtonsBackgroundSearchHover: #780000;
+        --fallback-headerBadgeBackground: #780000;
+        --fallback-headerBadgeText: #FFFFFF;
+        --fallback-headerSearchIcon: #FFFFFF;
+        --fallback-searchBoxBackground: rgba(255, 255, 255, .7);
+    }
+    body {
+        --white: #000 !important;
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    * {
+        text-decoration: none !important;
+    }
+    a {
+        color: var(--MyW) !important;
+    }
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    .ms-Button-menuIcon {
+        color: var(--MyW) !important;
+    }
+    #loadingScreen {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--Myback) !important;
+    }
+    /* ---TEST SCREEN----- */
+    ._120K-xAx0q-SpraB2IAdv6 {
+        background-color: var(--Myback) !important;
+    }
+    div[class="kqLkV9u5x7-Rggnnq7rnr CohkJIcOTPxHSwnt0gr2S"],
+    ._2-J2gmvd9CGTxM9nLTuPkt {
+        background-color: var(--Myred1) !important;
+    }
+    .hL2Nid7LIBIDzXPtab9dT,
+    ._2BCZP_W9VLRv-NN3SC1nnS.fxwJwkd4_ngPI8kgzfk88._7fiIAr1gtfi5q48-tfia- {
+        background: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    ._3Nd2PGu67wifhuPZp2Sfj5._2Xnh7dr1gaysisAo6fqcXh {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+    }
+    [placeholder="Search"] {
+        color: var(--Myred1) !important;
+    }
+    .ms-Overlay {
+        background-color: var(--MyX4) !important;
+    }
+    ._2_T0Im6ostMX7PPGpbrJGj,
+    ._1zxENq4RxEC9ydsMnwBcAu,
+    [role="menubar"],
+    html[dir],
+    div[aria-selected="true"],
+    div[tabindex="0"]:not([aria-selected="false"]),
+    div[role="treeitem"]:hover {
+        background: transparent !important;
+    }
+    span,
+    [data-icon-name] {
+        color: var(--MyW) !important;
+    }
+    .cJ5P-H7zqLg6pBWAa13NW,
+    ._3MzUg_7Zg60Ni1B0EDVQhm,
+    ._2gP9fdm7RzEmjjcsBauln7,
+    ._2gP9fdm7RzEmjjcsBauln7:hover,
+    button[class*="ms-Button"]>div>._3zNuolxAjR8iraHQcrGFPD,
+    [role="treeitem"],
+    div[class^="ms-CommandBarItem"],
+    button[id="CommandBar23Mark all as readRead"],
+    button[id="CommandBar23New messageAdd"],
+    div[role="treeitem"] a[role="menuitem"],
+    button:not([role="checkbox"]):not(.root-62),
+    a[role="menuitem"],
+    a[role="link"],
+    div[role="menuitem"],
+    div[role="menuitemcheckbox"],
+    .ms-Button:not(.root-62) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    div[role="option"]:hover,
+    .cJ5P-H7zqLg6pBWAa13NW:hover,
+    ._2gP9fdm7RzEmjjcsBauln7:hover,
+    button[class*="ms-Button"]:hover div>._3zNuolxAjR8iraHQcrGFPD,
+    div[aria-selected="true"],
+    div[tabindex="0"]:not([aria-selected="false"]):not([role="checkbox"]):not(.ms-Image):not([role="listbox"]),
+    .ms-ContextualMenu-item:hover,
+    a[role="link"]:hover,
+    button:hover,
+    div[role="treeitem"]:hover,
+    div[class^="ms-CommandBarItem"]:hover,
+    button[id="CommandBar23Mark all as readRead"]:hover,
+    button[id="CommandBar23New messageAdd"]:hover,
+    button:not([role="checkbox"]):not([class*="ms-Toggle"]):hover,
+    a[role="menuitem"]:hover,
+    button[aria-label="On"],
+    button[aria-pressed="true"],
+    .ms-Dropdown-title,
+    .ms-Dropdown-item:hover,
+    .ms-Button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    div[role="option"]:active,
+    .cJ5P-H7zqLg6pBWAa13NW:active,
+    ._2gP9fdm7RzEmjjcsBauln7:active,
+    button[class*="ms-Button"]:active div>._3zNuolxAjR8iraHQcrGFPD,
+    div[aria-selected="true"]:active,
+    .ms-ContextualMenu-item:active,
+    a[role="link"]:active,
+    button:active,
+    div[role="treeitem"]:active,
+    div[class^="ms-CommandBarItem"]:active,
+    button[id="CommandBar23Mark all as readRead"]:active,
+    button[id="CommandBar23New messageAdd"]:active,
+    button:not([role="checkbox"]):not([class*="ms-Toggle"]):active,
+    a[role="menuitem"]:active,
+    button[aria-label="On"]:active,
+    button[aria-pressed="true"]:active,
+    .ms-Dropdown-title:active,
+    .ms-Dropdown-item:active,
+    .ms-Button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    ._1_ag99JsBHxI6S4FP5ayPv,
+    button._33q0KHy2ceHx9Ea1A4VXHj,
+    ._3_hHr3kfEhbNYRFM5YJxH9,
+    ._2F6rWwLisyawGGg32JOcop {
+        display: none;
+    }
+    ._2OCtm1RwKiOworCJN7L7Bi._2m7vDFXPCobbyU6u212VBY {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    ._22iZPI0NO5yLVm7ZEwwWUB {
+        background-color: var(--Mygray1) !important;
+    }
+    .ms-Checkbox-text,
+    a[target="_blank"]:not([class^="ms-Button"]):not([button]):not([class^="_2nuO6UZprDTWqhUqw7gX1l"]) {
+        color: var(--Myblue1) !important;
+    }
+    .ms-Checkbox-text:hover,
+    a[target="_blank"]:not([class^="ms-Button"]):not([button]):not([class^="_2nuO6UZprDTWqhUqw7gX1l"]):hover,
+    a:hover {
+        color: var(--Myred1) !important;
+        text-shadow: 1px -1px 0 var(--MyB) !important;
+    }
+    p {
+        color: var(--MyW) !important;
+    }
+    .ms-Button--icon,
+    .ms-Button-icon,
+    .ms-TooltipHost {
+        color: var(--MyW) !important;
+    }
+    div[class="ms-TooltipHost host_90558a24"] span {
+        color: var(--MyB) !important;
+    }
+    .ms-FocusZone.ms-CommandBar.root-63 {
+        border: none !important;
+    }
+    .ms-DetailsHeader-cell {
+        color: var(--MyW) !important;
+        background-color: var(--Myred2) !important;
+    }
+    div[class="ms-Image flipForRtl root-71"] {
+        filter: invert(0.7) !important;
+    }
+    ._1TiVQh7-zQUGJI7AzKaEgf._1pri1EQU53Cg2eWaswallH.KhIjNtaCGuf3Rcm1G0R2i,
+    .ms-TextField-field {
+        background-color: var(--Myback) !important;
+        color: var(--Mytext) !important;
+        border: 1px solid var(--Myborder) !important;
+    }
+    div[style="font-family: Calibri, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"] {
+        background-color: var(--Myback) !important;
+        color: var(--Mytext) !important;
+    }
+    .ms-Panel {
+        background-color: rgba(0, 0, 0, 0.8) !important;
+    }
+    .ms-FocusZone._2kfDeOFfxzMSAlw5Ao6nK6,
+    ._2cwuuRoCT0hoPP-A-ajugG,
+    ._2RWmJQCKUjEfGLTYu_0cC5,
+    ._1snD8ht9jkLT9zDWn6Ef-6,
+    ._1lMDXhNZeGHitcMyCa9TJp,
+    ._3tAJq8dgYBESVEAVBUjIBw,
+    ._3j6EHinwt-MAaY5N3xbaie,
+    ._1AniWxXbFkF6Ldb0qdFzmW,
+    ._2qbVaANgnvMstM8zj3T2Ul,
+    ._2WJ2LUoG21KSQVBxUiHdTY {
+        background-color: var(--Mygray2) !important;
+    }
+    .ms-Callout-main,
+    .ms-DetailsList,
+    .ms-DetailsRow-cell {
+        background-color: var(--Mygray2) !important;
+        color: var(--Mytext) !important;
+        border: 1px solid var(--Myborder) !important;
+    }
+    div.ms-CommandBar,
+    div.ms-Panel-contentInner,
+    .ms-Panel-content,
+    .ms-ChoiceFieldGroup,
+    .ms-Dialog-main,
+    .ms-Panel-main {
+        background-color: var(--Mygray3) !important;
+        color: var(--Mytext) !important;
+        border: 1px solid var(--Myborder) !important;
+    }
+    .ms-Label {
+        background-color: transparent !important;
+        color: var(--Mytext) !important;
+    }
+    .ms-Icon .css-36 {
+        color: var(--Myred1) !important;
+    }
+    ._1aAHCVJ0GJIbNzFHT9eXzd {
+        color: var(--Myred1) !important;
+        text-shadow: 1px 1px var(--MyW) !important;
+    }
+    .OzcqDwEUz10RIoukdLyVT,
+    .ms-SearchBox-iconContainer.iconContainer-132,
+    input[id*="SearchBox"],
+    input[class="_2Ga-vGXSzNY70n27pNJIRA"],
+    input[id="subjectLine3"],
+    input[id="subjectLine2"] {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    /*--------BANNER------------------*/
+    .ms-Toggle-thumb.thumb-75 {
+        color: var(--Myred1) !important;
+    }
+    .div[class="_2SvWF44TZgwj95spKJn8Za"] {
+        border: none !important;
+        border-color: transparent !important;
+    }
+    div[role="banner"],
+    .ms-Persona-imageArea.imageArea-92,
+    .ms-Persona-image,
+    ._2SvWF44TZgwj95spKJn8Za,
+    div[class="ms-OverflowSet-item item-57"],
+    div[role="menubar"],
+    div[class*="_2heo7Eue0oDeyWNI4XaGWZ"],
+    div[class*="_3U2V5UZ0CBdC2ze88SdVde"],
+    div[class="_2x0leM9tirwHCzvFoQabZB"] {
+        background: transparent !important;
+        border: none !important;
+    }
+    div[role="banner"] {
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        /*
+        background-size: 1418px 48px !important;
+        background-position: center !important;
+        */
+        border: none !important;
+    }
+    /*--------------Search Bar---------------------*/
+    input[aria-owns="searchSuggestionsCallout"],
+    div[role="search"][aria-expanded="true"],
+    div[role="search"][aria-expanded="true"] div[id="searchBoxId"] {
+        background-color: initial;
+    }
+    input[aria-owns=""],
+    div[role="search"]:not([aria-expanded="true"]) div[id="searchBoxId"] {
+        background-color: transparent;
+    }
+    div[role="search"][aria-expanded="true"],
+    ._2WJ2LUoG21KSQVBxUiHdTY,
+    ._5h9rvgmd6PLe17Up2hO62,
+    .stQe7wknhnXCAAroiyvBY,
+    ._9RcwFNrySFM2KaVutDKoE,
+    ._2EHjCdO2IEh-zlrH2jOD50,
+    ._8uJK7LDpldUqus9UI9KSJ {
+        border: 1px solid var(--Myborder) !important;
+    }
+    div[role="search"][aria-expanded="true"],
+    .EXpXXWDkglZE1NREQfUSS,
+    ._19WyHWm87o4U-k9OKPlmvM,
+    ._2ehmtSCEgiUcAGPwfV2DhR,
+    .YPLuJFkgGK34etG1TZUef,
+    .x0r_D4jbRyXCJsLSr0jSq,
+    ._3gSF1JA3vvttNSK-mBEam9,
+    .stQe7wknhnXCAAroiyvBY,
+    ._2EHjCdO2IEh-zlrH2jOD50 {
+        background-color: var(--Mygray3) !important;
+    }
+    div[class="ms-FocusZone ms-CommandBar root-65"] {
+        border: none !important;
+        background-color: var(--Mygray3) !important;
+    }
+    div[class="YPLuJFkgGK34etG1TZUef _24Ur2oCdGv_KCSejfCwqfI _2162cg2PKhp97ciIpv47en"] {
+        background-color: var(--Myred2) !important;
+    }
+    .ms-Button.ms-Button--action.ms-Button--command:not([title="Add to Favorites"]) {
+        width: 140px !important
+    }
+    .UfkPU70ry9_wuIKJ_R0Ni,
+    ._3O9j7O6oo-vHZrlM1roRYs,
+    ._8uJK7LDpldUqus9UI9KSJ,
+    .ms-Panel-commands,
+    div[class="_3QWMcW9VDbQi11Tl_MkRml"] {
+        background-color: var(--Myred2) !important;
+    }
+    .ms-Toggle-thumb.thumb-418 {
+        background-color: var(--Myred3) !important;
+    }
+    .ms-Toggle-thumb.thumb-415 {
+        background-color: var(--Myred1) !important;
+    }
+    #appLauncher {
+        color: var(--MyW) !important;
+    }
+    #appLauncher,
+    #appLauncherMainView {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    #appLauncherMainView {
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    #appLauncher {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+}

@@ -1,0 +1,438 @@
+/* ==UserStyle==
+@name        FreeWareFiles Dark
+@namespace   http://192.168.0.3/scripts/scripts/FreeWareFilesDark.user.css
+@updateURL   http://192.168.0.3/scripts/scripts/FreeWareFilesDark.user.css
+@version     0.0.8
+@description FreeWareFiles Dark
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("freewarefiles.com") {
+    div[class="admargin pull-right"],
+    .gbqfwa,
+    .c7wws91lfh,
+    div[class^="uwzj890ax"],
+    .muyzhs,
+    .gbqfwa,
+    .adsbygoogle,
+    .left-gray-ad-txt,
+    .xfqk3ljqq,
+    .bv12ig,
+    .sjgp2g6 {
+        opacity: 0 !important;
+    }
+    div[class="admargin pull-right"],
+    img[class="alignleft3"],
+    .gbqfwa,
+    .gbqfwapq,
+    script[src^="//pagead2.googlesyndication"],
+    ins[class="adsbygoogle programs_adslot_1"],
+    .sticky_ads,
+    ins[class="adsbygoogle programs_adslot_3"],
+    footer {
+        display: none !important;
+    }
+    div[class="avg-left-col"] {
+        margin-top: -10px !important;
+    }
+    /*
+    div[class="right-cont-border"] {
+        margin-top: -10px !important;
+    }
+   */
+    .right-cont-border {
+        border-top: 5px solid var(--Myred1) !important;
+    }
+    .page-link {
+        margin-left: 5px !important;
+    }
+    script[src^="adsbygoogle.js"] {
+        display: none !important;
+    }
+    .container {
+        empty-cells: hide !important;
+    }
+    .small-review-box2,
+    div[class="date-time-txt"] p,
+    .right-top-list,
+    .col-xs-8,
+    .col-xs-4,
+    div[id="top-border-section"] {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    div.product-description-holder p,
+    div.product-description-holder {
+        float: center !important;
+        text-align: center !important;
+        border-right: 1px solid var(--Myborder) !important;
+        border-bottom: 1px solid var(--Myborder) !important;
+        border-left: 1px solid var(--Myborder) !important;
+    }
+    .product-description-holder>ul li>b,
+    .product-description-holder li,
+    .product-description-holder p,
+    div[class="col-md-12"] {
+        text-align: center !important;
+    }
+    section,
+    body,
+    html {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background-image: none !important;
+    }
+    div[class="space"] {
+        border-top: 5px solid var(--Myred1) !important;
+    }
+    .avg-left-col,
+    .cate-right-heading,
+    .center-gray-ad-txt,
+    .down-heading,
+    .cate-right-heading,
+    .left-col-top-heading,
+    .blue-featured-head,
+    .navbar-form,
+    #bottom-lower {
+        background-color: var(--Myred2) !important;
+        color: var(--Myred2) !important;
+    }
+    .boerder-top2,
+    .cate-right-heading,
+    .left-col-top-heading,
+    .boerder-top,
+    .featured-cont-border,
+    .wp-news-border,
+    .center-gray-ad-txt,
+    .right-cont-border-orange,
+    .down-heading {
+        border-top: 5px solid var(--Myred1) !important;
+    }
+    .left-col-holder {
+        margin-top: -10px !important;
+    }
+    div[class="avg-left-col"],
+    .boerder-top {
+        background-color: var(--Myred2) !important;
+    }
+    div[class="col-sm-12 col-xs-6 padding new-flies-layout"] h1 {
+        margin-right: 5px !important;
+    }
+    div[class="border-table-col"]>p {
+        align-items: center !important;
+    }
+    h1,
+    .blue-featured-head,
+    h2[class="downloading-right-heading"],
+    div[class="downloading-blue-sec"] h2,
+    p[class="comments-txt"] {
+        text-align: center !important;
+        align-items: center !important;
+    }
+    .blue-featured-head {
+        background-color: var(--Myred2) !important;
+        text-align: center;
+        width: 275px !important;
+    }
+    .col-sm-12 {
+        align-content: center !important;
+    }
+    .wp-right-col-holder {
+        width: 308px !important;
+    }
+    .screenshot-subtext,
+    input[id="inputEmail3"],
+    textarea[class="form-control downl-comments"] {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    .newfiles-mid-box,
+    div[class="product-description-holder"]>ul>li,
+    p[class="prod-txt"]>span,
+    p.sear-down-txt span,
+    .mid-gray-box {
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+    }
+    .reviews-mid-box,
+    .downloading-facebook-sec,
+    .search-outer-holder,
+    .search-cont-bord,
+    .program-holder,
+    div[class="search-cont-bord"]>div>div>.col-xs-4,
+    .search-grey-footer,
+    .search-cont-border,
+    .mid-white-box,
+    .product-description-holder,
+    h2[class="download-title"]>span,
+    div>article>section,
+    html>body>div#wrapper>section>div.container {
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+    }
+    span[class="down-text"],
+    p.search-txt span,
+    ol.breadcrumb li,
+    a[list-group-item] a {
+        text-decoration: none !important;
+        color: var(--MyW) !important;
+    }
+    a:not([list-group-item]) {
+        text-decoration: none !important;
+        color: var(--Myblue1) !important;
+        text-shadow: 1px -1px 0 var(--MyW) !important;
+    }
+    a:hover {
+        text-decoration: none !important;
+        color: var(--Myred1) !important;
+        text-shadow: 1px -1px 0 var(--MyB) !important;
+    }
+    p[class="size-txt1"] {
+        text-decoration: none !important;
+    }
+    div.col-xs-8 ul.right-top-list a,
+    .col-xs-3 {
+        color: var(--MyW) !important;
+    }
+    img[src="https://cdn.freewarefiles.com/img/download-icon.png"],
+    img[src^="img/download-icon.png"] {
+        filter: drop-shadow(1px -1px 5px var(--Myred1)) invert(50%);
+    }
+    .cate-download-bg,
+    .downloading-grey-sec,
+    address,
+    article,
+    aside,
+    blockquote,
+    body,
+    caption,
+    center,
+    col,
+    colgroup,
+    dd,
+    dir,
+    dl,
+    dt,
+    fieldset,
+    figcaption,
+    figure,
+    footer,
+    form,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    header,
+    hgroup,
+    hr,
+    html,
+    legend,
+    listing,
+    main,
+    marquee,
+    menu,
+    noframes,
+    ol,
+    plaintext,
+    pre,
+    section,
+    summary,
+    table,
+    p,
+    tbody,
+    td,
+    tfoot,
+    th,
+    thead,
+    tr,
+    nav,
+    xmp {
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+    }
+    div[class="search-download-btn-small"],
+    button[class="btn btn-warning subscribe"],
+    input[class="btn btn-primary downl-submit"],
+    .downloading-link-pannel,
+    .page-link,
+    a[class*="btn"],
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred2) !important;
+        border-left: 1px solid var(--Myred2) !important;
+        border-bottom: 1px solid var(--Myred3) !important;
+        border-right: 1px solid var(--Myred3) !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    ul[class="pagination"]>li[class^="page-item active"]>a[href="#"] {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        background: none !important;
+        color: none !important;
+        transform: scale(1.2, 1.2) !important;
+    }
+    ul[class="pagination"]>li[class^="page-item active"]>a[href="#"],
+    div[class="search-download-btn-small"]:hover,
+    input[class="btn btn-primary downl-submit"]:hover,
+    .downloading-link-pannel:hover,
+    .pagination .active .page-link,
+    .page-link:hover,
+    a[class*="btn"]:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred3) !important;
+        border-left: 1px solid var(--Myred3) !important;
+        border-bottom: 1px solid var(--Myred2) !important;
+        border-right: 1px solid var(--Myred2) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    div[class="search-download-btn-small"]:active,
+    input[class="btn btn-primary downl-submit"]:active,
+    .downloading-link-pannel:active,
+    .page-link:active,
+    a[class*="btn"]:active,
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Mygreen2) !important;
+        border-left: 1px solid var(--Mygreen2) !important;
+        border-bottom: 1px solid var(--Mygreen3) !important;
+        border-right: 1px solid var(--Mygreen3) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .col-xs-6,
+    p.search-txt,
+    .dwnlocations {
+        color: var(--MyW) !important;
+    }
+    .search-wrapper .pagination>.active>a,
+    .pagination>.active>span,
+    .pagination>.active>a:hover,
+    .pagination>.active>span:hover,
+    .pagination>.active>a:focus,
+    .pagination>.active>span:focus {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        background-image: none !important;
+        background-color: var(--Myred1) !important;
+    }
+    .list-group-item {
+        background-color: var(--Mygray1) !important;
+        text-indent: 20px !important;
+    }
+    .list-group-item-cat {
+        background-color: var(--Myred2) !important;
+        border-color: var(--Myred1) !important;
+        text-shadow: 1px -1px 0 var(--Mytext) !important;
+        text-indent: 20px !important;
+    }
+    h1>span,
+    div>h1 {
+        background-color: var(--Myred2) !important;
+        color: var(--Myblue1) !important;
+        text-shadow: 1px 1px 0 var(--Mytext) !important;
+    }
+    .facebook-txt,
+    .facebook-bg {
+        margin-bottom: 0 !important;
+        border-bottom: 1px solid var(--Myborder) !important;
+        border-left: 1px solid var(--Myborder) !important;
+        border-right: 1px solid var(--Myborder) !important;
+    }
+    .col-sm-6 {
+        border-color: var(--Mygray2) !important;
+        border: 3px solid var(--Mygray2) !important;
+    }
+    #bottom-lower .navbar-form .input-group {
+        background-color: var(--Myred2) !important;
+    }
+    .ser-input-box.pull-right.srch-inpt-tkrs.searchinput {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .ser-input-box.pull-right.srch-inpt-tkrs.searchinput {
+        background-color: var(--Mygray3) !important;
+        color: var(--Mytext) !important;
+        border-radius: 25px !important;
+        border: 1px solid var(--Myborder) !important;
+        text-align: center !important;
+    }
+    div[class="rdo-btns"] input[id^="inlineRadio"] #text {
+        color: var(--MyW) !important;
+    }
+    .prod-subheading,
+    #email_address {
+        background-color: var(--Mygray3) !important;
+    }
+    .facebook-txt,
+    .facebook-bg,
+    .prod-grey-footer,
+    .prod-grey-head,
+    .prod-cont-bord {
+        background-color: var(--Mygray2) !important;
+        color: var(--Mytext) !important;
+    }
+    .right-ad-border {
+        background-color: var(--Myback) !important;
+        border-right: 1px solid var(--Myborder) !important;
+        border-bottom: 1px solid var(--Myborder) !important;
+        border-left: 1px solid var(--Myborder) !important;
+    }
+    img[class^="attachment"] {
+        float: center !important;
+    }
+    .wp-sm-title {
+        text-align: center !important;
+    }
+    .list-group-item-heading-text,
+    .wp-lg-title {
+        text-align: center !important;
+    }
+    div[class="product-description-holder"] P {
+        border: none !important;
+    }
+    div[class="product-description-holder"] p:nth-child(1) {
+        border-top: 1px solid var(--Myborder) !important;
+    }
+    div[class="product-description-holder"] p:nth-child(2) {
+        background-color: var(--Myred3) !important;
+        border: 1px solid var(--Myborder) !important;
+        margin-right: -7px !important;
+    }
+}

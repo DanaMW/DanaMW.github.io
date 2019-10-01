@@ -1,0 +1,389 @@
+/* ==UserStyle==
+@name        The Chive Dark
+@namespace   http://192.168.0.3/Scripts/scripts/ThechiveDark.user.css
+@updateURL   http://192.168.0.3/Scripts/scripts/ThechiveDark.user.css
+@version     0.0.2
+@description Thechive Tweaks
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("thechive.com") {
+    html,
+    body::before {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        background: none !important;
+    }
+    body#thechive,
+    html {
+        background: var(--MyB) !important;
+    }
+    img.attachment-gallery-item-full.size-gallery-item-full {
+        border: 2px solid var(--MyB) !important;
+    }
+    span[class="show-more icon-caret-down"]::before {
+        color: var(--Myred1) !important;
+    }
+    div[id="login-signup-modal"] {
+        z-index: -1 !important;
+    }
+    div.button.comments-button:hover,
+    div.button.favorite-button:hover,
+    div.button.upvote-button:hover {
+        background-color: var(--Mygray3) !important;
+        border-color: var(--Myred1) !important;
+    }
+    div.ruler {
+        border-color: var(--Myred1) !important;
+    }
+    i.icon-comment:hover {
+        background-color: var(--Mygray3) !important;
+    }
+    div.tags a:hover {
+        color: var(--MyW) !important;
+        border-color: var(--Myred1) !important;
+    }
+    a.gtm-nav-search {
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+        border: 1px solid var(--Myborder) !important;
+    }
+    #more-content-area,
+    div.button.facebook-button,
+    div.button.twitter-button {
+        display: none !important;
+    }
+    .card-actions {
+        filter: opacity(0) !important;
+    }
+    .post-actions-bottom,
+    .postup-form-wrapper {
+        max-height: 0px !important;
+        height: 0px !important;
+    }
+    .header-wrap,
+    #more-content-area-sentinel,
+    #more-content-area,
+    .footer-wrap,
+    .inner-sidebar,
+    div#sidebar-ajax,
+    div.sidebar {
+        opacity: 0 !important;
+    }
+    #after-post-content,
+    form#newsletterForm.newsletter,
+    #footer {
+        display: none !important;
+    }
+    div.post-wrap.clearfix,
+    article[id^="post"] {
+        background: none !important;
+        background-color: var(--MyB) !important;
+        border: none !important;
+    }
+    #eeprogress-ind {
+        background-color: var(--Mygray3) !important;
+    }
+    #eeprogress-bar {
+        background-color: var(--Myred1) !important;
+        transform: scale(0.0153608, 1);
+    }
+    div[class="gallery-item-wrap"] {
+        background-color: transparent !important;
+    }
+    header[class="article-header clearfix"] {
+        background-color: var(--Mygray3) !important;
+        border: 2mm ridge rgba(121, 121, 121, 0.4);
+        margin-bottom: 20px !important;
+        /*margin-top: 95px !important;*/
+    }
+    p[class="single-categories"] a,
+    span[itemprop="name"] a {
+        color: var(--MyW) !important;
+    }
+    .post-title {
+        text-align: center !important;
+    }
+    .gallery-item {
+        margin: 0 !important;
+    }
+    .gallery-item {
+        background-color: var(--Mygray2) !important;
+        padding: 25px !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myborder) !important;
+        margin-bottom: 20px !important;
+    }
+    .count-tag {
+        border-radius: 50% !important;
+        transform: scale(1.5, 1.5);
+        margin-left: 10px !important;
+        border-radius: 50% !important;
+        border: 1px solid var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
+        color: var(--Mytext) !important;
+    }
+    div.submission-card-single-column {
+        border: 2px solid var(--Myborder) !important;
+        border-radius: 5px !important;
+    }
+    .gallery-item:hover {
+        filter: brightness(110%);
+        box-shadow: 0 0 20px var(--Myred1) !important;
+    }
+    .count-tag:hover {
+        filter: brightness(110%);
+        border-radius: 50% !important;
+        background-color: var(--Myred1) !important;
+        color: var(--MyW) !important;
+    }
+    .gallery-item:hover .count-tag {
+        filter: brightness(110%);
+        border-radius: 50% !important;
+        background-color: var(--Myred1) !important;
+        color: var(--MyW) !important;
+    }
+    li[class="sites-menu-item menu-item-2414379"] {
+        border-radius: 15px !important;
+        background: transparent !important;
+    }
+    li[class="sites-menu-item menu-item-2414379"]:hover {
+        border-radius: 15px !important;
+        background: transparent !important;
+        color: var(--MyW) !important;
+    }
+    .user-menu {
+        background-color: var(--Myback) !important;
+    }
+    html[class="js no-touchevents"] {
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+    }
+    body {
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myback) 0%, transparent 99%), linear-gradient(180deg, var(--Myback), var(--Myback) 85%, var(--Myback)) !important;
+    }
+    #after-post-content {
+        border-top: 10px solid var(--Myred2) !important;
+    }
+    .card-count {
+        background-color: var(--Myback) !important;
+    }
+    .card-count:hover {
+        background-color: var(--Myred1) !important;
+    }
+    .textarea-wrapper--top-level,
+    .main-column,
+    #email-signup,
+    .commentArea,
+    .eeRecommended,
+    #after-post-content,
+    .post-wrap,
+    .sidebar-block,
+    .secondary-container {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray2) !important;
+    }
+    .eeTitle,
+    #nav-post-title,
+    .widgettitle,
+    .tagline-desktop,
+    #post-title {
+        color: var(--Myblue2) !important;
+        text-shadow: 1px -1px 0 var(--MyW) !important;
+        text-align: center !important;
+    }
+    .eeTitle:hover,
+    #nav-post-title:hover,
+    .widgettitle:hover,
+    .tagline-desktop:hover,
+    #post-title:hover {
+        color: var(--Myred1) !important;
+        text-shadow: 1px -1px 0 var(--MyB) !important
+    }
+    a {
+        color: var(--Mygray1) !important;
+        /*text-shadow: 1px -1px var(--MyW) !important;*/
+        text-decoration: none !important;
+    }
+    .gtm-nav-search {
+        color: var(--Myback) !important;
+        background-color: var(--Mygray2) !important;
+    }
+    div[class="wrapper-lg wrap clearfix"],
+    .secondary-mobile-scroll-container {
+        background-color: var(--Myred2) !important;
+    }
+    a[class="popup"]:hover {
+        background-color: var(--Myred2) !important;
+        color: var(--Mytext) !important;
+        text-decoration: none !important;
+    }
+    .sidebar-ajax,
+    sidebar,
+    sidebar::before {
+        opacity: 0 !important;
+    }
+    h4,
+    .count {
+        color: var(--Mytext) !important;
+    }
+    a:not([class="popup"]):hover,
+    h4:hover,
+    .count:hover {
+        color: var(--Myred1) !important;
+    }
+    .submission-card-single-column:hover,
+    .thumb:hover {
+        box-shadow: 0 0 20px 5px var(--Myred1) !important;
+    }
+    article,
+    #post-scroll-nav,
+    .user-menu,
+    #header,
+    .guest-text,
+    .south,
+    input[id="email"] {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--Myback) !important;
+    }
+    .menu-item a {
+        color: var(--MyW) !important;
+    }
+    .icon-mobile,
+    .icon-watch,
+    .icon-more-nav,
+    .icon-shop,
+    .icon-person,
+    .icon-upload,
+    a[class="popup"],
+    input[id="newsletterSignUp"],
+    .menu-dropdown-link,
+    .toggler,
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+        background-image: linear-gradient(180deg, hsla(0, 0%, 55%, .5) 48%, rgba(0, 0, 0, .5) 49%, rgba(0, 0, 0, 1) 80%, hsla(0, 0%, 55%, .3)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    a.ico-murraygolf:hover,
+    a.ico-buymebrunch:hover,
+    a.ico-chivery:hover,
+    .icon-mobile:hover,
+    .icon-watch:hover,
+    .icon-more-nav:hover,
+    .icon-shop:hover,
+    .icon-person:hover,
+    .icon-upload:hover,
+    a[class="popup"]:hover,
+    input[id="newsletterSignUp"]:hover,
+    .menu-dropdown-link:hover,
+    .toggler:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        border-bottom-color: var(--MyB) !important;
+        border-top-color: var(--Mygray3) !important;
+        border-right-color: var(--MyB) !important;
+        border-left-color: var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
+    }
+    .input--text,
+    .textarea,
+    #s {
+        border-color: var(--Mytext) !important;
+        background-color: var(--Mygray3) !important;
+        color: var(--Mytext) !important;
+    }
+    .newsletter-box,
+    .nav,
+    .nav-tab--secondary,
+    .nav-secondary,
+    .main-nav nav.nav.nav-primary,
+    .nav-tab {
+        background-color: var(--Mygray2) !important;
+        color: var(--Mytext) !important;
+        border-color: none !important;
+    }
+    /*
+    div[class="ad context-desktop"],
+    div[class="advertisement-card"],
+    */
+    .post-sharing-buttons.clearfix,
+    *.post-actions-bottom {
+        color: none !important;
+        background-color: none !important;
+        opacity: 0 !important;
+    }
+    div[id^="teaser"],
+    iframe[id^="google"],
+    .desktop-ad,
+    .ad-screen,
+    .adContainer,
+    a#clickWrapper,
+    .advertisement-card,
+    .advertisement,
+    div[class="footer"],
+    .ad-content,
+    iframe[title="3rd party ad content"],
+    img.img_ad,
+    .icon-newsletter,
+    .toggler,
+    .commentArea,
+    .auth-google,
+    .auth-twitter,
+    .auth-facebook,
+    .auth-disqus {
+        display: none !important;
+    }
+    #comments,
+    #more-content-area {
+        color: var(--Mygray2) !important;
+        background-color: var(--Mygray2) !important;
+        border-color: none !important;
+    }
+    div[class="stephane-label"] {
+        color: transparent !important;
+    }
+    .inner-sidebar {
+        border-top: 10px solid var(--Myred2) !important;
+    }
+    div[class="wrap clearfix"],
+    footer[id="footer"] {
+        border: none !important;
+    }
+    li[class^="sites-menu-item"] {
+        margin-right: 1px !important;
+        margin-left: 1px !important;
+    }
+    /*
+    div[class="alert system-message js-system-message alert-success"] {
+        display: expression( function(e) { opts.onClose() }; ) !important;
+    }
+    */
+    div[class="tile"] {
+        height: 2px !important;
+    }
+    div[class="tile-column"] {
+        margin-bottom: -250px !important;
+    }
+}

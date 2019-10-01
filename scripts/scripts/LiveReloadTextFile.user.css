@@ -1,0 +1,48 @@
+/* ==UserStyle==
+@name         Live Reload Text File
+@namespace    http://192.168.0.3/Scripts/scripts/LiveReloadTextFile.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/LiveReloadTextFile.user.css
+@version      0.0.8
+@author       Dana Meli
+@description  Dark Style Text File.
+@homepageURL  https://DanaMW.github.io
+@preprocessor default
+@var color backcolor "Background Color"#460101
+@var color textcolor "Text Color"#FFFFFF
+==/UserStyle== */
+
+@-moz-document url-prefix("file:"),
+url-prefix("http://192.168.0.3/scripts/scripts/") {
+    body {
+        background-color: var(--backcolor) !important;
+        color: var(--textcolor) !important;
+    }
+    td.regular {
+        color: var(--MyW) !important;
+    }
+    td.secondary {
+        color: var(--Myred1) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+    a {
+        color: var(--Mygreen1) !important;
+    }
+    .header {
+        color: var(--Myred1) !important;
+    }
+    #wrapper {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    h1,
+    h2,
+    pre {
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    code {
+        background-color: var(--Mygray3) !important;
+    }
+}

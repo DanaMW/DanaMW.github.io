@@ -1,0 +1,238 @@
+/* ==UserStyle==
+@name         GoogleDriveDark
+@namespace    http://192.168.0.3/Scripts/scripts/GoogleDriveDark.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/GoogleDriveDark.user.css
+@version      0.0.8
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("drive.google.com") {
+    [aria-label="Side panel"],
+    .a-ub-Gd,
+    .a-q-zb-j,
+    .a-s-tb-pa,
+    .a-da-Mf-B,
+    .a-D-B-Lc-j,
+    .a-ub-D,
+    .lVcy9.s55KNe.tvIpV,
+    .a-D-B-x,
+    .a-s-tb-sc-Ja-Q-x.a-Ba-Ed.a-s-Ba-ic,
+    .a-da-Mf-B-lc,
+    .a-s-Ba-Ak.a-D-B-Ak.Hb-ja-Na,
+    .YEXPof,
+    html,
+    body {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+        scrollbar-width: thin !important;
+    }
+    svg {
+        filter: invert(1) !important;
+    }
+    div[role="tab"],
+    .h-sb-Ic.h-R-d.a-c-d,
+    .h-sb-Ic.h-R-d.h-R-d-rc.a-c-d,
+    .h-sb-Ic.h-R-d.a-c-d.a-hd-Il-mhHukc-d,
+    .h-sb-Ic.h-w-d,
+    .o-Yc-o-T,
+    .jGNTYb,
+    .a-U-J,
+    .h-sb-Ic.h-R-w-d.a-l-S-Pc-w-d,
+    div[role="menuitem"],
+    a[aria-label="More Google apps"],
+    li>a[draggable="false"],
+    button:not([aria-label="Search Google Drive"]):not([aria-label="Search options"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred2) !important;
+        border-left: 1px solid var(--Myred2) !important;
+        border-bottom: 1px solid var(--Myred3) !important;
+        border-right: 1px solid var(--Myred3) !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    #gb {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: var(--Myred1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        border: none !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+    }
+    [role="option"]>div {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    /*
+    .a-s-yd-J.a-s-yd-Sa.Sa,
+    */
+    div[role="tab"]:hover,
+    div[role="tab"][aria-selected="true"],
+    .y-C-ka.y-C-ka-ig.y-C-je:hover,
+    div[role="listitem"]:hover,
+    [role="option"]>div:hover,
+    .h-sb-Ic.h-R-d.a-c-d.h-R-d-W,
+    .h-sb-Ic.h-R-d.h-R-d-rc.a-c-d.h-R-d-W,
+    .h-sb-Ic.h-R-d.a-c-d.a-hd-Il-mhHukc-d:hover,
+    .h-sb-Ic.h-w-d:hover,
+    .o-Yc-o-T:hover,
+    .jGNTYb:hover,
+    .a-U-J:hover,
+    .h-sb-Ic.h-R-w-d.a-l-S-Pc-w-d:hover,
+    div[role="menuitem"]:hover,
+    a[aria-label="More Google apps"]:hover,
+    li>a[draggable="false"]:hover,
+    button:hover:not([aria-label="Search Google Drive"]):not([aria-label="Search options"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred3) !important;
+        border-left: 1px solid var(--Myred3) !important;
+        border-bottom: 1px solid var(--Myred2) !important;
+        border-right: 1px solid var(--Myred2) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    .h-sb-Ic.h-R-d.a-c-d.h-R-d-W:active,
+    .h-sb-Ic.h-R-d.h-R-d-rc.a-c-d.h-R-d-W:active,
+    .h-sb-Ic.h-R-d.a-c-d.a-hd-Il-mhHukc-d:active,
+    .h-sb-Ic.h-w-d:active,
+    .o-Yc-o-T:active,
+    .jGNTYb:active,
+    .a-U-J:active,
+    .h-sb-Ic.h-R-w-d.a-l-S-Pc-w-d:active,
+    div[role="menuitem"]:active,
+    a[aria-label="More Google apps"]:active,
+    li>a[draggable="false"]:active,
+    button:active:not([aria-label="Search Google Drive"]):not([aria-label="Search options"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Mygreen2) !important;
+        border-left: 1px solid var(--Mygreen2) !important;
+        border-bottom: 1px solid var(--Mygreen3) !important;
+        border-right: 1px solid var(--Mygreen3) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    input[aria-label="Search Drive"] {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray3) !important;
+        /*
+        margin-top: 8px !important;
+        height: 25px !important;
+        */
+        border: 2px solid var(--Myborder) !important;
+        border-radius: 15px !important;
+        text-align: center !important;
+    }
+    .N7iPof.O5x1db,
+    .ab-S-V,
+    .ab-S-Sg,
+    div[role="menuitem"],
+    span.gb_o,
+    #empty-view-content-trash,
+    #empty-view-content-recent,
+    #empty-view-content-starred,
+    #empty-view-content-empty-computers,
+    .a-Mg-V-T,
+    b,
+    * a,
+    a {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
+    }
+    .a-ra-Mb {
+        color: var(--Myred1) !important;
+        background-color: var(--Myred1) !important;
+    }
+    .a-Mg-V-T:hover,
+    b:hover,
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    .N7iPof.O5x1db,
+    span.gb_o,
+    #aso_search_form_anchor,
+    .gb_De.gb_ff.gb_Ee,
+    .gb_Hd {
+        background: transparent !important;
+    }
+    .Yb-Il-d-c-Nd {
+        background-color: var(--MyX1) !important;
+    }
+    .gb_hf.a-nb-Va-d-Gk-M,
+    .gb_bf.gb_cf {
+        border-radius: 50% !important;
+    }
+    .l-u-Ab-zb,
+    .l-u-xb {
+        background-color: var(--Myred3) !important;
+    }
+    div[role="menu"] {
+        background-color: transparent !important;
+        background-image: none !important;
+    }
+    div[role="menu"],
+    div[aria-label="Google apps"]>ul,
+    div[role="listbox"] {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .y-C-Ed-V,
+    div[role="heading"],
+    .WYuW0e.RDfNAe.dPmH0b {
+        background-color: var(--Myred3) !important;
+    }
+    .y-C-Ed-V,
+    div[role="heading"] {
+        color: var(--MyW) !important;
+    }
+    .WYuW0e.RDfNAe.GZwC2b.dPmH0b {
+        background-color: var(--Myred2) !important;
+        background-color: var(--Myred3) !important;
+    }
+    .M3pype,
+    .tyTrke {
+        color: var(--MyW) !important;
+    }
+    div[role="group"],
+    div[role="listbox"]>div {
+        background-color: var(--Mygray2) !important;
+    }
+}

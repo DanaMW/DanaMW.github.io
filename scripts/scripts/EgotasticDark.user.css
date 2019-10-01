@@ -1,0 +1,145 @@
+/* ==UserStyle==
+@name         Egotastic Dark
+@namespace    http://192.168.0.3/scripts/scripts/EgotasticDark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/EgotasticDark.user.css
+@version      0.0.2
+@description  Egotastic Dark Skin
+@author       Dana Meli
+@homepageURL  https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("egotastic.com") {
+    .pushcrew-chrome-style-notification,
+    .pushcrew-chrome-style-notification-safari {
+        display: none !important;
+    }
+    #ac-lre-player-ph,
+    #privy-confetti-canvas,
+    .privy,
+    .privy-popup-container {
+        display: none !important;
+    }
+    .privy-container,
+    .privy-inner-container,
+    .privy-tab-container,
+    .privy-bottom-center,
+    .privy-bottom,
+    .privy-center,
+    .privy-basic .privy-tab,
+    .privy-bottom,
+    .privy-center,
+    .privy-basic,
+    .privy-white-text,
+    .privy .privy-popup-container,
+    .privy-popup-content-wrap {
+        display: none !important;
+    }
+    li.menu-item a:hover {
+        color: var(--MyW) !important;
+    }
+    .e-red,
+    a {
+        color: var(--Mygray2) !important;
+        text-shadow: 1px 1px 0 var(--Mytext) !important;
+    }
+    body {
+        background-color: var(--Myback) !important;
+        color: var(--Mytext) !important;
+    }
+    div#navbar-holder {
+        background-color: var(--Myback) !important;
+    }
+    .navbar {
+        background-color: var(--Mygray2) !important;
+    }
+    .h-whitebg,
+    #searchsubmit {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray2) !important;
+    }
+    #s {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    .col-xs-12,
+    .container {
+        background-color: var(--Mygray3) !important;
+    }
+    .pi_header {
+        background-color: var(--Myred2) !important;
+    }
+    p {
+        color: var(--Mytext) !important;
+    }
+    .e-category,
+    h1,
+    .e-headline {
+        color: var(--Myred1) !important;
+        text-shadow: 1px 1px 5px var(--MyW) !important;
+    }
+    .e-red:hover,
+    a:hover,
+    .e-category:hover {
+        text-decoration: none !important;
+        color: var(--Myred1) !important;
+        text-shadow: 1px 1px 0 var(--MyB) !important;
+    }
+    .menu-item {
+        margin-right: 2px !important;
+        margin-left: 2px !important;
+        color: var(--MyW) !important;
+    }
+    #gprev:not([style="opacity: 0.3"]),
+    #gnext:not([style="opacity: 0.3"]),
+    #searchsubmit,
+    .menu-item {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        text-decoration: none !important;
+        border: none !important;
+        border-radius: 8px !important;
+        color: var(--Myred1) !important;
+        background: transparent linear-gradient(180deg, hsl(0, 0%, 50%), hsl(0, 0%, 0%) 100%, hsl(0, 0%, 20%)) !important;
+    }
+    #s {
+        border-radius: 15px !important;
+        background-color: var(--Mygray2) !important;
+        color: var(--Mytext) !important;
+    }
+    .menu-item>a {
+        margin-bottom: -25px !important;
+        margin-top: -25px !important;
+    }
+    .menu-item-object-category {
+        margin-top: 27px !important;
+    }
+    #gprev:hover:not([style="opacity: 0.3"]),
+    #gnext:hover:not([style="opacity: 0.3"]),
+    #searchsubmit:hover,
+    .menu-item:hover {
+        border-radius: 8px !important;
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsla(0, 100%, 50%, .8) 0%, transparent 99%), linear-gradient(180deg, hsl(0, 0%, 50%), hsl(0, 0%, 0%) 100%, hsl(0, 0%, 33%)) !important;
+    }
+    #gprev,
+    #gnext {
+        padding: 5px !important;
+    }
+    div.e-cirle-photo:hover {
+        color: var(--MyX1) !important;
+        box-shadow: 0 0 40px 1px var(--Myred1), 0 0 0.4em 0.5em hsla(0, 0%, 100%, 0.6) !important;
+    }
+    div#disqus_thread,
+    .h-adholder,
+    .e-box-comments {
+        display: none !important;
+    }
+    .col-xs-12 {
+        margin-top: 25px !important;
+    }
+    div[class="col-xs-12 content-color"],
+    div[class="row margin0 e-related-posts hidden-sm"] {
+        border-top: 10px solid var(--Myred2) !important;
+    }
+}

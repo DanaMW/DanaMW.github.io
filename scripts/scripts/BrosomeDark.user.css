@@ -1,0 +1,73 @@
+/* ==UserStyle==
+@name        Brosome Dark
+@namespace   http://192.168.0.3/scripts/scripts/BrosomeDark.user.css
+@updateURL   http://192.168.0.3/scripts/scripts/BrosomeDark.user.css
+@version     0.0.3
+@description Brosome.com Dark
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("brosome.com") {
+    /*url-prefix("https://feeds.feedburner.com/Brosome/")*/
+    /*domain("disqus.com") {*/
+    .SandboxRoot {
+        display: initial !important;
+    }
+    .sub,
+    html,
+    body {
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+    }
+    .newsletter_btn,
+    .latest_articles,
+    .newsletter_single,
+    div#container {
+        background-color: var(--Mygray3) !important;
+        color: var(--Mytext) !important;
+    }
+    .head_single,
+    .gallery-icon,
+    #wrapper,
+    #content {
+        background-color: var(--Mygray2) !important;
+        color: var(--Mytext) !important;
+    }
+    .facebook_box,
+    .related_p {
+        display: none !important;
+    }
+    .loop_s-thumb,
+    .post_a,
+    #article {
+        background-color: var(--Myred3) !important;
+        color: var(--Mytext) !important;
+    }
+    .social_media,
+    .entry,
+    .gallery {
+        background-color: var(--Mygray1) !important;
+        color: var(--Mytext) !important;
+    }
+    p.attachment {
+        border-color: var(--Mygray2) !important;
+        background-color: var(--Mygray2) !important;
+    }
+    img[class="attachment*"] {
+        border-color: var(--Mygray1) !important;
+    }
+    a.wicon {
+        filter: invert(75%) !important;
+    }
+    p {
+        color: var(--MyW) !important;
+    }
+    h1 {
+        color: var(--Myred1) !important;
+        text-shadow: 1px 1px 5px var(--MyW) !important;
+    }
+    .pinit-button input.jpibfi .jpibfi-ignore {
+        display: none !important;
+    }
+}

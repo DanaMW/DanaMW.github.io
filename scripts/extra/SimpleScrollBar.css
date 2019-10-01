@@ -1,0 +1,30 @@
+::-moz-scrollbar-button,
+::-webkit-scrollbar-button {
+    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+}
+
+::-moz-scrollbar-track,
+::-webkit-scrollbar-track {
+    background-color: var(--Myred3) !important;
+    opacity: .5;
+}
+
+::-moz-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: var(--Myred1) !important;
+    opacity: .5;
+}
+
+::-moz-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--Mygreen1) !important;
+}
+
+::-moz-scrollbar,
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}

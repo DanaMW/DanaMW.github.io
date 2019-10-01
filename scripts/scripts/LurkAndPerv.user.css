@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name        LurkAndPerv Dark
+@namespace   http://192.168.0.3/Scripts/scripts/LurkAndPerv.user.css
+@updateURL   http://192.168.0.3/Scripts/scripts/LurkAndPerv.user.css
+@version     0.0.3
+@description LurkAndPerv Dark
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("lurkandperv.com") {
+    div[id="bannerenclosure"],
+    div[id="lbx_light"],
+    div[id="lbx_fade"] {
+        display: none !important;
+    }
+    body {
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+    }
+}

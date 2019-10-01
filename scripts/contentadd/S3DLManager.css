@@ -1,0 +1,72 @@
+/* S3 Download Manager */
+
+@-moz-document url-prefix("moz-extension://2cc7eb40-bdbd-4d9f-8b11-cddeffe8f446/content/options.html"),
+url-prefix("moz-extension://63c15629-e7f9-41a8-bec7-c706a76bbba0/content/options.html") {
+    .tabContent,
+    .tabsBox,
+    body {
+        color: var(--MyW) !important;
+        background-color: var(--MyB) !important;
+    }
+    .tabContent,
+    .tabsBox {
+        color: var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    a {
+        color: var(--Mygray1) !important;
+        text-decoration: none;
+    }
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    .table_colors tr:hover {
+        background-color: var(--Mygray2) !important;
+    }
+    label:not([disabled]):hover {
+        text-decoration: none !important;
+    }
+    .groupbox {
+        border: 1px #E0E0E0 solid;
+        box-shadow: 0 0 10px #dbd9d5;
+    }
+    .groupbox:hover:not([disabled]) {
+        border: 1px #AF5CCB solid;
+        box-shadow: 0 0 10px #E3C5ED;
+    }
+    .groupbox:hover:not([disabled])>.caption span,
+    .groupbox:hover:not([disabled])>.caption div {
+        background-color: rgb(55, 0, 73);
+        border: 1px #AF5CCB solid;
+    }
+    .groupbox>.caption span {
+        background-color: var(--Mygray2) !important;
+    }
+    .caption span,
+    .caption div {
+        border: 1px #E0E0E0 solid;
+    }
+    #exclude_links {
+        background-color: transparent;
+        border: 1px #DFDFDF solid;
+    }
+    #exclude_links:not(:invalid) {
+        background-color: var(--Mygray3) !important;
+    }
+    #exclude_links:focus {
+        background-color: var(--Mygray3) !important;
+    }
+    #exclude_links_placeholder {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    #settings_saved {
+        color: #009900;
+        border: 1px dotted #009900;
+        background-color: var(--Mygray3) !important;
+    }
+    .groupbox>input {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+}

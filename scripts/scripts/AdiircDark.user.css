@@ -1,0 +1,107 @@
+/* ==UserStyle==
+@name         AdiIrc Dark
+@namespace    http://192.168.0.3/scripts/scripts/AdiircDark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/AdiircDark.user.css
+@version      0.0.5
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("adiirc.com") {
+    html,
+    body {
+        color: var(--MyW) !important;
+    }
+    tr>th,
+    tr {
+        background-color: var(--Mygray2) !important;
+    }
+    tr.context-menu-selection {
+        background-color: var(--MyX1) !important;
+    }
+    html,
+    body,
+    pre,
+    .wiki.wiki-page,
+    #footer,
+    #content,
+    #main {
+        background-color: var(--MyB) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+    tr.context-menu-selection:hover,
+    #header {
+        background-color: var(--Myred2) !important;
+    }
+    #top-menu {
+        background-color: var(--Myred3) !important;
+    }
+    a {
+        color: var(--MyW) !important;
+    }
+    span,
+     ::marker,
+    strong a,
+    strong,
+    h1,
+    h3 {
+        color: var(--Myred1) !important;
+    }
+    li {
+        color: var(--Mygreen1) !important;
+    }
+    li>a {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    li>a.wiki.selected,
+    li>a:hover {
+        background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred3)) !important;
+        color: var(--MyW) !important;
+    }
+    .issue {
+        color: var(--MyB) !important;
+    }
+    .members.box,
+    select:hover,
+    #project-jump>span:hover,
+    .drdn-items.all-projects.selection a:hover,
+    #sidebar {
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .news.box,
+    .issues.box,
+    select,
+    #context-menu>ul,
+    .drdn-content,
+    #project-jump>span {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    select,
+    #project-jump>span {
+        color: var(--MyW) !important;
+    }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+    }
+    .progress {
+        border: 1px solid var(--MyW) !important;
+    }
+    .todo {
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    .progress .closed {
+        background-color: var(--Myred1) !important;
+    }
+    td.buttons a.icon-only.icon-actions.js-contextmenu {
+        color: var(--Mygreen1) !important;
+    }
+}

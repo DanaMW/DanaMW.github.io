@@ -1,0 +1,49 @@
+/* feedbro */
+
+@-moz-document url("moz-extension://c0630b34-eb0e-4fb3-ad13-92537cedfa92/reader.html"),
+url-prefix("moz-extension://7f220db0-49e8-4630-8d13-6b2213ad2cae/reader.html") {
+    * {
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3);
+        text-decoration: none !important;
+    }
+    .item.activetitle {
+        color: var(--MyW) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
+    }
+    .item.pin {
+        background-color: var(--Myred1) !important;
+    }
+    .entry-link {
+        color: var(--Myred2) !important;
+    }
+    .entry-link:hover,
+    .item.unread>div[id*="item-title"] {
+        color: var(--Myred1) !important;
+    }
+    ul.jqtree-tree li.jqtree-selected>div,
+    ul.jqtree-tree li.jqtree-selected>div:hover {
+        color: var(--MyW) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
+    }
+    div#mainfunctions div.menu-selected {
+        color: var(--MyW) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
+    }
+    #contextmenu {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+    }
+    .contextitem {
+        color: var(--MyW) !important;
+    }
+    .contextitem:hover {
+        color: var(--MyW) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
+        border-radius: 15px !important;
+    }
+    .node-text.node-unreadtext {
+        color: var(--Myred1) !important;
+    }
+}

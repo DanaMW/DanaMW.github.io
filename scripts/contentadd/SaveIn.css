@@ -1,0 +1,129 @@
+/* savein */
+
+@-moz-document url-prefix("moz-extension://adb320b1-d183-47cb-9eb7-b83feae0a356/"),
+url-prefix("moz-extension://7749af36-c071-41f4-8e43-7dbb9257de60/") {
+    a,
+    .link {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
+    }
+    a:hover,
+    .link:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    a:active,
+    .link:active {
+        color: var(--Myred1);
+    }
+    html {
+        background-color: var(--Myback);
+        color: var(--MyW) !important;
+    }
+    * {
+        color: rgb(146, 138, 138);
+    }
+    code,
+    pre {
+        background-color: var(--Myback);
+        color: var(--MyW) !important;
+    }
+    hr {
+        background-color: rgb(87, 80, 80) !important;
+    }
+    input[type="number"],
+    input[type="text"],
+    textarea {
+        outline: solid 2px var(--Myback);
+    }
+    textarea {
+        background-color: var(--Mygray3) !important;
+        border: solid 1px rgb(87, 80, 80) !important;
+        color: var(--MyW) !important;
+    }
+    div.button,
+    button {
+        border: solid 1px var(--MyB);
+        background-color: transparent;
+    }
+    div.button:hover,
+    button:hover {
+        background-color: var(--Myred1) !important;
+    }
+    div.button:active,
+    button:active {
+        background-color: rgb(87, 80, 80) !important;
+    }
+    div.button.puffy,
+    button.puffy {
+        color: var(--MyW) !important;
+        background-color: var(--MyGreen2);
+    }
+    div.button.puffy:hover,
+    button.puffy:hover {
+        background-color: var(--Myblue1);
+    }
+    div.button.puffy:active,
+    button.puffy:active {
+        background-color: var(--Myblue1);
+    }
+    .help {
+        color: var(--Myblue2) !important;
+        ;
+    }
+    .error-row {
+        background-color: var(--Myred1);
+        color: var(--MyW) !important;
+    }
+    .info-row {
+        color: #000 !important;
+        background-color: var(--Mytext);
+    }
+    .help:visited {
+        color: var(--Myred2);
+    }
+    .help:active {
+        color: var(--Myred2);
+    }
+    .help-text {
+        color: #000;
+        background-color: var(--Mytext);
+    }
+    .box {
+        background-color: var(--Myback);
+        color: var(--MyW) !important;
+    }
+    .chrome-only {
+        background-color: rgb(165, 249, 168);
+    }
+    .click-to-copy:hover {
+        outline: solid 2px var(--Myblue1);
+    }
+    .click-to-copy:active {
+        background-color: var(--MyW) !important;
+    }
+    .badge {
+        background-color: var(--MyW) !important;
+    }
+    .warning.badge {
+        background-color: var(--yellow50);
+    }
+    .firefox.badge {
+        background-color: var(--orange50);
+    }
+    .demo-box>.demo-arrow {
+        color: var(--Myback);
+    }
+    .demo.g1 {
+        background-color: var(--purple50);
+    }
+    .demo.g2 {
+        background-color: var(--orange50);
+    }
+    .demo.g3 {
+        background-color: var(--yellow50);
+    }
+    .demo.g4 {
+        background-color: var(--teal50);
+    }
+}

@@ -1,0 +1,34 @@
+/* ==UserStyle==
+@name         PortableFreeware
+@namespace    http://192.168.0.3/scripts/scripts/PortableFreeware.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/PortableFreeware.user.css
+@version      0.0.2
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("portablefreeware.com") {
+    container-wrap,
+    body,
+    html {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+        background-image: none !important;
+    }
+    .date,
+    a {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
+    }
+    h2,
+    .italic,
+    .version,
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    span {
+        color: var(--Mygreen1) !important;
+    }
+}

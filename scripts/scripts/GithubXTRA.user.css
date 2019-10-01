@@ -1,0 +1,260 @@
+/* ==UserStyle==
+@name        GithubXTRA
+@namespace   http://192.168.0.3/scripts/scripts/GithubXTRA.user.css
+@updateURL   http://192.168.0.3/scripts/scripts/GithubXTRA.user.css
+@version     0.0.15
+@description Github Tweaks
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("github.com"),
+domain(githubusercontent.com),
+domain(githubapp.com),
+url-prefix("wss://live.github.com") {
+    a[class="filter-item "] {
+        background-color: none !important;
+    }
+    button.width-full.text-left.btn-link.more-repos-link.js-more-repos-link {
+        text-align: center !important;
+        text-decoration: none !important;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    a:hover {
+        text-decoration: none !important;
+    }
+    .gh-header-hide-if-sticky {
+        background-color: var(--Myback) !important;
+    }
+    a.UnderlineNav-item.selected {
+        filter: brightness(125%);
+        border-color: var(--Myred1) !important;
+    }
+    h3 a {
+        padding: 5px !important;
+    }
+    .header-search-key-slash:hover {
+        filter: invert(0.25) !important;
+    }
+    svg.octicon.octicon-bell:hover {
+        color: var(--MyW) !important;
+    }
+    .octicon.octicon-mark-github:hover,
+    svg.octicon.octicon-bell.blankslate-icon:hover {
+        color: var(--Myred1) !important;
+    }
+    .social-count,
+    .topic-tag {
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+    }
+    .topic-tag:hover {
+        background-color: var(--Myred1) !important;
+        color: var(--Mygreen1) !important;
+        border-color: var(--MyW) !important;
+    }
+    tr.js-navigation-item:hover {
+        background-color: var(--MyX1) !important;
+    }
+    .js-selected-navigation-item {
+        border-top: 3px solid var(--Myred3) !important;
+    }
+    .js-selected-navigation-item.selected {
+        border-top: 3px solid var(--Myred1) !important;
+        border-color: var(--Myred1) !important;
+    }
+    .js-selected-navigation-item.selected:hover {
+        border-color: var(--Myred1) !important;
+    }
+    .toolbar-item,
+    .tabnav-tab,
+    .UnderlineNav-item,
+    .js-selected-navigation-item,
+    li a[href],
+    button.btn.btn-primary::before,
+    button.btn.btn-primary::after,
+    button.btn.btn-primary,
+    .filter-item,
+    details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset summary.btn.btn-sm.btn-primary,
+    .btn.btn-sm.empty-icon.float-right.BtnGroup-item,
+    .btn.btn-sm.new-pull-request-btn,
+    .btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw,
+    .mr-2.header-search-key-slash,
+    details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset,
+    .js-repos-container .btn.btn-sm.btn-primary.text-white,
+    .State,
+    .btn.btn-sm.btn-primary,
+    div.d-flex a.text-center.btn.btn-primary.ml-3,
+    a.btn.btn-primary.float-right,
+    div[class="repository-content "] div.subnav a.btn.btn-primary.float-right,
+    a.btn.btn-primary.ml-1,
+    a.btn.btn-primary.btn-outline,
+    a.btn.btn-primary.mr-5,
+    a.btn.btn-primary.ml-3,
+    span.d-inline-block.px-2,
+    button.btn.btn-primary,
+    a.header-search-scope,
+    a.btn.btn-sm.btn-primary,
+    a.btn.btn-sm.btn-primary.float-right,
+    a[class="filter-item "],
+    .mt-2 a.btn,
+    .TableObject .TableObject-item a.btn.btn-primary.ml-3,
+    .gh-header-show a.btn.btn-sm.btn-primary.float-right,
+    .btn,
+    .HeaderNavlink,
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    .dropdown-item:hover,
+    .toolbar-item:hover,
+    .TableObject .TableObject-item a.btn.btn-primary.ml-3:hover,
+    .tabnav-tab:hover,
+    .tabnav-tab.selected,
+    .UnderlineNav-item:hover,
+    .UnderlineNav-item.selected,
+    .js-selected-navigation-item.selected,
+    .js-selected-navigation-item:hover,
+    li a[href]:hover,
+    a[class*="filter-item"][href*="/"]:hover,
+    .filter-item.css-truncate:hover,
+    details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset summary.btn.btn-sm.btn-primary:hover,
+    .btn.btn-sm.empty-icon.float-right.BtnGroup-item:hover,
+    .btn.btn-sm.new-pull-request-btn:hover,
+    .btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw:hover,
+    .js-repos-container .btn.btn-sm.btn-primary.text-white:hover,
+    .State:hover,
+    header[role="banner"],
+    summary.btn.btn-sm.btn-primary:hover,
+    div.d-flex a.text-center.btn.btn-primary.ml-3:hover,
+    div[class="repository-content "] div.subnav a.btn.btn-primary.float-right:hover,
+    a.btn.btn-primary.float-right:hover,
+    a.btn.btn-primary.ml-1:hover,
+    a.btn.btn-primary.btn-outline:hover,
+    a.btn.btn-primary.mr-5:hover,
+    a.btn.btn-primary.ml-3:hover,
+    span.d-inline-block.px-2:hover,
+    button.btn.btn-primary:hover,
+    button.btn-link.tabnav-tab.write-tab.js-write-tab.selected,
+    a.header-search-scope:hover,
+    a.btn.btn-sm.btn-primary:hover,
+    a.btn.btn-sm.btn-primary.float-right:hover,
+    a[class="filter-item "]:hover,
+    .filter-item.selected,
+    .mt-2 a.btn:hover,
+    .gh-header-show a.btn.btn-sm.btn-primary.float-right:hover,
+    .btn:hover,
+    .HeaderNavlink:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    .toolbar-item:active,
+    .TableObject .TableObject-item a.btn.btn-primary.ml-3:active,
+    .tabnav-tab:active,
+    .tabnav-tab.selected:active,
+    .UnderlineNav-item:active,
+    .UnderlineNav-item.selected:active,
+    .js-selected-navigation-item.selected:active,
+    .js-selected-navigation-item:active,
+    li a[href]:active,
+    a[class*="filter-item"][href*="/"]:active,
+    .filter-item.css-truncate:active,
+    details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset summary.btn.btn-sm.btn-primary:active,
+    .btn.btn-sm.empty-icon.float-right.BtnGroup-item:active,
+    .btn.btn-sm.new-pull-request-btn:active,
+    .btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw:active,
+    .js-repos-container .btn.btn-sm.btn-primary.text-white:active,
+    .State:active,
+    summary.btn.btn-sm.btn-primary:active,
+    div.d-flex a.text-center.btn.btn-primary.ml-3:active,
+    div[class="repository-content "] div.subnav a.btn.btn-primary.float-right:active,
+    a.btn.btn-primary.float-right:active,
+    a.btn.btn-primary.ml-1:active,
+    a.btn.btn-primary.btn-outline:active,
+    a.btn.btn-primary.mr-5:active,
+    a.btn.btn-primary.ml-3:active,
+    span.d-inline-block.px-2:active,
+    button.btn.btn-primary:active,
+    button.btn-link.tabnav-tab.write-tab.js-write-tab.selected:active,
+    a.header-search-scope:active,
+    a.btn.btn-sm.btn-primary:active,
+    a.btn.btn-sm.btn-primary.float-right:active,
+    a[class="filter-item "]:active,
+    .filter-item.selected:active,
+    .mt-2 a.btn:active,
+    .gh-header-show a.btn.btn-sm.btn-primary.float-right:active,
+    .btn:active,
+    .HeaderNavlink:active,
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    a[class="u-photo d-block tooltipped tooltipped-s"] {
+        border: 2px solid var(--Myborder) !important;
+        border-radius: 5px !important;
+    }
+    .Counter {
+        background-color: var(--Myred1) !important;
+    }
+    .header-search {
+        background: transparent !important;
+    }
+    .js-user-status-container,
+    .form-control,
+    .js-site-search-form {
+        border-radius: 25px !important;
+        border: 1px solid var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .js-selected-navigation-item {
+        padding: 5px !important;
+    }
+    details-menu {
+        background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
+        color: var(--MyW) !important;
+    }
+    .header-nav-current-user.css-truncate a[role="menuitem"] {
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+}

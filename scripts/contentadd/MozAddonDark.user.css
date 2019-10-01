@@ -1,0 +1,277 @@
+/* ==UserStyle==
+@name        Mozilla Addons Dark
+@namespace   http://192.168.0.3/Scripts/extra/MozAddonDark.user.css
+@updateURL   http://192.168.0.3/Scripts/extra/MozAddonDark.user.css
+@version     0.0.8
+@description Mozilla Addons Dark
+@author      Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document url-prefix("https://addons.mozilla.org"),
+url-prefix("https://accounts.firefox.com"),
+domain("mozilla.net"),
+domain("mozilla.org"),
+domain("addons-amo.cdn.mozilla.net"),
+domain("addons.cdn.mozilla.net") {
+    /* ----------------------------------------- */
+    .Header,
+    #react-view {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background: none !important;
+        background-color: var(--Myred2) !important;
+        color: var(--Mytext) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+    .App-content {
+        background: none !important;
+        background-color: var(--Myback) !important;
+        color: var(--Mytext) !important;
+    }
+    footer {
+        background: transparent !important;
+    }
+    .Card-contents {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+        color: var(--Mytext) !important;
+    }
+    .settings,
+    div#react-view {
+        background-color: var(--Myback) !important;
+    }
+    .card {
+        background-color: var(--Mygray3) !important;
+    }
+    h1 {
+        color: var(--Myred1) !important;
+    }
+    li>a,
+    a {
+        color: var(--MyW) !important;
+    }
+    a:hover {
+        color: var(--MyB) !important;
+    }
+    #fxa-settings-header-wrapper {
+        background-color: var(--Myred3) !important;
+    }
+    header {
+        border-color: var(--Myred1) !important;
+    }
+    a[href] {
+        text-shadow: 1px -1px 0 var(--MyB) !important;
+    }
+    a[href="https://www.mozilla.org/firefox/"],
+    a[href="/en-US/firefox/"] {
+        background-color: var(--Myred2) !important;
+        color: var(--Mytext) !important;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+        border: 2px solid var(--Myborder) !important;
+        border-radius: 15px !important;
+    }
+    .Card-header {
+        background-color: var(--Myred2) !important;
+        color: var(--Mytext) !important;
+    }
+    section[class="Card ErrorPage ServerError Card--no-footer"],
+    section[class="Card Home-SubjectShelf Home-CuratedThemes Card--no-footer"],
+    section[class="Card CardList AddonsCard LandingAddonsCard Home-PopularThemes AddonsCard--horizontal Card--photon"],
+    section[class="Card CardList AddonsCard LandingAddonsCard Home-FeaturedCollection AddonsCard--horizontal Card--photon"],
+    section[class="Card CardList AddonsCard LandingAddonsCard Home-FeaturedExtensions AddonsCard--horizontal Card--photon"],
+    section[class="Card Hero Hero-name-Home Hero-order-10-16-15 Card--no-header Card--no-footer"],
+    section[class="Card CardList AddonsCard LandingAddonsCard HighlyRatedAddons AddonsCard--horizontal Card--photon"],
+    section[class="Card CardList AddonsCard LandingAddonsCard TrendingAddons AddonsCard--horizontal Card--photon"],
+    section[class="Card CardList AddonsCard LandingAddonsCard FeaturedAddons AddonsCard--horizontal Card--photon"],
+    section[class="Card Categories Card--no-footer"] {
+        border: 2px solid var(--Myborder) !important;
+        border-radius: 15px !important;
+    }
+    .LandingPage-addonType-name {
+        text-shadow: 1px -1px 0 var(--MyW) !important;
+    }
+    h2 {
+        color: var(--Myred1) !important;
+        text-shadow: 1px -1px var(--MyW) !important;
+    }
+    h2.Card-header {
+        color: var(--MyB) !important;
+        text-shadow: 1px -1px var(--MyW) !important;
+    }
+    h3 {
+        color: var(--MyW) !important;
+    }
+    .LandingPage-header {
+        background-color: var(--Mygray3) !important;
+        color: var(--Mytext) !important;
+        border: 2px solid var(--Myborder) !important;
+    }
+    .AddonsCard-list {
+        background-color: var(--Mygray3) !important;
+        color: var(--Mytext) !important;
+    }
+    select[class="LanguagePicker-selector"],
+    select[class="Select AddAddonToCollection-select"],
+    .SearchResult-link {
+        background-color: transparent !important;
+    }
+    .Card-footer-link {
+        background-color: var(--Myred3) !important;
+        border-radius: 15px 15px 0 0 !important;
+    }
+    .content,
+    .addon.extension {
+        background-color: var(--Myred3) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myborder) !important;
+        color: var(--MyW) !important;
+    }
+    .Paginate,
+    .Card-footer-text,
+    .Addon-read-reviews-footer,
+    section[class="Card CardList AddonReviewList-reviews Card--photon Card--no-footer"],
+    .AddonReviewListItem-reply,
+    .AddonReviewListItem,
+    .Card-contents li {
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+    }
+    .AddonReviewListItem-byline {
+        color: var(--Myred2) !important;
+    }
+    .SearchResult {
+        background-color: var(--Mygray3) !important;
+        color: var(--Mytext) !important;
+        border-radius: 15px !important;
+    }
+    .SearchResult-link:hover {
+        background-color: var(--MyX1) !important;
+    }
+    a {
+        text-decoration: none !important;
+    }
+    a:hover,
+    .Addon-title,
+    a>span {
+        color: var(--Myred1) !important;
+    }
+    .MetadataCard {
+        color: var(--MyW) !important;
+        background-color: var(--MyX1) !important;
+    }
+    li>a:hover,
+    a>span:hover {
+        color: var(--Myred1) !important;
+        text-shadow: 1px -1px var(--MyW) !important;
+    }
+    div[class="HeroSection HeroSection-styleName--default"] {
+        background-image: none !important;
+        background-color: var(--MyX3) !important;
+    }
+    div[class="HeroSection HeroSection-styleName--default"]:hover {
+        background-image: none !important;
+        background-color: var(--MyX1) !important;
+    }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .DropdownMenu-items {
+        background-color: var(--Mygray3) !important;
+    }
+    .DropdownMenu-items .DropdownMenuitem {
+        background-color: var(--Mygray3) !important;
+    }
+    .SearchResult-wrapper,
+    .SearchResult-result,
+    button {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .Addon-all-reviews-link,
+    .button,
+    select,
+    a[class^="Button"],
+    button:not([id^="Rating-rating"]):not(.Rating-star):not(.DropdownMenu-button):not(.AutoSearchInput-submit-button):not([aria-haspopup="true"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        color: var(--Mytext) !important;
+        border: none !important;
+        background-color: var(--Myback) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    .DropdownMenu-button:hover,
+    .DropdownMenuitem:hover .Addon-all-reviews-link:hover,
+    .button:hover,
+    select:hover,
+    option[value*=""][selected=""],
+    option[value*=""]:hover,
+    select#lang-picker.LanguagePicker-selector,
+    .DropdownMenuItem:hover,
+    a[class^="Button"]:hover,
+    button:hover:not([id^="Rating-rating"]):not(.Rating-star):not(.DropdownMenu-button):not(.AutoSearchInput-submit-button):not([aria-haspopup="true"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        border: none !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
+    }
+    .DropdownMenu-button:active,
+    .Addon-all-reviews-link:active,
+    .button:active,
+    select:active,
+    option[value*=""]:active,
+    .DropdownMenuItem:active,
+    a[class^="Button"]:active,
+    button:active:not([id^="Rating-rating"]):not(.Rating-star):not(.DropdownMenu-button):not(.AutoSearchInput-submit-button):not([aria-haspopup="true"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        border: none !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
+    }
+    .clients-disconnect,
+    #fxa-settings-content {
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .RatingsByStar-bar.RatingsByStar-barFrame .RatingsByStar-bar.RatingsByStar-barValue.RatingsByStar-partialBar {
+        color: var(--Myred1) !important;
+    }
+    .Header-content .Header-title {
+        border: none !important;
+    }
+}

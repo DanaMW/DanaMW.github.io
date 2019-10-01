@@ -1,0 +1,116 @@
+/* decentraleyes */
+
+@-moz-document url-prefix("moz-extension://85896d71-d9b1-433f-82d8-88883c2d4f82"),
+url-prefix("moz-extension://e9004927-fe61-4cc8-a0ca-467d1be59ae6") {
+    body {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .notice-default {
+        background-color: var(--Mygray3) !important;
+    }
+    .notice-warning {
+        background-color: #ffa500;
+        color: #fff;
+    }
+    .button {
+        background-color: var(--Myred2) !important;
+        border: 1px solid #cfcfcf;
+        color: var(--MyW) !important;
+    }
+    .button:hover {
+        background-color: var(--Myred1) !important;
+    }
+    .button:active {
+        background-color: var(--MyRed1) !important;
+    }
+    .button-warning {
+        background-color: #ea9700;
+        border: 1px solid #d88c00;
+        color: #fff;
+    }
+    .button-warning:hover {
+        background-color: #d88c00;
+        border-color: #c98200;
+    }
+    .button-warning:active {
+        background-color: #c07c00;
+        border-color: #b47400;
+    }
+    .link-text {
+        color: #999;
+    }
+    .description-option {
+        color: var(--MyW) !important;
+    }
+    .badge {
+        color: #fff;
+    }
+    .badge-warning {
+        background-color: #ffa500;
+    }
+    header {
+        border-bottom: solid #d3d3d3 1px;
+    }
+    .panel:not(:last-child) {
+        border-bottom: 1px solid #d8d8d8;
+    }
+    .list-item {
+        background-color: var(--Myback) !important;
+        border: 1px solid #e4e4e4;
+        color: var(--MyW) !important;
+    }
+    .sublist {
+        background-color: var(--Myback) !important;
+        border: 1px solid #e0e0e0;
+        box-shadow: inset 0px 2px 10px #e2e2e2;
+    }
+    .sublist:last-child {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .sublist-item {
+        border-bottom: 1px solid #e0e0e0;
+        color: var(--MyW) !important;
+    }
+    .button {
+        background-color: var(--Myback) !important;
+        border: 1px solid #cfcfcf;
+        color: var(--MyW) !important;
+    }
+    .button:hover {
+        background-color: var(--Myred1) !important;
+    }
+    .button:active {
+        background-color: var(--Myred1) !important;
+    }
+    .button-toggle {
+        border-color: #d8d8d8;
+        color: var(--MyW) !important;
+    }
+    .button-toggle.active {
+        border-color: #cfcfcf;
+        color: #339a6f;
+    }
+    .link-text {
+        color: var(--MyW) !important;
+    }
+    .link-text:hover {
+        color: var(--Myred1) !important;
+    }
+    .badge {
+        background-color: #6bb798;
+        color: #fff;
+    }
+    .description {
+        color: var(--MyW) !important;
+    }
+    .label-version {
+        color: #6aac91;
+    }
+    .label-domain {
+        color: #bbb;
+    }
+    .side-note {
+        color: #a5a5a5;
+    }
+}

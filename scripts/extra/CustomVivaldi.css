@@ -1,0 +1,411 @@
+:root {
+    background-color: hsl(0, 0%, 10%);
+    background-image: url(resources/vivaldi-splash-icon.svg);
+    background-size: 16%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    --colorBg: hsl(0, 0%, 10%) !important;
+    --colorBgAlpha: hsl(0, 0%, 10%) !important;
+    --colorBgAlphaHeavy: hsl(0, 0%, 10%) !important;
+    --colorBgAlphaHeavier: hsl(0, 0%, 10%) !important;
+    --colorBgDark: hsl(0, 0%, 10%) !important;
+    --colorBgDarker: hsl(0, 0%, 10%) !important;
+    --colorBgLight: hsl(0, 0%, 10%) !important;
+    --colorBgLighter: hsl(0, 0%, 10%) !important;
+    --colorBgLightIntense: hsl(0, 0%, 10%) !important;
+    --colorBgIntense: hsl(0, 0%, 10%) !important;
+    --colorBgIntenser: hsl(0, 0%, 10%) !important;
+    --colorBgInverse: hsl(0, 0%, 10%) !important;
+    --colorBgInverser: hsl(0, 0%, 10%) !important;
+    --colorBgFaded: hsl(0, 0%, 10%) !important;
+    --colorFg: #FFFFFF !important;
+    --colorFgAlpha: #FFFFFF !important;
+    --colorFgIntense: #FFFFFF !important;
+    --colorFgFaded: #FFFFFF !important;
+    --colorFgFadedMore: #FFFFFF !important;
+    --colorHighlightBg: #ff0000 !important;
+    --colorHighlightBgAlpha: #ff0000 !important;
+    --colorHighlightBgDark: #ff0000 !important;
+    --colorHighlightFg: #FFFFFF !important;
+    --colorHighlightFgAlpha: #FFFFFF !important;
+    --colorHighlightFgAlphaHeavy: #FFFFFF !important;
+    --colorAccentBg: #ff0000 !important;
+    --colorAccentBgAlpha: #ff0000 !important;
+    --colorAccentBgAlphaHeavy: #ff0000 !important;
+    --colorAccentBgDark: #ff0000 !important;
+    --colorAccentBgDarker: #ff0000 !important;
+    --colorAccentBgFaded: #ff0000 !important;
+    --colorAccentBgFadedMore: #ff0000 !important;
+    --colorAccentBgFadedMost: #ff0000 !important;
+    --colorAccentBorder: #ff0000 !important;
+    --colorAccentBorderDark: #ff0000 !important;
+    --colorAccentFg: #f6f6f6;
+    --colorAccentFgFaded: #f88080;
+    --colorAccentFgAlpha: rgba(246, 246, 246, 0.25);
+    --colorBorder: #FFFFFF !important;
+    --colorBorderHighlight: #FFFFFF !important;
+    --colorBorderDisabled: #FFFFFF !important;
+    --colorBorderIntense: #FFFFFF !important;
+    --radiusRound: 100px;
+    --radiusRounded: 2px;
+    --radiusRoundedLess: 2px;
+    --radius: 2px;
+    --radiusHalf: calc(var(--radius) * 0.5);
+    --shadowOpacity: 1;
+    --shadowInput: 0 1px 2px rgba(0, 0, 0, calc(var(--shadowOpacity) * 0.1)) inset;
+    --shadowOverlay: 0 0 0 1px rgba(0, 0, 0, calc(var(--shadowOpacity) * 0.1)), 0 2px 8px rgba(0, 0, 0, calc(var(--shadowOpacity) * 0.25));
+    --fontSize: 13px;
+    --fontSizeXL: calc(var(--fontSize) + 14px);
+    --fontSizeLargest: calc(var(--fontSize) + 10px);
+    --fontSizeLarger: calc(var(--fontSize) + 8px);
+    --fontSizeLarge: calc(var(--fontSize) + 3px);
+    --fontSizeSmall: calc(var(--fontSize) - 1.5px);
+    --fontSizeSmaller: calc(var(--fontSize) - 3px);
+    --fontWeight: 400;
+    --lineHeight: 1.3;
+    --padding: 6px;
+    --toolbarHeight: 34px;
+    --primary-background-color: hsl(0, 0%, 10%) !important;
+    --dark-theme-base-color: hsl(0, 0%, 10%) !important;
+    --DanaMW: SSmYsEcErTSS;
+    --MyB: #000;
+    --MyW: #fff;
+    --Myback: hsl(0, 0%, 10%);
+    --Mytext: hsl(0, 0%, 90%);
+    --Myred1: hsl(0, 100%, 50%);
+    --Myred2: hsl(0, 100%, 30%);
+    --Myred3: hsl(0, 100%, 15%);
+    --Mypurple1: hsl(300, 100%, 50%);
+    --Mypurple2: hsl(300, 100%, 30%);
+    --Mypurple3: hsl(300, 100%, 15%);
+    --Mygreen1: hsl(120, 100%, 50%);
+    --Mygreen2: hsl(120, 100%, 30%);
+    --Mygreen3: hsl(120, 100%, 15%);
+    --Myblue1: hsl(240, 100%, 50%);
+    --Myblue2: hsl(240, 100%, 30%);
+    --Myblue3: hsl(240, 100%, 15%);
+    --Mygray1: hsl(0, 0%, 50%);
+    --Mygray2: hsl(0, 0%, 30%);
+    --Mygray3: hsl(0, 0%, 15%);
+    --Myeditback: hsl(0, 97%, 14%);
+    --Mydialog: hsl(0, 0%, 25%);
+    --Myborder: hsl(0, 0%, 60%);
+    --MyX1: hsla(0, 100%, 50%, 0.4);
+    --MyX2: hsla(120, 100%, 50%, 0.4);
+    --MyX3: hsla(240, 100%, 50%, 0.4);
+    --MyX4: hsla(0, 0%, 35%, 0.4);
+    --MyX5: hsla(300, 100%, 50%, 0.4);
+    --MyXB: hsla(0, 0%, 0%, 0.4);
+    --MyXW: hsla(0, 0%, 100%, 0.4);
+    --md-background-color: hsl(0, 0%, 10%) !important;
+    --md-loading-message-color: #ff0000 !important;
+    --md-toolbar-color: #ff0000 !important;
+    --primary-background-color: hsl(0, 0%, 10%) !important;
+    --dark-theme-base-color: hsl(0, 0%, 10%) !important;
+    --paper-tooltip: hsla(0, 100%, 15%) !important;
+    --dana-tooltip: hsla(0, 100%, 15%) !important;
+    --cr-tooltip: hsla(0, 100%, 15%) !important;
+}
+
+#shadow-root html,
+#shadow-root body,
+#shadow-root * {
+    background-color: hsl(0, 0%, 10%) !important;
+    background-image: none !important;
+    color: #ffffff !important;
+}
+
+.startpage .dial .thumbnail-image {
+    background-color: transparent;
+}
+
+html.loading.in-dev-mode body::before {
+    background-color: hsl(0, 0%, 10%) !important;
+    border-bottom: 1px solid #e0e0e0;
+    color: #FFFFFF !important;
+    height: 54px;
+}
+
+#search {
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+}
+
+html,
+body {
+    background-color: var(--Myback) !important;
+    background-image: none !important;
+    color: var(--MyW) !important;
+    margin: 0;
+}
+
+
+/*
+button.fullwidth {
+    display: none !important;
+}
+
+*/
+
+#header,
+#tabs-container {
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+}
+
+.ContextMenu,
+.menuitems,
+.menu {
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+    border: 1px solid var(--MyW) !important;
+    border-radius: 15px !important;
+}
+
+dana-tooltip {
+    background: hsla(0, 100%, 15%) !important;
+    color: var(--MyW) !important;
+    border: none !important;
+    border-color: hsla(0, 100%, 15%) !important;
+    border-radius: 10px !important;
+    padding: 6px 6px !important;
+}
+
+paper-tooltip {
+    --paper-tooltip: var(--dana-tooltip) !important;
+    background-color: var(--MyX1) !important;
+    color: var(--MyW) !important;
+    border: 1px solid var(--MyW) !important;
+}
+
+cr-tooltip {
+    background: hsla(0, 100%, 15%) !important;
+    color: var(--MyW) !important;
+    border: none !important;
+    border-color: hsla(0, 100%, 15%) !important;
+    border-radius: 10px !important;
+    padding: 6px 6px !important;
+}
+
+#tooltip,
+paper-tooltip,
+.status-info,
+.toolbar.toolbar-droptarget.toolbar-statusbar.toolbar-medium,
+.tooltip {
+    background: hsla(0, 100%, 15%) !important;
+    color: var(--MyW) !important;
+    border: none !important;
+    border-color: hsla(0, 100%, 15%) !important;
+    border-radius: 10px !important;
+    padding: 6px 6px !important;
+}
+
+input.url.vivaldi-addressfield {
+    color: var(--MyW) !important;
+    text-align: center !important;
+}
+
+paper-button,
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-top: 1px solid var(--Myred2) !important;
+    border-left: 1px solid var(--Myred2) !important;
+    border-bottom: 1px solid var(--Myred3) !important;
+    border-right: 1px solid var(--Myred3) !important;
+    color: var(--Mytext) !important;
+    background-color: var(--MyB) !important;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+    text-shadow: 1px 1px 0 var(--Myred1) !important;
+    -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+    -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+    transition: border-color .3s ease, box-shadow .7s ease !important;
+    transition-timing-function: linear !important;
+    box-shadow: 0 1px 4px 1px var(--MyB) !important;
+}
+
+paper-button:hover,
+button:hover {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-top: 1px solid var(--Myred3) !important;
+    border-left: 1px solid var(--Myred3) !important;
+    border-bottom: 1px solid var(--Myred2) !important;
+    border-right: 1px solid var(--Myred2) !important;
+    box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+    background-color: var(--MyX1) !important;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+    outline: none !important;
+    opacity: 1.0 !important;
+    color: var(--MyW) !important;
+    -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+    -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+    transition: background .2s, box-shadow .4s, border-color .2s !important;
+    transition-timing-function: linear !important;
+    text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+}
+
+paper-button:active,
+button:active {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-top: 1px solid var(--Mygreen2) !important;
+    border-left: 1px solid var(--Mygreen2) !important;
+    border-bottom: 1px solid var(--Mygreen3) !important;
+    border-right: 1px solid var(--Mygreen3) !important;
+    box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+    background-color: var(--MyX3) !important;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+    outline: none !important;
+    opacity: 1.0 !important;
+    color: var(--MyW) !important;
+    -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+    -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+    transition: background .2s, box-shadow .4s, border-color .2s !important;
+    transition-timing-function: linear !important;
+    text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+}
+
+.tab-header {
+    background-color: var(--Mygray3) !important;
+}
+
+button[class="folder"] svg {
+    position: relative !important;
+}
+
+button[class="folder"] svg {
+    content: ' ';
+    background: url(data:image/png;base64,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ABYABSd/A5YCvwJ7r/kZAAxCC/4AAAAGAPQADT2RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////wAB////////AAH///////8AAdWXQ6I0kaV5wZ45ryuuUOv///////8AAf///////wAB////////AAH///////8AAf///////wAB////////AAHoAkxcPFdPetXQQ780qqWK////////AAH///////8AAf///////wABAP///////wAB////////AAH///////8AAeZnS9Y8FAiy////////AAH///////8AAf///////wAB////////AAH///////8AAf///////wAB////////AAH///////8AAcUjO74trAj0////////AAH///////8AAf///////wAB6FyNAGZ7dasAAAAASUVORK5CYII=) no-repeat !important;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 16px !important;
+    padding-top: 16px !important;
+    opacity: 1;
+}
+
+.tab.active:hover .tab-header,
+.tab-header:hover {
+    background-color: var(--Myred1) !important;
+}
+
+.tab.active .tab-header {
+    background-color: var(--MyX1) !important;
+    border-top: 2px solid var(--Mygreen1) !important;
+}
+
+.page-container {
+    background-color: var(--Myback) !important;
+    color: var(--MyW) !important;
+}
+
+
+/*
+Style Attribute {
+    background-color: var(--Myback) !important;
+    background-image: none !important;
+}
+*/
+
+menuitem,
+menu {
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+    border: 1px solid var(--MyW) !important;
+    border-radius: 15px !important;
+    opacity: 1;
+}
+
+.contextmenu,
+.menuitem,
+.menu {
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+    border: 1px solid var(--MyW) !important;
+    border-radius: 15px !important;
+    opacity: 1;
+}
+
+.menuitem .menu:not(.topmenu)>.menu>ul,
+.menu ul ul {
+    color: var(--NyW) !important;
+    background-color: var(--MyGray3) !important;
+    border: 1px solid var(--MyW) !important;
+    border-radius: 15px !important;
+    opacity: 1;
+}
+
+:not(.topmenu)>.menu>ul.is-collapsed,
+.menu ul ul.is-collapsed {
+    opacity: 0;
+}
+
+.win :not(.topmenu)>.menu>ul,
+.win .menu ul ul {
+    border: 1px solid var(--Myred1) !important;
+}
+
+.win :not(.topmenu)>.menu>ul:before,
+.win .menu ul ul:before {
+    background-color: var(--Mygray3) !important;
+}
+
+:not(.topmenu)>.menu>ul li a,
+.menu ul ul li a {
+    text-decoration: none;
+}
+
+.win :not(.topmenu)>.menu>ul li a,
+.win .menu ul ul li a {
+    border: 1px solid var(--Myred1) !important;
+}
+
+:not(.topmenu)>.menu>ul li:first-of-type a,
+.menu ul ul li:first-of-type a {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+:not(.topmenu)>.menu>ul li:last-of-type a,
+.menu ul ul li:last-of-type a {
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+}
+
+:not(.topmenu)>.menu>ul li img,
+.menu ul ul li img {
+    margin: auto 0;
+}
+
+.win :not(.topmenu)>.menu>ul li.selectedItem>a,
+.win .menu ul ul li.selectedItem>a,
+.win :not(.topmenu)>.menu>ul li a:focus,
+.win .menu ul ul li a:focus {
+    border-color: var(--Myred1) !important;
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+}
+
+:not(.topmenu)>.menu>ul .divider,
+.menu ul ul .divider {
+    border-bottom: 1px solid var(--Myred1) !important;
+}
+
+:not(.topmenu)>.menu>ul .divider>*,
+.menu ul ul .divider>* {
+    background-color: var(--Myred1) !important;
+    border-color: var(--Myred1) !important;
+    color: var(--Myred1) !important;
+}
+
+#uBO-popup-panel {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+}
+
+
+/*background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;*/

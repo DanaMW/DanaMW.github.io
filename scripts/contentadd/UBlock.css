@@ -1,0 +1,105 @@
+/* UBlock */
+
+@-moz-document url-prefix("moz-extension://2a7eae73-bcfd-408a-857d-fb98238f62f0/"),
+url-prefix("moz-extension://bb1e8c2d-172a-4d14-bc51-222fcb8abf74/") {
+    body,
+    html {
+        background-color: var(--Mygray3) !important;
+    }
+    h2 {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    a {
+        color: var(--MyW) !important;
+    }
+    #appinfo {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    #switch .fa-icon {
+        fill: #0046ff;
+    }
+    body.off #switch .fa-icon {
+        fill: var(--Mygray2) !important;
+    }
+    .tool {
+        color: var(--MyW) !important;
+        fill: var(--Mygray2) !important;
+    }
+    .tool.enabled:hover {
+        color: var(--Myred1) !important;
+        fill: var(--Mygray2) !important;
+    }
+    .statName {
+        color: var(--MyW) !important;
+    }
+    #extraTools {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        fill: var(--Mygray2) !important;
+    }
+    #extraTools>span>.nope {
+        stroke: red;
+    }
+    #extraTools>span:hover {
+        color: var(--MyW) !important;
+        fill: var(--Mygray2) !important;
+    }
+    #refresh {
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--MyW) !important;
+        fill: var(--MyW) !important;
+    }
+    body.dirty #refresh:hover {
+        fill: var(--Mygray2) !important;
+    }
+    #tooltip {
+        background-color: var(--MyX1) !important;
+        color: var(--Myred1) !important;
+        text-shadow: 1px -1px 0 var(--MyW) !important;
+        border: none !important;
+        border-color: var(--MyX1) !important;
+        border-radius: 10px !important;
+        text-align: center;
+    }
+    #firewallContainer>div {
+        background-color: var(--Mygray3) !important;
+    }
+    #firewallContainer>div>span {
+        border-bottom: 1px solid white;
+        color: var(--MyW) !important;
+    }
+    #firewallContainer>div>span:first-of-type>sup {
+        color: var(--MyW) !important;
+    }
+    #firewallContainer>div>span:first-of-type~span {
+        border-left: 1px solid white;
+    }
+    #firewallContainer>div>span:nth-of-type(3),
+    #firewallContainer>div>span:nth-of-type(4) {
+        color: var(--MyW) !important;
+    }
+    #firewallContainer>div:first-of-type>span:first-of-type::before {
+        color: #aaa;
+    }
+    #rulesetTools {
+        background-color: transparent;
+        fill: var(--Mygray3) !important;
+    }
+    #firewallContainer.dirty~#rulesetTools>span:hover {
+        fill: var(--Mygray2) !important;
+    }
+    .tabButton {
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    .tabButton.selected {
+        background-color: var(--Myred2) !important;
+        color: var(--MyW) !important;
+    }
+    dashboard-nav {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyB) !important;
+    }
+}

@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name         AP News Dark
+@namespace    http://192.168.0.3/scripts/scripts/APNews.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/APNews.user.css
+@version      0.0.2
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("apnews.com") {
+    .Content.WireStory.fluid-wrapper.with-lead,
+    html,
+    body {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    .Header {
+        background-color: var(--Myred3) !important;
+    }
+    .optional-header-title.content {
+        color: var(--Myred1) !important;
+    }
+    .Footer {
+        display: none !important;
+    }
+    h1:hover,
+    li.tag:hover a {
+        color: var(--Myred1) !important;
+    }
+}

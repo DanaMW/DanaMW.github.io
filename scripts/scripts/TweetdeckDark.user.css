@@ -1,0 +1,1092 @@
+/* ==UserStyle==
+@name         TweetDeck Dark
+@namespace    http://192.168.0.3/Scripts/scripts/TweetdeckDark.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/TweetdeckDark.user.css
+@description  A Dark TweetDeck Script
+@version      0.0.65
+@author       Dana Meli
+@homepageURL  https://github.com/DanaMW
+==/UserStyle==*/
+
+@-moz-document domain("tweetdeck.twitter.com"),
+url-prefix("https://pbs.twimg.com/"),
+url-prefix("https://abs.twimg.com/"),
+url-prefix("https://ton.twimg.com/tweetdeck-web/"),
+url-prefix("https://twitter.com/i/safety/") {
+    li[class*="stream-item"] [class*="promoted"],
+    div[class="stream suggested-tweet-stream permalink-replies"] {
+        display: none !important;
+    }
+    .js-app-columns-container.app-columns-container,
+    iframe.r-1yadl64.r-16y2uox,
+    iframe.r-1yadl64.r-16y2uox body,
+    .js-column-content.column-content,
+    html,
+    body {
+        background-image: none !important;
+        background-color: var(--MyB) !important;
+    }
+    section.js-column.column {
+        padding-right: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+    * {
+        outline: none !important;
+        text-decoration: none;
+        scrollbar-width: none;
+    }
+    .js-app-columns-container.app-columns-container.scroll-h.needs-scroll-bottom-offset {
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3);
+    }
+    /*
+    .js-app-columns-container.app-columns-container.scroll-h.needs-scroll-bottom-offset:hover {
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--MyGreen1) var(--Myred3) !important;
+    }
+    */
+    .css-1dbjc4n.r-1awozwy.r-1p0dtai.r-1777fci.r-1d2f490.r-ywje51.r-u8s1d.r-zchlnj.r-ipm5af,
+    .css-901oao.r-daml9f.r-n6v787.r-19jlu03.r-285fr0.r-q4m81j {
+        z-index: 10000 !important;
+        background: transparent !important;
+    }
+    .more-tweets-glow {
+        max-width: 100%;
+        height: 6px !important;
+        margin-top: -6px !important;
+        transition: width 200ms ease-in-out;
+        background-image: radial-gradient(ellipse farthest-corner at 50% 100%, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 25%, rgba(255, 255, 255, 0) 75%) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    div[role="progressbar"] {
+        z-index: 10000 !important;
+        background: transparent !important;
+    }
+    .tooltip_box {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+        text-shadow: 1px -1px 0 var(--MyW) !important;
+        border: none !important;
+        border-color: var(--MyX1) !important;
+        border-radius: 10px !important;
+        padding: 6px 6px !important;
+        text-align: center
+    }
+    .nbfc a,
+    a.account-link {
+        color: var(--Mytext) !important;
+    }
+    .scrubBar {
+        background-color: var(--Mygray2) !important;
+    }
+    section.js-column.column.is-focused {
+        background-color: var(--Myred1) !important;
+        color: var(--Myred1) !important;
+        border-color: var(--Myred1) !important;
+    }
+    .scrubber .scrubHandle,
+    .scrubber .playedBar {
+        background-color: var(--Myred1) !important;
+    }
+    textarea.js-compose-text.compose-text.bg-color-twitter-white.txt-size--14.scroll-v.scroll-styled-v.scroll-styled-h.scroll-alt.padding-a--0 {
+        color: var(--MyW) !important;
+        background-color: var(--Myback) !important;
+    }
+    .position-rel.compose-text-container.margin-v--6.br--4 {
+        background-color: transparent !important;
+    }
+    .social-proof-for-tweet-title,
+    .column-scroller.scroll-v.pin-all,
+    .js-compose-text.compose-text.bg-color-twitter-white.txt-size-variable--14.scroll-v.scroll-styled-v.scroll-styled-h.scroll-alt,
+    .js-dropdown.dropdown-menu.br--6.bs-1.bg-color-twitter-white.color-twitter-dark-black.padding-v--9.pos-br,
+    .js-dropdown.dropdown-menu.br--6.bs-1.bg-color-twitter-white.color-twitter-dark-black.padding-v--9.pos-l,
+    textarea#list-description,
+    input[id="list-name"],
+    input[class^="js-search-filter"] {
+        color: var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    li>a {
+        color: var(--MyW) !important;
+    }
+    .js-login-form.form-login.startflow-panel-rounded {
+        border-color: var(--Myred1) !important;
+        border-width: 2px !important;
+        border-radius: 15px !important;
+        background-color: var(--MyX1) !important;
+    }
+    .form-legend.padding-axl {
+        text-align: center !important;
+        color: var(--MyW) !important;
+    }
+    select#list-account {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    div[class="margin-b--15 padding-t--25 padding-h--15 bg-color-twitter-white color-twitter-deep-black width--490"] {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    .js-quote-detail.quoted-tweet.nbfc.br--14.padding-al.margin-b--8.position-rel.margin-tm.is-actionable {
+        border: 2px solid var(--MyW) !important;
+    }
+    p,
+    .list-listmember {
+        padding-right: 5px !important;
+        left: 5px !important;
+    }
+    .js-modal-panel.mdl.s-tall-fixed {
+        width: 700px !important;
+        border: 2px solid var(--Myborder) !important;
+        border-radius: 15px !important;
+    }
+    li i.icon.icon-xsmall.icon-dot.column-nav-updates {
+        color: var(--Myred1) !important;
+        z-index: 1000000 !important;
+    }
+    .l-column.mdl-column.mdl-column-med.mdl-column-rhs,
+    header.column-header.column-header-temp.flex-shrink--0,
+    .scroll-v.scroll-styled-v.scroll-alt.column-content.flex-auto {
+        margin-right: initial;
+    }
+    .scroll-v,
+    .js-column-scroller {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    b.non-selectable-item.txt-ellipsis,
+    .link-complex-target,
+    .column-head-title,
+    .mdl-btn-media {
+        color: var(--MyW) !important;
+    }
+    .column-number {
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+    }
+    .js-dropdown-content {
+        text-align: center !important;
+    }
+    li.is-selectable a:hover {
+        color: var(--MyW) !important;
+    }
+    div[class="button-group"]>button[class="Button--link btn-options-tray padding-hn "] {
+        padding-right: 10px !important;
+    }
+    html,
+    body,
+    table,
+    tbody,
+    input[type=text],
+    input[type=password],
+    input[type="file"]>input[type="button"],
+    input[type="file"]>input[type="text"],
+    select,
+    select>button,
+    select>option,
+    optgroup,
+    textarea,
+    button,
+    input[type="file"]>button,
+    [role="button"],
+    [role="textbox"] {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+    }
+    select.js-mentioning,
+    select.js-tweets-from,
+    select.js-retweets,
+    select.js-containing {
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    a,
+    a.twitter-timeline-link span.js-display-url,
+    a.js-user-profile-link[class*="js-action"] .username:hover,
+    a.pretty-link b {
+        text-decoration: none !important;
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+        font-weight: bold;
+    }
+    li>a>strong,
+    strong {
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+    }
+    strong[class="fullname txt-size--24 hyphenate"],
+    div.js-account-profile-header.account-profile-header,
+    .padding-h--16,
+    .join-team,
+    .js-popover-content,
+    .prf-meta,
+    .social-proof-container {
+        color: var(--Mytext) !important;
+        text-decoration: none !important;
+        background-color: transparent !important;
+    }
+    strong[class="fullname txt-size--24 hyphenate"] {
+        color: var(--Mytext) !important;
+        text-shadow: 1px 1px 5px var(--Myred1) !important
+    }
+    .accordion-panel,
+    .link-complex-target:hover,
+    b:hover,
+    a:hover,
+    a:focus,
+    a.twitter-timeline-link:hover span.js-display-url,
+    a.js-user-profile-link[class*="js-action"]:hover strong.fullname {
+        text-decoration: none !important;
+        font-weight: bold !important;
+        color: var(--Myred1) !important;
+        text-shadow: 1px 1px var(--MyB) !important
+    }
+    .js-tweet-text,
+    .js-tweet-text .tweet-text {
+        color: var(--Mytext) !important;
+    }
+    .ProfileTweet-actionButton:hover {
+        color: var(--Mygray1) !important;
+    }
+    .drawer-header-title,
+    [class*="count"]:not([class*="account"]),
+    [class*="fullname"],
+    a.js-user-profile-link[class*="js-action"]:not(:hover) strong.fullname {
+        text-decoration: none !important;
+        font-weight: bold !important;
+        color: var(--Mygreen1) !important;
+        border-color: transparent !important;
+    }
+    .mdl-inner,
+    .item-box,
+    .SummaryCard-contentContainer,
+    .TwitterCard .CardContent,
+    .SummaryCard-contentContainer.TwitterCardsGrid-col--12,
+    .SummaryCard-content.TwitterCardsGrid-ltr,
+    .SummaryCard-content,
+    .js-stream-item-content.item-box.js-show-detail,
+    .js-tweet.tweet-detail.is-quote-tweet,
+    .js-stream-item-content.item-box,
+    ul[class*="js-tweet-actions tweet-actions"],
+    .tweet-footer.cf,
+    .tweet ul[class*="js-tweet-actions tweet-actions"],
+    .js-stream-item-content.item-box.js-show-detail ul[class*="js-tweet-actions tweet-actions"] {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .TwitterCard .CardContent,
+    .SummaryCard-contentContainer.TwitterCardsGrid-col--12,
+    .SummaryCard-content.TwitterCardsGrid-ltr {
+        background-color: transparent !important;
+    }
+    article[class="stream-item js-stream-item  is-draggable  "],
+    .js-stream-item-content.item-box,
+    .js-stream-item-content.item-box.js-show-detail {
+        background-image: linear-gradient(to top, rgba(42, 42, 42, 0.8), rgba(75, 75, 75, 0.9), rgba(90, 90, 90, 0.9) 100%, transparent) !important;
+    }
+    .js-med-tweet.med-tweet:hover,
+    .SummaryCard-content:hover,
+    .js-tweet.tweet-detail.is-quote-tweet:hover,
+    .js-stream-item-content.item-box:hover,
+    .js-stream-item-content.item-box.js-show-detail:hover,
+    div[class*="js-tweet tweet"]:hover,
+    .js-stream-item-content.item-box.js-show-detail:hover div[class*="js-tweet tweet"],
+    ul[class*="js-tweet-actions tweet-actions"]:hover,
+    .tweet:hover,
+    .js-stream-item-content.item-box.js-show-detail:hover ul[class*="js-tweet-actions tweet-actions"],
+    html:not(.mq-medium),
+    html:not(.mq-medium) body,
+    body[class*="user-style-"],
+    body.nofooter,
+    .tweet:hover,
+    .ProfileTweet:hover,
+    .dropdown-menu,
+    .global-nav-inner,
+    .content-header,
+    .MatchItem:hover,
+    .message,
+    [class*="weet"]:hover html.mq-medium .Container,
+    ul.typeahead-items,
+    .DMInboxItem:hover,
+    .DMInboxItem:hover [class^="DMInboxItem"],
+    .PromptbirdPrompt,
+    #profile-hover-container,
+    .TwitterCard-container--clickable:hover,
+    .StreamsFooter,
+    .StreamsTopBar,
+    .InStreamSignup,
+    .InStreamLogin,
+    .InStreamSignup .SignupCallOut,
+    .InStreamLogin .LoginCallOut,
+    .MomentFloatingMenu,
+    .Streams-dividerText,
+    .Streams-divider::before {
+        background-image: none !important;
+        background-color: var(--MyB) !important;
+    }
+    .js-customtimeline-name,
+    .js-customtimeline-description,
+    .dropdown-menu,
+    .js-dropdown {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    input,
+    div[contenteditable="true"],
+    input[type=text],
+    input[type=password],
+    textarea,
+    [role="textbox"],
+    [class*="footer"],
+    [class*="bgUserColor"],
+    [class*="box"],
+    .module .flex-module,
+    .CurrentMatches--withBackground,
+    .DashboardProfileCard,
+    .u-bgUserColorHover:hover,
+    .u-bgUserColorHover:focus,
+    .stream-end-inner,
+    .SignupCallOut,
+    .ProfileLifelineInfo,
+    .ProfileCard,
+    .WhoToFollow,
+    .Trends,
+    .dm-to,
+    .dm-dialog div,
+    .tweet,
+    .ProfileTweet,
+    .t1-select,
+    html.mq-medium .Container,
+    .content-main .expansion-container [class*="tweet"]:not(span),
+    .WebToast,
+    div [class^="front-sign"],
+    div [class*="promptbird"],
+    .Banner .flex-module,
+    #phx-signup-form div.tos,
+    .fast-signup .page-canvas,
+    .RetweetDialog-commentBox,
+    .DMActivity-container,
+    .content-inner,
+    .RelatedUsers,
+    .DMActivity-body,
+    .suggested-tweet-stream,
+    .login-responsive .page-canvas,
+    .login-responsive .mobile,
+    .route-resend-password .mobile,
+    .contact-support,
+    .DMButtonBar,
+    .TwitterCard .MomentCard,
+    .MomentCapsuleSummary--card {
+        background-color: var(--Mygray2) !important;
+    }
+    [class*="Overlay"],
+    .QuoteTweet--unavailable {
+        background-color: var(--Myback) !important;
+    }
+    .count .count-inner {
+        background-color: var(--Myred3) !important;
+        text-decoration: none !important;
+    }
+    [class*="head"],
+    li,
+    .item-box:hover *:not(.dropdown-menu),
+    .tweet:hover *:not(.dropdown-menu),
+    .ProfileTweet:hover *:not(.dropdown-menu),
+    span,
+    .ProfileSidebar .Footer .flex-module,
+    iframe,
+    .permalink,
+    form,
+    .thumbnail-container,
+    .ProfileClusterFollow,
+    .modal-header,
+    .ProfilePopupContainer--bellbird .profile-social-proof,
+    .profile-social-proof,
+    .social-proof-label,
+    .social-proof-label span,
+    .ep-Campaign .ep-CampaignContainer,
+    .DMNotice,
+    [class*="head"],
+    .ProfileAvatar,
+    div,
+    li,
+    input[type=text],
+    input[type=password],
+    textarea,
+    [role="textbox"],
+    [class*="head"],
+    [class*="footer"],
+    [class*="stream"],
+    [class*="item"],
+    [class*="weet"],
+    [class*="DashboardProfileCard"],
+    li[class*="active"] a,
+    [class*="box"],
+    .module .flex-module,
+    .CurrentMatches--withBackground,
+    .ProfileAvatar,
+    .stats,
+    div [class^="front-sign"] h2,
+    .TwitterCard-container {
+        border-color: transparent !important;
+    }
+    .dropdown-caret .caret-inner {
+        border-bottom: 9px solid hsl(0, 0%, 9%) !important;
+    }
+    .dropdown-divider,
+    .WebToast {
+        border-bottom: 1px solid var(--MyB) !important;
+    }
+    li>a {
+        border-width: 0 !important;
+    }
+    a,
+    div:not(.global-nav-inner):not(.content-header):not(.ProfileHeading-content),
+    ul,
+    li,
+    textarea,
+    button,
+    .btn,
+    .Streams-dividerText {
+        border-radius: 4px !important;
+    }
+    input[type=text],
+    input[type=password],
+    [role="textbox"] {
+        border-radius: 25px !important;
+        border: 2px solid var(--Myborder) !important;
+    }
+    .item-box {
+        box-shadow: 0 1px 9px -3px var(--Mygray3) inset, 0 -1px 6px 0 var(--MyB) inset !important;
+    }
+    .item-box:hover,
+    input[type=text],
+    input[type=password],
+    textarea,
+    [role="textbox"],
+    .item-box:hover,
+    .ProfileTweet:hover,
+    .MatchItem:hover,
+    li[class*="active"] a,
+    ul.ProfileNav-list li>a:hover,
+    ul.js-global-actions li>a:hover,
+    .Banner .flex-module {
+        box-shadow: 0 1px 5px 0 var(--MyB) inset, 0 -1px 1px 0 hsl(0, 0%, 60%) inset !important;
+        background-color: var(--MyB) !important;
+    }
+    .ProfileTweet,
+    .MatchItem,
+    ul.js-nav-links li,
+    .thumbnail-container,
+    div [class^="front-sign"] h2,
+    .BirthdateSelect-button {
+        box-shadow: 0 1px 9px -3px var(--Mygray3) inset, 0 -1px 6px 0 var(--MyB) inset !important;
+        background-color: var(--Myback) !important;
+    }
+    .global-nav-inner,
+    .ProfileCanopy-navBar,
+    .content-header,
+    .ProfileHeading-content {
+        box-shadow: 0 1px 5px 0 var(--MyB) !important;
+    }
+    div[class*="footer"],
+    .dm-to {
+        box-shadow: none !important;
+    }
+    .dropdown-menu,
+    .modal-content,
+    .ProfileAvatar,
+    .message,
+    .WebToast {
+        box-shadow: 0 1px 5px 1px var(--MyB) !important;
+    }
+    .js-action-header-button {
+        margin-bottom: 5px !important;
+    }
+    .js-detail-view-inline-text {
+        text-align: center !important;
+    }
+    div[class="position-rel compose-text-container padding-a--10 br--4"],
+    button[class="js-dm-button js-show-tip btn btn-on-blue full-width txt-left padding-v--6 padding-h--12 margin-b--12"],
+    button[class="js-schedule-button js-show-tip btn btn-on-blue full-width txt-left margin-b--12 padding-v--6 padding-h--12"],
+    button[class="js-add-image-button js-show-tip needsclick btn btn-on-blue full-width txt-left margin-b--12 padding-v--6 padding-h--12"] {
+        margin-left: -6px !important;
+    }
+    button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"],
+    div[class="js-account-selector-grid-toggle pull-right account-selector-grid-toggle"],
+    header[class="js-compose-header compose-header"] {
+        margin-right: 15px !important;
+    }
+    div[role="button"]:not([style*="position: absolute"]),
+    .Button.Button--primary.block.txt-size--18.txt-center,
+    .js-dismiss,
+    .js-customtimeline-account,
+    .js-trends-select,
+    .js-header-action,
+    .js-drawer-close,
+    .js-detail-view-inline-text,
+    .js-action-header-button,
+    .mdl-btn-media,
+    button.js-action-header-export-button.pull-right.btn.Button--tertiary.btn-on-dark.margin-t--10,
+    button:not([style*="position: absolute"]):not(.btn-slide),
+    .global-nav-inner,
+    .content-header,
+    .ProfileHeading-content,
+    .ProfileCanopy-navBar,
+    .new-tweets-bar,
+    a.btn:not(.topbar-tweet-btn),
+    ul.js-nav-links li:not(.active)>a,
+    .view-more-container,
+    .BirthdateSelect-button,
+    span[class*="Button--"],
+    .Button--smallGray,
+    .StreamsHero-buttonContainer .Button,
+    .NotificationsHeadingContent,
+    .MomentGuideNavigation.u-layer-top {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    .search-tip-item-hover.txt-size--12:hover,
+    div[role="button"]:hover:not([style*="position: absolute"]),
+    .Button.Button--primary.block.txt-size--18.txt-center:hover,
+    li.selected,
+    .js-dismiss:hover,
+    .hover-bg-color-twitter-faint-blue:hover,
+    .is-selected,
+    .js-customtimeline-account:hover,
+    .js-trends-select:hover,
+    .list-link:hover,
+    button.js-action-header-export-button.pull-right.btn.Button--tertiary.btn-on-dark.margin-t--10:hover,
+    button:hover:not([style*="position: absolute"]):not(.btn-slide),
+    .js-header-action:hover,
+    .js-drawer-close:hover,
+    .js-detail-view-inline-text:hover,
+    .js-action-header-button:hover,
+    .mdl-btn-media:hover,
+    .new-tweets-bar:hover,
+    a.btn:hover,
+    ul[role="menu"]>li:hover a,
+    [role="menuitem"]:hover,
+    ul.js-nav-links li:hover>a,
+    ul.ProfileNav-list li>a:hover,
+    ul.js-global-actions li:hover a,
+    .view-more-container:hover,
+    li.typeahead-item:hover a,
+    .BirthdateSelect-button:hover,
+    span[class*="Button--"]:hover,
+    .Button--smallGray:hover,
+    div.StreamsHero-image[style],
+    .StreamsHero-buttonContainer .Button:hover,
+    .MomentFloatingMenu button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+        filter: brightness(75%) !important;
+    }
+    div[role="button"]:active:not([style*="position: absolute"]),
+    .Button.Button--primary.block.txt-size--18.txt-center:active,
+    .js-dismiss:active,
+    .hover-bg-color-twitter-faint-blue:active,
+    .js-customtimeline-account:active,
+    .js-trends-select:active,
+    .list-link:active,
+    button.js-action-header-export-button.pull-right.btn.Button--tertiary.btn-on-dark.margin-t--10:active,
+    button:active:not([style*="position: absolute"]):not(.btn-slide),
+    .js-header-action:active,
+    .js-drawer-close:active,
+    .js-detail-view-inline-text:active,
+    .js-action-header-button:active,
+    .mdl-btn-media:active,
+    .new-tweets-bar:active,
+    a.btn:active,
+    ul[role="menu"]>li:active a,
+    [role="menuitem"]:active,
+    ul.js-nav-links li:active>a,
+    ul.ProfileNav-list li>a:active,
+    ul.js-global-actions li:active a,
+    .view-more-container:active,
+    li.typeahead-item:active a,
+    .BirthdateSelect-button:active,
+    span[class*="Button--"]:active,
+    .Button--smallGray:active,
+    div.StreamsHero-image[style],
+    .StreamsHero-buttonContainer .Button:active,
+    .MomentFloatingMenu button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    li[class*="active"] a,
+    .GridTimeline-footerIcon {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none !important;
+        background-color: transparent !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsla(0, 100%, 50%, .8) 0%, transparent 99%), linear-gradient(180deg, hsl(0, 0%, 50%), hsl(0, 0%, 0%) 85%, hsl(0, 0%, 33%)) !important;
+    }
+    .tweet,
+    .ProfileTweet,
+    .MatchItem,
+    ul.js-nav-links li {
+        margin-bottom: 4px !important;
+    }
+    [class*="count"]:not([class*="account"]) {
+        opacity: 1 !important;
+    }
+    .js-social-proof.social-proof-container.txt-size--13.cf.padding-al::before {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    a[rel="user"],
+    .social-proof-names.pull-right,
+    .pull-left {
+        padding: 0 !important;
+        margin: 0 !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+    }
+    button.js-user-actions-menu.btn.btn-round.btn-on-dark,
+    button.js-action-unfollow.action-text.unfollow-text {
+        min-height: 30px !important;
+        max-height: 30px !important;
+        height: 30px !important;
+        border: none !important;
+    }
+    li.js-item-launch:hover {
+        color: var(--TwitterBlue)
+    }
+    .Footer-adsModule {
+        display: none !important;
+    }
+    .facet-type,
+    .button-tray,
+    .with-column-divider-bottom,
+    .js-action-header.column-header {
+        background-color: var(--Mygray2) !important;
+    }
+    .js-detail-container,
+    .search-input,
+    .js-app-header-inner,
+    .app-navigator,
+    .app-title {
+        background-color: var(--Myback) !important;
+    }
+    .avatar {
+        border: 2px solid var(--MyB) !important;
+    }
+    .avatar:hover {
+        border: 2px solid var(--Myred1) !important;
+    }
+    li>a.btn {
+        height: 80px !important;
+        width: 80px !important;
+    }
+    .icon-sliders:hover {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        -moz-transform: scale(1.1, 1.1) !important;
+        transform: scale(1.1, 1.1) !important;
+        -moz-transform: skewY(7deg) !important;
+        transform: skewY(7deg) !important;
+    }
+    .is-selected:hover,
+    .username:hover {
+        text-decoration: none !important;
+        color: var(--MyW) !important;
+    }
+    .mdl-col-settings,
+    .compose-remember-state,
+    .compose,
+    .bg-r-white {
+        color: var(--MyB) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    div[class="bg-color-twitter-white color-twitter-dark-gray padding-v--20"],
+    .customtimeline-details,
+    .mdl-column-med,
+    .js-left-column,
+    .mdl-placeholder,
+    .js-global-settings,
+    .bg-color-twitter-lightest-gray,
+    .js-modal-panel {
+        color: var(--MyW) !important;
+        background-color: var(--Mygray2) !important;
+    }
+    div[class="js-modal-panel mdl s-full med-fullpanel"] {
+        border: 2px solid var(--Myborder) !important;
+    }
+    .controls {
+        color: var(--Myblue1) !important;
+    }
+    .detail-view-inline-text {
+        background-color: var(--Myback) !important;
+    }
+    .attribution:hover,
+    .column-head-title:hover {
+        text-decoration: none !important;
+        color: var(--Myred1) !important;
+        cursor: pointer !important;
+    }
+    header.js-detail-header.column-header {
+        background-color: var(--Myback) !important;
+    }
+    .search-input,
+    .compose-text {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray2) !important;
+    }
+    .compose-text-container,
+    .compose-reply-tweet {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    .link-complex-target {
+        text-decoration: none !important;
+    }
+    html.dark .tooltip-inner,
+    .tooltip .tooltip-inner {
+        max-width: 200px;
+        padding: 5px 8px 8px 8px;
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+        text-align: center;
+        border: 1px solid var(--MyW) !important;
+        border-radius: 15px !important;
+    }
+    p[class="username"]:hover {
+        background-color: transparent !important;
+    }
+    .keyboard-shortcut-definition {
+        color: var(--MyW) !important;
+    }
+    .text-like-keyboard-key {
+        background-color: var(--MyMygray1) !important;
+    }
+    a.url-ext {
+        color: var(--Mygreen1) !important;
+    }
+    .column-type-icon.icon[class*="icon-"]:hover,
+    span.column-heading:hover,
+    a.js-other-replies-link.other-replies-link:hover,
+    a.url-ext:hover {
+        color: var(--Myred1) !important;
+    }
+    a.js-other-replies-link.other-replies-link {
+        color: var(--Myblue1) !important;
+    }
+    iframe.js-media-native-video {
+        background-color: none !important;
+    }
+    .bg-color-twitter-white {
+        background-color: var(--Mygray2) !important;
+    }
+    .bg-color-twitter-white {
+        border: 1px solid var(--Myborder) !important;
+    }
+    .column-message,
+    .js-column-header.js-action-header.flex-shrink--0.column-header {
+        border-bottom: 1px solid var(--Mygray1) !important;
+    }
+    .icon-retweet-filled {
+        display: initial !important;
+        color: var(--Mygreen1) !important;
+    }
+    .flex.flex-row,
+    .s-profile.prf,
+    .js-modal-inner,
+    .width-p--85.margin-a-auto.position-rel.padding-b--20 {
+        background: initial !important;
+        background-color: initial !important;
+        background-image: initial !important;
+        border-radius: 25px !important;
+    }
+    div[class*="js-tweet"][class*="tweet"] {
+        background-color: transparent !important;
+        background-image: none !important;
+    }
+    .mdl,
+    .js-modals-containers,
+    .js-modal-inner {
+        border-radius: 25px !important;
+    }
+    label.checkbox,
+    fieldset,
+    .js-accordion-item.js-account-settings-row.js-account-settings-summary.account-settings-row.account-settings-row.is-expanded,
+    .mdl-inner.padding-t--0v,
+    .js-modal-panel.mdl.s-fluid.s-narrow.cmp.s-minimal,
+    .l-column-scrollv.scroll-v.scroll-styled-v.scroll-alt.js-left-column.s-with-pinned,
+    .l-cell.mdl-placeholder.txt-size--16,
+    .l-column.mdl-column.mdl-column-med.mdl-column-rhs,
+    .js-right-column.scroll-v.scroll-styled-v.scroll-alt.l-fullheight,
+    .l-column-scrollv.scroll-v.scroll-styled-v.scroll-alt.js-left-column.s-with-pinned-bottom,
+    .l-column.mdl-column.mdl-column-med,
+    .mdl-content.js-mdl-content.horizontal-flow-container,
+    .js-med-tweet.med-tweet:hover,
+    .css-1dbjc4n.r-16y2uox,
+    .r-42olwf.r-1f0042m.r-1phboty.r-d045u9.r-6koalj.r-eqz5dr,
+    div[data-testid="toolBar"],
+    .bg-color-twitter-midnight-dark-gray,
+    .js-typeahead-dropdown.margin-t--6.scroll-v.scroll-styled-v,
+    .js-inreply.cmp-replyto.item-box.cf.padding-a--20,
+    .cf.padding-b--20.padding-r--20.padding-t--5,
+    .mdl-accent {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .js-quote-tweet-holder,
+    .mdl.cmp.s-inreply.l-no-txtarea.s-fluid-height,
+    .js-modal-panel.mdl.s-tall-fixed,
+    .item-box.js-tweet-box,
+    .js-modal-panel.mdl.s-full.med-fullpanel,
+    .js-global-settings.frm,
+    .drawer-header.padding-lxl.flex-shrink--0,
+    .js-account-manager-container.column-panel.accounts-drawer.border-box.flex.flex-column,
+    .js-search-filter,
+    .column-message,
+    .js-column-header.js-action-header.flex-shrink--0.column-header {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .Notification-content,
+    .css-1dbjc4n.r-1awozwy.r-18u37iz.r-195d4m8.r-1777fci.r-1jgb5lz.r-1orpq53.r-13qz1uu,
+    .column-header,
+    .page-bottom,
+    .list-explanation,
+    .js-account-manager-container.column-panel.accounts-drawer.border-box.flex.flex-column,
+    .js-column-header.js-action-header.flex-shrink--0.column-header,
+    .js-modal-panel.mdl.s-fluid.s-narrow.cmp.s-minimal,
+    .css-1dbjc4n.r-1awozwy.r-18u37iz.r-195d4m8.r-1777fci.r-1jgb5lz.r-5f36wq.r-13qz1uu,
+    .js-modal-inner.mdl.margin-v--20.s-fluid,
+    .column-header.column-header-temp.flex-shrink--0,
+    .js-column-header.js-action-header.flex-shrink--0.column-header-temp,
+    .js-modal-inner.mdl.margin-v--20.s-fluid.s-wide,
+    .js-modal-inner.mdl.margin-v--20.s-fluid.s-wide.keyboard-shortcut-list-modal,
+    .js-inline-reply.inline-reply.item-box-full-bleed.is-inline-active.position-rel,
+    .css-1dbjc4n.r-16y2uox.r-1jgb5lz.r-13qz1uu,
+    .flex.flex-column.height-p--100.bg-color-twitter-midnight-dark-gray,
+    .button-tray.padding-a--6,
+    .js-accordion-item,
+    .js-drawer.drawer.wide,
+    .js-popover-content.scroll-none,
+    .cf.padding-b--20.padding-r--20.padding-t--5,
+    .js-modal-panel.mdl.s-short,
+    header.drawer-header.padding-lxl.flex-shrink--0,
+    .prf-actions {
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+        /*background: -moz-linear-gradient(top, rgba(188, 50, 53, 1) 0%, rgba(153, 12, 14, 1) 34%, rgba(147, 29, 31, 1) 67%, rgba(79, 15, 16, 1) 100%) !important;*/
+    }
+    .js-detail-header,
+    .js-column-header.js-action-header,
+    div[data-testid="filterMessage"] {
+        border: 1px solid var(--MyB) !important;
+    }
+    .js-icon-favorite.icon.icon-favorite-toggle.txt-center.pull-left {
+        color: #a01744 !important;
+    }
+    .js-icon-favorite.icon.icon-favorite-toggle.txt-center.pull-left.icon-heart-filled {
+        color: #e0245e !important;
+    }
+    .icon.icon-reply,
+    .icon.icon-reply.txt-center.pull-left {
+        color: #00588f !important;
+    }
+    .icon.icon-reply.txt-center.pull-left.icon-reply-filled {
+        color: #1da1f2 !important;
+    }
+    .js-icon-retweet.icon.icon-retweet-toggle.txt-center.pull-left {
+        color: #348300 !important;
+    }
+    .js-icon-retweet.icon.icon-retweet-toggle.txt-center.pull-left.icon-retweet-filled {
+        color: #72f21d !important;
+    }
+    a span.txt-ellipsis:hover {
+        color: #1da1f2 !important;
+    }
+    .lst-profile li a:hover {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        color: var(--TwitterBlue) !important;
+    }
+    .icon.icon-close.icon-center-24::before {
+        padding: 5px !important;
+    }
+    .icon-reply {
+        color: var(--Mygreen3) !important;
+    }
+    .icon-retweet {
+        color: var(--Myblue2) !important;
+    }
+    .color-twitter-darker-gray {
+        color: #657786
+    }
+    .color-twitter-white {
+        color: #fff !important
+    }
+    .color-twitter-gray {
+        color: var(--Myred1) !important;
+    }
+    .color-twitter-blue {
+        color: #1da1f2 !important;
+    }
+    .color-twitter-red {
+        color: #e0245e
+    }
+    .color-twitter-deep-red {
+        color: #a01744
+    }
+    .color-twitter-green {
+        color: #17bf63
+    }
+    .color-twitter-deep-black {
+        color: #14171a
+    }
+    .color-twitter-dark-black {
+        color: #38444d
+    }
+    .color-twitter-dark-gray {
+        color: var(--Myred1) !important;
+    }
+    .color-twitter-black {
+        color: #000
+    }
+    .color-twitter-yellow {
+        color: #ffad1f
+    }
+    .color-transparent {
+        color: initial !important
+    }
+    .text-like-keyboard-key,
+    .bg-color-twitter-white {
+        background-color: #fff !important
+    }
+    .bg-color-twitter-blue {
+        background-color: #1da1f2
+    }
+    .bg-color-twitter-deep-blue {
+        background-color: #005fd1
+    }
+    .bg-color-twitter-medium-blue {
+        background-color: #1da1f2
+    }
+    .bg-color-twitter-deep-black {
+        background-color: #38444d
+    }
+    .bg-color-twitter-red {
+        background-color: #e0245e
+    }
+    .bg-color-twitter-light-gray {
+        background-color: var(--Myred1) !important;
+    }
+    .bg-color-twitter-lightest-gray {
+        background-color: var(--Myred1) !important;
+    }
+    .bg-color-twitter-midnight-dark-gray {
+        background-color: #15202b
+    }
+    .bg-color-twitter-midnight-darkest-gray {
+        background-color: #10171e
+    }
+    .bg-color-twitter-yellow {
+        background-color: #ffad1f
+    }
+    .bg-color-transparent {
+        background-color: initial !important;
+    }
+    .hover-bg-color-twitter-white:focus,
+    .hover-bg-color-twitter-white:hover {
+        background-color: #fff
+    }
+    .hover-bg-color-twitter-lightest-gray:focus,
+    .hover-bg-color-twitter-lightest-gray:hover {
+        background-color: var(--Myred1) !important;
+    }
+    .hover-bg-color-twitter-faint-blue:focus,
+    .hover-bg-color-twitter-faint-blue:hover {
+        background-color: var(--Myred1) !important;
+    }
+    .border-color-twitter-blue {
+        border-color: #1da1f2
+    }
+    .border-color-twitter-white {
+        border-color: #fff
+    }
+    .is-inverted-light {
+        color: var(--Myred1) !important;
+    }
+    .is-inverted-light a,
+    .is-inverted-light a:active,
+    .is-inverted-light a:focus,
+    .is-inverted-light a:hover {
+        color: #8899a6
+    }
+    .is-inverted-light .txt-mute {
+        color: #8899a6
+    }
+    .is-inverted-light .txt-mute a:not(:hover):not(:focus) {
+        color: #8899a6
+    }
+    .is-inverted-light .account-link {
+        color: #e1e8ed
+    }
+    .is-inverted-light .account-bio {
+        color: #8899a6
+    }
+    .js-detail-view-inline.detail-view-inline {
+        position: initial !important;
+        background-color: transparent !important;
+    }
+    .application.js-app button.js-show-drawer,
+    .application.js-app button.js-header-action {
+        width: 200px !important;
+        margin-left: -10px !important;
+        padding-left: 5px;
+    }
+    .application.js-app.is-condensed button.js-show-drawer,
+    .application.js-app.is-condensed button.js-header-action {
+        width: 60px !important;
+        margin-left: -10px !important;
+        padding-left: 5px;
+    }
+}

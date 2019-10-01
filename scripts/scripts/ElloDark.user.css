@@ -1,0 +1,71 @@
+/* ==UserStyle==
+@name        Ello Dark
+@namespace   http://192.168.0.3/scripts/scripts/ElloDark.user.css
+@updateURL   http://192.168.0.3/scripts/scripts/ElloDark.user.css
+@version     0.0.2
+@description Ello Tweaks
+@author Dana Meli
+@homepageURL https://github.com/DanaMW
+==/UserStyle== */
+
+@-moz-document domain("ello.co") {
+    .css-1qps6j3,
+    .Footer {
+        display: none !important;
+    }
+    .isBoxControl,
+    .css-1apv0r4,
+    main,
+    .Navbar,
+    .StreamContainer,
+    .Omnibar {
+        color: var(--Mytext) !important;
+        background-color: var(--Myback) !important;
+    }
+    .css-1fznh7h:hover,
+    .DraggableUsername:hover,
+    .css-8rp27d,
+    a.NavbarLink {
+        color: var(--Myred1) !important;
+    }
+    .PostHeaderAuthorName,
+    a.NavbarLink:hover {
+        color: var(--MyW) !important;
+    }
+    g {
+        filter: invert(100%) !important;
+    }
+    .navbar-content.css-6f2fea {
+        background-color: transparent !important;
+    }
+    .navbar-content.css-6f2fea,
+    .Paginator,
+    .isSignUp,
+    button,
+    .NavbarOmniButton {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        text-decoration: none !important;
+        border: 1px solid var(--Mytext) !important;
+        color: var(--Myred1) !important;
+        border-radius: 5px !important;
+        background: transparent linear-gradient(180deg, hsl(0, 0%, 50%), hsl(0, 0%, 0%) 85%, hsl(0, 0%, 33%)) !important
+    }
+    .Paginator:hover,
+    .isSignUp:hover,
+    button:hover,
+    .NavbarOmniButton:hover {
+        color: var(--MyW) !important;
+        border-radius: 5px !important;
+        background-color: transparent !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsla(0, 100%, 50%, .8) 0%, transparent 99%), linear-gradient(180deg, hsl(0, 0%, 50%), hsl(0, 0%, 0%) 85%, hsl(0, 0%, 33%)) !important
+    }
+    .CommentHeader {
+        background-color: var(--Mygray3) !important;
+        color: var(--Myred2) !important;
+    }
+    .editor-region {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+}

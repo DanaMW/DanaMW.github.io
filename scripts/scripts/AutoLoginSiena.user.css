@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name        AutoLogin SienaSuites
+@namespace   http://192.168.0.3/scripts/scripts/AutoLoginSiena.user.css
+@updateURL   http://192.168.0.3/scripts/scripts/AutoLoginSiena.user.css
+@version     0.0.21
+@description SienaSuites AutoLogin
+@author      Dana Meli
+@homepageURL https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("sienasuiteshotel.com"),
+domain("204.98.64.46") {
+    body {
+        background-color: var(--Myback) !important;
+        color: var(--Mytext) !important;
+    }
+    table#table1 {
+        background-color: var(--Mygray3) !important;
+        border: 2px solid var(--Mygray1) !important;
+        text-align: center !important;
+    }
+    td[align="center"]:not([bgcolor*="#232074"]) {
+        background-color: var(--Mygray3) !important;
+    }
+    td[bgcolor*="#232074"] {
+        color: var(--MyW) !important;
+        background-color: var(--Myred2) !important;
+    }
+    textarea {
+        background-color: var(--Mygray2) !important;
+    }
+    html {
+        content: "expression(window.top.close())";
+        display: content;
+    }
+    /* link[href="http://www.sienasuiteshotel.com/en-us"] { expression(tab.close()); } */
+    /* AutoLog.user.css high-priority-global-notificationbox */
+    /* Clearsigned file isn't valid, got 'NOSPLIT' (does the  network require authentication?) */
+}

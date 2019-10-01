@@ -1,0 +1,40 @@
+/* new tab tools */
+
+@-moz-document url("moz-extension://e006f8ac-ca34-4218-b6dd-9cc97aa204e7/newTab.xhtml"),
+url("moz-extension://03010bc7-78ca-4a64-93a2-808a525ab693/newTab.xhtml") {
+    body {
+        background-color: hsl(0, 0%, 10%);
+        --shadow-hover: rgb(255, 0, 0);
+        display: initial;
+    }
+    body[style='background-image: url("blob:moz-extension://706b453b-1c62-44b5-baf1-036f4e5f1545/415bd019-3827-4019-a1c6-f7da92e718f1");'] {
+        background-image: url("blob:moz-extension://706b453b-1c62-44b5-baf1-036f4e5f1545/415bd019-3827-4019-a1c6-f7da92e718f1") !important;
+    }
+    div[id="background-fake"] {
+        background-image: url("blob:moz-extension://706b453b-1c62-44b5-baf1-036f4e5f1545/415bd019-3827-4019-a1c6-f7da92e718f1") !important;
+    }
+    .newtab-site .newtab-title {
+        color: rgb(200, 200, 200) !important;
+    }
+    .newtab-site:active .newtab-title,
+    .newtab-site:hover .newtab-title {
+        color: rgb(255, 255, 255) !important;
+    }
+    .newtab-thumbnail,
+    .custom-thumbnail {
+        border-radius: 5px !important;
+        border: 1px solid var(--MyX1) !important;
+        border-radius: 15px !important;
+    }
+    .newtab-thumbnail[dragged],
+    .newtab-site:hover {
+        opacity: 1;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.5), 0px 0px 10px rgba(8, 22, 37, 0.3) !important;
+        background-color: hsla(0, 0%, 100%, 0.2) !important;
+        border: 1px solid #ff0000 !important;
+        border-radius: 15px !important;
+    }
+    .newtab-site:active {
+        background-color: hsla(0, 100%, 50%, 0.472) !important;
+    }
+}

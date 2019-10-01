@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name        PmateHunter Dark
+@namespace   http://192.168.0.3/Scripts/scripts/PmateHunterDark.user.css
+@updateURL   http://192.168.0.3/Scripts/scripts/PmateHunterDark.user.css
+@version     0.0.3
+@description PmateHunter Dark
+@author      Dana Meli
+@homepageURL https://DanaMW/github.io
+==/UserStyle== */
+
+@-moz-document url-prefix("https://pmatehunter.com") {
+    div {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+}

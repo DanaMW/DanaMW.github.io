@@ -1,0 +1,164 @@
+/* ==UserStyle==
+@name         Pinterest Dark
+@namespace    http://192.168.0.3/Scripts/scripts/PinterestDark.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/PinterestDark.user.css
+@version      0.0.8
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+@preprocessor default
+@var range smove "Move Top Right"[0, 0, 1000, 5, "px"]
+==/UserStyle== */
+
+@-moz-document domain("pinterest.com"),
+regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|ca|se|jp|fr|de|es|ch|dk|nz|ch|ie|pt|ru)\\/.*") {
+    .Jea.TpD.XiG.hs0.mQ8.qJc.zI7.iyn.Hsu,
+    html,
+    body {
+        background: var(--MyBack) !important;
+        color: var(--MyW) !important;
+    }
+    /*
+    .Jea.jzS.zI7.iyn.Hsu,
+    .C9q.Cii.Jea.RDc.mQ8.ujU.zI7.iyn.Hsu {
+        background-color: var(--Mygray3);
+        color: var(--MyW) !important;
+    }
+    */
+    .Yl-.MIw.Hb7 {
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    .tBJ.dyH.iFc.SMy.MF7.pBj.DrD.IZT.swG,
+    span,
+    h4,
+    h5,
+    a {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
+    }
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    div[style*="display"],
+    form[name="search"] {
+        background-color: transparent !important;
+        border: none !important;
+        border-bottom-color: transparent !important;
+    }
+    input.SearchBoxInput {
+        position: relative;
+        width: 700px !important;
+        left: var(--smove);
+    }
+    input[name="q"] {
+        background-color: var(--Mygray3) !important;
+        border-radius: 25px !important;
+        border: 1px solid var(--Myborder) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+    }
+    /*
+    .MIw.Rym.zI7.iyn.Hsu {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .xcv,
+    */
+    .ReactBoardInfoBar,
+    .fixedHeader,
+    .appContent {
+        background-color: var(--Myred3) !important;
+    }
+    .gpV.zI7.iyn.Hsu {
+        background-color: transparent !important;
+    }
+    .qJc.xcv.L4E.zI7.iyn.Hsu,
+    .HeaderContent,
+    .qJc.xcv.L4E.zI7.iyn.Hsu {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: none !important;
+        background: transparent !important;
+        background-color: transparent !important;
+    }
+    .qJc.xcv.L4E.zI7.iyn.Hsu,
+    .HeaderContent,
+    .qJc.xcv.L4E.zI7.iyn.Hsu {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        border: none !important;
+    }
+    .C9q.Jea.Shl.gjz.jzS.mQ8.zI7.iyn.Hsu {
+        border-radius: 50% !important;
+    }
+    .C9q.Jea.Shl.gjz.jzS.mQ8.zI7.iyn.Hsu:hover,
+    .Jea.gjz.hA-.hs0.mQ8.wYR.zI7.iyn.Hsu:hover,
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: 1px solid var(--MyB) !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    .C9q.Jea.Shl.gjz.jzS.mQ8.zI7.iyn.Hsu:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    .pinWrapper [style*="background-color: rgb(0, 0, 0); opacity: 0.3"] {
+        opacity: 0 !important;
+    }
+    .MIw.QLY.Rym.ojN.p6V.zI7.iyn.Hsu:hover {
+        box-shadow: 0px 3px 4px 5px var(--Myred1) !important;
+    }
+    .XiG.zI7.iyn.Hsu {
+        z-index: 10000;
+    }
+    img[src="https://i.imgur.com/N7XY1gz.png"] {
+        filter: invert(1) !important;
+    }
+    .underlineLink,
+    h2,
+    h3 {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    .value,
+    ._w7 {
+        color: var(--MyW) !important;
+    }
+    .tBJ.dyH.iFc.SMy.MF7.pBj.DrD.IZT.mWe.z-6 {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+}

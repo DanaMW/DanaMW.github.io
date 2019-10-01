@@ -1,0 +1,53 @@
+/* ==UserStyle==
+@name         DistrowatchDark
+@namespace    http://192.168.0.3/scripts/scripts/DistrowatchDark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/DistrowatchDark.user.css
+@version      0.0.2
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("distrowatch.com") {
+    html,
+    body {
+        background-color: var(--MyB) !important
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+    th,
+    td {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    li::marker {
+        color: var(--Myred1) !important;
+    }
+    select,
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+    }
+    .dropmenu {
+        background-color: var(--Myred3) !important;
+    }
+    .dropdown-content {
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    .dropdown-content a:hover {
+        background-color: var(--Myred2) !important;
+        color: var(--MyW) !important;
+    }
+    .dropbtn:hover {
+        background-color: var(--Myred2) !important;
+        color: var(--Mygreen1) !important;
+    }
+    td>a:hover {
+        color: var(--Myred1) !important;
+    }
+}

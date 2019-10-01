@@ -1,0 +1,64 @@
+/* ==UserStyle==
+@name         TheDailyBeastDark
+@namespace    http://192.168.0.3/scripts/scripts/TheDailyBeastDark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/TheDailyBeastDark.user.css
+@version      0.0.2
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("thedailybeast.com") {
+    article,
+    .StoryBody,
+    .NavDesktop__wrapper,
+    nav,
+    section,
+    html,
+    body {
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+    }
+    * {
+        scrollbar-width: none !important;
+        text-decoration: none !important;
+    }
+    p,
+    a {
+        color: var(--MyW) !important;
+    }
+    h1 {
+        color: var(--Myred1) !important;
+        text-shadow: -1px 1px var(--MyW) !important;
+    }
+    h3 {
+        color: var(--Mygreen1) !important;
+    }
+    a.TrackingLink {
+        color: var(--MyB) !important;
+    }
+    a.TrackingLink.LinkWrapper,
+    a.LinkWrapper.LinkWrapper--external {
+        color: var(--Myblue1) !important;
+    }
+    a.TrackingLink.LinkWrapper:hover,
+    a.LinkWrapper.LinkWrapper--external:hover {
+        color: var(--Myred1) !important;
+    }
+    .ShareButton,
+    .TrackingLink.ShareButton__link,
+    footer,
+    .StoryFooter.StoryFooter--with-tips {
+        display: none !important;
+    }
+    a.TrackingLink.ReadThisListItem {
+        background-color: var(--Mygray2) !important;
+    }
+    a.TrackingLink.ReadThisListItem:hover {
+        background-color: var(--MyX1) !important;
+    }
+    .NavSubDesktop,
+    .NavMainDesktop__wrapper {
+        background-color: var(--Myred3) !important;
+    }
+}

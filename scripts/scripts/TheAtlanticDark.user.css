@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name         The Atlantic Dark
+@namespace    http://192.168.0.3/Scripts/scripts/TheAtlanticDark.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/TheAtlanticDark.user.css
+@version      0.0.2
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("theatlantic.com") {
+    html,
+    body.t-article {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    a {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
+    }
+    h1,
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    p {
+        color: var(--Mygreen1) !important;
+    }
+}

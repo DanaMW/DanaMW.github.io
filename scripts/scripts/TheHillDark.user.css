@@ -1,0 +1,56 @@
+/* ==UserStyle==
+@name         The Hill Dark
+@namespace    http://192.168.0.3/Scripts/scripts/TheHillDark.user.css
+@updateURL    http://192.168.0.3/Scripts/scripts/TheHillDark.user.css
+@version      0.0.2
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("thehill.com") {
+    body {
+        background-color: var(--Myback) !important;
+    }
+    .scrolling-content {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .rollover-people a {
+        color: var(--Myblue1) !important;
+    }
+    .rollover-people:hover {
+        color: var(--Myred1) !important;
+    }
+    div,
+    span,
+    a,
+    p,
+    h1 {
+        color: var(--MyW) !important;
+    }
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+    .sidebars {
+        background-color: var(--Mygray2) !important;
+    }
+    .block-menu-menu-top-menu,
+    #edit-actions,
+    #navigation,
+    .expanded-menu,
+    .menu-wrapper,
+    li {
+        background-color: var(--Myred3) !important;
+    }
+    #block-social-share-social-share {
+        display: none !important;
+    }
+    #page-title {
+        color: var(--Myred1) !important;
+    }
+    #layout {
+        display: none !important;
+    }
+}

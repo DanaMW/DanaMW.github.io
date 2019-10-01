@@ -1,0 +1,229 @@
+/* ==UserStyle==
+@name         OneDriveDark
+@namespace   http://192.168.0.3/Scripts/scripts/OneDriveDark.user.css
+@updateURL   http://192.168.0.3/Scripts/scripts/OneDriveDark.user.css
+@version      0.0.10
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("onedrive.live.com") {
+    .LeftNav-subLinksAsComponent .od-PremiumUpsellBanner.od-PremiumUpsellBanner--cursor {
+        display: none !important;
+    }
+    * {
+        text-decoration: none !important;
+    }
+    span[data-automationid="name"] {
+        color: var(--MyW) !important;
+    }
+    div[data-automationid="DetailsRow"],
+    .StorageOptions-newPage-plans,
+    div[data-bind*="css"] {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    .od-MessageBar-content {
+        background-color: var(--Myred2) !important;
+        color: var(--MyW) !important;
+        /**/
+    }
+    span[class*="ms-DetailsHeader-cellName"],
+    div[data-automationid="DetailsHeader"] {
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    div[data-automationid="FieldRenderer-name"],
+    .ms-Tile,
+    .LeftPane,
+    body {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
+    #c_ln,
+    div[class*="od-PlanCard"] {
+        background-color: var(--Mygray2) !important;
+    }
+    .c_clogo,
+    #c_cb0,
+    #c_header {
+        background-image: none !important;
+        background: transparent !important;
+    }
+    #c_cb0,
+    #c_header,
+    div[id*="NavHeader"],
+    #SuiteNav-0 {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: 1px solid var(--Myred1) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--Myred1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    div.StorageOptions-marketDropdown.od-Dropdown {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        background-image: none !important;
+    }
+    #c_clogoc,
+    li a.c_gl,
+    input[type="button"],
+    input[type="submit"],
+    div.StorageOptions-marketDropdown.od-Dropdown,
+    .o365cs-nav-appTileBackground,
+    a[class*="contextMenuItem"],
+    a.LeftNav-subLink,
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred2) !important;
+        border-left: 1px solid var(--Myred2) !important;
+        border-bottom: 1px solid var(--Myred3) !important;
+        border-right: 1px solid var(--Myred3) !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    #c_clogoc:hover,
+    li.active a.c_gl,
+    li a.c_gl:hover,
+    input[type="button"]:hover,
+    input[type="submit"]:hover,
+    div.od-Dropdown:hover,
+    .o365cs-nav-appTileBackground:hover,
+    a[class*="contextMenuItem"]:hover,
+    a.LeftNav-subLink:hover,
+    a.LeftNav-subLink[aria-selected="true"],
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Myred3) !important;
+        border-left: 1px solid var(--Myred3) !important;
+        border-bottom: 1px solid var(--Myred2) !important;
+        border-right: 1px solid var(--Myred2) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--MyX1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    #c_clogoc:active,
+    li a.c_gl:active,
+    input[type="button"]:active,
+    input[type="submit"]:active,
+    div.od-Dropdown:active,
+    .o365cs-nav-appTileBackground:active,
+    a[class*="contextMenuItem"]:active,
+    a.LeftNav-subLink:active,
+    a.LeftNav-subLink[aria-selected="true"]:active,
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-top: 1px solid var(--Mygreen2) !important;
+        border-left: 1px solid var(--Mygreen2) !important;
+        border-bottom: 1px solid var(--Mygreen3) !important;
+        border-right: 1px solid var(--Mygreen3) !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .od-TopBar-item.od-TopBar-commandBar.od-BasePage-commandBar {
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    .ProgressBar-value.ProgressBar-value--under {
+        background-color: var(--Myred1) !important;
+    }
+    .ProgressBar-track,
+    div.od-QuotaBar div.od-QuotaBar-total,
+    div[role="menubar"] {
+        background-color: var(--Myred3) !important;
+        color: var(--Myred3) !important;
+    }
+    div.od-QuotaBar div.od-QuotaBar-used {
+        background-color: var(--Myred1) !important;
+        color: var(--Myred1) !important;
+    }
+    #c_ln h2,
+    h3,
+    label,
+    span[data-bind*="text"],
+    a {
+        color: var(--MyW) !important;
+    }
+    .od-PhotoPreferences-title,
+    label:hover,
+    div[role="link"]:hover,
+    h1,
+    span.od-LeftNav-linkGroupHeaderTitle,
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    div.InfoPane-itemDetails-name,
+    dt {
+        color: var(--Myred1) !important;
+        background-color: transparent !important;
+    }
+    .InfoPane-itemDetails-sizeAndDate,
+    dd {
+        color: var(--MyW) !important;
+    }
+    .od-SearchBox,
+    div[role="dialog"] {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    input[role="search"],
+    /* .od-SearchBox.od-SearchBox--active input, */
+    textarea,
+    .od-SharingSection-PermissionsPile {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    #uxp_ftr_control,
+    .LeftNav-fadient::after {
+        display: none !important;
+    }
+    .contextMenuPopup {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+    div[aria-label="App launcher opened"] {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+}

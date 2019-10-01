@@ -1,0 +1,167 @@
+/* Imagus */
+
+@-moz-document url-prefix("moz-extension://431508db-96ad-4395-9f34-525def3b6945/options.html"),
+url-prefix("moz-extension://1ddee977-23b3-448b-b9b5-c9f4cec54ddc/options.html") {
+     ::-moz-selection {
+        background: rgb(255, 0, 0) !important;
+    }
+     ::selection {
+        background: rgb(255, 3, 3) !important;
+    }
+    html {
+        background-color: var(--Myback) !important;
+    }
+    body {
+        background-color: var(--Myback) !important;
+        box-shadow: 0 0 4px #FFF !important;
+        -webkit-box-shadow: 0 0 4px #FFF !important;
+    }
+    span,
+    b,
+    li,
+    .clean,
+    a {
+        color: #FFF !important;
+        text-decoration: none
+    }
+    h4,
+    a:hover {
+        color: #ff0000 !important;
+    }
+    #importer {
+        background-image: -webkit-linear-gradient(top, #fff, rgba(245, 245, 255, .9)) !important;
+        background-image: linear-gradient(to bottom, #fff, rgba(245, 245, 255, .9)) !important;
+        box-shadow: 0 0 5px #666 !important;
+        -webkit-box-shadow: 0 0 5px #666 !important;
+    }
+    #importer>b:hover {
+        text-shadow: 0 0 10px rgb(255, 255, 255) !important;
+    }
+    #importer input:checked+label+label {
+        color: rgb(255, 0, 0) !important;
+    }
+    hr {
+        border: 1px solid #eee !important;
+    }
+    #right_panel>aside {
+        background-color: var(--Myback) !important;
+        box-shadow: 2px 2px 2px #aaa !important;
+        -webkit-box-shadow: 2px 2px 2px #aaa !important;
+    }
+    body.advanced .advanced,
+    #right_panel>aside>.advanced {
+        color: #ff0000 !important;
+    }
+    .logo:hover {
+        box-shadow: 0 0 10px rgb(0, 195, 255) !important;
+        -webkit-box-shadow: 0 0 10px rgb(0, 191, 255) !important;
+    }
+    nav>a {
+        color: #FFF !important;
+    }
+    nav>a:hover {
+        border-bottom: 3px solid #aaf !important;
+        color: var(--Myred1) !important;
+    }
+    nav>.active {
+        color: #fff !important;
+        border-bottom: 3px solid rgb(255, 255, 255) !important;
+    }
+    .tip {
+        color: #fff !important;
+    }
+    .tip:hover {
+        background-color: var(--Myback) !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
+        color: #FFF !important;
+        border: 1px solid #ddd !important;
+        box-shadow: 0 0 10px #dedede !important;
+        -webkit-box-shadow: 0 0 10px #dedede !important;
+    }
+    .tip::before {
+        border-left: 2px solid #b97070 !important;
+        color: #fff !important;
+        text-shadow: 0 0 3px rgb(255, 255, 255), 0 0 3px rgb(255, 255, 255) !important;
+    }
+    .prow:hover label:not(.checkbox),
+    label:not(.checkbox):hover {
+        color: #FFF !important;
+    }
+    input,
+    textarea,
+    select,
+    code,
+    .checkbox {
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
+        background-color: var(--Myback) !important;
+        border: 1px solid #ddd !important;
+        color: #fff !important;
+    }
+    label {
+        color: var(--Myred1) !important;
+    }
+    code {
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
+        border: 1px solid rgb(255, 255, 255) !important;
+    }
+    input[type="checkbox"]:checked+.checkbox {
+        color: #616161 !important;
+    }
+    .shortcuts>label:hover input {
+        border: 1px solid rgb(255, 255, 255) !important;
+    }
+    .op_buttons>button,
+    .action_buttons>span,
+    .file_button {
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
+        color: #fff !important;
+        border: 1px solid rgb(255, 255, 255) !important;
+    }
+    .op_buttons>button,
+    .file_button {
+        box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) !important;
+        -webkit-box-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) !important;
+    }
+    .op_buttons>button:hover,
+    .file_button:hover {
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.5) inset !important;
+        -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 0.5) inset !important;
+    }
+    #sieve_container>div.opened {
+        box-shadow: 1px 1px 5px #bbb !important;
+        -webkit-box-shadow: 1px 1px 5px #bbb !important;
+        border-left: 2px solid #b97070 !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
+    }
+    #sieve_container>div:not(.opened)>span:hover {
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
+        border: 1px solid rgb(255, 255, 255) !important;
+    }
+    #sieve_container>.disabled>span {
+        text-shadow: 0 0 5px #888 !important;
+        color: red !important;
+    }
+    #sieve_container>.selected>span {
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
+    }
+    #sieve_container>.move {
+        background: var(--Myback) !important;
+        border: 1px solid rgb(255, 255, 255) !important;
+    }
+    #sieve_container span.focus,
+    #sieve_container span.focus:hover {
+        background: var(--Myback) !important;
+        color: #fff;
+        border: 1px solid rgb(255, 255, 255) !important
+    }
+    tabpanels {
+        background-color: transparent;
+    }
+}

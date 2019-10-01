@@ -1,0 +1,25 @@
+/* ==UserStyle==
+@name         Universal Dark
+@namespace    http://192.168.0.3/scripts/scripts/Universal Dark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/Universal Dark.user.css
+@version      0.0.2
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document regex("*://*.*/*") {
+    div,
+    html,
+    body {
+        Background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+    }
+    a,
+    b,
+    p,
+    h1,
+    h2 {
+        color: var(--MyW) !important;
+    }
+}

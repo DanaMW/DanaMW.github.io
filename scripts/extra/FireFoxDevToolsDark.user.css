@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name         FireFox DevTools Dark
+@namespace    http://192.168.0.3/scripts/scripts/FireFoxDevToolsDark.user.css
+@updateURL    http://192.168.0.3/scripts/scripts/FireFoxDevToolsDark.user.css
+@description  My Variable Colors For DevTools
+@version      0.0.2
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
+==/UserStyle==*/
+
+
+/* @-moz-document url("toolbox-container") { */
+
+:root {
+    --theme-tab-toolbar-background: --theme-toolbar-background: --theme-selection-background: --theme-selection-color: --theme-splitter-color: --theme-comment: --theme-body-background: --theme-sidebar-background: --theme-contrast-background: --theme-body-color: --theme-body-color-alt: --theme-content-color1: --theme-content-color2: --theme-content-color3: --theme-highlight-blue: --theme-highlight-purple: --theme-highlight-pink: --theme-highlight-red: --theme-highlight-orange: --theme-highlight-lightorange: --theme-highlight-green: --theme-highlight-bluegrey: --theme-highlight-yellow:
+}
