@@ -34,7 +34,7 @@ html {
     width: 100%;
     height: 100%;
     background-color: hsla(0, 0%, 18%, 1);
-    background: url("/image/mybg.gif") repeat;
+    background: url("/img/mybg.gif") repeat;
 }
 
 body {
