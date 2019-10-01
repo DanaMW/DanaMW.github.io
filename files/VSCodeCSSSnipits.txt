@@ -1,0 +1,187 @@
+{
+    // Place your snippets for css here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "Add Important": {
+        "prefix": "!important",
+        "body": [
+            "!important;",
+        ],
+        "description": "!important;"
+    },
+    "MyB": {
+        "prefix": "var(--MyB)",
+        "body": [
+            "var(--MyB) !important;",
+        ],
+        "description": "var(--MyB) "
+    },
+    "MyW": {
+        "prefix": "var(--MyW)",
+        "body": [
+            "var(--MyW) !important;",
+        ],
+        "description": "var(--MyW) "
+    },
+    "Myback": {
+        "prefix": "var(--Myback)",
+        "body": [
+            "var(--Myback) !important;",
+        ],
+        "description": "var(--Myback) "
+    },
+    "Mytext": {
+        "prefix": "var(--Mytext)",
+        "body": [
+            "var(--Mytext) !important;",
+        ],
+        "description": "var(--Mytext) "
+    },
+    "Myred1": {
+        "prefix": "var(--Myred1)",
+        "body": [
+            "var(--Myred1) !important;",
+        ],
+        "description": "var(--Myred1) "
+    },
+    "Myred2": {
+        "prefix": "var(--Myred2)",
+        "body": [
+            "var(--Myred2) !important;",
+        ],
+        "description": "var(--Myred2) "
+    },
+    "Myred3": {
+        "prefix": "var(--Myred3)",
+        "body": [
+            "var(--Myred3) !important;",
+        ],
+        "description": "var(--Myred3) "
+    },
+    "Mygray1": {
+        "prefix": "var(--Mygray1)",
+        "body": [
+            "var(--Mygray1) !important;",
+        ],
+        "description": "var(--Mygray1) "
+    },
+    "Mygray2": {
+        "prefix": "var(--Mygray2)",
+        "body": [
+            "var(--Mygray2) !important;",
+        ],
+        "description": "var(--Mygray2) "
+    },
+    "Mygray3": {
+        "prefix": "var(--Mygray3)",
+        "body": [
+            "var(--Mygray3) !important;",
+        ],
+        "description": "var(--Mygray3) "
+    },
+    "Mygreen1": {
+        "prefix": "var(--Mygreen1)",
+        "body": [
+            "var(--Mygreen1) !important;",
+        ],
+        "description": "var(--Mygreen1) "
+    },
+    "Mygree2": {
+        "prefix": "var(--Mygreen2)",
+        "body": [
+            "var(--Mygreen2) !important;",
+        ],
+        "description": "var(--Mygreen2) "
+    },
+    "Mygreen3": {
+        "prefix": "var(--Mygreen3)",
+        "body": [
+            "var(--Mygreen3) !important;",
+        ],
+        "description": "var(--Mygreen3) "
+    },
+    "Myblue1": {
+        "prefix": "var(--Myblue1)",
+        "body": [
+            "var(--Myblue1) !important;",
+        ],
+        "description": "var(--Myblue1) "
+    },
+    "Myblue2": {
+        "prefix": "var(--Myblue2)",
+        "body": [
+            "var(--Myblue2) !important;",
+        ],
+        "description": "var(--Myblue2) "
+    },
+    "Myblue3": {
+        "prefix": "var(--Myblue3)",
+        "body": [
+            "var(--Myblue3) !important;",
+        ],
+        "description": "var(--Myblue3) "
+    },
+    "MyX1": {
+        "prefix": "var(--MyX1)",
+        "body": [
+            "var(--MyX1) !important;",
+        ],
+        "description": "var(--MyX1) "
+    },
+    "MyX2": {
+        "prefix": "var(--MyX2)",
+        "body": [
+            "var(--MyX2) !important;",
+        ],
+        "description": "var(--MyX2) "
+    },
+    "MyX3": {
+        "prefix": "var(--MyX3)",
+        "body": [
+            "var(--MyX3) !important;",
+        ],
+        "description": "var(--MyX3) "
+    },
+    "MyX4": {
+        "prefix": "var(--MyX4)",
+        "body": [
+            "var(--MyX4) !important;",
+        ],
+        "description": "var(--MyX4) "
+
+    },
+    "MyXB": {
+        "prefix": "var(--MyXB)",
+        "body": [
+            "var(--MyXB) !important;",
+        ],
+        "description": "var(--MyXB) "
+
+    },
+    "MyXW": {
+        "prefix": "var(--MyXW)",
+        "body": [
+            "var(--MyXW) !important;",
+        ],
+        "description": "var(--MyXW) "
+
+    },
+    "Myborder": {
+        "prefix": "var(--Myborder)",
+        "body": [
+            "var(--Myborder) !important;",
+        ],
+        "description": "var(--Myborder) "
+
+    }
+}
