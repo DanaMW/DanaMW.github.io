@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <link rel="icon" href="img/Dark Trek Backdrop.png" type="image/png" />
     <title>Hippy HangOut on Github</title>
+    <!---->
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script>
         $(function() {
@@ -14,19 +15,36 @@
             $("#includedMore").load("/_layouts/top.html");
         });
     </script>
+    -->
 </head>
 
 <body>
     <div>
-        <img id="banner" style="position: fixed; top: 0px; left: 0px; right: 0px; width: 100%; height: 50px; background: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 100%, 50%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important; z-index: 10000; opacity: 1; border: none;"
+        <img id="banner" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; height: 50px; background: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 100%, 50%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important; z-index: -1; opacity: 2; border: none;"
             img />
     </div>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    </link>
     <div>
-        <div id="includedContent"></div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/jscripts">JS-Scripts</a>
+            <a href="/scripts">CSS-Scripts</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/video">Video</a>
+            <a href="/dev">Development</a>
+            <a href="/about">About</a>
+        </nav>
     </div>
     <div>
-        <div id="includedMore"></div>
+        <div class="vertical-menu">
+            <a href="mailto://danamw@gmail.com">Mail Me</a>
+            <a href="http://github.com/danamw">My Repo's</a>
+            <a href="https://github.com/DanaMW/PowerShell-TuneUp">PowerShell Repo</a>
+            <a href="http://192.168.0.3/fiamma">Fiamma's Web</a>
+            <a href="https://github.com/DanaMW/StrangeScript">StrangeScript</a>
+            <a href="https://github.com/DanaMW/DiscordWeb">DiscordWeb</a>
+        </div>
     </div>
 </body>
 
