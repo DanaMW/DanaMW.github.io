@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        CNN Dark
-@namespace   http://192.168.0.3/scripts/scripts/CnnDark.user.css
-@updateURL   http://192.168.0.3/scripts/scripts/CnnDark.user.css
-@version     0.0.11
-@description Some CNN Tweaks
-@author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@name         CNN Dark
+@namespace    https://danamw.github.io/scripts/scripts/CnnDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CnnDark.user.css
+@version      0.0.12
+@description  Some CNN Tweaks
+@author       Dana Meli
+@homepageURL  https://danamw.github.com
 ==/UserStyle==*/
 
 @-moz-document domain("cnn.com") {
