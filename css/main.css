@@ -4,6 +4,8 @@ img {
 
 * {
     text-decoration: none !important;
+    scrollbar-width: thin;
+    scrollbar-color: #7e0000 #ff0000;
 }
 
 a:link {
