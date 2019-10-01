@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en-US ">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="image/eyeball24.png" type="image/png" />
+    <!-- <img src='image/background.png' style='position:fixed;top:0;left:0;right:0;bottom:0;width:100vw;height:100%;background-position:center;background-repeat:no-repeat;background-size:cover;border:none;z-index:-1;'> -->
+    <title>Hippy HangOut on TorchLight</title>
+</head>
+
+<body>
+    <div>
+        <img id="banner" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; height: 50px; background: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 100%, 50%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important; z-index: -1; opacity: 2; border: none;" img />
+    </div>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/Scripts">Scripts</a>
+            <a href="/Gallery">Gallery</a>
+            <a href="/about">About</a>
+        </nav>
+    </div>
+
+</body>
+</html>
+
+<lu id="menu" class="word1">
+    Menu<lu>
+        <button id="button1" href="mailto://danamw@gmail.com" class="mwords">Mail Me</button>
+        <button id="button2" href="http://github.com/danamw" class="mwords">My Repo's</button>
+        <button id="button3" href="https://github.com/DanaMW/PowerShell-TuneUp" class="mwords">PowerShell Repo</button>
+        <button id="button4" href="http://192.168.0.3/fiamma" class="mwords">Fiamma's Web</button>
+        <button id="button5" href="https://github.com/DanaMW/StrangeScript" class="mwords">StrangeScript</button>
+    </lu>
+</lu>
+
+<link rel="icon" href="Lighting128.png" type="image/png" />
+<h1>Gallery</h1>
+<p>I am begining work on my personal <em>Art Gallery<em> to display a lifetime of collected art. See ya soon.</p>
+<p>
+    <a href="Storms/index.html" class="button">  Storms  </a>
+    <a href="" class="button">  Ballons </a>
+    <a href="" class="button">Street Art</a>
+    <a href="" class="button">  Nature  </a>
+<p>
