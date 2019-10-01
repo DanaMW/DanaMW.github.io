@@ -1,19 +1,19 @@
 // ==UserScript==
-// @name         YouTubeNoGuide
-// @version      0.0.3
-// @namespace    http://192.168.0.3/jscripts/scripts/YouTubeNoGuide.user.js
-// @updateURL    http://192.168.0.3/jscripts/scripts/YouTubeNoGuide.user.js
-// @description  Bye Bye YT Guide.
-// @author       Dana Meli
-// @icon         http://192.168.0.3/image/eyeball128.png
-// @grant        GM_registerMenuCommand
-// @grant        GM_unregisterMenuCommand
-// @grant        GM_getValue
-// @grant        GM_setValue
-// @include      http://*.youtube.com/*
-// @include      https://*.youtube.com/*
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
-// @require      https://raw.githubusercontent.com/uzairfarooq/arrive/master/minified/arrive.min.js
+// @name          YouTubeNoGuide
+// @version       0.0.4
+// @namespace     https://danamw.github.io/jscripts/scripts/YouTubeNoGuide.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/YouTubeNoGuide.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @description   Bye Bye YT Guide.
+// @author        Dana Meli
+// @grant         GM_registerMenuCommand
+// @grant         GM_unregisterMenuCommand
+// @grant         GM_getValue
+// @grant         GM_setValue
+// @include       http://*.youtube.com/*
+// @include       https://*.youtube.com/*
+// @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @require       https://raw.githubusercontent.com/uzairfarooq/arrive/master/minified/arrive.min.js
 // ==/UserScript==
 /* jshint esversion: 6 */
 /* eslint-disable require-jsdoc */

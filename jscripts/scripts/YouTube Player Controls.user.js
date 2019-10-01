@@ -1,13 +1,15 @@
 // ==UserScript==
-// @name        YouTube Player Controls
-// @namespace   YouTubePlayerControls
-// @version     1.2.8
-// @description Fill window, float video, set HD resolution, skip ads, hide annotations, repeat button, pause at start/end, disable autoplay.
-// @author      Costas
-// @match       http://www.youtube.com/*
-// @match       https://www.youtube.com/*
-// @grant       GM_setValue
-// @grant       GM_getValue
+// @name          YouTube Player Controls
+// @namespace     https://danamw.github.io/jscripts/scripts/YouTubePlayerControls.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/YouTubePlayerControls.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @version       1.2.8
+// @description   Fill window, float video, set HD resolution, skip ads, hide annotations, repeat button, pause at start/end, disable autoplay.
+// @author        Costas
+// @match         http://www.youtube.com/*
+// @match         https://www.youtube.com/*
+// @grant         GM_setValue
+// @grant         GM_getValue
 // @noframes
 // ==/UserScript==
 
@@ -123,12 +125,12 @@ function newNode(kind, id, classname, refnode, position) {
                     refnode.parentNode.appendChild(node);
                 break;
 
-            //insert before refnode
+                //insert before refnode
             case 'before':
                 refnode.parentNode.insertBefore(node, refnode);
                 break;
 
-            //insert as first child of refnode                  
+                //insert as first child of refnode
             case 'first':
                 var child = refnode.childNodes[0];
                 if (child != null)
@@ -137,7 +139,7 @@ function newNode(kind, id, classname, refnode, position) {
                     refnode.appendChild(node);
                 break;
 
-            //insert as last child of refnode
+                //insert as last child of refnode
             case 'last':
             default:
                 refnode.appendChild(node);
@@ -256,13 +258,33 @@ function ytplayer_state(attr, value) {
 }
 
 
-function set_loop() { ytplayer_state('loop', 'true'); }
-function set_noloop() { ytplayer_state('loop', 'false'); }
-function set_pause_end() { ytplayer_state('pause_end', 'true'); }
-function set_nopause_end() { ytplayer_state('pause_end', 'false'); }
-function reset_pause_end_mark() { ytplayer_state('pause_end_mark', 'false'); }
-function success_pause() { return ytplayer_state('pause_status') == 'success'; }
-function success_quality() { return ytplayer_state('quality_status') == 'success'; }
+function set_loop() {
+    ytplayer_state('loop', 'true');
+}
+
+function set_noloop() {
+    ytplayer_state('loop', 'false');
+}
+
+function set_pause_end() {
+    ytplayer_state('pause_end', 'true');
+}
+
+function set_nopause_end() {
+    ytplayer_state('pause_end', 'false');
+}
+
+function reset_pause_end_mark() {
+    ytplayer_state('pause_end_mark', 'false');
+}
+
+function success_pause() {
+    return ytplayer_state('pause_status') == 'success';
+}
+
+function success_quality() {
+    return ytplayer_state('quality_status') == 'success';
+}
 
 
 function adjust_pause_end() {
@@ -289,8 +311,7 @@ function adjust_loop(noflip) {
     if (inloop) {
         node.setAttribute("loop", "true");
         node.title = "Repeat is ON";
-    }
-    else {
+    } else {
         node.removeAttribute("loop");
         node.title = "Repeat is OFF";
     }
@@ -384,7 +405,7 @@ function new_checkbox(prefname, str, node_kind, parent, value, func, hide1, hide
     if (!value) {
         input.checked = get_pref(prefname);
         if (hide1 && !input.checked) parent.setAttribute("hide", "true");
-        input.onclick = function (e) {
+        input.onclick = function(e) {
             var val = get_pref(prefname);
             if (hide2 && parent.getAttribute("hide")) val = !val; //no change if hidden
             set_pref(prefname, !val);
@@ -396,11 +417,10 @@ function new_checkbox(prefname, str, node_kind, parent, value, func, hide1, hide
                     parent.setAttribute("hide", "true");
             if (func) func();
         };
-    }
-    else {
+    } else {
         input.value = value;
         input.checked = (get_pref(prefname) == input.value);
-        input.onclick = function (e) {
+        input.onclick = function(e) {
             var val = get_pref(prefname);
             set_pref(prefname, e.target.value);
             e.target.checked = true;
@@ -431,19 +451,34 @@ function ytplayer_options() {
     var closemark = newNode("span", null, "ytpc_options_close", popup);
     closemark.textContent = "\u2716";
     closemark.title = "close";
-    closemark.onclick = function (e) { e.stopPropagation(); close_ytplayer_options(); }
+    closemark.onclick = function(e) {
+        e.stopPropagation();
+        close_ytplayer_options();
+    }
 
     var groupCine = newNode("div", null, "ytpc_options_group space", popup);
-    new_checkbox("ytCine", "Fill Window", "span", groupCine, null, function () { resetTheaterMode(); win.location.reload(); }, true, false);
-    new_checkbox("ytStretch", "Stretch", "span", groupCine, null, function () { cinema(0); }, false, true);
-    new_checkbox("ytHide", "Hide Search", "span", groupCine, null, function () { cinema(0); }, false, true);
+    new_checkbox("ytCine", "Fill Window", "span", groupCine, null, function() {
+        resetTheaterMode();
+        win.location.reload();
+    }, true, false);
+    new_checkbox("ytStretch", "Stretch", "span", groupCine, null, function() {
+        cinema(0);
+    }, false, true);
+    new_checkbox("ytHide", "Hide Search", "span", groupCine, null, function() {
+        cinema(0);
+    }, false, true);
 
     var groupFloat = newNode("div", null, "ytpc_options_group column", popup);
-    new_checkbox("ytFloat", "Float Video", "span", groupFloat, null, function () { win.location.reload(); }, true, false);
+    new_checkbox("ytFloat", "Float Video", "span", groupFloat, null, function() {
+        win.location.reload();
+    }, true, false);
     new_checkbox("ytFSmall", "Float Minimize", "span", groupFloat, null, null, false, true);
-    
+
     var groupAutoplay = newNode("div", null, "ytpc_options_group column", popup);
-    new_checkbox("ytAutoPlay", "Disable Autoplay", "span", groupAutoplay, null, function () { reset_nochanges(); autoplay(20); });
+    new_checkbox("ytAutoPlay", "Disable Autoplay", "span", groupAutoplay, null, function() {
+        reset_nochanges();
+        autoplay(20);
+    });
     new_checkbox("ytLButton", "Repeat Button", "span", groupAutoplay, null, build_yt_control);
 
     var groupAdds = newNode("div", null, "ytpc_options_group column", popup);
@@ -508,8 +543,7 @@ function build_yt_control() {
                 img.src = loopsrc;
                 adjust_loop("noflip");
             }
-        }
-        else {
+        } else {
             set_pref("ytLoop", false);
             adjust_loop("noflip");
             if (loop) {
@@ -602,14 +636,12 @@ function cinema(start_count) {
     if (hide && !fullscreen) { //hide or show search bar
         if (H >= height + 56) {
             showmast(false);
-        }
-        else {
+        } else {
             hidemast(true);
             if (doc.body.scrollTop || doc.documentElement.scrollTop)
                 showmast(true);
         }
-    }
-    else
+    } else
         showmast(false);
 
     //check at most 6 times
@@ -644,7 +676,9 @@ var floatheight = 0;
 var floatbot = 0;
 
 function reset_float(page) {
-    if (page.getAttribute("float") != null) win.setTimeout(function () { win.dispatchEvent(new Event('resize')) }, 100);
+    if (page.getAttribute("float") != null) win.setTimeout(function() {
+        win.dispatchEvent(new Event('resize'))
+    }, 100);
     page.removeAttribute("float");
     page.parentNode.parentNode.removeAttribute("float");
     insertStyle("", "ytpc_style_float");
@@ -669,8 +703,8 @@ function float(start_count) {
 
     var intheater = page.getAttribute("theater") != null;
     var fullscreen = page.getAttribute("fullscreen") != null;
-    var vid = intheater || fullscreen ? docsearch("//*[@id='player-theater-container']").snapshotItem(0)
-        : docsearch("//*[@id='primary-inner']/*[@id='player']").snapshotItem(0);
+    var vid = intheater || fullscreen ? docsearch("//*[@id='player-theater-container']").snapshotItem(0) :
+        docsearch("//*[@id='primary-inner']/*[@id='player']").snapshotItem(0);
     if (!vid) return;
 
     var val = vid.getBoundingClientRect();
@@ -700,16 +734,14 @@ function float(start_count) {
     if (intheater || fullscreen) {
         if (floatheight > 0)
             thres = inpltop || fullscreen ? floatheight - 296 : floatheight - 240;
+    } else
+    if (small) {
+        if (floatheight > 0)
+            thres = floatheight - 220;
+    } else {
+        if (vheight > 0)
+            thres = 1;
     }
-    else
-        if (small) {
-            if (floatheight > 0)
-                thres = floatheight - 220;
-        }
-        else {
-            if (vheight > 0)
-                thres = 1;
-        }
 
     if (scrollT >= thres && thres > 0) {
         page.setAttribute("float", "");
@@ -730,15 +762,13 @@ function float(start_count) {
 				ytd-watch-flexy[float] #player-container {position: fixed !important; top:56px !important; " + lroff + " width: " + width + "px !important; height: " + height + "px !important; z-index:1000 !important;}\
                 ytd-watch-flexy[float] .html5-main-video {width: " + width + "px !important; height: " + height + "px !important;}\
 				", "ytpc_style_float");
-            }
-            else {
+            } else {
                 insertStyle("\
                 ytd-watch-flexy[float] #player-container {position: fixed !important; top:80px !important; " + lroff + " width: " + vwidth + "px !important; height: " + vheight + "px !important; z-index:1000 !important;}\
                 ", "ytpc_style_float");
             }
         }
-    }
-    else {
+    } else {
         reset_float(page);
     }
 }
@@ -763,13 +793,11 @@ function autoplay(start_count) {
                         simulClick(abutton);
                     }
                 }
-            }
-            else {
+            } else {
                 insertStyle(style_autoplay, "ytpc_style_autoplay");
                 anode.setAttribute("ytpc_disable_autoplay", "true");
             }
-    }
-    else {
+    } else {
         insertStyle("", "ytpc_style_autoplay");
         anode.removeAttribute("ytpc_disable_autoplay");
     }
@@ -792,11 +820,12 @@ function skip_ads(start_count) {
             if (adds[0].style.display != "none") {
                 adds_on = true;
             }
-        }
-        else {
+        } else {
             if (adds_on) { //adds turned off
                 //win.dispatchEvent(new Event('resize'));
-                win.setTimeout(function () { win.dispatchEvent(new Event('resize')) }, 100);
+                win.setTimeout(function() {
+                    win.dispatchEvent(new Event('resize'))
+                }, 100);
             }
             adds_on = false;
         }
@@ -804,7 +833,9 @@ function skip_ads(start_count) {
         var fs = (docsearch("//ytd-page-manager/ytd-watch-flexy[@fullscreen]").snapshotLength > 0);
         if (fs != fs_on) {
             //win.dispatchEvent(new Event('resize'));
-            win.setTimeout(function () { win.dispatchEvent(new Event('resize')) }, 100);
+            win.setTimeout(function() {
+                win.dispatchEvent(new Event('resize'))
+            }, 100);
             //alert("fullscreen");
         }
         fs_on = fs;
@@ -843,8 +874,7 @@ function auto_load(start_count) {
         if (start_count >= 5) {
             simulClick(button1);
             button1.setAttribute("buttonclicked", "true");
-        }
-        else
+        } else
             button1.removeAttribute("buttonclicked");
     }
 
@@ -853,8 +883,7 @@ function auto_load(start_count) {
         if (start_count >= 3) {
             simulClick(button2);
             button2.setAttribute("buttonclicked", "true");
-        }
-        else
+        } else
             button2.removeAttribute("buttonclicked");
     }
 }
@@ -876,11 +905,26 @@ var has_focus = false;
 ytplayer_script();
 insertStyle(style_basic, "ytpc_style_basic");
 
-win.addEventListener("focus", function () { reset_nochanges(); }, false);
-win.addEventListener("blur", function () { reset_nochanges(); }, false);
-win.addEventListener("resize", function () { reset_nochanges(); cinema(0); float(1); }, false);
-win.addEventListener("scroll", function () { reset_nochanges(); cinema(0); float(1); }, false);
-win.addEventListener("click", function (e) { reset_nochanges(); close_ytplayer_options(e); }, false);
+win.addEventListener("focus", function() {
+    reset_nochanges();
+}, false);
+win.addEventListener("blur", function() {
+    reset_nochanges();
+}, false);
+win.addEventListener("resize", function() {
+    reset_nochanges();
+    cinema(0);
+    float(1);
+}, false);
+win.addEventListener("scroll", function() {
+    reset_nochanges();
+    cinema(0);
+    float(1);
+}, false);
+win.addEventListener("click", function(e) {
+    reset_nochanges();
+    close_ytplayer_options(e);
+}, false);
 
 function reset_nochanges() {
     nochanges_count = -1;
@@ -911,8 +955,7 @@ function check_changes() {
     if (old_addr == win.location.href) {
         if (nochanges_count < 20) nochanges_count++;
         if (start_count < 20) start_count++;
-    }
-    else {
+    } else {
         old_addr = win.location.href;
         nochanges_count = 0;
         start_count = 0;

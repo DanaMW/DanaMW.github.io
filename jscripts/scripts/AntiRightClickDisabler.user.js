@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name          AntiRightClickDisabler
-// @namespace     http://192.168.0.3/jscripts/scripts/AntiRightClickDisabler.user.js
-// @updateURL     http://192.168.0.3/jscripts/scripts/AntiRightClickDisabler.user.js
-// @icon          http://192.168.0.3/image/eyeball128.png
+// @namespace     https://danamw.github.io/jscripts/scripts/AntiRightClickDisabler.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/AntiRightClickDisabler.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
 // @description   restore context menus on sites that try to disable them
 // @include       *://*/*
 // @exclude       http://mail.google.com/*
 // @exclude       https://mail.google.com/*
-// @version       0.0.3
+// @version       0.0.4
 // ==/UserScript==
 
 (function() {

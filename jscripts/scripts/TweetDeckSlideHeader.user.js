@@ -1,16 +1,16 @@
 // ==UserScript==
-// @name         TweetDeckSlideHeader
-// @version      0.0.3
-// @namespace    http://192.168.0.3/jscripts/scripts/TweetDeckSlideHeader.user.js
-// @updateURL    http://192.168.0.3/jscripts/scripts/TweetDeckSlideHeader.user.js
-// @description  It makes SomeScript Darker.
-// @author       Dana Meli
-// @icon         https://danamw.github.io/img/eyeball128.png
-// @include      https://twitter.com/*
-// @include      http://twitter.com/*
-// @include      http://*.twitter.com/*
-// @include      https://*.twitter.com/*
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @name          TweetDeckSlideHeader
+// @version       0.0.4
+// @namespace     https://danamw.github.io/jscripts/scripts/TweetDeckSlideHeader.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/TweetDeckSlideHeader.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @description   It makes SomeScript Darker.
+// @author        Dana Meli
+// @include       https://twitter.com/*
+// @include       http://twitter.com/*
+// @include       http://*.twitter.com/*
+// @include       https://*.twitter.com/*
+// @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
 // ==/UserScript==
 /* jshint esversion: 6 */
 /* require-jsdoc  */

@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         RedirectSearchesToGoogle
-// @version      0.0.3
-// @namespace    http://192.168.0.3/jscripts/scripts/RedirectSearchesToGoogle.user.js
-// @UpdateURL    http://192.168.0.3/jscripts/scripts/RedirectSearchesToGoogle.user.js
-// @description  Go to Google.
-// @author       Dana Meli
-// @icon         http://192.168.0.3/image/eyeball128.png
-// @match        *://*/*
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
-// @require      https://raw.githubusercontent.com/uzairfarooq/arrive/master/minified/arrive.min.js
+// @name          RedirectSearchesToGoogle
+// @version       0.0.4
+// @namespace     https://danamw.github.io/jscripts/scripts/RedirectSearchesToGoogle.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/RedirectSearchesToGoogle.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @description   Go to Google.
+// @author        Dana Meli
+// @match         *://*/*
+// @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @require       https://raw.githubusercontent.com/uzairfarooq/arrive/master/minified/arrive.min.js
 // ==/UserScript==
 /* jshint esversion: 6 */
 /* require-jsdoc  */

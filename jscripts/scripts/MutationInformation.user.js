@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         MutationInformation
-// @namespace    http://192.168.0.3/jscripts/scripts/MutationInformation.user.js
-// @UpdateURL    http://192.168.0.3/jscripts/scripts/MutationInformation.user.js
-// @version      0.0.3
-// @description  Mutation Information Script
-// @author       Dana Meli
-// @icon         http://192.168.0.3/image/eyeball128.png
-// @include      /https?://discordapp\.com/channels/*/
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
-// @grant        none
+// @name          MutationInformation
+// @namespace     https://danamw.github.io/jscripts/scripts/MutationInformation.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/MutationInformation.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @version       0.0.4
+// @description   Mutation Information Script
+// @author        Dana Meli
+// @include       /https?://discordapp\.com/channels/*/
+// @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @grant         none
 // ==/UserScript==
 
 var foo = document.getElementById('code');

@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name        InstagramAllowSaveImage
-// @namespace   http://192.168.0.3/jscripts/scripts/InstagramAllowSaveImage.user.js
-// @updateURL   http://192.168.0.3/jscripts/scripts/InstagramAllowSaveImage.user.js
-// @icon        http://192.168.0.3/image/eyeball128.png
-// @include     https://www.instagram.com/*
-// @version     1.15
-// @require     https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
-// @grant       none
-// @run-at      document-end
+// @name          InstagramAllowSaveImage
+// @namespace     https://danamw.github.io/jscripts/scripts/InstagramAllowSaveImage.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/InstagramAllowSaveImage.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @include       https://www.instagram.com/*
+// @version       1.16
+// @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @grant         none
+// @run-at        document-end
 // @description Allow "Save image as..." on context menu of Instagram.
 // @description KNOWN ISSUE: can't save videos.
 // ==/UserScript==

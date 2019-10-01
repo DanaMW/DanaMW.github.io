@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         ShowURLLocationToConsole
-// @namespace    http://192.168.0.3/jscripts/scripts/ShowURLLocationToConsole.user.js
-// @updateURL    http://192.168.0.3/jscripts/scripts/ShowURLLocationToConsole.user.js
-// @version      0.0.5
-// @icon         http://192.168.0.3/image/eyeball128.png
-// @description  Some Damn UserScript
-// @author       Dana Meli
-// @match        *://*/*
-// @grant        none
+// @name          ShowURLLocationToConsole
+// @namespace     https://danamw.github.io/jscripts/scripts/ShowURLLocationToConsole.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/ShowURLLocationToConsole.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @version       0.0.6
+// @description   Some Damn UserScript
+// @author        Dana Meli
+// @match         *://*/*
+// @grant         none
 // ==/UserScript==
 
 console.log('-=-=-=-=-=-=-=[Loading From Location]->: ' + location.href);

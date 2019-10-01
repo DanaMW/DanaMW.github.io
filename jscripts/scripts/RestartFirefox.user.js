@@ -1,14 +1,14 @@
 // ==UserScript==
-// @name         RestartFirefox
-// @namespace    http://192.168.0.3/jscripts/scripts/RestartFirefox.user.js
-// @updateURL    http://192.168.0.3/jscripts/scripts/RestartFirefox.user.js
-// @version      0.0.3
-// @description  Some Damn UserScript
-// @author       Dana Meli
-// @icon         http://192.168.0.3/image/eyeball128.png
-// @match        *
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
-// @grant        none
+// @name          RestartFirefox
+// @namespace     https://danamw.github.io/jscripts/scripts/RestartFirefox.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/RestartFirefox.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @version       0.0.5
+// @description   Some Damn UserScript
+// @author        Dana Meli
+// @match         *://*/*
+// @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
+// @grant         none
 // ==/UserScript==
 
 

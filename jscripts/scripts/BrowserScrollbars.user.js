@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name          BrowserScrollbars
-// @namespace     http://192.168.0.3/jscripts/scripts/BrowserScrollbars.user.js
-// @updateURL     http://192.168.0.3/jscripts/scripts/BrowserScrollbars.user.js
-// @version       0.0.2
+// @namespace     https://danamw.github.io/jscripts/scripts/BrowserScrollbars.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/BrowserScrollbars.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @version       0.0.3
 // @description   Some Damn BrowserScrollbars
 // @author        Dana Meli
-// @icon          http://192.168.0.3/image/eyeball128.png
 // @match         *://*/*
 // @grant         none
 // ==/UserScript==

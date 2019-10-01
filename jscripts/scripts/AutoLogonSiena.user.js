@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name          AutoLogonSiena
-// @namespace     http://192.168.0.3/jscripts/scripts/AutoLogonSiena.user.js
-// @updateURL     http://192.168.0.3/jscripts/scripts/AutoLogonSiena.user.js
-// @version       0.0.4
+// @namespace     https://danamw.github.io/jscripts/scripts/AutoLogonSiena.user.js
+// @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/AutoLogonSiena.user.js
+// @icon          https://danamw.github.io/img/eyeball128.png
+// @version       0.0.5
 // @description   Our Open Router Auto logon Script
 // @author        Dana Meli
-// @icon          http://192.168.0.3/image/eyeball128.png
 // @include       http://204.98.64.46:1111*
 // @include       http://*sienasuiteshotel.com*
 // @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
