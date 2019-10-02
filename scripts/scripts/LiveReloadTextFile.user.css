@@ -2,7 +2,7 @@
 @name         Live Reload Text File
 @namespace    https://danamw.github.io/scripts/scripts/LiveReloadTextFile.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/LiveReloadTextFile.user.css
-@version      0.0.9
+@version      0.0.10
 @author       Dana Meli
 @description  Dark Style Text File.
 @homepageURL  https://DanaMW.github.io
@@ -12,7 +12,7 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("file:"),
-url-prefix("http://192.168.0.3/scripts/scripts/") {
+url-prefix("http://danamw.github.io/scripts/scripts/") {
     body {
         background-color: var(--backcolor) !important;
         color: var(--textcolor) !important;
