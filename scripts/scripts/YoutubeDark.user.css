@@ -721,6 +721,6 @@ domain("studio.youtube.com") {
     }
     ytd-watch-flexy,
     .ytd-app {
-        background: url('/img/ytbg.jpg') repeat !important;
+        background: url("https://danamw.github.io/img/ytbg.jpg") repeat !important;
     }
 }
