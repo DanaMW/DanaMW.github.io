@@ -1,0 +1,23 @@
+
+1 Install samba
+
+Install samba package.
+
+$ sudo dnf install -y samba
+$ sudo systemctl enable smb nmb
+
+Open port with using service file of firewall-cmd.
+
+$ sudo firewall-cmd --add-service=samba --permanent
+$ sudo firewall-cmd --reload
+
+Enable access to home directory without samba_share_t label.
+
+$ sudo setsebool -P samba_enable_home_dirs on
+
+This article will not use other boolean value but below boolean values should be checked.
+smbd_anon_write 	Allow guest write
+samba_export_all_ro 	Allow read without samba_share_t
+samba_export_all_rw 	Allow read/write without samba_share_t
+
+Please see redhat manual for more information.
