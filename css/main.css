@@ -20,6 +20,16 @@ header {
     background-color: none;
 }
 
+#header {
+    position: fixed;
+    border: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+}
+
 img#banner {
     position: fixed;
     background: #ff0000;
