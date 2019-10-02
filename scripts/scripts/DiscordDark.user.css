@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        Discord Dark
-@namespace   http://192.168.0.3/scripts/scripts/DiscordDark.user.css
-@updateURL   http://192.168.0.3/scripts/scripts/DiscordDark.user.css
-@version     0.0.37
-@description Dark Discord Style
-@author      Dana Meli
-@homepageURL https://danamw.github.io
+@name         Discord Dark
+@namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
+@version      0.0.38
+@description  Dark Discord Style
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("discordapp.com") {

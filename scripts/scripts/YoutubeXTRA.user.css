@@ -1,11 +1,11 @@
 /*==UserStyle==
-@name        YouTubeXTRA Dark
-@namespace   http://192.168.0.3/Scripts/scripts/YoutubeXTRA.user.css
-@updateURL   http://192.168.0.3/Scripts/scripts/YoutubeXTRA.user.css
-@version     0.0.50
-@description YouTube Tweaks
-@author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@name         YouTubeXTRA Dark
+@namespace    https://danamw.github.io/Scripts/scripts/YoutubeXTRA.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/scripts/YoutubeXTRA.user.css
+@version      0.0.51
+@description  YouTube Tweaks
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
 @preprocessor default
 @var range smove "Slide Search Bar"[0, 0, 100, 1, "vw"]
 @var range swidth "Resize search input"[750, 0, 750, 1, "px"]

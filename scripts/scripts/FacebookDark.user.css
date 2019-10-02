@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        Facebook Dark
-@namespace   http://192.168.0.3/scripts/scripts/FacebookDark.user.css
-@updateURL   http://192.168.0.3/scripts/scripts/FacebookDark.user.css
-@version     0.0.3
-@description Facebook Dark
-@author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@name         Facebook Dark
+@namespace    https://danamw.github.io/scripts/scripts/FacebookDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FacebookDark.user.css
+@version      0.0.4
+@description  Facebook Dark
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document regexp("http(s)?://(?!business|developers|docs.google).*\.facebook\.com/(?!(v[0-9].[0-9]/)?plugins/|Fplugins|plugins/like).*"),

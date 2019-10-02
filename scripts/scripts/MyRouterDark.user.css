@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name        MyRouterDark.user.css
-@namespace   http://192.168.0.3/Scripts/scripts/MyRouterDark.user.css
-@updateURL   http://192.168.0.3/Scripts/scripts/MyRouterDark.user.css
-@version     0.0.6
-@description My Router Dark
-@homepageURL https://github.com/DanaMW
+@name         MyRouterDark.user.css
+@namespace    https://danamw.github.io/Scripts/scripts/MyRouterDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/scripts/MyRouterDark.user.css
+@version      0.0.7
+@description  My Router Dark
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document url-prefix("http://192.168.0.1"),

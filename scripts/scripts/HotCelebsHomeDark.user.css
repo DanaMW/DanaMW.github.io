@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        HotCelebsHome Dark
-@namespace   http://192.168.0.3/Scripts/scripts/HotCelebsHomeDark.user.css
-@updateURL   http://192.168.0.3/Scripts/scripts/HotCelebsHomeDark.user.css
-@version     0.0.3
-@description HotCelebsHome Dark Tweaks
-@author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@name         HotCelebsHome Dark
+@namespace    https://danamw.github.io/Scripts/scripts/HotCelebsHomeDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/scripts/HotCelebsHomeDark.user.css
+@version      0.0.5
+@description  HotCelebsHome Dark Tweaks
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("hotcelebshome.com") {

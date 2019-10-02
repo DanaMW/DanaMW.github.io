@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name         Stylus Dark
-@namespace    http://192.168.0.3/scripts/scripts/StylusDark.user.css
-@updateURL    http://192.168.0.3/scripts/scripts/StylusDark.user.css
-@version      0.0.19
+@namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
+@version      0.0.20
 @description  Trying to fix shit.
 @author       Dana Meli
-@homepageURL  https://github.com/DanaMW
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document regexp("chrome-extension://.*"),

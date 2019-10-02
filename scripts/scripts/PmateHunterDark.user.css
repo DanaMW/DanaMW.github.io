@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        PmateHunter Dark
-@namespace   http://192.168.0.3/Scripts/scripts/PmateHunterDark.user.css
-@updateURL   http://192.168.0.3/Scripts/scripts/PmateHunterDark.user.css
-@version     0.0.3
-@description PmateHunter Dark
-@author      Dana Meli
-@homepageURL https://DanaMW/github.io
+@name         PmateHunter Dark
+@namespace    https://danamw.github.io/Scripts/scripts/PmateHunterDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/scripts/PmateHunterDark.user.css
+@version      0.0.4
+@description  PmateHunter Dark
+@author       Dana Meli
+@homepageURL  https://DanaMW/github.io
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://pmatehunter.com") {

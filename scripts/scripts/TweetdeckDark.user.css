@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name         TweetDeck Dark
-@namespace    http://192.168.0.3/Scripts/scripts/TweetdeckDark.user.css
-@updateURL    http://192.168.0.3/Scripts/scripts/TweetdeckDark.user.css
+@namespace    https://danamw.github.io/Scripts/scripts/TweetdeckDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.65
+@version      0.0.66
 @author       Dana Meli
-@homepageURL  https://github.com/DanaMW
+@homepageURL  https://danamw.github.io
 ==/UserStyle==*/
 
 @-moz-document domain("tweetdeck.twitter.com"),

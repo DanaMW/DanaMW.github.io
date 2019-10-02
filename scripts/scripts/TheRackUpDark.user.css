@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        The RackUp Dark
-@namespace   http://192.168.0.3/Scripts/scripts/TheRackUpDark.user.css
-@updateURL   http://192.168.0.3/Scripts/scripts/TheRackUpDark.user.css
-@version     0.0.3
-@description The Rack Up
-@author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@name         The RackUp Dark
+@namespace    https://danamw.github.io/Scripts/scripts/TheRackUpDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/scripts/TheRackUpDark.user.css
+@version      0.0.4
+@description  The Rack Up
+@author       Dana Meli
+@homepageURL  https://github.com/DanaMW
 ==/UserStyle== */
 
 @-moz-document url-prefix("http://www.therackup.com") {

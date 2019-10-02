@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        The Chive Dark
-@namespace   http://192.168.0.3/Scripts/scripts/ThechiveDark.user.css
-@updateURL   http://192.168.0.3/Scripts/scripts/ThechiveDark.user.css
-@version     0.0.2
-@description Thechive Tweaks
-@author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@name         The Chive Dark
+@namespace    https://danamw.github.io/Scripts/scripts/ThechiveDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/scripts/ThechiveDark.user.css
+@version      0.0.4
+@description  Thechive Tweaks
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("thechive.com") {

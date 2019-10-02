@@ -1,11 +1,11 @@
 /* ==UserStyle==
 @name         Stylus IconXTRA
-@namespace    http://192.168.0.3/Scripts/scripts/StylusIconXTRA.user.css
-@updateURL    http://192.168.0.3/Scripts/scripts/StylusIconXTRA.user.css
-@version      0.0.6
+@namespace    https://danamw.github.io/Scripts/scripts/StylusIconXTRA.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/scripts/StylusIconXTRA.user.css
+@version      0.0.7
 @description  Trying to fix shit.
 @author       Dana Meli
-@homepageURL  https://github.com/DanaMW
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document regexp("chrome-extension://.*"),

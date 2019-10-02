@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        FreeWareFiles Dark
-@namespace   http://192.168.0.3/scripts/scripts/FreeWareFilesDark.user.css
-@updateURL   http://192.168.0.3/scripts/scripts/FreeWareFilesDark.user.css
-@version     0.0.8
-@description FreeWareFiles Dark
-@author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@name         FreeWareFiles Dark
+@namespace    https://danamw.github.io/scripts/scripts/FreeWareFilesDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FreeWareFilesDark.user.css
+@version      0.0.8
+@description  FreeWareFiles Dark
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("freewarefiles.com") {

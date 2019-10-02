@@ -1,11 +1,11 @@
 /* ==UserStyle==
-@name        GithubXTRA
-@namespace   http://192.168.0.3/scripts/scripts/GithubXTRA.user.css
-@updateURL   http://192.168.0.3/scripts/scripts/GithubXTRA.user.css
-@version     0.0.15
-@description Github Tweaks
-@author      Dana Meli
-@homepageURL https://github.com/DanaMW
+@name         GithubXTRA
+@namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
+@version      0.0.16
+@description  Github Tweaks
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("github.com"),
