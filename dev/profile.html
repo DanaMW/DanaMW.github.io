@@ -1,98 +1,156 @@
-<p><a>
-        Import-Module posh-git;
-        Import-Module oh-my-posh;
-        Import-Module Get-ChildItemColor;
-        Import-Module -Name PSReadline;
-        Add-WindowsPSModulePath;
-        Import-Module PsGet;
-        function Test-Administrator {
-        $user = [Security.Principal.WindowsIdentity]::GetCurrent()
-        (New-Object Security.Principal.WindowsPrincipal
-        $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
-        }
-        function Resolve-Error ($ErrorRecord = $Error[0]) {
-        $ErrorRecord | Format-List * -Force
-        $ErrorRecord.InvocationInfo | Format-List *
-        $Exception = $ErrorRecord.Exception
-        for ($i = 0; $Exception; $i++, ($Exception = $Exception.InnerException)) {
-        $Exception | Format-List * -Force
-        "$i" * 80
-        }
-        }
-        function Write-Color($message = "") {
-        [string]$pipedMessage = @($Input)
-        if (!$message) {
-        if ( $pipedMessage ) {
-        $message = $pipedMessage
-        }
-        }
-        if ( $message ) {
-        $colors = @("black", "blue", "cyan", "darkblue", "darkcyan", "darkgray", "darkgreen", "darkmagenta", "darkred",
-        "darkyellow", "gray", "green", "magenta", "red", "white", "yellow");
-        $defaultFGColor = $host.UI.RawUI.ForegroundColor
-        $CurrentColor = $defaultFGColor
-        $message = $message.split("#")
-        foreach ( $string in $message ) {
-        if ( $colors -contains $string.Tolower() -and $CurrentColor -eq $defaultFGColor ) { $CurrentColor = $string }
-        else {
-        write-host -NoNewLine -f $CurrentColor $string
-        $CurrentColor = $defaultFGColor
-        }
-        }
-        write-host
-        }
-        }
-        function Write-ColorPrompt($message = "") {
-        [string]$pipedMessage = @($Input)
-        if (!$message) {
-        if ( $pipedMessage ) {
-        $message = $pipedMessage
-        }
-        }
-        if ( $message ) {
-        $colors = @("black", "blue", "cyan", "darkblue", "darkcyan", "darkgray", "darkgreen", "darkmagenta", "darkred",
-        "darkyellow", "gray", "green", "magenta", "red", "white", "yellow");
-        $defaultFGColor = $host.UI.RawUI.ForegroundColor
-        $CurrentColor = $defaultFGColor
-        $message = $message.split("#")
-        foreach ( $string in $message ) {
-        if ( $colors -contains $string.Tolower() -and $CurrentColor -eq $defaultFGColor ) { $CurrentColor = $string }
-        else {
-        write-host -NoNewLine -f $CurrentColor $string
-        $CurrentColor = $defaultFGColor
-        }
-        }
-        write-host -NoNewline
-        }
-        }
-        Function Get-SmallVer {
-        $MyVer = $PSVersiontable | Select-Object -property PSVERSION | Format-Table -HideTableheader | Out-String
-        -NoNewLine
-        return "PowerShell $PSEdition $MyVer"
-        }
-        Set-Alias ghost Run-Ghost.ps1;
-        Set-Alias say Write-Host;
-        Set-Alias sayout Write-Output;
-        Set-Alias re Resolve-Error;
-        Set-Alias l Get-ChildItemColor -option AllScope;
-        Set-Alias ls Get-ChildItemColorFormatWide -option AllScope;
-        Set-Alias la Get-Files.ps1;
-        Set-Alias cc D:\bin\ccleaner\ccleaner64.exe;
-        Set-Alias wc Write-Color;
-        Set-Alias wcp Write-ColorPrompt;
-        Set-Alias ssh-agent "D:\bin\git\usr\bin\ssh-agent.exe";
-        Set-Alias ssh-add "D:\bin\git\usr\bin\ssh-add.exe";
-        $agent_is_running = Get-Process | Where-Object { $_.ProcessName -like "ssh-agent*" };
-        if (!($agent_is_running)) { Start-SshAgent -Quiet; };
-        Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete;
-        $host.privatedata.ProgressForegroundColor = "white";
-        $host.privatedata.ProgressBackgroundColor = "red";
-        $host.UI.RawUI.BackgroundColor = “Black”;
-        $Host.UI.RawUI.ForegroundColor = “Gray”;
-        $Global:GetChildItemColorVerticalSpace = 0
-        $ErrorView = ”CategoryView”;
-        WC "#red#[##yellow#PowerShell Core##red#][##cyan#Profile.ps1##red#]##white#: Loaded all Functions and Aliases#";
-    </a></p>
+<!DOCTYPE html>
+<html lang="en-US ">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/eyeball64.png" type="image/png" />
+    <title>The Hangout on Github</title>
+    <!--
+    <script src="/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function() {
+            $("#includedContent").load("/_layouts/post.html");
+        });
+        $(function() {
+            $("#includedMore").load("/_layouts/top.html");
+        });
+    </script>
+    -->
+</head>
+
+<body>
+    <div>
+        <img id="banner" style="position: absolute; top: 0px; left: 0px; right: 0px; width: 100%; height: 50px; background: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 100%, 50%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important; z-index: -1; opacity: 2; border: none;"
+            img />
+    </div>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    </link>
+    <div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/jscripts">JS-Scripts</a>
+            <a href="/scripts">CSS-Scripts</a>
+            <a href="/gallery">Gallery</a>
+            <a href="/video">Video</a>
+            <a href="/dev">Development</a>
+            <a href="/about">About</a>
+        </nav>
+    </div>
+    <div>
+        <div class="vertical-menu">
+            <a href="mailto://danamw@gmail.com">Mail Me</a>
+            <a href="http://github.com/danamw">My Repo's</a>
+            <a href="https://github.com/DanaMW/PowerShell-TuneUp">PowerShell Repo</a>
+            <a href="http://192.168.0.3/fiamma">Fiamma's Web</a>
+            <a href="https://github.com/DanaMW/StrangeScript">StrangeScript</a>
+            <a href="https://github.com/DanaMW/DiscordWeb">DiscordWeb</a>
+        </div>
+    </div>
+</body>
+
+</html>
+<center>
+    <p>
+        <a>
+            Import-Module posh-git;
+            Import-Module oh-my-posh;
+            Import-Module Get-ChildItemColor;
+            Import-Module -Name PSReadline;
+            Add-WindowsPSModulePath;
+            Import-Module PsGet;
+            function Test-Administrator {
+            $user = [Security.Principal.WindowsIdentity]::GetCurrent()
+            (New-Object Security.Principal.WindowsPrincipal
+            $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
+            }
+            function Resolve-Error ($ErrorRecord = $Error[0]) {
+            $ErrorRecord | Format-List * -Force
+            $ErrorRecord.InvocationInfo | Format-List *
+            $Exception = $ErrorRecord.Exception
+            for ($i = 0; $Exception; $i++, ($Exception = $Exception.InnerException)) {
+            $Exception | Format-List * -Force
+            "$i" * 80
+            }
+            }
+            function Write-Color($message = "") {
+            [string]$pipedMessage = @($Input)
+            if (!$message) {
+            if ( $pipedMessage ) {
+            $message = $pipedMessage
+            }
+            }
+            if ( $message ) {
+            $colors = @("black", "blue", "cyan", "darkblue", "darkcyan", "darkgray", "darkgreen", "darkmagenta",
+            "darkred", "darkyellow", "gray", "green", "magenta", "red", "white", "yellow");
+            $defaultFGColor = $host.UI.RawUI.ForegroundColor
+            $CurrentColor = $defaultFGColor
+            $message = $message.split("#")
+            foreach ( $string in $message ) {
+            if ( $colors -contains $string.Tolower() -and $CurrentColor -eq $defaultFGColor ) { $CurrentColor = $string
+            }
+            else {
+            write-host -NoNewLine -f $CurrentColor $string
+            $CurrentColor = $defaultFGColor
+            }
+            }
+            write-host
+            }
+            }
+            function Write-ColorPrompt($message = "") {
+            [string]$pipedMessage = @($Input)
+            if (!$message) {
+            if ( $pipedMessage ) {
+            $message = $pipedMessage
+            }
+            }
+            if ( $message ) {
+            $colors = @("black", "blue", "cyan", "darkblue", "darkcyan", "darkgray", "darkgreen", "darkmagenta",
+            "darkred", "darkyellow", "gray", "green", "magenta", "red", "white", "yellow");
+            $defaultFGColor = $host.UI.RawUI.ForegroundColor
+            $CurrentColor = $defaultFGColor
+            $message = $message.split("#")
+            foreach ( $string in $message ) {
+            if ( $colors -contains $string.Tolower() -and $CurrentColor -eq $defaultFGColor ) { $CurrentColor = $string
+            }
+            else {
+            write-host -NoNewLine -f $CurrentColor $string
+            $CurrentColor = $defaultFGColor
+            }
+            }
+            write-host -NoNewline
+            }
+            }
+            Function Get-SmallVer {
+            $MyVer = $PSVersiontable | Select-Object -property PSVERSION | Format-Table -HideTableheader | Out-String
+            -NoNewLine
+            return "PowerShell $PSEdition $MyVer"
+            }
+            Set-Alias ghost Run-Ghost.ps1;
+            Set-Alias say Write-Host;
+            Set-Alias sayout Write-Output;
+            Set-Alias re Resolve-Error;
+            Set-Alias l Get-ChildItemColor -option AllScope;
+            Set-Alias ls Get-ChildItemColorFormatWide -option AllScope;
+            Set-Alias la Get-Files.ps1;
+            Set-Alias cc D:\bin\ccleaner\ccleaner64.exe;
+            Set-Alias wc Write-Color;
+            Set-Alias wcp Write-ColorPrompt;
+            Set-Alias ssh-agent "D:\bin\git\usr\bin\ssh-agent.exe";
+            Set-Alias ssh-add "D:\bin\git\usr\bin\ssh-add.exe";
+            $agent_is_running = Get-Process | Where-Object { $_.ProcessName -like "ssh-agent*" };
+            if (!($agent_is_running)) { Start-SshAgent -Quiet; };
+            Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete;
+            $host.privatedata.ProgressForegroundColor = "white";
+            $host.privatedata.ProgressBackgroundColor = "red";
+            $host.UI.RawUI.BackgroundColor = “Black”;
+            $Host.UI.RawUI.ForegroundColor = “Gray”;
+            $Global:GetChildItemColorVerticalSpace = 0
+            $ErrorView = ”CategoryView”;
+            WC "#red#[##yellow#PowerShell Core##red#][##cyan#Profile.ps1##red#]##white#: Loaded all Functions and
+            Aliases#";
+        </a>
+    </p>
+</center>
 <center>
     <a href="/dev/index.html">Back</a>
 </center>
