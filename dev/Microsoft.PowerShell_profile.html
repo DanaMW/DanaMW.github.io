@@ -1,4 +1,25 @@
-``` function prompt { if ((Test-Administrator)) { Write-Host -NoNewline -ForegroundColor red "[" Write-Host -NoNewline -ForegroundColor white "Admin" Write-Host -NoNewline -ForegroundColor red "]" } Write-Host -NoNewline -ForegroundColor red "[" Write-Host
--NoNewline -ForegroundColor yellow "$ENV:USERNAME" Write-Host -NoNewline -ForegroundColor red "]" Write-Host -NoNewline -ForegroundColor red "[" Write-Host -NoNewline -ForegroundColor cyan $(Get-Location) Write-Host -NoNewline -ForegroundColor red "]"
-if ($nestedpromptlevel -ge 1) { Write-Host -NoNewline -ForegroundColor cyan ">>" } Write-Host -NoNewline -ForegroundColor gray ":" return " " } WC "#red#[##yellow#PowerShell Core# #red#][##cyan#Microsoft.PowerShell_Profile.ps1##red#]##white#: Loaded Prompt#";
-Get-SmallVer; WC "#WHITE#Welcome to ##CYAN#$env:USERDOMAIN#"; ```
+<p><a>
+        function prompt {
+        if ((Test-Administrator)) {
+        Write-Host -NoNewline -ForegroundColor red "["
+        Write-Host -NoNewline -ForegroundColor white "Admin"
+        Write-Host -NoNewline -ForegroundColor red "]"
+        }
+        Write-Host -NoNewline -ForegroundColor red "["
+        Write-Host -NoNewline -ForegroundColor yellow "$ENV:USERNAME"
+        Write-Host -NoNewline -ForegroundColor red "]"
+        Write-Host -NoNewline -ForegroundColor red "["
+        Write-Host -NoNewline -ForegroundColor cyan $(Get-Location)
+        Write-Host -NoNewline -ForegroundColor red "]"
+        if ($nestedpromptlevel -ge 1) { Write-Host -NoNewline -ForegroundColor cyan ">>" }
+        Write-Host -NoNewline -ForegroundColor gray ":"
+        return " "
+        }
+        WC "#red#[##yellow#PowerShell Core# #red#][##cyan#Microsoft.PowerShell_Profile.ps1##red#]##white#: Loaded
+        Prompt#";
+        Get-SmallVer;
+        WC "#WHITE#Welcome to ##CYAN#$env:USERDOMAIN#";
+    </a></p>
+<center>
+    <a href="/dev/index.html">Back</a>
+</center>
