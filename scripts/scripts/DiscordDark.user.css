@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.38
+@version      0.0.39
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -566,6 +566,9 @@
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
+    foreignObject>a[class*="wrapper"],
+    div[class*="expandedFolderIconWrapper"],
+    div[class*="closedFolderIconWrapper"],
     div[class*="childWrapper"],
     div[class*="blobContainer"],
     a[class*="channel"][class*="container"],
@@ -589,6 +592,9 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class*="wrapper"][class*="selected"],
+    div[class*="expandedFolderIconWrapper"]:hover,
+    div[class*="closedFolderIconWrapper"]:hover,
     div[class*="childWrapper"]:hover,
     div[class*="blobContainer"]:hover,
     div[class*="member"][class*="container"]:hover,
@@ -630,6 +636,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[class*="expandedFolderIconWrapper"]:active,
+    div[class*="closedFolderIconWrapper"]:active,
     div[class*="childWrapper"]:active,
     div[class*="blobContainer"]:active,
     div[class*="member"][class*="container"]:active,
@@ -659,6 +667,9 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    span[class*="expandedFolderBackground"] {
+        background-color: var(--MyX1) !important;
     }
     div[class*="menu"],
     div[class*="resultsGroup"],
