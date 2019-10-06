@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.11
+@version      0.0.12
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -152,5 +152,13 @@
     }
     .gb_C.gb_u {
         background-color: var(--Mygray3) !important;
+    }
+    /*
+    .boy4he {
+        background-color: var(--MyX1) !important;
+    }
+    */
+    .boy4he:hover {
+        background-color: var(--MyX1) !important;
     }
 }
