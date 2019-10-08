@@ -2,7 +2,7 @@
 @name         PowerShellGalleryDark
 @namespace    http://danamw.github.io/scripts/scripts/PowerShellGalleryDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PowerShellGalleryDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -30,8 +30,11 @@
     p {
         color: var(--Mytext) !important;
     }
+    th {
+        color: var(--Myred1) !important;
+    }
     li[role="presentation"] {
-        padding-left: 25px !important;
+        padding-left: 30px !important;
     }
     li[role="presentation"],
     button {
@@ -89,9 +92,12 @@
     .jumbotron {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    ul[role="tablist"],
+    .install-tabs,
     .shadowbox {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    #install-item-text,
     input {
         background-color: var(--Mygray3) !important;
         text-align: center !important;
@@ -108,5 +114,11 @@
     }
     .tag {
         background-color: var(--MyX1) !important;
+    }
+    a[href="#manual-download"],
+    a[href="#azure-automation"],
+    a[href="#install-item"] {
+        background-image: none !important;
+        background-color: transparent !important;
     }
 }
