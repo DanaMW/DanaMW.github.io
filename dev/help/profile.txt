@@ -28,7 +28,7 @@ function Write-Color($message = "") {
         $colors = @("black", "blue", "cyan", "darkblue", "darkcyan", "darkgray", "darkgreen", "darkmagenta", "darkred", "darkyellow", "gray", "green", "magenta", "red", "white", "yellow");
         $defaultFGColor = $host.UI.RawUI.ForegroundColor
         $CurrentColor = $defaultFGColor
-        $message = $message.split("#")
+        $message = $message.split("~")
         foreach ( $string in $message ) {
             if ( $colors -contains $string.Tolower() -and $CurrentColor -eq $defaultFGColor ) { $CurrentColor = $string }
             else {
@@ -50,7 +50,7 @@ function Write-ColorPrompt($message = "") {
         $colors = @("black", "blue", "cyan", "darkblue", "darkcyan", "darkgray", "darkgreen", "darkmagenta", "darkred", "darkyellow", "gray", "green", "magenta", "red", "white", "yellow");
         $defaultFGColor = $host.UI.RawUI.ForegroundColor
         $CurrentColor = $defaultFGColor
-        $message = $message.split("#")
+        $message = $message.split("~")
         foreach ( $string in $message ) {
             if ( $colors -contains $string.Tolower() -and $CurrentColor -eq $defaultFGColor ) { $CurrentColor = $string }
             else {
@@ -63,7 +63,7 @@ function Write-ColorPrompt($message = "") {
 }
 Function Get-SmallVer {
     $MyVer = $PSVersiontable | Select-Object -property PSVERSION | Format-Table -HideTableheader | Out-String -NoNewLine
-    return "PowerShell $PSEdition $MyVer"
+    return WC "~red~[~~white~PowerShell $PSEdition $MyVer~~red~]~"
 }
 Set-Alias ghost Run-Ghost.ps1;
 Set-Alias say Write-Host;
@@ -86,4 +86,4 @@ $host.UI.RawUI.BackgroundColor = “Black”;
 $Host.UI.RawUI.ForegroundColor = “Gray”;
 $Global:GetChildItemColorVerticalSpace = 0
 $ErrorView = ”CategoryView”;
-WC "#red#[##yellow#PowerShell Core##red#][##cyan#Profile.ps1##red#]##white#: Loaded all Functions and Aliases#";
+WC "~red~[~~yellow~PowerShell Core~~red~][~~cyan~Profile.ps1~~red~]~~white~: Loaded all Functions and Aliases~";

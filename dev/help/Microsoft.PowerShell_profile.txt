@@ -14,6 +14,6 @@ function prompt {
     Write-Host -NoNewline -ForegroundColor gray ":"
     return " "
 }
-WC "#red#[##yellow#PowerShell Core# #red#][##cyan#Microsoft.PowerShell_Profile.ps1##red#]##white#: Loaded Prompt#";
+WC "~red~[~~yellow~PowerShell Core~ ~red~][~~cyan~Microsoft.PowerShell_Profile.ps1~~red~]~~white~: Loaded Prompt~";
 Get-SmallVer;
-WC "#WHITE#Welcome to ##CYAN#$env:USERDOMAIN#";
+WC "~WHITE~Welcome to ~~CYAN~$env:USERDOMAIN~";
