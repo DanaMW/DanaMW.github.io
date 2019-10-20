@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -26,6 +26,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    .aGJE1b,
     [data-tooltip] {
         background-color: var(--MyX1) !important;
     }
@@ -57,6 +58,8 @@
         border-radius: 15px !important;
         text-align: center !important;
     }
+    div[role="tab"],
+    div[role="button"],
     div[aria-label="Main menu"],
     a[class="FKF6mc TpQm9d ZqhUjb ztUP4e vXfEse kTeh9 dHeVVb V3dfMc lSLCF MDgEWb "],
     a.gb_D.gb_If,
@@ -83,6 +86,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[role="tab"]:hover,
+    div[role="button"]:hover,
     div[aria-label="Main menu"]:hover,
     a[class="FKF6mc TpQm9d ZqhUjb ztUP4e vXfEse kTeh9 dHeVVb V3dfMc lSLCF MDgEWb "]:hover,
     a.gb_D.gb_If:hover,
@@ -116,6 +121,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[role="tab"]:active,
+    div[role="button"]:active,
     div[aria-label="Main menu"]:active,
     a[class="FKF6mc TpQm9d ZqhUjb ztUP4e vXfEse kTeh9 dHeVVb V3dfMc lSLCF MDgEWb "]:active,
     a.gb_D.gb_If:active,
