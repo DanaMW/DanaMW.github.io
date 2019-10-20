@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.66
+@version      0.0.67
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -35,18 +35,12 @@ url-prefix("https://twitter.com/i/safety/") {
     * {
         outline: none !important;
         text-decoration: none;
-        scrollbar-width: none;
+        scrollbar-width: thin;
     }
     .js-app-columns-container.app-columns-container.scroll-h.needs-scroll-bottom-offset {
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3);
     }
-    /*
-    .js-app-columns-container.app-columns-container.scroll-h.needs-scroll-bottom-offset:hover {
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--MyGreen1) var(--Myred3) !important;
-    }
-    */
     .css-1dbjc4n.r-1awozwy.r-1p0dtai.r-1777fci.r-1d2f490.r-ywje51.r-u8s1d.r-zchlnj.r-ipm5af,
     .css-901oao.r-daml9f.r-n6v787.r-19jlu03.r-285fr0.r-q4m81j {
         z-index: 10000 !important;
@@ -158,6 +152,9 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-column-scroller {
         overflow-y: scroll;
         overflow-x: hidden;
+    }
+    #column-navigator {
+        scrollbar-width: none;
     }
     b.non-selectable-item.txt-ellipsis,
     .link-complex-target,
