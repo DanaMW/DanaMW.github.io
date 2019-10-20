@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.67
+@version      0.0.68
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -35,7 +35,7 @@ url-prefix("https://twitter.com/i/safety/") {
     * {
         outline: none !important;
         text-decoration: none;
-        scrollbar-width: thin;
+        scrollbar-width: none;
     }
     .js-app-columns-container.app-columns-container.scroll-h.needs-scroll-bottom-offset {
         scrollbar-width: thin;
