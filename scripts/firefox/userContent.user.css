@@ -60,7 +60,7 @@ url("about:addons") {
     .sidebar-footer-button,
     #help-button,
     .category,
-    button:not([data-l10n-id="addon-options-button"]):not([data-l10n-id*="about-config"]) {
+    button:not([data-l10n-id="addon-options-button"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -88,7 +88,7 @@ url("about:addons") {
     .category[aria-selected="true"],
     .category[selected="true"],
     .category:hover,
-    button:hover:not([data-l10n-id="addon-options-button"]):not([data-l10n-id*="about-config"]) {
+    button:hover:not([data-l10n-id="addon-options-button"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -108,7 +108,7 @@ url("about:addons") {
     .sidebar-footer-button:active,
     #help-button:active,
     .category:active,
-    button:active:not([data-l10n-id="addon-options-button"]):not([data-l10n-id*="about-config"]) {
+    button:active:not([data-l10n-id="addon-options-button"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
