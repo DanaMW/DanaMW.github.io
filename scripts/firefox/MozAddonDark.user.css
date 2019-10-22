@@ -14,7 +14,10 @@ domain("mozilla.net"),
 domain("mozilla.org"),
 domain("addons-amo.cdn.mozilla.net"),
 domain("addons.cdn.mozilla.net") {
-    /* ----------------------------------------- */
+    /* -----------------------------------------
+    privacy.resistFingerprinting.block_mozAddonManager (Create with value TRUE)
+    extensions.webextensions.restrictedDomains (edit out addons.mozilla.org)
+    */
     .Header,
     #react-view {
         -moz-appearance: none;
