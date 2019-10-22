@@ -57,22 +57,10 @@ url("about:addons") {
         background-image: none !important;
         border: none !important;
     }
-    /*
-    #load-addon-from-file,
-    .sidebar-footer-button,
-    menulist,
-    #warningButton,
-    .addon,
-    .button-link,
-    .relnotes-toggle,
-    .sorter,
-    #update-selected-btn,
-    .addon-control
-    */
     .sidebar-footer-button,
     #help-button,
     .category,
-    button:not([data-l10n-id="addon-options-button"]) {
+    button:not([data-l10n-id="addon-options-button"]):not([data-l10n-id*="about-config"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -95,25 +83,12 @@ url("about:addons") {
         filter: blur(0) !important;
         text-shadow: none !important;
     }
-    /*
-    #load-addon-from-file:hover,
-    menulist:hover,
-    button:hover,
-    .addon[selected="true"],
-    #warningButton:hover,
-    .addon:hover,
-    .sorter:hover,
-    .relnotes-toggle:hover,
-    #update-selected-btn:hover,
-    .addon-control:hover,
-    .button-link:hover
-    */
     .sidebar-footer-button:hover,
     #help-button:hover,
     .category[aria-selected="true"],
     .category[selected="true"],
     .category:hover,
-    button:hover:not([data-l10n-id="addon-options-button"]) {
+    button:hover:not([data-l10n-id="addon-options-button"]):not([data-l10n-id*="about-config"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -130,22 +105,10 @@ url("about:addons") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    /*
-    #load-addon-from-file:active,
-    menulist:active,
-    button:active,
-    #warningButton:active,
-    .addon:active,
-    .sorter:active,
-    .relnotes-toggle:active,
-    #update-selected-btn:active,
-    .addon-control:active,
-    .button-link:active
-    */
     .sidebar-footer-button:active,
     #help-button:active,
     .category:active,
-    button:active:not([data-l10n-id="addon-options-button"]) {
+    button:active:not([data-l10n-id="addon-options-button"]):not([data-l10n-id*="about-config"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
