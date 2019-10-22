@@ -321,11 +321,9 @@ url("about:addons") {
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
+        text-align: center !important;
         border-radius: 15px !important;
         border: 1px solid var(--MyW) !important;
-    }
-    #about-config-search {
-        text-align: center !important;
     }
     label {
         background-color: transparent !important;
