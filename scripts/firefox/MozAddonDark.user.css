@@ -29,6 +29,7 @@ domain("addons.cdn.mozilla.net") {
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
+    .Page-content,
     .App-content {
         background: none !important;
         background-color: var(--Myback) !important;
@@ -51,6 +52,7 @@ domain("addons.cdn.mozilla.net") {
     h1 {
         color: var(--Myred1) !important;
     }
+    p,
     li>a,
     a {
         color: var(--MyW) !important;
