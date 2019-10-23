@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.20
+@version      0.0.21
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -64,6 +64,9 @@
     .lia-button {
         background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray3)) !important;
     }
+    .entry-box.container,
+    .entry-area,
+    .tab-pane,
     ul.children,
     .comment-content,
     form {
@@ -84,7 +87,7 @@
         color: var(--MyW) !important;
     }
     .internav a:hover,
-    .active,
+    /* .active, */
     .current,
     a[id*="shellmenu_"]:hover,
     a#shellmenu_0:hover,
@@ -356,7 +359,9 @@
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
-    /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important; */
+    .entry-area {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
     .card-title {
         color: var(--Mygreen1) !important;
     }
