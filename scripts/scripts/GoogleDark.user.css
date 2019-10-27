@@ -94,12 +94,15 @@ url-prefix("https://groups.google.com/") {
         left: 0px !important;
         transform: none !important;
     }
+    .u4DeMc,
+    .ikIPKb,
     div[class*="smsauth-interstitial-infobox"],
     .act-tim-txt-cnt>div,
     #timer-stopwatch-container {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .qQ2n2b:hover,
     .gb_D.gb_Ec,
     #nngdp34,
     .knowledge-finance-wholepage-chart__hover-card,
@@ -114,6 +117,8 @@ url-prefix("https://groups.google.com/") {
     #irc-cl {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    div[class="hyMrOd "],
+    .u4DeMc,
     div[aria-label="Currency exchange rate converter"],
     .gb_B.gb_Ec {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
@@ -131,6 +136,10 @@ url-prefix("https://groups.google.com/") {
     .ll0QOb {
         background-color: var(--Myred1) !important;
         border-color: var(--MyB) !important;
+    }
+    .yrQA5d,
+    .ZZ9xL {
+        color: var(--Myred1) !important;
     }
     .gsfi {
         border-radius: 25px !important;
