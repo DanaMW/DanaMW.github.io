@@ -2,19 +2,22 @@
 @name         GoogleAboutMe
 @namespace    http://danamw.github.io/scripts/scripts/GoogleAboutMe.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleAboutMe.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("aboutme.google.com") {
+@-moz-document domain("aboutme.google.com"),
+domain("get.google.com") {
     body,
     c-wiz,
     html {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
+    div[role="alertdialog"],
+    .agU3I,
     .f0Eb9c,
     .Co0ztb.bhe1tb,
     .kKVajd,
@@ -22,6 +25,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    div[role="banner"],
     header[role="banner"] {
         background-color: var(--Myred1) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
@@ -86,6 +90,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    div[role="alertdialog"],
+    .agU3I,
     .FwR7Pc:hover,
     div[role="menuitemradio"]:hover,
     .f0Eb9c,
@@ -101,9 +107,16 @@
     div[data-cardtype] {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .OabDMe.cXrdqd.Y2Zypf {
+        background-color: var(--Myred1) !important;
+    }
     .ncUz8e:hover {
         border-color: var(--Myred1) !important;
     }
+    .i9lrp.mIZh1c::before {
+        border-color: var(--Myred2) !important;
+    }
+    .XVzU0b.pdkqBe svg,
     .x4RKVc,
     .XVzU0b,
     .PLSnNb {
