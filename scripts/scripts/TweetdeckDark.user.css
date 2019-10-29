@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.68
+@version      0.0.69
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -849,6 +849,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-modal-inner {
         border-radius: 25px !important;
     }
+    .js-column-header.js-action-header.flex-shrink--0.column-header,
     label.checkbox,
     fieldset,
     .js-accordion-item.js-account-settings-row.js-account-settings-summary.account-settings-row.account-settings-row.is-expanded,
@@ -882,8 +883,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .drawer-header.padding-lxl.flex-shrink--0,
     .js-account-manager-container.column-panel.accounts-drawer.border-box.flex.flex-column,
     .js-search-filter,
-    .column-message,
-    .js-column-header.js-action-header.flex-shrink--0.column-header {
+    .column-message {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     .Notification-content,
