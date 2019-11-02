@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.69
+@version      0.0.70
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -57,19 +57,6 @@ url-prefix("https://twitter.com/i/safety/") {
     div[role="progressbar"] {
         z-index: 10000 !important;
         background: transparent !important;
-    }
-    .tooltip_box {
-        -moz-appearance: none !important;
-        -webkit-appearance: none !important;
-        appearance: none !important;
-        background-color: var(--MyX1) !important;
-        color: var(--MyW) !important;
-        text-shadow: 1px -1px 0 var(--MyW) !important;
-        border: none !important;
-        border-color: var(--MyX1) !important;
-        border-radius: 10px !important;
-        padding: 6px 6px !important;
-        text-align: center
     }
     .nbfc a,
     a.account-link {
@@ -231,7 +218,7 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     strong[class="fullname txt-size--24 hyphenate"] {
         color: var(--Mytext) !important;
-        text-shadow: 1px 1px 5px var(--Myred1) !important
+        /* text-shadow: 1px 1px 5px var(--Myred1) !important*/
     }
     .accordion-panel,
     .link-complex-target:hover,
@@ -243,7 +230,7 @@ url-prefix("https://twitter.com/i/safety/") {
         text-decoration: none !important;
         font-weight: bold !important;
         color: var(--Myred1) !important;
-        text-shadow: 1px 1px var(--MyB) !important
+        /*text-shadow: 1px 1px var(--MyB) !important*/
     }
     .js-tweet-text,
     .js-tweet-text .tweet-text {
@@ -554,7 +541,7 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        /*text-shadow: 1px 1px 0 var(--Myred1) !important;*/
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
         -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
@@ -607,7 +594,7 @@ url-prefix("https://twitter.com/i/safety/") {
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+        /*text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;*/
         filter: brightness(75%) !important;
     }
     div[role="button"]:active:not([style*="position: absolute"]),
@@ -653,7 +640,7 @@ url-prefix("https://twitter.com/i/safety/") {
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+        /*text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;*/
     }
     li[class*="active"] a,
     .GridTimeline-footerIcon {
@@ -782,16 +769,6 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     .link-complex-target {
         text-decoration: none !important;
-    }
-    html.dark .tooltip-inner,
-    .tooltip .tooltip-inner {
-        max-width: 200px;
-        padding: 5px 8px 8px 8px;
-        background-color: var(--MyX1) !important;
-        color: var(--MyW) !important;
-        text-align: center;
-        border: 1px solid var(--MyW) !important;
-        border-radius: 15px !important;
     }
     p[class="username"]:hover {
         background-color: transparent !important;
@@ -956,10 +933,10 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--Myblue2) !important;
     }
     .color-twitter-darker-gray {
-        color: #657786
+        color: var(--Mygray2) !important;
     }
     .color-twitter-white {
-        color: #fff !important
+        color: var(--MyW) !important;
     }
     .color-twitter-gray {
         color: var(--Myred1) !important;
@@ -977,16 +954,16 @@ url-prefix("https://twitter.com/i/safety/") {
         color: #17bf63
     }
     .color-twitter-deep-black {
-        color: #14171a
+        color: var(--MyB) !important;
     }
     .color-twitter-dark-black {
-        color: #38444d
+        color: var(--MyB) !important;
     }
     .color-twitter-dark-gray {
         color: var(--Myred1) !important;
     }
     .color-twitter-black {
-        color: #000
+        color: var(--MyB) !important;
     }
     .color-twitter-yellow {
         color: #ffad1f
@@ -996,7 +973,7 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     .text-like-keyboard-key,
     .bg-color-twitter-white {
-        background-color: #fff !important
+        background-color: var(--MyW) !important;
     }
     .bg-color-twitter-blue {
         background-color: #1da1f2
@@ -1008,7 +985,7 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: #1da1f2
     }
     .bg-color-twitter-deep-black {
-        background-color: #38444d
+        background-color: var(--MyB) !important;
     }
     .bg-color-twitter-red {
         background-color: #e0245e
@@ -1020,10 +997,10 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: var(--Myred1) !important;
     }
     .bg-color-twitter-midnight-dark-gray {
-        background-color: #15202b
+        background-color: var(--MyB) !important;
     }
     .bg-color-twitter-midnight-darkest-gray {
-        background-color: #10171e
+        background-color: var(--MyB) !important;
     }
     .bg-color-twitter-yellow {
         background-color: #ffad1f
@@ -1044,10 +1021,10 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: var(--Myred1) !important;
     }
     .border-color-twitter-blue {
-        border-color: #1da1f2
+        border-color: var(--MyW) !important;
     }
     .border-color-twitter-white {
-        border-color: #fff
+        border-color: var(--MyW) !important;
     }
     .is-inverted-light {
         color: var(--Myred1) !important;
@@ -1056,19 +1033,19 @@ url-prefix("https://twitter.com/i/safety/") {
     .is-inverted-light a:active,
     .is-inverted-light a:focus,
     .is-inverted-light a:hover {
-        color: #8899a6
+        color: var(--MyW) !important;
     }
     .is-inverted-light .txt-mute {
-        color: #8899a6
+        color: var(--Mygray2) !important;
     }
     .is-inverted-light .txt-mute a:not(:hover):not(:focus) {
-        color: #8899a6
+        color: var(--Mygray2) !important;
     }
     .is-inverted-light .account-link {
-        color: #e1e8ed
+        color: var(--MyW) !important;
     }
     .is-inverted-light .account-bio {
-        color: #8899a6
+        color: var(--MyW) !important;
     }
     .js-detail-view-inline.detail-view-inline {
         position: initial !important;
@@ -1085,5 +1062,63 @@ url-prefix("https://twitter.com/i/safety/") {
         width: 60px !important;
         margin-left: -10px !important;
         padding-left: 5px;
+    }
+    .Tooltip-inner,
+    .Tooltip-content,
+    .tooltip_box {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+        border: none !important;
+        border-color: var(--MyX1) !important;
+        border-radius: 10px !important;
+        padding: 6px 6px !important;
+        text-align: center
+    }
+    html.dark .Tooltip,
+    .Tooltip {
+        margin: -13px 0 0 13px;
+        border-radius: 5px;
+        background: var(--MyX1) !important;
+        border: 1px solid var(--MyW) !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+        min-width: 100px;
+        max-width: 250px;
+        opacity: 0;
+        display: block;
+        position: absolute;
+        z-index: 5000;
+        background-clip: padding-box;
+        transition: opacity .2s ease-in-out
+    }
+    .tooltip-inner,
+    html.dark .tooltip-inner,
+    .tooltip .tooltip-inner {
+        max-width: 200px;
+        padding: 5px 8px 8px 8px;
+        background: var(--MyX1) !important;
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+        text-align: center;
+        border: 1px solid var(--MyW) !important;
+        border-radius: 15px !important;
+    }
+    .Tooltip .Tooltip-content,
+    html.dark .Tooltip--dark,
+    .Tooltip--dark,
+    html.dark .Tooltip--intro,
+    html.dark .Tooltip .Tooltip-close,
+    html.dark .Tooltip .Tooltip-content,
+    .Tooltip-close:hover,
+    .Tooltip--intro {
+        background: var(--MyX1) !important;
+        border-color: var(--MyW) !important;
+        box-shadow: none
+    }
+    html.dark .TooltipHoverTarget,
+    .TooltipHoverTarget {
+        background-image: linear-gradient(90deg, var(--MyX1) 50%, transparent 0) !important;
     }
 }
