@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.70
+@version      0.0.71
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -36,10 +36,15 @@ url-prefix("https://twitter.com/i/safety/") {
         outline: none !important;
         text-decoration: none;
         scrollbar-width: none;
+        /*scrollbar-color: var(--Mygray1) var(--Myred3) !important;*/
     }
     .js-app-columns-container.app-columns-container.scroll-h.needs-scroll-bottom-offset {
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3);
+    }
+    b[class="fullname inline-block link-complex-target fullname-badged  badge-verified position-rel txt-ellipsis"],
+    b[class="fullname inline-block link-complex-target fullname-badged  badge-verified position-rel txt-ellipsis"]::before {
+        height: 25px !important;
     }
     .css-1dbjc4n.r-1awozwy.r-1p0dtai.r-1777fci.r-1d2f490.r-ywje51.r-u8s1d.r-zchlnj.r-ipm5af,
     .css-901oao.r-daml9f.r-n6v787.r-19jlu03.r-285fr0.r-q4m81j {
@@ -218,7 +223,6 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     strong[class="fullname txt-size--24 hyphenate"] {
         color: var(--Mytext) !important;
-        /* text-shadow: 1px 1px 5px var(--Myred1) !important*/
     }
     .accordion-panel,
     .link-complex-target:hover,
@@ -230,7 +234,6 @@ url-prefix("https://twitter.com/i/safety/") {
         text-decoration: none !important;
         font-weight: bold !important;
         color: var(--Myred1) !important;
-        /*text-shadow: 1px 1px var(--MyB) !important*/
     }
     .js-tweet-text,
     .js-tweet-text .tweet-text {
@@ -245,7 +248,7 @@ url-prefix("https://twitter.com/i/safety/") {
     a.js-user-profile-link[class*="js-action"]:not(:hover) strong.fullname {
         text-decoration: none !important;
         font-weight: bold !important;
-        color: var(--Mygreen1) !important;
+        color: var(--TwitterBlue) !important;
         border-color: transparent !important;
     }
     .mdl-inner,
@@ -541,7 +544,6 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
-        /*text-shadow: 1px 1px 0 var(--Myred1) !important;*/
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
         -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
@@ -594,7 +596,6 @@ url-prefix("https://twitter.com/i/safety/") {
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        /*text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;*/
         filter: brightness(75%) !important;
     }
     div[role="button"]:active:not([style*="position: absolute"]),
@@ -640,7 +641,6 @@ url-prefix("https://twitter.com/i/safety/") {
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        /*text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;*/
     }
     li[class*="active"] a,
     .GridTimeline-footerIcon {
@@ -789,7 +789,7 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--Myred1) !important;
     }
     a.js-other-replies-link.other-replies-link {
-        color: var(--Myblue1) !important;
+        color: var(--Mygreen1) !important;
     }
     iframe.js-media-native-video {
         background-color: none !important;
