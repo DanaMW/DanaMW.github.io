@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.74
+@version      0.0.75
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -26,21 +26,32 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: none !important;
         background-color: var(--MyB) !important;
     }
-    section.js-column.column {
-        padding-right: 0px !important;
-        margin-right: 0px !important;
-        padding-left: 0px !important;
-        margin-left: 0px !important;
-    }
     * {
         outline: none !important;
         text-decoration: none;
-        scrollbar-width: none;
-        /*scrollbar-color: var(--Mygray1) var(--Myred3) !important;*/
-    }
-    .js-app-columns-container.app-columns-container.scroll-h.needs-scroll-bottom-offset {
         scrollbar-width: thin;
-        scrollbar-color: var(--Myred1) var(--Myred3);
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+    #column-navigator {
+        scrollbar-width: none;
+    }
+    section.js-column.column {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+    section.js-column.column.is-focused {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+        box-shadow: 5px 5px var(--Mygreen1), -5px -5px var(--Mygreen1) !important;
+    }
+    .js-app-header.pin-all.app-header.is-condensed {
+        margin-left: 0px !important;
+        margin-right: -5px !important;
+        padding-right: 0px !important;
+    }
+    .js-app-columns.app-columns.horizontal-flow-container.without-tweet-drag-handles {
+        padding-left: 0px !important;
+        margin-left: 1px !important;
     }
     b[class="fullname inline-block link-complex-target fullname-badged  badge-verified position-rel txt-ellipsis"],
     b[class="fullname inline-block link-complex-target fullname-badged  badge-verified position-rel txt-ellipsis"]::before {
@@ -73,11 +84,6 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     .scrubBar {
         background-color: var(--Mygray2) !important;
-    }
-    section.js-column.column.is-focused {
-        background-color: var(--Myred1) !important;
-        color: var(--Myred1) !important;
-        border-color: var(--Myred1) !important;
     }
     .scrubber .scrubHandle,
     .scrubber .playedBar {
@@ -144,19 +150,6 @@ url-prefix("https://twitter.com/i/safety/") {
     li i.icon.icon-xsmall.icon-dot.column-nav-updates {
         color: var(--Myred1) !important;
         z-index: 1000000 !important;
-    }
-    .l-column.mdl-column.mdl-column-med.mdl-column-rhs,
-    header.column-header.column-header-temp.flex-shrink--0,
-    .scroll-v.scroll-styled-v.scroll-alt.column-content.flex-auto {
-        margin-right: initial;
-    }
-    .scroll-v,
-    .js-column-scroller {
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-    #column-navigator {
-        scrollbar-width: none;
     }
     b.non-selectable-item.txt-ellipsis,
     .link-complex-target,
@@ -560,6 +553,7 @@ url-prefix("https://twitter.com/i/safety/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .js-hide-drawer.margin-t--8.margin-b--10.Button.Button--primary.Button--large.tweet-button.txt-left:not(.is-hidden),
     .search-tip-item-hover.txt-size--12:hover,
     div[role="button"]:hover:not([style*="position: absolute"]),
     .Button.Button--primary.block.txt-size--18.txt-center:hover,
@@ -651,6 +645,19 @@ url-prefix("https://twitter.com/i/safety/") {
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
+    }
+    .js-hide-drawer.margin-t--8.margin-b--10.Button.Button--primary.Button--large.tweet-button.txt-left:not(.is-hidden) {
+        width: 200px !important;
+    }
+    .js-compose-title.compose-title-text.txt-ellipsis.inline-block {
+        color: var(--MyW) !important;
+        margin-top: 6px !important;
+    }
+    .pin-bottom-full-width.old-composer-footer {
+        background-color: transparent !important;
+    }
+    .js-compose-close.is-actionable.icon.icon-close.margin-v--20.pull-right:hover {
+        filter: invert(1) !important;
     }
     li[class*="active"] a,
     .GridTimeline-footerIcon {
@@ -1091,7 +1098,7 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     html.dark .Tooltip,
     .Tooltip {
-        margin: -13px 0 0 13px;
+        /*margin: -13px 0 0 13px;*/
         border-radius: 5px;
         background: var(--MyX1) !important;
         border: 1px solid var(--MyW) !important;
