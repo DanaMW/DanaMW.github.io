@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.12
+@version      0.0.13
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -35,8 +35,6 @@
         left: calc(1vw + var(--mmove) - 10vw) !important;
     }
     form[action="/search"],
-    .layout-row,
-    span,
     div[class*="account"],
     .gb_Ue,
     #gb,
@@ -62,27 +60,15 @@
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-    .md-body-1.layout-align-start-stretch.layout-row.B3EWm-eb2yS,
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--MyW) !important;
-    }
     textarea {
         color: var(--MyW) !important;
-    }
-    div.md-ink-ripple[role="button"] {
-        /*
-        height: 40px !important;
-        width: 40px !important;
-        */
-        border-radius: 0px !important;
     }
     button {
         background-image: none !important;
         background-color: transparent !important;
     }
+    md-input-container input,
+    gv-annotation,
     gv-message-entry,
     td,
     span,
@@ -90,6 +76,16 @@
     p {
         color: var(--MyW) !important;
     }
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    /* .mat-list-item-content */
+    .md-ink-ripple.layout-align-center-center.layout-column.lp3vjd-LgbsSe {
+        border-radius: 50% !important;
+    }
+    a[role="tab"],
+    a[aria-label="More Google apps"],
+    .gb_d,
     .mat-list-item-content,
     div[role="button"],
     button:not([aria-label="Search"]) {
@@ -107,6 +103,9 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[role="tab"]:hover,
+    a[aria-label="More Google apps"]:hover,
+    .gb_d:hover,
     #gb,
     .gb_Qd.gb_7d,
     a[aria-selected="true"] .mat-list-item-content,
@@ -129,6 +128,9 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[role="tab"]:active,
+    a[aria-label="More Google apps"]:active,
+    .gb_d:active,
     .mat-list-item-content:active,
     div[role="button"]:active,
     button:active:not([aria-label="Search"]) {
@@ -148,14 +150,16 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .md-body-1.layout-align-start-stretch.layout-row.B3EWm-eb2yS,
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        border: 2px solid var(--Myborder) !important;
+        border: 1px solid var(--MyW) !important;
         border-radius: 15px !important;
         text-align: center !important;
     }
     input[aria-label="Search"] {
+        color: var(--MyW) !important;
         height: 25px !important;
         margin-top: 8px !important;
     }
@@ -201,5 +205,11 @@
     }
     .Bqxti-MJZihc {
         background-color: var(--MyX3) !important;
+    }
+    [role="menu"],
+    .gb_H,
+    div[aria-label="Google apps"],
+    div[role="region"] {
+        background-color: var(--Mygray3) !important;
     }
 }
