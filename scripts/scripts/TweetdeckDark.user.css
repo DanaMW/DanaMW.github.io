@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.75
+@version      0.0.76
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -28,7 +28,7 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     * {
         outline: none !important;
-        text-decoration: none;
+        text-decoration: none !important;
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
@@ -870,6 +870,7 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10,
     .js-quote-tweet-holder,
     .mdl.cmp.s-inreply.l-no-txtarea.s-fluid-height,
     .js-modal-panel.mdl.s-tall-fixed,
@@ -882,6 +883,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .column-message {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10:hover,
     .Notification-content,
     .css-1dbjc4n.r-1awozwy.r-18u37iz.r-195d4m8.r-1777fci.r-1jgb5lz.r-1orpq53.r-13qz1uu,
     .column-header,
