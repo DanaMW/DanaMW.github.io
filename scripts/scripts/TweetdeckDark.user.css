@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.71
+@version      0.0.72
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -67,6 +67,10 @@ url-prefix("https://twitter.com/i/safety/") {
     a.account-link {
         color: var(--Mytext) !important;
     }
+    a[target]:hover,
+    .account-link.txt-bold:hover {
+        color: var(--Myred1) !important;
+    }
     .scrubBar {
         background-color: var(--Mygray2) !important;
     }
@@ -118,10 +122,16 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+    a[class="js-media-image-link block med-link media-item media-size-medium   is-zoomable"],
     .js-quote-detail.quoted-tweet.nbfc.br--14.padding-al.margin-b--8.position-rel.margin-tm.is-actionable {
-        border: 2px solid var(--MyW) !important;
+        border: 1px solid var(--Mygray1) !important;
     }
-    p,
+    p {
+        color: var(--MyW) !important;
+    }
+    p[class="account-bio txt-sub-antialiased color-twitter-darker-gray txt-size-variable--13 padding-t--5"] {
+        color: var(--Mygray1) !important;
+    }
     .list-listmember {
         padding-right: 5px !important;
         left: 5px !important;
