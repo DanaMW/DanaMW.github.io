@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.16
+@version      0.0.17
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -49,6 +49,13 @@
         height: 48px !important;
         width: 48px !important;
     }
+    input[type="text"] {
+        color: var(--Mytext) !important;
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--Myborder) !important;
+        border-radius: 15px !important;
+        text-align: center !important;
+    }
     input.Ax4B8.ZAGvjd {
         color: var(--Mytext) !important;
         background-color: var(--Mygray3) !important;
@@ -58,6 +65,7 @@
         border-radius: 15px !important;
         text-align: center !important;
     }
+    .MocG8c.IImy7e.LMgvRb,
     div[role="tab"],
     div[role="button"],
     div[aria-label="Main menu"],
@@ -86,6 +94,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .MocG8c.IImy7e.LMgvRb.KKjvXb,
+    .MocG8c.IImy7e.LMgvRb:hover,
     div[role="tab"]:hover,
     div[role="button"]:hover,
     div[aria-label="Main menu"]:hover,
@@ -121,6 +131,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .MocG8c.IImy7e.LMgvRb:active,
     div[role="tab"]:active,
     div[role="button"]:active,
     div[aria-label="Main menu"]:active,
@@ -150,6 +161,10 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .OabDMe,
+    .w7qIhd.s7bIcf {
+        background-color: var(--Mygreen1) !important;
+    }
     .pjBVq {
         background-color: var(--Myred3) !important;
     }
@@ -165,18 +180,38 @@
     .gb_m {
         background-color: transparent !important;
     }
+    .OA0qNb.ncFHed,
     .gb_C.gb_u {
         background-color: var(--Mygray3) !important;
     }
-    /*
-    .boy4he {
-        background-color: var(--MyX1) !important;
+    .e2CuFe.eU809d {
+        filter: invert(1) !important;
     }
-    */
     .boy4he:hover {
         background-color: var(--MyX1) !important;
     }
     .d7hoq {
         z-index: 100;
+    }
+    .NiLAwe {
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .NiLAwe:hover {
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    time {
+        color: var(--Mygreen1) !important;
+    }
+    .tvs3Id.QwxBBf {
+        border: 1px solid var(--MyB) !important;
+        border-radius: 15px !important;
+        z-index: 10000 !important;
+    }
+    .tvs3Id.QwxBBf:hover {
+        border: 1px solid var(--Myred1) !important;
+        border-radius: 15px !important;
+    }
+    tooltip {
+        background-color: var(--MyX1) !important;
     }
 }
