@@ -2,7 +2,7 @@
 @name         GoogleContactsDark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleContactsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleContactsDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -30,6 +30,8 @@ url-prefix("https://maps.googleapis.com") {
     .ZvpjBb.C8Dkz {
         background-color: var(--Mygray3) !important;
     }
+    .jlpDMe,
+    .gb_r,
     a.hUL4le[target="_blank"],
     a {
         color: var(--MyW) !important;
@@ -49,9 +51,13 @@ url-prefix("https://maps.googleapis.com") {
         background-color: transparent !important;
         box-shadow: none !important;
     }
+    .gb_r,
     span[role="menuitem"] {
         background-image: none !important;
+        background-color: transparent !important;
     }
+    .gb_d,
+    a[aria-label="More Google apps"],
     .MkjOTb.oKubKe,
     span[role="menuitem"],
     div[aria-label="Main menu"],
@@ -66,10 +72,7 @@ url-prefix("https://maps.googleapis.com") {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
+        border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
@@ -80,6 +83,8 @@ url-prefix("https://maps.googleapis.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .gb_d:hover,
+    a[aria-label="More Google apps"]:hover,
     .MkjOTb.oKubKe:hover,
     span[role="menuitem"]:hover,
     div[aria-label="Main menu"]:hover,
@@ -93,10 +98,7 @@ url-prefix("https://maps.googleapis.com") {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--MyX1) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
@@ -109,6 +111,8 @@ url-prefix("https://maps.googleapis.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .gb_d:active,
+    a[aria-label="More Google apps"]:active,
     .MkjOTb.oKubKe:active,
     span[role="menuitem"]:active,
     div[aria-label="Main menu"]:active div[aria-selected="true"]:not([role="option"]):active,
@@ -121,10 +125,7 @@ url-prefix("https://maps.googleapis.com") {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--MyX3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
@@ -182,6 +183,11 @@ url-prefix("https://maps.googleapis.com") {
     .RANAid {
         filter: invert(1)
     }
+    .gb_H.gb_z,
+    .gb_H.gb_y,
+    div[role="region"] {
+        background-color: var(--Mygray3) !important;
+    }
     .ONOzI {
         background-color: var(--Mygray2) !important;
     }
@@ -229,6 +235,9 @@ url-prefix("https://maps.googleapis.com") {
     }
     div[role="menubar"] {
         background-color: var(--Myred3) !important;
+    }
+    .OabDMe.cXrdqd.Y2Zypf {
+        background-color: var(--Mygreen1) !important;
     }
     .tuQOVc {
         background-color: var(--Myred1) !important;
