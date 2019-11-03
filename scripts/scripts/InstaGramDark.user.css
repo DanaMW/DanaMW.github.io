@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.33
+@version      0.0.34
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -31,9 +31,14 @@
     }
     * {
         text-shadow: none;
+        text-decoration: none !important;
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3);
     }
+    h4 {
+        color: var(--Mygreen1) !important;
+    }
+    span,
     .Fy4o8,
     .Ap253,
     div[class="_7UhW9   xLCgt       qyrsm KV-D4            fDxYl l4b0S   T0kll "],
@@ -66,7 +71,7 @@
         color: var(--Mygreen1) !important;
     }
     .LWmhU._0aCwM {
-        border-radius: 0 !important;
+        border-radius: 15px !important;
         border: none !important;
     }
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
@@ -117,7 +122,6 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
         filter: brightness(75%) !important;
     }
     /*----------------------------------All button sets--------------*/
@@ -147,14 +151,10 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
+        border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
         -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
@@ -170,10 +170,7 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--MyX1) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
@@ -184,7 +181,6 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
     a[class="yCE8d  "]:active,
     .fuQUr:active,
@@ -193,10 +189,7 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--MyX3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
@@ -207,7 +200,6 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
         filter: brightness(80%) !important;
     }
     div[class="                  Igw0E     IwRSH        YBx95       _4EzTm      MGdpg                                                                                                      NUiEW  "] button.dCJp8.afkep._0mzm- {
@@ -312,23 +304,40 @@
     .gElp9 a {
         color: var(--Mygreen1) !important;
     }
+    a,
+    p,
+    p span,
     div a {
-        color: var(--MyB) !important;
-        text-shadow: 1px 1px 0 var(--MyW) !important;
+        color: var(--MyW) !important;
     }
+    a:hover,
      :link:hover {
         color: var(--Myred1) !important;
-        text-shadow: none !important;
     }
     div[class="pV7Qt  _6Rvw2      DPiy6          Igw0E   rBNOH        eGOV_         _4EzTm                                                                                   XfCBB            g6RW6               "],
     ._41KYi.LQtnO,
     label,
-    input,
     textarea {
         color: var(--MyW) !important;
+        background-image: none !important;
         background-color: transparent !important;
     }
-    textarea[aria-label="Write a caption…"] {
+    input:not([type="radio"]):not([type="checkbox"]) {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    .mwD2G,
+    input[type="radio"],
+    input[type="checkbox"] {
+        color: var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    .mwD2G::before {
+        background-color: var(--MyW) !important;
+    }
+    textarea {
         background-color: var(--Mygray3) !important;
     }
     .ZUqME,
@@ -511,6 +520,7 @@
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+    div[class="        DPiy6          Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
     section._9eogI.hfWwk,
     ul[class="jSC57  _6xe7A"],
     .wW1cu,
