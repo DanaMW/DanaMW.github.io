@@ -2,7 +2,7 @@
 @name         GoogleTranslateDark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleTranslateDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleTranslateDark.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -14,6 +14,12 @@
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+    .ft-icon-txt,
     .cd-expand-label,
     .gt-card-ttl-txt,
     q,
@@ -21,7 +27,6 @@
     .tlid-translation,
     a {
         color: var(--MyW) !important;
-        text-decoration: none !important;
     }
     .gt-cd-tl,
     q::before,
@@ -29,7 +34,6 @@
     .gt-ct-text,
     a:hover {
         color: var(--Myred1) !important;
-        text-decoration: none !important;
     }
     .sugg-fade,
     .ls-left-arrow,
@@ -37,6 +41,7 @@
     .swap-wrap {
         display: none !important;
     }
+    .gb_r,
     .gt-cd-cl,
     .gt-baf-cell,
     .gb_uc,
@@ -61,6 +66,8 @@
     li[role="menuitem"]:hover a {
         color: var(--MyW) !important;
     }
+    a[aria-label="More Google apps"],
+    .gb_d,
     div[role="button"],
     .language_list_item_wrapper,
     li[role="menuitem"],
@@ -68,10 +75,7 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
+        border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
@@ -85,6 +89,8 @@
     .gb_6d.gb_Ae.gb_ee.gb_de {
         border: none !important;
     }
+    a[aria-label="More Google apps"]:hover,
+    .gb_d:hover,
     .gb_uc,
     div[role="button"][aria-pressed="true"],
     div[role="button"]:hover,
@@ -96,10 +102,7 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--MyX1) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
@@ -112,6 +115,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[aria-label="More Google apps"]:active,
+    .gb_d:active,
     div[role="button"]:active,
     .language_list_item_wrapper:active,
     div[class*="item-selected"]:active,
@@ -120,10 +125,7 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--MyX3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 80%, rgba(168, 168, 168, 0.2)) !important;
@@ -198,5 +200,26 @@
         background-color: var(--Mygray3) !important;
         border: 1px solid var(--MyW) !important;
         color: var(--MyW) !important;
+    }
+    div[role="region"],
+    .gb_H.gb_z,
+    .gb_H.gb_y {
+        background-color: var(--Mygray3) !important;
+    }
+    .gb_Kc {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .gb_Kc {
+        background-color: var(--Myred1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    .ft-icon-oval {
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+        border: 1px solid var(--MyB) !important;
+    }
+    .ft-icon-oval:hover {
+        background-color: var(--Myred1) !important;
     }
 }
