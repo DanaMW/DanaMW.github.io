@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -21,6 +21,7 @@
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
+    .gb_r,
     #gb,
     header {
         background-image: none !important;
@@ -30,6 +31,7 @@
     [data-tooltip] {
         background-color: var(--MyX1) !important;
     }
+    .gb_r,
     h2,
     h3,
     a {
@@ -65,6 +67,8 @@
         border-radius: 15px !important;
         text-align: center !important;
     }
+    a[aria-label="More Google apps"],
+    .gb_d,
     .MocG8c.IImy7e.LMgvRb,
     div[role="tab"],
     div[role="button"],
@@ -94,6 +98,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[aria-label="More Google apps"]:hover,
+    .gb_d:hover,
     .MocG8c.IImy7e.LMgvRb.KKjvXb,
     .MocG8c.IImy7e.LMgvRb:hover,
     div[role="tab"]:hover,
@@ -131,6 +137,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[aria-label="More Google apps"]:active,
+    .gb_d:active,
     .MocG8c.IImy7e.LMgvRb:active,
     div[role="tab"]:active,
     div[role="button"]:active,
@@ -167,6 +175,8 @@
     }
     .pjBVq {
         background-color: var(--Myred3) !important;
+        border-radius: 10px !important;
+        border: 1px solid var(--MyW) !important;
     }
     .b42OPe {
         background-color: var(--Mygray2) !important;
@@ -180,6 +190,8 @@
     .gb_m {
         background-color: transparent !important;
     }
+    div[role="region"],
+    div[aria-label="Google apps"] ul,
     .OA0qNb.ncFHed,
     .gb_C.gb_u {
         background-color: var(--Mygray3) !important;
