@@ -2,7 +2,7 @@
 @name         Facebook Dark
 @namespace    https://danamw.github.io/scripts/scripts/FacebookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FacebookDark.user.css
-@version      0.0.4
+@version      0.0.5
 @description  Facebook Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -117,7 +117,7 @@ url-prefix("https://www.messenger.com/") {
     }
     /* ------------------ADDED USER MENU------------------------- */
     a._6-6._6-7 {
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         border-radius: 3px !important;
     }
     ._6-6 {
@@ -281,7 +281,7 @@ url-prefix("https://www.messenger.com/") {
         color: var(--Mytext) !important;
         background-color: var(--Myback) !important;
         border-radius: 5px !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--MyB) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--MyB) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
@@ -320,7 +320,7 @@ url-prefix("https://www.messenger.com/") {
         border-left-color: var(--MyB) !important;
         background-color: var(--MyX1) !important;
         border-radius: 5px !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
         color: var(--MyW) !important;
@@ -966,12 +966,12 @@ url-prefix("https://www.messenger.com/") {
     /* ------------------------------MY TOP BAR--------------------------- */
     ._53jh,
     ._2t-a._50tj {
-        /*background: var(--Myred1) linear-gradient(180deg, hsla(0, 0%, 55%, .5) 48%, rgba(255, 0, 0, 1) 49%, rgba(255, 0, 0, .5) 80%, hsla(0, 0%, 55%, .3)) !important;*/
+        /*background: var(--Myred1) linear-gradient(180deg, hsla(0, 0%, 55%, .5) 48%, rgba(255, 0, 0, 1) 49%, rgba(255, 0, 0, .5) 100%, hsla(0, 0%, 55%, .3)) !important;*/
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none !important;
         background-color: rgb(65, 53, 53) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
         color: var(--MyW) !important;
@@ -3156,7 +3156,7 @@ url-prefix("https://www.messenger.com/") {
         -webkit-appearance: none;
         appearance: none !important;
         background-color: hsl(220, 15%, 17%) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
         color: var(--MyW) !important;

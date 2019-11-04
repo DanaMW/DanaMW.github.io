@@ -2,7 +2,7 @@
 @name         The Chive Dark
 @namespace    https://danamw.github.io/scripts/scripts/ThechiveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ThechiveDark.user.css
-@version      0.0.4
+@version      0.0.5
 @description  Thechive Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -268,7 +268,7 @@
         appearance: none;
         color: var(--Mytext) !important;
         background-color: var(--Myback) !important;
-        background-image: linear-gradient(180deg, hsla(0, 0%, 55%, .5) 48%, rgba(0, 0, 0, .5) 49%, rgba(0, 0, 0, 1) 80%, hsla(0, 0%, 55%, .3)) !important;
+        background-image: linear-gradient(180deg, hsla(0, 0%, 55%, .5) 48%, rgba(0, 0, 0, .5) 49%, rgba(0, 0, 0, 1) 100%, hsla(0, 0%, 55%, .3)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
@@ -297,7 +297,7 @@
         border-right-color: var(--MyB) !important;
         border-left-color: var(--MyB) !important;
         background-color: var(--MyX1) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 80%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
         color: var(--MyW) !important;
