@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.21
+@version      0.0.22
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -26,14 +26,21 @@ regexp("moz-extension://.*") {
         position: relative;
     }
     */
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
     h2.style-name {
         max-width: 700px !important;
         width: 500px !important;
     }
+    /*
     html {
         scrollbar-color: var(--Myred1) var(--Myred3);
         scrollbar-width: thin;
     }
+    */
     a.style-name {
         color: var(--Mygray1) !important;
     }
@@ -246,7 +253,7 @@ regexp("moz-extension://.*") {
         border: 1px solid var(--MyB) !important;
         border-radius: 5px !important;
     }
-    a.updat::after:hover rect:hover {
+    a.update::after:hover rect:hover {
         background-color: var(--Mygreen1) !important;
         color: var(--MyB) !important;
         border: 1px solid var(--MyB) !important;
