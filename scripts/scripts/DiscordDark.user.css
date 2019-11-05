@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.40
+@version      0.0.42
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -12,12 +12,12 @@
     body,
     head,
     html {
-        overflow: scroll;
-        overflow-x: hidden;
-        scrollbar-width: none !important;
+        background-color: var(--MyB) !important;
     }
     * {
         text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
     pre {
         border-radius: 15px !important;
@@ -25,7 +25,6 @@
     code.hljs {
         overflow-x: visible !important;
         overflow-y: visible !important;
-        scrollbar-width: none !important;
         padding-bottom: 30px !important;
         border-radius: 15px !important;
         border: 1px solid var(--MyW) !important;
@@ -39,9 +38,11 @@
     div[class^="nameTag"] strong.user-name {
         font-weight: bold !important;
     }
+    /*
     div[class*="scrollbar"] {
-        scrollbar-width: none !important;
+        scrollbar-width: thin !important;
     }
+    */
     [class^="spinner"] * {
         animation: none !important;
     }
@@ -288,13 +289,13 @@
         background-color: var(--Myred3) !important;
         width: 70px !important;
         max-width: 70px !important;
-        scrollbar-width: none !important;
     }
+    /*
     div[class="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="containStyles"][class*="scrollerThemed"][class*="themeGhostHairlineChannels"][class*="scrollerFade"] {
         scrollbar-width: none !important;
     }
+    */
     div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
-        scrollbar-width: none !important;
         border-right: 1px solid var(--MyW) !important;
     }
     #app-mount * div[class^="chat"] .message-group {
@@ -461,7 +462,6 @@
         border: 1px solid var(--Myborder) !important;
     }
     #app-mount * div[class*="modal"] {
-        scrollbar-width: none !important;
         text-align: center !important;
     }
     #app-mount * .comment {
