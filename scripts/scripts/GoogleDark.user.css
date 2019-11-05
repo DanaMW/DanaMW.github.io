@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.75
+@version      0.0.76
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -325,6 +325,7 @@ url-prefix("https://groups.google.com/") {
     .ab_button {
         padding: 5px !important;
     }
+    div[aria-label="Google apps"],
     .ab_dropdown {
         background-color: var(--Mygray3) !important;
     }
@@ -398,7 +399,7 @@ url-prefix("https://groups.google.com/") {
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
-        color: var(--Mytext) !important;
+        color: var(--MyW) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
@@ -547,27 +548,11 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    /*
-    .gb_wf.gb_dg,
-    #gb.gb_Wf.gb_y,
-    #gb
-    */
     .gb_Qd.gb_7d.gb_Zd {
         background-image: none !important;
         background: transparent !important;
         border: none !important;
     }
-    /*
-    header[role="banner"],
-    .gb_wf.gb_dg,
-    .gb_Hf.gb_mg,
-    .gb_7d.gb_Ce.gb_fe,
-    .gb_7d.gb_Be.gb_fe,
-    .gb_6d.gb_Ae.gb_ee,
-    .pGxpHc,
-    .gb_Vf.gb_Bg,
-    #gb:not(.gb_mf)
-    */
     .gb_Qd.gb_7d.gb_Zd {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -747,7 +732,6 @@ url-prefix("https://groups.google.com/") {
     h2,
     a {
         color: var(--MyW) !important;
-        text-decoration: none !important;
     }
     a:hover b,
     a>b:hover,
@@ -762,10 +746,10 @@ url-prefix("https://groups.google.com/") {
     h3:hover,
     a:hover {
         color: var(--Myred1) !important;
-        text-decoration: none !important;
     }
     a:visited {
-        color: var(--Myblue1) !important;
+        /*color: var(--Myblue1) !important;*/
+        color: var(--TwitterBlue) !important;
         text-decoration: none !important;
     }
     #logo:hover,
@@ -833,7 +817,6 @@ url-prefix("https://groups.google.com/") {
         border: none !important;
         color: var(--Myred3) !important;
         background-color: var(--Myred3) !important;
-        /*border-bottom: 1px solid var(--MyW);*/
     }
     .Tg7LZd,
     .FiqGxd {
