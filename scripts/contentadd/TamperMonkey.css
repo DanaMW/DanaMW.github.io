@@ -1,0 +1,5 @@
+/* TamperMonkey */
+
+@-moz-document url("moz-extension://f9e7059e-5f64-4300-b606-38720a6fe770/") {
+    @import url("file:///d:/Development/GitHub/DanaMW.github.io/scripts/contentadd/CodeMirror.user.css")
+}
