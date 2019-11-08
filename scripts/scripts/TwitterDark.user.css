@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.44
+@version      0.0.45
 @description  My Twitter Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -380,6 +380,7 @@ domain("twimg.com") {
     .css-1dbjc4n.r-18kxxzh.r-1q142lx,
     article[role="article"],
     div[aria-modal="true"] {
+        background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
@@ -398,6 +399,7 @@ domain("twimg.com") {
     .css-1dbjc4n.r-16y2uox.r-1wbh5a2.r-1777fci.r-1mi0q7o.r-utggzx.r-m611by,
     .css-1dbjc4n.r-1ila09b.r-rull8r.r-qklmqi.r-1wtj0ep.r-1sp51qo,
     .css-1dbjc4n.r-1awozwy.r-18u37iz.r-1h3ijdo.r-1777fci.r-1jgb5lz.r-sb58tz.r-utggzx.r-13qz1uu {
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     div[class="css-1dbjc4n r-1ysxnx4 r-k0dy70 r-t23y2h r-1phboty r-rs99b7 r-ku1wi2 r-1bro5k0 r-1udh08x"],
