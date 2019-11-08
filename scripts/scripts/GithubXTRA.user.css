@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.17
+@version      0.0.18
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -19,11 +19,16 @@ url-prefix("wss://live.github.com") {
         text-align: center !important;
         text-decoration: none !important;
     }
-    a {
+    * {
         text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+    a {
+        color: var(--MyW) !important;
     }
     a:hover {
-        text-decoration: none !important;
+        color: var(--Myred1) !important;
     }
     .gh-header-hide-if-sticky {
         background-color: var(--Myback) !important;
