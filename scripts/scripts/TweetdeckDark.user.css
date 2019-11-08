@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.77
+@version      0.0.78
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -591,7 +591,7 @@ url-prefix("https://twitter.com/i/safety/") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -636,7 +636,7 @@ url-prefix("https://twitter.com/i/safety/") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--MyX3) !important;
+        background-color: var(--Mygreen3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -881,6 +881,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-account-manager-container.column-panel.accounts-drawer.border-box.flex.flex-column,
     .js-search-filter,
     .column-message {
+        background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10:hover,
@@ -909,6 +910,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-modal-panel.mdl.s-short,
     header.drawer-header.padding-lxl.flex-shrink--0,
     .prf-actions {
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         /*background: -moz-linear-gradient(top, rgba(188, 50, 53, 1) 0%, rgba(153, 12, 14, 1) 34%, rgba(147, 29, 31, 1) 67%, rgba(79, 15, 16, 1) 100%) !important;*/
     }

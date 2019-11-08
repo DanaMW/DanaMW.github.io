@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.43
+@version      0.0.44
 @description  My Twitter Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -101,7 +101,7 @@ domain("twimg.com") {
     .css-1dbjc4n.r-yfoy6g.r-o4zss7.r-rull8r.r-qklmqi.r-1d2f490.r-1xcajam.r-zchlnj.r-ipm5af.r-1siec45.r-o7ynqc.r-axxi2z.r-136ojw6 {
         z-index: 1000 !important;
         opacity: 1 !important;
-        background: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         filter: brightness(85%) !important;
     }
@@ -188,7 +188,7 @@ domain("twimg.com") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -218,7 +218,7 @@ domain("twimg.com") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--MyX3) !important;
+        background-color: var(--Mygreen3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
