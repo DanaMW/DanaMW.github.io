@@ -2,7 +2,7 @@
 @name         PBS Dark
 @namespace    http://danamw.github.io/scripts/scripts/PBSDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PBSDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -19,11 +19,16 @@
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-    a {
-        color: var(--MyW) !important;
-    }
+    h2,
     a:hover {
         color: var(--Myred1) !important;
+    }
+    p {
+        color: var(--Mytext) !important;
+    }
+    .nav-item:hover a,
+    a {
+        color: var(--MyW) !important;
     }
     .container__outer.page-header__outer {
         -moz-appearance: none;
@@ -32,6 +37,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    select,
     a.video-block__collections__link,
     a.btn,
     button {
@@ -49,6 +55,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .nav-item:hover:not(.nav-item--user),
+    select:hover,
     a.video-block__collections__link:hover,
     a.btn:hover,
     button:hover {
@@ -68,6 +76,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    select:active,
     a.video-block__collections__link:active,
     a.btn:active,
     button:active {
@@ -87,6 +96,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .container__inner,
+    .tippy-tooltip,
     div[class*="col-"] .dropdown,
     .popover,
     footer,
@@ -105,6 +116,7 @@
     .footer__legal {
         display: none !important;
     }
+    .tippy-tooltip,
     div[class*="carousel--verticals"],
     .station-content,
     .popover {
