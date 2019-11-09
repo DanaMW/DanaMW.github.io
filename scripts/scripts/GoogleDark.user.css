@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.78
+@version      0.0.79
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -928,7 +928,52 @@ url-prefix("https://groups.google.com/") {
         color: var(--Myred1) !important;
     }
     .rg_bx.rg_di.rg_el.ivg-i.fmbrQQxz::before {
-        border-color: var(--TwitterRed) !important;
+        border-bottom-color: var(--TwitterRed) !important;
+    }
+    .oldgisrelatedthumbdata.oldgisrelatedcurrentselection {
+        box-shadow: 0px 0px 0px 1px var(--Myred1), 0px 0px 0px 3px var(--Myred1) !important;
+    }
+    .oldgisrelatedthumbdata:hover,
+    .oldgisseemore:hover .oldgisrelatedthumbdata {
+        box-shadow: 0px 0px 0px 1px var(--Myred1), 0px 0px 0px 3px var(--Myred1) !important;
+    }
+    .oldgisrelatedthumbdata:active,
+    .oldgisseemore:active .oldgisrelatedthumbdata {
+        box-shadow: 0px 0px 0px 1px var(--Myred1), 0px 0px 0px 3px var(--Myred1) !important;
+    }
+    .oldgisimageareaimage {
+        border: 2px solid var(--Myred1) !important;
+    }
+    .oldgisbuttonclose::before,
+    .oldgisbuttonclose::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background: var(--MyW) !important;
+        left: 50%;
+    }
+    .oldgisbuttonprev::before,
+    .oldgisbuttonnext::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        top: 50%;
+        margin-top: -9px;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    .oldgisbuttonprev::before {
+        border-left: 3px solid var(--MyW) !important;
+        border-bottom: 3px solid var(--MyW) !important;
+        transform: rotate(45deg);
+        left: 12px;
+    }
+    .oldgisbuttonnext::before {
+        border-top: 3px solid var(--MyW) !important;
+        border-right: 3px solid var(--MyW) !important;
+        right: 10px;
     }
     .VmOpGe,
     body,
