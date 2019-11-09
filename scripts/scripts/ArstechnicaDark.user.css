@@ -2,7 +2,7 @@
 @name         Arstechnica Dark
 @namespace    https://danamw.github.io/scripts/scripts/ArstechnicaDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ArstechnicaDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,6 +13,11 @@
     html {
         background-color: var(--MyB) !important;
     }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
     .site-wrapper {
         background-color: var(--Mygray1) !important;
     }
@@ -20,10 +25,26 @@
     .ars-sub-app-no-banners-no-tracking-animated.ars-sub-app.visible {
         display: none !important;
     }
+    h2,
+    a {
+        color: var(--MyW) !important;
+    }
     a.lSNext,
     a.lSPrev {
         background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray3)) !important;
         border-radius: 25px !important;
+    }
+    h1,
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    time,
+    h4 {
+        color: var(--Mygreen1) !important;
+    }
+    p,
+    span {
+        color: var(--Mytext) !important;
     }
     a.lSNext:hover,
     a.lSPrev:hover {
@@ -78,5 +99,19 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    .prf-actions {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .site-wrapper {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    figure {
+        filter: brightness(100%) !important;
+    }
+    .caption {
+        border-bottom-color: var(--Myred1) !important;
     }
 }
