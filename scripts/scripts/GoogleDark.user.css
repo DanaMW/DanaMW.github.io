@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.77
+@version      0.0.78
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -352,6 +352,11 @@ url-prefix("https://groups.google.com/") {
     .gb_m {
         z-index: 10000 !important;
     }
+    .oldgisbuttonclose,
+    .oldgisbuttonprev,
+    .oldgisbuttonnext,
+    .moredetailsareabuttonsvisit,
+    .moredetailsareabuttonsview,
     #smsauth-interstitial-updatebutton,
     #smsauth-interstitial-confirmbutton,
     .suggest,
@@ -409,6 +414,11 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .oldgisbuttonclose:hover,
+    .oldgisbuttonprev:hover,
+    .oldgisbuttonnext:hover,
+    .moredetailsareabuttonsvisit:hover,
+    .moredetailsareabuttonsview:hover,
     #smsauth-interstitial-updatebutton:hover,
     #smsauth-interstitial-confirmbutton:hover,
     .action-menu-entry:hover,
@@ -483,6 +493,11 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .oldgisbuttonclose:active,
+    .oldgisbuttonprev:active,
+    .oldgisbuttonnext:active,
+    .moredetailsareabuttonsvisit:active,
+    .moredetailsareabuttonsview:active,
     #smsauth-interstitial-updatebutton:active,
     #smsauth-interstitial-confirmbutton:active,
     .suggest:active,
@@ -883,6 +898,7 @@ url-prefix("https://groups.google.com/") {
     .SHEkIb.gsmt {
         color: var(--Myred1) !important;
     }
+    .oldgiscontent,
     .WOSiSc.l9Rm1d,
     .jvfpWb.r-iy62SPVlOCI0 {
         background-color: var(--Myred3) !important;
@@ -907,6 +923,12 @@ url-prefix("https://groups.google.com/") {
     .EUjJDc,
     .banner h1 {
         color: var(--MyW) !important;
+    }
+    .rg_anbg * {
+        color: var(--Myred1) !important;
+    }
+    .rg_bx.rg_di.rg_el.ivg-i.fmbrQQxz::before {
+        border-color: var(--TwitterRed) !important;
     }
     .VmOpGe,
     body,
