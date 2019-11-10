@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -34,7 +34,7 @@
         position: relative !important;
         left: calc(1vw + var(--mmove) - 10vw) !important;
     }
-    .gb_r,
+    .gb_t,
     form[action="/search"],
     div[class*="account"],
     .gb_Ue,
@@ -86,7 +86,7 @@
     }
     a[role="tab"],
     a[aria-label="More Google apps"],
-    .gb_d,
+    .gb_f,
     .mat-list-item-content,
     div[role="button"],
     button:not([aria-label="Search"]) {
@@ -106,7 +106,7 @@
     }
     a[role="tab"]:hover,
     a[aria-label="More Google apps"]:hover,
-    .gb_d:hover,
+    .gb_f:hover,
     #gb,
     .gb_Qd.gb_7d,
     a[aria-selected="true"] .mat-list-item-content,
@@ -131,7 +131,7 @@
     }
     a[role="tab"]:active,
     a[aria-label="More Google apps"]:active,
-    .gb_d:active,
+    .gb_f:active,
     .mat-list-item-content:active,
     div[role="button"]:active,
     button:active:not([aria-label="Search"]) {
@@ -207,6 +207,8 @@
     .Bqxti-MJZihc {
         background-color: var(--MyX3) !important;
     }
+    .gb_J.gb_A,
+    .gb_J.gb_B,
     [role="menu"],
     .gb_H,
     div[aria-label="Google apps"],
