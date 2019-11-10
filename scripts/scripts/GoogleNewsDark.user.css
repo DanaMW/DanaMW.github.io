@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.22
+@version      0.0.23
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -27,7 +27,7 @@
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-    .gb_r,
+    .gb_t,
     #gb,
     header {
         background-image: none !important;
@@ -74,7 +74,7 @@
         text-align: center !important;
     }
     a[aria-label="More Google apps"],
-    .gb_d,
+    .gb_f,
     .MocG8c.IImy7e.LMgvRb,
     div[role="tab"],
     div[role="button"],
@@ -105,7 +105,7 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
     a[aria-label="More Google apps"]:hover,
-    .gb_d:hover,
+    .gb_f:hover,
     .MocG8c.IImy7e.LMgvRb.KKjvXb,
     .MocG8c.IImy7e.LMgvRb:hover,
     div[role="tab"]:hover,
@@ -144,7 +144,7 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
     a[aria-label="More Google apps"]:active,
-    .gb_d:active,
+    .gb_f:active,
     .MocG8c.IImy7e.LMgvRb:active,
     div[role="tab"]:active,
     div[role="button"]:active,
