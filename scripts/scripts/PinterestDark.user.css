@@ -18,6 +18,11 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         background: var(--MyBack) !important;
         color: var(--MyW) !important;
     }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
     /*
     .Jea.jzS.zI7.iyn.Hsu,
     .C9q.Cii.Jea.RDc.mQ8.ujU.zI7.iyn.Hsu {
@@ -25,6 +30,7 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         color: var(--MyW) !important;
     }
     */
+    .QDA.qJc.zI7.iyn.Hsu,
     .Yl-.MIw.Hb7 {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
