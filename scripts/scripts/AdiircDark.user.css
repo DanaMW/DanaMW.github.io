@@ -2,13 +2,14 @@
 @name         AdiIrc Dark
 @namespace    https://danamw.github.io/scripts/scripts/AdiircDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AdiircDark.user.css
-@version      0.0.6
+@version      0.0.7
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("adiirc.com") {
+@-moz-document domain("adiirc.com"),
+domain("dev.adiirc.com") {
     html,
     body {
         color: var(--MyW) !important;
@@ -24,7 +25,6 @@
     body,
     pre,
     .wiki.wiki-page,
-    #footer,
     #content,
     #main {
         background-color: var(--MyB) !important;
@@ -55,6 +55,11 @@
     li {
         color: var(--Mygreen1) !important;
     }
+    .post,
+    #right,
+    #footer,
+    #left,
+    #wrapper,
     li>a {
         background-image: none !important;
         background-color: transparent !important;
