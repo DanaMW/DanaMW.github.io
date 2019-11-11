@@ -4,6 +4,7 @@ img {
 
 * {
     text-decoration: none !important;
+    scrollbar-width: thin;
     scrollbar-color: #ff0000 #7e0000;
 }
 
@@ -22,6 +23,7 @@ header {
 
 #header {
     position: fixed;
+    background-color: rgb(76, 0, 0);
     border: none;
     width: 100%;
     top: 0;
