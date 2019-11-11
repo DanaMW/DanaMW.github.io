@@ -30,11 +30,6 @@ url("about:addons") {
         background-color: transparent !important;
         color: var(--MyB) !important;
     }
-    .textbox-input,
-    #searchFilter {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
     * {
         text-decoration: none !important;
         scrollbar-width: thin;
@@ -150,11 +145,6 @@ url("about:addons") {
     .pane-container {
         color: var(--Mytext) !important;
     }
-    #header-utils-btn,
-    #textbox-input-box {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyB) !important;
-    }
     .relnotes body {
         background-color: transparent !important;
     }
@@ -216,13 +206,6 @@ url("about:addons") {
     }
     .text-link:hover {
         color: var(--MyW) !important;
-    }
-    .header-button,
-    .textbox-input-box,
-    .alert {
-        background-color: var(--Myblue2) !important;
-        color: var(--MyB) !important;
-        border: 1px solid var(--Mytext) !important;
     }
     #detail-state-menulist {
         background-color: var(--Myblue2) !important;
@@ -317,13 +300,24 @@ url("about:addons") {
     dd:hover {
         color: var(--Myred1) !important;
     }
+    .textbox-input,
+    #searchFilter,
+    #header-utils-btn,
+    #textbox-input-box,
+    .header-button,
+    .alert {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyB) !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+    td.cell-value,
     #about-config-search,
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         text-align: center !important;
         border-radius: 15px !important;
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myred1) !important;
     }
     label {
         background-color: transparent !important;

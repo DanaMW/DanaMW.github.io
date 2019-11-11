@@ -249,6 +249,7 @@ menupopup>menu>menupopup {
     color: var(--MyW) !important;
 }
 
+.megabar,
 #urlbar {
     -moz-appearance: none !important;
     appearance: none !important;
@@ -271,6 +272,7 @@ menupopup>menu>menupopup {
     color: var(--MyW) !important;
 }
 
+.megabar,
 #urlbar {
     -moz-appearance: none !important;
     appearance: none !important;
