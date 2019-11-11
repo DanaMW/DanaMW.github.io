@@ -1,6 +1,7 @@
 /* TamperMonkey */
 
-@-moz-document url-prefix("moz-extension://f9e7059e-5f64-4300-b606-38720a6fe770/options.html") {
+@-moz-document url-prefix("moz-extension://f9e7059e-5f64-4300-b606-38720a6fe770/options.html"),
+url-prefix("moz-extension://bc493e36-114e-42f9-94e6-74906450622c/options.html") {
     * {
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
