@@ -1,6 +1,10 @@
 /* TamperMonkey */
 
-@-moz-document url("moz-extension://f9e7059e-5f64-4300-b606-38720a6fe770/options.html") {
+@-moz-document url-prefix("moz-extension://f9e7059e-5f64-4300-b606-38720a6fe770/options.html") {
+    * {
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
     input[type=button] {
         -moz-appearance: none;
         -webkit-appearance: none;
