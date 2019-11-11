@@ -139,14 +139,6 @@ body {
     margin: 0;
 }
 
-
-/*
-button.fullwidth {
-    display: none !important;
-}
-
-*/
-
 #header,
 #tabs-container {
     background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -204,15 +196,22 @@ input.url.vivaldi-addressfield {
     text-align: center !important;
 }
 
+.addressfield,
+input {
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+    border-radius: 15px !important;
+    border: 1px solid var(--Myred1) !important;
+    text-align: center !important;
+}
+
+select,
 paper-button,
 button {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    border-top: 1px solid var(--Myred2) !important;
-    border-left: 1px solid var(--Myred2) !important;
-    border-bottom: 1px solid var(--Myred3) !important;
-    border-right: 1px solid var(--Myred3) !important;
+    border: none !important;
     color: var(--Mytext) !important;
     background-color: var(--MyB) !important;
     background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -224,15 +223,13 @@ button {
     box-shadow: 0 1px 4px 1px var(--MyB) !important;
 }
 
+select:hover,
 paper-button:hover,
 button:hover {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    border-top: 1px solid var(--Myred3) !important;
-    border-left: 1px solid var(--Myred3) !important;
-    border-bottom: 1px solid var(--Myred2) !important;
-    border-right: 1px solid var(--Myred2) !important;
+    border: none !important;
     box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
     background-color: var(--MyX1) !important;
     background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -246,15 +243,13 @@ button:hover {
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
 
+select:active,
 paper-button:active,
 button:active {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    border-top: 1px solid var(--Mygreen2) !important;
-    border-left: 1px solid var(--Mygreen2) !important;
-    border-bottom: 1px solid var(--Mygreen3) !important;
-    border-right: 1px solid var(--Mygreen3) !important;
+    border: none !important;
     box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
     background-color: var(--MyX3) !important;
     background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
@@ -303,14 +298,6 @@ button[class="folder"] svg {
     background-color: var(--Myback) !important;
     color: var(--MyW) !important;
 }
-
-
-/*
-Style Attribute {
-    background-color: var(--Myback) !important;
-    background-image: none !important;
-}
-*/
 
 menuitem,
 menu {
