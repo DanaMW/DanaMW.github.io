@@ -52,6 +52,7 @@ url("about:addons") {
         background-image: none !important;
         border: none !important;
     }
+    menulist,
     td.cell-edit,
     td.cell-reset,
     .sidebar-footer-button,
@@ -86,6 +87,7 @@ url("about:addons") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    menulist:hover,
     td.cell-edit:hover,
     td.cell-reset:hover,
     .sidebar-footer-button:hover,
@@ -110,6 +112,7 @@ url("about:addons") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    menulist:active,
     td.cell-edit:active,
     td.cell-reset:active,
     .sidebar-footer-button:active,
