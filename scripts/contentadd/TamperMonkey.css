@@ -5,14 +5,14 @@
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
+    button,
+    .tv_tab,
+    select,
     input[type=button] {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
+        border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -23,14 +23,14 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    button:hover,
+    .tv_tab:hover,
+    select:hover,
     input[type=button]:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--MyX1) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -43,14 +43,14 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    button:active,
+    .tv_tab:active,
+    select:active,
     input[type=button]:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--MyX3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
@@ -63,4 +63,119 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .footer {
+        display: none !important;
+    }
+    .CodeMirror {
+        background: #460101 !important;
+        color: #ffffff !important;
+        line-height: 1.5em !important;
+        font-size: 16px !important;
+        height: 100%;
+        font-weight: bold !important;
+        outline: transparent !important;
+        border: 1px solid #ffffff !important;
+    }
+    .CodeMirror .CodeMirror-selected {
+        background: #a12525 !important;
+        color: #ffd900
+    }
+    .CodeMirror .CodeMirror-line::selection,
+    .CodeMirror .CodeMirror-line>span::selection,
+    .CodeMirror .CodeMirror-line>span>span::selection {
+        background: #a12525 !important;
+    }
+    .CodeMirror .CodeMirror-line::-moz-selection,
+    .CodeMirror .CodeMirror-line>span::-moz-selection,
+    .CodeMirror .CodeMirror-line>span>span::-moz-selection {
+        background: #a12525
+    }
+    .CodeMirror .CodeMirror-gutter .CodeMirror-lint-markers,
+    .CodeMirror-gutter .CodeMirror-lint-markers,
+    .CodeMirror .CodeMirror-gutter .CodeMirror-foldgutter,
+    .CodeMirror-gutter .CodeMirror-foldgutter,
+    .CodeMirror .CodeMirror-gutter .CodeMirror-bookmarks,
+    .CodeMirror-gutter .CodeMirror-bookmarks,
+    .CodeMirror .CodeMirror-gutter.CodeMirror-linenumbers,
+    .CodeMirror-gutter.CodeMirror-linenumbers,
+    .CodeMirror .CodeMirror-gutter.gutter,
+    .CodeMirror .CodeMirror-gutters {
+        background: #460101;
+        border-right: 2px solid #a12525;
+    }
+    .CodeMirror .CodeMirror-guttermarker {
+        color: #0f0;
+    }
+    .CodeMirror-guttermarker-subtle {
+        color: #ffe8e8;
+    }
+    .CodeMirror .CodeMirror-linenumber {
+        color: #FFFFFF;
+    }
+    .CodeMirror-cursor {
+        border-left: 1px solid #00FF00;
+    }
+    .CodeMirror span.cm-keyword {
+        color: #00FF00;
+        font-weight: bold;
+    }
+    .CodeMirror span.cm-atom {
+        color: #3FF;
+    }
+    .CodeMirror span.cm-number {
+        color: #fbff00;
+    }
+    .CodeMirror span.cm-def {
+        color: #91b4ff;
+    }
+    .CodeMirror span.cm-variable {
+        color: #F6C;
+    }
+    .CodeMirror span.cm-variable-2 {
+        color: #c44eff;
+    }
+    .CodeMirror span.cm-variable-3,
+    .CodeMirror span.cm-type {
+        color: #ad7cec;
+    }
+    .CodeMirror span.cm-property {
+        color: #62FFA0;
+    }
+    .CodeMirror span.cm-operator {
+        color: #ecffb9;
+    }
+    .CodeMirror span.cm-comment {
+        color: #00FF00;
+    }
+    .CodeMirror span.cm-string {
+        color: #39C;
+    }
+    .CodeMirror span.cm-meta {
+        color: #ffffff;
+    }
+    .CodeMirror span.cm-qualifier {
+        color: #FFF700;
+    }
+    .CodeMirror span.cm-builtin {
+        color: #ffffff;
+    }
+    .CodeMirror span.cm-bracket {
+        color: #ffff00;
+    }
+    .CodeMirror span.cm-tag {
+        color: #FFBD40;
+    }
+    .CodeMirror .cm-overlay,
+    .CodeMirror span.cm-attribute {
+        color: #FFF700;
+    }
+    .CodeMirror span.cm-error {
+        color: #FF0000;
+    }
+    .CodeMirror .CodeMirror-activeline-background {
+        background: #921111;
+    }
+}
+
+
 }
