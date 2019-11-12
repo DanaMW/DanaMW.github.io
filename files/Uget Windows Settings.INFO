@@ -1,0 +1,1 @@
+--dir=D:/Downloads --enable-rpc=true --rpc-listen-all=true --rpc-allow-origin-all=true --rpc-secret=SSmYsEcErTSS --disable-ipv6 --check-certificate=false --log=D:/bin/aria2/aria2.log --input-file=D:/bin/aria2/aria2.session --console-log-level=info
