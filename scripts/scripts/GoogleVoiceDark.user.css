@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -64,10 +64,12 @@
     textarea {
         color: var(--MyW) !important;
     }
+    div[class*="layout-"],
     button {
         background-image: none !important;
         background-color: transparent !important;
     }
+    div[class*="gmat-body"],
     md-input-container input,
     gv-annotation,
     gv-message-entry,
@@ -164,6 +166,7 @@
         height: 25px !important;
         margin-top: 8px !important;
     }
+    md-dialog,
     gv-call-as-banner,
     gv-message-list-header,
     .mat-form-field-wrapper,
@@ -173,6 +176,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    md-dialog,
     mat-dialog-container,
     gv-message-list-header,
     .mat-form-field-wrapper,
