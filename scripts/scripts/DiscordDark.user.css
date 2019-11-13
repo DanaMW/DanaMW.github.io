@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.44
+@version      0.0.45
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -20,13 +20,13 @@
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
     pre {
-        border-radius: 15px !important;
+        border-radius: 5px !important;
     }
     code.hljs {
         overflow-x: visible !important;
         overflow-y: visible !important;
         padding-bottom: 30px !important;
-        border-radius: 15px !important;
+        border-radius: 5px !important;
         border: 1px solid var(--MyW) !important;
     }
     div[class*="divider"][class*="dividerDefault"] {
@@ -72,7 +72,7 @@
     }
     div[class*="title"][class*="base"][class*="size16"],
     div[class*="title"][class*="container"] {
-        backgrund-color: var(--Myred3) !important;
+        background-color: var(--Myred3) !important;
         background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
     div[class^="chat"] div[class*="topic"][class*="expandable"] {
@@ -460,7 +460,7 @@
         border-radius: 5px;
     }
     div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"][class*="root"] {
-        border-radius: 15px !important;
+        border-radius: 5px !important;
         border: 1px solid var(--Myborder) !important;
     }
     #app-mount * div[class*="modal"] {
@@ -478,7 +478,7 @@
         border: 1px solid var(--Myblue1) !important;
     }
     #app-mount * div[class*="userPopout"] {
-        border-radius: 15px !important;
+        border-radius: 5px !important;
         border: 1px solid var(--MyW) !important;
     }
     #app-mount * div[class^="channels"].btn-friends a {
@@ -519,7 +519,7 @@
         border: 2px outset var(--MyW) !important;
     }
     div[class*="messagesPopoutWrap"] {
-        border-radius: 15px !important;
+        border-radius: 5px !important;
     }
     #app-mount * span[class*="botTagRegular"][class*="botTag"] {
         background-color: var(--Myblue1) !important;
@@ -680,6 +680,7 @@
     div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="containStyles"][class*="scrollerThemed"][class*="themeGhostHairlineChannels"][class*="scrollerFade"] {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class*="grid-"],
     div[class*="item"]:hover,
     #app-mount * div[class*="userPopout"],
     div[role="dialog"],
@@ -712,6 +713,7 @@
         border: 2px ridge var(--MyW) !important;
         box-shadow: 0 0 2px var(--Myblue1) !important;
     }
+    code.inline,
     form div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
         background: transparent !important;
     }
@@ -743,5 +745,14 @@
     div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
         background-color: transparent !important;
         box-sizing: border-box !important;
+    }
+    div[class*="grid-"] {
+        border-bottom: 1px solid var(--MyW) !important;
+        border-right: 1px solid var(--MyW) !important;
+        border-top: 1px solid var(--MyW) !important;
+        border-radius: 0px 5px 5px 0px !important;
+    }
+    div[class*="embedWrapper"] {
+        border-radius: 0px 5px 5px 0px !important;
     }
 }
