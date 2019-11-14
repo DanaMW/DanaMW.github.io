@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.45
+@version      0.0.46
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -238,11 +238,8 @@
         background-color: transparent !important;
         background-image: none !important;
     }
+    div[class*="iconWrapper"][class*="clickable"][role="button"],
     h3[role="button"],
-    div[aria-label="Help"],
-    div[aria-label="Mentions"],
-    div[aria-label="Member List"],
-    div[aria-label="Pinned Messages"],
     div[class*="icon"][class*="iconLayout"][class*="small"],
     div[aria-roledescription="Channel Mute Switch"],
     div[aria-label="New Group DM"] {
@@ -254,10 +251,7 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
-    div[aria-label="Help"]:hover,
-    div[aria-label="Mentions"]:hover,
-    div[aria-label="Member List"]:hover,
-    div[aria-label="Pinned Messages"]:hover,
+    div[class*="iconWrapper"][class*="clickable"][role="button"]:hover,
     div[class*="icon"][class*="iconLayout"][class*="small"]:hover,
     div[aria-roledescription="Channel Mute Switch"]:hover,
     div[aria-label="New Group DM"]:hover {
