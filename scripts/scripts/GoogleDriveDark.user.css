@@ -2,7 +2,7 @@
 @name         Google Drive Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDriveDark.user.css
-@version      0.0.12
+@version      0.0.13
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -35,6 +35,7 @@
     svg {
         filter: invert(1) !important;
     }
+    .le-Ba-d-j,
     div[role="tab"],
     .h-sb-Ic.h-R-d.a-c-d,
     .h-sb-Ic.h-R-d.h-R-d-rc.a-c-d,
@@ -79,6 +80,7 @@
     /*
     .a-s-yd-J.a-s-yd-Sa.Sa,
     */
+    .le-Ba-d-j:hover,
     div[role="tab"]:hover,
     div[role="tab"][aria-selected="true"],
     .y-C-ka.y-C-ka-ig.y-C-je:hover,
@@ -112,6 +114,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .le-Ba-d-j:active,
     .h-sb-Ic.h-R-d.a-c-d.h-R-d-W:active,
     .h-sb-Ic.h-R-d.h-R-d-rc.a-c-d.h-R-d-W:active,
     .h-sb-Ic.h-R-d.a-c-d.a-hd-Il-mhHukc-d:active,
@@ -225,5 +228,13 @@
     div[role="group"],
     div[role="listbox"]>div {
         background-color: var(--Mygray2) !important;
+    }
+    .le-Ba-la-r {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .Ea-oa {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 }
