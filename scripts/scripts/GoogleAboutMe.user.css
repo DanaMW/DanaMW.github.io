@@ -2,7 +2,7 @@
 @name         Google About Me
 @namespace    http://danamw.github.io/scripts/scripts/GoogleAboutMe.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleAboutMe.user.css
-@version      0.0.6
+@version      0.0.7
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -98,6 +98,7 @@ domain("get.google.com") {
     .O02Irc:hover,
     .kKVajd,
     div[data-cardtype]:hover {
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     div[role="menu"],
@@ -105,6 +106,7 @@ domain("get.google.com") {
     .TzzWqb,
     .O02Irc,
     div[data-cardtype] {
+        background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     .OabDMe.cXrdqd.Y2Zypf {
