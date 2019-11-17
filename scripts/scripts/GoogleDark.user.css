@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.81
+@version      0.0.82
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -98,6 +98,7 @@ url-prefix("https://groups.google.com/") {
         left: 0px !important;
         transform: none !important;
     }
+    .PaEvOc,
     .section-review,
     div[class*="__root"],
     div[class*="__container"],
@@ -112,6 +113,7 @@ url-prefix("https://groups.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .PaEvOc:hover,
     .section-review,
     div[class*="__root"],
     div[class*="__container"],
@@ -132,6 +134,7 @@ url-prefix("https://groups.google.com/") {
     #irc-cl {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    .PaEvOc,
     .section-subheader,
     div[class="hyMrOd "],
     .u4DeMc,
