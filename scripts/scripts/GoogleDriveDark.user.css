@@ -2,7 +2,7 @@
 @name         Google Drive Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDriveDark.user.css
-@version      0.0.13
+@version      0.0.14
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -229,6 +229,7 @@
     div[role="listbox"]>div {
         background-color: var(--Mygray2) !important;
     }
+    div[role="dialog"],
     .le-Ba-la-r {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
