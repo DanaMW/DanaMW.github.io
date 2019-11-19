@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.18
+@version      0.0.19
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -73,6 +73,7 @@ url-prefix("wss://live.github.com") {
     .js-selected-navigation-item.selected:hover {
         border-color: var(--Myred1) !important;
     }
+    .flash>.btn.btn-sm.btn-primary.flash-action,
     .toolbar-item,
     .tabnav-tab,
     .UnderlineNav-item,
@@ -124,6 +125,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .flash>.btn.btn-sm.btn-primary.flash-action:hover,
     .dropdown-item:hover,
     .toolbar-item:hover,
     .TableObject .TableObject-item a.btn.btn-primary.ml-3:hover,
@@ -180,6 +182,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .flash>.btn.btn-sm.btn-primary.flash-action:active,
     .toolbar-item:active,
     .TableObject .TableObject-item a.btn.btn-primary.ml-3:active,
     .tabnav-tab:active,
@@ -256,10 +259,13 @@ url-prefix("wss://live.github.com") {
         padding: 5px !important;
     }
     details-menu {
+        background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    .flash,
     .header-nav-current-user.css-truncate a[role="menuitem"] {
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
 }
