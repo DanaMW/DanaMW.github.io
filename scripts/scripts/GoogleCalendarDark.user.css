@@ -2,7 +2,7 @@
 @name         Google Calendar Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleCalendarDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleCalendarDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -17,6 +17,7 @@
     }
     /*THIS ONE GETS RID OF WHITE BOX!! */
     div[jsaction],
+    .JtukPc,
     .gb_t,
     .WnqCuf.mIZh1c,
     .TanRXd,
@@ -39,9 +40,8 @@
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-    [aria-checked="true"] {
-        color: var(--MyW) !important;
-    }
+    [aria-checked="true"],
+    .JAPzS,
     span,
     a {
         color: var(--MyW) !important;
@@ -117,6 +117,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .JtukPc,
     .OiAIRd,
     div[jsaction][role="toolbar"],
     .pdqVLc,
