@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.79
+@version      0.0.80
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -553,6 +553,7 @@ url-prefix("https://twitter.com/i/safety/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .typeahead-item.s-selected,
     .js-hide-drawer.margin-t--8.margin-b--10.Button.Button--primary.Button--large.tweet-button.txt-left:not(.is-hidden),
     .search-tip-item-hover.txt-size--12:hover,
     div[role="button"]:hover:not([style*="position: absolute"]),
@@ -648,6 +649,7 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     .js-hide-drawer.margin-t--8.margin-b--10.Button.Button--primary.Button--large.tweet-button.txt-left:not(.is-hidden) {
         width: 200px !important;
+        opacity: 0.6 !important;
     }
     .js-compose-title.compose-title-text.txt-ellipsis.inline-block {
         color: var(--MyW) !important;
@@ -845,6 +847,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-modal-inner {
         border-radius: 25px !important;
     }
+    ul.lst.lst-modal,
     .js-column-header.js-action-header.flex-shrink--0.column-header,
     label.checkbox,
     fieldset,
@@ -870,6 +873,7 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    ul.lst.lst-modal,
     .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10,
     .js-quote-tweet-holder,
     .mdl.cmp.s-inreply.l-no-txtarea.s-fluid-height,
