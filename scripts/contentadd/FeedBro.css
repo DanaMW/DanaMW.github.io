@@ -46,4 +46,19 @@ url-prefix("moz-extension://7f220db0-49e8-4630-8d13-6b2213ad2cae/reader.html") {
     .node-text.node-unreadtext {
         color: var(--Myred1) !important;
     }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+    article,
+    alertify-inner {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    article,
+    alertify-inner {
+        color: var(--MyW) !important;
+    }
 }
