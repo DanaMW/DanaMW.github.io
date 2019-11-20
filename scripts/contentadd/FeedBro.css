@@ -46,13 +46,15 @@ url-prefix("moz-extension://7f220db0-49e8-4630-8d13-6b2213ad2cae/reader.html") {
     .node-text.node-unreadtext {
         color: var(--Myred1) !important;
     }
-    #alertify-text,
-    .alertify-text-wrapper,
+    textarea,
+    input#alertify-text.alertify-text,
     input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
+        color: #000 !important;
         text-align: center !important;
-        border: 1px solid var(--Myred1) !important;
+        border: 1px solid #ff0000 !important;
+    }
+    .alertify-text-wrapper {
+        background-color: transparent !important;
     }
     article,
     alertify-inner {
@@ -66,6 +68,6 @@ url-prefix("moz-extension://7f220db0-49e8-4630-8d13-6b2213ad2cae/reader.html") {
     }
     article,
     alertify-inner {
-        color: var(--MyW) !important;
+        color: #000 !important;
     }
 }
