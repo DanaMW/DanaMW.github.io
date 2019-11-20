@@ -46,6 +46,8 @@ url-prefix("moz-extension://7f220db0-49e8-4630-8d13-6b2213ad2cae/reader.html") {
     .node-text.node-unreadtext {
         color: var(--Myred1) !important;
     }
+    #alertify-text,
+    .alertify-text-wrapper,
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -57,10 +59,11 @@ url-prefix("moz-extension://7f220db0-49e8-4630-8d13-6b2213ad2cae/reader.html") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-    /*
-    background-color: var(--Mygray1) !important;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    */
+    nav,
+    .alertify-buttons {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
     article,
     alertify-inner {
         color: var(--MyW) !important;
