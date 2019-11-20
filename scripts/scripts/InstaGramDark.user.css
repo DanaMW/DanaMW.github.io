@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.36
+@version      0.0.37
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -555,5 +555,12 @@
         border: 1px solid var(--Myborder) !important;
         border-top-left-radius: 15px !important;
         border-top-right-radius: 15px !important;
+    }
+    svg[aria-label="Profile"]:hover,
+    svg[aria-label="Activity Feed"]:hover,
+    svg[aria-label="Find People"]:hover,
+    img.s4Iyt:hover,
+    svg[aria-label="Instagram"]:hover {
+        filter: invert(50%) !important;
     }
 }
