@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.80
+@version      0.0.81
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -688,7 +688,7 @@ url-prefix("https://twitter.com/i/safety/") {
         padding: 0 !important;
         margin: 0 !important;
         color: var(--MyW) !important;
-        text-align: center !important;
+        /*text-align: center !important;*/
     }
     button.js-user-actions-menu.btn.btn-round.btn-on-dark,
     button.js-action-unfollow.action-text.unfollow-text {
@@ -719,7 +719,9 @@ url-prefix("https://twitter.com/i/safety/") {
     .avatar {
         border: 2px solid var(--MyB) !important;
     }
-    .avatar:hover {
+    .avatar:hover,
+    .nbfc img.avatar:hover,
+    .tweet-avatar.avatar:hover {
         border: 2px solid var(--Myred1) !important;
     }
     li>a.btn {
