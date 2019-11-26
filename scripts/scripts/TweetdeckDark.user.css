@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.81
+@version      0.0.82
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -73,14 +73,6 @@ url-prefix("https://twitter.com/i/safety/") {
     div[role="progressbar"] {
         z-index: 10000 !important;
         background: transparent !important;
-    }
-    .nbfc a,
-    a.account-link {
-        color: var(--Mytext) !important;
-    }
-    a[target]:hover,
-    .account-link.txt-bold:hover {
-        color: var(--Myred1) !important;
     }
     .scrubBar {
         background-color: var(--Mygray2) !important;
@@ -697,9 +689,6 @@ url-prefix("https://twitter.com/i/safety/") {
         height: 30px !important;
         border: none !important;
     }
-    li.js-item-launch:hover {
-        color: var(--TwitterBlue)
-    }
     .Footer-adsModule {
         display: none !important;
     }
@@ -947,11 +936,6 @@ url-prefix("https://twitter.com/i/safety/") {
     a span.txt-ellipsis:hover {
         color: #1da1f2 !important;
     }
-    .lst-profile li a:hover {
-        -moz-appearance: none !important;
-        -webkit-appearance: none !important;
-        color: var(--TwitterBlue) !important;
-    }
     .icon.icon-close.icon-center-24::before {
         padding: 5px !important;
     }
@@ -1070,9 +1054,6 @@ url-prefix("https://twitter.com/i/safety/") {
     .is-inverted-light .txt-mute a:not(:hover):not(:focus) {
         color: var(--Mygray2) !important;
     }
-    .is-inverted-light .account-link {
-        color: var(--MyW) !important;
-    }
     .is-inverted-light .account-bio {
         color: var(--MyW) !important;
     }
@@ -1149,5 +1130,23 @@ url-prefix("https://twitter.com/i/safety/") {
     html.dark .TooltipHoverTarget,
     .TooltipHoverTarget {
         background-image: linear-gradient(90deg, var(--MyX1) 50%, transparent 0) !important;
+    }
+    .is-inverted-light .account-link,
+    .nbfc a,
+    a[target],
+    .account-link.txt-bold,
+    .account-link,
+    li.js-item-launch:hover {
+        color: var(--TwitterBlue)
+    }
+    a[target]:hover,
+    .account-link.txt-bold:hover,
+    .account-link:hover {
+        color: var(--Myred1) !important;
+    }
+    .lst-profile li a:hover {
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        color: var(--TwitterBlue) !important;
     }
 }
