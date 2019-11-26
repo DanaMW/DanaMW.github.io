@@ -293,6 +293,7 @@ menupopup>menu>menupopup {
 
 #tracking-protection-icon-container:hover {
     background-color: var(--MyX3) !important;
+    border-radius: 25px !important;
 }
 
 menuseperator {
