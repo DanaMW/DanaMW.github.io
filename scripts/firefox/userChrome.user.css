@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.17
+@version     0.0.18
 @description Mozilla UserChrome File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -366,6 +366,7 @@ toolbarbutton:hover {
     border: none !important;
 }
 
+#pageActionButton:hover,
 button:hover,
 #clearDownloadsButton:hover,
 .subviewbutton.panel-subview-footer:hover,
@@ -395,6 +396,7 @@ toolbarbutton:hover:not([disabled="true"]) {
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
 
+#pageActionButton:active,
 button:active,
 #clearDownloadsButton:active,
 .subviewbutton.panel-subview-footer:active,
