@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.46
+@version      0.0.47
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -238,8 +238,12 @@
         background-color: transparent !important;
         background-image: none !important;
     }
-    div[class*="iconWrapper"][class*="clickable"][role="button"],
+    div[class*="iconWrapper"] svg[class*="icon"] {
+        color: var(--MyW) !important;
+    }
     h3[role="button"],
+    div[class*="iconWrapper"],
+    div[class*="iconWrapper"][class*="clickable"][role="button"],
     div[class*="icon"][class*="iconLayout"][class*="small"],
     div[aria-roledescription="Channel Mute Switch"],
     div[aria-label="New Group DM"] {
@@ -251,6 +255,7 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
+    h3[role="button"]:hover,
     div[class*="iconWrapper"][class*="clickable"][role="button"]:hover,
     div[class*="icon"][class*="iconLayout"][class*="small"]:hover,
     div[aria-roledescription="Channel Mute Switch"]:hover,
