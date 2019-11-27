@@ -2,7 +2,7 @@
 @name         VisualStudio
 @namespace    https://danamw.github.io/scripts/scripts/VisualStudio.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/VisualStudio.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -24,9 +24,6 @@ domain("my.visualstudio.com") {
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3);
     }
-    /*
-    .breadcrumb,
-    */
     .vs-bar,
     ul[role="tablist"],
     a[title="Search here"],
@@ -38,6 +35,7 @@ domain("my.visualstudio.com") {
     .tabs-control-content {
         background-color: var(--Myback) !important;
     }
+    footer,
     .vs-banner.free {
         display: none !important;
     }
@@ -51,8 +49,7 @@ domain("my.visualstudio.com") {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
-    .updates-banner,
-    .alert {
+    .updates-banner {
         background-color: var(--Myred2) !important;
     }
     .ux-updated-date,
@@ -70,6 +67,9 @@ domain("my.visualstudio.com") {
     h2,
     h1 {
         color: var(--MyW) !important;
+    }
+    a:hover {
+        color: var(--Myred1) !important;
     }
     input,
     .homepage-searchbox-container {
@@ -116,16 +116,15 @@ domain("my.visualstudio.com") {
     strong {
         color: var(--Mygreen1) !important;
     }
+    #nav-extensions,
     .c-select,
-    a[href]:not([href="#review-details"]):not([target="_blank"]),
+    li a[id*="nav-"],
+    /*a[href]:not([href="#review-details"]):not([target="_blank"]):not([id*="carousel-"]),*/
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
+        border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -136,16 +135,15 @@ domain("my.visualstudio.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    li.active a[id*="nav-"],
+    #nav-extensions:hover,
     .c-select:hover,
-    a[href]:hover:not([href="#review-details"]):not([target="_blank"]),
+    li a[id*="nav-"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--MyX1) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -158,16 +156,14 @@ domain("my.visualstudio.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    #nav-extensions:active,
     .c-select:active,
-    a[href]:active:not([href="#review-details"]):not([target="_blank"]),
+    li a[id*="nav-"]:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--MyX3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
@@ -179,5 +175,14 @@ domain("my.visualstudio.com") {
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .carousel,
+    .alert {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .widget {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 }
