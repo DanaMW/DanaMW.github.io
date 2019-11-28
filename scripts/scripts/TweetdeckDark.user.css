@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.82
+@version      0.0.83
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -650,6 +650,9 @@ url-prefix("https://twitter.com/i/safety/") {
     .pin-bottom-full-width.old-composer-footer {
         background-color: transparent !important;
     }
+    .js-compose-close.is-actionable.icon.icon-close.margin-v--20.pull-right {
+        filter: invert(0.5) !important;
+    }
     .js-compose-close.is-actionable.icon.icon-close.margin-v--20.pull-right:hover {
         filter: invert(1) !important;
     }
@@ -879,6 +882,7 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .js-media-added .compose-media-bar-holder,
     .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10:hover,
     .Notification-content,
     .css-1dbjc4n.r-1awozwy.r-18u37iz.r-195d4m8.r-1777fci.r-1jgb5lz.r-1orpq53.r-13qz1uu,
