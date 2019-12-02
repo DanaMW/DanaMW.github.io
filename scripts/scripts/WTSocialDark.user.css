@@ -2,7 +2,7 @@
 @name         WT Social Dark
 @namespace    http://danamw.github.io/scripts/scripts/WTSocialDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WTSocialDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -143,6 +143,7 @@
         border-radius: 15px 15px 0px 0px !important;
         border-bottom: none !important;
     }
+    #notitications-reading,
     .comment,
     .article,
     .feed-item-outer,
@@ -185,5 +186,8 @@
     #feed-contents>h2 {
         text-align: center !important;
         color: var(--TwitterBlue) !important;
+    }
+    #notitications-reading {
+        border: 1px solid var(--MyW) !important;
     }
 }
