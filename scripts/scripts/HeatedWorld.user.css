@@ -2,13 +2,21 @@
 @name         Heated World
 @namespace    https://danamw.github.io/scripts/scripts/HeatedWorld.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/HeatedWorld.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("heated.world") {
+    .main-menu-content,
+    .main-menu,
+    .topbar {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .intro-popup-page,
+    .vertically-centred,
     body,
     html {
         background-color: var(--MyB) !important;
@@ -19,14 +27,9 @@
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-    .main-menu-content,
     .main-menu,
     .topbar {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    .main-menu,
-    .topbar {
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
     a,
@@ -101,5 +104,15 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    /*
+    .drop-down {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    */
+    .drop-down {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 }
