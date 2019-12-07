@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.83
+@version      0.0.84
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -118,6 +118,7 @@ url-prefix("https://groups.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    a[jsname="uy6ald"]:hover,
     .PaEvOc:hover,
     .section-review,
     div[class*="__root"],
@@ -139,6 +140,7 @@ url-prefix("https://groups.google.com/") {
     #irc-cl {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    a[jsname="uy6ald"],
     .PaEvOc,
     .section-subheader,
     div[class="hyMrOd "],
@@ -150,6 +152,10 @@ url-prefix("https://groups.google.com/") {
     .exp-outline,
     div.g {
         border-bottom: 2px solid var(--MyX1) !important;
+    }
+    .WGvvNb,
+    .fxgdke {
+        color: var(--MyW) !important;
     }
     #irc-cl {
         border: 1px solid var(--MyW) !important;
@@ -947,6 +953,11 @@ url-prefix("https://groups.google.com/") {
         border-color: var(--Myred1) !important;
         width: 50px;
     }
+    div[class="h312td  RtIwE"] {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    div[class="h312td  RtIwE"],
     .rg_ilmbg {
         background-color: var(--MyX1) !important;
     }
