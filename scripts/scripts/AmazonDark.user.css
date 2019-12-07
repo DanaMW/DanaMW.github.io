@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.15
+@version      0.0.16
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -41,7 +41,6 @@
     }
     div[class*="nav-timeline"],
     div[id*="nav-flyout"],
-    table,
     td[class*="comparison"],
     tr[class*="comparison"],
     tr[id*="comparison"] {
@@ -56,6 +55,9 @@
     }
     .milestone-bar_background {
         background-color: transparent !important;
+    }
+    .hmenu-item.hmenu-title {
+        color: var(--Mygreen1) !important;
     }
     .milestone-marker::before,
     .milestone-markers::after {
@@ -179,6 +181,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    table,
+    #mako-subnav-helper,
     .a-accordion-inner.accordion-row-content,
     .a-box,
     #ppu-container,
@@ -204,6 +208,12 @@
     .w-popover-header {
         background-color: var(--Myred3) !important;
     }
+    #nav-main,
+    #nav-belt,
+    header,
+    #navbar,
+    p,
+    tr,
     li span.a-list-item,
     h2.header,
     .a-text-left,
@@ -227,6 +237,7 @@
         text-shadow: 0px 0px var(--Myred1) !important;
         text-decoration: none !important;
     }
+    h1,
     .a-price-symbol {
         color: var(--Mygreen2) !important;
     }
@@ -285,6 +296,13 @@
     .item {
         color: var(--MyW) !important;
     }
+    /*
+    #nav-main,
+    #nav-belt,
+    */
+    #hmenu-customer-profile,
+    header,
+    #navbar,
     .a-tab-heading:hover,
     .a-tab-heading.a-active,
     .prime-sub-nav-item-container:hover,
@@ -292,9 +310,20 @@
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    table,
+    #mako-subnav-helper,
     .a-tab-heading,
     .prime-sub-nav,
     li[role="tab"] {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .a-expander-header,
+    span[id*="cr-lighthouse"]:hover {
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+    }
+    .a-expander-header:hover {
+        background-color: var(--Myred1) !important;
+        color: var(--MyW) !important;
     }
 }
