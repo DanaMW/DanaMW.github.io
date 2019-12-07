@@ -73,6 +73,16 @@ url-prefix("wss://live.github.com") {
     .js-selected-navigation-item.selected:hover {
         border-color: var(--Myred1) !important;
     }
+    .ajax-pagination-form button.ajax-pagination-btn {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .ajax-pagination-form button.ajax-pagination-btn,
+    .d-inline-flex .btn,
+    #user-projects-list .btn,
+    .btn-mktg,
+    #partial-discussion-header .btn,
+    #partial-new-comment-form-actions button.btn.btn-primary,
     .flash>.btn.btn-sm.btn-primary.flash-action,
     .toolbar-item,
     .tabnav-tab,
@@ -125,6 +135,10 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .ajax-pagination-form .ajax-pagination-btn:hover,
+    .d-inline-flex .btn:hover,
+    #user-projects-list .btn:hover,
+    .btn-mktg:hover,
     .flash>.btn.btn-sm.btn-primary.flash-action:hover,
     .dropdown-item:hover,
     .toolbar-item:hover,
@@ -171,7 +185,7 @@ url-prefix("wss://live.github.com") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -182,6 +196,10 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .ajax-pagination-form button.ajax-pagination-btn:active,
+    .d-inline-flex .btn:active,
+    #user-projects-list .btn:active,
+    .btn-mktg:active,
     .flash>.btn.btn-sm.btn-primary.flash-action:active,
     .toolbar-item:active,
     .TableObject .TableObject-item a.btn.btn-primary.ml-3:active,
@@ -226,7 +244,7 @@ url-prefix("wss://live.github.com") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--MyX3) !important;
+        background-color: var(--Mygreen3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -247,6 +265,7 @@ url-prefix("wss://live.github.com") {
     .header-search {
         background: transparent !important;
     }
+    input,
     .js-user-status-container,
     .form-control,
     .js-site-search-form {
@@ -258,14 +277,43 @@ url-prefix("wss://live.github.com") {
     .js-selected-navigation-item {
         padding: 5px !important;
     }
+    .sidebar {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .sidebar,
     details-menu {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    .progress-pjax-loader>.progress-pjax-loader-bar {
+        background-color: var(--Myred1) !important;
+        box-shadow: 0 0 10px var(--MyX1) !important;
+    }
     .flash,
     .header-nav-current-user.css-truncate a[role="menuitem"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .border-bottom.border-gray-dark.py-3,
+    .d-flex,
+    .d-table,
+    .UnderlineNav,
+    .position-relative.d-md-flex.flex-wrap.flex-justify-between.flex-items-center.border-bottom.border-gray-dark.pb-3,
+    .d-block {
+        border-color: var(--Myred1) !important;
+    }
+    .Box.pinned-item-list-item {
+        border-color: var(--MyW) !important;
+    }
+    .Box.pinned-item-list-item,
+    clipboard-copy:hover,
+    .bg-gray.p-3.border-bottom,
+    .extended-markdown,
+    .product-callout,
+    .list-group-item:hover,
+    .timeline-comment-label {
+        background-color: var(--MyX1) !important;
     }
 }
