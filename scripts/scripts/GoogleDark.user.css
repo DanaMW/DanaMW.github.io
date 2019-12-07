@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.82
+@version      0.0.83
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -25,6 +25,9 @@ url-prefix("https://groups.google.com/") {
     body {
         background-color: var(--MyB) !important;
     }
+    .SSBXXc {
+        left: calc(1vw + var(--tmove) - 10vw) !important;
+    }
     html[itemtype="http://schema.org/SearchResultsPage"] .tsf-p,
     html[itemtype="http://schema.org/SearchResultsPage"] .A8SBwf {
         width: var(--twidth) !important;
@@ -35,16 +38,17 @@ url-prefix("https://groups.google.com/") {
         left: calc(2vw + var(--tmove) - 10vw) !important;
     }
     .sfibbbc,
-    .RNNXgb {
+    div[jsname="RNNXgb"] {
         width: var(--twidth) !important;
         background: transparent !important;
         border: none !important;
     }
-    html[itemtype="http://schema.org/WebPage"] .RNNXgb {
+    html[itemtype="http://schema.org/WebPage"] div[jsname="RNNXgb"] {
         position: relative !important;
         width: initial !important;
         margin: auto !important;
     }
+    .tAcEof,
     #hdtb-msb {
         position: sticky !important;
         margin: 0 auto;
@@ -73,6 +77,7 @@ url-prefix("https://groups.google.com/") {
         border: none !important;
     }
     .dU5Kl,
+    header,
     header[role="banner"],
     .rg_l,
     .irc_ris,
@@ -191,6 +196,12 @@ url-prefix("https://groups.google.com/") {
     .UVgjof {
         padding-left: 10px !important;
     }
+    scrolling-carousel,
+    div[jsname="ixzLGf"],
+    .OUZ5W,
+    .QnfS4e,
+    .v4dQwb,
+    #Sva75c,
     .Mza7yc,
     .UVgjof,
     div[role="main"] {
@@ -367,6 +378,40 @@ url-prefix("https://groups.google.com/") {
     .gb_m {
         z-index: 10000 !important;
     }
+    a[data-navigation="server"],
+    circle {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    /*
+    .ssfWCe,
+    div[jsname="I4bIT"] {
+        height: 37px !important;
+        max-height: 37px !important;
+        width: 78px !important;
+        max-width: 78px !important;
+        padding: none !important;
+    }
+    div[jsname="I4bIT"] {
+        margin-top: -12px !important;
+    }
+    ..Cq34nf.KQsPse {
+        padding: none !important;
+        margin: none !important;
+        margin-bottom: -5px !important;
+    }
+    */
+    .NZmxZe,
+    .rQEFy {
+        height: 17px !important;
+        max-height: 17px !important;
+        width: 78px !important;
+        max-width: 78px !important;
+    }
+    div[jsname="I4bIT"],
+    a[data-navigation="server"],
+    .gvi3cf,
+    .EPf3fb,
     .oldgisbuttonclose,
     .oldgisbuttonprev,
     .oldgisbuttonnext,
@@ -429,6 +474,11 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[jsname="I4bIT"]:hover,
+    .rQEFy.NZmxZe,
+    a[data-navigation="server"]:hover,
+    .gvi3cf:hover,
+    .EPf3fb:hover,
     .oldgisbuttonclose:hover,
     .oldgisbuttonprev:hover,
     .oldgisbuttonnext:hover,
@@ -508,6 +558,10 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[jsname="I4bIT"]:active,
+    a[data-navigation="server"]:active,
+    .gvi3cf:active,
+    .EPf3fb:active,
     .oldgisbuttonclose:active,
     .oldgisbuttonprev:active,
     .oldgisbuttonnext:active,
@@ -578,10 +632,19 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .jZWadf,
+    .ndYZfc,
     .gb_Qd.gb_7d.gb_Zd {
         background-image: none !important;
         background: transparent !important;
         border: none !important;
+    }
+    .jZWadf,
+    .ndYZfc,
+    header {
+        background-color: var(--Myred3) !important;
+        padding: none !important;
+        margin: none !important;
     }
     .gb_Qd.gb_7d.gb_Zd {
         -moz-appearance: none;
@@ -629,6 +692,7 @@ url-prefix("https://groups.google.com/") {
         background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred3)) !important;
         color: var(--MyW) !important;
     }
+    .dJcyOc,
     .sfibbbc {
         background-color: transparent !important;
         border: none !important;
@@ -754,6 +818,10 @@ url-prefix("https://groups.google.com/") {
         color: var(--Mygreen1) !important;
         text-decoration: none !important;
     }
+    .RScZKc {
+        color: var(--TwitterBlue) !important;
+    }
+    .W8wzH,
     i,
     label,
     .w8qArf a.fl,
