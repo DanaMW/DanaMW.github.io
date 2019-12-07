@@ -2,48 +2,44 @@
 @name         Funny Or Die Dark
 @namespace    https://danamw.github.io/scripts/scripts/FunnyOrDieDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FunnyOrDieDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("funnyordie.com") {
-    .lavaboat-wrapper,
-    .app-lavaboat {
+    footer,
+    .sr-only.link-skip,
+    .adblock-whitelist-messaging__article-wrapper,
+    .c-ad-whitelist {
         display: none;
     }
+    div.l-root,
     html,
     body,
-    #player-container,
-    .light-section,
     section {
-        background-color: var(--Myback) !important;
-        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
     }
-    a[rel="nofollow noopener noreferrer"],
-    li>a:hover,
-    .upload-button,
-    .upload-action-button,
+    .c-global-header__label,
+    .c-global-header__link,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         border-radius: 3px !important;
-        color: var(--Mytext) !important;
+        border: none !important;
+        color: var(--MyW) !important;
         background-color: var(--Myback) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    a[rel="nofollow noopener noreferrer"]:hover,
-    .upload-button:hover,
-    .upload-action-button:hover,
-    .masthead,
-    .main-nav,
+    .c-global-header__label:hover,
+    .c-global-header__link:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -51,11 +47,7 @@
         text-decoration: none !important;
         border-radius: 3px !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        border-bottom-color: var(--MyB) !important;
-        border-top-color: var(--Mygray3) !important;
-        border-right-color: var(--MyB) !important;
-        border-left-color: var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        border: none !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -66,23 +58,17 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
-    a[rel="nofollow noopener noreferrer"]:active,
-    .upload-button:active,
-    .upload-action-button:active,
+    .c-global-header__label:active,
+    .c-global-header__link:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         text-decoration: none !important;
-        border-radius: 3px !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        border-bottom-color: var(--MyB) !important;
-        border-top-color: var(--Mygray3) !important;
-        border-right-color: var(--MyB) !important;
-        border-left-color: var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        border: none !important;
+        background-color: var(--Mygreen3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
         opacity: 1.0 !important;
         color: var(--MyW) !important;
         -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
@@ -91,29 +77,43 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
-    .search-close,
-    .search-inputs,
-    .suggestion-field,
-    .search-bar {
-        background-color: var(--Mygray3) !important;
-    }
-    .search-link,
-    .nav-search {
-        background: transparent;
-    }
-    ._3-8y,
-    span>span[class=" UFICommentActorName"],
-    h4,
+    p,
     a {
-        color: var(--Myred1) !important;
-    }
-    .section-title,
-    li>a,
-    .media-preview-description {
         color: var(--MyW) !important;
     }
-    .sidebar-content,
-    .social-media-section .section-content {
-        background-color: var(--Mygray2) !important;
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    /*
+    .header[role="banner"] {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    */
+    .c-rock-list__body,
+    .c-newsletter_signup_box__main,
+    article {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    div[class*="c-entry-box"],
+    .p-rock-head,
+    .c-tab-bar,
+    .c-global-header::before {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+        text-align: center !important;
+    }
+    .c-page-title {
+        color: var(--Mygreen1) !important;
+    }
+    .c-byline-wrapper {
+        color: var(--TwitterBlue) !important;
     }
 }
