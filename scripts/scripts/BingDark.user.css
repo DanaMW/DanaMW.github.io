@@ -2,26 +2,28 @@
 @name         Bing Dark
 @namespace    https://danamw.github.io/scripts/scripts/BingDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BingDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style Bing.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("bing.com") {
-    /*
-    #hp_scroll_listen_pad,
-    #hp_scroll,
-    #hp_scroll_listen,
-    */
+    .moduleCont,
     html,
     body {
-        background-color: var(--Myback) !important;
+        background-color: var(--MyB) !important;
     }
+    .vert_make_default,
     #vs_foot,
     footer,
     #b_opalpers {
         display: none !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
     h2 a,
     a {
@@ -29,93 +31,52 @@
         background-color: transparent !important;
     }
     a:hover {
-        color: var(--Mytext) !important;
-        text-shadow: 1px -1px 0 var(--Myred1) !important;
+        color: var(--MyW) !important;
         text-decoration: none !important;
     }
-    /* #hp_sw_hdr,*/
-    #id_h,
-    header#b_header {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        background-color: transparent !important;
+    h2 {
+        color: var(--TwitterBlue) !important;
     }
-    /* #hp_sw_hdr, */
-    header#b_header {
-        height: 60px !important;
-        background: transparent !important;
-        background-color: #ff0000 !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        background-size: 1904px 80px !important;
-        background-position: center !important;
-        border-radius: 0;
-        border: none !important;
-        border-color: transparent !important;
-        margin-bottom: 40px !important;
+    #id_rh,
+    li.scope {
+        width: 75px !important;
+        height: 40px !important;
+        margin: none !important;
+        padding: none !important;
     }
-    .vs_title,
-    .hb_value_col,
-    .hb_title_col,
-    li>a.sb_bp {
-        color: var(--MyW) !important;
+    li.scope a {
+        margin-left: 15px !important;
     }
-    .b_pag {
-        background-color: var(--Myback) !important;
-        border: none !important;
-        border-color: var(--Myback) !important;
-    }
-    #sb_sbi {
-        padding: 5px !important;
-    }
-    span.ftrB,
+    .rightNav.enabled,
+    .leftNav.enabled,
+    li.scope,
     a[role="button"],
-    a.b_toggle,
-    li[id*="tab"],
-    #sb_sbi,
-    li[data-menuurl=""],
-    li>a.sb_bp,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
+        border: none !important;
         color: var(--Mytext) !important;
-        background-color: var(--Myback) !important;
+        background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    .sa_sg,
-    strong {
-        color: var(--MyW) !important;
-    }
-    a[aria-expanded="true"],
-    span.ftrB:hover,
+    .rightNav.enabled:hover,
+    .leftNav.enabled:hover,
+    li.scope:hover,
     a[role="button"]:hover,
-    a.b_toggle.b_selected,
-    a.b_toggle:hover,
-    li[id*="tab"].tab-active,
-    li[id*="tab"]:hover,
-    #sb_sbi:hover,
-    .hb_section[style^="outline:"],
-    .sa_hv,
-    li.b_active[data-menuurl=""],
-    li[data-menuurl=""]:hover,
-    #hbsettings.hb_expanded,
-    .hb_section:hover,
-    li>a.sb_bp:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        border-bottom-color: var(--MyB) !important;
-        border-top-color: var(--Mygray3) !important;
-        border-right-color: var(--MyB) !important;
-        border-left-color: var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -124,27 +85,20 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    span.ftrB:active,
+    .rightNav.enabled:active,
+    .leftNav.enabled:active,
+    li.scope:active,
     a[role="button"]:active,
-    a.b_toggle:active,
-    li[id*="tab"]:active,
-    #sb_sbi:active,
-    li[data-menuurl=""]:active,
-    .hb_section:active,
-    li>a.sb_bp:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        border-bottom-color: var(--MyB) !important;
-        border-top-color: var(--Mygray3) !important;
-        border-right-color: var(--MyB) !important;
-        border-left-color: var(--MyB) !important;
-        background-color: var(--MyX1) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--Mygreen3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
         color: var(--MyW) !important;
@@ -152,109 +106,37 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    ul[id*="tabcontrol"] {
-        background-color: var(--Myred3) !important;
-    }
-    .b_tophbb,
-    #hbsettings:not(.hb_expanded) {
-        background-color: var(--Mygray3) !important;
-    }
-    .sa_tm {
-        color: var(--MyW) !important;
-    }
-    .b_dropdown,
-    .sa_hd,
-    .sa_drw {
-        background-color: var(--Mygray2) !important;
-        color: var(--MyW) !important;
-    }
-    .b_ans {
-        background-color: var(--Myred2) !important;
-        color: var(--Mytext) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    .rc_vlCard,
-    .elprm_voteBar {
-        background-color: var(--Myred2) !important;
-        color: var(--Myred1) !important;
-    }
-    elprm_voteBarPercent {
-        background-color: var(--Myred1) !important;
-        color: var(--Myred1) !important;
-    }
-    #sb_form_go {
-        background-color: transparent !important;
-        border-color: transparent !important;
-    }
-    .search_controls,
-    #sb_form,
-    .b_searchboxForm {
-        background-color: transparent !important;
+    form {
         border: none !important;
-        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+    form {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .module {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    li.item:not(img),
+    .musCardCont,
+    .vs_rowitem {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     input {
         background-color: var(--Mygray3) !important;
-        color: var(--Myborder) !important;
-    }
-    #sb_form_q {
-        border: 1px solid var(--MyW) !important;
+        color: var(--MyW) !important;
         border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
-    .b_searchboxSubmit {
-        background-color: transparent !important;
-    }
-    .b_algo,
-    #b_results {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    span[id*="id_"] {
-        color: var(--MyW) !important;
-    }
-    .modernCalIcon.rms_img,
-    .vsrewds_img {
-        filter: invert(1) !important;
-    }
-    .b_tophbb.bgtopwh,
-    .b_tophbh,
-    .vsrewds_imgtextcont,
-    .vsrewds_generalitemcont,
-    #vsrewds_cont,
-    .btn.previous.rounded.bld,
-    .btn.next.rounded.bld {
-        background-color: var(--Myred2) !important;
-        color: var(--MyW) !important;
-    }
-    .btn.previous:hover,
-    .btn.next:hover {
-        background-color: var(--Myred1) !important;
-        color: var(--MyW) !important;
-    }
-    .b_insideSlide {
-        background-color: var(--Myred2) !important;
-        color: var(--MyW) !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    .b_text {
-        color: var(--MyW) !important;
-    }
-    .sa_as,
-    #HBContent {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    ul.om {
-        border-radius: 15px !important;
-    }
-    /*div[data-priority]*/
-    #vs_cont {
-        background-color: var(--Myback) !important;
+    .icon_text,
+    .hp_text,
+    .crs_pane,
+    .itile {
+        background-color: var(--MyX1) !important;
     }
 }
