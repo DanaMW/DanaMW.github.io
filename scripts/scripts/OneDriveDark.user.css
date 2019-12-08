@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.13
+@version      0.0.14
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -14,9 +14,34 @@
     }
     * {
         text-decoration: none !important;
+        scrollbar-width: thin;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
     span[data-automationid="name"] {
         color: var(--MyW) !important;
+    }
+    span,
+    #c_ln h2,
+    h3,
+    label,
+    span[data-bind*="text"],
+    p,
+    a {
+        color: var(--MyW) !important;
+    }
+    .od-PhotoPreferences-title,
+    label:hover,
+    h1,
+    span.od-LeftNav-linkGroupHeaderTitle,
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    .SharerHeader-title,
+    h2 {
+        color: var(--TwitterBlue) !important;
+    }
+    div[role="alert"]>div {
+        color: var(--TwitterRed) !important;
     }
     div[data-automationid="DetailsRow"],
     .StorageOptions-newPage-plans,
@@ -29,9 +54,11 @@
         color: var(--MyW) !important;
         /**/
     }
+    .ms-DetailsHeader {
+        background-color: var(--Myred3) !important;
+    }
     span[class*="ms-DetailsHeader-cellName"],
     div[data-automationid="DetailsHeader"] {
-        background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
     div[data-automationid="FieldRenderer-name"],
@@ -45,11 +72,15 @@
     div[class*="od-PlanCard"] {
         background-color: var(--Mygray2) !important;
     }
+    div[class*="nameField"],
     .c_clogo,
     #c_cb0,
-    #c_header {
+    #c_header,
+    a[role="link"],
+    button#allAppsLink,
+    #appLauncher {
         background-image: none !important;
-        background: transparent !important;
+        background-color: transparent !important;
     }
     #c_cb0,
     #c_header,
@@ -58,9 +89,8 @@
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border: 1px solid var(--Myred1) !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred1) !important;
+        border: none !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -76,6 +106,7 @@
         -webkit-appearance: none !important;
         background-image: none !important;
     }
+    button#allAppsLink,
     #c_clogoc,
     li a.c_gl,
     input[type="button"],
@@ -84,14 +115,12 @@
     .o365cs-nav-appTileBackground,
     a[class*="contextMenuItem"],
     a.LeftNav-subLink,
+    a[role="link"],
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
+        border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -102,6 +131,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    span[id*="header"]:hover,
+    button#allAppsLink:hover,
     #c_clogoc:hover,
     li.active a.c_gl,
     li a.c_gl:hover,
@@ -112,16 +143,14 @@
     a[class*="contextMenuItem"]:hover,
     a.LeftNav-subLink:hover,
     a.LeftNav-subLink[aria-selected="true"],
+    a[role="link"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -132,6 +161,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    button#allAppsLink:active,
     #c_clogoc:active,
     li a.c_gl:active,
     input[type="button"]:active,
@@ -141,16 +171,14 @@
     a[class*="contextMenuItem"]:active,
     a.LeftNav-subLink:active,
     a.LeftNav-subLink[aria-selected="true"]:active,
+    a[role="link"]:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
+        border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--MyX3) !important;
+        background-color: var(--Mygreen3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -176,21 +204,6 @@
     }
     div.od-QuotaBar div.od-QuotaBar-used {
         background-color: var(--Myred1) !important;
-        color: var(--Myred1) !important;
-    }
-    #c_ln h2,
-    h3,
-    label,
-    span[data-bind*="text"],
-    a {
-        color: var(--MyW) !important;
-    }
-    .od-PhotoPreferences-title,
-    label:hover,
-    div[role="link"]:hover,
-    h1,
-    span.od-LeftNav-linkGroupHeaderTitle,
-    a:hover {
         color: var(--Myred1) !important;
     }
     div.InfoPane-itemDetails-name,
@@ -225,5 +238,21 @@
     div[aria-label="App launcher opened"] {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
+    }
+    #appLauncherMainView,
+    [role="region"] {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .od-StandardDialog,
+    [role="gridcell"] {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .od-QuotaBar-total {
+        border-color: var(--Myred3) !important;
+    }
+    .od-QuotaBar-used {
+        border-color: var(--Myred1) !important;
     }
 }
