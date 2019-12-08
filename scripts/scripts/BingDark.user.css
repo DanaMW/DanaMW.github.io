@@ -2,18 +2,45 @@
 @name         Bing Dark
 @namespace    https://danamw.github.io/scripts/scripts/BingDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BingDark.user.css
-@version      0.0.6
+@version      0.0.7
 @author       Dana Meli
 @description  Dark Style Bing.
 @homepageURL  https://DanaMW.github.io
+@preprocessor default
+@var range swidth "Change Search Width"[300, 300, 1000, 1, "px"]
+@var range smove "Move Search Bar" [10, 0, 1000, 1, "px"]
+@var range bmove "Move The Buttons" [10, 0, 1000, 1, "px"]
+@var range cmove "Move The Column" [10, 0, 1000, 1, "px"]
 ==/UserStyle== */
 
 @-moz-document domain("bing.com") {
+    input[type="search"] {
+        width: var(--swidth) !important;
+    }
+    .b_searchboxForm {
+        position: relative !important;
+        left: calc(1px + var(--smove) - 10px) !important;
+    }
+    #b_content {
+        position: relative !important;
+        left: calc(1px + var(--cmove) - 10px) !important;
+        overflow: scroll;
+    }
+    nav.b_scopebar {
+        position: relative !important;
+        left: calc(1px + var(--bmove) - 10px) !important;
+    }
+    .hp_body.no_image {
+        background-image: none !important;
+    }
+    div[role="main"],
+    #rfPane,
     .moduleCont,
     html,
     body {
         background-color: var(--MyB) !important;
     }
+    .tab-disable,
     .vert_make_default,
     #vs_foot,
     footer,
@@ -25,17 +52,35 @@
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
+    li,
+    .na_t,
+    p,
+    .vrhde,
+    nav>ul>li>a,
+    li>a:hover,
+    .hb_title_col,
     h2 a,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
     a:hover {
-        color: var(--MyW) !important;
-        text-decoration: none !important;
+        color: var(--Myred1) !important;
     }
+    .vrht,
+    .title,
+    .feed-main-title,
+    #intrtitle,
+    .hb_value_col,
     h2 {
         color: var(--TwitterBlue) !important;
+    }
+    .b_expansion_text,
+    .b_secondaryText,
+    .vrhmd,
+    .snippet,
+    .grptit {
+        color: var(--TwitterRed) !important;
     }
     #id_rh,
     li.scope {
@@ -47,6 +92,19 @@
     li.scope a {
         margin-left: 15px !important;
     }
+    li>a,
+    #intrschpane {
+        border: none !important;
+    }
+    #landing_tabs li>a {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+    .tab-navl:not(.tab-disable),
+    .tab-navr:not(.tab-disable),
+    li[id*="tab"],
+    nav>ul>li,
+    #landing_tabs li>a,
     .rightNav.enabled,
     .leftNav.enabled,
     li.scope,
@@ -59,13 +117,24 @@
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
         -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    #hbsettings::selection,
+    .hb_section:hover,
+    .tab-navl:hover:not(.tab-disable),
+    .tab-navr:hover:not(.tab-disable),
+    li:hover,
+    .tab-active[role="tab"],
+    [role="tab"]:hover,
+    nav>ul>li:hover,
+    nav>ul>li.b_active,
+    #landing_tabs li>a:hover,
+    a[role="menuitem"]:hover,
+    div[role="menuitem"]:hover,
     .rightNav.enabled:hover,
     .leftNav.enabled:hover,
     li.scope:hover,
@@ -85,8 +154,12 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+        /*text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;*/
     }
+    .tab-navl:active:not(.tab-disable),
+    .tab-navr:active:not(.tab-disable),
+    nav>ul>li:active,
+    #landing_tabs li>a:active,
     .rightNav.enabled:active,
     .leftNav.enabled:active,
     li.scope:active,
@@ -106,25 +179,48 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+        /*text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;*/
+    }
+    div>.cr>div,
+    .tab-navl:not(.tab-disable)>svg,
+    .tab-navr:not(.tab-disable)>svg {
+        filter: invert(180) !important;
     }
     form {
         border: none !important;
         box-shadow: none !important;
     }
+    .localnews,
+    #intrbar_wrapper,
+    #landing_tabs,
+    [role="search"],
+    header,
     form {
         background-image: none !important;
         background-color: transparent !important;
     }
+    ol#b_results>li,
+    .nsn-body,
+    #HBContent,
     .module {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .rc_vlImgFact,
+    .nws_cwrp,
+    .nws_itm,
+    li.b_ans,
+    #vrhcid,
+    .disambig-outline,
+    .idni.item,
     li.item:not(img),
     .musCardCont,
     .vs_rowitem {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    #vrhcid.vrhc {
+        border: 1px solid var(--MyW) !important;
     }
     input {
         background-color: var(--Mygray3) !important;
@@ -137,6 +233,12 @@
     .hp_text,
     .crs_pane,
     .itile {
+        background-color: var(--MyX1) !important;
+    }
+    .news-card.newsitem.cardcommon {
+        border-bottom: 2px solid var(--Myred1) !important;
+    }
+    .news-card.newsitem.cardcommon:hover {
         background-color: var(--MyX1) !important;
     }
 }
