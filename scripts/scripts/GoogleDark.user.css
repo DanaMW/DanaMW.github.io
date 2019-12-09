@@ -2,15 +2,15 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.85
+@version      0.0.86
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
-@var range twidth "Change Search Width"[300, 300, 1000, 1, "px"]
-@var range tmove "Move Search Bar" [10, 0, 70, 1, "vw"]
-@var range mmove "Move The Buttons" [10, 0, 70, 1, "vw"]
-@var range bmove "Move The Column" [10, 0, 70, 1, "vw"]
+@var range swidth "Change Search Width"[300, 300, 1000, 1, "px"]
+@var range smove "Move Search Bar" [10, 0, 70, 1, "vw"]
+@var range bmove "Move The Buttons" [10, 0, 70, 1, "vw"]
+@var range cmove "Move The Column" [10, 0, 70, 1, "vw"]
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/"),
@@ -26,36 +26,40 @@ url-prefix("https://groups.google.com/") {
         background-color: var(--MyB) !important;
     }
     .SSBXXc {
-        left: calc(1vw + var(--tmove) - 10vw) !important;
+        left: calc(1vw + var(--smove) - 10vw) !important;
     }
     html[itemtype="http://schema.org/SearchResultsPage"] .tsf-p,
     html[itemtype="http://schema.org/SearchResultsPage"] .A8SBwf {
-        width: var(--twidth) !important;
-        left: calc(1vw + var(--tmove) - 10vw) !important;
+        position: relative !important;
+        width: var(--swidth) !important;
+        left: calc(1vw + var(--smove) - 10vw) !important;
     }
     html[itemtype="http://schema.org/SearchResultsPage"] .A8SBwf.sbfc {
-        width: var(--twidth) !important;
-        left: calc(2vw + var(--tmove) - 10vw) !important;
+        position: relative !important;
+        width: var(--swidth) !important;
+        left: calc(2vw + var(--smove) - 10vw) !important;
     }
     .sfibbbc,
     div[jsname="RNNXgb"] {
-        width: var(--twidth) !important;
+        position: relative !important;
+        width: var(--swidth) !important;
         background: transparent !important;
         border: none !important;
     }
     html[itemtype="http://schema.org/WebPage"] div[jsname="RNNXgb"] {
-        position: relative !important;
         width: initial !important;
         margin: auto !important;
     }
     .tAcEof,
     #hdtb-msb {
+        position: relative !important;
         position: sticky !important;
         margin: 0 auto;
-        left: calc(1vw + var(--mmove) - 10vw) !important;
+        left: calc(1vw + var(--bmove) - 10vw) !important;
     }
     .mw>#rcnt {
-        left: calc(1vw + var(--bmove) - 10vw) !important;
+        position: relative !important;
+        left: calc(1vw + var(--cmove) - 10vw) !important;
     }
     /*
     html[itemtype="http://schema.org/SearchResultsPage"] form[role="search"],

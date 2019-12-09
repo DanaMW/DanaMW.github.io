@@ -2,7 +2,7 @@
 @name         Bing Dark
 @namespace    https://danamw.github.io/scripts/scripts/BingDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BingDark.user.css
-@version      0.0.7
+@version      0.0.8
 @author       Dana Meli
 @description  Dark Style Bing.
 @homepageURL  https://DanaMW.github.io
@@ -26,6 +26,11 @@
         left: calc(1px + var(--cmove) - 10px) !important;
         overflow: scroll;
     }
+    #b_content[style*="padding-top"],
+    nav>ul>li.b_active>a[h*="ID=images"] {
+        position: relative !important;
+        left: 0px !important;
+    }
     nav.b_scopebar {
         position: relative !important;
         left: calc(1px + var(--bmove) - 10px) !important;
@@ -40,6 +45,7 @@
     body {
         background-color: var(--MyB) !important;
     }
+    #miniheader,
     .tab-disable,
     .vert_make_default,
     #vs_foot,
@@ -52,6 +58,11 @@
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
+    div[class*="nwsq_"],
+    .nwsq_ci,
+    .b_scard,
+    .sa_tm_text,
+    .b_promoteText,
     li,
     .na_t,
     p,
@@ -67,6 +78,9 @@
     a:hover {
         color: var(--Myred1) !important;
     }
+    a[class=" grpitm "]:hover {
+        color: var(--MyW) !important;
+    }
     .vrht,
     .title,
     .feed-main-title,
@@ -75,6 +89,7 @@
     h2 {
         color: var(--TwitterBlue) !important;
     }
+    div[class*="dc_"],
     .b_expansion_text,
     .b_secondaryText,
     .vrhmd,
@@ -100,6 +115,8 @@
         padding-right: 10px !important;
         padding-left: 10px !important;
     }
+    .edit_interests,
+    #hideShowCaro,
     .tab-navl:not(.tab-disable),
     .tab-navr:not(.tab-disable),
     li[id*="tab"],
@@ -123,11 +140,14 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    ul>li[id*="sa_"]:hover,
+    .edit_interests:hover,
+    #hideShowCaro:hover,
     #hbsettings::selection,
     .hb_section:hover,
     .tab-navl:hover:not(.tab-disable),
     .tab-navr:hover:not(.tab-disable),
-    li:hover,
+    /*li:hover,*/
     .tab-active[role="tab"],
     [role="tab"]:hover,
     nav>ul>li:hover,
@@ -156,6 +176,8 @@
         transition-timing-function: linear !important;
         /*text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;*/
     }
+    .edit_interests:active,
+    #hideShowCaro:active,
     .tab-navl:active:not(.tab-disable),
     .tab-navr:active:not(.tab-disable),
     nav>ul>li:active,
@@ -190,6 +212,9 @@
         border: none !important;
         box-shadow: none !important;
     }
+    .b_promoteText,
+    .infopt,
+    div.hp_body.no_image,
     .localnews,
     #intrbar_wrapper,
     #landing_tabs,
@@ -199,6 +224,12 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    div.hp_body.no_image {
+        background-color: var(--MyB) !important;
+    }
+    ul>li[id*="sa_"] {
+        background-color: var(--Mygray3) !important;
+    }
     ol#b_results>li,
     .nsn-body,
     #HBContent,
@@ -206,6 +237,9 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .nwsq_ci,
+    ol#b_results>li:hover,
+    .box,
     .rc_vlImgFact,
     .nws_cwrp,
     .nws_itm,
@@ -229,6 +263,10 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+    .spl-dtab,
+    a[class=" grpitm "]:hover,
+    .news-card.newsitem.cardcommon:hover,
+    .b_promoteText:hover,
     .icon_text,
     .hp_text,
     .crs_pane,
@@ -238,7 +276,10 @@
     .news-card.newsitem.cardcommon {
         border-bottom: 2px solid var(--Myred1) !important;
     }
-    .news-card.newsitem.cardcommon:hover {
-        background-color: var(--MyX1) !important;
+    #b_header {
+        border-color: var(--Myred1) !important;
+    }
+    .b_logo>img:hover {
+        filter: brightness(150%) !important;
     }
 }
