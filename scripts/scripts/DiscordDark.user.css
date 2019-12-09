@@ -1,757 +1,759 @@
-/* ==UserStyle==
+                        /* ==UserStyle==
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.48
+@version      0.0.49
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
-
-@-moz-document domain("discordapp.com") {
-    body,
-    head,
-    html {
-        background-color: var(--MyB) !important;
-    }
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-    pre {
-        border-radius: 5px !important;
-    }
-    code.hljs {
-        overflow-x: visible !important;
-        overflow-y: visible !important;
-        padding-bottom: 30px !important;
-        border-radius: 5px !important;
-        border: 1px solid var(--MyW) !important;
-    }
-    div[class*="divider"][class*="dividerDefault"] {
-        background-color: var(--Myred1) !important;
-    }
-    span[class^="username"][role="button"]:hover {
-        color: var(--MyW) !important;
-    }
-    div[class^="nameTag"] strong.user-name {
-        font-weight: bold !important;
-    }
-    /*
+                    
+                    @-moz-document domain("discordapp.com") {
+                        body,
+                        head,
+                        html {
+                            background-color: var(--MyB) !important;
+                        }
+                        * {
+                            text-decoration: none !important;
+                            scrollbar-width: thin !important;
+                            scrollbar-color: var(--Myred1) var(--Myred3) !important;
+                        }
+                        pre {
+                            border-radius: 5px !important;
+                        }
+                        code.hljs {
+                            overflow-x: visible !important;
+                            overflow-y: visible !important;
+                            padding-bottom: 30px !important;
+                            border-radius: 5px !important;
+                            border: 1px solid var(--MyW) !important;
+                        }
+                        div[class*="divider"][class*="dividerDefault"] {
+                            background-color: var(--Myred1) !important;
+                        }
+                        span[class^="username"][role="button"]:hover {
+                            color: var(--MyW) !important;
+                        }
+                        div[class^="nameTag"] strong.user-name {
+                            font-weight: bold !important;
+                        }
+                        /*
     div[class*="scrollbar"] {
         scrollbar-width: thin !important;
     }
     */
-    [class^="spinner"] * {
-        animation: none !important;
-    }
-    div[class^="listItem"]>div:nth-child(1)>span:nth-child(1),
-    div[class^="containerDefault"] div[class^="unread"] {
-        background-color: var(--Mygreen1) !important;
-    }
-    time[class^="edited"] {
-        color: var(--Mygreen1) !important;
-    }
-    button[aria-label="Send a gift"],
-    textarea[disabled],
-    div[class*="wrapper"][class*="newBadge"],
-    div[class^="typing"],
-    div[aria-label="Download Apps"],
-    .scrollbar-2rkZSL,
-    div[class^="messageGroupBlocked"],
-    link[rel="chrome-webstore-item"] {
-        display: none !important
-    }
-    div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyCenter"][class*="alignStretch"][class*="noWrap"][class*="guildInfo"],
-    div[class*="class=content"] {
-        background-color: transparent !important;
-    }
-    #app-mount div[class*="spacer"]:nth-child(2) {
-        background-color: var(--MyB) !important;
-    }
-    div[class*="title"][class*="base"][class*="size16"],
-    div[class*="title"][class*="container"] {
-        background-color: var(--Myred3) !important;
-        background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
-    div[class^="chat"] div[class*="topic"][class*="expandable"] {
-        text-align: center !important;
-        font-weight: bolder !important;
-        font-size: 1.25em !important;
-    }
-    span[class^="botTag"] {
-        padding-right: 5px !important;
-        padding-left: 5px !important;
-        padding-top: 3px !important;
-        padding-bottom: 2px !important;
-        border: 1px solid var(--MyW) !important;
-        background-color: var(--MyB) !important;
-    }
-    div[class*="switchEnabled"][class*="switch"][class*="valueUnchecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"],
-    div[class*="flexChild"][class*="switchEnabled"][class*="switch"][class*="valueUnchecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"] {
-        background-color: var(--Myred3) !important;
-    }
-    div[class*="switchEnabled"][class*="switch"][class*="valueChecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"],
-    div[class*="flexChild"][class*="switchEnabled"][class*="switch"][class*="valueChecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"] {
-        background-color: var(--Myred2) !important;
-    }
-    div[class*="valueUnchecked"][class*="size"]::after {
-        background-color: var(--Mygreen3) !important;
-    }
-    div[class*="valueChecked"][class*="size"]::after {
-        background-color: var(--Mygreen1) !important;
-    }
-    #app-mount * div[class*="unread-1Dp-OI"] {
-        background-color: var(--Mygreen1) !important;
-    }
-    div[class*="nameUnreadText"][class*="name"][class*="overflowEllipsis"] {
-        color: var(--Mygreen1) !important;
-    }
-    button[class^="button"][class*="button"],
-    div[class*="button"],
-    button[class*="iconButtonDefault"],
-    svg[class*="iconInactive"],
-    #app-mount div[class^="chat"] div[class*="titlewraper"] .channel-mute-button {
-        opacity: 1;
-    }
-    div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="messages"],
-    div[class^="chat"],
-    div[class*="messagesWrapper"] {
-        background: var(--MyB) !important;
-    }
-    span[class*="dividerContent"] {
-        color: var(--MyW) !important;
-        font-weight: normal;
-    }
-    hr[class*="dividerEnabled"][class*="divider"] {
-        border: 1px solid var(--Myred3) !important;
-        opacity: 1;
-    }
-    span[class*="dividerContent"]::before,
-    span[class*="dividerContent"]::after {
-        border: 1px solid var(--Myred1) !important;
-        opacity: 1;
-    }
-    div[class*="category"],
-    div[class*="searchBar"][class*="searchBarLight"][class*="searchBar"] {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    div[class^="emojiPicker"],
-    div.scrollerWrapPolyfill-DBQCMm:nth-child(3) {
-        background-color: var(--Mygray3) !important;
-    }
-    #app-mount div[class^="chat"] form {
-        margin: 0px !important;
-        padding: 0px !important;
-        /*
+                        [class^="spinner"] * {
+                            animation: none !important;
+                        }
+                        div[class^="listItem"]>div:nth-child(1)>span:nth-child(1),
+                        div[class^="containerDefault"] div[class^="unread"] {
+                            background-color: var(--Mygreen1) !important;
+                        }
+                        time[class^="edited"] {
+                            color: var(--Mygreen1) !important;
+                        }
+                        button[aria-label="Send a gift"],
+                        textarea[disabled],
+                        div[class*="wrapper"][class*="newBadge"],
+                        div[class^="typing"],
+                        div[aria-label="Download Apps"],
+                        .scrollbar-2rkZSL,
+                        div[class^="messageGroupBlocked"],
+                        link[rel="chrome-webstore-item"] {
+                            display: none !important
+                        }
+                        div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyCenter"][class*="alignStretch"][class*="noWrap"][class*="guildInfo"],
+                        div[class*="class=content"] {
+                            background-color: transparent !important;
+                        }
+                        #app-mount div[class*="spacer"]:nth-child(2) {
+                            background-color: var(--MyB) !important;
+                        }
+                        div[class*="title"][class*="base"][class*="size16"],
+                        div[class*="title"][class*="container"] {
+                            background-color: var(--Myred3) !important;
+                            background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+                        }
+                        div[class^="chat"] div[class*="topic"][class*="expandable"] {
+                            text-align: center !important;
+                            font-weight: bolder !important;
+                            font-size: 1.25em !important;
+                        }
+                        span[class^="botTag"] {
+                            padding-right: 5px !important;
+                            padding-left: 5px !important;
+                            padding-top: 3px !important;
+                            padding-bottom: 2px !important;
+                            border: 1px solid var(--MyW) !important;
+                            background-color: var(--MyB) !important;
+                        }
+                        div[class*="switchEnabled"][class*="switch"][class*="valueUnchecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"],
+                        div[class*="flexChild"][class*="switchEnabled"][class*="switch"][class*="valueUnchecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"] {
+                            background-color: var(--Myred3) !important;
+                        }
+                        div[class*="switchEnabled"][class*="switch"][class*="valueChecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"],
+                        div[class*="flexChild"][class*="switchEnabled"][class*="switch"][class*="valueChecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"] {
+                            background-color: var(--Myred2) !important;
+                        }
+                        div[class*="valueUnchecked"][class*="size"]::after {
+                            background-color: var(--Mygreen3) !important;
+                        }
+                        div[class*="valueChecked"][class*="size"]::after {
+                            background-color: var(--Mygreen1) !important;
+                        }
+                        #app-mount * div[class*="unread-1Dp-OI"] {
+                            background-color: var(--Mygreen1) !important;
+                        }
+                        div[class*="nameUnreadText"][class*="name"][class*="overflowEllipsis"] {
+                            color: var(--Mygreen1) !important;
+                        }
+                        button[class^="button"][class*="button"],
+                        div[class*="button"],
+                        button[class*="iconButtonDefault"],
+                        svg[class*="iconInactive"],
+                        #app-mount div[class^="chat"] div[class*="titlewraper"] .channel-mute-button {
+                            opacity: 1;
+                        }
+                        div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="messages"],
+                        div[class^="chat"],
+                        div[class*="messagesWrapper"] {
+                            background: var(--MyB) !important;
+                        }
+                        span[class*="dividerContent"] {
+                            color: var(--MyW) !important;
+                            font-weight: normal;
+                        }
+                        hr[class*="dividerEnabled"][class*="divider"] {
+                            border: 1px solid var(--Myred3) !important;
+                            opacity: 1;
+                        }
+                        span[class*="dividerContent"]::before,
+                        span[class*="dividerContent"]::after {
+                            border: 1px solid var(--Myred1) !important;
+                            opacity: 1;
+                        }
+                        div[class*="category"],
+                        div[class*="searchBar"][class*="searchBarLight"][class*="searchBar"] {
+                            background-color: var(--Mygray3) !important;
+                            color: var(--MyW) !important;
+                        }
+                        div[class^="emojiPicker"],
+                        div.scrollerWrapPolyfill-DBQCMm:nth-child(3) {
+                            background-color: var(--Mygray3) !important;
+                        }
+                        #app-mount div[class^="chat"] form {
+                            margin: 0px !important;
+                            padding: 0px !important;
+                            /*
         height: 100px !important;
         border: 1px solid var(--Myborder) !important;
         */
-    }
-    #app-mount * div[class^="chat"],
-    #app-mount .theme-dark div[class^="chat"] {
-        border-radius: 5px;
-        border: 1px solid var(--Myborder) !important;
-    }
-    div.container-2Thooq,
-    .header-2o-2hj {
-        background-color: var(--Myred3) !important;
-        background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
-    header>span[class*="name"] {
-        text-align: center !important;
-        color: var(--MyW) !important;
-        font-weight: bolder !important;
-    }
-    #app-mount * .container-1>div:nth-child(1)>div:nth-child(1),
-    #app-mount * .container-2>div:nth-child(1)>div:nth-child(1),
-    #app-mount * .container-3>div:nth-child(1)>div:nth-child(1),
-    #app-mount * .container-4>div:nth-child(1)>div:nth-child(1) {
-        color: var(--MyW) !important;
-        background-color: var(--Myred2) !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    div[class^="guild"][class*="selected"]:hover {
-        background-color: var(--Myred1) !important;
-    }
-    a[class^="guild"][class*="guildsAdd"][class*="guildsDiscover"],
-    svg[xmlns] {
-        border-radius: 50% !important;
-    }
-    div[class*="search"] div[class*="searchBar"][class*="searchBar"] {
-        opacity: 0 !important;
-        color: var(--MyW) !important;
-        border: none !important;
-        border-color: transparent !important;
-        background-color: transparent !important;
-    }
-    div[class*="search"].popout-open div[class*="searchBar"][class*="searchBar"] {
-        opacity: 1 !important;
-    }
-    div[data-contents="true"] {
-        border: 1px solid var(--Myborder) !important;
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        color: hsla(0, 60%, 53%, 0.966)
-    }
-    div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="members"] {
-        border-left: 1px solid var(--MyW) !important;
-    }
-    div[class*="description"][class*="formText"][class*="marginBottom20"][class*="modeDefault"][class*="primary"] {
-        color: var(--MyW) !important;
-    }
-    a[class*="anchor-3Z"] {
-        color: var(--MyB) !important;
-    }
-    time[class^="timestamp"] {
-        color: var(--MyW) !important;
-        background-color: var(--MyX1) !important;
-        border-radius: 5px !important;
-        border: 1px solid var(--Myred2) !important;
-        padding: 3px !important;
-        margin-left: 15px !important;
-    }
-    div[class*="metadata"] {
-        color: var(--MyW) !important;
-    }
-    .friends-action.friends-action-cancel,
-    .friends-action.friends-action-voice-call {
-        background-color: transparent !important;
-        color: var(--MyW) !important;
-    }
-    .friends-action.friends-action-cancel:hover,
-    .friends-action.friends-action-voice-call:hover {
-        background-color: var(--Myred1) !important;
-        color: var(--MyW) !important;
-    }
-    div[class*="memberOnline"]>div:hover,
-    div[class*="memberOffline"]>div:hover {
-        color: var(--MyB) !important;
-    }
-    div[class^="flex"][class*="flex"][class*="vertical"],
-    div[class^="channels"][class*="vertical"] {
-        background-color: var(--Mygray3) !important;
-    }
-    div[class*="channel"] {
-        background-color: transparent !important;
-        background-image: none !important;
-    }
-    div[class*="iconWrapper"] svg[class*="icon"] {
-        color: var(--MyW) !important;
-    }
-    h3[role="button"],
-    div[class*="iconWrapper"],
-    div[class*="iconWrapper"][class*="clickable"][role="button"],
-    div[class*="icon"][class*="iconLayout"][class*="small"],
-    div[aria-roledescription="Channel Mute Switch"],
-    div[aria-label="New Group DM"] {
-        background-color: var(--Mygray2) !important;
-        border: 1px outset var(--Myback) !important;
-        border-radius: 0px 3px 3px 0px !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-    }
-    h3[role="button"]:hover,
-    div[class*="iconWrapper"][class*="clickable"][role="button"]:hover,
-    div[class*="icon"][class*="iconLayout"][class*="small"]:hover,
-    div[aria-roledescription="Channel Mute Switch"]:hover,
-    div[aria-label="New Group DM"]:hover {
-        box-shadow: inset 0px 2px 4px 0px var(--MyB) !important;
-        border: 1px inset var(--Myback) !important;
-        background-color: var(--Myback) !important;
-        border-radius: 3px !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-    }
-    h3[role="button"] {
-        padding-top: 3px !important;
-        padding-bottom: 4px !important;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-    span[class*="username"] {
-        background-color: transparent !important;
-        color: var(--MyW) !important;
-        text-shadow: 0px 0px var(--MyW) !important;
-    }
-    .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="scrollerWrap"][class*="scrollerThemed"][class*="themeGhostHairline"] {
-        border: none !important;
-        width: 70px !important;
-        max-width: 70px !important;
-    }
-    .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="scrollerWrap"][class*="scrollerThemed"][class*="themeGhostHairline"] div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
-        border: 1px solid var(--Mytext) !important;
-        background-color: var(--Myred3) !important;
-        width: 70px !important;
-        max-width: 70px !important;
-    }
-    /*
+                        }
+                        #app-mount * div[class^="chat"],
+                        #app-mount .theme-dark div[class^="chat"] {
+                            border-radius: 5px;
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        div.container-2Thooq,
+                        .header-2o-2hj {
+                            background-color: var(--Myred3) !important;
+                            background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+                        }
+                        header>span[class*="name"] {
+                            text-align: center !important;
+                            color: var(--MyW) !important;
+                            font-weight: bolder !important;
+                        }
+                        #app-mount * .container-1>div:nth-child(1)>div:nth-child(1),
+                        #app-mount * .container-2>div:nth-child(1)>div:nth-child(1),
+                        #app-mount * .container-3>div:nth-child(1)>div:nth-child(1),
+                        #app-mount * .container-4>div:nth-child(1)>div:nth-child(1) {
+                            color: var(--MyW) !important;
+                            background-color: var(--Myred2) !important;
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        div[class^="guild"][class*="selected"]:hover {
+                            background-color: var(--Myred1) !important;
+                        }
+                        a[class^="guild"][class*="guildsAdd"][class*="guildsDiscover"],
+                        svg[xmlns] {
+                            border-radius: 50% !important;
+                        }
+                        div[class*="search"] div[class*="searchBar"][class*="searchBar"] {
+                            opacity: 0 !important;
+                            color: var(--MyW) !important;
+                            border: none !important;
+                            border-color: transparent !important;
+                            background-color: transparent !important;
+                        }
+                        div[class*="search"].popout-open div[class*="searchBar"][class*="searchBar"] {
+                            opacity: 1 !important;
+                        }
+                        div[data-contents="true"] {
+                            border: 1px solid var(--Myborder) !important;
+                            background-color: var(--Mygray3) !important;
+                            color: var(--MyW) !important;
+                            color: hsla(0, 60%, 53%, 0.966)
+                        }
+                        div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="members"] {
+                            border-left: 1px solid var(--MyW) !important;
+                        }
+                        div[class*="description"][class*="formText"][class*="marginBottom20"][class*="modeDefault"][class*="primary"] {
+                            color: var(--MyW) !important;
+                        }
+                        a[class*="anchor-3Z"] {
+                            color: var(--MyB) !important;
+                        }
+                        time[class^="timestamp"] {
+                            color: var(--MyW) !important;
+                            background-color: var(--MyX1) !important;
+                            border-radius: 5px !important;
+                            border: 1px solid var(--Myred2) !important;
+                            padding: 3px !important;
+                            margin-left: 15px !important;
+                        }
+                        div[class*="metadata"] {
+                            color: var(--MyW) !important;
+                        }
+                        .friends-action.friends-action-cancel,
+                        .friends-action.friends-action-voice-call {
+                            background-color: transparent !important;
+                            color: var(--MyW) !important;
+                        }
+                        .friends-action.friends-action-cancel:hover,
+                        .friends-action.friends-action-voice-call:hover {
+                            background-color: var(--Myred1) !important;
+                            color: var(--MyW) !important;
+                        }
+                        div[class*="memberOnline"]>div:hover,
+                        div[class*="memberOffline"]>div:hover {
+                            color: var(--MyB) !important;
+                        }
+                        div[class^="flex"][class*="flex"][class*="vertical"],
+                        div[class^="channels"][class*="vertical"] {
+                            background-color: var(--Mygray3) !important;
+                        }
+                        div[class*="channel"] {
+                            background-color: transparent !important;
+                            background-image: none !important;
+                        }
+                        div[class*="iconWrapper"] svg[class*="icon"] {
+                            color: var(--MyW) !important;
+                        }
+                        h3[role="button"],
+                        div[class*="iconWrapper"],
+                        div[class*="iconWrapper"][class*="clickable"][role="button"],
+                        div[class*="icon"][class*="iconLayout"][class*="small"],
+                        div[aria-roledescription="Channel Mute Switch"],
+                        div[aria-label="New Group DM"] {
+                            background-color: var(--Mygray2) !important;
+                            border: 1px outset var(--Myback) !important;
+                            border-radius: 0px 3px 3px 0px !important;
+                            -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            transition-timing-function: linear !important;
+                        }
+                        h3[role="button"]:hover,
+                        div[class*="iconWrapper"][class*="clickable"][role="button"]:hover,
+                        div[class*="icon"][class*="iconLayout"][class*="small"]:hover,
+                        div[aria-roledescription="Channel Mute Switch"]:hover,
+                        div[aria-label="New Group DM"]:hover {
+                            box-shadow: inset 0px 2px 4px 0px var(--MyB) !important;
+                            border: 1px inset var(--Myback) !important;
+                            background-color: var(--Myback) !important;
+                            border-radius: 3px !important;
+                            -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            transition-timing-function: linear !important;
+                        }
+                        h3[role="button"] {
+                            padding-top: 3px !important;
+                            padding-bottom: 4px !important;
+                            padding-left: 10px !important;
+                            padding-right: 10px !important;
+                        }
+                        span[class*="username"] {
+                            background-color: transparent !important;
+                            color: var(--MyW) !important;
+                            text-shadow: 0px 0px var(--MyW) !important;
+                        }
+                        .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="scrollerWrap"][class*="scrollerThemed"][class*="themeGhostHairline"] {
+                            border: none !important;
+                            width: 70px !important;
+                            max-width: 70px !important;
+                        }
+                        .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="scrollerWrap"][class*="scrollerThemed"][class*="themeGhostHairline"] div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
+                            border: 1px solid var(--Mytext) !important;
+                            background-color: var(--Myred3) !important;
+                            width: 70px !important;
+                            max-width: 70px !important;
+                        }
+                        /*
     div[class="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="containStyles"][class*="scrollerThemed"][class*="themeGhostHairlineChannels"][class*="scrollerFade"] {
         scrollbar-width: none !important;
     }
     */
-    div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
-        border-right: 1px solid var(--MyW) !important;
-    }
-    #app-mount * div[class^="chat"] .message-group {
-        border-color: var(--Myborder) !important;
-    }
-    #app-mount .message-group h2 .timestamp {
-        color: var(--Myblue1) !important;
-    }
-    #app-mount .message-group .mentioned div[class*="messages"] {
-        background: transparent;
-        padding-left: 10px;
-    }
-    #app-mount .message-group .mentioned .message-text .markup {
-        color: var(--MyW) !important;
-    }
-    #app-mount .message-group .mentioned .message-text:after {
-        border-left: 4px solid var(--Myborder) !important;
-        background: transparent;
-        left: 0;
-    }
-    #app-mount .message-group div[class*="markup"] {
-        color: var(--MyW) !important;
-    }
-    #app-mount .account {
-        background-color: var(--MyX1) !important;
-        border-top: 1px solid var(--Myborder) !important;
-    }
-    #app-mount a[class^="anchor"] {
-        background-color: transparent !important;
-        color: var(--Mygreen2) !important;
-        text-shadow: 1px -1px 0 var(--MyW) !important;
-    }
-    #app-mount a[class^="anchor"]:hover {
-        background-color: transparent !important;
-        color: var(--Mygreen1) !important;
-        text-shadow: 1px -1px 0 var(--Mygreen1) !important;
-        text-decoration: none !important;
-    }
-    div[class*="membersWrap"] {
-        background-color: var(--Mygray3) !important;
-    }
-    div[class^="emojiPicker"],
-    div.scrollerWrapPolyfill-DBQCMm:nth-child(3) {
-        background-color: var(--Mygray3) !important;
-    }
-    div[class*="inner"][class*="flex"][class*="innerNoAutocomplete"] {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    form,
-    div[class^="channelTextArea"][class*="channelTextArea"],
-    #channel-text-area-wrapper {
-        border-bottom: none !important;
-        margin: 0px !important;
-        padding: 0px !important;
-    }
-    div[class*="inner"][class*="flex"][class*="innerNoAutocomplete"] {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border: 1px solid var(--MyW) !important;
-        width: calc(100% - 40px)px !important;
-    }
-    button[class^="emojiButton"],
-    button#submit-text,
-    textarea {
-        margin-right: 10px !important;
-    }
-    #app-mount * div[class*="channelTextArea"] div[class*="upload"],
-    #app-mount .theme-dark div[class*="channelTextArea"] div[class*="upload"] {
-        border-right-color: var(--Myred1) !important;
-    }
-    button[class^="guild"][class*="guilds-add"] {
-        border-radius: 50% !important;
-    }
-    #app-mount div[class^="buttonContainer"]:hover,
-    #app-mount #voice-connection div[class^="buttonContainer"]:hover {
-        border: 1px solid var(--Myborder) !important;
-    }
-    #app-mount div[class^="buttonContainer"][class*="button"]:hover,
-    #app-mount div[class^="buttonContainer"][class*="btn-Reaction"]:hover {
-        background-color: var(--Myred2) !important;
-        color: var(--Myborder) !important;
-    }
-    #app-mount * div[class^="guildsInner"],
-    #app-mount * div[class^="guilds"] {
-        background: var(--Myred3) !important;
-    }
-    #app-mount div[class^="spinner"],
-    #app-mount div[class^="typing"] {
-        background-color: var(--Myred2) !important;
-    }
-    div[class*="webhookRow"][class*="margin-bottom"][class*="cardPrimaryEditable"][class*="card"] {
-        border-radius: 50px;
-        border: 1px solid var(--MyB) !important;
-    }
-    div[class*="separator"][class*="marginTop8"][class*="marginBottom8"] {
-        background-color: var(--Myblue1) !important;
-        height: 5px !important;
-        border: 1px solid var(--MyB) !important;
-    }
-    #app-mount * div[class*="radioGroup"] {
-        border: 1px solid var(--Myborder) !important;
-        margin-top: -2px !important;
-        margin-bottom: -2px !important;
-    }
-    .sidebar {
-        border: 2px solid var(--Myborder) !important;
-        background-color: var(--Mygray2) !important;
-    }
-    div[class*="item"][class*="marginBottom8"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="cardPrimaryEditable"][class*="card"] {
-        border-radius: 5px !important;
-        text-align: center !important;
-    }
-    .Select-value,
-    #app-mount * .sidebar div[class*="header"]:nth-child(9),
-    #app-mount * .sidebar div[class*="header"]:nth-child(1) {
-        background-color: var(--Myblue2) !important;
-        border-radius: 5px !important;
-        text-align: center !important;
-    }
-    #app-mount * h4[class*="title"] {
-        text-align: center !important;
-    }
-    input {
-        background-color: var(--Mygray3) !important;
-    }
-    div[class*="inputWrapper"][class*="vertical"][class*="flex"][class*="directionColumn"] {
-        border: 1px solid var(--Myblue2) !important;
-    }
-    .actions div.action.join,
-    .actions div.action.create {
-        background-color: var(--MyX1) !important;
-    }
-    .form-inner,
-    .create-guild-container.deprecated {
-        background-color: var(--Myblue2) !important;
-        border-radius: 5px !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    #app-mount * div[class*="formNotice"],
-    #app-mount * div[class*="userInfoViewing"] {
-        border-radius: 5px !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    #app-mount * div[class*="authedApp"] {
-        background-color: var(--Mygreen3) !important;
-        border-radius: 5px !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    div[class^="guildinner"] {
-        -moz-user-drag: element !important;
-        -webkit-user-drag: element !important;
-        transform: scale(0.75, 0.75);
-    }
-    div[class*="avatar"][class*="small"] {
-        border: 1px solid var(--Myborder) !important;
-    }
-    .avatar-small {
-        border: 1px solid var(--Myborder) !important;
-        border-radius: 5px;
-    }
-    div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"][class*="root"] {
-        border-radius: 5px !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    #app-mount * div[class*="modal"] {
-        text-align: center !important;
-    }
-    #app-mount * .comment {
-        text-align: justify !important;
-    }
-    #app-mount * div[class*="message"] div[class*="embedFields"],
-    #app-mount * div[class*="contentSelectedText"] [class*="iconSpacing"] {
-        background: transparent !important
-    }
-    #app-mount * input[class*="quickMessage"] {
-        border-radius: 5px !important;
-        border: 1px solid var(--Myblue1) !important;
-    }
-    #app-mount * div[class*="userPopout"] {
-        border-radius: 5px !important;
-        border: 1px solid var(--MyW) !important;
-    }
-    #app-mount * div[class^="channels"].btn-friends a {
-        background: none !important;
-        background-color: var(--Myblue3) !important;
-        border-radius: 5px !important;
-        border: 1px solid var(--MyW) !important;
-    }
-    .tab-bar-item.tab-bar-item-primary,
-    #app-mount * .channel.btn-friends.selected a {
-        background: none !important;
-        background-color: var(--Myblue2) !important;
-        border-radius: 5px !important;
-        border: 1px solid var(--MyW) !important;
-    }
-    .tab-bar-item.selected {
-        background-color: var(--Myred1) !important;
-        color: var(--MyW) !important;
-    }
-    div[class*="scroller"]>span:nth-child(1)>header:nth-child(2) {
-        color: var(--MyW) !important;
-        text-align: center;
-    }
-    #app-mount * #friends {
-        position: relative;
-        margin-bottom: 3px !important;
-    }
-    #app-mount * div[class^="chat"] div[class*="wrapperAudio"] {
-        background-color: var(--Mygray2) !important;
-    }
-    #app-mount * div[class^="chat"] div[class*="audioControls"] {
-        background-color: var(--Mygray3) !important;
-    }
-    #app-mount * div[class^="chat"] .accessory svg[class*="metadataIcon"] g {
-        filter: invert(1)
-    }
-    div[class*="titleText"] {
-        border: 2px outset var(--MyW) !important;
-    }
-    div[class*="messagesPopoutWrap"] {
-        border-radius: 5px !important;
-    }
-    #app-mount * span[class*="botTagRegular"][class*="botTag"] {
-        background-color: var(--Myblue1) !important;
-    }
-    #app-mount * [class^="anchor"],
-    #app-mount * .markup {
-        color: var(--MyW) !important;
-    }
-    .search div[data-contents="true"] {
-        background: transparent !important;
-        border: 0 !important;
-    }
-    .search.focused div[data-contents="true"] {
-        background: var(--Mygray3) !important;
-        border: 1px solid var(--MyW) !important;
-    }
-    span[class^="bubble"] {
-        color: var(--MyW) !important;
-        background-color: var(--Myred1) !important;
-    }
-    div[class^="grabber"] {
-        border-color: var(--MyW) !important;
-    }
-    div[class^="grabber"]:active {
-        background-color: var(--Myred1) !important;
-    }
-    div[class*="marginTop40"] div[class*="bar"],
-    div[class*="pttTools"] * div[class*="bar"],
-    .volume * div[class*="bar"] {
-        background-color: var(--Myred3);
-    }
-    div[class*="marginTop40"] div[class*="bar"]>div,
-    div[class*="pttTools"] * div[class*="bar"]>div,
-    .volume * div[class*="bar"]>div {
-        background-color: var(--Myred1) !important;
-    }
-    div[class*="content"],
-    div[class*="content"]:hover,
-    div[class*="containerDefault"][class*="selected"]>div[role="button"],
-    div[class*="containerDefault"]>div[role="button"]:hover,
-    div[class*="containerDefault"][class*="selected"]>div[role="button"]:hover,
-    div[class*="containerDefault"]>div[role="button"] {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    div[class*="blobContainer"] {
-        border-radius: 50% !important;
-    }
-    foreignObject>a[class*="wrapper"],
-    div[class*="expandedFolderIconWrapper"],
-    div[class*="closedFolderIconWrapper"],
-    div[class*="childWrapper"],
-    div[class*="blobContainer"],
-    a[class*="channel"][class*="container"],
-    a[class*="button"][class*="wrapper"],
-    div[class^="circleIconButton"],
-    div[class*="closeButton"][role="button"],
-    div[class*="item"][class*="item"],
-    div[class*="containerDefault"]>div[role="button"],
-    button:not(.btn-slide):not([style*="background-image:"]):not([class*="colorPickerSwatch"]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-    a[class*="wrapper"][class*="selected"],
-    div[class*="expandedFolderIconWrapper"]:hover,
-    div[class*="closedFolderIconWrapper"]:hover,
-    div[class*="childWrapper"]:hover,
-    div[class*="blobContainer"]:hover,
-    div[class*="member"][class*="container"]:hover,
-    div[class*="member"][class*="container"][class*="selected"],
-    a[class*="channel"][class*="container"][class*="selected"],
-    a[class*="channel"][class*="container"]:hover,
-    .container-3baos1,
-    div[class*="channel"] a:hover,
-    div[class*="channel"][class*="selected"] a,
-    div[class*="option"][class*="searchOption"]:hover,
-    div[class*="option"][class*="searchOption"][class*="selected"],
-    a[class*="button"][class*="wrapper"]:hover,
-    div[class^="circleIconButton"]:hover,
-    div[class*="closeButton"][role="button"]:hover,
-    div[class*="item"][class*="item"]:hover,
-    div[class*="item"][class*="item"][class*="selected"]:hover,
-    div[class*="item"][class*="item"][class*="selected"],
-    div[class*="memberOffline"][class*="member"]>[class*="content"]:hover,
-    div[class*="memberOnline"][class*="member"]>[class*="content"]:hover,
-    div[class*="memberOffline"][class*="member"]:hover,
-    div[class*="memberOnline"][class*="member"]:hover,
-    div[class*="containerDefault"][class*="selected"]>div[role="button"],
-    div[class*="containerDefault"][class*="selected"]>div[role="button"]:hover,
-    div[class*="containerDefault"]>div[role="button"]:hover,
-    button:hover:not(.btn-slide):not([style*="background-image:"]):not([class*="colorPickerSwatch"]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-    div[class*="expandedFolderIconWrapper"]:active,
-    div[class*="closedFolderIconWrapper"]:active,
-    div[class*="childWrapper"]:active,
-    div[class*="blobContainer"]:active,
-    div[class*="member"][class*="container"]:active,
-    a[class*="channel"][class*="container"]:active,
-    a[class*="button"][class*="wrapper"]:active,
-    div[class^="circleIconButton"]:active,
-    div[class*="closeButton"][role="button"]:active,
-    div[class*="item"][class*="item"]:active,
-    div[class*="item"][class*="item"][class*="selected"]:active,
-    div[class*="memberOffline"][class*="member"]>[class*="content"]:active,
-    div[class*="memberOnline"][class*="member"]>[class*="content"]:active,
-    div[class*="containerDefault"][class*="selected"]>div[role="button"]:active,
-    div[class*="containerDefault"]>div[role="button"]:active,
-    button:active:not(.btn-slide):not([style*="background-image:"]):not([class*="colorPickerSwatch"]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-    span[class*="expandedFolderBackground"] {
-        background-color: var(--MyX1) !important;
-    }
-    div[class*="menu"],
-    div[class*="resultsGroup"],
-    div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="contentRegionScroller"],
-    div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="members"],
-    div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="containStyles"][class*="scrollerThemed"][class*="themeGhostHairlineChannels"][class*="scrollerFade"] {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-    div[class*="grid-"],
-    div[class*="item"]:hover,
-    #app-mount * div[class*="userPopout"],
-    div[role="dialog"],
-    div[class*="modal"],
-    div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyBetween"][class*="alignCenter"][class*="noWrap"][class],
-    div[class*="wrapperAudio"][class*="wrapper"][class*="embedWrapper"],
-    #app-mount div[class^="chat"] div[class*="embedInner"],
-    input[class*="input"][class*="input"][class*="base"],
-    div[class*="flex"][class*="flex-1O1GKY"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyCenter"][class*="alignCenter"][class*="noWrap"][class*="wrapper"],
-    div[class*="css"][class*="control"],
-    div[class*="codeRedemptionRedirect"][class*="card"],
-    div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="sidebarRegionScroller"],
-    .wrapper-1Rf91z div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-    div[class*="accountList"][class*="marginBottom20"][class*="cardPrimary"][class*="card"],
-    #app-mount * div[class*="formNotice"],
-    #app-mount * div[class*="userInfoViewing"],
-    #app-mount * div[class*="switchItem"],
-    div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyCenter"][class*="alignCenter"][class*="noWrap"][class*="wrapper"][class*="marginTop40"],
-    div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignCenter"][class*="noWrap"][class*="headerDefault"][class*="header"],
-    div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignCenter"][class*="noWrap"][class*="headerClickable"][class*="header"],
-    div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"][class*="layout"][class*="layout"],
-    #react-select-3--value-item>div:nth-child(1),
-    div[class*="item"][class*="marginBottom8"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="cardPrimaryEditable"][class*="card"],
-    div[class*="webhookRow"][class*="margin-bottom"][class*="cardPrimaryEditable"][class*="card"],
-    div[class*="wrapper"][class*="userSelectNone"][class*="cursorDefault"],
-    div[class*="attachment"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="alignCenter"] {
-        background-image: linear-gradient(to top, rgba(0, 10, 100, 0.8) 15%, rgba(0, 10, 150, 0.9) 60%, rgba(0, 17, 255, 0.8) 100%);
-        border: 2px ridge var(--MyW) !important;
-        box-shadow: 0 0 2px var(--Myblue1) !important;
-    }
-    code.inline,
-    form div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
-        background: transparent !important;
-    }
-    div[class*="preview"][class*="cardPrimaryOutline"][class*="card"] {
-        background-color: var(--MyB) !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    header[class*="membersGroup"][class*="container"] {
-        background-color: var(--Myred3) !important;
-        font-weight: bolder !important;
-        color: var(--Myred1) !important;
-        text-align: center !important;
-        text-shadow: 1px 1px 0 var(--MyW) !important;
-        margin-left: 10px !important;
-    }
-    .tootip_box,
-    .tooltip {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    .tootip_box,
-    .tooltip {
-        background-color: var(--MyX1) !important;
-    }
-    .tooltipText {
-        color: var(--Myred1) !important;
-    }
-    form,
-    div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
-        background-color: transparent !important;
-        box-sizing: border-box !important;
-    }
-    div[class*="grid-"] {
-        border-bottom: 1px solid var(--MyW) !important;
-        border-right: 1px solid var(--MyW) !important;
-        border-top: 1px solid var(--MyW) !important;
-        border-radius: 0px 5px 5px 0px !important;
-    }
-    div[class*="embedWrapper"] {
-        border-radius: 0px 5px 5px 0px !important;
-    }
-}
+                        div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
+                            border-right: 1px solid var(--MyW) !important;
+                        }
+                        #app-mount * div[class^="chat"] .message-group {
+                            border-color: var(--Myborder) !important;
+                        }
+                        #app-mount .message-group h2 .timestamp {
+                            color: var(--Myblue1) !important;
+                        }
+                        #app-mount .message-group .mentioned div[class*="messages"] {
+                            background: transparent;
+                            padding-left: 10px;
+                        }
+                        #app-mount .message-group .mentioned .message-text .markup {
+                            color: var(--MyW) !important;
+                        }
+                        #app-mount .message-group .mentioned .message-text:after {
+                            border-left: 4px solid var(--Myborder) !important;
+                            background: transparent;
+                            left: 0;
+                        }
+                        #app-mount .message-group div[class*="markup"] {
+                            color: var(--MyW) !important;
+                        }
+                        #app-mount .account {
+                            background-color: var(--MyX1) !important;
+                            border-top: 1px solid var(--Myborder) !important;
+                        }
+                        #app-mount a[class^="anchor"] {
+                            background-color: transparent !important;
+                            color: var(--Mygreen2) !important;
+                            text-shadow: 1px -1px 0 var(--MyW) !important;
+                        }
+                        #app-mount a[class^="anchor"]:hover {
+                            background-color: transparent !important;
+                            color: var(--Mygreen1) !important;
+                            text-shadow: 1px -1px 0 var(--Mygreen1) !important;
+                            text-decoration: none !important;
+                        }
+                        div[class*="membersWrap"] {
+                            background-color: var(--Mygray3) !important;
+                        }
+                        div[class^="emojiPicker"],
+                        div.scrollerWrapPolyfill-DBQCMm:nth-child(3) {
+                            background-color: var(--Mygray3) !important;
+                        }
+                        div[class*="inner"][class*="flex"][class*="innerNoAutocomplete"] {
+                            background-color: var(--Mygray3) !important;
+                            color: var(--MyW) !important;
+                        }
+                        form,
+                        div[class^="channelTextArea"][class*="channelTextArea"],
+                        #channel-text-area-wrapper {
+                            border-bottom: none !important;
+                            margin: 0px !important;
+                            padding: 0px !important;
+                        }
+                        div[class*="inner"][class*="flex"][class*="innerNoAutocomplete"] {
+                            background-color: var(--Mygray3) !important;
+                            color: var(--MyW) !important;
+                            border: 1px solid var(--MyW) !important;
+                            width: calc(100% - 40px)px !important;
+                        }
+                        button[class^="emojiButton"],
+                        button#submit-text,
+                        textarea {
+                            margin-right: 10px !important;
+                        }
+                        #app-mount * div[class*="channelTextArea"] div[class*="upload"],
+                        #app-mount .theme-dark div[class*="channelTextArea"] div[class*="upload"] {
+                            border-right-color: var(--Myred1) !important;
+                        }
+                        button[class^="guild"][class*="guilds-add"] {
+                            border-radius: 50% !important;
+                        }
+                        #app-mount div[class^="buttonContainer"]:hover,
+                        #app-mount #voice-connection div[class^="buttonContainer"]:hover {
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        #app-mount div[class^="buttonContainer"][class*="button"]:hover,
+                        #app-mount div[class^="buttonContainer"][class*="btn-Reaction"]:hover {
+                            background-color: var(--Myred2) !important;
+                            color: var(--Myborder) !important;
+                        }
+                        #app-mount * div[class^="guildsInner"],
+                        #app-mount * div[class^="guilds"] {
+                            background: var(--Myred3) !important;
+                        }
+                        #app-mount div[class^="spinner"],
+                        #app-mount div[class^="typing"] {
+                            background-color: var(--Myred2) !important;
+                        }
+                        div[class*="webhookRow"][class*="margin-bottom"][class*="cardPrimaryEditable"][class*="card"] {
+                            border-radius: 50px;
+                            border: 1px solid var(--MyB) !important;
+                        }
+                        div[class*="separator"][class*="marginTop8"][class*="marginBottom8"] {
+                            background-color: var(--Myblue1) !important;
+                            height: 5px !important;
+                            border: 1px solid var(--MyB) !important;
+                        }
+                        #app-mount * div[class*="radioGroup"] {
+                            border: 1px solid var(--Myborder) !important;
+                            margin-top: -2px !important;
+                            margin-bottom: -2px !important;
+                        }
+                        .sidebar {
+                            border: 2px solid var(--Myborder) !important;
+                            background-color: var(--Mygray2) !important;
+                        }
+                        div[class*="item"][class*="marginBottom8"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="cardPrimaryEditable"][class*="card"] {
+                            border-radius: 5px !important;
+                            text-align: center !important;
+                        }
+                        .Select-value,
+                        #app-mount * .sidebar div[class*="header"]:nth-child(9),
+                        #app-mount * .sidebar div[class*="header"]:nth-child(1) {
+                            background-color: var(--Myblue2) !important;
+                            border-radius: 5px !important;
+                            text-align: center !important;
+                        }
+                        #app-mount * h4[class*="title"] {
+                            text-align: center !important;
+                        }
+                        input {
+                            background-color: var(--Mygray3) !important;
+                        }
+                        div[class*="inputWrapper"][class*="vertical"][class*="flex"][class*="directionColumn"] {
+                            border: 1px solid var(--Myblue2) !important;
+                        }
+                        .actions div.action.join,
+                        .actions div.action.create {
+                            background-color: var(--MyX1) !important;
+                        }
+                        .form-inner,
+                        .create-guild-container.deprecated {
+                            background-color: var(--Myblue2) !important;
+                            border-radius: 5px !important;
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        #app-mount * div[class*="formNotice"],
+                        #app-mount * div[class*="userInfoViewing"] {
+                            border-radius: 5px !important;
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        #app-mount * div[class*="authedApp"] {
+                            background-color: var(--Mygreen3) !important;
+                            border-radius: 5px !important;
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        div[class^="guildinner"] {
+                            -moz-user-drag: element !important;
+                            -webkit-user-drag: element !important;
+                            transform: scale(0.75, 0.75);
+                        }
+                        div[class*="avatar"][class*="small"] {
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        .avatar-small {
+                            border: 1px solid var(--Myborder) !important;
+                            border-radius: 5px;
+                        }
+                        div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"][class*="root"] {
+                            border-radius: 5px !important;
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        #app-mount * div[class*="modal"] {
+                            text-align: center !important;
+                        }
+                        #app-mount * .comment {
+                            text-align: justify !important;
+                        }
+                        #app-mount * div[class*="message"] div[class*="embedFields"],
+                        #app-mount * div[class*="contentSelectedText"] [class*="iconSpacing"] {
+                            background: transparent !important
+                        }
+                        #app-mount * input[class*="quickMessage"] {
+                            border-radius: 5px !important;
+                            border: 1px solid var(--Myblue1) !important;
+                        }
+                        #app-mount * div[class*="userPopout"] {
+                            border-radius: 5px !important;
+                            border: 1px solid var(--MyW) !important;
+                        }
+                        #app-mount * div[class^="channels"].btn-friends a {
+                            background: none !important;
+                            background-color: var(--Myblue3) !important;
+                            border-radius: 5px !important;
+                            border: 1px solid var(--MyW) !important;
+                        }
+                        .tab-bar-item.tab-bar-item-primary,
+                        #app-mount * .channel.btn-friends.selected a {
+                            background: none !important;
+                            background-color: var(--Myblue2) !important;
+                            border-radius: 5px !important;
+                            border: 1px solid var(--MyW) !important;
+                        }
+                        .tab-bar-item.selected {
+                            background-color: var(--Myred1) !important;
+                            color: var(--MyW) !important;
+                        }
+                        div[class*="scroller"]>span:nth-child(1)>header:nth-child(2) {
+                            color: var(--MyW) !important;
+                            text-align: center;
+                        }
+                        #app-mount * #friends {
+                            position: relative;
+                            margin-bottom: 3px !important;
+                        }
+                        #app-mount * div[class^="chat"] div[class*="wrapperAudio"] {
+                            background-color: var(--Mygray2) !important;
+                        }
+                        #app-mount * div[class^="chat"] div[class*="audioControls"] {
+                            background-color: var(--Mygray3) !important;
+                        }
+                        #app-mount * div[class^="chat"] .accessory svg[class*="metadataIcon"] g {
+                            filter: invert(1)
+                        }
+                        div[class*="titleText"] {
+                            border: 2px outset var(--MyW) !important;
+                        }
+                        div[class*="messagesPopoutWrap"] {
+                            border-radius: 5px !important;
+                        }
+                        #app-mount * span[class*="botTagRegular"][class*="botTag"] {
+                            background-color: var(--Myblue1) !important;
+                        }
+                        #app-mount * [class^="anchor"],
+                        #app-mount * .markup {
+                            color: var(--MyW) !important;
+                        }
+                        .search div[data-contents="true"] {
+                            background: transparent !important;
+                            border: 0 !important;
+                        }
+                        .search.focused div[data-contents="true"] {
+                            background: var(--Mygray3) !important;
+                            border: 1px solid var(--MyW) !important;
+                        }
+                        span[class^="bubble"] {
+                            color: var(--MyW) !important;
+                            background-color: var(--Myred1) !important;
+                        }
+                        div[class^="grabber"] {
+                            border-color: var(--MyW) !important;
+                        }
+                        div[class^="grabber"]:active {
+                            background-color: var(--Myred1) !important;
+                        }
+                        div[class*="marginTop40"] div[class*="bar"],
+                        div[class*="pttTools"] * div[class*="bar"],
+                        .volume * div[class*="bar"] {
+                            background-color: var(--Myred3);
+                        }
+                        div[class*="marginTop40"] div[class*="bar"]>div,
+                        div[class*="pttTools"] * div[class*="bar"]>div,
+                        .volume * div[class*="bar"]>div {
+                            background-color: var(--Myred1) !important;
+                        }
+                        div[class*="content"],
+                        div[class*="content"]:hover,
+                        div[class*="containerDefault"][class*="selected"]>div[role="button"],
+                        div[class*="containerDefault"]>div[role="button"]:hover,
+                        div[class*="containerDefault"][class*="selected"]>div[role="button"]:hover,
+                        div[class*="containerDefault"]>div[role="button"] {
+                            background-image: none !important;
+                            background-color: transparent !important;
+                        }
+                        div[class*="blobContainer"] {
+                            border-radius: 50% !important;
+                        }
+                        foreignObject>a[class*="wrapper"],
+                        div[class*="expandedFolderIconWrapper"],
+                        div[class*="closedFolderIconWrapper"],
+                        div[class*="childWrapper"],
+                        div[class*="blobContainer"],
+                        a[class*="channel"][class*="container"],
+                        a[class*="button"][class*="wrapper"],
+                        div[class^="circleIconButton"],
+                        div[class*="closeButton"][role="button"],
+                        div[class*="item"][class*="item"],
+                        div[class*="containerDefault"]>div[role="button"],
+                        button:not(.btn-slide):not([style*="background-image:"]):not([class*="colorPickerSwatch"]) {
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                            appearance: none;
+                            border: none !important;
+                            color: var(--Mytext) !important;
+                            background-color: var(--MyB) !important;
+                            background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+                            text-shadow: 1px 1px 0 var(--Myred1) !important;
+                            -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+                            -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+                            transition: border-color .3s ease, box-shadow .7s ease !important;
+                            transition-timing-function: linear !important;
+                            box-shadow: 0 1px 4px 1px var(--MyB) !important;
+                        }
+                        a[class*="wrapper"][class*="selected"],
+                        div[class*="expandedFolderIconWrapper"]:hover,
+                        div[class*="closedFolderIconWrapper"]:hover,
+                        div[class*="childWrapper"]:hover,
+                        div[class*="blobContainer"]:hover,
+                        div[class*="member"][class*="container"]:hover,
+                        div[class*="member"][class*="container"][class*="selected"],
+                        a[class*="channel"][class*="container"][class*="selected"],
+                        a[class*="channel"][class*="container"]:hover,
+                        .container-3baos1,
+                        div[class*="channel"] a:hover,
+                        div[class*="channel"][class*="selected"] a,
+                        div[class*="option"][class*="searchOption"]:hover,
+                        div[class*="option"][class*="searchOption"][class*="selected"],
+                        a[class*="button"][class*="wrapper"]:hover,
+                        div[class^="circleIconButton"]:hover,
+                        div[class*="closeButton"][role="button"]:hover,
+                        div[class*="item"][class*="item"]:hover,
+                        div[class*="item"][class*="item"][class*="selected"]:hover,
+                        div[class*="item"][class*="item"][class*="selected"],
+                        div[class*="memberOffline"][class*="member"]>[class*="content"]:hover,
+                        div[class*="memberOnline"][class*="member"]>[class*="content"]:hover,
+                        div[class*="memberOffline"][class*="member"]:hover,
+                        div[class*="memberOnline"][class*="member"]:hover,
+                        div[class*="containerDefault"][class*="selected"]>div[role="button"],
+                        div[class*="containerDefault"][class*="selected"]>div[role="button"]:hover,
+                        div[class*="containerDefault"]>div[role="button"]:hover,
+                        button:hover:not(.btn-slide):not([style*="background-image:"]):not([class*="colorPickerSwatch"]) {
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                            appearance: none;
+                            border: none !important;
+                            box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+                            background-color: var(--Myred3) !important;
+                            background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+                            outline: none !important;
+                            opacity: 1.0 !important;
+                            color: var(--MyW) !important;
+                            -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            transition-timing-function: linear !important;
+                            text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+                        }
+                        div[class*="expandedFolderIconWrapper"]:active,
+                        div[class*="closedFolderIconWrapper"]:active,
+                        div[class*="childWrapper"]:active,
+                        div[class*="blobContainer"]:active,
+                        div[class*="member"][class*="container"]:active,
+                        a[class*="channel"][class*="container"]:active,
+                        a[class*="button"][class*="wrapper"]:active,
+                        div[class^="circleIconButton"]:active,
+                        div[class*="closeButton"][role="button"]:active,
+                        div[class*="item"][class*="item"]:active,
+                        div[class*="item"][class*="item"][class*="selected"]:active,
+                        div[class*="memberOffline"][class*="member"]>[class*="content"]:active,
+                        div[class*="memberOnline"][class*="member"]>[class*="content"]:active,
+                        div[class*="containerDefault"][class*="selected"]>div[role="button"]:active,
+                        div[class*="containerDefault"]>div[role="button"]:active,
+                        button:active:not(.btn-slide):not([style*="background-image:"]):not([class*="colorPickerSwatch"]) {
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                            appearance: none;
+                            border: none !important;
+                            box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+                            background-color: var(--Mygreen3) !important;
+                            background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+                            outline: none !important;
+                            opacity: 1.0 !important;
+                            color: var(--MyW) !important;
+                            -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            transition: background .2s, box-shadow .4s, border-color .2s !important;
+                            transition-timing-function: linear !important;
+                            text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+                        }
+                        span[class*="expandedFolderBackground"] {
+                            background-color: var(--MyX1) !important;
+                        }
+                        div[class*="menu"],
+                        div[class*="resultsGroup"],
+                        div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="contentRegionScroller"],
+                        div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="members"],
+                        div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="containStyles"][class*="scrollerThemed"][class*="themeGhostHairlineChannels"][class*="scrollerFade"] {
+                            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+                        }
+                        div[class*="grid-"],
+                        div[class*="item"]:hover,
+                        #app-mount * div[class*="userPopout"],
+                        div[role="dialog"],
+                        div[class*="modal"],
+                        div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyBetween"][class*="alignCenter"][class*="noWrap"][class],
+                        div[class*="wrapperAudio"][class*="wrapper"][class*="embedWrapper"],
+                        #app-mount div[class^="chat"] div[class*="embedInner"],
+                        input[class*="input"][class*="input"][class*="base"],
+                        div[class*="flex"][class*="flex-1O1GKY"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyCenter"][class*="alignCenter"][class*="noWrap"][class*="wrapper"],
+                        div[class*="css"][class*="control"],
+                        div[class*="codeRedemptionRedirect"][class*="card"],
+                        div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="sidebarRegionScroller"],
+                        .wrapper-1Rf91z div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
+                            background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+                        }
+                        div[class*="accountList"][class*="marginBottom20"][class*="cardPrimary"][class*="card"],
+                        #app-mount * div[class*="formNotice"],
+                        #app-mount * div[class*="userInfoViewing"],
+                        #app-mount * div[class*="switchItem"],
+                        div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyCenter"][class*="alignCenter"][class*="noWrap"][class*="wrapper"][class*="marginTop40"],
+                        div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignCenter"][class*="noWrap"][class*="headerDefault"][class*="header"],
+                        div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignCenter"][class*="noWrap"][class*="headerClickable"][class*="header"],
+                        div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"][class*="layout"][class*="layout"],
+                        #react-select-3--value-item>div:nth-child(1),
+                        div[class*="item"][class*="marginBottom8"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="cardPrimaryEditable"][class*="card"],
+                        div[class*="webhookRow"][class*="margin-bottom"][class*="cardPrimaryEditable"][class*="card"],
+                        div[class*="wrapper"][class*="userSelectNone"][class*="cursorDefault"],
+                        div[class*="attachment"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="alignCenter"] {
+                            background-image: linear-gradient(to top, rgba(0, 10, 100, 0.8) 15%, rgba(0, 10, 150, 0.9) 60%, rgba(0, 17, 255, 0.8) 100%);
+                            border: 2px ridge var(--MyW) !important;
+                            box-shadow: 0 0 2px var(--Myblue1) !important;
+                        }
+                        code.inline,
+                        form div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
+                            background: transparent !important;
+                        }
+                        div[class*="preview"][class*="cardPrimaryOutline"][class*="card"] {
+                            background-color: var(--MyB) !important;
+                            border: 1px solid var(--Myborder) !important;
+                        }
+                        header[class*="membersGroup"][class*="container"] {
+                            background-color: var(--Myred3) !important;
+                            font-weight: bolder !important;
+                            color: var(--Myred1) !important;
+                            text-align: center !important;
+                            text-shadow: 1px 1px 0 var(--MyW) !important;
+                            margin-left: 10px !important;
+                        }
+                        .tootip_box,
+                        .tooltip {
+                            background-image: none !important;
+                            background-color: transparent !important;
+                        }
+                        .tootip_box,
+                        .tooltip {
+                            background-color: var(--MyX1) !important;
+                        }
+                        .tooltipText {
+                            color: var(--Myred1) !important;
+                        }
+                        form,
+                        div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
+                            background-color: transparent !important;
+                            box-sizing: border-box !important;
+                        }
+                        div[class*="grid-"] {
+                            border-bottom: 1px solid var(--MyW) !important;
+                            border-right: 1px solid var(--MyW) !important;
+                            border-top: 1px solid var(--MyW) !important;
+                            border-radius: 0px 5px 5px 0px !important;
+                        }
+                        div[class*="embedWrapper"] {
+                            border-radius: 0px 5px 5px 0px !important;
+                        }
+                        div[class*="result"] {
+                            background-color: transparent !important;
+                        }
