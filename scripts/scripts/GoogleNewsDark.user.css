@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.25
+@version      0.0.26
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -37,12 +37,16 @@
     [data-tooltip] {
         background-color: var(--MyX1) !important;
     }
-    small,
     .gb_r,
-    h2,
     h3,
     a {
         color: var(--MyW) !important;
+    }
+    small {
+        color: var(--TwitterBlue) !important;
+    }
+    h2 {
+        color: var(--TwitterRed) !important;
     }
     h3:hover,
     a:hover {
@@ -74,6 +78,10 @@
         border-radius: 15px !important;
         text-align: center !important;
     }
+    a[href*="https://policies.google.com/privacy"],
+    a[href*="https://accounts.google.com/AddSession"],
+    a[href*="https://myaccount.google.com"],
+    a[href*="https://accounts.google.com/Logout"],
     a[aria-label="More Google apps"],
     .gb_f,
     .MocG8c.IImy7e.LMgvRb,
@@ -102,6 +110,10 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[href*="https://policies.google.com/privacy"]:hover,
+    a[href*="https://accounts.google.com/AddSession"]:hover,
+    a[href*="https://myaccount.google.com"]:hover,
+    a[href*="https://accounts.google.com/Logout"]:hover,
     a[aria-label="More Google apps"]:hover,
     .gb_f:hover,
     .MocG8c.IImy7e.LMgvRb.KKjvXb,
@@ -138,6 +150,10 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[href*="https://policies.google.com/privacy"]:active,
+    a[href*="https://accounts.google.com/AddSession"]:active,
+    a[href*="https://myaccount.google.com"]:active,
+    a[href*="https://accounts.google.com/Logout"]:active,
     a[aria-label="More Google apps"]:active,
     .gb_f:active,
     .MocG8c.IImy7e.LMgvRb:active,
@@ -180,10 +196,14 @@
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+    div[aria-label="Account Information"],
     #nngdp12,
     input:not(.yNVtPc) {
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
+    }
+    div[aria-label="Account Information"] {
+        border: 1px solid var(--MyW) !important;
     }
     .gb_m {
         background-color: transparent !important;
@@ -197,8 +217,17 @@
     .e2CuFe.eU809d {
         filter: invert(1) !important;
     }
-    .boy4he:hover {
+    div[jsmodel="pNpd4d"] {
+        background-color: var(--TwitterBlue) !important;
+        opacity: 0.4;
+    }
+    div[jscontroller="IRBuIc"] {
         background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+    }
+    div[jscontroller="IRBuIc"]:hover {
+        background-color: var(--Myred1) !important;
+        color: var(--MyW) !important;
     }
     .d7hoq {
         z-index: 100;
