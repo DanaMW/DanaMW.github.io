@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.50
+@version      0.0.52
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -38,11 +38,6 @@
         div[class^="nameTag"] strong.user-name {
             font-weight: bold !important;
         }
-        /*
-    div[class*="scrollbar"] {
-        scrollbar-width: thin !important;
-    }
-    */
         [class^="spinner"] * {
             animation: none !important;
         }
@@ -145,10 +140,6 @@
         #app-mount div[class^="chat"] form {
             margin: 0px !important;
             padding: 0px !important;
-            /*
-        height: 100px !important;
-        border: 1px solid var(--Myborder) !important;
-        */
         }
         #app-mount * div[class^="chat"],
         #app-mount .theme-dark div[class^="chat"] {
@@ -347,11 +338,17 @@
             color: var(--MyW) !important;
         }
         form,
-        div[class^="channelTextArea"][class*="channelTextArea"],
+        div[class*="channelTextArea"][class*="channelTextAreaEnabled"][class*="channelTextArea"],
         #channel-text-area-wrapper {
-            border-bottom: none !important;
             margin: 0px !important;
             padding: 0px !important;
+            color: var(--MyW) !important;
+        }
+        div[class*="innerEnabled"][class*="inner"] {
+            border-top: 1px solid var(--Myred1) !important;
+            border-top: 1px solid var(--Myred1) !important;
+            color: var(--MyW) !important;
+            background-color: #202020 !important;
         }
         div[class*="inner"][class*="flex"][class*="innerNoAutocomplete"] {
             background-color: var(--Mygray3) !important;
