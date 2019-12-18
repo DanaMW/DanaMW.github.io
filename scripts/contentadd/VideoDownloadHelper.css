@@ -1,0 +1,7 @@
+@-moz-document url-prefix("moz-extension://983476a0-72cb-4b7c-8ea7-22f32ca60bda/"),
+url-prefix("moz-extension://5c25fe92-919a-4ca0-b30b-04860ae5e410/") {
+    body {
+        color: var(--MyW) !important;
+        background: var(--MyB) !important;
+    }
+}
