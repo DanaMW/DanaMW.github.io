@@ -2,7 +2,7 @@
 @name         Google Drive Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDriveDark.user.css
-@version      0.0.14
+@version      0.0.15
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -218,7 +218,6 @@
         color: var(--MyW) !important;
     }
     .WYuW0e.RDfNAe.GZwC2b.dPmH0b {
-        background-color: var(--Myred2) !important;
         background-color: var(--Myred3) !important;
     }
     .M3pype,
@@ -237,5 +236,16 @@
     .Ea-oa {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .cr-hTVF2c-B-Fq92xe {
+        background-color: var(--Myred3) !important;
+    }
+    /*
+    .B-Nd {
+        filter: hue-rotate(80deg) !important;
+    }
+    */
+    .B {
+        filter: hue-rotate(60deg) !important;
     }
 }
