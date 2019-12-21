@@ -337,14 +337,14 @@
             background-color: var(--Mygray3) !important;
             color: var(--MyW) !important;
         }
-        form,
-        div[class*="channelTextArea"][class*="channelTextAreaEnabled"][class*="channelTextArea"],
+        form[class^="form"],
+        div[class*="channelTextArea"][class*="channelTextArea"],
         #channel-text-area-wrapper {
             margin: 0px !important;
             padding: 0px !important;
             color: var(--MyW) !important;
         }
-        div[class*="innerEnabled"][class*="inner"] {
+        div[class^="textArea"][class*="slateContainer"] {
             border-top: 1px solid var(--Myred1) !important;
             border-top: 1px solid var(--Myred1) !important;
             color: var(--MyW) !important;
