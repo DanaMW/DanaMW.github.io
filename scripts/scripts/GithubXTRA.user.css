@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.19
+@version      0.0.20
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -77,6 +77,7 @@ url-prefix("wss://live.github.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .d-flex.flex-justify-between.mb-3 a.btn.btn-primary,
     .ajax-pagination-form button.ajax-pagination-btn,
     .d-inline-flex .btn,
     #user-projects-list .btn,
@@ -135,6 +136,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .d-flex.flex-justify-between.mb-3 a.btn.btn-primary:hover,
     .ajax-pagination-form .ajax-pagination-btn:hover,
     .d-inline-flex .btn:hover,
     #user-projects-list .btn:hover,
@@ -196,6 +198,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .d-flex.flex-justify-between.mb-3 a.btn.btn-primary:active,
     .ajax-pagination-form button.ajax-pagination-btn:active,
     .d-inline-flex .btn:active,
     #user-projects-list .btn:active,
@@ -291,6 +294,7 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Myred1) !important;
         box-shadow: 0 0 10px var(--MyX1) !important;
     }
+    .d-table.table-fixed.width-full.Box-row--drag-hide.position-relative:hover,
     .flash,
     .header-nav-current-user.css-truncate a[role="menuitem"] {
         background-color: var(--Myred3) !important;
