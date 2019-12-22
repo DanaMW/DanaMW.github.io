@@ -2,7 +2,7 @@
 @name         PBS Dark
 @namespace    http://danamw.github.io/scripts/scripts/PBSDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PBSDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -116,6 +116,7 @@
     .footer__legal {
         display: none !important;
     }
+    #pbs-confirm-station-box,
     .tippy-tooltip,
     div[class*="carousel--verticals"],
     .station-content,
