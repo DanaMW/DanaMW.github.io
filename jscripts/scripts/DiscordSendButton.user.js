@@ -15,10 +15,10 @@
 /* require-jsdoc  */
 
 $(document).on('click', '#clear-text', (function() {
-    $('div[class*="channelTextArea"][class*="channelTextArea"]').val('').text('');
+    $('span[data-slate-string="true"]').val('').text('');
     $(document).on('keydown.preventSend', function(e) {
-        var isFocused = $('div[class*="channelTextArea"][class*="channelTextArea"]').is(':focus');
-        var isCleared = $('div[class*="channelTextArea"][class*="channelTextArea"]').val() == '';
+        var isFocused = $('span[data-slate-string="true"]').is(':focus');
+        var isCleared = $('span[data-slate-string="true"]').val() == '';
         if (isFocused) {
             if (e.keyCode == 13) {
                 if (isCleared) {
@@ -33,7 +33,7 @@ $(document).on('click', '#clear-text', (function() {
 }));
 
 $(document).on('click', '#submit-text', (function(event) {
-    if ($('div[class*="channelTextArea"][class*="channelTextArea"]').val() === '') {
+    if ($('span[data-slate-string="true"]').val() === '') {
         return;
     }
     event.preventDefault();
