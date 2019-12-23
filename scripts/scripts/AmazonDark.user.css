@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.16
+@version      0.0.17
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -310,6 +310,7 @@
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    div[data-cel-widget*="search_result_"],
     table,
     #mako-subnav-helper,
     .a-tab-heading,
@@ -325,5 +326,8 @@
     .a-expander-header:hover {
         background-color: var(--Myred1) !important;
         color: var(--MyW) !important;
+    }
+    .s-desktop-content {
+        background-color: var(--MyB) !important;
     }
 }
