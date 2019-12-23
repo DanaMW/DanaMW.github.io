@@ -2,7 +2,7 @@
 @name         Facebook Dark
 @namespace    https://danamw.github.io/scripts/scripts/FacebookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FacebookDark.user.css
-@version      0.0.5
+@version      0.0.6
 @description  Facebook Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -114,6 +114,13 @@ url-prefix("https://www.messenger.com/") {
         margin-top: 10px !important;
         border: 1px solid var(--Myborder) !important;
         border-radius: 5px 5px 0 0 !important;
+    }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        text-align: center !important;
+        border: 1px solid var(--Myred1) !important;
     }
     /* ------------------ADDED USER MENU------------------------- */
     a._6-6._6-7 {
@@ -3734,5 +3741,11 @@ url-prefix("https://www.messenger.com/") {
     }
     ghost span {
         color: transparent !important;
+    }
+    form#login_form,
+    .menu_login_container,
+    table[role="presentation"]>tbody {
+        background-image: none !important;
+        background-color: transparent !important;
     }
 }
