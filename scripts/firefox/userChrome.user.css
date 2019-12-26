@@ -1,12 +1,14 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.18
+@version     0.0.19
 @description Mozilla UserChrome File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
 ==/UserStyle== */
 
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 :root {
     scrollbar-width: thin;
     scrollbar-color: var(--Myred1) var(--Myred3);
@@ -531,4 +533,9 @@ window#alertNotification {
     color: var(--MyW) !important;
     font-weight: bold;
     z-index: 1000000;
+}
+
+[role="menuitem"],
+label {
+    color: var(--MyW) !important;
 }

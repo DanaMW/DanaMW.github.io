@@ -1,18 +1,21 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.18
+@version     0.0.19
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
 ==/UserStyle== */
 
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 @-moz-document url-prefix("about"),
 url("about:addons") {
     .addon-card-message[type="warning"],
     #private-browsing-notice {
         display: none !important;
     }
+    .sticky-container,
     html,
     body {
         background-color: var(--MyB) !important;
@@ -101,7 +104,7 @@ url("about:addons") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -124,7 +127,7 @@ url("about:addons") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--MyX3) !important;
+        background-color: var(--Mygreen3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -177,6 +180,10 @@ url("about:addons") {
     .disabled-postfix {
         color: var(--Mygreen2) !important;
     }
+    panel-item,
+    span[data-l10n-id="addon-updates-none-found"],
+    [role="menuitem"],
+    label,
     .text-link,
     .update-postfix {
         color: var(--MyW) !important;
@@ -343,19 +350,6 @@ url("about:addons") {
     main {
         background-color: var(--MyB) !important;
     }
-    /*
-    .downloadMainArea {
-        background-color: var(--Mygray3) !important;
-    }
-    .download.download-state[selected="true"] {
-        border: 2px solid var(--Myred1) !important;
-        box-shadow: 0 0 var(--Myred1) !important;
-        background-color: var(--MyX1) !important;
-    }
-    .downloadMainArea:hover {
-        background-color: var(--Myred1) !important;
-    }
-    */
     .card.addon {
         margin-bottom: 15px !important;
         border: none !important;
@@ -399,4 +393,25 @@ url("about:addons") {
 
 .addon.card:hover {
     background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+}
+
+.textbox-input,
+panel-item,
+span[data-l10n-id="addon-updates-none-found"],
+[role="menuitem"],
+label,
+.text-link,
+.update-postfix {
+    color: var(--MyW) !important;
+}
+
+button.back-button,
+button.more-options-button {
+    background-color: transparent !important;
+    color: var(--MyW) !important;
+}
+
+button[role="menuitem"]:hover {
+    background-color: var(--Myred3) !important;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
 }
