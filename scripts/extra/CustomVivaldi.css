@@ -67,36 +67,39 @@
     --toolbarHeight: 34px;
     --primary-background-color: hsl(0, 0%, 10%) !important;
     --dark-theme-base-color: hsl(0, 0%, 10%) !important;
-    --DanaMW: SSmYsEcErTSS;
-    --MyB: #000;
-    --MyW: #fff;
-    --Myback: hsl(0, 0%, 10%);
-    --Mytext: hsl(0, 0%, 90%);
-    --Myred1: hsl(0, 100%, 50%);
-    --Myred2: hsl(0, 100%, 30%);
-    --Myred3: hsl(0, 100%, 15%);
-    --Mypurple1: hsl(300, 100%, 50%);
-    --Mypurple2: hsl(300, 100%, 30%);
-    --Mypurple3: hsl(300, 100%, 15%);
-    --Mygreen1: hsl(120, 100%, 50%);
-    --Mygreen2: hsl(120, 100%, 30%);
-    --Mygreen3: hsl(120, 100%, 15%);
-    --Myblue1: hsl(240, 100%, 50%);
-    --Myblue2: hsl(240, 100%, 30%);
-    --Myblue3: hsl(240, 100%, 15%);
-    --Mygray1: hsl(0, 0%, 50%);
-    --Mygray2: hsl(0, 0%, 30%);
-    --Mygray3: hsl(0, 0%, 15%);
-    --Myeditback: hsl(0, 97%, 14%);
-    --Mydialog: hsl(0, 0%, 25%);
-    --Myborder: hsl(0, 0%, 60%);
-    --MyX1: hsla(0, 100%, 50%, 0.4);
-    --MyX2: hsla(120, 100%, 50%, 0.4);
-    --MyX3: hsla(240, 100%, 50%, 0.4);
-    --MyX4: hsla(0, 0%, 35%, 0.4);
-    --MyX5: hsla(300, 100%, 50%, 0.4);
-    --MyXB: hsla(0, 0%, 0%, 0.4);
-    --MyXW: hsla(0, 0%, 100%, 0.4);
+    --TwitterBlue: hsl(203, 89%, 53%) !important;
+    --TwitterRed: hsl(341, 75%, 51%) !important;
+    --MyB: rgb(0, 0, 0);
+    --MyW: rgb(255, 255, 255);
+    --Myback: rgb(25, 25, 25);
+    --Mytext: rgb(229, 229, 229);
+    --Myred1: rgb(255, 0, 0);
+    --Myred2: rgb(153, 0, 0);
+    --Myred3: rgb(76, 0, 0);
+    --Mypurple1: rgb(255, 0, 255);
+    --Mypurple2: rgb(153, 0, 153);
+    --Mypurple3: rgb(76, 0, 76);
+    --Mygreen1: rgb(0, 255, 0);
+    --Mygreen2: rgb(0, 153, 0);
+    --Mygreen3: rgb(0, 76, 0);
+    --Myblue1: rgb(0, 0, 255);
+    --Myblue2: rgb(0, 0, 153);
+    --Myblue3: rgb(0, 0, 76);
+    --Mygray1: rgb(127, 127, 127);
+    --Mygray2: rgb(76, 76, 76);
+    --Mygray3: rgb(38, 38, 38);
+    --Myeditback: rgb(38, 38, 38);
+    --Mydialog: rgb(63, 63, 63);
+    --Myborder: rgb(153, 153, 153);
+    --MyX1: rgba(255, 0, 0, 0.4);
+    --MyX2: rgba(0, 255, 0, 0.4);
+    --MyX3: rgba(0, 0, 255, 0.4);
+    --MyX4: rgba(89, 89, 89, 0.4);
+    --MyX5: rgba(255, 0, 255, 0.4);
+    --MyXB: rgba(0, 0, 0, 0.4);
+    --MyXW: rgba(255, 255, 255, 0.4);
+    --Progress-bar-color: rgb(255, 0, 0);
+    --scrollbar-color: rgb(255, 0, 0) rgb(76, 0, 0);
     --md-background-color: hsl(0, 0%, 10%) !important;
     --md-loading-message-color: #ff0000 !important;
     --md-toolbar-color: #ff0000 !important;
@@ -139,10 +142,13 @@ body {
     margin: 0;
 }
 
+
+/*
 #header,
 #tabs-container {
     background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
 }
+*/
 
 .ContextMenu,
 .menuitems,
@@ -207,7 +213,7 @@ input {
 
 select,
 paper-button,
-button {
+button:not(.fullwidth) {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -225,7 +231,7 @@ button {
 
 select:hover,
 paper-button:hover,
-button:hover {
+button:hover:not(.fullwidth) {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -245,7 +251,7 @@ button:hover {
 
 select:active,
 paper-button:active,
-button:active {
+button:active:not(.fullwidth) {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -394,5 +400,7 @@ menu {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
 }
 
-
-/*background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;*/
+#header,
+#tabs-container {
+    background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+}
