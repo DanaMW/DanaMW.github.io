@@ -2,7 +2,7 @@
 @name         Brosome Dark
 @namespace    https://danamw.github.io/scripts/scripts/BrosomeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BrosomeDark.user.css
-@version      0.0.4
+@version      0.0.5
 @description  Brosome.com Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -19,6 +19,23 @@
     body {
         color: var(--Mytext) !important;
         background-color: var(--Myback) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
     }
     .newsletter_btn,
     .latest_articles,

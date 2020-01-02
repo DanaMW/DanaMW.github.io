@@ -2,7 +2,7 @@
 @name         My Router Dark
 @namespace    https://danamw.github.io/scripts/scripts/MyRouterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MyRouterDark.user.css
-@version      0.0.9
+@version      0.0.10
 @description  My Router Dark
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -14,6 +14,23 @@ url-prefix("https://192.168.0.1") {
         border: none;
         color: var(--Mytext);
         background-color: var(--Myback);
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
     }
     h2 {
         background-color: var(--Myred2) !important;

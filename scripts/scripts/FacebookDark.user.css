@@ -2,7 +2,7 @@
 @name         Facebook Dark
 @namespace    https://danamw.github.io/scripts/scripts/FacebookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FacebookDark.user.css
-@version      0.0.6
+@version      0.0.7
 @description  Facebook Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -15,6 +15,23 @@ url-prefix("https://www.messenger.com/") {
     /* --------------------------------------------- */
     div[id="u_jsonp_4_0"] {
         background-color: var(--Myback) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
     }
     button[class="_1mf7 _4r1q _4jy0 _4jy3 _4jy1 _51sy selected _42ft"],
     button[class="_1mf7 _4r1q _4jy0 _4jy3 _4jy1 _51sy selected _42ft _42fr"] {

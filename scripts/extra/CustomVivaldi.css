@@ -122,6 +122,22 @@
     background-color: transparent;
 }
 
+::-webkit-scrollbar {
+    background: var(--Myred3) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--Myred1) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--Mygreen1) !important;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--Mygreen2) !important;
+}
+
 html.loading.in-dev-mode body::before {
     background-color: hsl(0, 0%, 10%) !important;
     border-bottom: 1px solid #e0e0e0;

@@ -2,7 +2,7 @@
 @name         123rf Dark
 @namespace    https://danamw.github.io/scripts/scripts/123rfDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/123rfDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -19,6 +19,23 @@
     body {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-color: var(--Myred1) var(--Myred3);
+        scrollbar-width: thin !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
     }
     input {
         background-color: var(--Mygray3) !important;

@@ -2,7 +2,7 @@
 @name         Ello Dark
 @namespace    https://danamw.github.io/scripts/scripts/ElloDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ElloDark.user.css
-@version      0.0.3
+@version      0.0.4
 @description  Ello Tweaks
 @author Dana  Meli
 @homepageURL  https://danamw.github.io
@@ -21,6 +21,23 @@
     .Omnibar {
         color: var(--Mytext) !important;
         background-color: var(--Myback) !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
     }
     .css-1fznh7h:hover,
     .DraggableUsername:hover,

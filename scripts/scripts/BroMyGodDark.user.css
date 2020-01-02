@@ -2,7 +2,7 @@
 @name         BroMyGod Dark
 @namespace    https://danamw.github.io/scripts/scripts/BroMyGodDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BroMyGodDark.user.css
-@version      0.0.3
+@version      0.0.4
 @description  BroMyGod
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -18,6 +18,23 @@
     div#om-lightbox-bullseye-optin,
     div#om-lightbox-bullseye-optin-wrap {
         display: none !important;
+    }
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
     }
     div#layout,
     .td_block_related_posts,

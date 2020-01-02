@@ -2,7 +2,7 @@
 @name         FreeWareFiles Dark
 @namespace    https://danamw.github.io/scripts/scripts/FreeWareFilesDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FreeWareFilesDark.user.css
-@version      0.0.9
+@version      0.0.10
 @description  FreeWareFiles Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -41,6 +41,23 @@
         margin-top: -10px !important;
     }
    */
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
+    }
     .right-cont-border {
         border-top: 5px solid var(--Myred1) !important;
     }
