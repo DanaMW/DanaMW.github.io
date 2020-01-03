@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.40
+@version      0.0.41
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -40,12 +40,15 @@
     }
      ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
+        border-radius: 25px !important;
     }
      ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
+        border-radius: 15px !important;
     }
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
+        border-radius: 25px !important;
     }
     h4 {
         color: var(--Mygreen1) !important;
