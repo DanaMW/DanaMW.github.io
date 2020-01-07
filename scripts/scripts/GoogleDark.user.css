@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.90
+@version      0.0.91
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -53,6 +53,9 @@ url-prefix("https://groups.google.com/") {
     .tAcEof,
     #hdtb-msb {
         position: relative !important;
+    }
+    .tAcEof,
+    #hdtb-msb {
         position: sticky !important;
         margin: 0 auto;
         left: calc(1vw + var(--bmove) - 10vw) !important;
@@ -119,6 +122,7 @@ url-prefix("https://groups.google.com/") {
         left: 0px !important;
         transform: none !important;
     }
+    .gb_F.gb_na,
     .PaEvOc,
     .section-review,
     div[class*="__root"],
@@ -134,6 +138,8 @@ url-prefix("https://groups.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .MXwBff:hover,
+    .gb_F.gb_na,
     a[jsname="uy6ald"]:hover,
     .PaEvOc:hover,
     .section-review,
@@ -152,10 +158,10 @@ url-prefix("https://groups.google.com/") {
     #timer-stopwatch-container,
     .exp-outline,
     .rc:hover,
-    .EDblX.DAVP1,
     #irc-cl {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    .MXwBff,
     a[jsname="uy6ald"],
     .PaEvOc,
     .section-subheader,
@@ -169,6 +175,7 @@ url-prefix("https://groups.google.com/") {
     div.g {
         border-bottom: 2px solid var(--MyX1) !important;
     }
+    [role="heading"],
     .WGvvNb,
     .fxgdke {
         color: var(--MyW) !important;
@@ -336,6 +343,8 @@ url-prefix("https://groups.google.com/") {
     #hdtb-msb-vis a.q.qs:hover {
         color: var(--MyW) !important;
     }
+    .hdtb-mitem.hdtb-msel.hdtb-imb,
+    .hdtb-mitem.hdtb-imb>.q.qs,
     div[role="tab"][aria-selected="true"].hdtb-mitem.hdtb-imb:not([aria-expanded]),
     div[role="tab"].hdtb-mitem.hdtb-imb:not([aria-expanded]) {
         border-bottom: var(--Myred1) !important;
@@ -431,6 +440,7 @@ url-prefix("https://groups.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .hdtb-mitem.hdtb-imb>.q.qs,
     div[jsname="I4bIT"],
     a[data-navigation="server"],
     .gvi3cf,
@@ -516,7 +526,8 @@ url-prefix("https://groups.google.com/") {
     .suggest:hover,
     .Gj7ine:hover,
     div[aria-label="Google apps"] li>a:hover,
-    .hdtb-mitem.hdtb-imb:hover,
+    .hdtb-mitem.hdtb-imb>.q.qs:hover,
+    .hdtb-mitem.hdtb-msel.hdtb-imb>.q.qs:hover,
     .hdtb-mitem.hdtb-msel.hdtb-imb,
     div[role="tab"][aria-selected="true"]:not([aria-expanded]),
     div[role="tab"]:hover:not([aria-expanded]),
