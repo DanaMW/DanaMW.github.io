@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -46,6 +46,12 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    a[role="tab"],
+    ._1x6pySZ2CoUnAfsFhGe7J1,
+    a[id*="header-quicklinks"],
+    #post-composer-du-link,
+    #post-composer-du-media,
+    a[class="_3UhcBirLMXHSbN5vYYBGSF _326PJFFRv8chYfOlaEYmGt "],
     ._3K5j589m2GGg7J3pR96mQf._3VVeutMKl2leQEGhurm7YN,
     ._3UhcBirLMXHSbN5vYYBGSF._1Q1oKEA1qDipo5Tk0b_YlY,
     button {
@@ -63,6 +69,15 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    ._1YWXCINvcuU7nk0ED-bta8:hover,
+    [role="menuitem"]:hover,
+    a[role="tab"]:hover,
+    a[role="tab"][aria-selected="true"],
+    ._1x6pySZ2CoUnAfsFhGe7J1:hover,
+    a[id*="header-quicklinks"]:hover,
+    #post-composer-du-link:hover,
+    #post-composer-du-media:hover,
+    a[class="_3UhcBirLMXHSbN5vYYBGSF _326PJFFRv8chYfOlaEYmGt "]:hover,
     ._3K5j589m2GGg7J3pR96mQf._3VVeutMKl2leQEGhurm7YN:hover,
     ._3UhcBirLMXHSbN5vYYBGSF._1Q1oKEA1qDipo5Tk0b_YlY:hover,
     button:hover {
@@ -82,6 +97,12 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[role="tab"]:active,
+    ._1x6pySZ2CoUnAfsFhGe7J1:active,
+    a[id*="header-quicklinks"]:active,
+    #post-composer-du-link:active,
+    #post-composer-du-media:active,
+    a[class="_3UhcBirLMXHSbN5vYYBGSF _326PJFFRv8chYfOlaEYmGt "]:active,
     ._3K5j589m2GGg7J3pR96mQf._3VVeutMKl2leQEGhurm7YN:active,
     ._3UhcBirLMXHSbN5vYYBGSF._1Q1oKEA1qDipo5Tk0b_YlY:active,
     button:active {
