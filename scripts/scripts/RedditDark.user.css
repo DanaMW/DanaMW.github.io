@@ -2,13 +2,14 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("reddit.com") {
+    ._2L5G9B5yaoqW3IegiYN-FL,
     ._3ozFtOe6WpJEMUtxDOIvtU,
     html,
     body {
