@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.84
+@version      0.0.85
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -156,7 +156,6 @@ url-prefix("https://twitter.com/i/safety/") {
         z-index: 1000000 !important;
     }
     b.non-selectable-item.txt-ellipsis,
-    .link-complex-target,
     .column-head-title,
     .mdl-btn-media {
         color: var(--MyW) !important;
@@ -231,7 +230,12 @@ url-prefix("https://twitter.com/i/safety/") {
     strong[class="fullname txt-size--24 hyphenate"] {
         color: var(--Mytext) !important;
     }
+    .hash,
+    .link-complex-target {
+        color: var(--TwitterBlue) !important;
+    }
     .accordion-panel,
+    .hash:hover,
     .link-complex-target:hover,
     b:hover,
     a:hover,
@@ -240,7 +244,7 @@ url-prefix("https://twitter.com/i/safety/") {
     a.js-user-profile-link[class*="js-action"]:hover strong.fullname {
         text-decoration: none !important;
         font-weight: bold !important;
-        color: var(--Myred1) !important;
+        color: var(--TwitterRed) !important;
     }
     .js-tweet-text,
     .js-tweet-text .tweet-text {
