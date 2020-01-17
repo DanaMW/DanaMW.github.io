@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.86
+@version      0.0.87
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -211,7 +211,6 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: transparent !important;
         font-weight: bold;
     }
-    i,
     li>a>strong,
     strong {
         color: var(--MyW) !important;
