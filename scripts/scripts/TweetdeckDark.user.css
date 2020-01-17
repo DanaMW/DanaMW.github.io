@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.85
+@version      0.0.86
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -113,6 +113,7 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     li>a {
         color: var(--MyW) !important;
+        border-width: 0px !important;
     }
     .js-login-form.form-login.startflow-panel-rounded {
         border-color: var(--Myred1) !important;
@@ -202,7 +203,6 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--MyW) !important;
         border: 1px solid var(--MyW) !important;
     }
-    a,
     a.twitter-timeline-link span.js-display-url,
     a.js-user-profile-link[class*="js-action"] .username:hover,
     a.pretty-link b {
@@ -211,6 +211,7 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: transparent !important;
         font-weight: bold;
     }
+    i,
     li>a>strong,
     strong {
         color: var(--MyW) !important;
@@ -230,13 +231,22 @@ url-prefix("https://twitter.com/i/safety/") {
     strong[class="fullname txt-size--24 hyphenate"] {
         color: var(--Mytext) !important;
     }
+    p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"],
+    .is-selected,
+    .username,
+    a,
     .hash,
-    .link-complex-target {
+    link-complex-target,
+    .link-complex {
         color: var(--TwitterBlue) !important;
     }
+    p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"]:hover,
+    .is-selected:hover,
+    .username:hover,
     .accordion-panel,
     .hash:hover,
-    .link-complex-target:hover,
+    link-complex-target:hover,
+    .link-complex:hover,
     b:hover,
     a:hover,
     a:focus,
@@ -333,10 +343,9 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-customtimeline-description,
     .dropdown-menu,
     .js-dropdown {
-        background-color: var(--Mygray3) !important;
+        background-color: transparent !important;
         color: var(--MyW) !important;
     }
-    input,
     div[contenteditable="true"],
     input[type=text],
     input[type=password],
@@ -441,9 +450,6 @@ url-prefix("https://twitter.com/i/safety/") {
     .dropdown-divider,
     .WebToast {
         border-bottom: 1px solid var(--MyB) !important;
-    }
-    li>a {
-        border-width: 0 !important;
     }
     a,
     div:not(.global-nav-inner):not(.content-header):not(.ProfileHeading-content),
@@ -747,11 +753,13 @@ url-prefix("https://twitter.com/i/safety/") {
         -moz-transform: skewY(7deg) !important;
         transform: skewY(7deg) !important;
     }
+    /*
     .is-selected:hover,
     .username:hover {
         text-decoration: none !important;
         color: var(--MyW) !important;
     }
+    */
     .mdl-col-settings,
     .compose-remember-state,
     .compose,
@@ -1066,7 +1074,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .is-inverted-light a:active,
     .is-inverted-light a:focus,
     .is-inverted-light a:hover {
-        color: var(--MyW) !important;
+        color: var(--TwitterBlue) !important;
     }
     .is-inverted-light .txt-mute {
         color: var(--Mygray2) !important;
