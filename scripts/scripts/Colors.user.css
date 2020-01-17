@@ -3,7 +3,7 @@
 @namespace    http://danamw.github.io/scripts/scripts/Colors.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/Colors.user.css
 @description  My Variable Colors For My Scripts
-@version      0.1.2
+@version      0.1.3
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -11,6 +11,7 @@
 :root {
     --TwitterBlue: hsl(203, 89%, 53%) !important;
     --TwitterRed: hsl(341, 75%, 51%) !important;
+    --TwitterPink: hsl(340, 75%, 36%) !important;
     --MyB: rgb(0, 0, 0);
     --MyW: rgb(255, 255, 255);
     --Myback: rgb(25, 25, 25);
