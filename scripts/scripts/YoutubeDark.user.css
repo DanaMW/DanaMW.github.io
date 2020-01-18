@@ -2,13 +2,13 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.9
+@version      0.0.10
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 @preprocessor default
-@var range smove "Slide Search Bar"[0, 0, 100, 1, "vw"]
-@var range swidth "Resize search input"[750, 0, 750, 1, "px"]
+@var range smove "Slide Search Bar"[10, 0, 75, 1, "vw"]
+@var range swidth "Resize search input"[750, 100, 1000, 1, "px"]
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"),
@@ -286,9 +286,13 @@ domain("studio.youtube.com") {
     #toggleButton {
         border-radius: 50% !important;
     }
+    .style-scope.ytd-searchbox,
     #masthead-search-terms,
     #search-input.ytd-searchbox-spt {
         width: var(--swidth) !important;
+    }
+    yt-icon.style-scope.ytd-searchbox {
+        width: 50px !important;
     }
     form#masthead-search,
     form#search-form {
@@ -649,11 +653,14 @@ domain("studio.youtube.com") {
     input#search,
     input#masthead-search-term {
         background-color: var(--Mygray3) !important;
-        color: var(--Mytext) !important;
+        color: var(--MyW) !important;
         text-align: center !important;
-        border-radius: 15px !important;
-        border: 2px solid var(--MyX1) !important;
-        width: 750px !important;
+        border-radius: 25px !important;
+        border: 2px solid var(--MyB) !important;
+        /*width: 750px !important;*/
+    }
+    ytd-guide-entry-renderer {
+        border-radius: 25px !important;
     }
     /* ---------------------------TOP BANNER----------------------------- */
     ytcp-header,
