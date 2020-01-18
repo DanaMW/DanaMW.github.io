@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.88
+@version      0.0.89
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -156,6 +156,7 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--Myred1) !important;
         z-index: 1000000 !important;
     }
+    i[class="icon Icon icon-content"],
     b.non-selectable-item.txt-ellipsis,
     .column-head-title,
     .mdl-btn-media {
@@ -209,7 +210,6 @@ url-prefix("https://twitter.com/i/safety/") {
         text-decoration: none !important;
         color: var(--MyW) !important;
         background-color: transparent !important;
-        font-weight: bold;
     }
     li>a>strong,
     strong {
@@ -236,7 +236,7 @@ url-prefix("https://twitter.com/i/safety/") {
     a,
     .hash,
     link-complex-target,
-    .link-complex {
+    a.link-complex {
         color: var(--TwitterBlue) !important;
     }
     p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"]:hover,
@@ -245,14 +245,13 @@ url-prefix("https://twitter.com/i/safety/") {
     .accordion-panel,
     .hash:hover,
     link-complex-target:hover,
-    .link-complex:hover,
+    a.link-complex:hover,
     b:hover,
     a:hover,
     a:focus,
     a.twitter-timeline-link:hover span.js-display-url,
     a.js-user-profile-link[class*="js-action"]:hover strong.fullname {
         text-decoration: none !important;
-        font-weight: bold !important;
         color: var(--TwitterRed) !important;
     }
     .js-tweet-text,
@@ -267,7 +266,6 @@ url-prefix("https://twitter.com/i/safety/") {
     [class*="fullname"],
     a.js-user-profile-link[class*="js-action"]:not(:hover) strong.fullname {
         text-decoration: none !important;
-        font-weight: bold !important;
         color: var(--TwitterBlue) !important;
         border-color: transparent !important;
     }
@@ -1179,5 +1177,13 @@ url-prefix("https://twitter.com/i/safety/") {
         -moz-appearance: none !important;
         -webkit-appearance: none !important;
         color: var(--TwitterBlue) !important;
+    }
+    link-complex-target,
+    a.link-complex {
+        color: var(--TwitterBlue) !important;
+    }
+    link-complex-target:hover,
+    a.link-complex:hover {
+        color: var(--TwitterRed) !important;
     }
 }
