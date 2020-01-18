@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.91
+@version      0.0.92
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -159,7 +159,12 @@ url-prefix("https://groups.google.com/") {
     .exp-outline,
     .rc:hover,
     #irc-cl {
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .gb_qb,
+    .gb_ob.gb_pb {
+        color: var(--TwitterBlue) !important;
     }
     .MXwBff,
     a[jsname="uy6ald"],
@@ -169,6 +174,7 @@ url-prefix("https://groups.google.com/") {
     .u4DeMc,
     div[aria-label="Currency exchange rate converter"],
     .gb_B.gb_Ec {
+        background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     .exp-outline,
@@ -440,6 +446,7 @@ url-prefix("https://groups.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    a[href="https://policies.google.com/privacy?hl=en"],
     .hdtb-mitem.hdtb-imb>.q.qs,
     div[jsname="I4bIT"],
     a[data-navigation="server"],
@@ -507,6 +514,9 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[href="https://policies.google.com/privacy?hl=en"]:hover,
+    li[role="menuitem"]:hover,
+    li.hdtbItm:hover .q.qs,
     .E2oEG:hover,
     .E2oEG.Vwmzxb,
     li[role="presentation"]:hover,
@@ -595,6 +605,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[href="https://policies.google.com/privacy?hl=en"]:active,
     div[jsname="I4bIT"]:active,
     a[data-navigation="server"]:active,
     .gvi3cf:active,
@@ -668,6 +679,14 @@ url-prefix("https://groups.google.com/") {
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .Mw2I7.UkaFJe,
+    .Mw2I7 {
+        border: 1px solid var(--Myred1) !important;
+    }
+    .ab_dropdownlnkinfo.ab_dropdownchecklist div,
+    #ss-bimodal-strict {
+        color: var(--MyW) !important;
     }
     .jZWadf,
     .ndYZfc,
