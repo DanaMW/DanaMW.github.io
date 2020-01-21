@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.89
+@version      0.0.90
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -46,6 +46,9 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     #column-navigator {
         scrollbar-width: none;
+    }
+    Notification-body {
+        color: var(--MyW) !important;
     }
     section.js-column.column {
         margin-right: 0px !important;
