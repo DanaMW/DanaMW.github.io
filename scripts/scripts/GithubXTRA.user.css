@@ -36,6 +36,11 @@ url-prefix("wss://live.github.com") {
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    html,
+    body {
+        background-color: var(--Myback) !important;
+        color: var(--MyW) !important;
+    }
     a {
         color: var(--MyW) !important;
     }
