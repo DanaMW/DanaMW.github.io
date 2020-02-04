@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.57
+@version      0.0.58
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -41,7 +41,7 @@
         border-radius: 5px !important;
         border: 1px solid var(--MyW) !important;
     }
-    div[class*="divider"][class*="dividerDefault"] {
+    div[class*="divider"] {
         background-color: var(--Myred1) !important;
     }
     span[class^="username"][role="button"]:hover {
@@ -122,8 +122,8 @@
     #app-mount div[class^="chat"] div[class*="titlewraper"] .channel-mute-button {
         opacity: 1;
     }
-    div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="messages"],
-    div[class^="chat"],
+    div[class*="scroller"][class*="systemPad"][class*="messages"],
+    div[class^="chatContent"],
     div[class*="messagesWrapper"] {
         background: var(--MyB) !important;
     }
@@ -282,12 +282,12 @@
         color: var(--MyW) !important;
         text-shadow: 0px 0px var(--MyW) !important;
     }
-    .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="scrollerWrap"][class*="scrollerThemed"][class*="themeGhostHairline"] {
+    .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="scrollerWrap"] {
         border: none !important;
         width: 70px !important;
         max-width: 70px !important;
     }
-    .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="scrollerWrap"][class*="scrollerThemed"][class*="themeGhostHairline"] div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
+    .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="scrollerWrap"] div[class*="scroller"][class*="systemPad"][class*="scroller"] {
         border: 1px solid var(--Mytext) !important;
         background-color: var(--Myred3) !important;
         width: 70px !important;
@@ -337,7 +337,7 @@
         text-shadow: 1px -1px 0 var(--Mygreen1) !important;
         text-decoration: none !important;
     }
-    div[class*="membersWrap"] {
+    div[class*="membersWrap"][class*="hiddenMembers"] {
         background-color: var(--Mygray3) !important;
     }
     div[class^="emojiPicker"],
@@ -688,7 +688,11 @@
     div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="contentRegionScroller"],
     div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="members"],
     div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="containStyles"][class*="scrollerThemed"][class*="themeGhostHairlineChannels"][class*="scrollerFade"] {
+        background-color: var(--Mygray2) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .container-1ov-mD:hover {
+        background-color: var(--MyX1) !important;
     }
     div[class*="grid-"],
     div[class*="item"]:hover,
@@ -704,6 +708,7 @@
     div[class*="codeRedemptionRedirect"][class*="card"],
     div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="sidebarRegionScroller"],
     .wrapper-1Rf91z div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     div[class*="accountList"][class*="marginBottom20"][class*="cardPrimary"][class*="card"],
