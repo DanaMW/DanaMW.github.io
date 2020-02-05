@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.45
+@version      0.0.46
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -170,7 +170,7 @@
         transition-timing-function: linear !important;
     }
     .fuQUr a[role="button"]:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6),
-    button:not(._4LVjf):not(.downloadBtn) {
+    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -189,7 +189,7 @@
     .fuQUr:hover,
     .-HRM-,
     a[role="button"]:hover:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6):not(.downloadBtn),
-    button:hover:not(._4LVjf):not(.downloadBtn) {
+    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -208,7 +208,7 @@
     a[class="yCE8d  "]:active,
     .fuQUr:active,
     a[role="button"]:active:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6):not(.downloadBtn),
-    button:active:not(._4LVjf):not(.downloadBtn) {
+    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -246,6 +246,7 @@
     .jWQqO.Szr5J {
         filter: invert(0) !important;
     }
+    button.wpO6b:hover,
     .loggedoutSpriteFollow_Contextual_Login,
     .coreSpriteDesktopNavActivity,
     .Eqt6g,
