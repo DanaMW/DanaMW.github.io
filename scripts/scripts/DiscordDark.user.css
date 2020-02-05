@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.58
+@version      0.0.59
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -691,9 +691,11 @@
         background-color: var(--Mygray2) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    /*
     .container-1ov-mD:hover {
         background-color: var(--MyX1) !important;
     }
+    */
     div[class*="grid-"],
     div[class*="item"]:hover,
     #app-mount * div[class*="userPopout"],
