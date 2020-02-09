@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.28
+@version      0.0.29
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -131,6 +131,7 @@
     .gb_f:hover,
     .MocG8c.IImy7e.LMgvRb.KKjvXb,
     .MocG8c.IImy7e.LMgvRb:hover,
+    span[role="menuitem"]:hover,
     div[role="tab"]:hover,
     div[role="button"]:hover,
     div[aria-label="Main menu"]:hover,
@@ -245,6 +246,7 @@
     .d7hoq {
         z-index: 100;
     }
+    div[role="menu"],
     .YtXOzd.j7vNaf,
     .NiLAwe {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
