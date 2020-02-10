@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.93
+@version      0.0.94
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -447,6 +447,8 @@ url-prefix("https://groups.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .lLE0jd.gWUzU.F5z5N,
+    .S5TwIf,
     a[href="https://policies.google.com/privacy?hl=en"],
     .hdtb-mitem.hdtb-imb>.q.qs,
     div[jsname="I4bIT"],
@@ -515,6 +517,9 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .KnZOyc:hover,
+    .lLE0jd.gWUzU.F5z5N:hover,
+    .S5TwIf:hover,
     a[href="https://policies.google.com/privacy?hl=en"]:hover,
     li[role="menuitem"]:hover,
     li.hdtbItm:hover .q.qs,
@@ -606,6 +611,8 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .lLE0jd.gWUzU.F5z5N:active,
+    .S5TwIf:active,
     a[href="https://policies.google.com/privacy?hl=en"]:active,
     div[jsname="I4bIT"]:active,
     a[data-navigation="server"]:active,
