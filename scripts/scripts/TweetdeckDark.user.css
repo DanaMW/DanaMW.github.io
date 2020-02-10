@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.90
+@version      0.0.91
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -907,8 +907,8 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-account-manager-container.column-panel.accounts-drawer.border-box.flex.flex-column,
     .js-search-filter,
     .column-message {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+        background-color: var(--Mygray3) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(60, 60, 60, 0.9) 100%, transparent) !important;
     }
     .js-media-added .compose-media-bar-holder,
     .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10:hover,
