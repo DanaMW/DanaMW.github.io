@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.19
+@version     0.0.20
 @description Mozilla UserChrome File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -251,12 +251,30 @@ menupopup>menu>menupopup {
     color: var(--MyW) !important;
 }
 
-.megabar,
+#urlbar-background,
 #urlbar {
     -moz-appearance: none !important;
     appearance: none !important;
     background-color: var(--MyB) !important;
     color: var(--MyW) !important;
+}
+
+#urlbar-background {
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important;
+    padding-right: 1px !important;
+}
+
+#urlbar {
+    border: 1px solid var(--Myred1) !important;
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important;
+    -moz-border-corner-fit: scale !important;
+    padding-right: 1px !important;
+}
+
+#urlbar-input {
+    text-align: center !important;
 }
 
 #PopupAutoCompleteRichResult[selected=true],
@@ -274,23 +292,8 @@ menupopup>menu>menupopup {
     color: var(--MyW) !important;
 }
 
-.megabar,
-#urlbar {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    border: 1px solid var(--Myred1) !important;
-    -moz-border-radius: 25px !important;
-    border-radius: 25px !important;
-    -moz-border-corner-fit: scale !important;
-    padding-right: 1px !important;
-}
-
 #identity-box {
     border-radius: 25px !important;
-}
-
-#urlbar-input {
-    text-align: center !important;
 }
 
 #tracking-protection-icon-container:hover {
@@ -313,6 +316,7 @@ toolbarbutton {
     border-style: none !important;
 }
 
+#urlbar-go-button,
 button,
 #clearDownloadsButton,
 .subviewbutton.panel-subview-footer,
@@ -368,6 +372,8 @@ toolbarbutton:hover {
     border: none !important;
 }
 
+.urlbarView-row:hover,
+#urlbar-go-button:hover,
 #pageActionButton:hover,
 button:hover,
 #clearDownloadsButton:hover,
@@ -398,6 +404,8 @@ toolbarbutton:hover:not([disabled="true"]) {
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
 
+.urlbarView-row:active,
+#urlbar-go-button:active,
 #pageActionButton:active,
 button:active,
 #clearDownloadsButton:active,
