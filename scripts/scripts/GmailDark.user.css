@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.0.81
+@version      0.0.82
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -1309,5 +1309,8 @@ url-prefix("https://docs.google.com/picker") {
     .gb_b.gb_eb.gb_R,
     .gb_fb.gb_8c.gb_Qg.gb_R.gb_Ff.gb_ob {
         background: transparent !important;
+    }
+    #\:4 {
+        background: black !important;
     }
 }
