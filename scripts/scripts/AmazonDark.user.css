@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.18
+@version      0.0.19
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -37,13 +37,20 @@
         background-color: var(--MyB);
         color: var(--MyW)
     }
+    .nav-searchbar,
     .rhf-border {
         border-color: transparent !important
+    }
+    .nav-search-field,
+    .nav-searchbar {
+        background-color: transparent !important;
     }
     input:not([type="submit"]) {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         text-align: center !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--MyW) !important;
     }
     input[name="submit.addToCart"] {
         padding: 0px !important;
@@ -93,6 +100,7 @@
     h2[class*="ya-card__heading"] {
         color: var(--Mygreen1) !important;
     }
+    ul>li>a,
     ul.a-pagination li.a-normal,
     .nav-search-scope.nav-sprite {
         background-image: none !important;
@@ -105,6 +113,7 @@
     .a-size-small {
         color: var(--MyW) !important;
     }
+    ul>li>a,
     #nav-hamburger-menu,
     .a-disabled,
     .a-normal>a,
@@ -136,6 +145,7 @@
     .wl-invite-button-contents:hover {
         filter: invert(0) !important;
     }
+    ul>li>a:hover,
     #nav-hamburger-menu:hover,
     a.hmenu-item:hover,
     .a-normal>a:hover,
@@ -165,6 +175,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+     :ul>li>a:active,
     #nav-hamburger-menu:active,
     a.hmenu-item:active,
     .a-normal>a:active,
@@ -205,6 +216,9 @@
     .a-box-inner {
         background-image: none !important;
         background-color: var(--Mygray2) !important;
+    }
+    div[class*="bxc-grid-overlay"] {
+        background-color: var(--MyX1) !important;
     }
     .a-fixed-right-grid.wl-list.selected.a-spacing-micro.a-spacing-top-micro {
         background-color: transparent !important;
