@@ -2,7 +2,7 @@
 @name         GreasyFork Dark
 @namespace    https://danamw.github.io/scripts/scripts/GreasyForkDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GreasyForkDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -37,8 +37,10 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    section.text-content,
     ul li.list-option.list-current,
     .script-list li {
+        background-color: var(--Mygray2) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     .script-list li:hover {
@@ -49,19 +51,38 @@
     li.list-option a:hover,
     .list-option-group ul {
         color: var(--MyB) !important;
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     h2 a {
         color: var(--Myred1) !important;
     }
+    p,
     a {
         color: var(--MyW) !important;
+    }
+    h3 {
+        color: var(--TwitterRed) !important;
+    }
+    h3:hover {
+        color: var(--TwitterBlue) !important;
+    }
+    a:hover {
+        color: var(--Myred1) !important;
     }
     input,
     form,
     select {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
+    }
+    form {
+        border-radius: 15px !important;
+    }
+    input {
+        border: 1px solid var(--MyW) !important;
+        border-radius: 15px !important;
+        text-align: center !important;
     }
     .ad.carbon-ad {
         display: none !important;
