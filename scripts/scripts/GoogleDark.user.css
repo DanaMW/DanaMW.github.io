@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.95
+@version      0.0.96
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -295,6 +295,7 @@ url-prefix("https://groups.google.com/") {
         -webkit-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
         transition: opacity 2s, height 2s, transform 2s !important;
     }
+    footer,
     #footer:hover,
     #fbarcnt:hover,
     #fbar:hover {
@@ -447,6 +448,7 @@ url-prefix("https://groups.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    input[type="button"][value="Show more results"],
     .lLE0jd.gWUzU.F5z5N,
     .S5TwIf,
     a[href="https://policies.google.com/privacy?hl=en"],
@@ -517,6 +519,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    input[type="button"][value="Show more results"]:hover,
     .PKhmud.tzVsfd a[aria-label*="Remove refinement"],
     .KnZOyc:hover,
     .lLE0jd.gWUzU.F5z5N:hover,
@@ -612,6 +615,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    input[type="button"][value="Show more results"]:active,
     .lLE0jd.gWUzU.F5z5N:active,
     .S5TwIf:active,
     a[href="https://policies.google.com/privacy?hl=en"]:active,
