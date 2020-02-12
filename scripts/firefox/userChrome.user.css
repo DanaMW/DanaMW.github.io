@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.20
+@version     0.0.21
 @description Mozilla UserChrome File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -476,6 +476,7 @@ toolbarbutton:active,
     color: var(--MyW) !important;
     text-shadow: 1px 1px 0 var(--MyB) !important;
     background-color: var(--Myred1) !important;
+    text-align: center !important;
 }
 
 .tab-close-button,
