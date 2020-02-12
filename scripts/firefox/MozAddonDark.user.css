@@ -2,7 +2,7 @@
 @name         Mozilla Addons Dark
 @namespace    https://danamw.github.io/Scripts/extra/MozAddonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/extra/MozAddonDark.user.css
-@version      0.0.10
+@version      0.0.11
 @description  Mozilla Addons Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -188,6 +188,8 @@ domain("addons.cdn.mozilla.net") {
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
+        border-radius: 15px;
+        border: 1px solid var(--MyW) !important;
     }
     .DropdownMenu-items {
         background-color: var(--Mygray3) !important;
@@ -269,8 +271,15 @@ domain("addons.cdn.mozilla.net") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
+    li.SearchResult {
+        background-color: var(--Mygray3) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(60, 60, 60, 0.9) 100%, transparent) !important;
+    }
+    .SecondaryHero-module,
+    li.SearchResult:hover,
     .clients-disconnect,
     #fxa-settings-content {
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     .RatingsByStar-bar.RatingsByStar-barFrame .RatingsByStar-bar.RatingsByStar-barValue.RatingsByStar-partialBar {
@@ -278,5 +287,9 @@ domain("addons.cdn.mozilla.net") {
     }
     .Header-content .Header-title {
         border: none !important;
+    }
+    .SecondaryHero-module,
+    li.SearchResult:hover {
+        border: 1px solid var(--MyW) !important;
     }
 }
