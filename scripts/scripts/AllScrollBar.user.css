@@ -1,0 +1,29 @@
+/* ==UserStyle==
+@name 		  All For Scrollbars
+@namespace    http://danamw.github.io/scripts/scripts/AllScrollBar.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AllScrollBar.user.css
+@version      0.0.1
+@author       Dana Meli
+@description  Scrollbars Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document regex("*:/*/*") {
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
+    }
+}
