@@ -278,12 +278,16 @@ menupopup>menu>menupopup {
     text-align: center !important;
 }
 
+
+/*
 #html-view-browser,
 #html-view,
 #headered-views-content,
 #headered-views,
 #view-port,
 #main-page-content,
+*/
+
 search-textbox,
 input {
     background-color: var(--Mygray3) !important;
