@@ -36,6 +36,7 @@ progress.red::-webkit-progress-value {
     background-color: var(--Myred1) !important;
 }
 
+.main-content,
 deck#content-deck {
     background: var(--Myback) !important;
     color: var(--MyW) !important;
@@ -274,6 +275,21 @@ menupopup>menu>menupopup {
 }
 
 #urlbar-input {
+    text-align: center !important;
+}
+
+#html-view-browser,
+#html-view,
+#headered-views-content,
+#headered-views,
+#view-port,
+#main-page-content,
+search-textbox,
+input {
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+    border-radius: 25px !important;
+    border: 1px solid var(--Myred1) !important;
     text-align: center !important;
 }
 
