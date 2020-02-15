@@ -26,6 +26,11 @@ url-prefix("moz-extension://7f220db0-49e8-4630-8d13-6b2213ad2cae/reader.html") {
         color: var(--MyW) !important;
         background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
     }
+    .item:hover,
+    div.node-text:hover {
+        background-color: var(--MyX1) !important;
+        COLOR: var(--MyW) !important;
+    }
     div#mainfunctions div.menu-selected {
         color: var(--MyW) !important;
         background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
