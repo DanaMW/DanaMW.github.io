@@ -2,7 +2,7 @@
 @name 		  All For Scrollbars
 @namespace    http://danamw.github.io/scripts/scripts/AllScrollBar.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AllScrollBar.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Scrollbars Style.
 @homepageURL  https://DanaMW.github.io
@@ -25,5 +25,12 @@
     }
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
+    }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 25px !important;
+        border: 1px solid var(--Myred1) !important;
+        text-align: center !important;
     }
 }
