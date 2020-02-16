@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.47
+@version      0.0.48
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -357,7 +357,11 @@
     input[type="radio"],
     input[type="checkbox"] {
         color: var(--MyW) !important;
-        background-color: var(--Mygray3) !important;
+        background-color: var(--Mygray2) !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    input[type="radio"][checked="true"] {
+        color: var(--MyB) !important;
     }
     .mwD2G::before {
         background-color: var(--MyW) !important;
@@ -617,6 +621,9 @@
     div[class="LA45P  coreSpritePagingChevron  "],
     div[class=" Kf8kP coreSpritePagingChevron  "] {
         filter: invert(100%) !important;
+    }
+    div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                              "]:hover {
+        background-color: transparent !important;
     }
     /*
     ._GepC.leaflet-container.leaflet-fade-anim {
