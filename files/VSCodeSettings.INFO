@@ -153,8 +153,11 @@
         "Winmgmt",
         "asay",
         "autoscroller",
+        "bing",
+        "cmdletbinding",
         "epicker",
         "esversion",
+        "nano",
         "power",
         "recurse",
         "shell",
@@ -234,5 +237,10 @@
         "xml",
         "yaml",
         "yml"
-    ]
+    ],
+    "css.completion.completePropertyWithSemicolon": false,
+    "css.lint.duplicateProperties": "warning",
+    "eslint.experimental.incrementalSync": true,
+    "eslint.lintTask.enable": true,
+    "git.fetchOnPull": true
 }

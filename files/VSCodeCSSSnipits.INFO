@@ -187,6 +187,13 @@
         ],
         "description": "var(--TwitterRed) "
     },
+    "TwitterPink": {
+        "prefix": "var(--TwitterPink)",
+        "body": [
+            "var(--TwitterPink) !important;",
+        ],
+        "description": "var(--TwitterPink) "
+    },
     "Myborder": {
         "prefix": "var(--Myborder)",
         "body": [
