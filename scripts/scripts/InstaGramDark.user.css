@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.48
+@version      0.0.49
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -630,4 +630,11 @@
         background-image: none !important;
     }
     */
+    button[class="wpO6b "],
+    li.gElp9.rUo9f.lDe-V:hover,
+    ._4l6NB:hover,
+    button[class="wpO6b "]:hover {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
 }
