@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.0.96
+@version      0.0.97
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -14,6 +14,8 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("https://www.google.com/"),
+url-prefix("https://ogs.google.com/"),
+url-prefix("https://one.google.com/"),
 url-prefix("http://www.google.com/"),
 url-prefix("https://accounts.google.com/"),
 url-prefix("https://plus.google.com/"),
@@ -137,46 +139,6 @@ url-prefix("https://groups.google.com/") {
     #timer-stopwatch-container {
         background-image: none !important;
         background-color: transparent !important;
-    }
-    div[role="heading"],
-    .MXwBff:hover,
-    .gb_F.gb_na,
-    a[jsname="uy6ald"]:hover,
-    .PaEvOc:hover,
-    .section-review,
-    div[class*="__root"],
-    div[class*="__container"],
-    .section-omnibox-spacer,
-    .section-result:hover,
-    .qQ2n2b:hover,
-    .gb_D.gb_Ec,
-    #nngdp34,
-    .knowledge-finance-wholepage-chart__hover-card,
-    div[class*="smsauth-interstitial-tipbox"]:not(.smsauth-interstitial-tipbox-tip),
-    div[class*="smsauth-interstitial-infobox"]:not(.smsauth-interstitial-infobox-content-primary):not(.smsauth-interstitial-infobox-content):not(.smsauth-interstitial-infobox-heading),
-    #act-timer-section,
-    #act-stopwatch-section,
-    #timer-stopwatch-container,
-    .exp-outline,
-    .rc:hover,
-    #irc-cl {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-    .gb_qb,
-    .gb_ob.gb_pb {
-        color: var(--TwitterBlue) !important;
-    }
-    .MXwBff,
-    a[jsname="uy6ald"],
-    .PaEvOc,
-    .section-subheader,
-    div[class="hyMrOd "],
-    .u4DeMc,
-    div[aria-label="Currency exchange rate converter"],
-    .gb_B.gb_Ec {
-        background-color: var(--Mygray3) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     .exp-outline,
     div.g {
@@ -423,24 +385,6 @@ url-prefix("https://groups.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
-    /*
-    .ssfWCe,
-    div[jsname="I4bIT"] {
-        height: 37px !important;
-        max-height: 37px !important;
-        width: 78px !important;
-        max-width: 78px !important;
-        padding: none !important;
-    }
-    div[jsname="I4bIT"] {
-        margin-top: -12px !important;
-    }
-    ..Cq34nf.KQsPse {
-        padding: none !important;
-        margin: none !important;
-        margin-bottom: -5px !important;
-    }
-    */
     .NZmxZe,
     .rQEFy {
         height: 17px !important;
@@ -448,6 +392,8 @@ url-prefix("https://groups.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    a.NQV3m,
+    .tX9u1b,
     input[type="button"][value="Show more results"],
     .lLE0jd.gWUzU.F5z5N,
     .S5TwIf,
@@ -519,6 +465,8 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.NQV3m:hover,
+    .tX9u1b:hover,
     input[type="button"][value="Show more results"]:hover,
     .PKhmud.tzVsfd a[aria-label*="Remove refinement"],
     .KnZOyc:hover,
@@ -615,6 +563,8 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.NQV3m:active,
+    .tX9u1b:active,
     input[type="button"][value="Show more results"]:active,
     .lLE0jd.gWUzU.F5z5N:active,
     .S5TwIf:active,
@@ -715,6 +665,7 @@ url-prefix("https://groups.google.com/") {
         padding: none !important;
         margin: none !important;
     }
+    #gb,
     .gb_Qd.gb_7d.gb_Zd {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -921,7 +872,6 @@ url-prefix("https://groups.google.com/") {
         color: var(--Myred1) !important;
     }
     a:visited {
-        /*color: var(--Myblue1) !important;*/
         color: var(--TwitterBlue) !important;
         text-decoration: none !important;
     }
@@ -1164,5 +1114,82 @@ url-prefix("https://groups.google.com/") {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
         background: url('https://danamw.github.io/img/GoogleBG.jpg') repeat !important;
+    }
+    /*
+    These are for the all apps button in all googles.
+    a.NQV3m,
+    .tX9u1b,
+    */
+    .EHzcec.eejsDc {
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    svg path[d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"] {
+        filter: invert(180) !important;
+    }
+    div[role="heading"],
+    .MXwBff:hover,
+    .gb_F.gb_na,
+    a[jsname="uy6ald"]:hover,
+    .PaEvOc:hover,
+    .section-review,
+    div[class*="__root"],
+    div[class*="__container"],
+    .section-omnibox-spacer,
+    .section-result:hover,
+    .qQ2n2b:hover,
+    .gb_D.gb_Ec,
+    #nngdp34,
+    .knowledge-finance-wholepage-chart__hover-card,
+    div[class*="smsauth-interstitial-tipbox"]:not(.smsauth-interstitial-tipbox-tip),
+    div[class*="smsauth-interstitial-infobox"]:not(.smsauth-interstitial-infobox-content-primary):not(.smsauth-interstitial-infobox-content):not(.smsauth-interstitial-infobox-heading),
+    #act-timer-section,
+    #act-stopwatch-section,
+    #timer-stopwatch-container,
+    .exp-outline,
+    .rc:hover,
+    #irc-cl {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .gb_qb,
+    .gb_ob.gb_pb {
+        color: var(--TwitterBlue) !important;
+    }
+    .Y653g,
+    .MXwBff,
+    a[jsname="uy6ald"],
+    .PaEvOc,
+    .section-subheader,
+    div[class="hyMrOd "],
+    .u4DeMc,
+    div[aria-label="Currency exchange rate converter"],
+    .gb_B.gb_Ec {
+        background-color: var(--Mygray3) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .lEoPHd,
+    .ISnqu,
+    #mBMHK {
+        color: var(--TwitterBlue) !important;
+    }
+    header.mSUZQd {
+        background-color: transparent !important;
+    }
+    .YtVmAd {
+        background-color: var(--Myred3) !important;
+    }
+    .bx0cub {
+        border-color: var(--Myred1) !important;
+    }
+    .Z1is9,
+    .mjO7gf {
+        color: var(--TwitterPink) !important;
+    }
+    #upgrade.znsu3 {
+        background-color: var(--MyB) !important;
+    }
+    .tNjlP {
+        color: var(--MyW) !important;
     }
 }
