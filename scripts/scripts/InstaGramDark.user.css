@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.49
+@version      0.0.50
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -44,7 +44,7 @@
     }
      ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
-        border-radius: 15px !important;
+        border-radius: 25px !important;
     }
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
@@ -84,7 +84,7 @@
     .LWmhU {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
-        border-radius: 15px;
+        border-radius: 25px;
         border: 1px solid var(--Myborder);
     }
     h1 {
@@ -94,7 +94,7 @@
         color: var(--Mygreen1) !important;
     }
     .LWmhU._0aCwM {
-        border-radius: 15px !important;
+        border-radius: 25px !important;
         border: none !important;
     }
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
@@ -226,7 +226,7 @@
         filter: brightness(80%) !important;
     }
     div[class="                  Igw0E     IwRSH        YBx95       _4EzTm      MGdpg                                                                                                      NUiEW  "] button.dCJp8.afkep._0mzm- {
-        border-radius: 15px !important;
+        border-radius: 25px !important;
     }
     /*---------------------------All display NONE----------*/
     ._8Rna9,
@@ -296,7 +296,7 @@
     }
     ._8Rm4L.M9sTE.L_LMM.SgTZ1 {
         background-color: var(--Myred3);
-        border-radius: 15px !important;
+        border-radius: 25px !important;
         border: 2px solid var(--Myborder);
     }
     .Szr5J.bMltT {
@@ -307,9 +307,6 @@
     }
     .mt3GC {
         border: 2px var(--Myred1) !important;
-    }
-    ._97aPb {
-        background-color: var(--Myred1) !important;
     }
     span[class*="glyphs"] {
         filter: invert(1);
@@ -350,7 +347,7 @@
     input:not([type="radio"]):not([type="checkbox"]) {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        border-radius: 15px !important;
+        border-radius: 25px !important;
         border: 1px solid var(--MyW) !important;
     }
     .mwD2G,
@@ -394,7 +391,7 @@
     }
     .t0fbY {
         background-color: var(--Myred3) !important;
-        border-radius: 15px;
+        border-radius: 25px;
     }
     div[class="eo2As "],
     .NroHT.u_1x6._-1O2x {
@@ -521,13 +518,13 @@
     }
     .PdwC2,
     .M9sTE {
-        border-radius: 15px !important;
+        border-radius: 25px !important;
         border: 1px solid var(--MyW) !important;
     }
     ._97aPb,
     .ltEKP {
-        border-top-left-radius: 15px !important;
-        border-bottom-left-radius: 15px !important;
+        border-top-left-radius: 25px !important;
+        border-bottom-left-radius: 25px !important;
     }
     header.top-bar {
         background-image: none !important;
@@ -540,13 +537,18 @@
     header.Ppjfr.UE9AK,
     header:not(.top-bar) {
         background-color: var(--Myred2) !important;
-        border-top-left-radius: 15px !important;
-        border-top-right-radius: 15px !important;
+        border-top-left-radius: 25px !important;
+        border-top-right-radius: 25px !important;
     }
     div[class="eo2As "] {
-        border-bottom-left-radius: 15px !important;
-        border-bottom-right-radius: 15px !important;
+        border-bottom-left-radius: 25px !important;
+        border-bottom-right-radius: 25px !important;
     }
+    /*
+    ._97aPb {
+        background-color: var(--Myred2) !important;
+    }
+    */
     div[class="      tHaIX            Igw0E     IwRSH      eGOV_        vwCYk                                                                                                 HcJZg              "],
     .VIsJD,
     article,
@@ -554,14 +556,16 @@
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+    section.sH9wk._JgwE {
+        background-color: var(--Mygray3) !important;
+    }
     .leaflet-popup-content-wrapper,
     div[class="      tHaIX             Igw0E     IwRSH      eGOV_        vwCYk                                                                                                 HcJZg              "],
     div[class="        DPiy6          Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
     section._9eogI.hfWwk,
     ul[class="jSC57  _6xe7A"],
-    .wW1cu,
-    section.sH9wk._JgwE {
-        background-color: var(--MyB) !important;
+    .wW1cu {
+        background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     div[class="_7UhW9   xLCgt       qyrsm KV-D4        uL8Hv         "],
@@ -600,13 +604,13 @@
     }
     section.sH9wk._JgwE {
         color: var(--MyW) !important;
-        border-bottom-right-radius: 15px !important;
-        border-bottom-left-radius: 15px !important;
+        border-bottom-right-radius: 25px !important;
+        border-bottom-left-radius: 25px !important;
     }
     .m0NAq {
         border: 1px solid var(--Myborder) !important;
-        border-top-left-radius: 15px !important;
-        border-top-right-radius: 15px !important;
+        border-top-left-radius: 25px !important;
+        border-top-right-radius: 25px !important;
     }
     svg[aria-label="Profile"]:hover,
     svg[aria-label="Activity Feed"]:hover,
