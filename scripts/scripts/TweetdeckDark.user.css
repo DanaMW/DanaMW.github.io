@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.95
+@version      0.0.96
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -541,6 +541,7 @@ url-prefix("https://twitter.com/i/safety/") {
     header[class="js-compose-header compose-header"] {
         margin-right: 15px !important;
     }
+    .column-header-links,
     div[role="button"]:not([style*="position: absolute"]),
     .Button.Button--primary.block.txt-size--18.txt-center,
     .js-dismiss,
@@ -580,6 +581,7 @@ url-prefix("https://twitter.com/i/safety/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .column-header-links:hover,
     .typeahead-item.s-selected,
     .js-hide-drawer.margin-t--8.margin-b--10.Button.Button--primary.Button--large.tweet-button.txt-left:not(.is-hidden),
     .search-tip-item-hover.txt-size--12:hover,
@@ -630,6 +632,7 @@ url-prefix("https://twitter.com/i/safety/") {
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
     }
+    .column-header-links:active,
     div[role="button"]:active:not([style*="position: absolute"]),
     .Button.Button--primary.block.txt-size--18.txt-center:active,
     .js-dismiss:active,
@@ -923,10 +926,12 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(60, 60, 60, 0.9) 100%, transparent) !important;
     }
+    /*
     .column-holder,
     .column-panel,
     .column-content,
     .columnContent,
+    */
     .js-media-added .compose-media-bar-holder,
     .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10:hover,
     .Notification-content,
