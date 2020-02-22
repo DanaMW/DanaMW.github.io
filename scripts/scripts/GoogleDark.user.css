@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.2
+@version      0.1.3
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1140,7 +1140,7 @@ url-prefix("https://groups.google.com/") {
         filter: invert(180) !important;
     }
     .Ih2lSe,
-    div[role="heading"],
+    div[role="heading"]:not(.LGOjhe),
     .MXwBff:hover,
     .gb_F.gb_na,
     a[jsname="uy6ald"]:hover,
@@ -1181,6 +1181,7 @@ url-prefix("https://groups.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    b,
     .lEoPHd,
     .ISnqu,
     #mBMHK {
@@ -1195,6 +1196,7 @@ url-prefix("https://groups.google.com/") {
     .bx0cub {
         border-color: var(--Myred1) !important;
     }
+    cite,
     .Z1is9,
     .mjO7gf {
         color: var(--TwitterPink) !important;
@@ -1202,6 +1204,7 @@ url-prefix("https://groups.google.com/") {
     #upgrade.znsu3 {
         background-color: var(--MyB) !important;
     }
+    cite:hover,
     .tNjlP {
         color: var(--MyW) !important;
     }
