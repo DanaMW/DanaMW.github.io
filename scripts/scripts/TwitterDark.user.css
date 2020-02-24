@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.52
+@version      0.0.53
 @description  My Twitter Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -12,7 +12,8 @@
 
 @-moz-document regexp("https://twitter.com(?!widget|cards).*"),
 regexp("https://mobile.twitter.com(?!widget|cards).*"),
-url-prefix("https: //t.co"),
+url-prefix("https://t.co"),
+url-prefix("https://help.twitter.com"),
 domain("twimg.com") {
     html {
         -webkit-tap-highlight-color: var(--MyXW) !important;
