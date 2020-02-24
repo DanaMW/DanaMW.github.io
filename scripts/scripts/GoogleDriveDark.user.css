@@ -2,7 +2,7 @@
 @name         Google Drive Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDriveDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -97,7 +97,6 @@
     div[role="tab"]:hover,
     div[role="tab"][aria-selected="true"],
     .y-C-ka.y-C-ka-ig.y-C-je:hover,
-    div[role="listitem"]:hover,
     [role="option"]>div:hover,
     .h-sb-Ic.h-R-d.a-c-d.h-R-d-W,
     .h-sb-Ic.h-R-d.h-R-d-rc.a-c-d.h-R-d-W,
@@ -172,6 +171,8 @@
     .ab-S-Sg,
     div[role="menuitem"],
     span.gb_o,
+    #empty-view-content-mydrive,
+    #empty-view-content-sharedwithme,
     #empty-view-content-trash,
     #empty-view-content-recent,
     #empty-view-content-starred,
@@ -193,6 +194,12 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    #empty-view-title-mydrive,
+    #empty-view-title-sharedwithme,
+    #empty-view-title-trash,
+    #empty-view-title-recent,
+    #empty-view-title-starred,
+    #empty-view-title-empty-computers,
     .N7iPof.O5x1db,
     span.gb_o,
     #aso_search_form_anchor,
@@ -211,6 +218,7 @@
     .l-u-xb {
         background-color: var(--Myred3) !important;
     }
+    div[role="menu"],
     div[role="presentation"],
     div[role="menu"] {
         background-color: transparent !important;
@@ -250,6 +258,8 @@
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    div[role="listitem"],
+    div[role="menu"],
     .Ea-oa {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
