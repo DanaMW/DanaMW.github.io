@@ -2,13 +2,17 @@
 @name         Google Chrome Store
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChromeStore.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChromeStore.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("chrome.google.com") {
+    .e-f-pa,
+    .e-f,
+    .a-K-o-k,
+    .F-ia-k.S-ph.S-pb-qa,
     html,
     body {
         background-color: var(--MyB) !important;
@@ -33,6 +37,11 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .f-kb-tg,
+    div {
+        color: var(--MyW);
+    }
+    .a-na-d-Oa,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
@@ -41,6 +50,24 @@
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
+    div[role="heading"] {
+        color: var(--TwitterBlue) !important;
+    }
+    span {
+        color: var(--TwitterRed) !important;
+    }
+    .a-na-d-K-A {
+        background-color: transparent !important;
+    }
+    .h-ja-sb,
+    .h-C-b-i-k,
+    .e-f-b-j.g-b-j.g-b-j-O,
+    div[role="search"],
+    div[role="banner"] {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    div[role="button"],
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -59,6 +86,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[role="button"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -79,6 +107,11 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .O-j-k {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    div[role="button"]:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -99,15 +132,17 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    .stock {
+    .a-d-Ec,
+    .F-n-J,
+    .WrIA6d,
+    .a-na-d {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .a-d-Ec:hover,
+    .e-f-o,
+    .Yb,
+    .a-na-d:hover {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
