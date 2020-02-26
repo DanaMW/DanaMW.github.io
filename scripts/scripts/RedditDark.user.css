@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.6
+@version      0.0.7
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -137,6 +137,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .rpBJOHq2PR60pnwJlUyP0>div[style=""],
     ._160axjzy-Hx7ANXMr87Rbe._1G4yU68P50vRZ4USXfaceV,
     ._2vEf-C2keJaBMY9qk_BxVn,
     ._2j6XpwwZyn7dNcfH7Blz0B._1G4yU68P50vRZ4USXfaceV,
@@ -144,6 +145,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .trdUvQxqQHHqQKOUBcgnr.EjdBJNEwygtHMKiHd3Bnv._29WPjLJ0vRIyLIUC_lQ4a8,
     ._2ARwkAW45Urhf_fMfAMi5_:hover,
     ._ZhON3a3vplThB8NFwuJn,
     ._2wqyhtudP4weVGsZdVXJgt._1G4yU68P50vRZ4USXfaceV {
