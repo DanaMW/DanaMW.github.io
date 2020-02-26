@@ -108,6 +108,54 @@
     --paper-tooltip: hsla(0, 100%, 15%) !important;
     --dana-tooltip: hsla(0, 100%, 15%) !important;
     --cr-tooltip: hsla(0, 100%, 15%) !important;
+    --colorBg: var(--Mygray3) !important;
+    --colorBgAlpha: var(--MyX4) !important;
+    --colorBgAlphaHeavy: var(--MygX4) !important;
+    --colorBgAlphaHeavier: var(--MyX4) !important;
+    --colorBgDark: var(--Mygray2) !important;
+    --colorBgDarker: var(--Mygray3) !important;
+    --colorBgLight: var(--Mygray3) !important;
+    --colorBgLighter: var(--Mygray2) !important;
+    --colorBgLightIntense: var(--Mygray2) !important;
+    --colorBgIntense: var(--Mygray3) !important;
+    --colorBgIntenser: var(--Mygray3) !important;
+    --colorBgInverse: var(--Mygray3) !important;
+    --colorBgInverser: var(--Mygray3) !important;
+    --colorBgFaded: var(--Mygray2) !important;
+    --colorFg: var(--MyW) !important;
+    --colorFgAlpha: var(--MyXW) !important;
+    --colorFgIntense: var(--MyW) !important;
+    --colorFgFaded: var(--Mytext) !important;
+    --colorFgFadedMore: var(--Mytext) !important;
+    --colorHighlightBg: var(--Myred1) !important;
+    --colorHighlightBgAlpha: var(--MyX1) !important;
+    --colorHighlightBgDark: var(--Myred2) !important;
+    --colorHighlightFg: var(--MyW) !important;
+    --colorHighlightFgAlpha: var(--MyXW) !important;
+    --colorHighlightFgAlphaHeavy: var(--MyXW) !important;
+    --colorAccentBg: var(--Mygray2) !important;
+    --colorAccentBgAlpha: var(--MyX4) !important;
+    --colorAccentBgAlphaHeavy: var(--MyX4) !important;
+    --colorAccentBgDark: var(--Mygray3) !important;
+    --colorAccentBgDarker: var(--MyB) !important;
+    --colorAccentBgFaded: var(--Mygray2) !important;
+    --colorAccentBgFadedMore: var(--Mygray2) !important;
+    --colorAccentBgFadedMost: var(--Mygray1) !important;
+    --colorAccentBorder: var(--MyW) !important;
+    --colorAccentBorderDark: var(--Myborder) !important;
+    --colorAccentFg: var(--MyW) !important;
+    --colorAccentFgFaded: var(--Myborder) !important;
+    --colorAccentFgAlpha: var(--MyX4) !important;
+    --colorBorder: var(--Myred1) !important;
+    --colorBorderHighlight: var(--TwitterBlue) !important;
+    ;
+    --colorBorderDisabled: #282828;
+    --colorBorderIntense: #161616;
+    --radiusRound: 100px;
+    --radiusRounded: 2px;
+    --radiusRoundedLess: 2px;
+    --radius: 2px;
+    --radiusHalf: calc(var(--radius) * 0.5);
 }
 
 #shadow-root html,
@@ -200,6 +248,7 @@ cr-tooltip {
     padding: 6px 6px !important;
 }
 
+#vivaldi-tooltip,
 #tooltip,
 paper-tooltip,
 .status-info,
@@ -218,6 +267,7 @@ input.url.vivaldi-addressfield {
     text-align: center !important;
 }
 
+cr-toolbar-search-field,
 .addressfield,
 input {
     background-color: var(--Mygray3) !important;
@@ -227,6 +277,9 @@ input {
     text-align: center !important;
 }
 
+cr-button,
+.menu-item,
+.menuitem,
 select,
 paper-button,
 button:not(.fullwidth) {
@@ -245,6 +298,9 @@ button:not(.fullwidth) {
     box-shadow: 0 1px 4px 1px var(--MyB) !important;
 }
 
+cr-button:hover,
+menu-item:hover,
+menuitem:hover,
 select:hover,
 paper-button:hover,
 button:hover:not(.fullwidth) {
@@ -265,6 +321,7 @@ button:hover:not(.fullwidth) {
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
 
+cr-button:active,
 select:active,
 paper-button:active,
 button:active:not(.fullwidth) {
@@ -416,6 +473,7 @@ menu {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
 }
 
+#vivaldi-info-container,
 #header,
 #tabs-container {
     background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
