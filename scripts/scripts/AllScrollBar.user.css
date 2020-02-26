@@ -2,7 +2,7 @@
 @name 		  All For Scrollbars
 @namespace    http://danamw.github.io/scripts/scripts/AllScrollBar.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AllScrollBar.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Scrollbars Style.
 @homepageURL  https://DanaMW.github.io
@@ -30,5 +30,98 @@
         border-radius: 25px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+     ::-moz-scrollbar,
+     ::-webkit-scrollbar,
+     ::-moz-Scrollbar *,
+     ::-webkit-Scrollbar * {
+        -moz-appearance: none !important;
+        margin: 0px !important;
+        padding: 0px !important;
+        border: 0px !important;
+        box-shadow: none !important;
+    }
+     ::-moz-scrollbar[orient="vertical"],
+     ::-webkit-scrollbar[orient="vertical"] {
+        -moz-margin-start: 0px !important;
+        max-width: 14px !important;
+        min-width: 14px !important;
+        background: linear-gradient(to right, rgb(75, 0, 0), rgb(100, 0, 0)) !important;
+        background-size: 14px 14px !important;
+        background-repeat: repeat-y !important;
+        background-position: 50% 0% !important;
+        cursor: default;
+    }
+     ::-moz-scrollbar[orient="horizontal"],
+     ::-webkit-scrollbar[orient="horizontal"] {
+        margin-top: 0px !important;
+        max-height: 14px !important;
+        min-height: 14px !important;
+        background: linear-gradient(rgb(75, 0, 0), rgb(100, 0, 0)) !important;
+        background-size: 14px 14px !important;
+        background-repeat: repeat-x !important;
+        background-position: 0% 50% !important;
+        cursor: default;
+    }
+     ::-moz-scrollbar[orient="vertical"]:active,
+     ::-webkit-scrollbar[orient="vertical"]:active,
+     ::-moz-scrollbar[orient="horizontal"]:active,
+     ::-webkit-scrollbar[orient="horizontal"]:active {
+        background: linear-gradient(rgb(149, 0, 0), rgb(255, 0, 0), rgb(149, 0, 0)) !important;
+    }
+     ::-moz-scrollbar-thumb[orient="vertical"],
+     ::-webkit-scrollbar-thumb[orient="vertical"] {
+        min-height: 28px !important;
+        width: 14px !important;
+        min-width: 14px !important;
+        max-width: 14px !important;
+        background-color: rgb(255, 0, 0) !important;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) !important;
+        transform: scale(0.857, 1) translate(0.5px, 0);
+    }
+     ::-moz-scrollbar-thumb[orient="horizontal"],
+     ::-webkit-scrollbar-thumb[orient="horizontal"] {
+        min-width: 28px !important;
+        height: 14px !important;
+        min-height: 14px !important;
+        max-height: 14px !important;
+        background-color: rgb(255, 0, 0) !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)) !important;
+        transform: scale(1, 0.857) translate(0, 0.5px);
+    }
+     ::-moz-scrollbar-thumb,
+     ::-webkit-scrollbar-thumb {
+        border-radius: 15px !important;
+        transition: all 0.4s !important;
+    }
+     ::-moz-scrollbar-thumb[orient="vertical"]:hover,
+     ::-webkit-scrollbar-thumb[orient="vertical"]:hover,
+     ::-moz-scrollbar-thumb[orient="horizontal"]:hover,
+     ::-webkit-scrollbar-thumb[orient="horizontal"]:hover {
+        background-color: rgb(30, 255, 0) !important;
+    }
+     ::-moz-scrollbar-thumb[orient="vertical"]:active,
+     ::-webkit-scrollbar-thumb[orient="vertical"]:active,
+     ::-moz-scrollbar-thumb[orient="horizontal"]:active,
+     ::-webkit-scrollbar-thumb[orient="horizontal"]:active {
+        background-color: rgb(30, 255, 0) !important;
+        border-radius: 6px !important;
+        transform: scale(1, 1) translate(0, 0);
+    }
+     ::-moz-scrollbar-scrollcorner,
+     ::-webkit-scrollbar-scrollcorner {
+        background-image: radial-gradient(at top left, #222, #444);
+        background-color: rgb(30, 255, 0) !important;
+    }
+     ::-moz-scrollbar-scrollbarbutton,
+     ::-webkit-scrollbar-scrollbarbutton {
+        min-height: 0px !important;
+        min-width: 0px !important;
+        max-height: 14px !important;
+        max-width: 14px !important;
+        height: 14px !important;
+        width: 14px !important;
+        background-color: rgb(30, 255, 0) !important;
+        border-radius: 50% !important;
     }
 }
