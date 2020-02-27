@@ -7,6 +7,7 @@
 @homepageURL https://danamw.github.io
 ==/UserStyle== */
 
+@import url("FirefoxCurvedTabs.css");
 @namespace html "http://www.w3.org/1999/xhtml";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 :root {
@@ -40,6 +41,22 @@ progress.red::-webkit-progress-value {
 deck#content-deck {
     background: var(--Myback) !important;
     color: var(--MyW) !important;
+}
+
+
+/*
+.urlbarView-results,
+#urlbar-results
+*/
+
+.urlbarView {
+    margin: 0 auto !important;
+    border-radius: 15px !important;
+    border-right: 1px solid var(--MyW) !important;
+    border-left: 1px solid var(--MyW) !important;
+    left: 0% !important;
+    right: 0% !important;
+    width: 55% !important;
 }
 
 #browser,
@@ -477,7 +494,6 @@ toolbarbutton:active,
 .tabbrowser-tab {
     background-color: var(--Myred3) !important;
     border: 1px solid rgb(255, 255, 255);
-    text-align: center !important;
 }
 
 .tabbrowser-tab .tab-content[selected] {
