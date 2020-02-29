@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.25
+@version      0.0.26
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -223,6 +223,8 @@
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
     }
+    .c-hyperlink,
+    li[class*="exampleComboPopup2-item"],
     li[role="menuitem"],
     .msame_Header_name,
     a#uhfLogo,
@@ -254,6 +256,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .c-hyperlink:hover,
+    li[class*="exampleComboPopup2-item"]:hover,
     li[role="menuitem"]:hover,
     .msame_Header_name:hover,
     a#uhfLogo:hover,
@@ -286,6 +290,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .c-hyperlink:active,
+    li[class*="exampleComboPopup2-item"]:active,
     li[role="menuitem"]:active,
     .msame_Header_name:active,
     a#uhfLogo:active,
@@ -361,9 +367,20 @@
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    h3[class*="c-heading"],
+    #divTerms,
+    .roledoc,
+    .exampleComboPopup2>p,
+    .exampleComboPopup2 {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
     .msame_Header {
         background-color: transparent !important;
     }
+    .inside-dialog,
+    .roledoc,
+    .exampleComboPopup2>p,
     .alert.is-info,
     th,
     .card,
@@ -371,6 +388,8 @@
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    #divTerms,
+    .exampleComboPopup2,
     .entry-area {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
