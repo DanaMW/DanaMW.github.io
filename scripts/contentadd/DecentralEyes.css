@@ -1,7 +1,7 @@
 /* decentraleyes */
 
-@-moz-document url-prefix("moz-extension://85896d71-d9b1-433f-82d8-88883c2d4f82"),
-url-prefix("moz-extension://e9004927-fe61-4cc8-a0ca-467d1be59ae6") {
+@-moz-document url-prefix("moz-extension://1d21f877-df08-4661-b194-d87377880f41"),
+url-prefix("moz-extension://2bc60f94-8e6e-4b3d-b06f-4081727a745e") {
     body {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;

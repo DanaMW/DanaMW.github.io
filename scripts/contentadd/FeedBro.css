@@ -1,7 +1,7 @@
 /* feedbro */
 
-@-moz-document url("moz-extension://c0630b34-eb0e-4fb3-ad13-92537cedfa92/reader.html"),
-url-prefix("moz-extension://7f220db0-49e8-4630-8d13-6b2213ad2cae/reader.html") {
+@-moz-document url("moz-extension://c489fead-1ce3-4b60-ab7d-3d1694d00510/reader.html"),
+url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html") {
     * {
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3);

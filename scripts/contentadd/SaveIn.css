@@ -1,7 +1,7 @@
 /* savein */
 
-@-moz-document url-prefix("moz-extension://adb320b1-d183-47cb-9eb7-b83feae0a356/"),
-url-prefix("moz-extension://7749af36-c071-41f4-8e43-7dbb9257de60/") {
+@-moz-document url-prefix("moz-extension://6e8e6cbc-4b67-460b-aa2a-555cf69d127c/"),
+url-prefix("moz-extension://6886a8a1-da82-48c7-aa59-1f7ad6a0d5e6/") {
     a,
     .link {
         color: var(--MyW) !important;

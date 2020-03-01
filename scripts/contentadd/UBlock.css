@@ -1,7 +1,7 @@
 /* UBlock */
 
-@-moz-document url-prefix("moz-extension://2a7eae73-bcfd-408a-857d-fb98238f62f0/"),
-url-prefix("moz-extension://bb1e8c2d-172a-4d14-bc51-222fcb8abf74/") {
+@-moz-document url-prefix("moz-extension://f377ac45-6ab5-4da6-a0ca-1495da11002b/"),
+url-prefix("moz-extension://5ab48410-6533-4952-9ea6-4fae89af42fa/") {
     body,
     html {
         background-color: var(--Mygray3) !important;

@@ -1,7 +1,7 @@
 /* S3 Download Manager */
 
-@-moz-document url-prefix("moz-extension://2cc7eb40-bdbd-4d9f-8b11-cddeffe8f446/content/options.html"),
-url-prefix("moz-extension://63c15629-e7f9-41a8-bec7-c706a76bbba0/content/options.html") {
+@-moz-document url-prefix("moz-extension://be78cb98-6546-4056-8808-5bf73000c2df/content/options.html"),
+url-prefix("moz-extension://b95e8923-d507-49fe-9aa0-6b1ae682c276/content/options.html") {
     .tabContent,
     .tabsBox,
     body {
