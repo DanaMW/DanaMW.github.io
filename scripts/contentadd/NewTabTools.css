@@ -1,7 +1,7 @@
 /* new tab tools */
 
 @-moz-document url("moz-extension://96fb75f0-675b-40a6-941d-b7827db86af1/newTab.xhtml"),
-url("moz-extension://6886a8a1-da82-48c7-aa59-1f7ad6a0d5e6/newTab.xhtml") {
+url("moz-extension://da51c721-8ce4-4bd8-b06c-93ca810b17bc/newTab.xhtml") {
     body {
         background-color: hsl(0, 0%, 10%);
         --shadow-hover: rgb(255, 0, 0);
