@@ -2,13 +2,15 @@
 @name         FreeWareFiles Dark
 @namespace    https://danamw.github.io/scripts/scripts/FreeWareFilesDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FreeWareFilesDark.user.css
-@version      0.0.11
+@version      0.0.12
 @description  FreeWareFiles Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("freewarefiles.com") {
+    .subscribers-chicklet,
+    .fbwidget,
     div[class="admargin pull-right"],
     .gbqfwa,
     .c7wws91lfh,
@@ -22,8 +24,6 @@
     .sjgp2g6 {
         opacity: 0 !important;
     }
-    .subscribers-chicklet,
-    .fbwidget,
     #st-5,
     div[class="admargin pull-right"],
     img[class="alignleft3"],
