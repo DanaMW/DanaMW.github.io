@@ -1,4 +1,9 @@
-userChrome.css
---------------
+/* Like this in Windows */
+
 @import url("file:///D:/Development/GitHub/DanaMW.github.io/Scripts/scripts/Colors.user.css");
 @import url("file:///D:/Development/GitHub/DanaMW.github.io/Scripts/firefox/userChrome.user.css");
+
+/* Like this in Linux */
+
+@import url("Colors.user.css");
+@import url("userChrome.user.css");

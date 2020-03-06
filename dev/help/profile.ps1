@@ -1,9 +1,9 @@
-Import-Module posh-git;
+﻿Import-Module posh-git;
 Import-Module oh-my-posh;
 Import-Module Get-ChildItemColor;
 Import-Module -Name PSReadline;
-Add-WindowsPSModulePath;
 Import-Module PsGet;
+Add-WindowsPSModulePath;
 function Test-Administrator {
     $user = [Security.Principal.WindowsIdentity]::GetCurrent()
     (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
@@ -63,20 +63,25 @@ function Write-ColorPrompt($message = "") {
 }
 Function Get-SmallVer {
     $MyVer = $PSVersiontable | Select-Object -property PSVERSION | Format-Table -HideTableheader | Out-String -NoNewLine
-    return WC "~red~[~~white~PowerShell $PSEdition $MyVer~~red~]~"
+    return WC "~darkcyan~[~~darkyellow~PowerShell $PSEdition $MyVer~~darkcyan~]~~white~ ~"
 }
 Set-Alias ghost Run-Ghost.ps1;
 Set-Alias say Write-Host;
 Set-Alias sayout Write-Output;
 Set-Alias re Resolve-Error;
+Set-Alias ge Get-Error;
 Set-Alias l Get-ChildItemColor -option AllScope;
 Set-Alias ls Get-ChildItemColorFormatWide -option AllScope;
 Set-Alias la Get-Files.ps1;
 Set-Alias cc D:\bin\ccleaner\ccleaner64.exe;
+Set-Alias whois "D:\bin\wscc\SysInternals Suite\WhoIs64.exe"
 Set-Alias wc Write-Color;
 Set-Alias wcp Write-ColorPrompt;
+Set-Alias ClearRecycle Clear-RecycleBin
 Set-Alias ssh-agent "D:\bin\git\usr\bin\ssh-agent.exe";
 Set-Alias ssh-add "D:\bin\git\usr\bin\ssh-add.exe";
+Set-Alias wget Invoke-WebRequest;
+Set-Alias mods Get-InstalledModule
 $agent_is_running = Get-Process | Where-Object { $_.ProcessName -like "ssh-agent*" };
 if (!($agent_is_running)) { Start-SshAgent -Quiet; };
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete;
@@ -85,5 +90,7 @@ $host.privatedata.ProgressBackgroundColor = "red";
 $host.UI.RawUI.BackgroundColor = “Black”;
 $Host.UI.RawUI.ForegroundColor = “Gray”;
 $Global:GetChildItemColorVerticalSpace = 0
-$ErrorView = ”CategoryView”;
-WC "~red~[~~yellow~PowerShell Core~~red~][~~cyan~Profile.ps1~~red~]~~white~: Loaded all Functions and Aliases~";
+$Env:POWERSHELL_UPDATECHECK = 'GA'
+#$ErrorView = 'CategoryView'
+$Errorview = 'ConciseView'
+WC "~darkcyan~[~~darkyellow~PowerShell Core~~darkcyan~][~~red~Profile.ps1~~darkcyan~]~~white~: Loaded all Functions and Aliases~";
