@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.60
+@version      0.0.61
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -145,6 +145,10 @@
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+    div[modal] {
+        border: 1px solid var(--MyW) !important;
+    }
+    div[class*="scroller"][class*="systemPad"][class*="members"],
     div[class^="emojiPicker"],
     div.scrollerWrapPolyfill-DBQCMm:nth-child(3) {
         background-color: var(--Mygray3) !important;
@@ -577,6 +581,7 @@
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
+    div[aria-label="More"][role=button],
     foreignObject>a[class*="wrapper"],
     div[class*="expandedFolderIconWrapper"],
     div[class*="closedFolderIconWrapper"],
@@ -603,6 +608,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[aria-label="More"][role=button]:hover,
     div[class*="friendsRow"]:hover,
     a[class*="wrapper"][class*="selected"],
     div[class*="expandedFolderIconWrapper"]:hover,
@@ -648,6 +654,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[aria-label="More"][role=button]:active,
     div[class*="expandedFolderIconWrapper"]:active,
     div[class*="closedFolderIconWrapper"]:active,
     div[class*="childWrapper"]:active,
@@ -690,6 +697,10 @@
     div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="containStyles"][class*="scrollerThemed"][class*="themeGhostHairlineChannels"][class*="scrollerFade"] {
         background-color: var(--Mygray2) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    span[class^="content"] {
+        background-color: var(--MyX1) !important;
+        border: 1px solid var(--MyW) !important;
     }
     /*
     .container-1ov-mD:hover {
