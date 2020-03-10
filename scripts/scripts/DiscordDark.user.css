@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.61
+@version      0.0.63
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -379,27 +379,26 @@
         margin-right: 10px !important;
     }
     #app-mount * div[class*="channelTextArea"] div[class*="upload"],
-    #app-mount .theme-dark div[class*="channelTextArea"] div[class*="upload"] {
+    #app-mount * .theme-dark div[class*="channelTextArea"] div[class*="upload"] {
         border-right-color: var(--Myred1) !important;
     }
     button[class^="guild"][class*="guilds-add"] {
         border-radius: 50% !important;
     }
-    #app-mount div[class^="buttonContainer"]:hover,
-    #app-mount #voice-connection div[class^="buttonContainer"]:hover {
+    #app-mount * div[class^="buttonContainer"]:hover,
+    #app-mount * #voice-connection div[class^="buttonContainer"]:hover {
         border: 1px solid var(--Myborder) !important;
     }
-    #app-mount div[class^="buttonContainer"][class*="button"]:hover,
-    #app-mount div[class^="buttonContainer"][class*="btn-Reaction"]:hover {
+    #app-mount * div[class^="buttonContainer"][class*="button"]:hover,
+    #app-mount * div[class^="buttonContainer"][class*="btn-Reaction"]:hover {
         background-color: var(--Myred2) !important;
         color: var(--Myborder) !important;
     }
-    #app-mount * div[class^="guildsInner"],
-    #app-mount * div[class^="guilds"] {
-        background: var(--Myred3) !important;
+    #app-mount * nav[class*="wrapper"][class*="guilds"] {
+        background-color: var(--Myred3) !important;
     }
-    #app-mount div[class^="spinner"],
-    #app-mount div[class^="typing"] {
+    #app-mount * div[class^="spinner"],
+    #app-mount * div[class^="typing"] {
         background-color: var(--Myred2) !important;
     }
     div[class*="webhookRow"][class*="margin-bottom"][class*="cardPrimaryEditable"][class*="card"] {
