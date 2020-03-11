@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.7
+@version      0.1.8
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1142,6 +1142,7 @@ url-prefix("https://groups.google.com/") {
     svg path[d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"] {
         filter: invert(180) !important;
     }
+    .a1vOw.BY2RHc.bhpG1c.i49rzb,
     #eer-masthead,
     .hVU0u,
     #eer-ra {
@@ -1154,6 +1155,8 @@ url-prefix("https://groups.google.com/") {
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    #wp-tabs-container,
+    .K20DDe.HdaFGf.suApsd.R9GLFb.JXFbbc.Xbg0sb.ySjHwc,
     .UUcaod,
     #eer-ra,
     .Ih2lSe,
@@ -1186,6 +1189,7 @@ url-prefix("https://groups.google.com/") {
     .gb_ob.gb_pb {
         color: var(--TwitterBlue) !important;
     }
+    /* #wp-tabs-container, */
     .Y653g,
     .MXwBff,
     a[jsname="uy6ald"],
@@ -1234,6 +1238,9 @@ url-prefix("https://groups.google.com/") {
         color: var(--MyW) !important;
         text-align: center !important;
     }
+    .c0L1fd,
+    .Uw4age,
+    .JXRj4e,
     .tNjlP {
         color: var(--MyW) !important;
     }
