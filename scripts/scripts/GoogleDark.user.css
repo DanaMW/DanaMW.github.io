@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.6
+@version      0.1.7
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -404,6 +404,7 @@ url-prefix("https://groups.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .KYeOtb,
     a.NQV3m,
     .tX9u1b,
     input[type="button"][value="Show more results"],
@@ -477,6 +478,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .KYeOtb:hover,
     a.NQV3m:hover,
     .tX9u1b:hover,
     input[type="button"][value="Show more results"]:hover,
@@ -575,6 +577,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .KYeOtb:active,
     a.NQV3m:active,
     .tX9u1b:active,
     input[type="button"][value="Show more results"]:active,
@@ -1139,8 +1142,22 @@ url-prefix("https://groups.google.com/") {
     svg path[d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"] {
         filter: invert(180) !important;
     }
+    #eer-masthead,
+    .hVU0u,
+    #eer-ra {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    div[role="heading"] {
+        text-align: center !important;
+    }
+    .WuRuJe {
+        background-color: var(--Mygreen1) !important;
+    }
+    .UUcaod,
+    #eer-ra,
     .Ih2lSe,
-    div[role="heading"]:not(.LGOjhe),
+    div[role="heading"]:not(.LGOjhe):not(.UKbGGd),
     .MXwBff:hover,
     .gb_F.gb_na,
     a[jsname="uy6ald"]:hover,
