@@ -3,13 +3,15 @@
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "alt",
     "editor.formatOnPaste": false,
-    "editor.tokenColorCustomizations": true,
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
     "editor.quickSuggestions": {
         "other": true,
         "comments": false,
         "strings": true
+    },
+    "editor.tokenColorCustomizations": {
+        "semanticHighlighting": true
     },
     "files.autoSave": "off",
     "files.exclude": {
