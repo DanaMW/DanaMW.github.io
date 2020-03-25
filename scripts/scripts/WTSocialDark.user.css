@@ -2,7 +2,7 @@
 @name         WT Social Dark
 @namespace    http://danamw.github.io/scripts/scripts/WTSocialDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WTSocialDark.user.css
-@version      0.0.7
+@version      0.0.8
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -72,6 +72,9 @@
     .lupdated {
         color: var(--TwitterBlue) !important;
     }
+    .status {
+        color: var(--TwitterRed) !important;
+    }
     select,
     #tabPayPal,
     #tabStripe,
@@ -138,6 +141,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .ck.ck-toolbar,
     #page-header,
     .row.form-getin.form-getin--login {
         background-image: none !important;
@@ -164,8 +168,8 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    #linkloadingstuff,
     #profile-name,
-    .ck.ck-toolbar,
     .alert,
     .account__navigation,
     .article:hover,
@@ -201,5 +205,18 @@
     }
     #notitications-reading {
         border: 1px solid var(--MyW) !important;
+    }
+    #linkloadingstuff {
+        border-right: 1px solid var(--MyW) !important;
+        border-left: 1px solid var(--MyW) !important;
+    }
+    .sidebar.user-suggest,
+    .sidebar.follow {
+        width: 390px !important;
+    }
+    .comment.row.comment-container-row {
+        position: relative;
+        left: 15px !important;
+        width: 100% !important;
     }
 }
