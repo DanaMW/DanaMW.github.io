@@ -3,6 +3,7 @@
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "alt",
     "editor.formatOnPaste": false,
+    "editor.tokenColorCustomizations": true,
     "workbench.startupEditor": "none",
     "editor.minimap.enabled": false,
     "editor.quickSuggestions": {
@@ -52,10 +53,9 @@
     "[css]": {
         "editor.defaultFormatter": "michelemelluso.code-beautifier"
     },
-    "powershell.powerShellExePath": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
     "scss.lint.emptyRules": "ignore",
-    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
-    "powershell.powerShellDefaultVersion": "PowerShell Core 6 (x64)",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "powershell.powerShellDefaultVersion": "PowerShell Core 7 (x64)",
     "git.path": "D:\\bin\\git\\bin\\git.exe",
     "git.defaultCloneDirectory": "D:\\Development\\github\\",
     "zenMode.hideStatusBar": false,
@@ -73,7 +73,7 @@
     "window.autoDetectHighContrast": false,
     "window.titleBarStyle": "custom",
     "extensions.showRecommendationsOnlyOnDemand": true,
-    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\6\\pwsh.exe",
+    "terminal.external.windowsExec": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cwd": "D:\\bin",
     "terminal.integrated.enableBell": true,
@@ -88,7 +88,7 @@
         "sass"
     ],
     "vscode_custom_css.imports": [
-        "file://D:/WebBase/wwwroot/scripts/extra/CustomVSCode.css"
+        "file:///D:/Github/DanaMW.github.io/scripts/extra/CustomVSCode.css"
     ],
     "vscode_custom_css.policy": true,
     "eslint.run": "onSave",
@@ -185,7 +185,7 @@
     "npm-intellisense.showBuildInLibs": true,
     "npm.enableScriptExplorer": true,
     "markdown.extension.preview.autoShowPreviewToSide": true,
-    "cSpell.enabledLanguageIds": [
+    "cSpell.enableFiletypes": [
         "asciidoc",
         "bat",
         "c",
