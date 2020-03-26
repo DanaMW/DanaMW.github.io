@@ -2,7 +2,7 @@
 @name 		  All For Scrollbars
 @namespace    http://danamw.github.io/scripts/scripts/AllScrollBar.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AllScrollBar.user.css
-@version      0.0.9
+@version      0.0.10
 @author       Dana Meli
 @description  Scrollbars Style.
 @homepageURL  https://DanaMW.github.io
@@ -27,7 +27,7 @@
         background: var(--Mygreen2) !important;
     }
     textarea {
-        border-radius: 25px !important;
+        border-radius: 5px !important;
         border: 1px solid var(--Myred1) !important;
     }
     input {
