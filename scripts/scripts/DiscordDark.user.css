@@ -78,7 +78,7 @@
         background-color: var(--MyB) !important;
     }
     div[class*="title"][class*="base"][class*="size16"],
-    div[class*="title"][class*="container"] {
+    section[class*="title"][class*="container"] {
         background-color: var(--Myred3) !important;
         background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
