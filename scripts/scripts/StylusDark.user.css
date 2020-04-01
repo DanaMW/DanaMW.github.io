@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.27
+@version      0.0.28
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -306,19 +306,13 @@ regexp("moz-extension://.*") {
         /*background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;*/
         background-image: linear-gradient(to top, rgba(20, 20, 20, 0.8), rgba(75, 75, 75, 0.8), rgba(20, 20, 20, 0.8) 100%, transparent) !important;
     }
-    #options-header {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    #stylus-options,
-    #options-header,
     select#manage.newUI.sort,
     select,
     #message-box.danger #message-box-title {
         /*background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;*/
         background-image: linear-gradient(to top, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
     }
-    #options,
+    #options:not([data-pref="manage.options.expanded"]),
     .odd {
         background-image: linear-gradient(to left, rgba(20, 20, 20, 0.8), rgba(75, 75, 75, 0.8), rgba(20, 20, 20, 0.8) 100%, transparent) !important;
     }
