@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.20
+@version      0.0.21
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -27,6 +27,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .stores-page,
     .avu-content-aui,
     .bg-hero,
     div[role="main"],
@@ -113,7 +114,8 @@
     .a-size-small {
         color: var(--MyW) !important;
     }
-    ul>li>a,
+    a[class*="style__button"],
+    ul>li>a:not([style]),
     #nav-hamburger-menu,
     .a-disabled,
     .a-normal>a,
@@ -145,7 +147,8 @@
     .wl-invite-button-contents:hover {
         filter: invert(0) !important;
     }
-    ul>li>a:hover,
+    a[class*="style__button"]:hover,
+    ul>li>a:hover:not([style]),
     #nav-hamburger-menu:hover,
     a.hmenu-item:hover,
     .a-normal>a:hover,
@@ -175,7 +178,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-     :ul>li>a:active,
+    a[class*="style__button"]:active,
+    ul>li>a:active:not([style]),
     #nav-hamburger-menu:active,
     a.hmenu-item:active,
     .a-normal>a:active,
@@ -234,6 +238,7 @@
     .w-popover-header {
         background-color: var(--Myred3) !important;
     }
+    div[class*="style__navArea"],
     #nav-main,
     #nav-belt,
     header,
@@ -294,6 +299,7 @@
     .hmenu {
         background-color: var(--Mygray3) !important;
     }
+    div[class*="style__socialShare"],
     #cbcc_content_container,
     #navFooter,
     .navFooterLine.navFooterLinkLine.navFooterPadItemLine.navFooterCopyright,
@@ -326,6 +332,7 @@
     #nav-main,
     #nav-belt,
     */
+    div[class*="style__navArea"],
     #hmenu-customer-profile,
     header,
     #navbar,
@@ -333,15 +340,18 @@
     .a-tab-heading.a-active,
     .prime-sub-nav-item-container:hover,
     li.selected[role="tab"] {
+        background-color: var(--Myred1) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    ul[class*="style__grid"],
     div[data-cel-widget*="search_result_"],
     table,
     #mako-subnav-helper,
     .a-tab-heading,
     .prime-sub-nav,
     li[role="tab"] {
+        background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     .a-expander-header,
@@ -355,5 +365,8 @@
     }
     .s-desktop-content {
         background-color: var(--MyB) !important;
+    }
+    span[itemprop="name"] {
+        color: var(--MyB) !important;
     }
 }
