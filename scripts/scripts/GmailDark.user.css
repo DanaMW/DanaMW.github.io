@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.0.82
+@version      0.0.83
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -46,18 +46,32 @@ url-prefix("https://docs.google.com/picker") {
         background-color: transparent !important;
     }
     /* EMAILFIX */
+    div[style="color:rgb(33,33,33)"],
+    div[name="divtagdefaultwrapper"],
+    .ip.iq,
     table,
     .gs,
-    p,
     td,
+    p,
+    br,
     tbody,
     .G3.G2,
     .ip.iq,
     center,
     .Bu.bAn,
     .nH {
-        background-color: inherit !important;
-        color: inherit !important;
+        background-color: var(--MyB) !important;
+    }
+    div[dir="auto"],
+    #\:2u,
+    p,
+    td,
+    a {
+        color: var(--MyW) !important;
+    }
+    br,
+    b {
+        color: var(--TwitterBlue) !important;
     }
     * {
         text-decoration: none !important;
@@ -349,6 +363,7 @@ url-prefix("https://docs.google.com/picker") {
     font {
         color: var(--Myred1) !important;
     }
+    /*
     #\:2s>div:nth-child(2),
     .buc,
     div.J-JN-M-I-JG,
@@ -361,6 +376,7 @@ url-prefix("https://docs.google.com/picker") {
     span.ams.bkH::before {
         filter: invert(1) !important;
     }
+    */
     span.aXw.T-KT::before {
         filter: invert(0) !important;
     }
@@ -370,7 +386,7 @@ url-prefix("https://docs.google.com/picker") {
     }
     h2.hP,
     div.ha {
-        background-color: var(--Myback) !important;
+        background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
     div.hN.so.Ij,
@@ -1305,6 +1321,8 @@ url-prefix("https://docs.google.com/picker") {
     .J-Z-M-I-JG {
         filter: invert(1);
     }
+    .ha,
+    #\:1w,
     .gb_0c,
     .gb_b.gb_eb.gb_R,
     .gb_fb.gb_8c.gb_Qg.gb_R.gb_Ff.gb_ob {
@@ -1312,5 +1330,24 @@ url-prefix("https://docs.google.com/picker") {
     }
     #\:4 {
         background: black !important;
+    }
+    a[href] {
+        color: var(--TwitterBlue) !important;
+    }
+    .gmail_attr,
+    .go {
+        color: var(--TwitterRed) !important;
+    }
+    span.h8.LJOhwe:hover {
+        color: var(--Myred1) !important;
+    }
+    .ajC,
+    .ajA.SK {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .ajA.SK {
+        border-radius: 15px !important;
+        border: 1px solid var(--MyW) !important;
     }
 }
