@@ -9,369 +9,439 @@
 
 @namespace html "http://www.w3.org/1999/xhtml";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+/*
 @-moz-document url-prefix("about"),
 url("about:addons") {
-    .addon-card-message[type="warning"],
-    #private-browsing-notice {
-        display: none !important;
-    }
-    .sticky-container,
-    html,
-    body {
-        background-color: var(--MyB) !important;
-    }
-    section h2.list-section-heading {
-        color: var(--Myred1) !important;
-    }
-    .addon[privateBrowsing="true"] .description.privateBrowsing-notice {
-        background-color: transparent !important;
-        color: var(--Mygreen1) !important;
-    }
-    .addon[privateBrowsing="false"] .description.privateBrowsing-notice {
-        display: block !important;
-        margin-left: 40px !important;
-        background-color: transparent !important;
-        color: var(--MyB) !important;
-    }
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-    .addon.card {
-        max-width: 100% !important;
-        width: 100% !important;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        margin-top: 1px !important;
-        margin-bottom: 1px !important;
-    }
-    textbox {
-        border: none !important;
-        text-align: center !important;
-    }
-    button:hover,
-    button {
-        background-image: none !important;
-        border: none !important;
-    }
-    menulist,
-    td.cell-edit,
-    td.cell-reset,
-    .sidebar-footer-button,
-    #help-button,
-    .category,
-    button:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-    .addon:hover .name {
-        color: var(--MyW) !important;
-    }
-    .addon .name {
-        color: var(--Myred1) !important;
-        filter: blur(0) !important;
-        text-shadow: none !important;
-    }
-    button[class*="button-"],
-    td.cell-edit:hover,
-    td.cell-reset:hover {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    menulist:hover,
-    td.cell-edit:hover,
-    td.cell-reset:hover,
-    .sidebar-footer-button:hover,
-    #help-button:hover,
-    .category[aria-selected="true"],
-    .category[selected="true"],
-    .category:hover,
-    button:hover:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-    menulist:active,
-    td.cell-edit:active,
-    td.cell-reset:active,
-    .sidebar-footer-button:active,
-    #help-button:active,
-    .category:active,
-    button:active:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-    label#warningTitle.title-text {
-        color: var(--Myred1) !important;
-    }
-    #isDefaultLabel,
-    .defaultBrowserBox {
-        color: var(--Myred1) !important;
-    }
-    #alwaysCheckDefault,
-    .content-box,
-    .search-container,
-    .pane-container {
-        color: var(--Mytext) !important;
-    }
-    .relnotes body {
-        background-color: transparent !important;
-    }
-     ::-moz-progress-bar {
-        background-color: var(--Myred1) !important;
-    }
-    .addon-view[notification="warning"] {
-        --view-highlight-color: var(--Myback) !important;
-    }
-    .warning {
-        display: none !important;
-    }
-    #header-search:hover,
-    #header-search {
-        -moz-appearance: none !important;
-        appearance: none;
-        background-color: var(--MyB) !important;
-        border: none !important;
-    }
-    #category-search[disabled="true"] {
-        pointer-events: none !important;
-    }
-    .addon {
-        -moz-appearance: none !important;
-        appearance: none;
-    }
-    .disabled-postfix {
-        color: var(--Mygreen2) !important;
-    }
-    panel-item,
-    span[data-l10n-id="addon-updates-none-found"],
-    [role="menuitem"],
-    label,
-    .text-link,
-    .update-postfix {
-        color: var(--MyW) !important;
-    }
-    .creator {
-        color: var(--Mytext) !important;
-    }
-    .detail-view,
-    #updates-container,
-    #detail-name-container,
-    #detail-desc,
-    #detail-fulldesc,
-    .category,
-    #label,
-    #detail-name,
-    #detail-version {
-        color: var(--Mytext) !important;
-    }
-    .addon-view[active="true"] .content-inner-container .basicinfo-container .name-container {
-        color: var(--Myred1) !important;
-    }
-    .addon-view[active="true"] .content-inner-container .advancedinfo-container .description-outer-container .description-container .description {
-        color: var(--Mytext) !important;
-    }
-    .addon-view[active="false"] .content-inner-container .basicinfo-container .name-container .name {
-        color: var(--Myred3) !important;
-    }
-    .addon-view[active="false"] .content-inner-container .advancedinfo-container .description-outer-container .description-container .description {
-        color: var(--Myred3) !important;
-    }
-    .text-link:hover {
-        color: var(--MyW) !important;
-    }
-    #detail-state-menulist {
-        background-color: var(--Myblue2) !important;
-        color: var(--MyB) !important;
-    }
-    .category[selected="true"]:hover {
-        color: var(--MyW) !important;
-    }
-    .category[aria-selected="true"]:hover {
-        color: var(--MyW) !important;
-    }
-    .text-link:hover {
-        color: var(--MyW) !important;
-    }
-    #addons-page {
-        -moz-appearance: none;
-        appearance: none;
-        background: none !important;
-        background-color: var(--MyB) !important;
-        color: var(--Mytext) !important;
-    }
-    addon-target-container {
-        color: var(--MyB) !important;
-        background-color: var(--Mygray1) !important;
-    }
-    .debug-button {
-        color: var(--MyW) !important;
-    }
-    p {
-        color: var(--Mygreen1) !important;
-    }
-    #ltr,
-    li a,
-    a {
-        color: var(--MyW) !important;
-    }
-    a:link:hover {
-        color: var(--Myred1) !important;
-    }
-    .container,
-    li a:hover,
-    a:hover {
-        color: var(--Myred1) !important;
-        transition: width 110%, height 110%;
-    }
-    th,
-    div[data-l10n-id="profiles-subtitle"],
-    h3,
-    h2,
-    h1 {
-        color: var(--MyW) !important;
-        text-align: center;
-        text-shadow: 1px -1px 0 var(--Myred1) !important;
-    }
-    .notice-box,
-    td {
-        background-color: var(--Mygray2) !important;
-    }
-    #aboutLogoContainer {
-        -moz-appearance: none !important;
-        appearance: none;
-        padding-left: 70px;
-        border: none !important
-    }
-    .dropmarker-icon {
-        filter: invert(1);
-    }
-    .message-bar,
-    .extension-controlled,
-    .updateSettingCrossUserWarningContainer {
-        background-color: var(--Myblue2) !important;
-        color: var(--MyW) !important;
-    }
-    .content,
-    .addon.extension {
-        background-color: var(--Myred3) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myborder) !important;
-        color: var(--MyW) !important;
-    }
-    .card {
-        color: var(--Mytext) !important;
-    }
-    dd {
-        color: var(--MyW) !important;
-    }
-    .card:hover {
-        color: var(--MyW) !important;
-        box-shadow: 0 0 20px var(--Myred1) !important;
-    }
-    section .list-section-heading,
-    dd:hover {
-        color: var(--Myred1) !important;
-    }
-    .textbox-input,
-    #searchFilter,
-    #header-utils-btn,
-    #textbox-input-box,
-    .header-button,
-    .alert {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyB) !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    td.cell-value,
-    #about-config-search,
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        text-align: center !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    label {
-        background-color: transparent !important;
-    }
-    button>.box-inherit.button-box,
-    dropmarker {
-        color: var(--MyW) !important;
-    }
-    aside,
-    main,
-    .card,
-    addon-card {
-        background-image: none !important;
-        background-color: transparent
-    }
-    html,
-    body,
-    #addons-page,
-    .app,
-    main {
-        background-color: var(--MyB) !important;
-    }
-    .card.addon {
-        margin-bottom: 15px !important;
-        border: none !important;
-    }
-    .downloadMainArea:hover,
-    .download.download-state:hover,
-    .download.download-state[selected="true"],
-    .card:hover,
-    .content-blocking-category.selected {
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-    .card,
-    .notice-box,
-    .content-blocking-category {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-    button:hover,
-    button {
-        background-image: none !important;
-        border: none !important;
-    }
+*/
+
+.addon-card-message[type="warning"],
+#private-browsing-notice {
+    display: none !important;
 }
+
+.sticky-container,
+html,
+body {
+    background-color: var(--MyB) !important;
+}
+
+section h2.list-section-heading {
+    color: var(--Myred1) !important;
+}
+
+.addon[privateBrowsing="true"] .description.privateBrowsing-notice {
+    background-color: transparent !important;
+    color: var(--Mygreen1) !important;
+}
+
+.addon[privateBrowsing="false"] .description.privateBrowsing-notice {
+    display: block !important;
+    margin-left: 40px !important;
+    background-color: transparent !important;
+    color: var(--MyB) !important;
+}
+
+* {
+    text-decoration: none !important;
+    scrollbar-width: thin;
+    scrollbar-color: var(--Myred1) var(--Myred3) !important;
+}
+
+.addon.card {
+    max-width: 100% !important;
+    width: 100% !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 1px !important;
+    margin-bottom: 1px !important;
+}
+
+textbox {
+    border: none !important;
+    text-align: center !important;
+}
+
+button:hover,
+button {
+    background-image: none !important;
+    border: none !important;
+}
+
+menulist,
+td.cell-edit,
+td.cell-reset,
+.sidebar-footer-button,
+#help-button,
+.category,
+button:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none !important;
+    color: var(--Mytext) !important;
+    background-color: var(--MyB) !important;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    text-shadow: 1px 1px 0 var(--Myred1) !important;
+    -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+    -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+    transition: border-color .3s ease, box-shadow .7s ease !important;
+    transition-timing-function: linear !important;
+    box-shadow: 0 1px 4px 1px var(--MyB) !important;
+}
+
+.addon:hover .name {
+    color: var(--MyW) !important;
+}
+
+.addon .name {
+    color: var(--Myred1) !important;
+    filter: blur(0) !important;
+    text-shadow: none !important;
+}
+
+button[class*="button-"],
+td.cell-edit:hover,
+td.cell-reset:hover {
+    background-image: none !important;
+    background-color: transparent !important;
+}
+
+menulist:hover,
+td.cell-edit:hover,
+td.cell-reset:hover,
+.sidebar-footer-button:hover,
+#help-button:hover,
+.category[aria-selected="true"],
+.category[selected="true"],
+.category:hover,
+button:hover:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none !important;
+    box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+    background-color: var(--Myred3) !important;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    outline: none !important;
+    opacity: 1.0 !important;
+    color: var(--MyW) !important;
+    -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+    -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+    transition: background .2s, box-shadow .4s, border-color .2s !important;
+    transition-timing-function: linear !important;
+    text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+}
+
+menulist:active,
+td.cell-edit:active,
+td.cell-reset:active,
+.sidebar-footer-button:active,
+#help-button:active,
+.category:active,
+button:active:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none !important;
+    box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+    background-color: var(--Mygreen3) !important;
+    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+    outline: none !important;
+    opacity: 1.0 !important;
+    color: var(--MyW) !important;
+    -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+    -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+    transition: background .2s, box-shadow .4s, border-color .2s !important;
+    transition-timing-function: linear !important;
+    text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+}
+
+label#warningTitle.title-text {
+    color: var(--Myred1) !important;
+}
+
+#isDefaultLabel,
+.defaultBrowserBox {
+    color: var(--Myred1) !important;
+}
+
+#alwaysCheckDefault,
+.content-box,
+.search-container,
+.pane-container {
+    color: var(--Mytext) !important;
+}
+
+.relnotes body {
+    background-color: transparent !important;
+}
+
+::-moz-progress-bar {
+    background-color: var(--Myred1) !important;
+}
+
+.addon-view[notification="warning"] {
+    --view-highlight-color: var(--Myback) !important;
+}
+
+.warning {
+    display: none !important;
+}
+
+#header-search:hover,
+#header-search {
+    -moz-appearance: none !important;
+    appearance: none;
+    background-color: var(--MyB) !important;
+    border: none !important;
+}
+
+#category-search[disabled="true"] {
+    pointer-events: none !important;
+}
+
+.addon {
+    -moz-appearance: none !important;
+    appearance: none;
+}
+
+.disabled-postfix {
+    color: var(--Mygreen2) !important;
+}
+
+panel-item,
+span[data-l10n-id="addon-updates-none-found"],
+[role="menuitem"],
+label,
+.text-link,
+.update-postfix {
+    color: var(--MyW) !important;
+}
+
+.creator {
+    color: var(--Mytext) !important;
+}
+
+.detail-view,
+#updates-container,
+#detail-name-container,
+#detail-desc,
+#detail-fulldesc,
+.category,
+#label,
+#detail-name,
+#detail-version {
+    color: var(--Mytext) !important;
+}
+
+.addon-view[active="true"] .content-inner-container .basicinfo-container .name-container {
+    color: var(--Myred1) !important;
+}
+
+.addon-view[active="true"] .content-inner-container .advancedinfo-container .description-outer-container .description-container .description {
+    color: var(--Mytext) !important;
+}
+
+.addon-view[active="false"] .content-inner-container .basicinfo-container .name-container .name {
+    color: var(--Myred3) !important;
+}
+
+.addon-view[active="false"] .content-inner-container .advancedinfo-container .description-outer-container .description-container .description {
+    color: var(--Myred3) !important;
+}
+
+.text-link:hover {
+    color: var(--MyW) !important;
+}
+
+#detail-state-menulist {
+    background-color: var(--Myblue2) !important;
+    color: var(--MyB) !important;
+}
+
+.category[selected="true"]:hover {
+    color: var(--MyW) !important;
+}
+
+.category[aria-selected="true"]:hover {
+    color: var(--MyW) !important;
+}
+
+.text-link:hover {
+    color: var(--MyW) !important;
+}
+
+#addons-page {
+    -moz-appearance: none;
+    appearance: none;
+    background: none !important;
+    background-color: var(--MyB) !important;
+    color: var(--Mytext) !important;
+}
+
+addon-target-container {
+    color: var(--MyB) !important;
+    background-color: var(--Mygray1) !important;
+}
+
+.debug-button {
+    color: var(--MyW) !important;
+}
+
+p {
+    color: var(--Mygreen1) !important;
+}
+
+#ltr,
+li a,
+a {
+    color: var(--MyW) !important;
+}
+
+a:link:hover {
+    color: var(--Myred1) !important;
+}
+
+.container,
+li a:hover,
+a:hover {
+    color: var(--Myred1) !important;
+    transition: width 110%, height 110%;
+}
+
+th,
+div[data-l10n-id="profiles-subtitle"],
+h3,
+h2,
+h1 {
+    color: var(--MyW) !important;
+    text-align: center;
+    text-shadow: 1px -1px 0 var(--Myred1) !important;
+}
+
+.notice-box,
+td {
+    background-color: var(--Mygray2) !important;
+}
+
+#aboutLogoContainer {
+    -moz-appearance: none !important;
+    appearance: none;
+    padding-left: 70px;
+    border: none !important
+}
+
+.dropmarker-icon {
+    filter: invert(1);
+}
+
+.message-bar,
+.extension-controlled,
+.updateSettingCrossUserWarningContainer {
+    background-color: var(--Myblue2) !important;
+    color: var(--MyW) !important;
+}
+
+.content,
+.addon.extension {
+    background-color: var(--Myred3) !important;
+    border-radius: 15px !important;
+    border: 1px solid var(--Myborder) !important;
+    color: var(--MyW) !important;
+}
+
+.card {
+    color: var(--Mytext) !important;
+}
+
+dd {
+    color: var(--MyW) !important;
+}
+
+.card:hover {
+    color: var(--MyW) !important;
+    box-shadow: 0 0 20px var(--Myred1) !important;
+}
+
+section .list-section-heading,
+dd:hover {
+    color: var(--Myred1) !important;
+}
+
+.textbox-input,
+#searchFilter,
+#header-utils-btn,
+#textbox-input-box,
+.header-button,
+.alert {
+    background-color: var(--Mygray3) !important;
+    color: var(--MyB) !important;
+    border: 1px solid var(--Myred1) !important;
+}
+
+td.cell-value,
+#about-config-search,
+input {
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+    text-align: center !important;
+    border-radius: 15px !important;
+    border: 1px solid var(--Myred1) !important;
+}
+
+label {
+    background-color: transparent !important;
+}
+
+button>.box-inherit.button-box,
+dropmarker {
+    color: var(--MyW) !important;
+}
+
+aside,
+main,
+.card,
+addon-card {
+    background-image: none !important;
+    background-color: transparent
+}
+
+html,
+body,
+#addons-page,
+.app,
+main {
+    background-color: var(--MyB) !important;
+}
+
+.card.addon {
+    margin-bottom: 15px !important;
+    border: none !important;
+}
+
+.downloadMainArea:hover,
+.download.download-state:hover,
+.download.download-state[selected="true"],
+.card:hover,
+.content-blocking-category.selected {
+    background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+}
+
+.card,
+.notice-box,
+.content-blocking-category {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+}
+
+button:hover,
+button {
+    background-image: none !important;
+    border: none !important;
+}
+
+
+/*}*/
 
 #addons-page {
     background-color: var(--MyB) !important;

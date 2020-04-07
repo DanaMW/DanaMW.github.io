@@ -327,7 +327,9 @@ toolbarbutton {
     border-style: none !important;
 }
 
-button[data-l10n-id="addon-updates-manual-updates-found"],
+
+/*button[data-l10n-id="addon-updates-manual-updates-found"],*/
+
 #urlbar-go-button,
 button,
 #clearDownloadsButton,
@@ -384,7 +386,9 @@ toolbarbutton:hover {
     border: none !important;
 }
 
-button[data-l10n-id="addon-updates-manual-updates-found"]:hover,
+
+/*button[data-l10n-id="addon-updates-manual-updates-found"]:hover,*/
+
 .urlbarView-row:hover,
 #urlbar-go-button:hover,
 #pageActionButton:hover,
@@ -417,7 +421,9 @@ toolbarbutton:hover:not([disabled="true"]) {
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
 
-button[data-l10n-id="addon-updates-manual-updates-found"]:active,
+
+/*button[data-l10n-id="addon-updates-manual-updates-found"]:active,*/
+
 .urlbarView-row:active,
 #urlbar-go-button:active,
 #pageActionButton:active,

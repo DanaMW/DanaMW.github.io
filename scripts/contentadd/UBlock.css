@@ -147,15 +147,18 @@ url-prefix("moz-extension://635dd3f6-d868-4afd-9184-75fb230e9749/") {
     .CodeMirror.cm-s-default.CodeMirror-wrap {
         background-color: #330000 !important;
     }
-    button {
+    button[type="button"],
+    button.custom {
         background-image: none !important;
         background-color: transparent !important;
     }
-    button {
+    button[type="button"],
+    button.custom {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
-    button:hover {
+    button[type="button"]:hover,
+    button.custom:hover {
         background-color: var(--Myred1) !important;
         color: var(--Mygreen1) !important;
     }
