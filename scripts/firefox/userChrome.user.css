@@ -328,7 +328,7 @@ toolbarbutton {
 }
 
 button[data-l10n-id="addon-updates-manual-updates-found"],
-urlbar-go-button,
+#urlbar-go-button,
 button,
 #clearDownloadsButton,
 .subviewbutton.panel-subview-footer,
@@ -385,10 +385,9 @@ toolbarbutton:hover {
 }
 
 button[data-l10n-id="addon-updates-manual-updates-found"]:hover,
-urlbarView-row:hover,
+.urlbarView-row:hover,
 #urlbar-go-button:hover,
 #pageActionButton:hover,
-button[aria-selected="true"],
 button:hover,
 #clearDownloadsButton:hover,
 .subviewbutton.panel-subview-footer:hover,

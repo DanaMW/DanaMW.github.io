@@ -7,6 +7,8 @@
 @homepageURL https://danamw.github.io
 ==/UserStyle== */
 
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 @-moz-document url-prefix("about"),
 url("about:addons") {
     .addon-card-message[type="warning"],
