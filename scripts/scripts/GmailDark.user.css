@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.0.83
+@version      0.0.84
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -1349,5 +1349,12 @@ url-prefix("https://docs.google.com/picker") {
     .ajA.SK {
         border-radius: 15px !important;
         border: 1px solid var(--MyW) !important;
+    }
+    table.gstl_50.gstt {
+        margin-top: 10px !important;
+    }
+    input.gb_jf {
+        margin-top: -13px !important;
+        height: 28px !important;
     }
 }
