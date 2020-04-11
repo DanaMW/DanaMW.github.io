@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.21
+@version      0.0.22
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -294,9 +294,6 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
-    .js-selected-navigation-item {
-        padding: 5px !important;
-    }
     .sidebar {
         background-image: none !important;
         background-color: transparent !important;
@@ -336,5 +333,9 @@ url-prefix("wss://live.github.com") {
     .list-group-item:hover,
     .timeline-comment-label {
         background-color: var(--MyX1) !important;
+    }
+    a[class="u-photo d-block tooltipped tooltipped-s"],
+    img.avatar {
+        border-radius: 50% !important;
     }
 }
