@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.66
+@version      0.0.67
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -343,6 +343,10 @@
     }
     div[class*="membersWrap"][class*="hiddenMembers"] {
         background-color: var(--Mygray3) !important;
+        border-left: 1px solid var(--MyW) !important;
+    }
+    div[class*="scroller"][class*="systemPad"][class*="scroller"] {
+        border-right: 1px solid var(--MyW) !important;
     }
     div[class^="emojiPicker"],
     div.scrollerWrapPolyfill-DBQCMm:nth-child(3) {
