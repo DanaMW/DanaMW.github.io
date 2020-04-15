@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.15
+@version      0.1.16
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1156,6 +1156,7 @@ url-prefix("https://groups.google.com/") {
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    .ru14E.kF2iof,
     #wp-tabs-container,
     .K20DDe.HdaFGf.suApsd.R9GLFb.JXFbbc.Xbg0sb.ySjHwc,
     .UUcaod,
