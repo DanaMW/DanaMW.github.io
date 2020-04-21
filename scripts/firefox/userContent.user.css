@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.20
+@version     0.0.21
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -403,6 +403,24 @@ label,
 .text-link,
 .update-postfix {
     color: var(--MyW) !important;
+}
+
+search-textbox {
+    border: 1px solid var(--TwitterRed) !important;
+    border-radius: 25px !important;
+}
+
+search-textbox:hover {
+    border: 1px solid var(--TwitterBlue) !important;
+}
+
+.back-button {
+    color: var(--MyW) !important;
+    background-color: var(--MyX1) !important;
+}
+
+.back-button:hover {
+    background-color: var(--Myred1) !important;
 }
 
 .page-options-menu,
