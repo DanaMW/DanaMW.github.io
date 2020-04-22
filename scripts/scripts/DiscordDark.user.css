@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.67
+@version      0.0.68
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -569,6 +569,9 @@
     .volume * div[class*="bar"]>div {
         background-color: var(--Myred1) !important;
     }
+    div[class*="buttons"][class*="container"],
+    div[class*="wrapper"],
+    div[aria-label="More"][role=button],
     div[class*="content"],
     div[class*="content"]:hover,
     div[class*="containerDefault"][class*="selected"]>div[role="button"],
@@ -578,10 +581,14 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    div[class*="buttons"][class*="container"],
+    div[class*="wrapper"],
+    div[aria-label="More"][role=button] {
+        fill: none !important;
+    }
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
-    div[aria-label="More"][role=button],
     foreignObject>a[class*="wrapper"],
     div[class*="expandedFolderIconWrapper"],
     div[class*="closedFolderIconWrapper"],
