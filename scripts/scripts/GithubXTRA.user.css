@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.22
+@version      0.0.23
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -50,6 +50,9 @@ url-prefix("wss://live.github.com") {
     .gh-header-hide-if-sticky {
         background-color: var(--Myback) !important;
     }
+    .UnderlineNav-item {
+        height: 50px !important;
+    }
     a.UnderlineNav-item.selected {
         filter: brightness(125%);
         border-color: var(--Myred1) !important;
@@ -82,6 +85,7 @@ url-prefix("wss://live.github.com") {
     }
     .js-selected-navigation-item {
         border-top: 3px solid var(--Myred3) !important;
+        padding: 0px 5px 0px 5px !important;
     }
     .js-selected-navigation-item.selected {
         border-top: 3px solid var(--Myred1) !important;
@@ -94,6 +98,7 @@ url-prefix("wss://live.github.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary,
     .d-flex.flex-justify-between.mb-3 a.btn.btn-primary,
     .ajax-pagination-form button.ajax-pagination-btn,
     .d-inline-flex .btn,
@@ -153,6 +158,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary:hover,
     .d-flex.flex-justify-between.mb-3 a.btn.btn-primary:hover,
     .ajax-pagination-form .ajax-pagination-btn:hover,
     .d-inline-flex .btn:hover,
@@ -215,6 +221,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary:active,
     .d-flex.flex-justify-between.mb-3 a.btn.btn-primary:active,
     .ajax-pagination-form button.ajax-pagination-btn:active,
     .d-inline-flex .btn:active,
@@ -286,13 +293,15 @@ url-prefix("wss://live.github.com") {
         background: transparent !important;
     }
     input,
+    input#your-repos-filter,
     .js-user-status-container,
     .form-control,
     .js-site-search-form {
         border-radius: 25px !important;
-        border: 1px solid var(--MyW) !important;
-        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--Myred1) !important;
+        background-color: var(--MyB) !important;
         color: var(--MyW) !important;
+        text-align: center !important;
     }
     .sidebar {
         background-image: none !important;
@@ -337,5 +346,11 @@ url-prefix("wss://live.github.com") {
     a[class="u-photo d-block tooltipped tooltipped-s"],
     img.avatar {
         border-radius: 50% !important;
+    }
+    .Box,
+    .blankslate {
+        background-color: var(--MyB) !important;
+        border-radius: 15px !important;
+        border-color: var(--Myred1) !important;
     }
 }
