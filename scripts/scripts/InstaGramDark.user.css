@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.52
+@version      0.0.53
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -15,6 +15,7 @@
     }
     html,
     body,
+    .oYYFH,
     .js.logged-in.client-root {
         background: var(--MyB) !important;
     }
@@ -170,7 +171,7 @@
         transition-timing-function: linear !important;
     }
     .fuQUr a[role="button"]:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6),
-    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b) {
+    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -189,7 +190,7 @@
     .fuQUr:hover,
     .-HRM-,
     a[role="button"]:hover:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6):not(.downloadBtn),
-    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b) {
+    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -208,7 +209,7 @@
     a[class="yCE8d  "]:active,
     .fuQUr:active,
     a[role="button"]:active:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6):not(.downloadBtn),
-    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b) {
+    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -234,9 +235,13 @@
         display: none;
     }
     /*------------------All filter INVERTS----------------*/
+    .coreSpriteDismissLarge:hover {
+        filter: brightness(150%);
+    }
     .loggedoutSpriteFollow_Contextual_Login:hover {
         filter: invert(0.5)
     }
+    .glyphsSpriteGlyph_volume_off,
     .glyphsSpriteComment_like_active,
     .glyphsSpriteUser__outline__24__grey_9:hover,
     .glyphsSpriteHeart__outline__24__grey_9:hover,
@@ -559,6 +564,9 @@
     section.sH9wk._JgwE {
         background-color: var(--Mygray3) !important;
     }
+    .-qQT3.rOtsg,
+    .N9abW,
+    div[class="PUHRj  H_sJK"],
     .leaflet-popup-content-wrapper,
     div[class="      tHaIX             Igw0E     IwRSH      eGOV_        vwCYk                                                                                                 HcJZg              "],
     div[class="        DPiy6          Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
@@ -591,6 +599,12 @@
     div[class="_9GP1n   "] {
         border: none !important;
     }
+    div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                   XfCBB          HVWg4                 "]:hover,
+    div[class="                   Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
+    div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                               rOtsg ZUqME"],
+    .-qQT3.rOtsg:hover,
+    .S-mcP,
+    div[class="PUHRj  H_sJK"]:hover,
     div[class="        DPiy6           Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
     div[class="pV7Qt      tHaIX             Igw0E   rBNOH          YBx95       _4EzTm                                                                                   XfCBB              nGS-Y             "],
     section[class="bR_3v  "],
@@ -628,6 +642,9 @@
     ._2dbep.qNELH.kIKUG {
         border: 1px solid var(--MyW) !important;
     }
+    ._2dbep.qNELH.kIKUG:hover {
+        border: 1px solid var(--Myred1) !important;
+    }
     div[class="LA45P  coreSpritePagingChevron  "],
     div[class=" Kf8kP coreSpritePagingChevron  "] {
         filter: invert(100%) !important;
@@ -646,5 +663,41 @@
     button[class="wpO6b "]:hover {
         background-image: none !important;
         background-color: transparent !important;
+    }
+    svg[aria-label="Activity Feed"]:hover,
+    svg[aria-label="Find People"]:hover,
+    svg[aria-label="Home"]:hover,
+    svg[aria-label="Direct"]:hover {
+        filter: invert(1);
+    }
+    .m7ETg,
+    div[class="_7UhW9   xLCgt      MMzan  KV-D4            fDxYl     "] {
+        color: var(--TwitterBlue) !important;
+    }
+    div[class="_7UhW9    vy6Bb      qyrsm KV-D4            fDxYl     "],
+    span[class="_7UhW9   xLCgt      MMzan   _0PwGv        se6yk        "] {
+        color: var(--MyW) !important;
+    }
+    div[class="                   Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+    }
+    div[class="                   Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
+        background-color: var(--Mygray3) !important;
+    }
+    div[class="                   Igw0E     IwRSH      eGOV_     ybXk5    _4EzTm                                                                                                              "] {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+    button[class="sqdOP yWX7d    y3zKF     "] {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        width: 100px !important;
+    }
+    div[class="_7UhW9   xLCgt      MMzan     fDdiY     uL8Hv      M8ipN   "] {
+        text-align: center !important;
+    }
+    ._9XapR {
+        background-color: var(--Mygray2) !important;
     }
 }
