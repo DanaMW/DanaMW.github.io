@@ -2,16 +2,21 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.27
+@version      0.0.28
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("microsoft.com") {
+    #msccBanner,
     .c-uhfh-alert {
         /* f-information epb-container epb-default-color */
         display: none !important;
+    }
+    .jumbotron {
+        background-image: none !important;
+        background-color: transparent !important;
     }
     .swim,
     #page-wrapper,
@@ -29,6 +34,8 @@
         background-color: var(--Myback) !important;
         color: var(--Mytext) !important;
     }
+    dd,
+    dt,
     strong,
     span {
         color: var(--MyW) !important;
@@ -368,6 +375,7 @@
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    th,
     .input-group-text,
     h3[class*="c-heading"],
     #divTerms,
@@ -410,5 +418,8 @@
     .input-group.direct-link,
     .copy-box {
         background-color: var(--MyB) !important;
+    }
+    td>h3 {
+        color: var(--TwitterBlue) !important;
     }
 }
