@@ -186,6 +186,9 @@ url-prefix("https://docs.google.com/picker") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+    .Ih.Uf>.Eg.KzhQXc.a-E.WopYHf.aZzjbc {
+        background-color: transparent !important;
+    }
     .aYv {
         background-color: var(--Myblue1) !important;
     }
@@ -1348,6 +1351,7 @@ url-prefix("https://docs.google.com/picker") {
     span.h8.LJOhwe:hover {
         color: var(--Myred1) !important;
     }
+    .aOY59,
     .gb_qd,
     .Ce-ck-ic.Ce-dk-Od,
     .Ce-ck-ic.Ce-dk-Od.Ce-dp-dk,
