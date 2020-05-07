@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.54
+@version      0.0.55
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -101,6 +101,7 @@
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
         background-color: var(--Mygray2) !important;
     }
+    ._8UZ6e,
     footer,
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="_22l1"][class*="_49XvD"][class*="b2rUF"][class*="ZUqME"] {
         display: none !important;
@@ -563,6 +564,7 @@
     section.sH9wk._JgwE {
         background-color: var(--Mygray3) !important;
     }
+    DIV[class="                   Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
     .-qQT3.rOtsg,
     .N9abW,
     div[class="PUHRj  H_sJK"],
@@ -598,6 +600,7 @@
     div[class="_9GP1n   "] {
         border: none !important;
     }
+    .zGtbP.IPQK5.VideM,
     div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                   XfCBB          HVWg4                 "]:hover,
     div[class="                   Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
     div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                               rOtsg ZUqME"],
@@ -625,11 +628,26 @@
         border-bottom-right-radius: 25px !important;
         border-bottom-left-radius: 25px !important;
     }
-    section[class="bR_3v  "],
+    section[class="bR_3v  "] {
+        border: 1px solid var(--Myborder) !important;
+    }
     .m0NAq {
         border: 1px solid var(--Myborder) !important;
-        border-top-left-radius: 25px !important;
-        border-top-right-radius: 25px !important;
+        height: 117px !important;
+        margin-top: -6px !important;
+    }
+    /*
+    .CfWVH {
+        position: absolute;
+        top: -5px !important;
+        left: -5px !important;
+        width: 66px !important;
+        height: 66px !important;
+    }
+    */
+    ._2dbep.qNELH.kIKUG {
+        width: 56px;
+        height: 56px;
     }
     svg[aria-label="Profile"]:hover,
     svg[aria-label="Activity Feed"]:hover,
