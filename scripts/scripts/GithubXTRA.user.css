@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.25
+@version      0.0.26
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -23,6 +23,7 @@ url-prefix("wss://live.github.com") {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
+        border-color: var(--Myred1) !important;
     }
      ::-webkit-scrollbar {
         background: var(--Myred3) !important;
@@ -41,6 +42,23 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
+    article.markdown-body-entry-content>pre,
+    article h2,
+    article h1,
+    pre {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    article.markdown-body-entry-content pre,
+    article h2,
+    article h1 {
+        border-color: var(--Myred1) !important;
+    }
+    #readme * pre {
+        border-color: var(--TwitterBlue) !important;
+    }
+    p,
     a {
         color: var(--MyW) !important;
     }
@@ -71,7 +89,7 @@ url-prefix("wss://live.github.com") {
         color: var(--Myred1) !important;
     }
     .social-count,
-    .topic-tag {
+    .topic-tag.topic-tag-link {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
@@ -94,6 +112,7 @@ url-prefix("wss://live.github.com") {
     .js-selected-navigation-item.selected:hover {
         border-color: var(--Myred1) !important;
     }
+    .label,
     .ajax-pagination-form button.ajax-pagination-btn {
         background-image: none !important;
         background-color: transparent !important;
@@ -111,7 +130,7 @@ url-prefix("wss://live.github.com") {
     .tabnav-tab,
     .UnderlineNav-item,
     .js-selected-navigation-item,
-    li a[href],
+    li a[href]:not(.notification-list-item-link),
     button.btn.btn-primary::before,
     button.btn.btn-primary::after,
     button.btn.btn-primary,
@@ -174,7 +193,7 @@ url-prefix("wss://live.github.com") {
     .UnderlineNav-item.selected,
     .js-selected-navigation-item.selected,
     .js-selected-navigation-item:hover,
-    li a[href]:hover,
+    li a[href]:hover:not(.notification-list-item-link),
     a[class*="filter-item"][href*="/"]:hover,
     .filter-item.css-truncate:hover,
     details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset summary.btn.btn-sm.btn-primary:hover,
@@ -236,7 +255,7 @@ url-prefix("wss://live.github.com") {
     .UnderlineNav-item.selected:active,
     .js-selected-navigation-item.selected:active,
     .js-selected-navigation-item:active,
-    li a[href]:active,
+    li a[href]:active:not(.notification-list-item-link),
     a[class*="filter-item"][href*="/"]:active,
     .filter-item.css-truncate:active,
     details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset summary.btn.btn-sm.btn-primary:active,
@@ -317,11 +336,12 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Myred1) !important;
         box-shadow: 0 0 10px var(--MyX1) !important;
     }
+    .Box-header,
     .pagehead,
     .d-table.table-fixed.width-full.Box-row--drag-hide.position-relative:hover,
     .flash,
     .header-nav-current-user.css-truncate a[role="menuitem"] {
-        background-color: var(--Myred3) !important;
+        background-color: var(--Myred2) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     .border-bottom.border-gray-dark.py-3,
@@ -329,11 +349,18 @@ url-prefix("wss://live.github.com") {
     .d-table,
     .UnderlineNav,
     .position-relative.d-md-flex.flex-wrap.flex-justify-between.flex-items-center.border-bottom.border-gray-dark.pb-3,
-    .d-block {
+    .d-block,
+    li[class*="col-12 d-flex width-full py-4 border-bottom public"],
+    div[class="d-table table-fixed col-12 width-full py-4 border-bottom border-gray-light"],
+    div[class="col-12 d-block width-full py-4 border-bottom"],
+    .Box.pinned-item-list-item {
         border-color: var(--Myred1) !important;
     }
-    .Box.pinned-item-list-item {
-        border-color: var(--MyW) !important;
+    ul li[class*="notifications-list-item p-0 pl-2 pb-2 pb-md-0 position-relative border-0 js-notifications-list-item js-navigation-item border-bottom border-gray-light"]:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: var(--MyX1) !important;
     }
     .Box.pinned-item-list-item,
     clipboard-copy:hover,
@@ -353,6 +380,10 @@ url-prefix("wss://live.github.com") {
         background-color: var(--MyB) !important;
         border-radius: 15px !important;
         border-color: var(--Myred1) !important;
+    }
+    .js-indicator-modifier.mail-status.unread {
+        height: 14px !important;
+        width: 14px !important;
     }
     .CodeMirror {
         background: #460101 !important;
