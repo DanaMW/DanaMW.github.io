@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.54
+@version      0.0.56
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -85,7 +85,9 @@
     .LWmhU {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
+        /*
         border-radius: 25px;
+        */
         border: 1px solid var(--Myborder);
     }
     h1 {
@@ -95,12 +97,15 @@
         color: var(--Mygreen1) !important;
     }
     .LWmhU._0aCwM {
+        /*
         border-radius: 25px !important;
+        */
         border: none !important;
     }
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
         background-color: var(--Mygray2) !important;
     }
+    ._8UZ6e,
     footer,
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="_22l1"][class*="_49XvD"][class*="b2rUF"][class*="ZUqME"] {
         display: none !important;
@@ -226,9 +231,11 @@
         transition-timing-function: linear !important;
         filter: brightness(80%) !important;
     }
+    /*
     div[class="                  Igw0E     IwRSH        YBx95       _4EzTm      MGdpg                                                                                                      NUiEW  "] button.dCJp8.afkep._0mzm- {
         border-radius: 25px !important;
     }
+    */
     /*---------------------------All display NONE----------*/
     ._8Rna9,
     .Dt74z {
@@ -301,7 +308,9 @@
     }
     ._8Rm4L.M9sTE.L_LMM.SgTZ1 {
         background-color: var(--Myred3);
+        /*
         border-radius: 25px !important;
+        */
         border: 2px solid var(--Myborder);
     }
     .Szr5J.bMltT {
@@ -396,7 +405,9 @@
     }
     .t0fbY {
         background-color: var(--Myred3) !important;
+        /*
         border-radius: 25px;
+        */
     }
     div[class="eo2As "],
     .NroHT.u_1x6._-1O2x {
@@ -524,14 +535,18 @@
     }
     .PdwC2,
     .M9sTE {
+        /*
         border-radius: 25px !important;
+        */
         border: 1px solid var(--MyW) !important;
     }
+    /*
     ._97aPb,
     .ltEKP {
         border-top-left-radius: 25px !important;
         border-bottom-left-radius: 25px !important;
     }
+    */
     header.top-bar {
         background-image: none !important;
     }
@@ -543,13 +558,17 @@
     header.Ppjfr.UE9AK,
     header:not(.top-bar) {
         background-color: var(--Myred2) !important;
+        /*
         border-top-left-radius: 25px !important;
         border-top-right-radius: 25px !important;
+        */
     }
+    /*
     div[class="eo2As "] {
         border-bottom-left-radius: 25px !important;
         border-bottom-right-radius: 25px !important;
     }
+    */
     ._97aPb {
         background-color: var(--Myred2) !important;
     }
@@ -563,6 +582,8 @@
     section.sH9wk._JgwE {
         background-color: var(--Mygray3) !important;
     }
+    ._4bSq7,
+    DIV[class="                   Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
     .-qQT3.rOtsg,
     .N9abW,
     div[class="PUHRj  H_sJK"],
@@ -598,6 +619,7 @@
     div[class="_9GP1n   "] {
         border: none !important;
     }
+    .zGtbP.IPQK5.VideM,
     div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                   XfCBB          HVWg4                 "]:hover,
     div[class="                   Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
     div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                               rOtsg ZUqME"],
@@ -619,17 +641,37 @@
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    .zGtbP.IPQK5.VideM {
+        border-radius: 0px !important;
+    }
     section[class="bR_3v  "],
     section.sH9wk._JgwE {
         color: var(--MyW) !important;
+        /*
         border-bottom-right-radius: 25px !important;
         border-bottom-left-radius: 25px !important;
+        */
     }
-    section[class="bR_3v  "],
+    section[class="bR_3v  "] {
+        border: 1px solid var(--Myborder) !important;
+    }
     .m0NAq {
         border: 1px solid var(--Myborder) !important;
-        border-top-left-radius: 25px !important;
-        border-top-right-radius: 25px !important;
+        height: 117px !important;
+        margin-top: -6px !important;
+    }
+    /*
+    .CfWVH {
+        position: absolute;
+        top: -5px !important;
+        left: -5px !important;
+        width: 66px !important;
+        height: 66px !important;
+    }
+    */
+    ._2dbep.qNELH.kIKUG {
+        width: 56px;
+        height: 56px;
     }
     svg[aria-label="Profile"]:hover,
     svg[aria-label="Activity Feed"]:hover,
@@ -638,14 +680,20 @@
     svg[aria-label="Instagram"]:hover {
         filter: invert(50%) !important;
     }
+    .tUtVM,
     ._2dbep.qNELH.kIKUG {
         border: 1px solid var(--MyW) !important;
     }
+    .tUtVM:hover,
     ._2dbep.qNELH.kIKUG:hover {
         border: 1px solid var(--Myred1) !important;
     }
-    div[class="LA45P  coreSpritePagingChevron  "],
-    div[class=" Kf8kP coreSpritePagingChevron  "] {
+    /*
+    div[class="LA45P  coreSpritePagingChevron    "],
+    div[class=" Kf8kP coreSpritePagingChevron    "] {
+    */
+    div[class*="LA45P"][class*="coreSpritePagingChevron"],
+    div[class*="Kf8kP"][class*="coreSpritePagingChevron"] {
         filter: invert(100%) !important;
     }
     div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                              "]:hover {
@@ -698,5 +746,8 @@
     }
     ._9XapR {
         background-color: var(--Mygray2) !important;
+    }
+    div[class="                   Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "] {
+        display: none;
     }
 }
