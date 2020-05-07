@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.23
+@version      0.0.24
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -317,6 +317,7 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Myred1) !important;
         box-shadow: 0 0 10px var(--MyX1) !important;
     }
+    .pagehead,
     .d-table.table-fixed.width-full.Box-row--drag-hide.position-relative:hover,
     .flash,
     .header-nav-current-user.css-truncate a[role="menuitem"] {
