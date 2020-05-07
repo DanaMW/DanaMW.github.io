@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.24
+@version      0.0.25
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -353,5 +353,114 @@ url-prefix("wss://live.github.com") {
         background-color: var(--MyB) !important;
         border-radius: 15px !important;
         border-color: var(--Myred1) !important;
+    }
+    .CodeMirror {
+        background: #460101 !important;
+        color: #ffffff !important;
+        line-height: 1.5em !important;
+        font-size: 16px !important;
+        height: 100%;
+        font-weight: bold !important;
+        outline: transparent !important;
+        border: 1px solid #ffffff !important;
+    }
+    .CodeMirror .CodeMirror-selected {
+        background: #a12525 !important;
+        color: #ffd900
+    }
+    .CodeMirror .CodeMirror-line::selection,
+    .CodeMirror .CodeMirror-line>span::selection,
+    .CodeMirror .CodeMirror-line>span>span::selection {
+        background: #a12525 !important;
+    }
+    .CodeMirror .CodeMirror-line::-moz-selection,
+    .CodeMirror .CodeMirror-line>span::-moz-selection,
+    .CodeMirror .CodeMirror-line>span>span::-moz-selection {
+        background: #a12525
+    }
+    .CodeMirror .CodeMirror-gutter .CodeMirror-lint-markers,
+    .CodeMirror-gutter .CodeMirror-lint-markers,
+    .CodeMirror .CodeMirror-gutter .CodeMirror-foldgutter,
+    .CodeMirror-gutter .CodeMirror-foldgutter,
+    .CodeMirror .CodeMirror-gutter .CodeMirror-bookmarks,
+    .CodeMirror-gutter .CodeMirror-bookmarks,
+    .CodeMirror .CodeMirror-gutter.CodeMirror-linenumbers,
+    .CodeMirror-gutter.CodeMirror-linenumbers,
+    .CodeMirror .CodeMirror-gutter.gutter,
+    .CodeMirror .CodeMirror-gutters {
+        background: #460101;
+        border-right: 2px solid #a12525;
+    }
+    .CodeMirror .CodeMirror-guttermarker {
+        color: #0f0;
+    }
+    .CodeMirror-guttermarker-subtle {
+        color: #ffe8e8;
+    }
+    .CodeMirror .CodeMirror-linenumber {
+        color: #FFFFFF;
+    }
+    .CodeMirror-cursor {
+        border-left: 1px solid #00FF00;
+    }
+    .CodeMirror span.cm-keyword {
+        color: #00FF00;
+        font-weight: bold;
+    }
+    .CodeMirror span.cm-atom {
+        color: #3FF;
+    }
+    .CodeMirror span.cm-number {
+        color: #fbff00;
+    }
+    .CodeMirror span.cm-def {
+        color: #91b4ff;
+    }
+    .CodeMirror span.cm-variable {
+        color: #F6C;
+    }
+    .CodeMirror span.cm-variable-2 {
+        color: #c44eff;
+    }
+    .CodeMirror span.cm-variable-3,
+    .CodeMirror span.cm-type {
+        color: #ad7cec;
+    }
+    .CodeMirror span.cm-property {
+        color: #62FFA0;
+    }
+    .CodeMirror span.cm-operator {
+        color: #ecffb9;
+    }
+    .CodeMirror span.cm-comment {
+        color: #00FF00;
+    }
+    .CodeMirror span.cm-string {
+        color: #39C;
+    }
+    .CodeMirror span.cm-meta {
+        color: #ffffff;
+    }
+    .CodeMirror span.cm-qualifier {
+        color: #FFF700;
+    }
+    .CodeMirror span.cm-builtin {
+        color: #ffffff;
+    }
+    .CodeMirror span.cm-bracket {
+        color: #ffff00;
+    }
+    .CodeMirror span.cm-tag {
+        color: #FFBD40;
+    }
+    .CodeMirror .cm-overlay,
+    .CodeMirror span.cm-attribute {
+        color: #FFF700;
+    }
+    .CodeMirror span.cm-error {
+        color: #FF0000;
+    }
+    .CodeMirror .CodeMirror-activeline-background {
+        background: #921111;
     }
 }
