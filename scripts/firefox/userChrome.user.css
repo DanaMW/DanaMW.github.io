@@ -72,7 +72,7 @@ html:not(#ublock0-epicker) body,
 #appcontent>#content,
 html,
 body {
-    background: var(--Myback) !important;
+    background: var(--Mygray3) !important;
     color: var(--MyW) !important;
 }
 
@@ -121,7 +121,7 @@ menu[label*="Save In"] {
 }
 
 .customizationmode-button {
-    background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray3)) !important;
+    background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray2), var(--Mygray3)) !important;
     color: var(--Mygray1) !important;
 }
 
@@ -129,7 +129,7 @@ menu[label*="Save In"] {
 .menu-iconic.bookmark-item.subviewbutton:hover,
 .menuitem-iconic:hover,
 .customizationmode-button:hover {
-    background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred3)) !important;
+    background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred2), var(--Myred3)) !important;
     color: var(--MyW) !important;
 }
 
