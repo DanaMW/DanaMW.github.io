@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.56
+@version      0.0.57
 @description  My Twitter Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -176,6 +176,7 @@ domain("twimg.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[class="css-1dbjc4n r-1awozwy r-18u37iz"] a:hover,
     div[class="css-1dbjc4n r-1awozwy r-zv2cs0 r-sdzlij r-18u37iz r-1777fci r-dnmrzs r-1sp51qo r-o7ynqc r-6416eg"]:hover,
     div[class="css-1dbjc4n r-18u37iz r-16y2uox r-d9fdf6 r-9qu9m4"]:hover,
     div[role="menuitem"]:hover,
@@ -384,6 +385,7 @@ domain("twimg.com") {
         background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    div[class="css-1dbjc4n r-yfoy6g r-1f0042m r-xnswec r-1ekmkwe r-1udh08x r-1rnoaur r-1r851ge r-1xcajam"],
     .css-1dbjc4n.r-1awozwy.r-18u37iz.r-1h3ijdo.r-1777fci.r-1jgb5lz.r-sb58tz.r-1j3t67a.r-13qz1uu,
     .css-1dbjc4n.r-1igl3o0.r-rull8r.r-qklmqi.r-1wtj0ep.r-1j3t67a.r-1w50u8q,
     div.css-1dbjc4n.r-kemksi.r-1h3ijdo,
