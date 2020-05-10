@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.10
+@version      0.0.11
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -440,6 +440,7 @@ domain("studio.youtube.com") {
     #ytpc_ytcontrol_button {
         height: 25px !important;
     }
+    yt-chip-cloud-chip-renderer,
     #guide-button,
     ytd-menu-service-item-renderer,
     [role="button"]:not([slot="more-button"]),
@@ -470,6 +471,7 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    yt-chip-cloud-chip-renderer:hover,
     ytd-menu-service-item-renderer:hover,
     [role="button"]:hover:not([slot="more-button"]),
     .yt-uix-form-input-select-element.setting-dropdown-list:hover,
@@ -507,6 +509,7 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    yt-chip-cloud-chip-renderer:active,
     ytd-menu-service-item-renderer:active,
     #guide-icon:active,
     [role="button"]:active:not([slot="more-button"]),
