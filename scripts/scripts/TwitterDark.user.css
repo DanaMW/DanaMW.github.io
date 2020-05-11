@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.57
+@version      0.0.58
 @description  My Twitter Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -385,6 +385,8 @@ domain("twimg.com") {
         background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    div[class="css-1dbjc4n r-yfoy6g r-1f0042m r-16y2uox r-1wbh5a2"],
+    div[class="css-1dbjc4n r-aqfbo4 r-yfoy6g r-1ila09b r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q"],
     div[class="css-1dbjc4n r-yfoy6g r-1f0042m r-xnswec r-1ekmkwe r-1udh08x r-1rnoaur r-1r851ge r-1xcajam"],
     .css-1dbjc4n.r-1awozwy.r-18u37iz.r-1h3ijdo.r-1777fci.r-1jgb5lz.r-sb58tz.r-1j3t67a.r-13qz1uu,
     .css-1dbjc4n.r-1igl3o0.r-rull8r.r-qklmqi.r-1wtj0ep.r-1j3t67a.r-1w50u8q,
@@ -421,5 +423,14 @@ domain("twimg.com") {
     div[id*="placeholder"] {
         margin-left: 175px !important;
         margin-right: -400px !important;
+    }
+    div[class="css-1dbjc4n r-t23y2h r-1wbh5a2 r-rsyp9y r-1pjcn9w r-htvplk r-1udh08x r-1potc6q"],
+    div[class="css-1dbjc4n r-aqfbo4 r-yfoy6g r-1ila09b r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q"],
+    div[class="css-1dbjc4n r-yfoy6g r-1f0042m r-xnswec r-1ekmkwe r-1udh08x r-1rnoaur r-1r851ge r-1xcajam"] {
+        border-radius: 25px !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    svg[class="r-111h2gw r-4qtqp9 r-yyyyoo r-1xvli5t r-7o8qx1 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"] {
+        color: var(--TwitterBlue) !important;
     }
 }
