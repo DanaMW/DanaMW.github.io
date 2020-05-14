@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.22
+@version      0.0.23
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -114,6 +114,7 @@
     .a-size-small {
         color: var(--MyW) !important;
     }
+    a.nav-a,
     li[role="tab"],
     a[class*="style__button"],
     ul>li>a:not([style]),
@@ -148,6 +149,7 @@
     .wl-invite-button-contents:hover {
         filter: invert(0) !important;
     }
+    a.nav-a:hover,
     .a-link-normal.item:hover,
     li.selected[role="tab"],
     a[class*="style__button"]:hover,
@@ -181,6 +183,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.nav-a:active,
     li.selected[role="tab"]:active,
     li[role="tab"]:active,
     a[class*="style__button"]:active,
