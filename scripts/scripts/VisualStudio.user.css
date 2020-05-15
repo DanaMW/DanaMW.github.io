@@ -2,7 +2,7 @@
 @name         VisualStudio
 @namespace    https://danamw.github.io/scripts/scripts/VisualStudio.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/VisualStudio.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -128,6 +128,13 @@ domain("my.visualstudio.com") {
     strong {
         color: var(--Mygreen1) !important;
     }
+    li a[id*="nav-"] {
+        background-image: none !important;
+        background-color: none !important;
+    }
+    .nav.navbar-nav.navbar-left {
+        background-color: var(--MyB) !important;
+    }
     #nav-extensions,
     .c-select,
     li a[id*="nav-"],
@@ -157,7 +164,7 @@ domain("my.visualstudio.com") {
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred2) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -196,5 +203,17 @@ domain("my.visualstudio.com") {
     .widget {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    input.search-box.form-control {
+        height: 30px !important;
+        margin-top: 10px !important;
+    }
+    button[aria-label="Search"] {
+        display: none !important;
+    }
+    .item.active,
+    a#carousel-intellisense.intellisense {
+        background-image: none !important;
+        background: transparent !important;
     }
 }
