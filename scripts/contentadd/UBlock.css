@@ -7,7 +7,7 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
     body {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        fill: var(--MyW) !important;
+        /*fill: var(--MyW) !important;*/
     }
     .cm-search-widget-input,
     span>input,
@@ -77,39 +77,40 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
     }
     .tool {
         color: var(--TwitterBlue) !important;
-        fill: var(--fg-0-40);
+        fill: var(--TwitterBlue) !important;
     }
     .tool.enabled:hover {
         color: inherit;
         fill: inherit;
     }
     .statName {
-        color: var(--fg-0-70);
+        color: var(--TwitterRed) !important;
     }
     #extraTools {
-        background-color: var(--bg-popup-cell-1);
+        background-color: var(--Mygray3) !important;
     }
     #extraTools>span {
-        color: var(--fg-0-40);
-        fill: var(--fg-0-40);
+        color: var(--TwitterBlue) !important;
+        fill: var(--TwitterBlue) !important;
     }
     #extraTools>span:hover {
         color: inherit;
         fill: inherit;
     }
     #refresh {
-        background-color: var(--bg-transient-notice);
-        border: 1px solid #ddc;
-        fill: var(--fg-0-50);
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--Myred1) !important;
+        fill: var(--Mygray2) !important;
     }
     #tooltip {
-        background-color: var(--bg-tooltip);
-        border: 1px solid gray;
-        box-shadow: 1px 1px 3px gray;
-        color: var(--fg-tooltip);
+        background-color: var(--MyX1) !important;
+        border: 1px solid var(--Myred1) !important;
+        box-shadow: 1px 1px 3px var(--Myred1) !important;
+        color: var(--MyW) !important;
     }
     #firewallContainer>div>span {
-        background-color: var(--bg-popup-cell-1);
+        background-color: var(--Mygray3) !important;
+        /*var(--bg-popup-cell-1);*/
     }
     #firewallContainer>div.isCname>span:first-of-type {
         color: var(--fg-popup-cell-cname);
@@ -165,8 +166,8 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         background-color: var(--bg-popup-cell-noop-own);
     }
     #rulesetTools>span {
-        background-color: var(--bg-transient-notice);
-        border: 1px solid #ddc;
+        background-color: var(--Mygray3) !important;
+        border: 1px solid var(--Myred1) !important;
         fill: var(--fg-0-50);
     }
     .cm-s-default .cm-comment {
@@ -189,23 +190,20 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         background-color: #ddd;
         font-weight: bold;
     }
-    .cm-search-widget {
-        background-color: var(--bg-code);
-    }
     .cm-search-widget .fa-icon {
-        fill: #888;
+        fill: var(--MyW) !important;
     }
     .cm-search-widget .fa-icon:not(.fa-icon-ro):hover {
-        fill: #000;
+        fill: var(--Myred1) !important;
     }
     .cm-search-widget-input {
-        border: 1px solid gray;
+        border: 1px solid var(--Myred1) !important;
     }
     .cm-search-widget-input>.cm-search-widget-count {
         color: #888;
     }
     .cm-search-widget .cm-search-widget-button:hover {
-        color: #000;
+        color: var(--Myred1) !important;
     }
     .CodeMirror-merge-l-deleted {
         background-image: none;
@@ -270,6 +268,10 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .cm-search-widget {
+        background: #460101 !important;
+        color: #ffffff !important;
+    }
     .CodeMirror {
         background: #460101 !important;
         color: #ffffff !important;
@@ -280,102 +282,105 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         outline: transparent !important;
         border: 1px solid #ffffff !important;
     }
-    pre.CodeMirror-line,
-    .CodeMirror .CodeMirror-selected {
+    .CodeMirror-code .CodeMirror-activeline,
+    .CodeMirror-activeline .CodeMirror-activeline-background,
+    .CodeMirror-activeline-background,
+    .CodeMirror-activeline,
+    .CodeMirror-selected {
         background: #a12525 !important;
         color: #ffd900
     }
-    .CodeMirror .CodeMirror-line::selection,
-    .CodeMirror .CodeMirror-line>span::selection,
-    .CodeMirror .CodeMirror-line>span>span::selection {
+    .CodeMirror-line::selection,
+    .CodeMirror-line>span::selection,
+    .CodeMirror-line>span>span::selection {
         background: #a12525 !important;
     }
-    .CodeMirror .CodeMirror-line::-moz-selection,
-    .CodeMirror .CodeMirror-line>span::-moz-selection,
-    .CodeMirror .CodeMirror-line>span>span::-moz-selection {
+    .CodeMirror-line::-moz-selection,
+    .CodeMirror-line>span::-moz-selection,
+    .CodeMirror-line>span>span::-moz-selection {
         background: #a12525
     }
-    .codeMirrorContainer .cm-search-widget,
+    .cm-search-widget,
     .CodeMirror-merge-copybuttons-left,
     .CodeMirror-gutter.CodeMirror-linenumbers {
-        background: #460101;
+        background-color: #460101;
         border-right: 2px solid #a12525;
         color: #ffe8e8;
     }
-    .CodeMirror .CodeMirror-gutters {
+    .CodeMirror-gutters {
         background: #460101;
         border-right: 2px solid #a12525;
     }
-    .CodeMirror .CodeMirror-guttermarker {
+    .CodeMirror-guttermarker {
         color: #0f0;
     }
     .CodeMirror-guttermarker-subtle {
         color: #ffe8e8;
     }
-    .CodeMirror .CodeMirror-linenumber {
+    .CodeMirror-linenumber {
         color: #FFFFFF;
     }
     .CodeMirror-cursor {
         border-left: 1px solid #00FF00;
     }
-    .CodeMirror span.cm-keyword {
+    span.cm-keyword {
         color: #00FF00;
         font-weight: bold;
     }
-    .CodeMirror span.cm-atom {
+    span.cm-atom {
         color: #3FF;
     }
-    .CodeMirror span.cm-number {
+    span.cm-number {
         color: #fbff00;
     }
-    .CodeMirror span.cm-def {
+    span.cm-def {
         color: #91b4ff;
     }
-    .CodeMirror span.cm-variable {
+    span.cm-variable {
         color: #F6C;
     }
-    .CodeMirror span.cm-variable-2 {
+    span.cm-variable-2 {
         color: #c44eff;
     }
-    .CodeMirror span.cm-variable-3,
-    .CodeMirror span.cm-type {
+    span.cm-variable-3,
+    span.cm-type {
         color: #ad7cec;
     }
-    .CodeMirror span.cm-property {
+    span.cm-property {
         color: #62FFA0;
     }
-    .CodeMirror span.cm-operator {
+    span.cm-operator {
         color: #ecffb9;
     }
-    .CodeMirror span.cm-comment {
+    span.cm-comment {
         color: #00FF00;
     }
-    .CodeMirror span.cm-string {
+    span.cm-string {
         color: #39C;
     }
-    .CodeMirror span.cm-meta {
+    span.cm-meta {
         color: #ffffff;
     }
-    .CodeMirror span.cm-qualifier {
+    span.cm-qualifier {
         color: #FFF700;
     }
-    .CodeMirror span.cm-builtin {
+    span.cm-builtin {
         color: #ffffff;
     }
-    .CodeMirror span.cm-bracket {
+    span.cm-bracket {
         color: #ffff00;
     }
-    .CodeMirror span.cm-tag {
+    span.cm-tag {
         color: #FFBD40;
     }
-    .CodeMirror .cm-overlay,
-    .CodeMirror span.cm-attribute {
+    .cm-overlay,
+    span.cm-attribute {
         color: #FFF700;
     }
-    .CodeMirror span.cm-error {
+    span.cm-error {
         color: #FF0000;
     }
-    .CodeMirror .CodeMirror-activeline-background {
+    .CodeMirror-activeline-background {
         background: #921111;
     }
 }
