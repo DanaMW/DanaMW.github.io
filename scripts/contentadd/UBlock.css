@@ -1,10 +1,56 @@
 /* UBlock */
 
-@-moz-document url-prefix("moz-extension://f377ac45-6ab5-4da6-a0ca-1495da11002b/"),
+@-moz-document url-prefix("moz-extension://c9197a39-06e7-4b20-ba13-40f298349bd5/"),
 url-prefix("moz-extension://635dd3f6-d868-4afd-9184-75fb230e9749/") {
-    body,
-    html {
+    div#actions,
+    #dashboard-nav,
+    body {
         background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        fill: var(--MyW) !important;
+    }
+    .cm-search-widget-input,
+    span>input,
+    input {
+        border: 1px solid var(--Myred1) !important;
+        border-radius: 25% !important;
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+    }
+    a>svg,
+    span,
+    a {
+        color: var(--MyW) !important;
+    }
+    code,
+    .code {
+        background-color: var(--Mygray3) !important;
+    }
+    hr {
+        border-top: 1px solid var(--Myred1) !important;
+    }
+    button.disabled,
+    button[disabled],
+    button.important.disabled,
+    button.important[disabled] {
+        background-color: var(--button-disabled-surface);
+        color: var(--button-disabled-ink);
+        fill: var(--button-disabled-ink);
+    }
+    button.preferred {
+        background-color: var(--button-preferred-surface);
+        color: var(--button-preferred-ink);
+    }
+    .fieldset-header {
+        color: var(--TwitterBlue) !important;
+    }
+    .ubo-icon.disabled,
+    .disabled>.ubo-icon,
+    .ubo-icon[disabled],
+    [disabled]>.ubo-icon {
+        color: var(--button-disabled-ink);
+        fill: var(--button-disabled-ink);
     }
     h2 {
         background-color: var(--Mygray3) !important;
@@ -18,148 +64,318 @@ url-prefix("moz-extension://635dd3f6-d868-4afd-9184-75fb230e9749/") {
         color: var(--MyW) !important;
     }
     #switch .fa-icon {
-        fill: #ff0000;
+        color: var(--popup-power-ink);
+        fill: var(--popup-power-ink);
+    }
+    #switch .fa-icon:hover {
+        color: var(--popup-power-ink-hover);
+        fill: var(--popup-power-ink-hover);
     }
     body.off #switch .fa-icon {
-        fill: var(--Mygray2) !important;
+        color: var(--fg-0-20);
+        fill: var(--fg-0-20);
     }
     .tool {
-        color: var(--MyW) !important;
-        fill: var(--Mygray2) !important;
+        color: var(--TwitterBlue) !important;
+        fill: var(--fg-0-40);
     }
     .tool.enabled:hover {
-        color: var(--Myred1) !important;
-        fill: var(--Mygray1) !important;
+        color: inherit;
+        fill: inherit;
     }
     .statName {
-        color: var(--MyW) !important;
+        color: var(--fg-0-70);
     }
     #extraTools {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        fill: var(--Mygray2) !important;
+        background-color: var(--bg-popup-cell-1);
     }
-    #extraTools>span>.nope {
-        stroke: red;
+    #extraTools>span {
+        color: var(--fg-0-40);
+        fill: var(--fg-0-40);
     }
     #extraTools>span:hover {
-        color: var(--MyW) !important;
-        fill: var(--Mygray1) !important;
+        color: inherit;
+        fill: inherit;
     }
     #refresh {
-        background-color: var(--Mygray3) !important;
-        border: 1px solid var(--MyRed1) !important;
-        fill: var(--MyW) !important;
-    }
-    body.dirty #refresh:hover {
-        fill: var(--Mygray1) !important;
+        background-color: var(--bg-transient-notice);
+        border: 1px solid #ddc;
+        fill: var(--fg-0-50);
     }
     #tooltip {
-        background-color: var(--MyX1) !important;
-        color: var(--Myred1) !important;
-        text-shadow: 1px -1px 0 var(--MyW) !important;
-        border: none !important;
-        border-color: var(--MyW) !important;
-        border-radius: 10px !important;
-        text-align: center;
-    }
-    #firewallContainer>div {
-        background-color: var(--Mygray3) !important;
+        background-color: var(--bg-tooltip);
+        border: 1px solid gray;
+        box-shadow: 1px 1px 3px gray;
+        color: var(--fg-tooltip);
     }
     #firewallContainer>div>span {
-        border-bottom: 1px solid white;
-        color: var(--MyW) !important;
+        background-color: var(--bg-popup-cell-1);
     }
-    #firewallContainer>div>span:first-of-type>sup {
-        color: var(--MyW) !important;
-    }
-    #firewallContainer>div>span:first-of-type~span {
-        border-left: 1px solid white;
+    #firewallContainer>div.isCname>span:first-of-type {
+        color: var(--fg-popup-cell-cname);
     }
     #firewallContainer>div>span:nth-of-type(3),
     #firewallContainer>div>span:nth-of-type(4) {
-        color: var(--MyW) !important;
+        color: var(--fg-0-70);
     }
     #firewallContainer>div:first-of-type>span:first-of-type::before {
-        color: #aaa;
+        color: var(--fg-0-50);
     }
-    #rulesetTools {
-        background-color: transparent;
-        fill: var(--Mygray3) !important;
+    #firewallContainer>div.isRootContext>span:first-of-type::before {
+        background-color: var(--fg-0-50);
     }
-    #firewallContainer.dirty~#rulesetTools>span:hover {
-        fill: var(--Mygray2) !important;
+    #firewallContainer>div.allowed>span:first-of-type::before,
+    #firewallContainer>div.isDomain.totalAllowed>span:first-of-type::before {
+        background-color: var(--bg-popup-cell-allow-own);
     }
-    .tabButton {
-        background-color: var(--Myred3) !important;
-        color: var(--MyW) !important;
+    #firewallContainer>div.blocked>span:first-of-type::before,
+    #firewallContainer>div.isDomain.totalBlocked>span:first-of-type::before {
+        background-color: var(--bg-popup-cell-block-own);
     }
-    .tabButton.selected {
-        background-color: var(--Myred2) !important;
-        color: var(--MyW) !important;
+    #firewallContainer>div.allowed.blocked>span:first-of-type::before,
+    #firewallContainer>div.isDomain.totalAllowed.totalBlocked>span:first-of-type::before {
+        background-color: var(--bg-popup-cell-label-mixed);
     }
-    .tabButton:hover {
-        background-color: var(--Myred1) !important;
-        color: var(--MyW) !important;
+    body.advancedUser #firewallContainer>div>span.allowRule,
+    #actionSelector>#dynaAllow {
+        background-color: var(--bg-popup-cell-allow);
     }
-    dashboard-nav {
-        background-color: var(--Mygray2) !important;
-        color: var(--MyB) !important;
+    body.advancedUser #firewallContainer>div>span.blockRule,
+    #actionSelector>#dynaBlock {
+        background-color: var(--bg-popup-cell-block);
     }
-    input {
+    body.advancedUser #firewallContainer>div>span.noopRule,
+    #actionSelector>#dynaNoop {
+        background-color: var(--bg-popup-cell-noop);
+    }
+    body.advancedUser #firewallContainer>div>span.ownRule,
+    #firewallContainer>div>span.ownRule {
+        color: var(--default-surface);
+    }
+    body.advancedUser #firewallContainer>div>span.allowRule.ownRule,
+    #actionSelector>#dynaAllow:hover {
+        background-color: var(--bg-popup-cell-allow-own);
+    }
+    body.advancedUser #firewallContainer>div>span.blockRule.ownRule,
+    #actionSelector>#dynaBlock:hover {
+        background-color: var(--bg-popup-cell-block-own);
+    }
+    body.advancedUser #firewallContainer>div>span.noopRule.ownRule,
+    #actionSelector>#dynaNoop:hover {
+        background-color: var(--bg-popup-cell-noop-own);
+    }
+    #rulesetTools>span {
+        background-color: var(--bg-transient-notice);
+        border: 1px solid #ddc;
+        fill: var(--fg-0-50);
+    }
+    .cm-s-default .cm-comment {
+        color: #777;
+    }
+    .cm-directive {
+        color: #333;
+        font-weight: bold;
+    }
+    .cm-staticext {
+        color: #008;
+    }
+    .cm-staticnetBlock {
+        color: #800;
+    }
+    .cm-staticnetAllow {
+        color: #004f00;
+    }
+    .cm-staticOpt {
+        background-color: #ddd;
+        font-weight: bold;
+    }
+    .cm-search-widget {
+        background-color: var(--bg-code);
+    }
+    .cm-search-widget .fa-icon {
+        fill: #888;
+    }
+    .cm-search-widget .fa-icon:not(.fa-icon-ro):hover {
+        fill: #000;
+    }
+    .cm-search-widget-input {
+        border: 1px solid gray;
+    }
+    .cm-search-widget-input>.cm-search-widget-count {
+        color: #888;
+    }
+    .cm-search-widget .cm-search-widget-button:hover {
+        color: #000;
+    }
+    .CodeMirror-merge-l-deleted {
+        background-image: none;
+    }
+    .CodeMirror-merge-l-inserted {
+        background-image: none;
+    }
+    .tabButton,
+    button.important,
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
-        border: 1px solid var(--Myred1) !important;
-        border-radius: 25px !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    .tabButton:hover,
+    .tabButton.selected,
+    button.important:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
         color: var(--MyW) !important;
-        text-align: center !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    .cm-search-widget,
-    #dashboard-nav,
-    #dashboard-nav-widgets {
-        background-color: var(--Mygray3) !important;
-    }
-    span[data-i18n="3pGroupPrivacy"],
-    span[data-i18n="settingPerSiteSwitchGroup"],
-    span[data-i18n="1pFormatHint"],
-    span[data-i18n="rulesHint"],
-    span[data-i18n="whitelistPrompt"] {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    span[data-i18n="3pGroupPrivacy"],
-    span[data-i18n="settingPerSiteSwitchGroup"],
-    span[data-i18n="1pFormatHint"],
-    span[data-i18n="rulesHint"],
-    span[data-i18n="whitelistPrompt"] {
-        color: var(--Myred1) !important;
-    }
-    ul>li,
-    h3 {
-        color: var(--TwitterBlue) !important;
-    }
-    .CodeMirror-merge.CodeMirror-merge-2pane,
-    .codeMirrorContainer.codeMirrorMergeContainer.codeMirrorFillVertical,
-    .CodeMirror-gutter,
-    .CodeMirror-linenumbers {
-        background-color: #330000 !important;
+    .tabButton:active,
+    .tabButton.selected:active,
+    button.active,
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--Mygreen3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
         color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .CodeMirror.cm-s-default.CodeMirror-wrap {
-        background-color: #330000 !important;
+    .CodeMirror {
+        background: #460101 !important;
+        color: #ffffff !important;
+        line-height: 1.5em !important;
+        font-size: 16px !important;
+        height: 100%;
+        font-weight: bold !important;
+        outline: transparent !important;
+        border: 1px solid #ffffff !important;
     }
-    button[type="button"],
-    button.custom {
-        background-image: none !important;
-        background-color: transparent !important;
+    pre.CodeMirror-line,
+    .CodeMirror .CodeMirror-selected {
+        background: #a12525 !important;
+        color: #ffd900
     }
-    button[type="button"],
-    button.custom {
-        background-color: var(--MyX1) !important;
-        color: var(--MyW) !important;
+    .CodeMirror .CodeMirror-line::selection,
+    .CodeMirror .CodeMirror-line>span::selection,
+    .CodeMirror .CodeMirror-line>span>span::selection {
+        background: #a12525 !important;
     }
-    button[type="button"]:hover,
-    button.custom:hover {
-        background-color: var(--Myred1) !important;
-        color: var(--Mygreen1) !important;
+    .CodeMirror .CodeMirror-line::-moz-selection,
+    .CodeMirror .CodeMirror-line>span::-moz-selection,
+    .CodeMirror .CodeMirror-line>span>span::-moz-selection {
+        background: #a12525
+    }
+    .codeMirrorContainer .cm-search-widget,
+    .CodeMirror-merge-copybuttons-left,
+    .CodeMirror-gutter.CodeMirror-linenumbers {
+        background: #460101;
+        border-right: 2px solid #a12525;
+        color: #ffe8e8;
+    }
+    .CodeMirror .CodeMirror-gutters {
+        background: #460101;
+        border-right: 2px solid #a12525;
+    }
+    .CodeMirror .CodeMirror-guttermarker {
+        color: #0f0;
+    }
+    .CodeMirror-guttermarker-subtle {
+        color: #ffe8e8;
+    }
+    .CodeMirror .CodeMirror-linenumber {
+        color: #FFFFFF;
+    }
+    .CodeMirror-cursor {
+        border-left: 1px solid #00FF00;
+    }
+    .CodeMirror span.cm-keyword {
+        color: #00FF00;
+        font-weight: bold;
+    }
+    .CodeMirror span.cm-atom {
+        color: #3FF;
+    }
+    .CodeMirror span.cm-number {
+        color: #fbff00;
+    }
+    .CodeMirror span.cm-def {
+        color: #91b4ff;
+    }
+    .CodeMirror span.cm-variable {
+        color: #F6C;
+    }
+    .CodeMirror span.cm-variable-2 {
+        color: #c44eff;
+    }
+    .CodeMirror span.cm-variable-3,
+    .CodeMirror span.cm-type {
+        color: #ad7cec;
+    }
+    .CodeMirror span.cm-property {
+        color: #62FFA0;
+    }
+    .CodeMirror span.cm-operator {
+        color: #ecffb9;
+    }
+    .CodeMirror span.cm-comment {
+        color: #00FF00;
+    }
+    .CodeMirror span.cm-string {
+        color: #39C;
+    }
+    .CodeMirror span.cm-meta {
+        color: #ffffff;
+    }
+    .CodeMirror span.cm-qualifier {
+        color: #FFF700;
+    }
+    .CodeMirror span.cm-builtin {
+        color: #ffffff;
+    }
+    .CodeMirror span.cm-bracket {
+        color: #ffff00;
+    }
+    .CodeMirror span.cm-tag {
+        color: #FFBD40;
+    }
+    .CodeMirror .cm-overlay,
+    .CodeMirror span.cm-attribute {
+        color: #FFF700;
+    }
+    .CodeMirror span.cm-error {
+        color: #FF0000;
+    }
+    .CodeMirror .CodeMirror-activeline-background {
+        background: #921111;
     }
 }
