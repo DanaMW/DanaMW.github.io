@@ -14,3 +14,7 @@
 .monaco-workbench .monaco-scrollable-element>.scrollbar {
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
+
+.monaco-workbench .activitybar>.content {
+    width: 25px !important;
+}
