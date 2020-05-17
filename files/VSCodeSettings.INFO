@@ -11,7 +11,7 @@
         "strings": true
     },
     "editor.tokenColorCustomizations": {
-        "semanticHighlighting": true
+        "editor.semanticTokenColorCustomizations": "enabled",
     },
     "files.autoSave": "off",
     "files.exclude": {
@@ -44,22 +44,16 @@
         "cmyk",
         "gray"
     ],
-    "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
     "eslint.validate": [
         "javascript",
         "javascriptreact",
         "jquery"
     ],
-    "[css]": {
-        "editor.defaultFormatter": "michelemelluso.code-beautifier"
-    },
     "scss.lint.emptyRules": "ignore",
     "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "powershell.powerShellDefaultVersion": "PowerShell Core 7 (x64)",
     "git.path": "D:\\bin\\git\\bin\\git.exe",
-    "git.defaultCloneDirectory": "D:\\Development\\github\\",
+    "git.defaultCloneDirectory": "D:\\Development\\GitHub\\",
     "zenMode.hideStatusBar": false,
     "editor.formatOnSave": true,
     "files.autoGuessEncoding": true,
@@ -90,7 +84,7 @@
         "sass"
     ],
     "vscode_custom_css.imports": [
-        "file:///D:/Github/DanaMW.github.io/scripts/extra/CustomVSCode.css"
+        "file:///D:/Development/GitHub/DanaMW.github.io/scripts/extra/CustomVSCode.css"
     ],
     "vscode_custom_css.policy": true,
     "eslint.run": "onSave",
@@ -101,8 +95,9 @@
     "editor.hover.enabled": true,
     "workbench.colorCustomizations": {
         "terminal.background": "#000000",
-        "editor.background": "#200c0c",
+        "editor.background": "#000000",
         "scrollbarSlider.hoverBackground": "#11ff00",
+        "scrollbarSlider.hoverBackground.active": "#11ff00",
         "scrollbarSlider.background": "#ff0000",
         "editorGroup.border": "#ff0000",
         "terminal.border": "#ff0000",
@@ -169,11 +164,9 @@
     "terminal.integrated.rightClickBehavior": "default",
     "cSpell.language": "en",
     "cSpell.allowCompoundWords": true,
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[jsonc]": {
         "editor.defaultFormatter": "vscode.json-language-features"
