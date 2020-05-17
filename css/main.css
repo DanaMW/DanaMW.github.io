@@ -200,7 +200,7 @@ p {
     margin-left: 20%;
     text-align: center;
     border: 1px inset #ff0000;
-    box-shadow 0 0 #ff0000;
+    box-shadow: 0 0 #ff0000;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 25px;

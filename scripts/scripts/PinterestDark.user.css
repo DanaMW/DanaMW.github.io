@@ -2,7 +2,7 @@
 @name         Pinterest Dark
 @namespace    https://danamw.github.io/scripts/scripts/PinterestDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PinterestDark.user.css
-@version      0.0.12
+@version      0.0.13
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -35,13 +35,6 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-    /*
-    .Jea.jzS.zI7.iyn.Hsu,
-    .C9q.Cii.Jea.RDc.mQ8.ujU.zI7.iyn.Hsu {
-        background-color: var(--Mygray3);
-        color: var(--MyW) !important;
-    }
-    */
     .QDA.qJc.zI7.iyn.Hsu,
     .Yl-.MIw.Hb7 {
         background-color: var(--Myred3) !important;
@@ -77,13 +70,6 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         color: var(--MyW) !important;
         text-align: center !important;
     }
-    /*
-    .MIw.Rym.zI7.iyn.Hsu {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    .xcv,
-    */
     .ReactBoardInfoBar,
     .fixedHeader,
     .appContent {
