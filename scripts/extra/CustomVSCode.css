@@ -1,5 +1,5 @@
 .ActivityBar {
-    background-image: linear-gradient(to top, rgb(65, 21, 21), rgb(97, 22, 22), rgb(189, 38, 38) 100%, transparent) !important;
+    background-image: linear-gradient( to top, rgb(65, 21, 21), rgb(97, 22, 22), rgb(189, 38, 38) 100%, transparent) !important;
 }
 
 .monaco-workbench .monaco-scrollable-element>.scrollbar>.slider {
@@ -15,6 +15,7 @@
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
+.split-view-view.visible,
 .monaco-workbench .activitybar>.content {
     width: 25px !important;
 }
