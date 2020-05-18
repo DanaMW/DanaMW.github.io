@@ -23,6 +23,7 @@ url-prefix("https://policies.google.com/"),
 url-prefix("https://myaccount.google.com/"),
 url-prefix("https://gstatic.com/"),
 url-prefix("https://groups.google.com/") {
+    #main,
     .VmOpGe,
     html,
     div[id*="maia-footer"],
