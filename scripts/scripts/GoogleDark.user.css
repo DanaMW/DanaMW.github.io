@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.18
+@version      0.1.19
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -23,6 +23,8 @@ url-prefix("https://policies.google.com/"),
 url-prefix("https://myaccount.google.com/"),
 url-prefix("https://gstatic.com/"),
 url-prefix("https://groups.google.com/") {
+    .VmOpGe,
+    html,
     div[id*="maia-footer"],
     #maia-footer,
     body {
@@ -282,7 +284,7 @@ url-prefix("https://groups.google.com/") {
         transition: opacity 2s, height 2s, transform 2s !important;
     }
     #sbfblt {
-        display: none !important
+        display: none !important;
     }
     .lr_dct_lbl_blk.lr_dct_lbl_box,
     div.ellip,
@@ -472,11 +474,11 @@ url-prefix("https://groups.google.com/") {
         border: none !important;
         color: var(--MyW) !important;
         background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient( ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
+        -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
@@ -570,13 +572,13 @@ url-prefix("https://groups.google.com/") {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
         outline: none !important;
-        opacity: 1.0 !important;
+        opacity: 1 !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
@@ -652,13 +654,13 @@ url-prefix("https://groups.google.com/") {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient( 180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
-        opacity: 1.0 !important;
+        opacity: 1 !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
@@ -689,9 +691,9 @@ url-prefix("https://groups.google.com/") {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        opacity: 1.0 !important;
+        opacity: 1 !important;
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
         color: var(--MyW) !important;
     }
     .OZ8wsd,
@@ -718,7 +720,7 @@ url-prefix("https://groups.google.com/") {
     .VkpGBb,
     .j4Iw3b,
     .jleFbf {
-        background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray3)) !important;
+        background-image: -moz-linear-gradient( top, var(--Mygray1), var(--Mygray3)) !important;
     }
     .widget-pane-content-holder,
     .Z4o1ee.GyDlGb.cd29Sd.iiFyne:hover,
@@ -727,7 +729,7 @@ url-prefix("https://groups.google.com/") {
     .j4Iw3b:hover,
     .jleFbf:hover,
     .sbct:hover {
-        background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred3)) !important;
+        background-image: -moz-linear-gradient( top, var(--Myred1), var(--Myred3)) !important;
         color: var(--MyW) !important;
     }
     .dJcyOc,
@@ -736,10 +738,10 @@ url-prefix("https://groups.google.com/") {
         border: none !important;
     }
     .abup {
-        background-image: -moz-linear-gradient(top, var(--Myred3), var(--Myred2)) !important;
+        background-image: -moz-linear-gradient( top, var(--Myred3), var(--Myred2)) !important;
     }
     .rlc__slider-page {
-        background-image: -moz-linear-gradient(top, var(--Myred2), var(--Myred3)) !important;
+        background-image: -moz-linear-gradient( top, var(--Myred2), var(--Myred3)) !important;
     }
     ul[aria-dropeffect="move"],
     .widget-settings-pane,
@@ -1002,7 +1004,7 @@ url-prefix("https://groups.google.com/") {
     .CAAQAQ,
     .P5BnJb {
         border-radius: 15px !important;
-        background-color: var(--Myred3) !important
+        background-color: var(--Myred3) !important;
     }
     .yyjhs {
         background-color: var(--Mygray2) !important;
@@ -1036,7 +1038,7 @@ url-prefix("https://groups.google.com/") {
     .WOSiSc.l9Rm1d,
     .jvfpWb.r-iy62SPVlOCI0 {
         background-color: var(--Myred3) !important;
-        Border: none !important;
+        border: none !important;
         border-color: var(--Myred3) !important;
     }
     .dw-sb-cont,
@@ -1080,7 +1082,7 @@ url-prefix("https://groups.google.com/") {
     }
     .oldgisbuttonclose::before,
     .oldgisbuttonclose::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 2px;
         height: 100%;
@@ -1089,7 +1091,7 @@ url-prefix("https://groups.google.com/") {
     }
     .oldgisbuttonprev::before,
     .oldgisbuttonnext::before {
-        content: '';
+        content: "";
         width: 16px;
         height: 16px;
         display: inline-block;
@@ -1132,7 +1134,7 @@ url-prefix("https://groups.google.com/") {
     html {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
-        background: url('https://danamw.github.io/img/GoogleBG.jpg') repeat !important;
+        background: url("https://danamw.github.io/img/GoogleBG.jpg") repeat !important;
     }
     /*
     These are for the all apps button in all googles.
@@ -1190,7 +1192,7 @@ url-prefix("https://groups.google.com/") {
     .rc:hover,
     #irc-cl {
         background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+        background-image: linear-gradient( to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     .gb_qb,
     .gb_ob.gb_pb {
@@ -1208,7 +1210,7 @@ url-prefix("https://groups.google.com/") {
     div[aria-label="Currency exchange rate converter"],
     .gb_B.gb_Ec {
         background-color: var(--Mygray3) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+        background-image: linear-gradient( to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     b,
     .lEoPHd,
