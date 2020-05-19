@@ -164,13 +164,7 @@
     "terminal.integrated.rightClickBehavior": "default",
     "cSpell.language": "en",
     "cSpell.allowCompoundWords": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
+    "editor.defaultFormatter": "",
     "gitlens.settings.mode": "advanced",
     "jshint.lintHTML": true,
     "eslint.alwaysShowStatus": true,
@@ -237,5 +231,5 @@
     "css.lint.duplicateProperties": "warning",
     "eslint.experimental.incrementalSync": true,
     "eslint.lintTask.enable": true,
-    "git.fetchOnPull": true
+    "git.fetchOnPull": true,
 }
