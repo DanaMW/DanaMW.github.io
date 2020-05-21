@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.11
+@version      0.0.12
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -181,6 +181,9 @@ domain("studio.youtube.com") {
         border-color: transparent !important;
         color: var(--Myred1) !important;
         background-color: var(--MyX1) !important;
+    }
+    #show-more {
+        text-align: center !important;
     }
     button {
         border: none !important;
@@ -440,6 +443,7 @@ domain("studio.youtube.com") {
     #ytpc_ytcontrol_button {
         height: 25px !important;
     }
+    #collapse-controls-section,
     yt-chip-cloud-chip-renderer,
     #guide-button,
     ytd-menu-service-item-renderer,
@@ -471,6 +475,7 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    #collapse-controls-section:hover,
     yt-chip-cloud-chip-renderer:hover,
     ytd-menu-service-item-renderer:hover,
     [role="button"]:hover:not([slot="more-button"]),
@@ -509,6 +514,7 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    #collapse-controls-section:active,
     yt-chip-cloud-chip-renderer:active,
     ytd-menu-service-item-renderer:active,
     #guide-icon:active,
@@ -742,5 +748,9 @@ domain("studio.youtube.com") {
     ytd-watch-flexy,
     .ytd-app {
         background: url("https://danamw.github.io/img/ytbg.jpg") repeat !important;
+    }
+    #header-section {
+        background-color: var(--Myred2) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
 }
