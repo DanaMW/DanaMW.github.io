@@ -2,7 +2,7 @@
 @name         VisualStudio
 @namespace    https://danamw.github.io/scripts/scripts/VisualStudio.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/VisualStudio.user.css
-@version      0.0.18
+@version      0.0.19
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -10,13 +10,15 @@
 
 @-moz-document domain("visualstudio.com"),
 domain("my.visualstudio.com") {
+    #benefitsCentView,
+    div[role="main"],
     .vs-categories,
     div[id*="react_"],
     .swimlane,
     html,
     body,
     .content-section {
-        background-color: var(--Myback) !important;
+        background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
     * {
@@ -69,6 +71,7 @@ domain("my.visualstudio.com") {
     div[class*="c-heading"] {
         color: var(--Myred1) !important;
     }
+    .Description,
     .react-read-more-text,
     .ux-user-name,
     .c-cell,
@@ -128,6 +131,8 @@ domain("my.visualstudio.com") {
     strong {
         color: var(--Mygreen1) !important;
     }
+    .TopNavMenu,
+    .ms-CommandBarItem,
     li a[id*="nav-"] {
         background-image: none !important;
         background-color: none !important;
@@ -135,6 +140,9 @@ domain("my.visualstudio.com") {
     .nav.navbar-nav.navbar-left {
         background-color: var(--MyB) !important;
     }
+    span[id*="Dropdown"],
+    .ms-CommandBarItem,
+    .buttons>a,
     #nav-extensions,
     .c-select,
     li a[id*="nav-"],
@@ -154,6 +162,9 @@ domain("my.visualstudio.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    span[id*="Dropdown"]:hover,
+    .ms-CommandBarItem:hover,
+    .buttons>a:hover,
     li.active a[id*="nav-"],
     #nav-extensions:hover,
     .c-select:hover,
@@ -175,6 +186,9 @@ domain("my.visualstudio.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    span[id*="Dropdown"]:active,
+    .ms-CommandBarItem:active,
+    .buttons>a:active,
     #nav-extensions:active,
     .c-select:active,
     li a[id*="nav-"]:active,
@@ -195,11 +209,15 @@ domain("my.visualstudio.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    div[class*="BenefitTile"],
+    .BenefitTile.VSD-COM-00001.Large,
     .carousel,
     .alert {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    div[class*="ms-CommandBar"],
+    .lowerBand,
     .widget {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;

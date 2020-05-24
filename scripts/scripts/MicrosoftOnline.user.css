@@ -2,13 +2,15 @@
 @name         MicrosoftOnline Dark
 @namespace    http://danamw.github.io/scripts/scripts/MicrosoftOnline.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicrosoftOnline.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("microsoftonline.com") {
+@-moz-document domain("microsoftonline.com"),
+domain("login.live.com") {
+    .middle,
     html,
     body {
         background-color: var(--MyB) !important;
@@ -41,7 +43,7 @@
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
-    button {
+    #idSIButton9 {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -56,7 +58,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    button:hover {
+    #idSIButton9:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -73,7 +75,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    button:active {
+    #idSIButton9:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -90,23 +92,28 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .identityBanner,
+    .inner.fade-in-lightbox.has-popup .lightbox-cover {
         background-image: none !important;
         background-color: transparent !important;
     }
-    .stock {
+    .table {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .middle .inner.fade-in-lightbox,
+    .middle .has-popup .lightbox-cover {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-    input {
+    input:not(.btn) {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    .identityBanner #displayName.identity {
+        color: var(--TwitterBlue) !important;
     }
 }
