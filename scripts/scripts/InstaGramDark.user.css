@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.57
+@version      0.0.58
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -67,13 +67,6 @@
         overflow-x: hidden;
         width: calc(100vw + 16px);
     }
-    /*
-    div[class="COOzN "],
-    div[class="COOzN MnWb5"] {
-        position: absolute !important;
-        left: 0px !important;
-    }
-    */
     div[class="FuWoR -wdIA    x7xX2  _0mzm-"] {
         border-color: var(--Mygreen1) !important;
     }
@@ -85,9 +78,6 @@
     .LWmhU {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
-        /*
-        border-radius: 25px;
-        */
         border: 1px solid var(--Myborder);
     }
     h1 {
@@ -97,9 +87,6 @@
         color: var(--Mygreen1) !important;
     }
     .LWmhU._0aCwM {
-        /*
-        border-radius: 25px !important;
-        */
         border: none !important;
     }
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
@@ -231,12 +218,8 @@
         transition-timing-function: linear !important;
         filter: brightness(80%) !important;
     }
-    /*
-    div[class="                  Igw0E     IwRSH        YBx95       _4EzTm      MGdpg                                                                                                      NUiEW  "] button.dCJp8.afkep._0mzm- {
-        border-radius: 25px !important;
-    }
-    */
     /*---------------------------All display NONE----------*/
+    div[class="                    Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "],
     ._8Rna9,
     .Dt74z {
         display: none;
@@ -377,8 +360,8 @@
     .mwD2G::before {
         background-color: var(--MyW) !important;
     }
-    textarea {
-        background-color: var(--Mygray3) !important;
+    section[class="sH9wk  _JgwE "] textarea {
+        background-color: var(--MyB) !important;
     }
     .ZUqME,
     .vtWDf,
@@ -578,9 +561,6 @@
     ._4Kbb_._54f4m {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
-    }
-    section.sH9wk._JgwE {
-        background-color: var(--Mygray3) !important;
     }
     div[class="        DPiy6            Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
     ._4bSq7,
