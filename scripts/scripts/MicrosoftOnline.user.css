@@ -2,7 +2,7 @@
 @name         MicrosoftOnline Dark
 @namespace    http://danamw.github.io/scripts/scripts/MicrosoftOnline.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicrosoftOnline.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -109,7 +109,4 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
-}
-
-
 }
