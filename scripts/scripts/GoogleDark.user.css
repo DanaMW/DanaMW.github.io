@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.20
+@version      0.1.21
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1135,7 +1135,7 @@ url-prefix("https://groups.google.com/") {
     html {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
-        background: url("https://danamw.github.io/img/GoogleBG.jpg") repeat !important;
+        /*background: url("https://danamw.github.io/img/GoogleBG.jpg") repeat !important;*/
     }
     /*
     These are for the all apps button in all googles.
