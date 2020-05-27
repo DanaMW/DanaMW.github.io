@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.27
+@version      0.0.28
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -93,6 +93,7 @@ url-prefix("wss://live.github.com") {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
+    .topic-tag.topic-tag-link:hover,
     .topic-tag:hover {
         background-color: var(--Myred1) !important;
         color: var(--Mygreen1) !important;
@@ -117,6 +118,13 @@ url-prefix("wss://live.github.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.previous_page.disabled:hover,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.previous_page,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.previous_page,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page.disabled:hover,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a[aria-label*="Page"],
     .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary,
     .d-flex.flex-justify-between.mb-3 a.btn.btn-primary,
     .ajax-pagination-form button.ajax-pagination-btn,
@@ -177,6 +185,11 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap:hover,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.previous_page:not(disabled):hover,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page:hover,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a[aria-label*="Page"]:hover,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] em.current,
     .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary:hover,
     .d-flex.flex-justify-between.mb-3 a.btn.btn-primary:hover,
     .ajax-pagination-form .ajax-pagination-btn:hover,
@@ -240,6 +253,11 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap:active,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.previous_page:not(disabled):active,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page:active,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a[aria-label*="Page"]:active,
+    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] em.current:active,
     .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary:active,
     .d-flex.flex-justify-between.mb-3 a.btn.btn-primary:active,
     .ajax-pagination-form button.ajax-pagination-btn:active,
@@ -344,6 +362,7 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Myred2) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    .public.source.border-bottom,
     .border-bottom.border-gray-dark.py-3,
     .d-flex,
     .d-table,
