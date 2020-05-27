@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.29
+@version      0.0.30
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -230,6 +230,15 @@
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
     }
+    .mscom-accordion-item-image {
+        border-radius: 50% !important;
+    }
+    .mscom-accordion-item-image:hover,
+    .mscom-accordion-item-image {
+        background-image: none !important;
+    }
+    .mscom-accordion-item-image,
+    .button-flat.button-main,
     .c-hyperlink,
     li[class*="exampleComboPopup2-item"],
     li[role="menuitem"],
@@ -263,6 +272,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .mscom-accordion-item-image:hover,
+    .button-flat.button-main:hover,
     .c-hyperlink:hover,
     li[class*="exampleComboPopup2-item"]:hover,
     li[role="menuitem"]:hover,
@@ -297,6 +308,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .mscom-accordion-item-image:active,
+    .button-flat.button-main:active,
     .c-hyperlink:active,
     li[class*="exampleComboPopup2-item"]:active,
     li[role="menuitem"]:active,
@@ -375,6 +388,9 @@
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    .mscom-link.mscom-accordion-item-link:hover,
+    .row-fluid.title,
+    .row-fluid.banner,
     th,
     .input-group-text,
     h3[class*="c-heading"],
@@ -399,7 +415,6 @@
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
-    .row-fluid.banner,
     #divTerms,
     .exampleComboPopup2,
     .entry-area {
@@ -422,5 +437,14 @@
     }
     td>h3 {
         color: var(--TwitterBlue) !important;
+    }
+    h2 .row-fluid div[class="span bp0-col-1-1 bp1-col-1-1 bp2-col-1-1 bp3-col-1-1"] {
+        color: var(--TwitterRed) !important;
+    }
+    .mscom-link.mscom-accordion-item-link:hover {
+        background-color: var(--MyX1) !important;
+    }
+    div[class*="c-heading"] {
+        color: var(--TwitterRed) !important;
     }
 }
