@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.7
+@version      0.0.8
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -47,6 +47,7 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    a[class="wLV79_wV-ziNiWmf3Y7OV _1vGOSBVzbAH3jn-PrQ2qY5 "],
     a[class="_3UhcBirLMXHSbN5vYYBGSF _3GA-tK1xBiDrxLJRZR3IIB "],
     a[class="wLV79_wV-ziNiWmf3Y7OV j5ti73p7EAjBJvJlSjppe "],
     a[role="tab"],
@@ -72,6 +73,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class="wLV79_wV-ziNiWmf3Y7OV _1vGOSBVzbAH3jn-PrQ2qY5 "]:hover,
     a[class="_3UhcBirLMXHSbN5vYYBGSF _3GA-tK1xBiDrxLJRZR3IIB "]:hover,
     a[class="wLV79_wV-ziNiWmf3Y7OV j5ti73p7EAjBJvJlSjppe "]:hover,
     ._1YWXCINvcuU7nk0ED-bta8:hover,
@@ -102,6 +104,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[class="wLV79_wV-ziNiWmf3Y7OV _1vGOSBVzbAH3jn-PrQ2qY5 "]:active,
     a[class="_3UhcBirLMXHSbN5vYYBGSF _3GA-tK1xBiDrxLJRZR3IIB "]:active,
     a[class="wLV79_wV-ziNiWmf3Y7OV j5ti73p7EAjBJvJlSjppe "]:active,
     a[role="tab"]:active,
