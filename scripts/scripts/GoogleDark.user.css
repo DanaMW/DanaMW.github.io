@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.21
+@version      0.1.22
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -483,6 +483,8 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .sbct.sbhl,
+    .sbct:hover,
     .WGYX8:hover,
     .KYeOtb:hover,
     a.NQV3m:hover,
@@ -728,8 +730,7 @@ url-prefix("https://groups.google.com/") {
     .iKjWAf.irc-nic.isr-rtc.a-no-hover-decoration:hover,
     .VkpGBb:hover,
     .j4Iw3b:hover,
-    .jleFbf:hover,
-    .sbct:hover {
+    .jleFbf:hover {
         background-image: -moz-linear-gradient( top, var(--Myred1), var(--Myred3)) !important;
         color: var(--MyW) !important;
     }
@@ -1295,5 +1296,8 @@ url-prefix("https://groups.google.com/") {
     .isv-r.PNCib.MSM1fd.BUooTd.sizepropagated .gishoverinfo {
         background: var(--MyX1) !important;
         background-color: var(--MyX1) !important;
+    }
+    .kp-wholepage.kp-wholepage-osrp.HSryR.EyBRub {
+        width: calc(100% - 10%) !important;
     }
 }
