@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.71
+@version      0.0.72
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -591,7 +591,7 @@ domain("discord.com") {
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
-    div[id*="channels"],
+    div[id*="channels"] div[class*="content"],
     foreignObject>a[class*="wrapper"],
     div[class*="expandedFolderIconWrapper"],
     div[class*="closedFolderIconWrapper"],
@@ -618,6 +618,8 @@ domain("discord.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[class*="containerDefault"] div[id*="channels"],
+    div[id*="channels"] div[class*="content"]:hover,
     div[aria-label="More"][role=button]:hover,
     div[class*="friendsRow"]:hover,
     a[class*="wrapper"][class*="selected"],
