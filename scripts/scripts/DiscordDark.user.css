@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.70
+@version      0.0.71
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -123,6 +123,7 @@ domain("discord.com") {
     #app-mount div[class^="chat"] div[class*="titlewraper"] .channel-mute-button {
         opacity: 1;
     }
+    div[class*="messages"],
     div[class*="scroller"][class*="systemPad"][class*="messages"],
     div[class^="chatContent"],
     div[class*="messagesWrapper"] {
@@ -590,6 +591,7 @@ domain("discord.com") {
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
+    div[id*="channels"],
     foreignObject>a[class*="wrapper"],
     div[class*="expandedFolderIconWrapper"],
     div[class*="closedFolderIconWrapper"],
