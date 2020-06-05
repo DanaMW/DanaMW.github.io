@@ -1,7 +1,8 @@
 /* uget */
 
 @-moz-document url-prefix("moz-extension://d0a3ac09-32fd-4984-8d3e-f75094e0231a/"),
-url-prefix("moz-extension://3f6c6339-f720-434a-b7c1-c8790d86a1ef/") {
+url-prefix("moz-extension://3f6c6339-f720-434a-b7c1-c8790d86a1ef/"),
+url-prefix("moz-extension://73a39a1b-acaf-4d61-90f7-dfb6319a1209/") {
     panelmultiview[id="customizationui-widget-multiview"] {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -108,7 +109,7 @@ url-prefix("moz-extension://3f6c6339-f720-434a-b7c1-c8790d86a1ef/") {
         margin-bottom: 0px !important;
     }
     .form-control {
-        padding: .15rem .75rem !important;
+        padding: 0.15rem 0.75rem !important;
     }
     .switch {
         position: relative !important;
@@ -133,8 +134,8 @@ url-prefix("moz-extension://3f6c6339-f720-434a-b7c1-c8790d86a1ef/") {
         right: 0 !important;
         bottom: 0 !important;
         background-color: var(--Mygray1) !important;
-        -webkit-transition: .4s !important;
-        transition: .4s !important;
+        -webkit-transition: 0.4s !important;
+        transition: 0.4s !important;
     }
     .slider:before {
         position: absolute !important;
@@ -144,8 +145,8 @@ url-prefix("moz-extension://3f6c6339-f720-434a-b7c1-c8790d86a1ef/") {
         left: 1px !important;
         bottom: 1px !important;
         background-color: var(--MyW) !important;
-        -webkit-transition: .4s !important;
-        transition: .4s !important;
+        -webkit-transition: 0.4s !important;
+        transition: 0.4s !important;
     }
     input:checked+.slider {
         background-color: var(--Mygreen2) !important;

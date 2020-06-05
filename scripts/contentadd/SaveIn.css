@@ -1,7 +1,8 @@
 /* savein */
 
 @-moz-document url-prefix("moz-extension://6e8e6cbc-4b67-460b-aa2a-555cf69d127c/"),
-url-prefix("moz-extension://6886a8a1-da82-48c7-aa59-1f7ad6a0d5e6/") {
+url-prefix("moz-extension://6886a8a1-da82-48c7-aa59-1f7ad6a0d5e6/"),
+url-prefix("moz-extension://9d01f4c3-a08f-4b33-8d47-f8d30c540efb/") {
     a,
     .link {
         color: var(--MyW) !important;
@@ -69,7 +70,6 @@ url-prefix("moz-extension://6886a8a1-da82-48c7-aa59-1f7ad6a0d5e6/") {
     }
     .help {
         color: var(--Myblue2) !important;
-        ;
     }
     .error-row {
         background-color: var(--Myred1);

@@ -1,7 +1,8 @@
 /* S3 Download Manager */
 
 @-moz-document url-prefix("moz-extension://be78cb98-6546-4056-8808-5bf73000c2df/content/options.html"),
-url-prefix("moz-extension://b95e8923-d507-49fe-9aa0-6b1ae682c276/content/options.html") {
+url-prefix("moz-extension://b95e8923-d507-49fe-9aa0-6b1ae682c276/content/options.html"),
+url-prefix("moz-extension://33ca0c34-06fe-4cc9-a1dd-7a6a518151c5/content/options.html") {
     .tabContent,
     .tabsBox,
     body {
@@ -27,28 +28,28 @@ url-prefix("moz-extension://b95e8923-d507-49fe-9aa0-6b1ae682c276/content/options
         text-decoration: none !important;
     }
     .groupbox {
-        border: 1px #E0E0E0 solid;
+        border: 1px #e0e0e0 solid;
         box-shadow: 0 0 10px #dbd9d5;
     }
     .groupbox:hover:not([disabled]) {
-        border: 1px #AF5CCB solid;
-        box-shadow: 0 0 10px #E3C5ED;
+        border: 1px #af5ccb solid;
+        box-shadow: 0 0 10px #e3c5ed;
     }
     .groupbox:hover:not([disabled])>.caption span,
     .groupbox:hover:not([disabled])>.caption div {
         background-color: rgb(55, 0, 73);
-        border: 1px #AF5CCB solid;
+        border: 1px #af5ccb solid;
     }
     .groupbox>.caption span {
         background-color: var(--Mygray2) !important;
     }
     .caption span,
     .caption div {
-        border: 1px #E0E0E0 solid;
+        border: 1px #e0e0e0 solid;
     }
     #exclude_links {
         background-color: transparent;
-        border: 1px #DFDFDF solid;
+        border: 1px #dfdfdf solid;
     }
     #exclude_links:not(:invalid) {
         background-color: var(--Mygray3) !important;

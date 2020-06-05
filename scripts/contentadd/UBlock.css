@@ -1,7 +1,8 @@
 /* UBlock */
 
 @-moz-document url-prefix("moz-extension://c9197a39-06e7-4b20-ba13-40f298349bd5/"),
-url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
+url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/"),
+url-prefix("moz-extension://0d38b137-599e-4691-a11e-ef2a65b1ed11/") {
     div#actions,
     #dashboard-nav,
     body {
@@ -220,11 +221,11 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient( ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
+        -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
@@ -238,13 +239,13 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
         outline: none !important;
-        opacity: 1.0 !important;
+        opacity: 1 !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
@@ -258,13 +259,13 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient( 180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
-        opacity: 1.0 !important;
+        opacity: 1 !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
@@ -288,7 +289,7 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
     .CodeMirror-activeline,
     .CodeMirror-selected {
         background: #a12525 !important;
-        color: #ffd900
+        color: #ffd900;
     }
     .CodeMirror-line::selection,
     .CodeMirror-line>span::selection,
@@ -298,7 +299,7 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
     .CodeMirror-line::-moz-selection,
     .CodeMirror-line>span::-moz-selection,
     .CodeMirror-line>span>span::-moz-selection {
-        background: #a12525
+        background: #a12525;
     }
     .cm-search-widget,
     .CodeMirror-merge-copybuttons-left,
@@ -318,17 +319,17 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         color: #ffe8e8;
     }
     .CodeMirror-linenumber {
-        color: #FFFFFF;
+        color: #ffffff;
     }
     .CodeMirror-cursor {
-        border-left: 1px solid #00FF00;
+        border-left: 1px solid #00ff00;
     }
     span.cm-keyword {
-        color: #00FF00;
+        color: #00ff00;
         font-weight: bold;
     }
     span.cm-atom {
-        color: #3FF;
+        color: #3ff;
     }
     span.cm-number {
         color: #fbff00;
@@ -337,7 +338,7 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         color: #91b4ff;
     }
     span.cm-variable {
-        color: #F6C;
+        color: #f6c;
     }
     span.cm-variable-2 {
         color: #c44eff;
@@ -347,22 +348,22 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         color: #ad7cec;
     }
     span.cm-property {
-        color: #62FFA0;
+        color: #62ffa0;
     }
     span.cm-operator {
         color: #ecffb9;
     }
     span.cm-comment {
-        color: #00FF00;
+        color: #00ff00;
     }
     span.cm-string {
-        color: #39C;
+        color: #39c;
     }
     span.cm-meta {
         color: #ffffff;
     }
     span.cm-qualifier {
-        color: #FFF700;
+        color: #fff700;
     }
     span.cm-builtin {
         color: #ffffff;
@@ -371,14 +372,14 @@ url-prefix("moz-extension://042d0e7d-fe10-4dd8-9e9a-ef6ba0359db1/") {
         color: #ffff00;
     }
     span.cm-tag {
-        color: #FFBD40;
+        color: #ffbd40;
     }
     .cm-overlay,
     span.cm-attribute {
-        color: #FFF700;
+        color: #fff700;
     }
     span.cm-error {
-        color: #FF0000;
+        color: #ff0000;
     }
     .CodeMirror-activeline-background {
         background: #921111;
