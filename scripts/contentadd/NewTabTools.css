@@ -1,7 +1,8 @@
 /* new tab tools */
 
 @-moz-document url("moz-extension://96fb75f0-675b-40a6-941d-b7827db86af1/newTab.xhtml"),
-url("moz-extension://bb1bb007-4676-4074-9feb-300122b889b5/newTab.xhtml") {
+url("moz-extension://bb1bb007-4676-4074-9feb-300122b889b5/newTab.xhtml"),
+url("moz-extension://300cbd13-7634-484e-81ae-29683f2a28e0/newTab.xhtml") {
     body {
         background-color: hsl(0, 0%, 10%);
         --shadow-hover: rgb(255, 0, 0);
@@ -22,8 +23,7 @@ url("moz-extension://bb1bb007-4676-4074-9feb-300122b889b5/newTab.xhtml") {
     }
     .newtab-thumbnail,
     .custom-thumbnail {
-        border-radius: 5px !important;
-        border: 1px solid var(--MyX1) !important;
+        /*border: 1px solid var(--MyX1) !important;*/
         border-radius: 15px !important;
     }
     .newtab-thumbnail[dragged],
