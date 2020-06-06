@@ -7,7 +7,7 @@ url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html", u
         scrollbar-color: var(--Myred1) var(--Myred3);
         text-decoration: none !important;
     }
-    .item.activetitle {
+    .div#titles>div.activetitle, .item.activetitle {
         color: var(--MyW) !important;
         background: -webkit-gradient( linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
     }
