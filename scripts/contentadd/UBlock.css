@@ -24,6 +24,10 @@ url-prefix("moz-extension://0d38b137-599e-4691-a11e-ef2a65b1ed11/") {
     a {
         color: var(--MyW) !important;
     }
+    div[data-des="*"],
+    #firewall,
+    #firewall.expanded,
+    #sticky,
     code,
     .code {
         background-color: var(--Mygray3) !important;
