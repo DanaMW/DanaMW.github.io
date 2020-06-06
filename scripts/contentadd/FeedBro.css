@@ -1,13 +1,15 @@
 /* feedbro */
 
 @-moz-document url-prefix("moz-extension://c489fead-1ce3-4b60-ab7d-3d1694d00510/reader.html"),
-url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html", url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/reader.html") {
+url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html"),
+url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/reader.html") {
     * {
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3);
         text-decoration: none !important;
     }
-    .div#titles>div.activetitle, .item.activetitle {
+    .div#titles>div.activetitle,
+    .item.activetitle {
         color: var(--MyW) !important;
         background: -webkit-gradient( linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
     }
@@ -17,14 +19,17 @@ url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html", u
     .entry-link {
         color: var(--Myred2) !important;
     }
-    .entry-link:hover, .item.unread>div[id*="item-title"] {
+    .entry-link:hover,
+    .item.unread>div[id*="item-title"] {
         color: var(--Myred1) !important;
     }
-    ul.jqtree-tree li.jqtree-selected>div, ul.jqtree-tree li.jqtree-selected>div:hover {
+    ul.jqtree-tree li.jqtree-selected>div,
+    ul.jqtree-tree li.jqtree-selected>div:hover {
         color: var(--MyW) !important;
         background: -webkit-gradient( linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
     }
-    .item:hover, div.node-text:hover {
+    .item:hover,
+    div.node-text:hover {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
@@ -48,7 +53,9 @@ url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html", u
     .node-text.node-unreadtext {
         color: var(--Myred1) !important;
     }
-    textarea, input#alertify-text.alertify-text, input {
+    textarea,
+    input#alertify-text.alertify-text,
+    input {
         color: #000 !important;
         text-align: center !important;
         border: 1px solid #ff0000 !important;
@@ -56,15 +63,18 @@ url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html", u
     .alertify-text-wrapper {
         background-color: transparent !important;
     }
-    article, alertify-inner {
+    article,
+    alertify-inner {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient( to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-    nav, .alertify-buttons {
+    nav,
+    .alertify-buttons {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient( to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    article, alertify-inner {
+    article,
+    alertify-inner {
         color: #000 !important;
     }
 }
