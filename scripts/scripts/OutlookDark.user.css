@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.17
+@version      0.0.19
 @author       Dana Meli
 @homepageURL  https://github.com/DanaMW
 ==/UserStyle== */
@@ -382,13 +382,17 @@
         color: var(--Myred1) !important;
         text-shadow: 1px 1px var(--MyW) !important;
     }
+    .DqR_QI9wxI9eR6VFTBDcQ input {
+        background-color: transparent !important;
+        border: 0px !important;
+    }
     .OzcqDwEUz10RIoukdLyVT,
     .ms-SearchBox-iconContainer.iconContainer-132,
     input[id*="SearchBox"],
     input[class="_2Ga-vGXSzNY70n27pNJIRA"],
     input[id="subjectLine3"],
     input[id="subjectLine2"] {
-        background-color: var(--Myback) !important;
+        background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
     /*--------BANNER------------------*/
