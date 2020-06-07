@@ -2,7 +2,7 @@
 @name         Google Meet Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleMeetDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleMeetDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -43,6 +43,9 @@
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
+    button,
+    .QY6izd,
+    div[role="tab"],
     div[role="button"] {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -58,7 +61,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    div[role="tab"]:hover,
+    button:hover,
+    .VfPpkd-RLmnJb:hover div[role="tab"]:hover,
     div[role="tab"][aria-selected="true"],
     span[role="menuitem"]:hover,
     div[role="button"]:hover {
@@ -78,6 +82,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    button:active,
     div[role="button"]:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -95,6 +100,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    #gb,
     .QkY02 {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
@@ -109,6 +115,25 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    #ow3,
+    .MWq3Ae,
+    .jzP6rf,
+    .q2u11,
+    .fe4pJf.Pdo15c span[role="tabpanel"],
+    .HALYaf.egomjd.KKjvXb {
+        background-color: var(--Mygray3) !important;
+    }
+    .ZR1ISd.y3nI9 {
+        color: var(--MyW) !important;
+    }
+    .v2aOce,
+    .HEUhi,
+    div[class="koV58 Zi94Db JkXOUb gAPJKb S7urwe"] {
+        background: transparent !important;
+    }
+    .zy3vwb.IpYpqc {
+        color: var(--TwitterBlue) !important;
+    }
     div[role="dialog"],
     .JAPqpe.K0NPx {
         background-image: none !important;
@@ -118,6 +143,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .p062Qe,
     div[role="dialog"],
     .JAPqpe.K0NPx {
         background-color: var(--Myred3) !important;
