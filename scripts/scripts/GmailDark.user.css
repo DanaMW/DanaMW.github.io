@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.0.94
+@version      0.0.95
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -365,20 +365,6 @@ url-prefix("https://docs.google.com/picker") {
     font {
         color: var(--Myred1) !important;
     }
-    /*
-    #\:2s>div:nth-child(2),
-    .buc,
-    div.J-JN-M-I-JG,
-    span.aXw.T-KT::before,
-    img.ajz,
-    img.aeu,
-    span.J-Ph-hFsbo,
-    span.ams.bkG::before,
-    span.ams.bkI::before,
-    span.ams.bkH::before {
-        filter: invert(1) !important;
-    }
-    */
     span.aXw.T-KT::before {
         filter: invert(0) !important;
     }
@@ -456,6 +442,7 @@ url-prefix("https://docs.google.com/picker") {
     .pTh3n {
         filter: invert(0) !important;
     }
+    .gb_Af,
     path[d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"],
     path[d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M12,18c-0.6,0-1-0.5-1-1h2 C13,17.5,12.5,18,12,18z M17,16H7v-0.6l1.2-1.2v-3c0-1.9,1-3.4,2.8-3.8V6.9C11.1,6.4,11.5,6,12,6s0.9,0.4,0.9,0.9v0.4 c1.8,0.4,2.8,2,2.8,3.8v3l1.2,1.2V16z"],
     path[d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"],
@@ -1398,5 +1385,9 @@ url-prefix("https://docs.google.com/picker") {
     tr,
     td {
         background: transparent !important;
+    }
+    .gb_D:hover,
+    .FH:hover {
+        filter: invert(1) !important;
     }
 }

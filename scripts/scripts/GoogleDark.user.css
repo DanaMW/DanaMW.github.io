@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.22
+@version      0.1.23
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -70,13 +70,6 @@ url-prefix("https://groups.google.com/") {
         position: relative !important;
         left: calc(1vw + var(--cmove) - 10vw) !important;
     }
-    /*
-    html[itemtype="http://schema.org/SearchResultsPage"] form[role="search"],
-    html[itemtype="http://schema.org/SearchResultsPage"] form[role="search"] {
-        position: absolute !important;
-        left: calc(1vw + var(--tmove) - 10vw) !important;
-    }
-    */
     * {
         text-decoration: none !important;
         scrollbar-width: thin;
@@ -157,7 +150,6 @@ url-prefix("https://groups.google.com/") {
     }
     blockquote,
     li,
-    /*h3,*/
     p,
     [role="heading"],
     .WGvvNb,
@@ -689,16 +681,6 @@ url-prefix("https://groups.google.com/") {
         padding: none !important;
         margin: none !important;
     }
-    #gb,
-    .gb_Qd.gb_7d.gb_Zd {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        opacity: 1 !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
-        color: var(--MyW) !important;
-    }
     .OZ8wsd,
     .i3LlFf,
     .fl.ellip.oBrLN {
@@ -1116,10 +1098,6 @@ url-prefix("https://groups.google.com/") {
     .rg_bx.rg_di.rg_el.ivg-i.fmbrQQxz {
         border: 5px solid var(--TwitterRed) !important;
     }
-    /*
-    input#smb.ksb,
-    #smc
-    */
     #smbw,
     #xjs {
         position: relative !important;
@@ -1138,11 +1116,6 @@ url-prefix("https://groups.google.com/") {
         color: var(--MyW) !important;
         /*background: url("https://danamw.github.io/img/GoogleBG.jpg") repeat !important;*/
     }
-    /*
-    These are for the all apps button in all googles.
-    a.NQV3m,
-    .tX9u1b,
-    */
     .EHzcec.eejsDc {
         background-color: var(--Mygray3) !important;
         border: 1px solid var(--MyW) !important;
