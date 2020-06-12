@@ -41,6 +41,7 @@
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
+    .button,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -56,6 +57,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .button:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -73,6 +75,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .button:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -90,15 +93,16 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .input-group {
         background-image: none !important;
         background-color: transparent !important;
+        border: none !important;
     }
-    .stock {
+    .site-header__markets-now-section {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .site-header__first-row {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -108,5 +112,10 @@
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    .site-header__bi-logo a.logo,
+    .site-header__mi-logo a.logo {
+        Color: var(--TwitterBlue) !important;
+        filter: invert(1) !important;
     }
 }
