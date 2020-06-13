@@ -361,6 +361,7 @@ domain("discord.com") {
     form[class^="form"],
     div[class*="channelTextArea"][class*="channelTextArea"],
     #channel-text-area-wrapper {
+        height: 50px !important;
         margin: 0px !important;
         padding: 0px !important;
         color: var(--MyW) !important;
@@ -371,7 +372,7 @@ domain("discord.com") {
     div[class^="textArea"][class*="slateContainer"] {
         border-top: 1px solid var(--Myred1) !important;
         color: var(--MyW) !important;
-        background-color: #202020 !important;
+        background-color: #131313 !important;
     }
     div[class*="inner"][class*="flex"][class*="innerNoAutocomplete"] {
         background-color: #202020 !important;
