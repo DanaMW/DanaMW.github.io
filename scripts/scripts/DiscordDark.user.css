@@ -826,4 +826,19 @@ domain("discord.com") {
     div[class*="mediaBarProgress"][class*="fakeEdges"] {
         background-color: var(--Myred1) !important;
     }
+    div[class*="search"][class*="open"] {
+        border: none !important;
+        background-color: transparent !important;
+    }
+    div[class*="search"][class*="open"][class*="focused"] {
+        border: 1px solid var(--Myred1) !important;
+        border-radius: 25px !important;
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .DraftEditor-root,
+    div[role="textbox"],
+    span[data-offset-key="algb1-0-0"] span[data-text="true"] {
+        color: var(--MyW) !important;
+    }
 }
