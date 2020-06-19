@@ -341,11 +341,12 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    textarea,
     input:not([type="radio"]):not([type="checkbox"]) {
-        background-color: var(--Mygray3) !important;
+        background-color: var(--MyB) !important;
         color: var(--MyW) !important;
         border-radius: 25px !important;
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myred1) !important;
     }
     .mwD2G,
     input[type="radio"],
@@ -562,8 +563,10 @@
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+    /*div[class*="Igw0E"][class*="_4EzTm"],*/
+    /*div[class*="Igw0E"],*/
+    /*div[class*="_4EzTm"],*/
     div[class="        DPiy6            Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
-    ._4bSq7,
     DIV[class="                   Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
     .-qQT3.rOtsg,
     .N9abW,
@@ -603,6 +606,7 @@
     div[class="_9GP1n   "] {
         border: none !important;
     }
+    div[class="                    Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
     div[class="pV7Qt      tHaIX              Igw0E   rBNOH          YBx95       _4EzTm                                                                                   XfCBB              nGS-Y             "],
     ._01UL2,
     .zGtbP.IPQK5.VideM,
@@ -619,6 +623,10 @@
     .gr27e,
     .IpSxo,
     div[role="dialog"],
+    div[class="pbNvD  fPMEg   "],
+    div[class="        DPiy6            Igw0E     IwRSH      eGOV_        vwCYk                                                                                                               "],
+    ._1XyCr,
+    .piCib,
     .PVkFi,
     .vtbgv,
     .m0NAq,
@@ -633,10 +641,6 @@
     section[class="bR_3v  "],
     section.sH9wk._JgwE {
         color: var(--MyW) !important;
-        /*
-        border-bottom-right-radius: 25px !important;
-        border-bottom-left-radius: 25px !important;
-        */
     }
     section[class="bR_3v  "] {
         border: 1px solid var(--Myborder) !important;
@@ -646,15 +650,6 @@
         height: 117px !important;
         margin-top: -6px !important;
     }
-    /*
-    .CfWVH {
-        position: absolute;
-        top: -5px !important;
-        left: -5px !important;
-        width: 66px !important;
-        height: 66px !important;
-    }
-    */
     ._2dbep.qNELH.kIKUG {
         width: 56px;
         height: 56px;
@@ -735,5 +730,31 @@
     }
     div[class="                   Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "] {
         display: none;
+    }
+    .nwXS6.ON6Nq {
+        margin-left: 80px !important;
+    }
+    button[type="button"]>span {
+        color: var(--MyW) !important;
+    }
+    div[class="_7UhW9      x-6xq   MMzan  KV-D4         uL8Hv     l4b0S    "] {
+        background-color: transparent !important;
+        background-image: none !important;
+        color: var(--MyW) !important;
+    }
+    div[class="                    Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
+        background-color: var(--MyB) !important;
+    }
+    .iXTil {
+        background-color: var(--Mypurple2) !important;
+    }
+    div[class="   _6FEQj CMoMH   RQUXn _8_yLp  "] {
+        background-color: var(--Myred2) !important;
+    }
+    .iXTil {
+        border-radius: 25px !important;
+    }
+    div[class="_7UhW9   xLCgt      MMzan  KV-D4            p1tLr      hjZTB"]>span {
+        color: var(--MyW) !important;
     }
 }
