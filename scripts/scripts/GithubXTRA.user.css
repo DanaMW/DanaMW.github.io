@@ -97,8 +97,9 @@ url-prefix("wss://live.github.com") {
     .topic-tag:hover {
         background-color: var(--Myred1) !important;
         color: var(--Mygreen1) !important;
-        border-color: var(--MyW) !important;
+        /*border-color: var(--MyW) !important;*/
     }
+    div[class="Box-row Box-row--focus-gray py-2 mt-0 border-top-0 d-flex position-relative js-navigation-item navigation-focus"]:hover,
     tr.js-navigation-item:hover {
         background-color: var(--MyX1) !important;
     }
