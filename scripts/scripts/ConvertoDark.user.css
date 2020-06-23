@@ -2,7 +2,7 @@
 @name         Converto Dark
 @namespace    https://danamw.github.io/scripts/scripts/ConvertoDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ConvertoDark.user.css
-@version      0.0.7
+@version      0.0.8
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -141,5 +141,11 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .fwb {
+        display: none !important;
+    }
+    .q-item.busy {
+        background-color: transparent !important;
     }
 }
