@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.29
+@version      0.0.30
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -42,7 +42,7 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
-    article.markdown-body-entry-content>pre,
+    article.markdown-body.entry-content>pre,
     article h2,
     article h1,
     pre {
@@ -513,5 +513,12 @@ url-prefix("wss://live.github.com") {
     }
     .CodeMirror .CodeMirror-activeline-background {
         background: #921111;
+    }
+    .Box-body {
+        background-color: var(--MyB) !important;
+    }
+    p,
+    article {
+        background-color: transparent !important;
     }
 }
