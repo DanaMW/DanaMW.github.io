@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.73
+@version      0.0.74
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -762,8 +762,8 @@ domain("discord.com") {
         background-color: var(--MyB) !important;
         border: 1px solid var(--Myborder) !important;
     }
-    header[class*="membersGroup"][class*="container"] {
-        background-color: var(--Myred3) !important;
+    h2[class*="membersGroup"][class*="container"] {
+        background-color: var(--MyX1) !important;
         font-weight: bolder !important;
         color: var(--Myred1) !important;
         text-align: center !important;
@@ -809,8 +809,10 @@ domain("discord.com") {
         border-left: 1px solid var(--MyW) !important;
         border-right: 1px solid var(--MyW) !important;
     }
+    nav[class*="wrapper"][class*="guilds"],
     nav[class*="wrapper"][class*="guilds"] * div[class*="scroller"][class*="systemPad"][class*="scroller"] {
         background-color: var(--Myred3) !important;
+        border-right: 1px solid var(--MyW) !important;
     }
     nav[class*="wrapper"][class*="guilds"] {
         border: 1px solid var(--MyW) !important;
