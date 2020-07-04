@@ -24,181 +24,188 @@
         "body": [
             "var(--MyB) !important;",
         ],
-        "description": "var(--MyB) "
+        "description": "var(--MyB)"
     },
     "MyW": {
         "prefix": "var(--MyW)",
         "body": [
             "var(--MyW) !important;",
         ],
-        "description": "var(--MyW) "
+        "description": "var(--MyW)"
+    },
+    "transparent": {
+        "prefix": "transparent",
+        "body": [
+            "transparent !important;",
+        ],
+        "description": "transparent"
     },
     "Myback": {
         "prefix": "var(--Myback)",
         "body": [
             "var(--Myback) !important;",
         ],
-        "description": "var(--Myback) "
+        "description": "var(--Myback)"
     },
     "Mytext": {
         "prefix": "var(--Mytext)",
         "body": [
             "var(--Mytext) !important;",
         ],
-        "description": "var(--Mytext) "
+        "description": "var(--Mytext)"
     },
     "Myred1": {
         "prefix": "var(--Myred1)",
         "body": [
             "var(--Myred1) !important;",
         ],
-        "description": "var(--Myred1) "
+        "description": "var(--Myred1)"
     },
     "Myred2": {
         "prefix": "var(--Myred2)",
         "body": [
             "var(--Myred2) !important;",
         ],
-        "description": "var(--Myred2) "
+        "description": "var(--Myred2)"
     },
     "Myred3": {
         "prefix": "var(--Myred3)",
         "body": [
             "var(--Myred3) !important;",
         ],
-        "description": "var(--Myred3) "
+        "description": "var(--Myred3)"
     },
     "Mygray1": {
         "prefix": "var(--Mygray1)",
         "body": [
             "var(--Mygray1) !important;",
         ],
-        "description": "var(--Mygray1) "
+        "description": "var(--Mygray1)"
     },
     "Mygray2": {
         "prefix": "var(--Mygray2)",
         "body": [
             "var(--Mygray2) !important;",
         ],
-        "description": "var(--Mygray2) "
+        "description": "var(--Mygray2)"
     },
     "Mygray3": {
         "prefix": "var(--Mygray3)",
         "body": [
             "var(--Mygray3) !important;",
         ],
-        "description": "var(--Mygray3) "
+        "description": "var(--Mygray3)"
     },
     "Mygreen1": {
         "prefix": "var(--Mygreen1)",
         "body": [
             "var(--Mygreen1) !important;",
         ],
-        "description": "var(--Mygreen1) "
+        "description": "var(--Mygreen1)"
     },
     "Mygree2": {
         "prefix": "var(--Mygreen2)",
         "body": [
             "var(--Mygreen2) !important;",
         ],
-        "description": "var(--Mygreen2) "
+        "description": "var(--Mygreen2)"
     },
     "Mygreen3": {
         "prefix": "var(--Mygreen3)",
         "body": [
             "var(--Mygreen3) !important;",
         ],
-        "description": "var(--Mygreen3) "
+        "description": "var(--Mygreen3)"
     },
     "Myblue1": {
         "prefix": "var(--Myblue1)",
         "body": [
             "var(--Myblue1) !important;",
         ],
-        "description": "var(--Myblue1) "
+        "description": "var(--Myblue1)"
     },
     "Myblue2": {
         "prefix": "var(--Myblue2)",
         "body": [
             "var(--Myblue2) !important;",
         ],
-        "description": "var(--Myblue2) "
+        "description": "var(--Myblue2)"
     },
     "Myblue3": {
         "prefix": "var(--Myblue3)",
         "body": [
             "var(--Myblue3) !important;",
         ],
-        "description": "var(--Myblue3) "
+        "description": "var(--Myblue3)"
     },
     "MyX1": {
         "prefix": "var(--MyX1)",
         "body": [
             "var(--MyX1) !important;",
         ],
-        "description": "var(--MyX1) "
+        "description": "var(--MyX1)"
     },
     "MyX2": {
         "prefix": "var(--MyX2)",
         "body": [
             "var(--MyX2) !important;",
         ],
-        "description": "var(--MyX2) "
+        "description": "var(--MyX2)"
     },
     "MyX3": {
         "prefix": "var(--MyX3)",
         "body": [
             "var(--MyX3) !important;",
         ],
-        "description": "var(--MyX3) "
+        "description": "var(--MyX3)"
     },
     "MyX4": {
         "prefix": "var(--MyX4)",
         "body": [
             "var(--MyX4) !important;",
         ],
-        "description": "var(--MyX4) "
+        "description": "var(--MyX4)"
     },
     "MyXB": {
         "prefix": "var(--MyXB)",
         "body": [
             "var(--MyXB) !important;",
         ],
-        "description": "var(--MyXB) "
+        "description": "var(--MyXB)"
     },
     "MyXW": {
         "prefix": "var(--MyXW)",
         "body": [
             "var(--MyXW) !important;",
         ],
-        "description": "var(--MyXW) "
+        "description": "var(--MyXW)"
     },
     "TwitterBlue": {
         "prefix": "var(--TwitterBlue)",
         "body": [
             "var(--TwitterBlue) !important;",
         ],
-        "description": "var(--TwitterBlue) "
+        "description": "var(--TwitterBlue)"
     },
     "TwitterRed": {
         "prefix": "var(--TwitterRed)",
         "body": [
             "var(--TwitterRed) !important;",
         ],
-        "description": "var(--TwitterRed) "
+        "description": "var(--TwitterRed)"
     },
     "TwitterPink": {
         "prefix": "var(--TwitterPink)",
         "body": [
             "var(--TwitterPink) !important;",
         ],
-        "description": "var(--TwitterPink) "
+        "description": "var(--TwitterPink)"
     },
     "Myborder": {
         "prefix": "var(--Myborder)",
         "body": [
             "var(--Myborder) !important;",
         ],
-        "description": "var(--Myborder) "
+        "description": "var(--Myborder)"
     }
 }

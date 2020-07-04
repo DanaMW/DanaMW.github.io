@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.30
+@version      0.0.31
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -345,6 +345,7 @@
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
         /* color: #117722 */
     }
+    .pi-page-bar,
     .auth-control,
     .logo,
     #pmg-global-header,
@@ -357,6 +358,7 @@
         background: transparent !important;
         background-color: transparent !important;
     }
+    .pi-page-bar,
     #pmg-global-header,
     header:not([role="banner"]) {
         background-color: var(--Myred3) !important;
@@ -388,6 +390,8 @@
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    .c-channel-placement-content,
+    .pi-content,
     .mscom-link.mscom-accordion-item-link:hover,
     .row-fluid.title,
     .row-fluid.banner,
@@ -404,6 +408,7 @@
     .msame_Header {
         background-color: transparent !important;
     }
+    .pi-content,
     .input-group-text,
     .inside-dialog,
     .roledoc,
@@ -415,6 +420,7 @@
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    .c-channel-placement-content,
     #divTerms,
     .exampleComboPopup2,
     .entry-area {
@@ -446,5 +452,8 @@
     }
     div[class*="c-heading"] {
         color: var(--TwitterRed) !important;
+    }
+    h3[class*="c-subheading"] {
+        background-color: transparent !important;
     }
 }
