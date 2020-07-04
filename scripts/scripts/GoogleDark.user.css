@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.25
+@version      0.1.26
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -756,7 +756,7 @@ url-prefix("https://groups.google.com/") {
         color: var(--Mygreen1) !important;
     }
     .AYBNrd.JuE4Vc,
-    .ellip,
+    /*.ellip,*/
     .V6Ytv,
     .slVwZ,
     .kno-fb-ctx,
@@ -831,7 +831,6 @@ url-prefix("https://groups.google.com/") {
     #hdtbSum,
     .sfbgg {
         background: var(--Myred3) !important;
-        border: none !important;
     }
     input {
         text-align: center !important;
@@ -940,11 +939,6 @@ url-prefix("https://groups.google.com/") {
     span {
         color: var(--MyW) !important;
         background-color: transparent !important;
-    }
-    .sfbg.nojsv {
-        border: none !important;
-        color: var(--Myred3) !important;
-        background-color: var(--Myred3) !important;
     }
     .Tg7LZd,
     .FiqGxd {
@@ -1123,6 +1117,13 @@ url-prefix("https://groups.google.com/") {
     svg path[d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"] {
         filter: invert(180) !important;
     }
+    g-more-link,
+    .zTpPx.V7Sr0.vH5Lmd {
+        text-align: center;
+    }
+    .zTpPx.V7Sr0.vH5Lmd,
+    .kLhEKe,
+    .Hhmu2e.mod.NFQFxe.viOShc.LKPcQc,
     .a1vOw.BY2RHc.bhpG1c.i49rzb,
     #eer-masthead,
     .hVU0u,
@@ -1225,6 +1226,7 @@ url-prefix("https://groups.google.com/") {
     }
     cite {
         color: var(--MyW) !important;
+        background-color: transparent !important;
         text-align: center !important;
     }
     .c0L1fd,
@@ -1273,5 +1275,12 @@ url-prefix("https://groups.google.com/") {
     }
     .kp-wholepage.kp-wholepage-osrp.HSryR.EyBRub {
         width: calc(100% - 10%) !important;
+    }
+    html[itemtype="http://schema.org/WebPage"] .sfbgg {
+        background-color: var(--MyB) !important;
+    }
+    html[itemtype="http://schema.org/SearchResultsPage"] .sfbg,
+    html[itemtype="http://schema.org/SearchResultsPage"] .sfbgg {
+        background-color: var(--Myred3) !important;
     }
 }
