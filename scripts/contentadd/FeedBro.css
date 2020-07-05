@@ -1,8 +1,11 @@
 /* feedbro */
 
 @-moz-document url-prefix("moz-extension://c489fead-1ce3-4b60-ab7d-3d1694d00510/reader.html"),
+url-prefix("moz-extension://c489fead-1ce3-4b60-ab7d-3d1694d00510/options.html"),
 url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html"),
-url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/reader.html") {
+url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/option.html"),
+url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/reader.html"),
+url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
     html,
     body {
         background-color: var(--MyB) !important;
@@ -104,7 +107,9 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/reader.html") {
     alertify-inner {
         color: #000 !important;
     }
-    .alertify-button {
+    .imagebutton,
+    tr select,
+    td a.alertify-button {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -119,7 +124,9 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/reader.html") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    .alertify-button:hover {
+    .imagebutton:hover,
+    tr select:hover,
+    td a.alertify-button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -136,7 +143,9 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/reader.html") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    .alertify-button:active {
+    .imagebutton:active,
+    tr select:active,
+    td a.alertify-button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
