@@ -23,6 +23,11 @@ url-prefix("moz-extension://0d38b137-599e-4691-a11e-ef2a65b1ed11/") {
     span,
     a {
         color: var(--MyW) !important;
+        background-color: transparent !important;
+    }
+    div[data-des="*"],
+    span {
+        border-color: var(--MyW) !important;
     }
     div[data-des="*"],
     #firewall,
