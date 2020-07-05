@@ -120,7 +120,7 @@ url-prefix("moz-extension://0d38b137-599e-4691-a11e-ef2a65b1ed11/") {
     }
     #firewallContainer>div>span {
         background-color: var(--Mygray3) !important;
-        /*var(--bg-popup-cell-1);*/
+        border: var(--MyW) !important;
     }
     #firewallContainer>div.isCname>span:first-of-type {
         color: var(--fg-popup-cell-cname);
@@ -157,7 +157,7 @@ url-prefix("moz-extension://0d38b137-599e-4691-a11e-ef2a65b1ed11/") {
     }
     body.advancedUser #firewallContainer>div>span.noopRule,
     #actionSelector>#dynaNoop {
-        background-color: var(--bg-popup-cell-noop);
+        background-color: var(--bg-popup-cell-noop) !important;
     }
     body.advancedUser #firewallContainer>div>span.ownRule,
     #firewallContainer>div>span.ownRule {
