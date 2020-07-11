@@ -2,7 +2,7 @@
 @name         Business Insider Dark
 @namespace    http://danamw.github.io/scripts/scripts/BusinessInsiderDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BusinessInsiderDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -33,6 +33,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
@@ -41,6 +42,7 @@
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
+    .icon-set.share-button,
     .button,
     button {
         -moz-appearance: none;
@@ -113,9 +115,22 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+    .article-title {
+        color: var(--TwitterBlue) !important;
+    }
     .site-header__bi-logo a.logo,
     .site-header__mi-logo a.logo {
         Color: var(--TwitterBlue) !important;
         filter: invert(1) !important;
+    }
+    script#myFinance-widget-script {
+        display: none !important;
+    }
+    b,
+    li::marker {
+        color: var(--TwitterRed) !important;
+    }
+    strong {
+        color: var(--MyW);
     }
 }
