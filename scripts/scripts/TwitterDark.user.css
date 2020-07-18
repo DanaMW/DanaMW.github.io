@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.58
+@version      0.0.59
 @description  My Twitter Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -118,6 +118,7 @@ domain("twimg.com") {
         background-image: none !important;
         background-color: var(--MyB) !important;
     }
+    article[role="article"],
     article {
         margin-top: 5px !important;
         margin-bottom: 5px !important;
@@ -128,7 +129,6 @@ domain("twimg.com") {
     article:hover {
         background-color: var(--MyB) !important;
         box-shadow: 0px 0px 30px var(--Myred1) !important;
-        border: 2px solid var(--Myred1) !important;
     }
     .css-1dbjc4n.r-4rwt92.r-14skgim.r-18p6if4.r-1p0dtai.r-1d2f490.r-633pao.r-u8s1d.r-zchlnj.r-ipm5af.r-184en5c {
         border-color: var(--Myred1) !important;
