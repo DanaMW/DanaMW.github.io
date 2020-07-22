@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.26
+@version      0.1.27
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1121,6 +1121,9 @@ url-prefix("https://groups.google.com/") {
     .zTpPx.V7Sr0.vH5Lmd {
         text-align: center;
     }
+    .c.ptJHdc.commercial-unit-desktop-rhs.mnr-c.rhsvw,
+    .pla-ikpd__modal-content,
+    [role="dialog"],
     .zTpPx.V7Sr0.vH5Lmd,
     .kLhEKe,
     .Hhmu2e.mod.NFQFxe.viOShc.LKPcQc,
@@ -1137,6 +1140,9 @@ url-prefix("https://groups.google.com/") {
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    .c.ptJHdc.commercial-unit-desktop-rhs.mnr-c.rhsvw,
+    div[class*="modal-content"],
+    [role="dialog"],
     .fLJSwc,
     .OeVqAd,
     .ru14E.kF2iof,
@@ -1282,5 +1288,8 @@ url-prefix("https://groups.google.com/") {
     html[itemtype="http://schema.org/SearchResultsPage"] .sfbg,
     html[itemtype="http://schema.org/SearchResultsPage"] .sfbgg {
         background-color: var(--Myred3) !important;
+    }
+    div[class*="modal"] {
+        background-color: var(--MyXB) !important;
     }
 }
