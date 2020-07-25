@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.32
+@version      0.0.33
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -132,7 +132,7 @@ regexp("moz-extension://.*") {
     #installed::after {
         background-color: var(--Myback) !important;
     }
-    .dropbtn,
+    button>span,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -151,7 +151,6 @@ regexp("moz-extension://.*") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    .dropbtn:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -172,7 +171,6 @@ regexp("moz-extension://.*") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    .dropbtn:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
