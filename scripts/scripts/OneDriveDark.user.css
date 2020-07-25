@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -232,12 +232,17 @@
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
-    input[role="search"],
+    input,
     /* .od-SearchBox.od-SearchBox--active input, */
     textarea,
     .od-SharingSection-PermissionsPile {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
+        border-radius: 25px !important;
+    }
+    form[aria-label="Search everything"] {
+        background-image: none !important;
+        background-color: transparent !important;
     }
     #uxp_ftr_control,
     .LeftNav-fadient::after {
