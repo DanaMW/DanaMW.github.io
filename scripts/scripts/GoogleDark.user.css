@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.31
+@version      0.1.32
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -400,6 +400,7 @@ url-prefix("https://groups.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    a[jscontroller="Z7cbCf"],
     .WGYX8,
     .KYeOtb,
     a.NQV3m,
@@ -475,6 +476,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[jscontroller="Z7cbCf"]:hover,
     .sbct.sbhl,
     .sbct:hover,
     .WGYX8:hover,
@@ -577,6 +579,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[jscontroller="Z7cbCf"]:active,
     .WGYX8:active,
     .KYeOtb:active,
     a.NQV3m:active,
