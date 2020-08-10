@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.98
+@version      0.0.99
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -882,6 +882,9 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-modal-inner {
         border-radius: 25px !important;
     }
+    .caldisabled,
+    #calweeks,
+    #calbody,
     ul.lst.lst-modal,
     .js-column-header.js-action-header.flex-shrink--0.column-header,
     label.checkbox,
@@ -911,6 +914,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-dropdown.dropdown-menu {
         border: 1px solid var(--MyW) !important;
     }
+    #calweeks,
     .js-dropdown.dropdown-menu,
     ul.lst.lst-modal,
     .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10,
@@ -927,6 +931,8 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(60, 60, 60, 0.9) 100%, transparent) !important;
     }
+    #calbody,
+    .popover,
     /*
     .column-holder,
     .column-panel,
