@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.33
+@version      0.1.34
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -400,6 +400,7 @@ url-prefix("https://groups.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .AlKDIb.pcxvjc,
     a[jscontroller="Z7cbCf"],
     .WGYX8,
     .KYeOtb,
@@ -476,6 +477,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .AlKDIb.pcxvjc:hover,
     a[jscontroller="Z7cbCf"]:hover,
     .sbct.sbhl,
     .sbct:hover,
@@ -579,6 +581,7 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .AlKDIb.pcxvjc:active,
     a[jscontroller="Z7cbCf"]:active,
     .WGYX8:active,
     .KYeOtb:active,
@@ -1124,6 +1127,7 @@ url-prefix("https://groups.google.com/") {
     .zTpPx.V7Sr0.vH5Lmd {
         text-align: center;
     }
+    .mod.NFQFxe.viOShc.LKPcQc,
     g-card .hntNk.vk_c.vk_bk,
     .c.ptJHdc.commercial-unit-desktop-rhs.mnr-c.rhsvw,
     .pla-ikpd__modal-content,
@@ -1138,12 +1142,14 @@ url-prefix("https://groups.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .TRTe9b.DArqwd,
     div[role="heading"] {
         text-align: center !important;
     }
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    div[class*="gm-style"],
     .y8Jpof:hover,
     g-card .hntNk.vk_c.vk_bk,
     .c.ptJHdc.commercial-unit-desktop-rhs.mnr-c.rhsvw,
@@ -1157,7 +1163,7 @@ url-prefix("https://groups.google.com/") {
     .UUcaod,
     #eer-ra,
     .Ih2lSe,
-    div[role="heading"]:not(.LGOjhe):not(.UKbGGd):not(.iKt1P),
+    div[role="heading"]:not(.LGOjhe):not(.UKbGGd):not(.iKt1P):not(.mCBkyc):not(.xP45xc),
     .MXwBff:hover,
     .gb_F.gb_na,
     a[jsname="uy6ald"]:hover,
@@ -1270,6 +1276,7 @@ url-prefix("https://groups.google.com/") {
         width: 650px !important;
         max-width: 650px !important;
     }
+    .amyZLb,
     span.XCKyNd {
         color: var(--TwitterRed) !important;
     }
