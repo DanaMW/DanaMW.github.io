@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.19
+@version      0.0.20
 @author       Dana Meli
 @homepageURL  https://github.com/DanaMW
 ==/UserStyle== */
@@ -184,6 +184,7 @@
     [data-icon-name] {
         color: var(--MyW) !important;
     }
+    li a.internal.sign-in-link,
     .cJ5P-H7zqLg6pBWAa13NW,
     ._3MzUg_7Zg60Ni1B0EDVQhm,
     ._2gP9fdm7RzEmjjcsBauln7,
@@ -214,6 +215,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    li a.internal.sign-in-link:hover,
     div[role="option"]:hover,
     .cJ5P-H7zqLg6pBWAa13NW:hover,
     ._2gP9fdm7RzEmjjcsBauln7:hover,
@@ -250,6 +252,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    li a.internal.sign-in-link:active,
     div[role="option"]:active,
     .cJ5P-H7zqLg6pBWAa13NW:active,
     ._2gP9fdm7RzEmjjcsBauln7:active,
@@ -403,6 +406,8 @@
         border: none !important;
         border-color: transparent !important;
     }
+    aside.static-strip,
+    aside>.plate,
     div[role="banner"],
     .ms-Persona-imageArea.imageArea-92,
     .ms-Persona-image,
@@ -415,7 +420,10 @@
         background: transparent !important;
         border: none !important;
     }
+    aside.static-strip,
+    aside>.plate,
     div[role="banner"] {
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         /*
         background-size: 1418px 48px !important;
