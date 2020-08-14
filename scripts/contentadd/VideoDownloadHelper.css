@@ -139,7 +139,10 @@ url-prefix("moz-extension://1e2b8692-70f2-4fa0-81b4-51954ffab233/") {
         background-color: #fff;
     }
     .main-panel .main-content .content-hits .no-media p {
-        color: #888;
+        color: var(--MyW) !important;
+    }
+    .main-panel .main-content .content-hits .no-media {
+        background-color: var(--Mygray3) !important;
     }
     .main-panel .main-content .content-hits .hit {
         border-bottom: 1px solid #d0d1d1;
