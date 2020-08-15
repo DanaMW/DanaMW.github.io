@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.59
+@version      0.0.60
 @description  My Twitter Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -392,7 +392,7 @@ domain("twimg.com") {
     .css-1dbjc4n.r-1igl3o0.r-rull8r.r-qklmqi.r-1wtj0ep.r-1j3t67a.r-1w50u8q,
     div.css-1dbjc4n.r-kemksi.r-1h3ijdo,
     .css-1dbjc4n.r-kemksi.r-1igl3o0.r-rull8r.r-qklmqi.r-1h3ijdo,
-    .css-1dbjc4n.r-yfoy6g.r-1h3ijdo css-1dbjc4n.r-1awozwy.r-18u37iz.r-1h3ijdo.r-1777fci.r-1jgb5lz.r-sb58tz.r-1j3t67a.r-13qz1uu,
+    .css-1dbjc4n.r-yfoy6g.r-1h3ijdo .css-1dbjc4n.r-1awozwy.r-18u37iz.r-1h3ijdo.r-1777fci.r-1jgb5lz.r-sb58tz.r-1j3t67a.r-13qz1uu,
     div[role="link"]:hover,
     a[href="/DanaMW/who_to_follow"],
     .PageContainer,
