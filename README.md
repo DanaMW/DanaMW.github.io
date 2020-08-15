@@ -1,2 +1,2 @@
 # DanaMW.github.io
-My private attempt at a web site
+My attempt at a web site
