@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.77
+@version      0.0.78
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -810,16 +810,6 @@ domain("discord.com") {
         border-left: 1px solid var(--MyW) !important;
         border-right: 1px solid var(--MyW) !important;
     }
-    div[role="listitem"][class*="clickable"]:not([class*="member"]),
-    div[class*="container"] nav[aria-label="Servers sidebar"],
-    nav[class*="wrapper"][class*="guilds"],
-    nav[class*="wrapper"][class*="guilds"] * div[class*="scroller"][class*="none"][class*="scrollerBase"] {
-        background-color: var(--Myred3) !important;
-        border-right: 1px solid var(--MyW) !important;
-    }
-    nav[class*="wrapper"][class*="guilds"] {
-        border: 1px solid var(--MyW) !important;
-    }
     div[class*="mediaBarWrapper"][class*="fakeEdges"],
     div[class*="buffer"][class*="fakeEdges"] {
         background-color: var(--Myred3) !important;
@@ -845,5 +835,23 @@ domain("discord.com") {
     div[role="textbox"],
     span[data-offset-key="algb1-0-0"] span[data-text="true"] {
         color: var(--MyW) !important;
+    }
+    /* all bullshit below Nothing works */
+    div[class*="listItem"]>div[class*="guildSeparator"] {
+        color: var(--Myred1) !important;
+        background-color: var(--Myred1) !important;
+    }
+    div[role="listitem"][class*="clickable"]:not([class*="member"]),
+    nav[aria-label="Servers sidebar"],
+    nav[class*="wrapper"][class*="guilds"],
+    nav[class*="wrapper"][class*="guilds"] * div[class*="scroller"][class*="none"][class*="scrollerBase"] {
+        background-color: var(--Myred3) !important;
+        border-right: 1px solid var(--MyW) !important;
+    }
+    nav[class*="wrapper"][class*="guilds"] {
+        border: 1px solid var(--MyW) !important;
+    }
+    div[class*="pill"] {
+        color: var(--Mygreen1) !important;
     }
 }
