@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.76
+@version      0.0.77
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -592,7 +592,7 @@ domain("discord.com") {
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
-    div[id*="channels"] div[class*="content"],
+    div[role="listitem"]:not([class*="clickable"]),
     foreignObject>a[class*="wrapper"],
     div[class*="expandedFolderIconWrapper"],
     div[class*="closedFolderIconWrapper"],
@@ -619,8 +619,8 @@ domain("discord.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    div[class*="containerDefault"] div[id*="channels"],
-    div[id*="channels"] div[class*="content"]:hover,
+    div[role="listitem"]:not([class*="clickable"]):hover,
+    div[class*="containerDefault"][class*="selected"] div[role="listitem"]:not([class*="clickable"]),
     div[aria-label="More"][role=button]:hover,
     div[class*="friendsRow"]:hover,
     a[class*="wrapper"][class*="selected"],
@@ -667,6 +667,7 @@ domain("discord.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[role="listitem"]:not([class*="clickable"]):active,
     div[aria-label="More"][role=button]:active,
     div[class*="expandedFolderIconWrapper"]:active,
     div[class*="closedFolderIconWrapper"]:active,
@@ -809,6 +810,7 @@ domain("discord.com") {
         border-left: 1px solid var(--MyW) !important;
         border-right: 1px solid var(--MyW) !important;
     }
+    div[role="listitem"][class*="clickable"]:not([class*="member"]),
     div[class*="container"] nav[aria-label="Servers sidebar"],
     nav[class*="wrapper"][class*="guilds"],
     nav[class*="wrapper"][class*="guilds"] * div[class*="scroller"][class*="none"][class*="scrollerBase"] {
