@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.12
+@version      0.0.13
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -475,6 +475,7 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    li.sbsb_c.gsfs.sbsb_d,
     #collapse-controls-section:hover,
     yt-chip-cloud-chip-renderer:hover,
     ytd-menu-service-item-renderer:hover,
@@ -672,6 +673,7 @@ domain("studio.youtube.com") {
         border-radius: 25px !important;
     }
     /* ---------------------------TOP BANNER----------------------------- */
+    .sbfl_b,
     ytcp-header,
     #container.style-scope.ytd-masthead,
     #masthead.masthead-finish,
