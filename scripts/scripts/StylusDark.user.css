@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.34
+@version      0.0.35
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -291,6 +291,7 @@ regexp("moz-extension://.*") {
         background-color: var(--Myback) !important;
         border-color: var(--Myborder) !important;
     }
+    #options,
     body,
     #help-popup,
     #message-box>div,
@@ -298,22 +299,27 @@ regexp("moz-extension://.*") {
     #message-box-title,
     .dropdown-content,
     #header {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(20, 20, 20, 0.8), rgba(75, 75, 75, 0.8), rgba(20, 20, 20, 0.8) 100%, transparent) !important;
+        background-color: var(--Mygray3) !important;
     }
+    .menu-items-wrapper,
+    #options-title,
     select#manage.newUI.sort,
     select,
     #message-box.danger #message-box-title {
         background-color: var(--Myred1) !important;
         background-image: linear-gradient(to top, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
     }
-    /*
-    #options:not([data-pref="manage.options.expanded"]),
-    */
+    select#manage.newUI.sort,
+    select {
+        width: 200px !important;
+    }
     .odd {
         background-image: linear-gradient(to left, rgba(20, 20, 20, 0.8), rgba(75, 75, 75, 0.8), rgba(20, 20, 20, 0.8) 100%, transparent) !important;
     }
     .even {
         background-image: linear-gradient(to left, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
+    }
+    #stylus {
+        background-color: var(--MyB) !important;
     }
 }
