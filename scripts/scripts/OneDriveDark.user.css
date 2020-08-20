@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.16
+@version      0.0.17
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -143,6 +143,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    #appLauncherTop,
     span[id*="header"]:hover,
     button#allAppsLink:hover,
     #c_clogoc:hover,
@@ -234,12 +235,15 @@
     }
     input,
     /* .od-SearchBox.od-SearchBox--active input, */
+    .ms-TextField,
     textarea,
     .od-SharingSection-PermissionsPile {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 25px !important;
     }
+    .od-FolderCoverTile,
+    .od-ItemActivityFeed-noActivities,
     form[aria-label="Search everything"] {
         background-image: none !important;
         background-color: transparent !important;
@@ -256,11 +260,16 @@
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+    .od-FolderCoverTile,
+    .InfoPaneSection--preview,
+    .od-DetailsPane-SecondaryPane,
+    .od-DetailsPane-PrimaryPane,
     #appLauncherMainView,
     [role="region"] {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .od-DetailsPane-PrimaryPane-header,
     .od-StandardDialog,
     [role="gridcell"] {
         background-color: var(--Myred3) !important;
