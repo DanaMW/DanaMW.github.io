@@ -72,4 +72,27 @@ url-prefix("moz-extension://38ef8766-096d-4025-8d61-8e1ea9ea4994/content/options
     footer {
         background: var(--Mygray3) !important;
     }
+    .subsection,
+    main,
+    #sound-section,
+    html,
+    body {
+        background: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+    .error {
+        background: #ff0039;
+        color: white;
+    }
+    input {
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+        text-align: center !important;
+    }
+    .tab-container {
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+    }
 }

@@ -203,6 +203,9 @@ url-prefix("moz-extension://0d38b137-599e-4691-a11e-ef2a65b1ed11/") {
     .cm-search-widget .fa-icon {
         fill: var(--MyW) !important;
     }
+    .fa-icon {
+        filter: invert(100%) !important;
+    }
     .cm-search-widget .fa-icon:not(.fa-icon-ro):hover {
         fill: var(--Myred1) !important;
     }
