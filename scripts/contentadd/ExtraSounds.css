@@ -1,6 +1,7 @@
 @-moz-document url-prefix("moz-extension://728d9f2a-8a4e-4b1e-84f9-a1a1506123de/options/options.html"),
 url-prefix("moz-extension://9c2fd4b3-6881-4568-8c0e-fe3031964655/options/options.html"),
 url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/options/options.html") {
+    #global-container,
     html,
     body {
         background-color: var(--MyB) !important;
@@ -33,6 +34,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/options/options
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
+    .tab,
     button#custom-sound.tab {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -48,6 +50,8 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/options/options
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .active-tab,
+    .tab:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -65,7 +69,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/options/options
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    button:active {
+    .tab:active button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
