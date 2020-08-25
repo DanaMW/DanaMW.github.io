@@ -423,7 +423,7 @@ search-textbox:hover {
     background-color: var(--Myred1) !important;
 }
 
-button,
+button[action="install-postponed"],
 .page-options-menu,
 .category-name {
     -moz-appearance: none;
@@ -441,7 +441,7 @@ button,
     box-shadow: 0 1px 4px 1px var(--MyB) !important;
 }
 
-button:hover,
+button[action="install-postponed"]:active,
 .page-options-menu:hover,
 .category-name:hover {
     -moz-appearance: none;
@@ -465,7 +465,7 @@ button[role="menuitem"]:hover {
     background-color: var(--MyX1) !important;
 }
 
-button:active,
+button[action="install-postponed"]:active,
 .page-options-menu:active,
 .category-name:active {
     -moz-appearance: none;
