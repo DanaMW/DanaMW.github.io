@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.21
+@version     0.0.25
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -441,7 +441,6 @@ button[action="install-postponed"],
     box-shadow: 0 1px 4px 1px var(--MyB) !important;
 }
 
-button[role="menuitem"]:hover,
 button[action="install-postponed"]:active,
 .page-options-menu:hover,
 .category-name:hover {
