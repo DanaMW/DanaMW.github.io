@@ -419,9 +419,12 @@ search-textbox:hover {
     background-color: var(--MyX1) !important;
 }
 
+
+/*
 .back-button:hover {
     background-color: var(--Myred1) !important;
 }
+*/
 
 button[action="install-postponed"],
 .page-options-menu,
@@ -441,6 +444,7 @@ button[action="install-postponed"],
     box-shadow: 0 1px 4px 1px var(--MyB) !important;
 }
 
+button[role="menuitem"]:hover,
 button[action="install-postponed"]:active,
 .page-options-menu:hover,
 .category-name:hover {
@@ -461,9 +465,12 @@ button[action="install-postponed"]:active,
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
 
+
+/*
 button[role="menuitem"]:hover {
     background-color: var(--MyX1) !important;
 }
+*/
 
 button[action="install-postponed"]:active,
 .page-options-menu:active,
