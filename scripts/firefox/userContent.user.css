@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.25
+@version     0.0.26
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -423,9 +423,11 @@ search-textbox:hover {
     background-color: var(--Myred1) !important;
 }
 
+button.primary,
+button.disco-cta-button,
+span.category-name,
 button[action="install-postponed"],
-.page-options-menu,
-.category-name {
+.page-options-menu {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -441,9 +443,12 @@ button[action="install-postponed"],
     box-shadow: 0 1px 4px 1px var(--MyB) !important;
 }
 
+button.primary:hover,
+button.disco-cta-button:hover,
+button.category[selected=""] span.category-name,
+span.category-name:hover,
 button[action="install-postponed"]:active,
-.page-options-menu:hover,
-.category-name:hover {
+.page-options-menu:hover {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -465,9 +470,11 @@ button[role="menuitem"]:hover {
     background-color: var(--MyX1) !important;
 }
 
+button.primary:active,
+button.disco-cta-button:active,
+span.category-name:active,
 button[action="install-postponed"]:active,
-.page-options-menu:active,
-.category-name:active {
+.page-options-menu:active {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
