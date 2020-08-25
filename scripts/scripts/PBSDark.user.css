@@ -2,7 +2,7 @@
 @name         PBS Dark
 @namespace    http://danamw.github.io/scripts/scripts/PBSDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PBSDark.user.css
-@version      0.0.6
+@version      0.0.8
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -42,6 +42,7 @@
     a {
         color: var(--MyW) !important;
     }
+    #pbs_dh,
     .container__outer.page-header__outer {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -49,6 +50,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    a[class*="jsx"],
     select,
     a.video-block__collections__link,
     a.btn,
@@ -67,6 +69,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class*="jsx"]:hover,
     .nav-item:hover:not(.nav-item--user),
     select:hover,
     a.video-block__collections__link:hover,
@@ -88,6 +91,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[class*="jsx"]:active,
     select:active,
     a.video-block__collections__link:active,
     a.btn:active,
