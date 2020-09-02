@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.26
+@version     0.0.28
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -421,6 +421,10 @@ search-textbox:hover {
 
 .back-button:hover {
     background-color: var(--Myred1) !important;
+}
+
+button {
+    background: none !important;
 }
 
 button.primary,
