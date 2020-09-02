@@ -423,10 +423,6 @@ search-textbox:hover {
     background-color: var(--Myred1) !important;
 }
 
-button {
-    background: none !important;
-}
-
 button.primary,
 button.disco-cta-button,
 span.category-name,
