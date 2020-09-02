@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.42
+@version      0.1.43
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -23,7 +23,8 @@ url-prefix("https://policies.google.com/"),
 url-prefix("https://myaccount.google.com/"),
 url-prefix("https://gstatic.com/"),
 url-prefix("https://maps.google.com/"),
-url-prefix("https://groups.google.com/") {
+url-prefix("https://groups.google.com/"),
+url-prefix("https://myactivity.google.com/") {
     #main,
     .VmOpGe,
     html,
@@ -587,6 +588,11 @@ url-prefix("https://groups.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[class="gb_3d gb_le gb_ce gb_be"],
+    a.WpHeLc.VfPpkd-RLmnJb:hover {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
+    }
     g-raised-button:active,
     .AlKDIb.pcxvjc:active,
     a[jscontroller="Z7cbCf"]:active,
@@ -874,6 +880,9 @@ url-prefix("https://groups.google.com/") {
     a {
         color: var(--MyW) !important;
     }
+    h3 {
+        color: var(--TwitterPink) !important;
+    }
     a:hover b,
     a>b:hover,
     a>b:hover a,
@@ -1047,6 +1056,7 @@ url-prefix("https://groups.google.com/") {
         background-color: var(--Myred1) !important;
         color: var(--Myred1) !important;
     }
+    .PfcDvc,
     .EUjJDc,
     .banner h1 {
         color: var(--MyW) !important;
@@ -1156,6 +1166,11 @@ url-prefix("https://groups.google.com/") {
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    div[class="DPyFzd s94Fzc lZ5Kf qetQId"],
+    .vVmo9e,
+    .Si6A0c.UPn2Eb,
+    .VfPpkd-EScbFb-JIbuQc.jEzKCe.UPn2Eb,
+    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  ozoiFe"],
     .c.ptJHdc.commercial-unit-desktop-rhs.mnr-c.VjDLd,
     .bYhoud,
     md-card,
@@ -1202,6 +1217,7 @@ url-prefix("https://groups.google.com/") {
     .gb_ob.gb_pb {
         color: var(--TwitterBlue) !important;
     }
+    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  eO6reb"],
     .VFlF2c.oGE0Pb,
     div[role="menubar"],
     /* #wp-tabs-container, */
@@ -1236,6 +1252,9 @@ url-prefix("https://groups.google.com/") {
     }
     .YtVmAd {
         background-color: var(--Myred3) !important;
+    }
+    .YtVmAd>div {
+        background-color: var(--Myred1) !important;
     }
     .bx0cub {
         border-color: var(--Myred1) !important;
