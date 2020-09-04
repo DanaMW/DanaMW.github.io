@@ -2,7 +2,7 @@
 @name         WT Social Dark
 @namespace    http://danamw.github.io/scripts/scripts/WTSocialDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WTSocialDark.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -60,6 +60,7 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+    h4,
     p,
     .sidebar__header,
     a {
@@ -168,6 +169,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    a.notification-row:hover,
     #linkloadingstuff,
     #profile-name,
     .alert,
@@ -218,5 +220,17 @@
         position: relative;
         left: 15px !important;
         width: 100% !important;
+    }
+    .tox-statusbar,
+    .tox-toolbar__primary,
+    .tox-toolbar-overlord {
+        background-color: transparent !important;
+    }
+    .wt-card-body {
+        background: none !important;
+    }
+    .tox-tbtn * svg,
+    button * svg {
+        filter: invert(1) !important;
     }
 }
