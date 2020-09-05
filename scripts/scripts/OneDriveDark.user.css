@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -240,7 +240,11 @@
     .od-SharingSection-PermissionsPile {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        border-radius: 25px !important;
+        border-radius: 15px !important;
+    }
+    .ms-TextField {
+        border-radius: 15px !important;
+        background-color: transparent !important;
     }
     .od-FolderCoverTile,
     .od-ItemActivityFeed-noActivities,
@@ -260,6 +264,7 @@
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+    div[class*="od-DetailsPane"],
     .od-FolderCoverTile,
     .InfoPaneSection--preview,
     .od-DetailsPane-SecondaryPane,
@@ -269,6 +274,9 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .od-Share,
+    div[class*="ms-Callout"],
+    .ms-Tooltip,
     .od-DetailsPane-PrimaryPane-header,
     .od-StandardDialog,
     [role="gridcell"] {
@@ -280,5 +288,8 @@
     }
     .od-QuotaBar-used {
         border-color: var(--Myred1) !important;
+    }
+    div[class="ms-TextField-fieldGroup"] {
+        background: transparent !important;
     }
 }
