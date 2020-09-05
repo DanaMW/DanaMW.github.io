@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.45
+@version      0.1.46
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -403,6 +403,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .hHn2se.z1asCe.QJh5z,
     g-raised-button,
     .AlKDIb.pcxvjc,
     a[jscontroller="Z7cbCf"],
@@ -447,7 +448,7 @@ url-prefix("https://myactivity.google.com/") {
     #TEPD0b,
     input.ksb,
     .hdtb-msel,
-    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]),
+    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb),
     .gb_O,
     .gb_fa,
     g-left-button,
@@ -481,6 +482,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .hHn2se.z1asCe.QJh5z:hover,
     [role="menuitem"]:hover,
     g-raised-button:hover,
     md-toolbar,
@@ -550,7 +552,7 @@ url-prefix("https://myactivity.google.com/") {
     .hdtbItm:hover,
     .mitem:hover,
     .mitem.msel,
-    [role="button"]:hover:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
+    [role="button"]:hover:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]):not(.gmlSVb),
     a[role="menuitem"]:hover,
     .gb_O:hover,
     .gb_fa.gb_ng:hover,
@@ -593,6 +595,7 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+    .hHn2se.z1asCe.QJh5z:active,
     g-raised-button:active,
     .AlKDIb.pcxvjc:active,
     a[jscontroller="Z7cbCf"]:active,
@@ -641,7 +644,7 @@ url-prefix("https://myactivity.google.com/") {
     input.ksb:active,
     .hdtbItm:active,
     .mitem:active,
-    [role="button"]:active:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]),
+    [role="button"]:active:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not(.gmlSVb),
     a[role="menuitem"]:active,
     .gb_O:active,
     .gb_fa.gb_ng:active,
@@ -1301,6 +1304,7 @@ url-prefix("https://myactivity.google.com/") {
     .sJyeOd.jrYUfb {
         border-left-color: var(--TwitterRed) !important;
     }
+    div[class="g"],
     .g,
     .rc,
     .kp-blk.Wnoohf.OJXvsb>.xdpopen,
@@ -1311,6 +1315,9 @@ url-prefix("https://myactivity.google.com/") {
     #rso {
         width: 650px !important;
         max-width: 650px !important;
+    }
+    .rc {
+        margin-left: -15px !important;
     }
     #result-stats,
     .amyZLb,
