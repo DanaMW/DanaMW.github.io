@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.0.99
+@version      0.1.00
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -542,7 +542,9 @@ url-prefix("https://twitter.com/i/safety/") {
     header[class="js-compose-header compose-header"] {
         margin-right: 15px !important;
     }
+    /*
     .column-header-links,
+    */
     div[role="button"]:not([style*="position: absolute"]),
     .Button.Button--primary.block.txt-size--18.txt-center,
     .js-dismiss,
@@ -582,7 +584,6 @@ url-prefix("https://twitter.com/i/safety/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    .column-header-links:hover,
     .typeahead-item.s-selected,
     .js-hide-drawer.margin-t--8.margin-b--10.Button.Button--primary.Button--large.tweet-button.txt-left:not(.is-hidden),
     .search-tip-item-hover.txt-size--12:hover,
@@ -600,6 +601,9 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-header-action:hover,
     .js-drawer-close:hover,
     .js-detail-view-inline-text:hover,
+    /*
+    .column-header-links:hover,
+    */
     .js-action-header-button:hover,
     .mdl-btn-media:hover,
     .new-tweets-bar:hover,
@@ -633,7 +637,6 @@ url-prefix("https://twitter.com/i/safety/") {
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
     }
-    .column-header-links:active,
     div[role="button"]:active:not([style*="position: absolute"]),
     .Button.Button--primary.block.txt-size--18.txt-center:active,
     .js-dismiss:active,
@@ -646,6 +649,9 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-header-action:active,
     .js-drawer-close:active,
     .js-detail-view-inline-text:active,
+    /*
+    .column-header-links:active,
+    */
     .js-action-header-button:active,
     .mdl-btn-media:active,
     .new-tweets-bar:active,
