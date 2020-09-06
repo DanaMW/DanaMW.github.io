@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.35
+@version      0.0.36
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -50,6 +50,12 @@ regexp("moz-extension://.*") {
     a.style-name {
         color: var(--Mygray1) !important;
     }
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    h2 {
+        color: var(--TwitterPink) !important;
+    }
     .disabled h2::after {
         background-color: var(--MyX1) !important;
         color: var(--Mytext) !important;
@@ -58,23 +64,9 @@ regexp("moz-extension://.*") {
         width: 200px !important;
         align-content: center !important;
     }
-    a#unfile-all-styles,
-    a#sync-dropbox-import,
-    a#file-all-styles,
-    a#sync-dropbox-export {
-        background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray2), var(--Mygray3)) !important;
-    }
-    a#unfile-all-styles:hover,
-    a#sync-dropbox-import:hover,
-    a#file-all-styles:hover,
-    a#sync-dropbox-export:hover {
-        background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred2), var(--Myred3)) !important;
-        color: var(--MyW) !important;
-    }
     h2.style-name:hover .style-name-link,
     .style-name-link:hover {
-        color: var(--MyW) !important;
-        text-shadow: 1px -1px 0 var(--MyB) !important;
+        color: var(--TwitterRed) !important;
     }
     span.target::before,
     span.target::after,
@@ -100,9 +92,9 @@ regexp("moz-extension://.*") {
         border: 1px solid var(--MyW) !important;
     }
     .svg-icon:hover {
-        -moz-animation: 1s infinite alternate flash;
-        -webkit-animation: 1s infinite alternate flash;
-        animation: 1s infinite alternate flash
+        -moz-animation: 500ms infinite alternate flash;
+        -webkit-animation: 500ms infinite alternate flash;
+        animation: 500ms infinite alternate flash
     }
     @keyframes flash {
         0% {
@@ -132,7 +124,10 @@ regexp("moz-extension://.*") {
     #installed::after {
         background-color: var(--Myback) !important;
     }
-    button>span,
+    a#unfile-all-styles,
+    a#sync-dropbox-import,
+    a#file-all-styles,
+    a#sync-dropbox-export,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -151,6 +146,10 @@ regexp("moz-extension://.*") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a#unfile-all-styles:hover,
+    a#sync-dropbox-import:hover,
+    a#file-all-styles:hover,
+    a#sync-dropbox-export:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -171,6 +170,10 @@ regexp("moz-extension://.*") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a#unfile-all-styles:active,
+    a#sync-dropbox-import:active,
+    a#file-all-styles:active,
+    a#sync-dropbox-export:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
