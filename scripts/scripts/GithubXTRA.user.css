@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.31
+@version      0.0.32
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -355,6 +355,7 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Myred1) !important;
         box-shadow: 0 0 10px var(--MyX1) !important;
     }
+    .BorderGrid-row:hover,
     .Box-header,
     .pagehead,
     .d-table.table-fixed.width-full.Box-row--drag-hide.position-relative:hover,
@@ -362,6 +363,9 @@ url-prefix("wss://live.github.com") {
     .header-nav-current-user.css-truncate a[role="menuitem"] {
         background-color: var(--Myred2) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .BorderGrid-row {
+        text-align: center !important;
     }
     .public.source.border-bottom,
     .border-bottom.border-gray-dark.py-3,
