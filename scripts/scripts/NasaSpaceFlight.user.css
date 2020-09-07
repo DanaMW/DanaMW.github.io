@@ -2,7 +2,7 @@
 @name         Nasa Space Flight
 @namespace    http://danamw.github.io/scripts/scripts/NasaSpaceFlight.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/NasaSpaceFlight.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -33,10 +33,12 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    ul>li>.a:hover,
     a:hover {
         color: var(--MyW) !important;
         text-decoration: none !important;
@@ -94,11 +96,13 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    .stock {
+    .wrapper-boxed {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .penci-content-megamenu,
+    #navigation,
+    header {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
