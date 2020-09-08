@@ -1224,4 +1224,22 @@ url-prefix("https://twitter.com/i/safety/") {
     a.link-complex:hover {
         color: var(--TwitterRed) !important;
     }
+    /*
+    .tweetdeck-logo.height--24.width--26.color-transparent.txt-size--0 {
+        position: relative !important;
+    }
+    .tweetdeck-logo.height--24.width--26.color-transparent.txt-size--0 {
+        content: ' ';
+        background: something goes here.
+        height: 24px;
+        width: 26px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 24px !important;
+        padding-top: 26px !important;
+        opacity: 1;
+        filter: grayscale(0);
+    }
+    */
 }
