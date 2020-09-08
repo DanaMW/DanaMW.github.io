@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.48
+@version      0.1.49
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -404,6 +404,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .dialog-edit-button,
     .hHn2se.z1asCe.QJh5z,
     g-raised-button,
     .AlKDIb.pcxvjc,
@@ -449,7 +450,7 @@ url-prefix("https://myactivity.google.com/") {
     #TEPD0b,
     input.ksb,
     .hdtb-msel,
-    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb),
+    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr),
     .gb_O,
     .gb_fa,
     g-left-button,
@@ -468,7 +469,7 @@ url-prefix("https://myactivity.google.com/") {
     .iv_msusc,
     g-fab,
     a#hdtb-tls,
-    button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]) {
+    button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -483,6 +484,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .dialog-edit-button:hover,
     .hHn2se.z1asCe.QJh5z:hover,
     [role="menuitem"]:hover,
     g-raised-button:hover,
@@ -553,7 +555,7 @@ url-prefix("https://myactivity.google.com/") {
     .hdtbItm:hover,
     .mitem:hover,
     .mitem.msel,
-    [role="button"]:hover:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]):not(.gmlSVb),
+    [role="button"]:hover:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]):not(.gmlSVb):not(.Xvesr),
     a[role="menuitem"]:hover,
     .gb_O:hover,
     .gb_fa.gb_ng:hover,
@@ -574,7 +576,7 @@ url-prefix("https://myactivity.google.com/") {
     .img_btn:hover,
     g-fab:hover,
     a#hdtb-tls:hover,
-    button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]) {
+    button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -596,6 +598,7 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+    .dialog-edit-button:active,
     .hHn2se.z1asCe.QJh5z:active,
     g-raised-button:active,
     .AlKDIb.pcxvjc:active,
@@ -681,6 +684,20 @@ url-prefix("https://myactivity.google.com/") {
         transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    .Xvesr:hover,
+    button[class*="section-header"]:hover {
+        filter: invert(1) !important;
+    }
+    button.maps-sprite-settings-chevron-left,
+    button img {
+        filter: invert(1) !important;
+    }
+    .section-profile-stats-progressbar-bar {
+        background-color: var(--Myred3) !important;
+    }
+    .section-profile-stats-progressbar-progress {
+        background-color: var(--Myred1) !important;
     }
     .Mw2I7.UkaFJe,
     .Mw2I7 {
@@ -1166,6 +1183,7 @@ url-prefix("https://myactivity.google.com/") {
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    .section-header,
     div[class="DPyFzd s94Fzc lZ5Kf qetQId"],
     .vVmo9e,
     .Si6A0c.UPn2Eb,
@@ -1220,6 +1238,7 @@ url-prefix("https://myactivity.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    .section-place-name-header:hover,
     .MiPcId.klitem-tr.mlo-c,
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  eO6reb"],
     .VFlF2c.oGE0Pb,
@@ -1356,5 +1375,8 @@ url-prefix("https://myactivity.google.com/") {
     .ZVWN5d {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
+    }
+    .P5Bobd {
+        color: var(--TwitterBlue) !important;
     }
 }
