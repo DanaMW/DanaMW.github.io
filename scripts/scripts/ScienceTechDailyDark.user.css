@@ -2,7 +2,7 @@
 @name         Science Tech Daily Dark
 @namespace    http://danamw.github.io/scripts/scripts/ScienceTechDailyDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ScienceTechDailyDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -38,6 +38,9 @@
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
+    }
+    h3 {
+        color: var(--TwitterBlue) !important;
     }
     a:hover {
         color: var(--MyW) !important;
