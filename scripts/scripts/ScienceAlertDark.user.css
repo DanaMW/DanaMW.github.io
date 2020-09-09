@@ -1,19 +1,20 @@
 /* ==UserStyle==
-@name         Bing Dark
-@namespace    https://danamw.github.io/scripts/scripts/BingDark.user.css
-@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BingDark.user.css
-@version      0.0.8
+@name         Science Alert Dark
+@namespace    http://danamw.github.io/scripts/scripts/ScienceAlertDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ScienceAlertDark.user.css
+@version      0.0.2
 @author       Dana Meli
-@description  Dark Style Bing.
+@description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("bing.com") {
+@-moz-document domain("sciencealert.com") {
     html,
     body {
         background-color: var(--MyB) !important;
     }
-    .stock {
+    div[style="margin:20px 0;height:250px;text-align:center;"],
+    #rt-header {
         display: none !important;
     }
     * {
@@ -39,7 +40,7 @@
         background-color: transparent !important;
     }
     a:hover {
-        color: var(--MyW) !important;
+        color: var(--Myred1) !important;
         text-decoration: none !important;
     }
     button {
@@ -91,11 +92,16 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .module-content {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    .article-intro-container,
+    .menu-article {
         background-image: none !important;
         background-color: transparent !important;
     }
-    .stock {
+    .article-mainbody-container {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
