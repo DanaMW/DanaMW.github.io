@@ -2,18 +2,19 @@
 @name         Vimeo Dark
 @namespace    http://danamw.github.io/scripts/scripts/VimeoDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/VimeoDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("vimeo.com") {
+    #wrap,
     html,
     body {
         background-color: var(--MyB) !important;
     }
-    .stock {
+    section[class*="footer"] {
         display: none !important;
     }
     * {
@@ -33,6 +34,10 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    [role="menuitem"]:hover,
+    .settings_email-address,
+    .iris_rail_menu__header__title,
+    div[role="title"],
     p,
     a {
         color: var(--MyW) !important;
@@ -42,15 +47,23 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    h4,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+    h3,
     h2 {
         color: var(--TwitterRed) !important;
     }
     small {
         color: var(--TwitterPink) !important;
     }
+    .sc-cHGsZl.igEyKy,
+    .sc-bhlBdH.iFPEQe,
+    .sc-hokXgN.VLsCC,
+    ._3jCKf.-kEHD.sc-hEsumM.kAHuFd,
+    input[type="submit"],
+    [role="menuitem"],
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -66,6 +79,12 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .sc-cHGsZl.igEyKy:hover,
+    .sc-bhlBdH.iFPEQe:hover,
+    .sc-hokXgN.VLsCC:hover,
+    ._3jCKf.-kEHD.sc-hEsumM.kAHuFd:hover,
+    input[type="submit"]:hover,
+    [role="menuitem"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -83,6 +102,12 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .sc-cHGsZl.igEyKy:active,
+    .sc-bhlBdH.iFPEQe:active,
+    .sc-hokXgN.VLsCC:active,
+    ._3jCKf.-kEHD.sc-hEsumM.kAHuFd:active,
+    input[type="submit"]:active,
+    [role="menuitem"]:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -100,15 +125,31 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    ul[role="menubar"],
+    ._9Ficn,
+    .video_manager__toolbar-wrapper,
+    .Bfblr,
+    ._3dEqE,
+    #topnav_menu_desktop_main,
+    #topnav_desktop_menu,
+    #topnav_desktop {
         background-image: none !important;
         background-color: transparent !important;
     }
-    .stock {
+    #topnav_desktop {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    [role="menu"],
+    .video_manager__column.video_manager__column--left,
+    [id*="topnav"],
+    nav[role="navigation"]:not(.topnav_desktop_menu) {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    ._2M555.sc-ugnQR.ffpHxd.sc-kasBVs.iQZdFy,
+    .iris_rail_menu__header__title,
+    div[role="title"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -118,5 +159,8 @@
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    svg {
+        filter: invert(1) !important;
     }
 }
