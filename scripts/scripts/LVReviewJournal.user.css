@@ -2,7 +2,7 @@
 @name         LV Review Journal
 @namespace    http://danamw.github.io/scripts/scripts/LVReviewJournal.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/LVReviewJournal.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,7 +13,7 @@
     body {
         background-color: var(--MyB) !important;
     }
-    .stock {
+    footer {
         display: none !important;
     }
     * {
@@ -100,15 +100,17 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .rj-container.menu-main-container,
+    #menu-top,
+    #menu-top-helper {
         background-image: none !important;
         background-color: transparent !important;
     }
-    .stock {
+    .most-read-wrap {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    #header-main {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
