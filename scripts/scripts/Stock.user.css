@@ -2,7 +2,7 @@
 @name         Bing Dark
 @namespace    https://danamw.github.io/scripts/scripts/BingDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BingDark.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana Meli
 @description  Dark Style Bing.
 @homepageURL  https://DanaMW.github.io
@@ -39,8 +39,17 @@
         background-color: transparent !important;
     }
     a:hover {
-        color: var(--MyW) !important;
+        color: var(--Myred1) !important;
         text-decoration: none !important;
+    }
+    h1 {
+        color: var(--TwitterBlue) !important;
+    }
+    h2 {
+        color: var(--TwitterRed) !important;
+    }
+    small {
+        color: var(--TwitterPink) !important;
     }
     button {
         -moz-appearance: none;

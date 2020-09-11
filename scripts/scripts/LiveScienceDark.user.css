@@ -2,7 +2,7 @@
 @name         Live Science Dark
 @namespace    http://danamw.github.io/scripts/scripts/LiveScienceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/LiveScienceDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,7 +13,8 @@
     body {
         background-color: var(--MyB) !important;
     }
-    .stock {
+    footer,
+    .xenforo-comment-widget {
         display: none !important;
     }
     * {
@@ -33,15 +34,27 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .newsletter-title,
     p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
     a:hover {
-        color: var(--MyW) !important;
+        color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    h1 {
+        color: var(--TwitterBlue) !important;
+    }
+    h2 {
+        color: var(--TwitterRed) !important;
+    }
+    small {
+        color: var(--TwitterPink) !important;
+    }
+    .poplabel,
+    li>a,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -57,6 +70,9 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .poplabel:hover,
+    .trending-lead,
+    li>a:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -74,6 +90,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .poplabel:active,
+    li>a:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -91,15 +109,28 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .trending-bar,
+    div[class="trending-wrapper "],
+    .trending-lead {
+        box-shadow: none !important;
+        border: none !important;
+    }
+    .burgerbar {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    .wrapper {
         background-image: none !important;
         background-color: transparent !important;
     }
-    .stock {
+    .most-popular-item,
+    .grey-box,
+    #main {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .most-popular-item:hover,
+    .separator-heading {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -109,5 +140,8 @@
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    .caption-text {
+        color: var(--Mygray1) !important;
     }
 }
