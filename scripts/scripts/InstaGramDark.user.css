@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.61
+@version      0.0.62
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -162,6 +162,7 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
+    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "],
     .fuQUr a[role="button"]:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6),
     button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge) {
         -moz-appearance: none;
@@ -177,6 +178,9 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:hover,
+    div[class*="                    Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                   XfCBB          HVWg4"]:hover,
+    .-qQT3:hover,
     a[class="yCE8d  JvDyy"],
     a[class="yCE8d  "]:hover,
     .fuQUr:hover,
@@ -198,6 +202,7 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
+    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:active,
     a[class="yCE8d  "]:active,
     .fuQUr:active,
     a[role="button"]:active:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6):not(.downloadBtn),
@@ -217,6 +222,9 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         filter: brightness(80%) !important;
+    }
+    div[class="_7UhW9   xLCgt      MMzan  KV-D4              fDxYl     "] {
+        color: var(--MyW) !important;
     }
     /*---------------------------All display NONE----------*/
     div[class="                    Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "],
