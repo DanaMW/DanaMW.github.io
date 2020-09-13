@@ -2,7 +2,7 @@
 @name         Pinterest Dark
 @namespace    https://danamw.github.io/scripts/scripts/PinterestDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PinterestDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -40,6 +40,7 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+    .tBJ,
     .tBJ.dyH.iFc.SMy.MF7.pBj.DrD.IZT.swG,
     span,
     h4,
@@ -51,6 +52,12 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
+    }
+    h1 {
+        color: var(--TwitterBlue) !important;
+    }
+    div[class="tBJ dyH iFc MF7 pBj DrD swG"] {
+        color: var(--TwitterPink) !important;
     }
     div[style*="display"],
     form[name="search"] {
@@ -131,6 +138,7 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .DUt:hover,
     .C9q.Jea.Shl.gjz.jzS.mQ8.zI7.iyn.Hsu:hover,
     button:hover {
         -moz-appearance: none;
@@ -147,6 +155,10 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+    div[class="Jea XiG jzS ujU zI7 iyn Hsu"] {
+        background-image: none !important;
+        background-color: transparent !important;
     }
     .pinWrapper [style*="background-color: rgb(0, 0, 0); opacity: 0.3"] {
         opacity: 0 !important;
@@ -179,5 +191,26 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
     .Jea.fev.gpV.zI7.iyn.Hsu {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
+    }
+    div[class="Dl7 SpV m8d ho- ygj _O1 XbT DHH kFh"] {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    div[class="Jea XiG jzS ujU zI7 iyn Hsu"] {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+        text-align: center !important;
     }
 }
