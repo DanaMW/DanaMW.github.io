@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.32
+@version      0.0.33
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -19,6 +19,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    .ms-Stack.css-168,
     .swim,
     #page-wrapper,
     #home-index,
@@ -32,8 +33,8 @@
     .lia-quilt,
     html,
     body {
-        background-color: var(--Myback) !important;
-        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
     }
     dd,
     dt,
@@ -398,6 +399,7 @@
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    div[id*="security.cards"],
     .c-channel-placement-content,
     .pi-content,
     .mscom-link.mscom-accordion-item-link:hover,
@@ -416,6 +418,7 @@
     .msame_Header {
         background-color: transparent !important;
     }
+    div[id*="security.cards"],
     .pi-content,
     .input-group-text,
     .inside-dialog,
