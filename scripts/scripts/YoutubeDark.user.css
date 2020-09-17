@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.13
+@version      0.0.14
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -200,6 +200,8 @@ domain("studio.youtube.com") {
     #ink {
         background-color: var(--Myred3)
     }
+    ytd-rich-shelf-renderer,
+    ytd-inline-survey-renderer,
     ytd-post-renderer[surface_="backstage-surface-type-home"],
     ytd-post-renderer[attachment="poll"],
     button#search-btn,
