@@ -2,13 +2,16 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.12
+@version      0.0.13
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("reddit.com") {
+@-moz-document domain("reddit.com"),
+domain("gfycat.com"),
+domain("redditmedia.com"),
+domain("embedly.com") {
     ._2L5G9B5yaoqW3IegiYN-FL,
     ._3ozFtOe6WpJEMUtxDOIvtU,
     html,
@@ -36,6 +39,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .gif-views,
     h2,
     span,
     p,
@@ -155,6 +159,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    div.iframe__bottom,
     header>div {
         background-image: none !important;
         background-color: transparent !important;
@@ -171,6 +176,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div.iframe__bottom,
     .Post:hover,
     .trdUvQxqQHHqQKOUBcgnr.EjdBJNEwygtHMKiHd3Bnv._29WPjLJ0vRIyLIUC_lQ4a8,
     ._2ARwkAW45Urhf_fMfAMi5_:hover,
@@ -186,16 +192,6 @@
         border: 2px solid var(--MyB) !important;
         text-align: center !important;
     }
-    /*
-    div[style=""]>div,
-    ._23h0-EcaBUorIHC-JZyh6J {
-        background-color: var(--MyB) !important;
-    }
-    ._23h0-EcaBUorIHC-JZyh6J:hover,
-    div[style=""]>div:hover {
-        background-color: var(--MyX1) !important;
-    }
-    */
     #COIN_PURCHASE_DROPDOWN_ID {
         border-radius: 25px !important;
     }
