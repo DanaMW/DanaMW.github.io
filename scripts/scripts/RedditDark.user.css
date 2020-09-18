@@ -2,13 +2,14 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.13
+@version      0.0.14
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("reddit.com"),
+domain("redditinc.com"),
 domain("gfycat.com"),
 domain("redditmedia.com"),
 domain("embedly.com") {
@@ -47,6 +48,7 @@ domain("embedly.com") {
         color: var(--MyW) !important;
         /* background-color: transparent !important; */
     }
+    .jcf-option:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
@@ -56,6 +58,7 @@ domain("embedly.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .jcf-select,
     a.eRXQmg5IDQw75c_ZvuwJU,
     ._3A5WTC_rfbijxxWBmIP4Yx._2PgeQeeIxIIadT5yPWlaTh,
     ._3A5WTC_rfbijxxWBmIP4Yx,
@@ -88,6 +91,8 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .jcf-select:hover,
+    .jcf-select.jcf-drop-active,
     a.eRXQmg5IDQw75c_ZvuwJU:hover,
     ._3A5WTC_rfbijxxWBmIP4Yx._2PgeQeeIxIIadT5yPWlaTh:hover,
     ._3A5WTC_rfbijxxWBmIP4Yx:hover,
@@ -164,10 +169,14 @@ domain("embedly.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    #nav,
     header>div {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    footer,
+    tbody,
+    .jcf-list,
     .rpBJOHq2PR60pnwJlUyP0>div[style=""],
     ._160axjzy-Hx7ANXMr87Rbe._1G4yU68P50vRZ4USXfaceV,
     ._2vEf-C2keJaBMY9qk_BxVn,
@@ -176,6 +185,7 @@ domain("embedly.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    table[bgcolor="#ffed9c"],
     div.iframe__bottom,
     .Post:hover,
     .trdUvQxqQHHqQKOUBcgnr.EjdBJNEwygtHMKiHd3Bnv._29WPjLJ0vRIyLIUC_lQ4a8,
@@ -204,5 +214,8 @@ domain("embedly.com") {
     }
     ._27SH1SRzjtOk_2NB2YC-FR {
         border: 1px solid var(--MyW) !important;
+    }
+    .large-text {
+        color: var(--TwitterBlue) !important;
     }
 }
