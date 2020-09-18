@@ -2,112 +2,12 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.20
+@version      0.0.21
 @author       Dana Meli
 @homepageURL  https://github.com/DanaMW
 ==/UserStyle== */
 
 @-moz-document domain("outlook.live.com") {
-    .ms-Fabric {
-        --black: #ffffff;
-        --blackTranslucent40: rgba(255, 255, 255, 0.4);
-        --white: #333333;
-        --whiteTranslucent40: rgba(33, 33, 33, 0.4);
-        --neutralDark: #ffffff;
-        --neutralPrimary: #ffffff;
-        --neutralPrimaryAlt: #f8f8f8;
-        --neutralSecondary: #f4f4f4;
-        --neutralTertiary: #eaeaea;
-        --neutralTertiaryAlt: #c8c8c8;
-        --neutralQuaternary: #2e2e2e;
-        --neutralQuaternaryAlt: #2e2e2e;
-        --neutralLight: #000000;
-        --neutralLighter: #212121;
-        --neutralLighterAlt: #212121;
-        --redDark: #e81123;
-        --flaggedMessage: #242100;
-        --richUserContentBackground: #eaeaea;
-        --composeNeutralBackground: #212121;
-        --composeNeutralLighterBackground: #fff;
-        --themeDarker: #fcb3b3;
-        --themeDark: #fcb3b3;
-        --themeDarkAlt: #fcb3b3;
-        --themePrimary: #e56969;
-        --themeSecondary: #d82424;
-        --themeTertiary: #d70000;
-        --themeLight: #be1010;
-        --themeLighter: #9e0000;
-        --themeLighterAlt: #780000;
-        --headerBackground: #d70000;
-        --headerBackgroundSearch: #be1010;
-        --headerBrandText: #fff;
-        --headerTextIcons: #fff;
-        --headerSearchBoxBackground: rgba(33, 33, 33, 0.7);
-        --headerSearchBoxIcon: #eff6fc;
-        --headerSearchPlaceholderText: #eff6fc;
-        --headerSearchButtonBackground: #e56969;
-        --headerSearchButtonBackgroundHover: #fcb3b3;
-        --headerSearchButtonIcon: #000;
-        --headerSearchFilters: #e56969;
-        --headerSearchFiltersHover: #eff6fc;
-        --headerButtonsBackground: #d70000;
-        --headerButtonsBackgroundHover: #be1010;
-        --headerButtonsBackgroundSearch: #be1010;
-        --headerButtonsBackgroundSearchHover: #9e0000;
-        --headerBadgeBackground: #eff6fc;
-        --headerBadgeText: #fff;
-        --headerSearchIcon: #fff;
-        --searchBoxBackground: rgba(33, 33, 33, 0.7);
-        --fallback-black: #000;
-        --fallback-blackTranslucent40: rgba(0, 0, 0, 0.4);
-        --fallback-white: #fff;
-        --fallback-whiteTranslucent40: rgba(255, 255, 255, 0.4);
-        --fallback-neutralDark: #212121;
-        --fallback-neutralPrimary: #333333;
-        --fallback-neutralPrimaryAlt: #3c3c3c;
-        --fallback-neutralSecondary: #666666;
-        --fallback-neutralTertiary: #a6a6a6;
-        --fallback-neutralTertiaryAlt: #c8c8c8;
-        --fallback-neutralQuaternary: #d0d0d0;
-        --fallback-neutralQuaternaryAlt: #dadada;
-        --fallback-neutralLight: #eaeaea;
-        --fallback-neutralLighter: #f4f4f4;
-        --fallback-neutralLighterAlt: #f8f8f8;
-        --fallback-redDark: #a80000;
-        --fallback-flaggedMessage: #fffdd9;
-        --fallback-richUserContentBackground: #fff;
-        --fallback-composeNeutralBackground: #fff;
-        --fallback-composeNeutralLighterBackground: #f4f4f4;
-        --fallback-themeDarker: #780000;
-        --fallback-themeDark: rgb(158, 0, 0);
-        --fallback-themeDarkAlt: rgb(190, 16, 16);
-        --fallback-themePrimary: rgb(215, 0, 0);
-        --fallback-themeSecondary: rgb(216, 43, 43);
-        --fallback-themeTertiary: rgb(229, 113, 113);
-        --fallback-themeLight: #C7E0F4;
-        --fallback-themeLighter: #DEECF9;
-        --fallback-themeLighterAlt: #EFF6FC;
-        --fallback-headerBackground: rgb(215, 0, 0);
-        --fallback-headerBackgroundSearch: rgb(158, 0, 0);
-        --fallback-headerBrandText: #FFFFFF;
-        --fallback-headerTextIcons: #FFFFFF;
-        --fallback-headerSearchBoxBackground: rgba(255, 255, 255, .7);
-        --fallback-headerSearchBoxIcon: #780000;
-        --fallback-headerSearchPlaceholderText: #780000;
-        --fallback-headerSearchButtonBackground: rgb(215, 0, 0);
-        --fallback-headerSearchButtonBackgroundHover: #780000;
-        --fallback-headerSearchButtonIcon: #FFFFFF;
-        --fallback-headerSearchFilters: rgb(215, 0, 0);
-        --fallback-headerSearchFiltersHover: #780000;
-        --fallback-headerButtonsBackground: rgb(215, 0, 0);
-        --fallback-headerButtonsBackgroundHover: rgb(158, 0, 0);
-        --fallback-headerButtonsBackgroundSearch: rgb(158, 0, 0);
-        --fallback-headerButtonsBackgroundSearchHover: #780000;
-        --fallback-headerBadgeBackground: #780000;
-        --fallback-headerBadgeText: #FFFFFF;
-        --fallback-headerSearchIcon: #FFFFFF;
-        --fallback-searchBoxBackground: rgba(255, 255, 255, .7);
-    }
     body {
         --white: #000 !important;
         background-color: var(--Mygray3) !important;
@@ -171,6 +71,7 @@
     .ms-Overlay {
         background-color: var(--MyX4) !important;
     }
+    .m_YdpO5_33Q22e4K9wQQN.o365sx-appName,
     ._2_T0Im6ostMX7PPGpbrJGj,
     ._1zxENq4RxEC9ydsMnwBcAu,
     [role="menubar"],
