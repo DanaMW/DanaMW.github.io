@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.55
+@version      0.1.56
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -97,6 +97,8 @@ url-prefix("https://myactivity.google.com/") {
     .dU5Kl {
         border: none !important;
     }
+    .mod,
+    .UDZeY.OTFaAf,
     .Uh4Mac,
     .nma0Wb,
     .nrAB0c,
@@ -404,6 +406,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    div[aria-label="More videos"],
     .dialog-edit-button,
     .hHn2se.z1asCe.QJh5z,
     g-raised-button,
@@ -484,6 +487,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[aria-label="More videos"]:hover,
     .dialog-edit-button:hover,
     .hHn2se.z1asCe.QJh5z:hover,
     [role="menuitem"]:hover,
@@ -598,6 +602,7 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+    div[aria-label="More videos"]:active,
     .dialog-edit-button:active,
     .hHn2se.z1asCe.QJh5z:active,
     g-raised-button:active,
@@ -897,9 +902,14 @@ url-prefix("https://myactivity.google.com/") {
     a {
         color: var(--MyW) !important;
     }
+    /*
     h3 {
         color: var(--TwitterPink) !important;
     }
+    h3 a:visited {
+        color: var(--TwitterBlue) !important;
+    }
+    */
     a:hover b,
     a>b:hover,
     a>b:hover a,
@@ -1235,6 +1245,8 @@ url-prefix("https://myactivity.google.com/") {
     .gb_ob.gb_pb {
         color: var(--TwitterBlue) !important;
     }
+    .GHuRVb,
+    .rl_item.rl_item_base.bPrEDb,
     div#appbar.appbar {
         background: transparent !important;
     }
@@ -1245,7 +1257,7 @@ url-prefix("https://myactivity.google.com/") {
     div[role="menubar"],
     .lcorif.fp-w,
     .vk_c.card-section,
-    div[class*="wholepage-card"],
+    div[class*="wholepage-card"]:not([data-hveid="CD0QAQ"]),
     .Y653g,
     .MXwBff,
     a[jsname="uy6ald"],
