@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.56
+@version      0.1.57
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -261,8 +261,6 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
-    #footer,
-    #fbarcnt,
     #fbar {
         background-color: var(--MyX1) !important;
         opacity: 0.1 !important;
@@ -271,9 +269,6 @@ url-prefix("https://myactivity.google.com/") {
         -webkit-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
         transition: opacity 2s, height 2s, transform 2s !important;
     }
-    footer,
-    #footer:hover,
-    #fbarcnt:hover,
     #fbar:hover {
         background-color: var(--MyX1) !important;
         opacity: 0.8 !important;
@@ -406,6 +401,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .MXl0lf.mtqGb,
     div[aria-label="More videos"],
     .dialog-edit-button,
     .hHn2se.z1asCe.QJh5z,
@@ -487,6 +483,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .MXl0lf.mtqGb:hover,
     div[aria-label="More videos"]:hover,
     .dialog-edit-button:hover,
     .hHn2se.z1asCe.QJh5z:hover,
@@ -602,6 +599,7 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+    .MXl0lf.mtqGb:active,
     div[aria-label="More videos"]:active,
     .dialog-edit-button:active,
     .hHn2se.z1asCe.QJh5z:active,
@@ -1193,6 +1191,7 @@ url-prefix("https://myactivity.google.com/") {
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    .FRQ4Od.PZPZlf,
     .section-header,
     div[class="DPyFzd s94Fzc lZ5Kf qetQId"],
     .vVmo9e,
@@ -1389,6 +1388,7 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+    .g0qmle,
     .P5Bobd {
         color: var(--TwitterBlue) !important;
     }
