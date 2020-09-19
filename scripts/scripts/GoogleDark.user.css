@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.57
+@version      0.1.58
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1169,6 +1169,8 @@ url-prefix("https://myactivity.google.com/") {
     .zTpPx.V7Sr0.vH5Lmd {
         text-align: center;
     }
+    g-tray-header,
+    g-scrolling-carousel,
     .mod.NFQFxe.viOShc.LKPcQc,
     g-card .hntNk.vk_c.vk_bk,
     .c.ptJHdc.commercial-unit-desktop-rhs.mnr-c.rhsvw,
@@ -1191,6 +1193,7 @@ url-prefix("https://myactivity.google.com/") {
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    g-tray-header,
     .FRQ4Od.PZPZlf,
     .section-header,
     div[class="DPyFzd s94Fzc lZ5Kf qetQId"],
@@ -1282,6 +1285,9 @@ url-prefix("https://myactivity.google.com/") {
     .Yhekq,
     header.mSUZQd {
         background-color: transparent !important;
+    }
+    g-scrolling-carousel {
+        background-color: var(--Mygray3) !important;
     }
     .YtVmAd {
         background-color: var(--Myred3) !important;
@@ -1394,5 +1400,13 @@ url-prefix("https://myactivity.google.com/") {
     }
     svg:hover {
         filter: brightness(200%) !important;
+    }
+    .p2WJce {
+        filter: invert(1) !important;
+    }
+    .iHyq8c,
+    .N60dNb.mfMhoc,
+    .nL0W0>div {
+        color: var(--MyW) !important;
     }
 }
