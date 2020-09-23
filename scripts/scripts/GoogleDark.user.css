@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.59
+@version      0.1.60
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1252,6 +1252,7 @@ url-prefix("https://myactivity.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    .iBsHqb,
     .section-place-name-header:hover,
     .MiPcId.klitem-tr.mlo-c,
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  eO6reb"],
