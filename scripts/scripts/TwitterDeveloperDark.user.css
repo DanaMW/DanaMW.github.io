@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name         Twitter Developer Dark
+@namespace    http://danamw.github.io/scripts/scripts/TwitterDeveloperDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDeveloperDark.user.css
+@version      0.0.1
+@author       Dana Meli
+@description  Dark Style.
+@homepageURL  https://DanaMW.github.io
+==/UserStyle== */
+
+@-moz-document domain("developer.twitter.com") {
+    /* Insert code here... */
+}
