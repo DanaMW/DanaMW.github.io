@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name         Bing Dark
-@namespace    https://danamw.github.io/scripts/scripts/BingDark.user.css
-@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BingDark.user.css
-@version      0.0.10
+@name         Stock Dark
+@namespace    https://danamw.github.io/scripts/scripts/Stock.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/Stock.user.css
+@version      0.1.0
 @author       Dana Meli
-@description  Dark Style Bing.
+@description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("bing.com") {
+@-moz-document domain("stock.localdomain.net") {
     html,
     body {
         background-color: var(--MyB) !important;
