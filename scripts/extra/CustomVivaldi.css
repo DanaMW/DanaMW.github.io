@@ -1,3 +1,15 @@
+@import url("DecentralEyes.css");
+@import url("ExtraSounds.css");
+@import url("FeedBro.css");
+@import url("Imagus.css");
+@import url("NewTabTools.css");
+@import url("NotificationSound.css");
+@import url("S3DLManager.css");
+@import url("SaveIn.css");
+@import url("TamperMonkey.css");
+@import url("UBlock.css");
+@import url("UGet.css");
+@import url("VideoDownloadHelper.css");
 :root {
     background-color: hsl(0, 0%, 10%);
     background-image: url(resources/vivaldi-splash-icon.svg);
