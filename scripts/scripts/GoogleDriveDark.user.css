@@ -2,7 +2,7 @@
 @name         Google Drive Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDriveDark.user.css
-@version      0.0.19
+@version      0.0.20
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -158,23 +158,21 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    #\:ke\.content,
     .gsib_a.gb_sf {
         background-color: transparent !important;
         border: none !important;
     }
-    /*.gb_sf[aria-expanded="true"],*/
     .gb_sf,
-    input[aria-label="Search Drive"] {
+    input {
         color: var(--Mytext) !important;
         background-color: var(--Mygray3) !important;
-        /*
-        margin-top: 8px !important;
-        height: 25px !important;
-        */
         border: 2px solid var(--Myborder) !important;
         border-radius: 15px !important;
         text-align: center !important;
     }
+    .o1Bmbe,
+    .r6xIie,
     .N7iPof.O5x1db,
     .ab-S-V,
     .ab-S-Sg,
@@ -262,14 +260,15 @@
     div[role="listbox"]>div {
         background-color: var(--Mygray2) !important;
     }
+    .lb-k-V.lb-k-V-xt,
     .lb-k.ca-k.Hb-ja-Na,
     div[role="dialog"] {
         background-image: none !important;
         background-color: transparent !important;
     }
+    section,
     div[class="a-s-tb-sc-Ja a-s-tb-Kg a-s-tb-sc-Ja-J"],
     .lb-k.ca-k.Hb-ja-Na,
-    .lb-k-V.lb-k-V-xt,
     div[role="dialog"],
     .le-Ba-la-r {
         background-color: var(--Myred3) !important;
@@ -291,5 +290,8 @@
     */
     .B {
         filter: hue-rotate(60deg) !important;
+    }
+    .lb-k-V-r {
+        color: var(--TwitterBlue) !important;
     }
 }
