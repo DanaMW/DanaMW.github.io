@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.33
+@version      0.0.34
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -285,6 +285,9 @@
         border: none !important;
     }
     .Mh0NNb.Mp2Z0b.misTTe {
-        opacity: 50% !important;
+        opacity: 25% !important;
+    }
+    .Mh0NNb.Mp2Z0b.misTTe:hover {
+        opacity: 1 !important;
     }
 }
