@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -59,6 +59,7 @@ domain("embedly.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    a[role="button"],
     .jcf-select,
     a.eRXQmg5IDQw75c_ZvuwJU,
     ._3A5WTC_rfbijxxWBmIP4Yx._2PgeQeeIxIIadT5yPWlaTh,
@@ -92,6 +93,7 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[role="button"]:hover,
     .jcf-select:hover,
     .jcf-select.jcf-drop-active,
     a.eRXQmg5IDQw75c_ZvuwJU:hover,
@@ -131,6 +133,7 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[role="button"]:active,
     a.eRXQmg5IDQw75c_ZvuwJU:active,
     ._3A5WTC_rfbijxxWBmIP4Yx._2PgeQeeIxIIadT5yPWlaTh:active,
     ._3A5WTC_rfbijxxWBmIP4Yx:active,
