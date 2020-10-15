@@ -2,7 +2,7 @@
 @name         Business Insider Dark
 @namespace    http://danamw.github.io/scripts/scripts/BusinessInsiderDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BusinessInsiderDark.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -33,7 +33,9 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-    h1,
+    td,
+    .snapshot,
+    div[class*="data-item"] h1,
     p,
     a {
         color: var(--MyW) !important;
@@ -42,6 +44,16 @@
     a:hover {
         color: var(--MyW) !important;
         text-decoration: none !important;
+    }
+    .instrument-description {
+        color: var(--Mytext) !important;
+    }
+    .graviton {
+        text-align: center !important;
+    }
+    h2.header-underline {
+        color: var(--TwitterBlue) !important;
+        text-align: center !important;
     }
     .icon-set.share-button,
     .button,
@@ -105,6 +117,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .responsivePosition,
     .site-header__first-row {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
