@@ -2,7 +2,7 @@
 @name         Google About Me
 @namespace    http://danamw.github.io/scripts/scripts/GoogleAboutMe.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleAboutMe.user.css
-@version      0.0.10
+@version      0.0.11
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -11,6 +11,11 @@
 @-moz-document domain("aboutme.google.com"),
 domain("get.google.com"),
 domain("about.google") {
+    .cap,
+    footer,
+    .footer,
+    div.main,
+    .main-inner,
     body,
     c-wiz,
     html {
@@ -26,6 +31,8 @@ domain("about.google") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .sub-nav-outer-wrapper,
+    header[class^="header"],
     div[role="banner"],
     header[role="banner"] {
         background-color: var(--Myred3) !important;
@@ -48,6 +55,11 @@ domain("about.google") {
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    button.sub-nav-item-button.selected,
+    button.sub-nav-item-button {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
     div[role="button"],
     div[aria-label="Add info"],
     button {
@@ -65,6 +77,7 @@ domain("about.google") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    button.sub-nav-item-button.selected,
     div[role="button"]:hover,
     div[aria-label="Add info"]:hover,
     button:hover {
@@ -103,6 +116,7 @@ domain("about.google") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .butter-bar,
     div[role="alertdialog"],
     .agU3I,
     .FwR7Pc:hover,
@@ -142,5 +156,24 @@ domain("about.google") {
     }
     .DhzbYb {
         color: var(--MyX1) !important;
+    }
+    p,
+    a {
+        color: var(--MyW) !important;
+    }
+    a:hover {
+        color: var(--Myred1) !important;
+    }
+    h2 {
+        color: var(--TwitterBlue) !important;
+    }
+    h3 {
+        color: var(--TwitterPink) !important;
+    }
+    span.blog {
+        color: var(--TwitterRed) !important;
+    }
+    .post-date {
+        color: var(--Mytext) !important;
     }
 }
