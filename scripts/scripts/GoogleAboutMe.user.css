@@ -2,14 +2,15 @@
 @name         Google About Me
 @namespace    http://danamw.github.io/scripts/scripts/GoogleAboutMe.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleAboutMe.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("aboutme.google.com"),
-domain("get.google.com") {
+domain("get.google.com"),
+domain("about.google.com") {
     body,
     c-wiz,
     html {
