@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.63
+@version      0.1.64
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1197,6 +1197,7 @@ url-prefix("https://myactivity.google.com/") {
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+    div.q2eaDe:hover,
     g-tray-header,
     .FRQ4Od.PZPZlf,
     .section-header,
@@ -1222,7 +1223,7 @@ url-prefix("https://myactivity.google.com/") {
     .UUcaod,
     #eer-ra,
     .Ih2lSe,
-    div[role="heading"]:not(.LGOjhe):not(.UKbGGd):not(.iKt1P):not(.mCBkyc):not(.xP45xc),
+    div[role="heading"]:not(.LGOjhe):not(.UKbGGd):not(.iKt1P):not(.mCBkyc):not(.xP45xc):not(.junCMe):not(.JiQld.oz3cqf.p5AXld),
     .MXwBff:hover,
     .gb_F.gb_na,
     a[jsname="uy6ald"]:hover,
@@ -1256,6 +1257,7 @@ url-prefix("https://myactivity.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    .q2eaDe,
     .iBsHqb,
     .section-place-name-header:hover,
     .MiPcId.klitem-tr.mlo-c,
@@ -1418,5 +1420,8 @@ url-prefix("https://myactivity.google.com/") {
     }
     .hqwb1b {
         background-color: transparent !important;
+    }
+    .MGqjK {
+        background-color: var(--MyB) !important;
     }
 }
