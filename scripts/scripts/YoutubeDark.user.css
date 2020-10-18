@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.15
+@version      0.0.16
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -109,6 +109,9 @@ domain("studio.youtube.com") {
     }
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
+    }
+    .style-scope.ytd-compact-promoted-item-renderer {
+        display: none !important;
     }
     ytd-active-account-header-renderer {
         position: relative;
