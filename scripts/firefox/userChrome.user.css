@@ -602,3 +602,23 @@ menuseparator,
     box-shadow: 0 1px 4px rgba(0, 0, 0, .05) !important;
     animation: none !important;
 }
+
+#tabbrowser-arrowscrollbox {
+    pointer-events: none
+}
+
+toolbarbutton#scrollbutton-up,
+toolbarbutton#scrollbutton-down {
+    pointer-events: auto
+}
+
+.tabbrowser-tab,
+#tabs-newtab-button,
+.tabs-newtab-button {
+    pointer-events: auto
+}
+
+.new-tab-popup,
+.new-tab-popup>* {
+    pointer-events: auto
+}
