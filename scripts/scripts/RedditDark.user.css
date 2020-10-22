@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -20,6 +20,7 @@ domain("embedly.com") {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
+    ._2vEf-C2keJaBMY9qk_BxVn,
     ._1b1Jalg2nxA_Z-BjKXRfAV {
         display: none !important;
     }
@@ -59,6 +60,7 @@ domain("embedly.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    a.choice,
     a[role="button"],
     .jcf-select,
     a.eRXQmg5IDQw75c_ZvuwJU,
@@ -93,6 +95,7 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.choice:hover,
     a[role="button"]:hover,
     .jcf-select:hover,
     .jcf-select.jcf-drop-active,
@@ -133,6 +136,7 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.choice:active,
     a[role="button"]:active,
     a.eRXQmg5IDQw75c_ZvuwJU:active,
     ._3A5WTC_rfbijxxWBmIP4Yx._2PgeQeeIxIIadT5yPWlaTh:active,
@@ -168,11 +172,13 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .menuarea,
     div.iframe__bottom,
     header>div {
         background-image: none !important;
         background-color: transparent !important;
     }
+    div[role="banner"],
     #nav,
     header>div {
         background-color: var(--Myred3) !important;
