@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.1
+@version      0.1.2
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -14,11 +14,13 @@
 @var range swidth "Change Search Width"[300, 300, 600, 1, "px"]
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://mail.google.com/mail/"),
+@-moz-document domain("mail.google.com"),
+domain("hangouts.google.com"),
+url-prefix("https://mail.google.com/mail/"),
 url-prefix("https://accounts.google.com"),
 url-prefix("https://apis.google.com"),
-url-prefix("https://hangouts.google.com"),
 url-prefix("https://contacts.google.com/widget"),
+url-prefix("https://contacts.google.com/"),
 url-prefix("https://gsuite.google.com"),
 url-prefix("https://ssl.gstatic.com"),
 url-prefix("https://docs.google.com/picker") {
@@ -581,7 +583,6 @@ url-prefix("https://docs.google.com/picker") {
         appearance: none !important;
     }
     table[class="cf alO"],
-    .a07,
     .ICsgXc,
     .oL,
     .J-M,
@@ -643,7 +644,6 @@ url-prefix("https://docs.google.com/picker") {
     td[class="gU az5"],
     .Kj-JD-Jz,
     .Kj-JD-K7,
-    ul[class="Bk tj z0 Mz"],
     div[class^="Eg a-E"],
     div.tq,
     div[class="vE dQ editable"],
@@ -829,10 +829,11 @@ url-prefix("https://docs.google.com/picker") {
         background-color: transparent !important;
         color: #0000ff;
     }
+    .azewN,
     a[role="button"].gb_td,
     div[role="tab"],
     li[aria-grabbed="false"]>a,
-    span[role="button"]:not([aria-label="Close"]):not([aria-label="Not starred"]):not([aria-label="Starred"]),
+    span[role="button"]:not([aria-label="Close"]):not([aria-label="Not starred"]):not([aria-label*="Starred"]),
     div[role="button"]:not(.zDiulc):not(.HxMcae):not(.lr):not([aria-label*="side panel"]),
     a[aria-label="More Google apps"],
     a.gb_c,
@@ -890,15 +891,17 @@ url-prefix("https://docs.google.com/picker") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .azewN:hover,
+    button[class="Izwf5d S2zqnf z-b-G fTj9Ab"]:hover,
     button[class="UhDpP cmX6We TTnd8c ny1kd z-b-G"]:hover,
+    * button[class="yS0zpe EFnEWc "]:hover,
     [role="menuitem"]:hover,
     a[role="button"].gb_td:hover,
     div[role="tab"][aria-selected="true"],
     div[role="tab"]:hover,
     li[aria-grabbed="true"]>a,
     li[aria-grabbed="false"]>a:hover,
-    .azewN,
-    span[role="button"]:hover:not([aria-label="Close"]):not([aria-label="Not starred"]):not([aria-label="Starred"]),
+    span[role="button"]:hover:not([aria-label="Close"]):not([aria-label="Not starred"]):not([aria-label*="Starred"]),
     div[role="button"]:hover:not(.zDiulc):not(.HxMcae):not(.lr):not([aria-label*="side panel"]),
     a[aria-label="More Google apps"]:hover,
     a.gb_c:hover,
@@ -949,7 +952,7 @@ url-prefix("https://docs.google.com/picker") {
     div[class="Klz5ue Bb xZYdOe f0 ko CN Bm b3KmC suKgy XP"]:hover,
     button[class^="bi97z"]::before,
     .z-b-G:hover,
-    button[class="Izwf5d S2zqnf z-b-G fTj9Ab"]:hover,
+    button[class*="Izwf5d S2zqnf z-b-G fTj9Ab"]:hover,
     button[name="cancel"]:hover,
     .J-at1-auR:hover,
     .d-Na-JX-I:hover,
@@ -984,7 +987,7 @@ url-prefix("https://docs.google.com/picker") {
     div[role="tab"]:active,
     li[aria-grabbed="false"]>a:active,
     .azewN:active,
-    span[role="button"]:active:not([aria-label="Close"]):not([aria-label="Not starred"]):not([aria-label="Starred"]),
+    span[role="button"]:active:not([aria-label="Close"]):not([aria-label="Not starred"]):not([aria-label*="Starred"]),
     div[role="button"]:active:not(.zDiulc):not(.HxMcae):not(.lr):not([aria-label*="side panel"]),
     a[aria-label="More Google apps"]:active,
     a.gb_c:active,
@@ -1354,6 +1357,8 @@ url-prefix("https://docs.google.com/picker") {
     .Q2 {
         color: var(--MyW) !important;
     }
+    .sh,
+    #talk_flyout,
     .vh.aL,
     .aOY59,
     .gb_qd,
