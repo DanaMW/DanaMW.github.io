@@ -2,14 +2,13 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.78
+@version      0.0.79
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
-@-moz-document domain("discordapp.com"),
-domain("discord.com") {
+@-moz-document domain("discord.com") {
     body,
     head,
     html {
@@ -249,6 +248,7 @@ domain("discord.com") {
     div[class*="iconWrapper"] svg[class*="icon"] {
         color: var(--MyW) !important;
     }
+    svg[class*="icon"]:not([id*="channels"]>svg),
     h3[role="button"],
     div[class*="iconWrapper"],
     div[class*="iconWrapper"][class*="clickable"][role="button"],
@@ -263,6 +263,7 @@ domain("discord.com") {
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
+    svg[class*="icon"]:hover,
     h3[role="button"]:hover,
     div[class*="iconWrapper"][class*="clickable"][role="button"]:hover,
     div[class*="icon"][class*="iconLayout"][class*="small"]:hover,
@@ -419,7 +420,7 @@ domain("discord.com") {
         margin-top: -2px !important;
         margin-bottom: -2px !important;
     }
-    .sidebar {
+    div[class*="sidebar"] {
         border: 2px solid var(--Myborder) !important;
         background-color: var(--Mygray2) !important;
     }
@@ -428,8 +429,8 @@ domain("discord.com") {
         text-align: center !important;
     }
     .Select-value,
-    #app-mount * .sidebar div[class*="header"]:nth-child(9),
-    #app-mount * .sidebar div[class*="header"]:nth-child(1) {
+    #app-mount * div[class*="sidebar"] div[class*="header"]:nth-child(9),
+    #app-mount * div[class*="sidebar"] div[class*="header"]:nth-child(1) {
         background-color: var(--Myblue2) !important;
         border-radius: 5px !important;
         text-align: center !important;
@@ -471,9 +472,9 @@ domain("discord.com") {
     div[class*="avatar"][class*="small"] {
         border: 1px solid var(--Myborder) !important;
     }
-    .avatar-small {
+    div[class*="avatar"] {
         border: 1px solid var(--Myborder) !important;
-        border-radius: 5px;
+        border-radius: 50%;
     }
     div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"][class*="root"] {
         border-radius: 5px !important;
@@ -572,6 +573,7 @@ domain("discord.com") {
     .volume * div[class*="bar"]>div {
         background-color: var(--Myred1) !important;
     }
+    div[class*="menu"],
     div[class*="buttons"][class*="container"],
     div[class*="wrapper"],
     div[aria-label="More"][role=button],
@@ -592,6 +594,7 @@ domain("discord.com") {
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
+    /*[role="button"]:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
     div[role="listitem"]:not([class*="clickable"]),
     foreignObject>a[class*="wrapper"],
     div[class*="expandedFolderIconWrapper"],
@@ -619,6 +622,7 @@ domain("discord.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    /*[role="button"]:hover:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
     div[role="listitem"]:not([class*="clickable"]):hover,
     div[class*="containerDefault"][class*="selected"] div[role="listitem"]:not([class*="clickable"]),
     div[aria-label="More"][role=button]:hover,
@@ -667,6 +671,7 @@ domain("discord.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    /*[role="button"]:active:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
     div[role="listitem"]:not([class*="clickable"]):active,
     div[aria-label="More"][role=button]:active,
     div[class*="expandedFolderIconWrapper"]:active,
@@ -721,6 +726,8 @@ domain("discord.com") {
         background-color: var(--MyX1) !important;
     }
     */
+    h2 div[class*="children"],
+    div[class*="background"],
     div[class*="grid-"],
     div[class*="item"]:hover,
     #app-mount * div[class*="userPopout"],
@@ -794,6 +801,7 @@ domain("discord.com") {
         border-top: 1px solid var(--MyW) !important;
         border-radius: 0px 5px 5px 0px !important;
     }
+    div[class="menu"],
     div[class*="embedWrapper"] {
         border-radius: 0px 5px 5px 0px !important;
     }
@@ -853,5 +861,23 @@ domain("discord.com") {
     }
     div[class*="pill"] {
         color: var(--Mygreen1) !important;
+    }
+    div[class*="scroller"][class*="none"][class*="scrollerBase"] {
+        background-color: var(--Myred3) !important;
+        border: 1px solid var(--MyW) !important;
+    }
+    div[class*="fieldList"],
+    div[class*="sidebarRegionScroller"] {
+        background-color: var(--MyB) !important;
+    }
+    div[class*="contentRegionScroller"] {
+        background-color: var(--Mygray3) !important;
+    }
+    svg[class*="slider"] rect {
+        background-color: var(--Myred1) !important;
+    }
+    div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignCenter"][class*="noWrap"][class*="header"] {
+        background-image: none !important;
+        background-color: transparent !important;
     }
 }
