@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.68
+@version      0.1.69
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -407,6 +407,8 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .BiYF3.HIf9ae,
+    .gziGLd,
     [role=listitem]>div,
     .MXl0lf.mtqGb,
     div[aria-label="More videos"],
@@ -490,6 +492,8 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .BiYF3.HIf9ae:hover,
+    .gziGLd:hover,
     [role=listitem]>div:hover,
     .MXl0lf.mtqGb:hover,
     div[aria-label="More videos"]:hover,
@@ -607,6 +611,8 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+    .BiYF3.HIf9ae:active,
+    .gziGLd:active,
     [role=listitem]>div:active,
     .MXl0lf.mtqGb:active,
     div[aria-label="More videos"]:active,
@@ -809,8 +815,6 @@ url-prefix("https://myactivity.google.com/") {
         color: var(--Mygreen1) !important;
     }
     .AYBNrd.JuE4Vc,
-    /*.ellip,*/
-    .V6Ytv,
     .slVwZ,
     .kno-fb-ctx,
     .kno-nf-nr,
@@ -992,6 +996,9 @@ url-prefix("https://myactivity.google.com/") {
         color: var(--Mygray2) !important;
         background-color: transparent !important;
     }
+    .BiYF3.HIf9ae,
+    .LN9Pb,
+    .V6Ytv,
     span.XCKyNd,
     span {
         color: var(--MyW) !important;
@@ -1036,8 +1043,7 @@ url-prefix("https://myactivity.google.com/") {
     .rg_ilmbg {
         background-color: var(--MyX1) !important;
     }
-    .CAAQAQ,
-    .P5BnJb {
+    .CAAQAQ {
         border-radius: 15px !important;
         background-color: var(--Myred3) !important;
     }
@@ -1301,9 +1307,13 @@ url-prefix("https://myactivity.google.com/") {
     header.mSUZQd {
         background-color: transparent !important;
     }
+    .CBPSbf,
     g-scrolling-carousel {
         background-color: var(--Mygray3) !important;
     }
+    td,
+    td.ellip,
+    .OAssce,
     .YtVmAd {
         background-color: var(--Myred3) !important;
     }
@@ -1317,6 +1327,7 @@ url-prefix("https://myactivity.google.com/") {
     .mjO7gf {
         color: var(--TwitterPink) !important;
     }
+    .kyas6e,
     #upgrade.znsu3 {
         background-color: var(--MyB) !important;
     }
@@ -1432,7 +1443,29 @@ url-prefix("https://myactivity.google.com/") {
     .MGqjK {
         background-color: var(--MyB) !important;
     }
+    .mWyH1d.hide-focus-ring.UgLoB div {
+        padding: 0px !important;
+    }
     .SPZz6b {
         text-align: center !important;
+    }
+    .g:hover,
+    .AUiS2 {
+        background-color: var(--MyX1) !important;
+    }
+    .xTFaxe.z1asCe.SaPW2b {
+        right: 0px !important;
+    }
+    a:visited>br>h2>span {
+        color: var(--TwitterBlue) !important;
+    }
+    .qmv19b>div:hover,
+    span.XCKyNd,
+    [role="button"]:hover {
+        filter: brightness(150%) !important;
+        color: var(--MyW) !important;
+    }
+    .qmv19b>div {
+        background-color: var(--Myred3) !important;
     }
 }
