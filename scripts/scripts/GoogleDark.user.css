@@ -407,6 +407,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    [role=listitem]>div,
     .MXl0lf.mtqGb,
     div[aria-label="More videos"],
     .dialog-edit-button,
@@ -489,6 +490,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    [role=listitem]>div:hover,
     .MXl0lf.mtqGb:hover,
     div[aria-label="More videos"]:hover,
     .dialog-edit-button:hover,
@@ -605,6 +607,7 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+    [role=listitem]>div:active,
     .MXl0lf.mtqGb:active,
     div[aria-label="More videos"]:active,
     .dialog-edit-button:active,
@@ -789,6 +792,7 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Mygray2) !important;
         border-radius: 15px !important;
     }
+    #wp-tabs-container.I6TXqe.osrp-blk,
     div[class*="imspo"],
     .imso-hov:hover,
     g-immersive-footer,
@@ -1221,7 +1225,6 @@ url-prefix("https://myactivity.google.com/") {
     .fLJSwc,
     .OeVqAd,
     .ru14E.kF2iof,
-    #wp-tabs-container,
     .K20DDe.HdaFGf.suApsd.R9GLFb.JXFbbc.Xbg0sb.ySjHwc,
     .UUcaod,
     #eer-ra,
@@ -1269,7 +1272,9 @@ url-prefix("https://myactivity.google.com/") {
     div[role="menubar"],
     .lcorif.fp-w,
     .vk_c.card-section,
+    /*
     div[class*="wholepage-card"]:not([data-hveid="CD0QAQ"]),
+    */
     .Y653g,
     .MXwBff,
     a[jsname="uy6ald"],
