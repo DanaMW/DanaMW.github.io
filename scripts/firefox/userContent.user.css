@@ -7,8 +7,6 @@
 @homepageURL https://danamw.github.io
 ==/UserStyle== */
 
-@namespace html "http://www.w3.org/1999/xhtml";
-@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 @-moz-document url-prefix("about"),
 url("about:addons") {
     .addon-card-message[type="warning"],
@@ -55,9 +53,9 @@ url("about:addons") {
         background-image: none !important;
         border: none !important;
     }
-    menulist,
     td.cell-edit,
     td.cell-reset,
+    menulist,
     .sidebar-footer-button,
     #help-button,
     .category,
@@ -90,9 +88,9 @@ url("about:addons") {
         background-image: none !important;
         background-color: transparent !important;
     }
-    menulist:hover,
     td.cell-edit:hover,
     td.cell-reset:hover,
+    menulist:hover,
     .sidebar-footer-button:hover,
     #help-button:hover,
     .category[aria-selected="true"],
@@ -115,9 +113,9 @@ url("about:addons") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    menulist:active,
     td.cell-edit:active,
     td.cell-reset:active,
+    menulist:active,
     .sidebar-footer-button:active,
     #help-button:active,
     .category:active,
@@ -490,4 +488,50 @@ button[action="install-postponed"]:active,
     transition: background .2s, box-shadow .4s, border-color .2s !important;
     transition-timing-function: linear !important;
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+}
+
+@-moz-document url("about:performance") {
+    #dispatch-tbody {
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+    }
+    tr[data-l10n-id="item"] {
+        background-color: var(--MyB) !important;
+    }
+    tr[data-l10n-id="item"]:hover {
+        background-color: var(--MyX1) !important;
+    }
+    td {
+        background-color: var(--MyB) !important;
+    }
+    td:hover {
+        background-color: var(--MyX1) !important;
+    }
+    #dispatch-thead>tr>td {
+        background-color: var(--Myred3) !important;
+    }
+}
+
+@-moz-document url("about:about") {
+    ul>li:hover {
+        background-color: var(--MyX1) !important;
+    }
+}
+
+@-moz-document url("about:preferences") {
+    richlistitem,
+    richlistbox#handlersView {
+        background: var(--Myblue2) !important;
+    }
+}
+
+@-moz-document url("about:addons") {
+    #content,
+    #sidebar,
+    #full {
+        background: var(--MyB) !important;
+    }
+    search-addons search-textbox input[mozactionhint="search"] {
+        color: var(--MyW) !important;
+    }
 }

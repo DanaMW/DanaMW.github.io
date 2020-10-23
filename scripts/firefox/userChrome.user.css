@@ -622,3 +622,7 @@ toolbarbutton#scrollbutton-down {
 .new-tab-popup>* {
     pointer-events: auto
 }
+
+browser#html-view-browser {
+    background: var(--MyB) !important;
+}
