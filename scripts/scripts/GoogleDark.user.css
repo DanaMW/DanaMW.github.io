@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.70
+@version      0.1.71
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -708,7 +708,7 @@ url-prefix("https://myactivity.google.com/") {
         filter: invert(1) !important;
     }
     button.maps-sprite-settings-chevron-left,
-    button img {
+    button img:not([src*="https"]) {
         filter: invert(1) !important;
     }
     .section-profile-stats-progressbar-bar {
