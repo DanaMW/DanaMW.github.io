@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.79
+@version      0.0.80
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -248,9 +248,8 @@
     div[class*="iconWrapper"] svg[class*="icon"] {
         color: var(--MyW) !important;
     }
-    svg[class*="icon"]:not([id*="channels"]>svg),
-    h3[role="button"],
-    div[class*="iconWrapper"],
+    div[class*="children"] h3[class*="title"][class*="title"][class*="base"][class*="size16"][role="button"],
+    svg[class*="icon"],
     div[class*="iconWrapper"][class*="clickable"][role="button"],
     div[class*="icon"][class*="iconLayout"][class*="small"],
     div[aria-roledescription="Channel Mute Switch"],
@@ -263,8 +262,8 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
+    div[class*="children"] h3[class*="title"][class*="title"][class*="base"][class*="size16"][role="button"]:hover,
     svg[class*="icon"]:hover,
-    h3[role="button"]:hover,
     div[class*="iconWrapper"][class*="clickable"][role="button"]:hover,
     div[class*="icon"][class*="iconLayout"][class*="small"]:hover,
     div[aria-roledescription="Channel Mute Switch"]:hover,
