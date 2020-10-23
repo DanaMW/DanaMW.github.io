@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.69
+@version      0.1.70
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -903,6 +903,7 @@ url-prefix("https://myactivity.google.com/") {
     .RScZKc {
         color: var(--TwitterBlue) !important;
     }
+    a[href],
     .W8wzH,
     i,
     label,
@@ -914,14 +915,7 @@ url-prefix("https://myactivity.google.com/") {
     a {
         color: var(--MyW) !important;
     }
-    /*
-    h3 {
-        color: var(--TwitterPink) !important;
-    }
-    h3 a:visited {
-        color: var(--TwitterBlue) !important;
-    }
-    */
+    a h3>span:hover,
     a:hover b,
     a>b:hover,
     a>b:hover a,
@@ -932,13 +926,16 @@ url-prefix("https://myactivity.google.com/") {
     a.gb_d:hover,
     .XCKyNd:hover,
     h2:hover,
-    h3:hover,
     a:hover {
         color: var(--Myred1) !important;
     }
+    a[href]:visited h3>span,
     a:visited {
         color: var(--TwitterBlue) !important;
         text-decoration: none !important;
+    }
+    a[href]:visited h3>span:hover {
+        color: var(--Myblue1) !important;
     }
     #logo:hover,
     #hplogo:hover {
@@ -1456,15 +1453,13 @@ url-prefix("https://myactivity.google.com/") {
     .xTFaxe.z1asCe.SaPW2b {
         right: 0px !important;
     }
-    a:visited>br>h2>span {
-        color: var(--TwitterBlue) !important;
-    }
     .qmv19b>div:hover,
     span.XCKyNd,
     [role="button"]:hover {
         filter: brightness(150%) !important;
         color: var(--MyW) !important;
     }
+    .qcTKEe,
     .qmv19b>div {
         background-color: var(--Myred3) !important;
     }
