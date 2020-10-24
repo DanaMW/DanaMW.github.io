@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.80
+@version      0.0.81
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -776,18 +776,6 @@
         text-align: center !important;
         text-shadow: 1px 1px 0 var(--MyW) !important;
         margin-left: 10px !important;
-    }
-    .tootip_box,
-    .tooltip {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    .tootip_box,
-    .tooltip {
-        background-color: var(--MyX1) !important;
-    }
-    .tooltipText {
-        color: var(--Myred1) !important;
     }
     form,
     div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
