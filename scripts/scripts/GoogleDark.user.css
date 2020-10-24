@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.72
+@version      0.1.73
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -396,6 +396,7 @@ url-prefix("https://myactivity.google.com/") {
     .gb_m {
         z-index: 10000 !important;
     }
+    .QtDoYb,
     a[data-navigation="server"],
     circle {
         background-image: none !important;
@@ -408,6 +409,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .DOAbib,
     .BiYF3.HIf9ae,
     .gziGLd,
     [role=listitem]>div,
@@ -493,6 +495,8 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .DOAbib:hover,
+    .DOAbib.ixImeb,
     .BiYF3.HIf9ae:hover,
     .gziGLd:hover,
     [role=listitem]>div:hover,
@@ -607,11 +611,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    div[class="gb_3d gb_le gb_ce gb_be"],
-    a.WpHeLc.VfPpkd-RLmnJb:hover {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
-    }
+    .DOAbib:active,
     .BiYF3.HIf9ae:active,
     .gziGLd:active,
     [role=listitem]>div:active,
@@ -1267,6 +1267,7 @@ url-prefix("https://myactivity.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    .mvD5nc,
     .WpKAof,
     .iBsHqb,
     .section-place-name-header:hover,
@@ -1460,8 +1461,22 @@ url-prefix("https://myactivity.google.com/") {
         filter: brightness(150%) !important;
         color: var(--MyW) !important;
     }
+    .YisXab,
+    .eReC4e.FbgB9,
     .qcTKEe,
     .qmv19b>div {
         background-color: var(--Myred3) !important;
+    }
+    .Aul2T.m6aMje {
+        background-color: transparent !important;
+    }
+    .QuQCEd.up0e5 {
+        filter: invert(70%) !important;
+    }
+    .QtDoYb,
+    div[class="gb_3d gb_le gb_ce gb_be"],
+    a.WpHeLc.VfPpkd-RLmnJb:hover {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
 }
