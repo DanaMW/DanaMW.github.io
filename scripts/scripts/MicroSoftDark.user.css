@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.35
+@version      0.0.36
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -20,6 +20,7 @@ domain("account.microsoft.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .ms-Stack.css-220,
     .ms-Stack.css-168,
     .swim,
     #page-wrapper,
@@ -400,6 +401,7 @@ domain("account.microsoft.com") {
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    div[id*="home\.cards\.card"],
     div[id*="security.cards"],
     .c-channel-placement-content,
     .pi-content,
@@ -419,6 +421,7 @@ domain("account.microsoft.com") {
     .msame_Header {
         background-color: transparent !important;
     }
+    div[id*="home\.cards\.card"],
     div[id*="security.cards"],
     .pi-content,
     .input-group-text,
