@@ -2,7 +2,7 @@
 @name         CounterSocial Dark
 @namespace    https://danamw.github.io192.168.0.3/scripts/scripts/CounterSocialDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CounterSocialDark.user.css
-@version      0.0.29
+@version      0.0.30
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -30,6 +30,7 @@
     /*img[src="cososhare.png"],
     a[title="UPLOAD TO COSOSHARE"],
     */
+    canvas[data-type="linear-gauge"],
     div[align="center"]>strong,
     #cososhare,
     #pagepeel,
