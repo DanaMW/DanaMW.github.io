@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.37
+@version      0.0.38
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -15,11 +15,14 @@ domain("account.microsoft.com") {
         /* f-information epb-container epb-default-color */
         display: none !important;
     }
+    .ms-Stack,
     #picture-editor-owner,
     .jumbotron {
         background-image: none !important;
         background-color: transparent !important;
     }
+    #home-index,
+    #root,
     .ms-Stack.css-220,
     .ms-Stack.css-168,
     .swim,
@@ -110,7 +113,6 @@ domain("account.microsoft.com") {
         color: var(--MyW) !important;
     }
     .internav a:hover,
-    /* .active, */
     .current,
     a[id*="shellmenu_"]:hover,
     a#shellmenu_0:hover,
@@ -482,8 +484,7 @@ domain("account.microsoft.com") {
     h3[class*="c-subheading"] {
         background-color: transparent !important;
     }
-    a.ms-Button.ms-Button--action.ms-Button--command.root-345:hover,
-    a.ms-Button.ms-Button--action.ms-Button--command.root-452:hover,
+    a.ms-Button.ms-Button--action.ms-Button--command:hover,
     .ms-Stack.css-340:hover {
         background-color: var(--MyX1) !important;
     }
