@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.36
+@version      0.0.37
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -241,6 +241,8 @@ domain("account.microsoft.com") {
     .mscom-accordion-item-image {
         background-image: none !important;
     }
+    a.mectrl_resetStyle.mectrl_signout.mectrl_truncate,
+    a.mectrl_resetStyle.primaryAction.signIn,
     #edit-picture-remove,
     a.ms-Link,
     .mscom-accordion-item-image,
@@ -278,6 +280,8 @@ domain("account.microsoft.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.mectrl_resetStyle.mectrl_signout.mectrl_truncate:hover,
+    a.mectrl_resetStyle.primaryAction.signIn:hover,
     #edit-picture-remove:hover,
     a.ms-Link:hover,
     .mscom-accordion-item-image:hover,
@@ -316,6 +320,8 @@ domain("account.microsoft.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.mectrl_resetStyle.mectrl_signout.mectrl_truncate:active,
+    a.mectrl_resetStyle.primaryAction.signIn:active,
     #edit-picture-remove:active,
     a.ms-Link:active,
     .mscom-accordion-item-image:active,
@@ -401,6 +407,10 @@ domain("account.microsoft.com") {
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    .x-hidden-focus,
+    [role="alert"],
+    mee-alert,
+    .settings-table,
     div[id*="home\.cards\.card"],
     div[id*="security.cards"],
     .c-channel-placement-content,
@@ -421,6 +431,7 @@ domain("account.microsoft.com") {
     .msame_Header {
         background-color: transparent !important;
     }
+    .x-hidden-focus,
     div[id*="home\.cards\.card"],
     div[id*="security.cards"],
     .pi-content,
@@ -470,5 +481,14 @@ domain("account.microsoft.com") {
     }
     h3[class*="c-subheading"] {
         background-color: transparent !important;
+    }
+    a.ms-Button.ms-Button--action.ms-Button--command.root-345:hover,
+    a.ms-Button.ms-Button--action.ms-Button--command.root-452:hover,
+    .ms-Stack.css-340:hover {
+        background-color: var(--MyX1) !important;
+    }
+    .mectrl_tooltip {
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
     }
 }
