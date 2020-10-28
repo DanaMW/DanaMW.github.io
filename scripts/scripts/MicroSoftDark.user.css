@@ -2,19 +2,22 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.38
+@version      0.0.39
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("microsoft.com"),
-domain("account.microsoft.com") {
+domain("account.microsoft.com"),
+domain("support.microsoft.com") {
+    #bannerAboveUHF,
     #msccBanner,
     .c-uhfh-alert {
         /* f-information epb-container epb-default-color */
         display: none !important;
     }
+    nav#topNav.topNav,
     .ms-Stack,
     #picture-editor-owner,
     .jumbotron {
@@ -243,6 +246,8 @@ domain("account.microsoft.com") {
     .mscom-accordion-item-image {
         background-image: none !important;
     }
+    li>a.topNavDropdownTrigger,
+    li>a.topNavDropdownLink,
     a.mectrl_resetStyle.mectrl_signout.mectrl_truncate,
     a.mectrl_resetStyle.primaryAction.signIn,
     #edit-picture-remove,
@@ -282,6 +287,8 @@ domain("account.microsoft.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    li>a.topNavDropdownTrigger:hover,
+    li>a.topNavDropdownLink:hover,
     a.mectrl_resetStyle.mectrl_signout.mectrl_truncate:hover,
     a.mectrl_resetStyle.primaryAction.signIn:hover,
     #edit-picture-remove:hover,
@@ -322,6 +329,8 @@ domain("account.microsoft.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    li>a.topNavDropdownTrigger:active,
+    li>a.topNavDropdownLink:active,
     a.mectrl_resetStyle.mectrl_signout.mectrl_truncate:active,
     a.mectrl_resetStyle.primaryAction.signIn:active,
     #edit-picture-remove:active,
