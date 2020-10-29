@@ -2,13 +2,14 @@
 @name         RockAuto Dark
 @namespace    http://danamw.github.io/scripts/scripts/RockautoDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RockautoDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("rockauto.com") {
+    tbody,
     html,
     body {
         background-color: var(--MyB) !important;
@@ -51,6 +52,11 @@
     small {
         color: var(--TwitterPink) !important;
     }
+    .ra-tab-header-base {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    span.inner,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -66,6 +72,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    span.inner:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -83,6 +90,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    span.inner:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -100,18 +108,35 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .fullwidth.noborder {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    div.inner,
+    .checkout-please-allow {
         background-image: none !important;
         background-color: transparent !important;
     }
-    .stock {
+    .whitebubble,
+    .account-widget-expandable-area,
+    .status-color-green,
+    .w100.taleft,
+    .graybubble,
+    #displaycurrency {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .dk-howhear-header.tacenter,
+    .dk-checkout-header,
+    .remove-for-print,
+    .account-widget-body,
+    .checkout-please-allow,
+    .fl-row-c.no-text-select,
+    .fullwidth.nobmp {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    select,
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -125,4 +150,21 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+    .outer {
+        background: var(--Myred3) !important;
+    }
+    .outer:hover,
+    .outer.selected {
+        background: var(--MyX1) !important;
+    }
+    .checkoutform,
+    .tacenter,
+    div[style="background-color: white;"] {
+        background-color: var(--MyB) !important;
+    }
+    /*
+    img.top-tab-cart-bw-b {
+        filter: invert(1) !important;
+    }
+    */
 }
