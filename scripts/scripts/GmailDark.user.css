@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.4
+@version      0.1.5
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -1357,6 +1357,7 @@ url-prefix("https://docs.google.com/picker") {
     .Q2 {
         color: var(--MyW) !important;
     }
+    .DYLA1c.q8ixdb,
     .sh,
     #talk_flyout,
     .vh.aL,
@@ -1416,10 +1417,20 @@ url-prefix("https://docs.google.com/picker") {
     .IU.nn {
         background-color: var(--Mygray3) !important;
     }
+    .YysZRb,
     .mVSsPb {
         color: var(--TwitterBlue) !important;
     }
+    .X5KVDc.lqDipf.ILmtpd>svg:hover,
+    .cs3SAb {
+        color: var(--TwitterRed) !important;
+    }
+    .X5KVDc.lqDipf.ILmtpd>svg,
+    .RffVmb.AL18ce,
     .YGvwud {
         color: var(--MyW) !important;
+    }
+    .DYLA1c.q8ixdb {
+        border: 1px solid var(--MyW) !important;
     }
 }
