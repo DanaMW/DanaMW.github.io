@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.81
+@version      0.0.82
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -594,7 +594,7 @@
         border-radius: 50% !important;
     }
     /*[role="button"]:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
-    div[role="listitem"]:not([class*="clickable"]),
+    div[role="listitem"]:not([class*="clickable"]):not([class*="message"]),
     foreignObject>a[class*="wrapper"],
     div[class*="expandedFolderIconWrapper"],
     div[class*="closedFolderIconWrapper"],
@@ -622,8 +622,8 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
     /*[role="button"]:hover:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
-    div[role="listitem"]:not([class*="clickable"]):hover,
-    div[class*="containerDefault"][class*="selected"] div[role="listitem"]:not([class*="clickable"]),
+    div[role="listitem"]:hover:not([class*="clickable"]):not([class*="message"]),
+    div[class*="containerDefault"][class*="selected"] div[role="listitem"]:not([class*="clickable"]):not([class*="message"]),
     div[aria-label="More"][role=button]:hover,
     div[class*="friendsRow"]:hover,
     a[class*="wrapper"][class*="selected"],
@@ -671,7 +671,7 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
     /*[role="button"]:active:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
-    div[role="listitem"]:not([class*="clickable"]):active,
+    div[role="listitem"]:active:not([class*="clickable"]):not([class*="message"]),
     div[aria-label="More"][role=button]:active,
     div[class*="expandedFolderIconWrapper"]:active,
     div[class*="closedFolderIconWrapper"]:active,
@@ -836,7 +836,7 @@
         color: var(--Myred1) !important;
         background-color: var(--Myred1) !important;
     }
-    div[role="listitem"][class*="clickable"]:not([class*="member"]),
+    div[role="listitem"][class*="clickable"]:not([class*="member"]):not([class*="message"]),
     nav[aria-label="Servers sidebar"],
     nav[class*="wrapper"][class*="guilds"],
     nav[class*="wrapper"][class*="guilds"] * div[class*="scroller"][class*="none"][class*="scrollerBase"] {
