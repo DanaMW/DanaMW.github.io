@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.73
+@version      0.1.74
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -223,7 +223,7 @@ url-prefix("https://myactivity.google.com/") {
     #Sva75c,
     .Mza7yc,
     .UVgjof,
-    div[role="main"] {
+    div[role="main"]:not([class="s7iwrf gMPiLc  Kdcijb"]) {
         background-color: hsla(0, 87%, 12%, 0.8) !important;
     }
     #resultStats {
@@ -704,14 +704,6 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .Xvesr:hover,
-    button[class*="section-header"]:hover {
-        filter: invert(1) !important;
-    }
-    button.maps-sprite-settings-chevron-left,
-    button img:not([src*="https"]) {
-        filter: invert(1) !important;
-    }
     .section-profile-stats-progressbar-bar {
         background-color: var(--Myred3) !important;
     }
@@ -744,13 +736,6 @@ url-prefix("https://myactivity.google.com/") {
     .i3LlFf,
     .fl.ellip.oBrLN {
         color: var(--Mygreen1) !important;
-    }
-    a[title="Google apps"],
-    .gb_xc .gb_x.gb_Vb,
-    .JOmIqc,
-    button.gb_Df svg,
-    g-popup svg {
-        filter: invert(1);
     }
     .jleFbf {
         color: var(--Mygray1) !important;
@@ -1176,9 +1161,6 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Mygray3) !important;
         border: 1px solid var(--MyW) !important;
     }
-    svg path[d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"] {
-        filter: invert(180) !important;
-    }
     g-more-link,
     .zTpPx.V7Sr0.vH5Lmd {
         text-align: center;
@@ -1428,9 +1410,6 @@ url-prefix("https://myactivity.google.com/") {
     svg:hover {
         filter: brightness(200%) !important;
     }
-    .p2WJce {
-        filter: invert(1) !important;
-    }
     .iHyq8c,
     .N60dNb.mfMhoc,
     .nL0W0>div {
@@ -1470,9 +1449,28 @@ url-prefix("https://myactivity.google.com/") {
     .Aul2T.m6aMje {
         background-color: transparent !important;
     }
+    a[title="Google apps"],
+    .gb_xc .gb_x.gb_Vb,
+    .JOmIqc,
+    button.gb_Df svg,
+    g-popup svg,
+    .p2WJce,
+    .Xvesr:hover,
+    button[class*="section-header"]:hover,
+    button.maps-sprite-settings-chevron-left,
+    button img:not([src*="https"]) {
+        filter: invert(1) !important;
+    }
     .QuQCEd.up0e5 {
         filter: invert(70%) !important;
     }
+    svg path[d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"] {
+        filter: invert(180) !important;
+    }
+    figure>img[class="YPzqGd Vz93id"] {
+        filter: invert(0) !important;
+    }
+    header[role="banner"],
     .QtDoYb,
     div[class="gb_3d gb_le gb_ce gb_be"],
     a.WpHeLc.VfPpkd-RLmnJb:hover {
