@@ -2,7 +2,7 @@
 @name         Stock Dark
 @namespace    https://danamw.github.io/scripts/scripts/Stock.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/Stock.user.css
-@version      0.1.0
+@version      0.1.1
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -103,6 +103,11 @@
     .stock {
         background-image: none !important;
         background-color: transparent !important;
+    }
+    header,
+    .stock_navbar {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
     .stock {
         background-color: var(--Mygray1) !important;
