@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.17
+@version      0.0.18
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -758,7 +758,7 @@ domain("studio.youtube.com") {
     }
     .header,
     #header-section {
-        background-color: var(--Myred2) !important;
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     paper-toast,
@@ -766,5 +766,18 @@ domain("studio.youtube.com") {
         background-color: var(--MyX1) !important;
         border: 1px solid var(--MyW) !important;
         color: var(--MyW) !important;
+    }
+    #channel-header,
+    #tabs-inner-container {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    #channel-header {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    #tabs-inner-container {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
 }
