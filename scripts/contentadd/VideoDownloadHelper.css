@@ -1,4 +1,4 @@
-@-moz-document url-prefix("moz-extension://4ca355a8-5059-4a48-b3d4-ad7aecf6c231/"),
+@-moz-document url-prefix("moz-extension://b7a43e4d-c446-41dd-8ed8-b1a205434a44/"),
 url-prefix("moz-extension://a174176b-611c-4cdd-b3de-7f0ee44d1471/"),
 url-prefix("moz-extension://1e2b8692-70f2-4fa0-81b4-51954ffab233/") {
     html,
@@ -23,7 +23,7 @@ url-prefix("moz-extension://1e2b8692-70f2-4fa0-81b4-51954ffab233/") {
     }
     header.weh-header {
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
     .active.nav-link,
     button {
@@ -33,7 +33,7 @@ url-prefix("moz-extension://1e2b8692-70f2-4fa0-81b4-51954ffab233/") {
         border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
-        background-image: radial-gradient( ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
         -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
         -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
@@ -50,7 +50,7 @@ url-prefix("moz-extension://1e2b8692-70f2-4fa0-81b4-51954ffab233/") {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient( 180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
         outline: none !important;
         opacity: 1 !important;
         color: var(--MyW) !important;
@@ -68,7 +68,7 @@ url-prefix("moz-extension://1e2b8692-70f2-4fa0-81b4-51954ffab233/") {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient( ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient( 180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
         opacity: 1 !important;
         color: var(--MyW) !important;
@@ -80,11 +80,11 @@ url-prefix("moz-extension://1e2b8692-70f2-4fa0-81b4-51954ffab233/") {
     }
     .card-body,
     .card {
-        background-image: linear-gradient( to top, rgba(20, 20, 20, 0.8), rgba(75, 75, 75, 0.8), rgba(20, 20, 20, 0.8) 100%, transparent) !important;
+        background-image: linear-gradient(to top, rgba(20, 20, 20, 0.8), rgba(75, 75, 75, 0.8), rgba(20, 20, 20, 0.8) 100%, transparent) !important;
     }
     section-header,
     .section-header.section-open {
-        background-image: linear-gradient( to top, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
+        background-image: linear-gradient(to top, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
     }
     select:-moz-focusring {
         color: transparent;

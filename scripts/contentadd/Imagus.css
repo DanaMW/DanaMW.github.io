@@ -1,6 +1,6 @@
 /* Imagus */
 
-@-moz-document url-prefix("moz-extension://a024cdc1-e1b9-469a-99ad-4ad1c650f6f1/options.html"),
+@-moz-document url-prefix("moz-extension://9a417b58-4f92-4546-922b-20f3efb1cf1d/options.html"),
 url-prefix("moz-extension://dd13d900-6b72-45be-b847-2a1919515110/options.html"),
 url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") {
      ::-moz-selection {
@@ -30,8 +30,8 @@ url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") 
         color: #ff0000 !important;
     }
     #importer {
-        background-image: -webkit-linear-gradient( top, #fff, rgba(245, 245, 255, 0.9)) !important;
-        background-image: linear-gradient( to bottom, #fff, rgba(245, 245, 255, 0.9)) !important;
+        background-image: -webkit-linear-gradient(top, #fff, rgba(245, 245, 255, 0.9)) !important;
+        background-image: linear-gradient(to bottom, #fff, rgba(245, 245, 255, 0.9)) !important;
         box-shadow: 0 0 5px #666 !important;
         -webkit-box-shadow: 0 0 5px #666 !important;
     }
@@ -73,8 +73,8 @@ url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") 
     }
     .tip:hover {
         background-color: var(--Myback) !important;
-        background-image: -webkit-linear-gradient( top, var(--Myback), var(--Mygray2)) !important;
-        background-image: linear-gradient( to bottom, var(--Myback), var(--Mygray2)) !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
         color: #fff !important;
         border: 1px solid #ddd !important;
         box-shadow: 0 0 10px #dedede !important;
@@ -94,8 +94,8 @@ url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") 
     select,
     code,
     .checkbox {
-        background-image: -webkit-linear-gradient( top, var(--Myback), var(--Mygray2)) !important;
-        background-image: linear-gradient( to bottom, var(--Myback), var(--Mygray2)) !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
         background-color: var(--Myback) !important;
         border: 1px solid #ddd !important;
         color: #fff !important;
@@ -104,8 +104,8 @@ url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") 
         color: var(--Myred1) !important;
     }
     code {
-        background-image: -webkit-linear-gradient( top, var(--Myback), var(--Mygray2)) !important;
-        background-image: linear-gradient( to bottom, var(--Myback), var(--Mygray2)) !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
         border: 1px solid rgb(255, 255, 255) !important;
     }
     input[type="checkbox"]:checked+.checkbox {
@@ -117,8 +117,8 @@ url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") 
     .op_buttons>button,
     .action_buttons>span,
     .file_button {
-        background-image: -webkit-linear-gradient( top, var(--Myback), var(--Mygray2)) !important;
-        background-image: linear-gradient( to bottom, var(--Myback), var(--Mygray2)) !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
         color: #fff !important;
         border: 1px solid rgb(255, 255, 255) !important;
     }
@@ -136,12 +136,12 @@ url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") 
         box-shadow: 1px 1px 5px #bbb !important;
         -webkit-box-shadow: 1px 1px 5px #bbb !important;
         border-left: 2px solid #b97070 !important;
-        background-image: -webkit-linear-gradient( top, var(--Myback), var(--Mygray2)) !important;
-        background-image: linear-gradient( to bottom, var(--Myback), var(--Mygray2)) !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
     }
     #sieve_container>div:not(.opened)>span:hover {
-        background-image: -webkit-linear-gradient( top, var(--Myback), var(--Mygray2)) !important;
-        background-image: linear-gradient( to bottom, var(--Myback), var(--Mygray2)) !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
         border: 1px solid rgb(255, 255, 255) !important;
     }
     #sieve_container>.disabled>span {
@@ -149,8 +149,8 @@ url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") 
         color: red !important;
     }
     #sieve_container>.selected>span {
-        background-image: -webkit-linear-gradient( top, var(--Myback), var(--Mygray2)) !important;
-        background-image: linear-gradient( to bottom, var(--Myback), var(--Mygray2)) !important;
+        background-image: -webkit-linear-gradient(top, var(--Myback), var(--Mygray2)) !important;
+        background-image: linear-gradient(to bottom, var(--Myback), var(--Mygray2)) !important;
     }
     #sieve_container>.move {
         background: var(--Myback) !important;

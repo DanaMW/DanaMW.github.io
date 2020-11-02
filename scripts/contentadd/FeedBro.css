@@ -1,6 +1,6 @@
 /* feedbro */
 
-@-moz-document url-prefix("moz-extension://c489fead-1ce3-4b60-ab7d-3d1694d00510/reader.html"),
+@-moz-document url-prefix("moz-extension://c9ab3e26-6d49-4112-864e-d52b26615931/reader.html"),
 url-prefix("moz-extension://125cf797-1695-4fd6-9f97-84e10837c8d5/reader.html"),
 url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
     html,
@@ -38,7 +38,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
     .div#titles>div.activetitle,
     .item.activetitle {
         color: var(--MyW) !important;
-        background: -webkit-gradient( linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
     }
     .item.pin {
         background-color: var(--Myred1) !important;
@@ -53,7 +53,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
     ul.jqtree-tree li.jqtree-selected>div,
     ul.jqtree-tree li.jqtree-selected>div:hover {
         color: var(--MyW) !important;
-        background: -webkit-gradient( linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
     }
     .item:hover,
     div.node-text:hover {
@@ -62,7 +62,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
     }
     div#mainfunctions div.menu-selected {
         color: var(--MyW) !important;
-        background: -webkit-gradient( linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
     }
     #contextmenu {
         background-color: var(--Mygray3) !important;
@@ -74,7 +74,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
     }
     .contextitem:hover {
         color: var(--MyW) !important;
-        background: -webkit-gradient( linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
+        background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 100%, 50%)), to(hsl(0, 100%, 24%))) !important;
         border-radius: 15px !important;
     }
     .node-text.node-unreadtext {
@@ -93,12 +93,12 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
     article,
     alertify-inner {
         background-color: var(--Myred3) !important;
-        background-image: linear-gradient( to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     nav,
     .alertify-buttons {
         background-color: var(--Mygray1) !important;
-        background-image: linear-gradient( to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     article,
     alertify-inner {
