@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.65
+@version      0.0.66
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -92,6 +92,7 @@
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
         background-color: var(--Mygray2) !important;
     }
+    div[class="ByB5K enqOc "],
     ._8UZ6e,
     footer,
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="_22l1"][class*="_49XvD"][class*="b2rUF"][class*="ZUqME"] {
@@ -776,5 +777,9 @@
     }
     div[class="                    Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
         background-color: var(--Myred3) !important;
+    }
+    button[class="sqdOP yWX7d    y3zKF     "] {
+        width: 100px !important;
+        margin-right: 15px !important;
     }
 }
