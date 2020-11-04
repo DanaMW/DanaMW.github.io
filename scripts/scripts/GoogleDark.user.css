@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.75
+@version      0.1.
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -409,6 +409,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .hide-focus-ring.bSP9c,
     .DOAbib,
     .BiYF3.HIf9ae,
     .gziGLd,
@@ -495,6 +496,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .hide-focus-ring.bSP9c:hover,
     .DOAbib:hover,
     .DOAbib.ixImeb,
     .BiYF3.HIf9ae:hover,
@@ -611,6 +613,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .hide-focus-ring.bSP9c:active,
     .DOAbib:active,
     .BiYF3.HIf9ae:active,
     .gziGLd:active,
@@ -1448,6 +1451,7 @@ url-prefix("https://myactivity.google.com/") {
     .qmv19b>div {
         background-color: var(--Myred3) !important;
     }
+    .nt4TEf.WCKaKb,
     .Aul2T.m6aMje {
         background-color: transparent !important;
     }
