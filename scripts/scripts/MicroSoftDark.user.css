@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.40
+@version      0.0.41
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -19,6 +19,7 @@ domain("support.microsoft.com") {
         /* f-information epb-container epb-default-color */
         display: none !important;
     }
+    mee-drawer,
     nav#topNav.topNav,
     .ms-Stack,
     #picture-editor-owner,
@@ -26,6 +27,7 @@ domain("support.microsoft.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    ul>li>span[class="infosupport-column-second-span ng-binding x-hidden-focus"],
     #home-index,
     #root,
     .ms-Stack.css-220,
