@@ -2,7 +2,7 @@
 @name         Business Insider Dark
 @namespace    http://danamw.github.io/scripts/scripts/BusinessInsiderDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BusinessInsiderDark.user.css
-@version      0.0.9
+@version      0.0.10
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -55,6 +55,7 @@
         color: var(--TwitterBlue) !important;
         text-align: center !important;
     }
+    .left-menu__submenu__item,
     .icon-set.share-button,
     .button,
     button {
@@ -72,6 +73,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .left-menu__submenu__item:hover,
+    .left-menu__text:hover,
     .button:hover,
     button:hover {
         -moz-appearance: none;
@@ -90,6 +93,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .left-menu__submenu__item:active,
     .button:active,
     button:active {
         -moz-appearance: none;
@@ -117,6 +121,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    aside,
     .responsivePosition,
     .site-header__first-row {
         background-color: var(--Myred3) !important;
@@ -163,6 +168,7 @@
         background-color: transparent !important;
     }
     */
+    .price-section__label,
     span[class="push-data "] {
         color: var(--TwitterBlue) !important;
     }
