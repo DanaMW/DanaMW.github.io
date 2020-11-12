@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.77
+@version      0.1.78
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -329,6 +329,7 @@ url-prefix("https://myactivity.google.com/") {
     #hdtb-msb-vis a.q.qs:hover {
         color: var(--MyW) !important;
     }
+    .hdtb-mitem.hdtb-imb>a.q,
     .hdtb-mitem.hdtb-msel.hdtb-imb,
     .hdtb-mitem.hdtb-imb>.q.qs,
     div[role="tab"][aria-selected="true"].hdtb-mitem.hdtb-imb:not([aria-expanded]),
@@ -409,6 +410,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    a.CjB7Ub.M6Nvye,
     .hide-focus-ring.bSP9c,
     .DOAbib,
     .BiYF3.HIf9ae,
@@ -429,6 +431,7 @@ url-prefix("https://myactivity.google.com/") {
     .lLE0jd.gWUzU.F5z5N,
     .S5TwIf,
     a[href="https://policies.google.com/privacy?hl=en"],
+    .hdtb-mitem.hdtb-imb>a.q,
     .hdtb-mitem.hdtb-imb>.q.qs,
     div[jsname="I4bIT"],
     a[data-navigation="server"],
@@ -544,6 +547,7 @@ url-prefix("https://myactivity.google.com/") {
     .suggest:hover,
     .Gj7ine:hover,
     div[aria-label="Google apps"] li>a:hover,
+    .hdtb-mitem.hdtb-imb>a.q:hover,
     .hdtb-mitem.hdtb-imb>.q.qs:hover,
     .hdtb-mitem.hdtb-msel.hdtb-imb>.q.qs:hover,
     .hdtb-mitem.hdtb-msel.hdtb-imb,
@@ -647,6 +651,7 @@ url-prefix("https://myactivity.google.com/") {
     .suggest:active,
     .Gj7ine:active,
     div[aria-label="Google apps"] li>a:active,
+    .hdtb-mitem.hdtb-imb>a.q:active,
     .hdtb-mitem.hdtb-imb:active,
     .hdtb-mitem.hdtb-msel.hdtb-imb:active,
     div[role="tab"]:active:not([aria-expanded]),
