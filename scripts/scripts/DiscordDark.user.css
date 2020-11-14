@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.82
+@version      0.0.84
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -164,7 +164,7 @@
         border: 1px solid var(--Myborder) !important;
     }
     div.container-2Thooq,
-    .header-2o-2hj {
+    header {
         background-color: var(--Myred3) !important;
         background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
