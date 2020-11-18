@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.32
+@version      0.0.33
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -217,6 +217,7 @@ url-prefix("wss://live.github.com") {
     .js-repos-container .btn.btn-sm.btn-primary.text-white:hover,
     .State:hover,
     header[role="banner"],
+    div[role="banner"],
     summary.btn.btn-sm.btn-primary:hover,
     div.d-flex a.text-center.btn.btn-primary.ml-3:hover,
     div[class="repository-content "] div.subnav a.btn.btn-primary.float-right:hover,
@@ -345,6 +346,7 @@ url-prefix("wss://live.github.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    div[class="blankslate "],
     .sidebar,
     details-menu {
         background-color: var(--Mygray1) !important;
@@ -367,6 +369,10 @@ url-prefix("wss://live.github.com") {
     .BorderGrid-row {
         text-align: center !important;
     }
+    div[class="position-relative d-md-flex flex-wrap flex-justify-between flex-items-center border-bottom color-border-secondary pb-3"],
+    div[class="col-12 d-block width-full py-4 border-bottom color-border-secondary"],
+    .border-bottom.color-border-secondary.py-3,
+    li[class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public fork"],
     .public.source.border-bottom,
     .border-bottom.border-gray-dark.py-3,
     .d-flex,
@@ -379,6 +385,10 @@ url-prefix("wss://live.github.com") {
     div[class="col-12 d-block width-full py-4 border-bottom"],
     .Box.pinned-item-list-item {
         border-color: var(--Myred1) !important;
+    }
+    div[class="mt-4 position-sticky top-0 d-none d-md-block bg-white width-full border-bottom color-border-secondary"],
+    div[class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light "] {
+        border-color: var(--Mygreen1) !important;
     }
     ul li[class*="notifications-list-item p-0 pl-2 pb-2 pb-md-0 position-relative border-0 js-notifications-list-item js-navigation-item border-bottom border-gray-light"]:hover {
         -moz-appearance: none;
