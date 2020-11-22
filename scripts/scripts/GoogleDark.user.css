@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.80
+@version      0.1.81
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -465,7 +465,7 @@ url-prefix("https://myactivity.google.com/") {
     #TEPD0b,
     input.ksb,
     .hdtb-msel,
-    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr),
+    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]),
     .gb_O,
     .gb_fa,
     g-left-button,
@@ -579,7 +579,7 @@ url-prefix("https://myactivity.google.com/") {
     .hdtbItm:hover,
     .mitem:hover,
     .mitem.msel,
-    [role="button"]:hover:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]):not(.gmlSVb):not(.Xvesr),
+    [role="button"]:hover:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]),
     a[role="menuitem"]:hover,
     .gb_O:hover,
     .gb_fa.gb_ng:hover,
@@ -675,7 +675,7 @@ url-prefix("https://myactivity.google.com/") {
     input.ksb:active,
     .hdtbItm:active,
     .mitem:active,
-    [role="button"]:active:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not(.gmlSVb),
+    [role="button"]:active:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not(.gmlSVb):not([aria-label="About this Result"]),
     a[role="menuitem"]:active,
     .gb_O:active,
     .gb_fa.gb_ng:active,
@@ -1356,17 +1356,22 @@ url-prefix("https://myactivity.google.com/") {
     .sJyeOd.jrYUfb {
         border-left-color: var(--TwitterRed) !important;
     }
+    div[class*="kp-blk"],
+    div[class="kp-blk EyBRub fm06If Wnoohf OJXvsb"],
+    div[class*="kp-blk Wnoohf OJXvsb"],
     .g,
     .rc,
+    .yuRUbf,
     .kp-blk.Wnoohf.OJXvsb>.xdpopen,
     #center_col,
-    div[class="kp-blk EyBRub fm06If Wnoohf OJXvsb"],
     #taw,
     #res,
     #rso {
         width: 650px !important;
         max-width: 650px !important;
     }
+    div[class="rc"][data-hveid="CAoQAA"],
+    div[class="rc"][data-hveid="CAgQAA"],
     div[class="rc"][data-hveid="CDUQAg"],
     div[class="rc"][data-hveid="CDQQAw"],
     div[class="rc"][data-hveid="CDMQBQ"],
