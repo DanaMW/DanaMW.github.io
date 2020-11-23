@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.24
+@version      0.0.25
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -12,6 +12,11 @@
 ==/UserStyle== */
 
 @-moz-document domain("voice.google.com") {
+    [class*="layout-align"]:not([layout-align="start start"]),
+    #contact-list,
+    gv-message-entry,
+    gv-message-list,
+    md-content,
     ng-transclude,
     .did-display,
     gv-inbox-summary-ng2,
@@ -35,6 +40,7 @@
         margin: 0 auto;
         width: var(--twidth) !important;
         left: calc(1vw + var(--mmove) - 10vw) !important;
+        background-color: transparent !important;
     }
     .stock {
         display: none !important;
@@ -56,6 +62,15 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    ng-transclude,
+    gv-thread-item-detail,
+    gv-annotation,
+    .grey-700,
+    .internalSubheader,
+    .notificationText,
+    span,
+    .device-label,
+    .deviceLabel,
     p,
     a {
         color: var(--MyW) !important;
@@ -65,16 +80,25 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    .grey-900,
+    .call-as-label,
+    h3,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+    .phone-number,
+    .phone-number-name,
+    .internalHeader,
+    .header,
     h2 {
         color: var(--TwitterRed) !important;
     }
     small {
         color: var(--TwitterPink) !important;
     }
-    button {
+    a[role="tab"],
+    [role="button"]:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
+    button:not([aria-label="Search"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -89,7 +113,9 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    button:hover {
+    a[role="tab"]:hover,
+    [role="button"]:hover:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
+    button:hover:not([aria-label="Search"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -106,7 +132,9 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    button:active {
+    a[role="tab"]:active,
+    [role="button"]:active:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
+    button:active:not([aria-label="Search"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -123,7 +151,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .md-body-1 {
         background-image: none !important;
         background-color: transparent !important;
     }
@@ -132,11 +160,15 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    /*
+    .ng-star-inserted:not(.info):not(.header):not(.subheader):not(.links):not(.block):not(.greeting):not(.status):not(.phone-number-details):not(.buttonContent):not(.current-number-description),
+    */
+    div[class^="ng-star-inserted"]:not([role="tablist"]),
+    gv-account-number {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    mat-dialog-container {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -152,5 +184,22 @@
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    input[aria-label="Search"] {
+        color: var(--MyW) !important;
+        height: 25px !important;
+        margin-top: 8px !important;
+    }
+    input[placeholder] {
+        color: var(--MyW) !important;
+    }
+    [gv-hover-id="bubble"] {
+        background-color: var(--Myred2) !important;
+    }
+    [gv-test-id="bubble"] {
+        background-color: var(--Myblue2) !important;
+    }
+    mat-divider {
+        border-color: var(--Myred1) !important;
     }
 }
