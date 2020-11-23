@@ -2,101 +2,123 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.69
+@version      0.0.70
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
 ==/UserStyle== */
 
 @-moz-document domain("instagram.com") {
-    /*---------------------The background-----*/
-    button.ckWGn {
-        position: relative !important;
-    }
+    main.SCxLW,
     html,
     body,
     .oYYFH,
     .js.logged-in.client-root {
-        background: var(--MyB) !important;
+        background-color: var(--MyB) !important;
     }
-    div[class="_8Rm4L  vboSt  _6E_wP ccgHY  GZkEI"] {
-        height: 0px !important;
-        max-height: 0px !important;
-        opacity: 0 !important;
-    }
-    button.ckWGn {
-        position: absolute !important;
-        top: 50px !important;
-        right: 50% !important;
-        left: 50% !important;
+    ._8UZ6e {
+        display: none !important;
     }
     * {
-        text-shadow: none;
         text-decoration: none !important;
-        scrollbar-width: thin;
-        scrollbar-color: var(--Myred1) var(--Myred3);
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
      ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
      ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
-        border-radius: 25px !important;
     }
      ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
-        border-radius: 25px !important;
     }
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
-        border-radius: 25px !important;
     }
-    h4 {
-        color: var(--Mygreen1) !important;
-    }
-    span[class="_3G4x7  l93RR"],
+    div[class*="_7UhW9"][class*="xLCgt"],
     span,
-    .Fy4o8,
-    .Ap253,
-    div[class="_7UhW9   xLCgt       qyrsm KV-D4            fDxYl l4b0S   T0kll "],
+    p,
     a {
         color: var(--MyW) !important;
+        background-color: transparent !important;
     }
-    main.SCxLW {
-        background: var(--MyB) !important;
-        overflow-x: hidden;
-        width: calc(100vw + 16px);
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
     }
-    div[class="FuWoR -wdIA    x7xX2  _0mzm-"] {
-        border-color: var(--Mygreen1) !important;
-    }
-    div[class="pV7Qt      tHaIX            Igw0E   rBNOH          YBx95       _4EzTm                                                                                   XfCBB              nGS-Y             "] {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    /*----------Search and-Search Hide-----*/
-    .LWmhU {
-        background-color: var(--Mygray2) !important;
-        color: var(--MyW) !important;
-        border: 1px solid var(--Myborder);
-    }
+    .Nm9Fw,
     h1 {
-        color: var(--MyB) !important;
+        color: var(--TwitterBlue) !important;
     }
     h2 {
-        color: var(--Mygreen1) !important;
+        color: var(--TwitterRed) !important;
     }
-    .LWmhU._0aCwM {
+    small {
+        color: var(--TwitterPink) !important;
+    }
+    /*
+    XfCBB          HVWg4                  La5L3 ZUqME"
+    */
+    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"],
+    a[class="h-aRd  fuQUr"],
+    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
         border: none !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
-        background-color: var(--Mygray2) !important;
+    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:hover,
+    .-HRM-,
+    a[class="h-aRd  fuQUr"]:hover,
+    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    div[class="ByB5K enqOc "],
-    ._8UZ6e,
-    footer,
-    div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="_22l1"][class*="_49XvD"][class*="b2rUF"][class*="ZUqME"] {
-        display: none !important;
+    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:active,
+    a[class="h-aRd  fuQUr"]:active,
+    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--Mygreen3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    div[class="uo5MA  _2ciX tWgj8 XWrBI "] {
+        background-image: none !important;
+        background-color: transparent !important;
     }
     .pbgfb {
         background-color: var(--Myred3) !important;
@@ -109,20 +131,6 @@
         -moz-transition: all linear 2s;
         -webkit-transition: all linear 2s;
         transition: all ease-in-out 2s;
-    }
-    .drKGC {
-        background-color: var(--Mygray3);
-    }
-    /*------------------------banner-----*/
-    .XajnB,
-    ._lz6s {
-        background: var(--Mygray3) !important;
-    }
-    .XajnB,
-    ._lz6s,
-    .MWDvN {
-        max-height: 75px !important;
-        border: none !important;
     }
     .XajnB,
     ._lz6s {
@@ -141,99 +149,43 @@
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
     }
-    /*----------------------------------All button sets--------------*/
-    ._b28md {
-        border: 1px solid var(--Myback) !important;
-        border-radius: 0px 3px 3px 0px !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-    }
-    ._b28md:hover {
-        box-shadow: inset 0px 2px 4px 0px var(--MyB) !important;
-        border-bottom-color: var(--Mred1) !important;
-        border-top-color: var(--MyB) !important;
-        border-right-color: #222 !important;
-        border-left-color: var(--Mygray2) !important;
-        background-color: var(--Myback) !important;
-        border-radius: 3px !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-    }
-    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "],
-    .fuQUr a[role="button"]:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6),
-    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:hover,
-    div[class*="                    Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                   XfCBB          HVWg4"]:hover,
-    .-qQT3:hover,
-    a[class="yCE8d  JvDyy"],
-    a[class="yCE8d  "]:hover,
-    .fuQUr:hover,
-    .-HRM-,
-    a[role="button"]:hover:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6):not(.downloadBtn),
-    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+    header,
+    .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
+    }
+    .stock {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    div[class="zGtbP IPQK5 VideM"],
+    [role="dialog"]>._1XyCr {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    textarea {
+        background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
     }
-    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:active,
-    a[class="yCE8d  "]:active,
-    .fuQUr:active,
-    a[role="button"]:active:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6):not(.downloadBtn),
-    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
+    input {
+        background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        filter: brightness(80%) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+        text-align: center !important;
     }
-    div[class="_7UhW9   xLCgt      MMzan  KV-D4              fDxYl     "] {
-        color: var(--MyW) !important;
-    }
-    /*---------------------------All display NONE----------*/
-    div[class="                    Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "],
-    ._8Rna9,
-    .Dt74z {
-        display: none;
-    }
+    /* CLEAN UP ALL THIS SHIT DOWN HERE */
     /*------------------All filter INVERTS----------------*/
+    svg[aria-label="Switch Accounts"],
+    svg[aria-label="Saved"],
+    svg[aria-label="Settings"],
+    svg[aria-label="Profile"],
+    img.s4Iyt:hover,
+    svg:hover {
+        filter: invert(1);
+    }
     .coreSpriteDismissLarge:hover {
         filter: brightness(150%);
     }
@@ -300,9 +252,6 @@
     }
     ._8Rm4L.M9sTE.L_LMM.SgTZ1 {
         background-color: var(--Myred3);
-        /*
-        border-radius: 25px !important;
-        */
         border: 2px solid var(--Myborder);
     }
     .Szr5J.bMltT {
@@ -381,412 +330,5 @@
     }
     .YQf7h.xptSB {
         background-color: var(--Myred2) !important;
-    }
-    /*---------------------Explore area---------*/
-    ._0T_XJ {
-        border-color: transparent !important;
-        box-shadow: none !important;
-    }
-    ._0T_XJ::after,
-    ._0T_XJ::before {
-        display: none !important;
-    }
-    ._0T_XJ,
-    .NP414.ccgHY.GZkEI,
-    .NroHT.XAtZx {
-        background-color: var(--Myred3) !important;
-    }
-    .t0fbY {
-        background-color: var(--Myred3) !important;
-        /*
-        border-radius: 25px;
-        */
-    }
-    div[class="eo2As "],
-    .NroHT.u_1x6._-1O2x {
-        background-color: var(--Myred2) !important;
-    }
-    ._0vRP0 {
-        color: var(--MyW) !important;
-    }
-    .o9-it.YHaCL {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    /*----------------Edit Account---------------*/
-    .v9tJq>article:nth-child(3) {
-        background-color: var(--Myred3) !important;
-        border: 4px solid var(--Myred3) !important;
-    }
-    ._0mzm-.dCJp8:hover,
-    ._0mzm-.dCJp8 {
-        border-radius: 50% !important;
-    }
-    .PdwC2 {
-        background-color: var(--Myred2) !important;
-    }
-    ._4dMfM {
-        border-radius: 50% !important;
-        border: 2px solid var(--MyW) !important;
-    }
-    .BvMHM.EzUlV {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    .rhpdm,
-    .-nal3,
-    .SZRPf,
-    aside {
-        color: var(--MyW) !important;
-    }
-    .D7R7L {
-        background-color: var(--MyW) !important;
-        border-color: var(--MyB) !important;
-    }
-    .vtbgv,
-    .nwXS6 {
-        padding-top: 10px !important;
-    }
-    .vtbgv {
-        border: 2px solid var(--Myborder) !important;
-        margin-bottom: 0px !important;
-        padding-top: 10px !important;
-    }
-    .-vDIg>span,
-    .g47SY,
-    .AC5d8,
-    .SbZN3,
-    .nsKSz,
-    ._7mEcQ,
-    .ufStW {
-        color: var(--MyW) !important;
-    }
-    .PJXu4,
-    ._9VEo1:hover {
-        color: var(--Myred1) !important;
-    }
-    .T-jvg {
-        border-top: 2px solid var(--Myred1) !important;
-    }
-    .C_9MP {
-        height: 65px !important;
-    }
-    .QXEMa,
-    .kHYQv {
-        color: var(--Myred1) !important;
-        text-transform: uppercase
-    }
-    .M-jxE.LqNQc {
-        border-radius: 50% !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    .Ypffh {
-        background-color: transparent !important;
-        color: var(--MyW) !important;
-        font-weight: bold !important;
-    }
-    .X7cDz {
-        color: var(--MyW) !important;
-        font-weight: bold !important;
-    }
-    /*-----------------Heart Area------------------*/
-    .T5hFd {
-        filter: invert(1) !important;
-    }
-    .nCY9N {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    .vqgRc,
-    .YFq-A {
-        color: var(--MyW) !important;
-    }
-    time {
-        color: var(--Mygreen1) !important;
-    }
-    .jQgLo {
-        color: var(--Mygreen2) !important;
-    }
-    span {
-        color: var(--MyB) !important;
-    }
-    ._08DtY,
-    span>a:hover {
-        color: var(--Myred1) !important;
-    }
-    .H59PT {
-        border-radius: 50%;
-        border: 1px solid var(--MyW) !important;
-    }
-    .PUHRj.eKc9b.H_sJK {
-        background-color: var(--Myred2) !important;
-    }
-    /*-------------------Stories section-----------*/
-    .aD2cN {
-        background-color: var(--Mygray3) !important;
-        border: 1px solid var(--Myborder) !important;
-    }
-    .PdwC2,
-    .M9sTE {
-        /*
-        border-radius: 25px !important;
-        */
-        border: 1px solid var(--MyW) !important;
-    }
-    /*
-    ._97aPb,
-    .ltEKP {
-        border-top-left-radius: 25px !important;
-        border-bottom-left-radius: 25px !important;
-    }
-    */
-    header.top-bar {
-        background-image: none !important;
-    }
-    header.top-bar {
-        border: none !important;
-        background-color: transparent !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
-    header.Ppjfr.UE9AK,
-    header:not(.top-bar) {
-        background-color: var(--Myred2) !important;
-        /*
-        border-top-left-radius: 25px !important;
-        border-top-right-radius: 25px !important;
-        */
-    }
-    /*
-    div[class="eo2As "] {
-        border-bottom-left-radius: 25px !important;
-        border-bottom-right-radius: 25px !important;
-    }
-    */
-    ._97aPb {
-        background-color: var(--Myred2) !important;
-    }
-    div[class*="Igw0E     IwRSH      eGOV_        vwCYk                                                                                                 HcJZg              "],
-    .VIsJD,
-    article,
-    ._4Kbb_._54f4m {
-        background-color: var(--Myred3) !important;
-        color: var(--MyW) !important;
-    }
-    /*div[class*="Igw0E"][class*="_4EzTm"],*/
-    /*div[class*="Igw0E"],*/
-    /*div[class*="_4EzTm"],*/
-    div[class="                     Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "],
-    div[class="        DPiy6            Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
-    DIV[class="                   Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
-    .-qQT3.rOtsg,
-    .N9abW,
-    div[class="PUHRj  H_sJK"],
-    .leaflet-popup-content-wrapper,
-    div[class="      tHaIX             Igw0E     IwRSH      eGOV_        vwCYk                                                                                                 HcJZg              "],
-    div[class="        DPiy6          Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
-    section._9eogI.hfWwk,
-    ul[class="jSC57  _6xe7A"],
-    .wW1cu {
-        background-color: var(--Mygray3) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-    div[class="_7UhW9   xLCgt      MMzan  KV-D4         uL8Hv     l4b0S    "],
-    div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                              "],
-    div[class="_7UhW9   xLCgt       qyrsm KV-D4        uL8Hv         "],
-    .QBXjJ,
-    .zOJg-,
-    .p7vTm,
-    .zyHYP {
-        color: var(--MyW) !important;
-    }
-    div[class="FuWoR -wdIA     x7xX2 "],
-    div[class="                   Igw0E     IwRSH      eGOV_         _4EzTm                                                         iHqQ7                                                     "] {
-        border-color: var(--TwitterRed) !important;
-        color: var(--TwitterRed) !important;
-    }
-    div[class="iMofo   nwToI   LpqwJ"],
-    div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                              "]:hover {
-        background-color: var(--MyX1) !important;
-    }
-    div[class="_9GP1n   "],
-    .gr27e,
-    div[role="dialog"] {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    div[class="_9GP1n   "] {
-        border: none !important;
-    }
-    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                              "],
-    div[class="                     Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
-    div[class="                     Igw0E   rBNOH        eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
-    div[class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="4EzTm"],
-    div[class="                    Igw0E   rBNOH        eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
-    div[class="                    Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
-    div[class="pV7Qt      tHaIX              Igw0E   rBNOH          YBx95       _4EzTm                                                                                   XfCBB              nGS-Y             "],
-    ._01UL2,
-    .zGtbP.IPQK5.VideM,
-    div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                   XfCBB          HVWg4                 "]:hover,
-    div[class="                   Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
-    div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                               rOtsg ZUqME"],
-    .-qQT3.rOtsg:hover,
-    .S-mcP,
-    div[class="PUHRj  H_sJK"]:hover,
-    div[class="        DPiy6           Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
-    div[class="pV7Qt      tHaIX             Igw0E   rBNOH          YBx95       _4EzTm                                                                                   XfCBB              nGS-Y             "],
-    section[class="bR_3v  "],
-    div[class="pV7Qt  _6Rvw2      DPiy6           Igw0E   rBNOH        eGOV_         _4EzTm                                                                                   XfCBB            g6RW6               "],
-    .gr27e,
-    .IpSxo,
-    div[role="dialog"],
-    div[class="pbNvD  fPMEg   "],
-    div[class="        DPiy6            Igw0E     IwRSH      eGOV_        vwCYk                                                                                                               "],
-    ._1XyCr,
-    .piCib,
-    .PVkFi,
-    .vtbgv,
-    .m0NAq,
-    .Ppjfr.UE9AK,
-    .eo2As {
-        background-color: var(--Myred2) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-    .zGtbP.IPQK5.VideM {
-        border-radius: 0px !important;
-    }
-    section[class="bR_3v  "],
-    section.sH9wk._JgwE {
-        color: var(--MyW) !important;
-    }
-    section[class="bR_3v  "] {
-        border: 1px solid var(--Myborder) !important;
-    }
-    .m0NAq {
-        border: 1px solid var(--Myborder) !important;
-        height: 117px !important;
-        margin-top: -6px !important;
-    }
-    ._2dbep.qNELH.kIKUG {
-        width: 56px;
-        height: 56px;
-    }
-    svg[aria-label="Profile"]:hover,
-    svg[aria-label="Activity Feed"]:hover,
-    svg[aria-label="Find People"]:hover,
-    img.s4Iyt:hover,
-    svg[aria-label="Instagram"]:hover {
-        filter: invert(50%) !important;
-    }
-    .tUtVM,
-    ._2dbep.qNELH.kIKUG {
-        border: 1px solid var(--MyW) !important;
-    }
-    .tUtVM:hover,
-    ._2dbep.qNELH.kIKUG:hover {
-        border: 1px solid var(--Myred1) !important;
-    }
-    /*
-    div[class="LA45P  coreSpritePagingChevron    "],
-    div[class=" Kf8kP coreSpritePagingChevron    "] {
-    */
-    div[class*="LA45P"][class*="coreSpritePagingChevron"],
-    div[class*="Kf8kP"][class*="coreSpritePagingChevron"] {
-        filter: invert(100%) !important;
-    }
-    div[class="                   Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                              "]:hover {
-        background-color: transparent !important;
-    }
-    /*
-    ._GepC.leaflet-container.leaflet-fade-anim {
-        background-image: none !important;
-    }
-    */
-    button[class="wpO6b "],
-    li.gElp9.rUo9f.lDe-V:hover,
-    ._4l6NB:hover,
-    button[class="wpO6b "]:hover {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    svg[aria-label="Activity Feed"]:hover,
-    svg[aria-label="Find People"]:hover,
-    svg[aria-label="Home"]:hover,
-    svg[aria-label="Direct"]:hover {
-        filter: invert(1);
-    }
-    .m7ETg,
-    div[class="_7UhW9   xLCgt      MMzan  KV-D4            fDxYl     "] {
-        color: var(--TwitterBlue) !important;
-    }
-    div[class="_7UhW9    vy6Bb      qyrsm KV-D4            fDxYl     "],
-    span[class="_7UhW9   xLCgt      MMzan   _0PwGv        se6yk        "] {
-        color: var(--MyW) !important;
-    }
-    div[class="                   Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
-        background-color: var(--MyX1) !important;
-        color: var(--MyW) !important;
-    }
-    div[class="                   Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
-        background-color: var(--Mygray3) !important;
-    }
-    div[class="                   Igw0E     IwRSH      eGOV_     ybXk5    _4EzTm                                                                                                              "] {
-        padding-right: 10px !important;
-        padding-left: 10px !important;
-    }
-    button[class="sqdOP yWX7d    y3zKF     "] {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
-        width: 100px !important;
-    }
-    div[class="_7UhW9   xLCgt      MMzan     fDdiY     uL8Hv      M8ipN   "] {
-        text-align: center !important;
-    }
-    ._9XapR {
-        background-color: var(--Mygray2) !important;
-    }
-    div[class="                   Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "] {
-        display: none;
-    }
-    .nwXS6.ON6Nq {
-        margin-left: 80px !important;
-    }
-    button[type="button"]>span {
-        color: var(--MyW) !important;
-    }
-    div[class="_7UhW9      x-6xq   MMzan  KV-D4         uL8Hv     l4b0S    "] {
-        background-color: transparent !important;
-        background-image: none !important;
-        color: var(--MyW) !important;
-    }
-    div[class="                    Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
-        background-color: var(--MyB) !important;
-    }
-    .iXTil {
-        background-color: var(--Mypurple2) !important;
-    }
-    div[class="   _6FEQj CMoMH   RQUXn _8_yLp  "] {
-        background-color: var(--Myred2) !important;
-    }
-    .iXTil {
-        border-radius: 25px !important;
-    }
-    div[class="_7UhW9   xLCgt      MMzan  KV-D4            p1tLr      hjZTB"]>span {
-        color: var(--MyW) !important;
-    }
-    .DINPA {
-        color: var(--TwitterBlue) !important;
-    }
-    .m0NAq.xrWdL {
-        border-radius: 15px !important;
-    }
-    div[class="                    Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
-        background-color: var(--Myred3) !important;
-    }
-    button[class="sqdOP yWX7d    y3zKF     "] {
-        width: 100px !important;
-        margin-right: 15px !important;
-    }
-    div[class="                     Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
-        background-color: var(--MyX1) !important;
     }
 }
