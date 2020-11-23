@@ -2,13 +2,13 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.26
+@version      0.0.27
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
-@var range twidth "Change Search Width"[300, 300, 1000, 1, "px"]
-@var range tmove "Move Search Bar" [10, 0, 70, 1, "vw"]
+@var range twidth "Change Search Width"[200, 200, 1000, 100, "px"]
+@var range tmove "Move Search Bar" [0, 0, 1000, 10, "px"]
 ==/UserStyle== */
 
 @-moz-document domain("voice.google.com") {
@@ -39,7 +39,7 @@
     form[action="/search"] {
         margin: 0 auto;
         width: var(--twidth) !important;
-        left: calc(1vw + var(--mmove) - 10vw) !important;
+        left: calc(1px + var(--tmove)) !important;
         background-color: transparent !important;
     }
     .stock {
