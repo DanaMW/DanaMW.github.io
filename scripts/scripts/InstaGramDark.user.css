@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.67
+@version      0.0.68
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -92,6 +92,7 @@
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
         background-color: var(--Mygray2) !important;
     }
+    button[class="sqdOP yWX7d    y3zKF     "],
     div[class="ByB5K enqOc "],
     ._8UZ6e,
     footer,
@@ -575,6 +576,7 @@
     /*div[class*="Igw0E"][class*="_4EzTm"],*/
     /*div[class*="Igw0E"],*/
     /*div[class*="_4EzTm"],*/
+    div[class="                     Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "],
     div[class="        DPiy6            Igw0E     IwRSH      eGOV_         _4EzTm                                                                                             HVWg4                 "],
     DIV[class="                   Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
     .-qQT3.rOtsg,
@@ -616,6 +618,7 @@
     div[class="_9GP1n   "] {
         border: none !important;
     }
+    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                              "],
     div[class="                     Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
     div[class="                     Igw0E   rBNOH        eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
     div[class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="4EzTm"],
@@ -783,5 +786,8 @@
     button[class="sqdOP yWX7d    y3zKF     "] {
         width: 100px !important;
         margin-right: 15px !important;
+    }
+    div[class="                     Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
+        background-color: var(--MyX1) !important;
     }
 }
