@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.84
+@version      0.0.85
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -248,6 +248,7 @@
     div[class*="iconWrapper"] svg[class*="icon"] {
         color: var(--MyW) !important;
     }
+    svg[class*="icon"][role="button"],
     div[class*="children"] h3[class*="title"][class*="title"][class*="base"][class*="size16"][role="button"],
     svg[class*="icon"],
     div[class*="iconWrapper"][class*="clickable"][role="button"],
@@ -262,6 +263,7 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
+    svg[class*="icon"][role="button"]:hover,
     div[class*="children"] h3[class*="title"][class*="title"][class*="base"][class*="size16"][role="button"]:hover,
     svg[class*="icon"]:hover,
     div[class*="iconWrapper"][class*="clickable"][role="button"]:hover,
@@ -299,11 +301,6 @@
         width: 70px !important;
         max-width: 70px !important;
     }
-    /*
-    div[class="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="firefoxFixScrollFlex"][class*="containStyles"][class*="scrollerThemed"][class*="themeGhostHairlineChannels"][class*="scrollerFade"] {
-        scrollbar-width: none !important;
-    }
-    */
     div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
         border-right: 1px solid var(--MyW) !important;
     }
@@ -361,7 +358,6 @@
     form[class^="form"],
     div[class*="channelTextArea"][class*="channelTextArea"],
     #channel-text-area-wrapper {
-        height: 50px !important;
         margin: 0px !important;
         padding: 0px !important;
         color: var(--MyW) !important;
@@ -593,7 +589,6 @@
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
-    /*[role="button"]:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
     div[role="listitem"]:not([class*="clickable"]):not([class*="message"]),
     foreignObject>a[class*="wrapper"],
     div[class*="expandedFolderIconWrapper"],
@@ -621,7 +616,6 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    /*[role="button"]:hover:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
     div[role="listitem"]:hover:not([class*="clickable"]):not([class*="message"]),
     div[class*="containerDefault"][class*="selected"] div[role="listitem"]:not([class*="clickable"]):not([class*="message"]),
     div[aria-label="More"][role=button]:hover,
@@ -670,7 +664,6 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    /*[role="button"]:active:not([class*="topic"]):not([class*="icon"]):not(a[class*="anchor"]),*/
     div[role="listitem"]:active:not([class*="clickable"]):not([class*="message"]),
     div[aria-label="More"][role=button]:active,
     div[class*="expandedFolderIconWrapper"]:active,
@@ -720,11 +713,6 @@
         background-color: var(--MyX1) !important;
         border: 1px solid var(--MyW) !important;
     }
-    /*
-    .container-1ov-mD:hover {
-        background-color: var(--MyX1) !important;
-    }
-    */
     h2 div[class*="children"],
     div[class*="background"],
     div[class*="grid-"],
@@ -866,5 +854,8 @@
     div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignCenter"][class*="noWrap"][class*="header"] {
         background-image: none !important;
         background-color: transparent !important;
+    }
+    svg[class*="icon"] {
+        border: none !important;
     }
 }
