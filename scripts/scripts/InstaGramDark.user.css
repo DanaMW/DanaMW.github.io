@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.68
+@version      0.0.69
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -92,7 +92,6 @@
     div[class*="_6Rvw2"][class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="iHqQ7"][class*="b2rUF"][class*="ZUqME"] {
         background-color: var(--Mygray2) !important;
     }
-    button[class="sqdOP yWX7d    y3zKF     "],
     div[class="ByB5K enqOc "],
     ._8UZ6e,
     footer,
@@ -166,7 +165,7 @@
     }
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "],
     .fuQUr a[role="button"]:not(.MpBh3):not(.QvAa1):not(.B2xwy):not(.SWk3c):not(.HBoOv):not(.qSTh6),
-    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge) {
+    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
