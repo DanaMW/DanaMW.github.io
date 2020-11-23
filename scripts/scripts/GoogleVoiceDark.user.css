@@ -7,7 +7,7 @@
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
-@var range twidth "Change Search Width"[100, 300, 1000, 1, "px"]
+@var range twidth "Change Search Width"[300, 300, 1000, 1, "px"]
 @var range tmove "Move Search Bar" [10, 0, 70, 1, "vw"]
 ==/UserStyle== */
 
