@@ -3,7 +3,7 @@
 @namespace    http://danamw.github.io/scripts/scripts/Colors.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/Colors.user.css
 @description  My Variable Colors For My Scripts
-@version      0.1.3
+@version      0.2.0
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -31,6 +31,9 @@
     --Mygray1: rgb(127, 127, 127);
     --Mygray2: rgb(76, 76, 76);
     --Mygray3: rgb(38, 38, 38);
+    --Myyellow1: rgb(255, 255, 0);
+    --Myyellow3: rgb(153, 153, 0);
+    --Myyellow2: rgb(76, 76, 0);
     --Myeditback: rgb(38, 38, 38);
     --Mydialog: rgb(63, 63, 63);
     --Myborder: rgb(153, 153, 153);
@@ -39,6 +42,7 @@
     --MyX3: rgba(0, 0, 255, 0.4);
     --MyX4: rgba(89, 89, 89, 0.4);
     --MyX5: rgba(255, 0, 255, 0.4);
+    --MyX6: rgba(255, 255, 0, 0.4);
     --MyXB: rgba(0, 0, 0, 0.4);
     --MyXW: rgba(255, 255, 255, 0.4);
     --Progress-bar-color: rgb(255, 0, 0);
