@@ -2,13 +2,14 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.70
+@version      0.0.71
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
 ==/UserStyle== */
 
 @-moz-document domain("instagram.com") {
+    footer,
     main.SCxLW,
     html,
     body,
@@ -36,6 +37,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .YFq-A,
     div[class*="_7UhW9"][class*="xLCgt"],
     span,
     p,
@@ -47,19 +49,31 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    div[class="_7UhW9      x-6xq   MMzan  KV-D4          uL8Hv     l4b0S    "],
     .Nm9Fw,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+    time,
+    h3,
     h2 {
         color: var(--TwitterRed) !important;
     }
     small {
         color: var(--TwitterPink) !important;
     }
-    /*
-    XfCBB          HVWg4                  La5L3 ZUqME"
-    */
+    div[class="                     Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                               rOtsg ZUqME"],
+    div[class="  _6FEQj CMoMH   RQUXn _8_yLp  "] {
+        background-color: var(--MyX1) !important;
+    }
+    div[class="                     Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
+        background-color: var(--MyX3) !important;
+    }
+    a._9VEo1 {
+        width: 70px !important;
+    }
+    a._9VEo1,
+    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "],
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"],
     a[class="h-aRd  fuQUr"],
     button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
@@ -77,6 +91,9 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a._9VEo1:hover,
+    a[class="_9VEo1 T-jvg"],
+    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:hover,
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:hover,
     .-HRM-,
     a[class="h-aRd  fuQUr"]:hover,
@@ -97,6 +114,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a._9VEo1:active,
+    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:active,
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:active,
     a[class="h-aRd  fuQUr"]:active,
     button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
@@ -149,15 +168,30 @@
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
     }
-    header,
+    header {
+        background-color: var(--Myred3) !important;
+    }
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    div[class="frMpI  -sxBV"],
+    div[class="                     Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
+    .N9abW,
+    a[class="-qQT3 rOtsg"],
+    div[class="PUHRj  H_sJK"],
+    div[class="           wpHm3          Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                        O1flK  fm1AK    "],
+    ul.wW1cu,
+    article.PVkFi {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
+    .S-mcP,
+    a[class="-qQT3 rOtsg"]:hover,
+    div[class="PUHRj  H_sJK"]:hover,
+    .leaflet-popup-content-wrapper,
+    section[class="bR_3v  "],
     div[class="zGtbP IPQK5 VideM"],
     [role="dialog"]>._1XyCr {
         background-color: var(--Myred3) !important;
@@ -176,9 +210,27 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+    section * input[type="checkbox"] {
+        -moz-appearance: checkbox;
+        -webkit-appearance: checkbox;
+        appearance: checkbox;
+    }
+    section * input[type="radio"] {
+        -moz-appearance: radio;
+        -webkit-appearance: radio;
+        appearance: radio;
+    }
+    .leaflet-popup-tip {
+        background-color: var(--Myred3) !important;
+    }
+    div[class="AvhYw nLL4f"] {
+        background-color: var(--Mygray3) !important;
+    }
     /* CLEAN UP ALL THIS SHIT DOWN HERE */
     /*------------------All filter INVERTS----------------*/
-    svg[aria-label="Switch Accounts"],
+    .lf6L3:hover,
+    .QBdPU:hover,
+    svg[aria-label="New Message"]>path:hover,
     svg[aria-label="Saved"],
     svg[aria-label="Settings"],
     svg[aria-label="Profile"],
