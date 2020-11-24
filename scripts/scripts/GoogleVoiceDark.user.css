@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.28
+@version      0.0.29
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -12,6 +12,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("voice.google.com") {
+    gv-contact-list,
     .layout-column.aKQtkf-tJHJj,
     [class*="layout-align"][aria-label="Dialpad"]:not([layout-align="start start"]),
     gv-message-entry,
@@ -81,6 +82,7 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    div[class="GHQeBe-qdm4Zd gmat-subhead-1"],
     .grey-900,
     .call-as-label,
     h3,
@@ -163,11 +165,16 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .help-panel-views,
+    .mat-form-field-wrapper,
+    div[class="mat-form-field-outline ng-tns-c23-145 ng-star-inserted"],
     div[class^="ng-star-inserted"]:not([role="tablist"]),
     gv-account-number {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .section,
+    div[class="layout-fill layout-align-center-center layout-column"],
     mat-dialog-container {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
