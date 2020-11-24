@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.29
+@version      0.0.30
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -11,7 +11,11 @@
 @var range tmove "Move Search Bar" [0, 0, 1000, 10, "px"]
 ==/UserStyle== */
 
-@-moz-document domain("voice.google.com") {
+@-moz-document domain("voice.google.com"),
+domain("googleusercontent.com") {
+    div[class="layout-align-start-center layout-row flex B3EWm-ipGt7"],
+    div[class="layout-align-center-center layout-column flex-nogrow B3EWm-s4tt0c"],
+    div[class="layout-align-center-stretch layout-column flex-nogrow B3EWm-WTKh3d"],
     gv-contact-list,
     .layout-column.aKQtkf-tJHJj,
     [class*="layout-align"][aria-label="Dialpad"]:not([layout-align="start start"]),
@@ -99,6 +103,8 @@
     small {
         color: var(--TwitterPink) !important;
     }
+    a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"],
+    a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"],
     .mat-option,
     a[role="tab"],
     [role="button"]:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
@@ -117,6 +123,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:hover,
+    a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"]:hover,
     .mat-option:hover,
     a[role="tab"]:hover,
     [role="button"]:hover:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
@@ -137,6 +145,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:active,
+    a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"]:active,
     a[role="tab"]:active,
     [role="button"]:active:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
     button:active:not([aria-label="Search"]) {
@@ -165,6 +175,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    div[aria-label="Account Information"],
     .help-panel-views,
     .mat-form-field-wrapper,
     div[class="mat-form-field-outline ng-tns-c23-145 ng-star-inserted"],
@@ -173,6 +184,9 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    simple-snack-bar,
+    md-dialog-actions,
+    .md-dialog-content,
     .section,
     div[class="layout-fill layout-align-center-center layout-column"],
     mat-dialog-container {
@@ -208,5 +222,8 @@
     }
     mat-divider {
         border-color: var(--Myred1) !important;
+    }
+    div[aria-label="Account Information"] {
+        border: 1px solid var(--MyW) !important;
     }
 }
