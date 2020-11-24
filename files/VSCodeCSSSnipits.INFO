@@ -138,6 +138,48 @@
         ],
         "description": "var(--Myblue3)"
     },
+    "Myyellow1": {
+        "prefix": "var(--Myyellow1)",
+        "body": [
+            "var(--Myyellow1) !important;",
+        ],
+        "description": "var(--Myyellow1)"
+    },
+    "Myyellow2": {
+        "prefix": "var(--Myyellow2)",
+        "body": [
+            "var(--Myyellow2) !important;",
+        ],
+        "description": "var(--Myyellow2)"
+    },
+    "Myyellow3": {
+        "prefix": "var(--Myyellow3)",
+        "body": [
+            "var(--Myyellow3) !important;",
+        ],
+        "description": "var(--Myyellow3)"
+    },
+    "Mypurple1": {
+        "prefix": "var(--Mypurple1)",
+        "body": [
+            "var(--Mypurple1) !important;",
+        ],
+        "description": "var(--Mypurple1)"
+    },
+    "Mypurple2": {
+        "prefix": "var(--Mypurple2)",
+        "body": [
+            "var(--Mypurple2) !important;",
+        ],
+        "description": "var(--Mypurple2)"
+    },
+    "Mypurple3": {
+        "prefix": "var(--Mypurple3)",
+        "body": [
+            "var(--Mypurple3) !important;",
+        ],
+        "description": "var(--Mypurple3)"
+    },
     "MyX1": {
         "prefix": "var(--MyX1)",
         "body": [
@@ -165,6 +207,20 @@
             "var(--MyX4) !important;",
         ],
         "description": "var(--MyX4)"
+    },
+    "MyX5": {
+        "prefix": "var(--MyX5)",
+        "body": [
+            "var(--MyX5) !important;",
+        ],
+        "description": "var(--MyX5)"
+    },
+    "MyX6": {
+        "prefix": "var(--MyX6)",
+        "body": [
+            "var(--MyX6) !important;",
+        ],
+        "description": "var(--MyX6)"
     },
     "MyXB": {
         "prefix": "var(--MyXB)",
