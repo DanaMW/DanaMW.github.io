@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.72
+@version      0.0.73
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -186,6 +186,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class="eo2As "],
     ._41KYi,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
     .S-mcP,
@@ -235,12 +236,16 @@
     /*------------------All filter INVERTS----------------*/
     .lf6L3:hover,
     .QBdPU:hover,
+    svg:hover,
+    svg>path:hover,
+    /*
+    svg[aria-label="View Thread Details"]>path:hover,
     svg[aria-label="New Message"]>path:hover,
     svg[aria-label="Saved"],
     svg[aria-label="Settings"],
     svg[aria-label="Profile"],
-    img.s4Iyt:hover,
-    svg:hover {
+    */
+    img.s4Iyt:hover {
         filter: invert(1);
     }
     .coreSpriteDismissLarge:hover {
@@ -259,7 +264,6 @@
     .jWQqO.Szr5J {
         filter: invert(0) !important;
     }
-    button.wpO6b:hover,
     .loggedoutSpriteFollow_Contextual_Login,
     .coreSpriteDesktopNavActivity,
     .Eqt6g,
@@ -295,6 +299,9 @@
     .TqC_a:hover {
         color: var(--MyB) !important;
         font-weight: bold !important;
+    }
+    div[class="                     Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
+        background-color: var(--Mygray3);
     }
     ._-1_m6,
     .NgKI_,
