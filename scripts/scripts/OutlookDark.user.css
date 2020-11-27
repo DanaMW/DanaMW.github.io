@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.22
+@version      0.0.23
 @author       Dana Meli
 @homepageURL  https://github.com/DanaMW
 ==/UserStyle== */
@@ -116,6 +116,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    [role="tablist"] button[aria-selected="true"],
     li a.internal.sign-in-link:hover,
     div[role="option"]:hover,
     .cJ5P-H7zqLg6pBWAa13NW:hover,

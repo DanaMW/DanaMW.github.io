@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.82
+@version      0.1.83
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1357,6 +1357,9 @@ url-prefix("https://myactivity.google.com/") {
     .sJyeOd.jrYUfb {
         border-left-color: var(--TwitterRed) !important;
     }
+    /* I question these two */
+    .y8URue .g,
+    .ifM9O .g,
     div[class="kp-blk knowledge-panel Wnoohf OJXvsb"],
     div[class*="kp-blk"],
     div[class="kp-blk EyBRub fm06If Wnoohf OJXvsb"],
@@ -1372,6 +1375,8 @@ url-prefix("https://myactivity.google.com/") {
         width: 650px !important;
         max-width: 650px !important;
     }
+    div[class="rc"][data-hveid="CAYQAA"],
+    div[class="rc"][data-hveid="CAUQAA"],
     div[class="rc"][data-hveid="CAoQAA"],
     div[class="rc"][data-hveid="CAgQAA"],
     div[class="rc"][data-hveid="CDUQAg"],
