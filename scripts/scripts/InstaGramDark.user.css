@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.73
+@version      0.0.74
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -37,6 +37,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .m7ETg,
     .YFq-A,
     div[class*="_7UhW9"][class*="xLCgt"],
     span,
@@ -91,6 +92,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                        JI_ht                                                                      "] button[class="sqdOP yWX7d    y3zKF     "]:hover,
     a._9VEo1:hover,
     a[class="_9VEo1 T-jvg"],
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:hover,
@@ -168,6 +170,8 @@
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
     }
+    ._9XapR,
+    ._7zBYT,
     header {
         background-color: var(--Myred3) !important;
     }
@@ -222,6 +226,7 @@
         -webkit-appearance: radio;
         appearance: radio;
     }
+    div[class="_7zBYT tYjl_"],
     div[class="NP414  ccgHY  GZkEI"],
     .leaflet-popup-tip {
         background-color: var(--Myred3) !important;
@@ -394,5 +399,8 @@
     }
     .YQf7h.xptSB {
         background-color: var(--Myred2) !important;
+    }
+    div[class="_7UhW9   xLCgt      MMzan     fDdiY       uL8Hv      M8ipN   "]:hover {
+        color: var(--Myred1) !important;
     }
 }
