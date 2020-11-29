@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.74
+@version      0.0.75
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -170,6 +170,7 @@
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
     }
+    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"],
     ._9XapR,
     ._7zBYT,
     header {
@@ -190,6 +191,8 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="XfCBB"][class*="g6RW6"],
+    div[class*="lKHVe"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="vwCYk"][class*="XfCBB"][class*="g6RW6"],
     div[class="eo2As "],
     ._41KYi,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
