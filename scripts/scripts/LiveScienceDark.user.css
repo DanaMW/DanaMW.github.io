@@ -2,7 +2,7 @@
 @name         Live Science Dark
 @namespace    http://danamw.github.io/scripts/scripts/LiveScienceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/LiveScienceDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,6 +13,7 @@
     body {
         background-color: var(--MyB) !important;
     }
+    div[class="portland-ele-content Element__content"],
     footer,
     .xenforo-comment-widget {
         display: none !important;
