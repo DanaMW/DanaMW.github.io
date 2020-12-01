@@ -2,7 +2,7 @@
 @name         Stock Dark
 @namespace    https://danamw.github.io/scripts/scripts/Stock.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/Stock.user.css
-@version      0.1.1
+@version      0.1.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -129,5 +129,21 @@
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    .tooltip {
+        display: block;
+        outline: none;
+        font-family: var(--paper-font-common-base_-_font-family);
+        -webkit-font-smoothing: var(--paper-font-common-base_-_-webkit-font-smoothing);
+        font-size: 10px;
+        line-height: 1;
+        background-color: var(--MyX1) !important;
+        opacity: 0.4;
+        color: white;
+        padding: 8px;
+        border-radius: 2px;
+        margin: 8px;
+        font-weight: 400;
+        text-transform: none;
     }
 }

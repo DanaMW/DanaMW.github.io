@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.20
+@version      0.0.21
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -60,6 +60,7 @@ domain("embedly.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP,
     a.choice,
     a[role="button"],
     .jcf-select,
@@ -95,6 +96,7 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP:hover,
     a.choice:hover,
     a[role="button"]:hover,
     .jcf-select:hover,
@@ -136,6 +138,7 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP:active,
     a.choice:active,
     a[role="button"]:active,
     a.eRXQmg5IDQw75c_ZvuwJU:active,
@@ -230,6 +233,7 @@ domain("embedly.com") {
     .large-text {
         color: var(--TwitterBlue) !important;
     }
+    ._1wzhGvvafQFOWAyA157okr,
     .trdUvQxqQHHqQKOUBcgnr.EjdBJNEwygtHMKiHd3Bnv {
         background-color: var(--MyX1) !important;
     }
@@ -237,5 +241,21 @@ domain("embedly.com") {
         background-color: var(--MyB) !important;
         border: 2px solid var(--Myred1) !important;
         border-radius: 0px !important;
+    }
+    .tooltip {
+        display: block;
+        outline: none;
+        font-family: var(--paper-font-common-base_-_font-family);
+        -webkit-font-smoothing: var(--paper-font-common-base_-_-webkit-font-smoothing);
+        font-size: 10px;
+        line-height: 1;
+        background-color: var(--MyX1) !important;
+        opacity: 0.4;
+        color: white;
+        padding: 8px;
+        border-radius: 2px;
+        margin: 8px;
+        font-weight: 400;
+        text-transform: none;
     }
 }
