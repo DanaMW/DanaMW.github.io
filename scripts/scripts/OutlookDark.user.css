@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.23
+@version      0.0.25
 @author       Dana Meli
 @homepageURL  https://github.com/DanaMW
 ==/UserStyle== */
@@ -10,7 +10,7 @@
 @-moz-document domain("outlook.live.com") {
     body {
         --white: #000 !important;
-        background-color: var(--Mygray3) !important;
+        background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
     * {
@@ -395,10 +395,19 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    #searchBoxId-Mail,
+    ._3qa8OvFCuxvXSKgE8anB8n._2qT5ADBP8BLM75uYgKPBGs {
+        background-color: transparent !important;
+    }
     #appLauncherMainView {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     #appLauncher {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    ._2zOpJb7ZbCN0X1DoeFyiYw.JWNdg1hee9_Rz6bIGvG1c,
+    .allowTextSelection {
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
     }
 }
