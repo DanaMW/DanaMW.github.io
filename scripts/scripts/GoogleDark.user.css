@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.83
+@version      0.1.84
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -26,6 +26,10 @@ url-prefix("https://gstatic.com/"),
 url-prefix("https://maps.google.com/"),
 url-prefix("https://groups.google.com/"),
 url-prefix("https://myactivity.google.com/") {
+    .bTZTkf.uXmgWc,
+    g-more-link,
+    div[class="HD8Pae luh4tb cUezCb xpd O9g5cc uUPGi"],
+    .Xeztj.xuc,
     #main,
     .VmOpGe,
     html,
@@ -712,6 +716,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .yg51vc,
     .section-profile-stats-progressbar-bar {
         background-color: var(--Myred3) !important;
     }
@@ -1375,6 +1380,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 650px !important;
         max-width: 650px !important;
     }
+    /*
     div[class="rc"][data-hveid="CAYQAA"],
     div[class="rc"][data-hveid="CAUQAA"],
     div[class="rc"][data-hveid="CAoQAA"],
@@ -1385,6 +1391,7 @@ url-prefix("https://myactivity.google.com/") {
     div[class="rc"][data-hveid="CDQQBQ"] {
         margin-left: -15px !important;
     }
+    */
     #result-stats,
     .amyZLb,
     span.XCKyNd {
