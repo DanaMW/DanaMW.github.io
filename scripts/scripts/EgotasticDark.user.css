@@ -2,13 +2,14 @@
 @name         Egotastic Dark
 @namespace    https://danamw.github.io/scripts/scripts/EgotasticDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/EgotasticDark.user.css
-@version      0.0.6
+@version      0.0.7
 @description  Egotastic Dark Skin
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
-@-moz-document domain("egotastic.com") {
+@-moz-document domain("egotastic.com"),
+domain("egotasticsports.com") {
     .pushcrew-chrome-style-notification,
     .pushcrew-chrome-style-notification-safari {
         display: none !important;
