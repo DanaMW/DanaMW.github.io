@@ -2,7 +2,7 @@
 @name         NPR Dark
 @namespace    http://danamw.github.io/scripts/scripts/NPRDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/NPRDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,6 +13,7 @@
     body {
         background-color: var(--MyB) !important;
     }
+    section[class="callout callout--donation"],
     footer,
     section[class="global-stickybar newsletter-stickybar"],
     section[class="callout callout--newsletter callout--news "] {
@@ -122,7 +123,6 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    article,
     .branding,
     .submenu,
     #main-sidebar {
