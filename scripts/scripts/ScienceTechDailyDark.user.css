@@ -2,7 +2,7 @@
 @name         Science Tech Daily Dark
 @namespace    http://danamw.github.io/scripts/scripts/ScienceTechDailyDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ScienceTechDailyDark.user.css
-@version      0.0.4
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -33,12 +33,14 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    p,
     span[class*="comment-count"],
     h4,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    em,
     h3 {
         color: var(--TwitterBlue) !important;
     }
@@ -49,6 +51,9 @@
     p.entry-meta .entry-meta-author.vcard.author,
     .comment-reply-title {
         color: var(--TwitterBlue) !important;
+    }
+    p.wp-caption-text {
+        color: var(--TwitterPink) !important;
     }
     a.button>span,
     input.submit,
@@ -122,6 +127,8 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    li.comment,
+    ol.commentlist,
     .comment-section-title {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
