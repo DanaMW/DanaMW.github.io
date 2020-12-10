@@ -2,7 +2,7 @@
 @name         Vimeo Dark
 @namespace    http://danamw.github.io/scripts/scripts/VimeoDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/VimeoDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -14,6 +14,8 @@
     body {
         background-color: var(--MyB) !important;
     }
+    ._3dEqE,
+    footer,
     section[class*="footer"] {
         display: none !important;
     }
@@ -43,6 +45,9 @@
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    div#topnav_menu_avatar.topnav_menu_avatar {
+        background: transparent !important;
+    }
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
@@ -58,6 +63,15 @@
     small {
         color: var(--TwitterPink) !important;
     }
+    section[class*="CoverVideo"] {
+        background-color: var(--MyX1) !important;
+    }
+    .sc-gGCbJM.hKGEcF,
+    ._2sGTA a,
+    a[class*="UploadButton"],
+    a[class*="PrimaryNavLink"],
+    .js-pagination--left svg,
+    .js-pagination--right svg,
     .sc-cHGsZl.igEyKy,
     .sc-bhlBdH.iFPEQe,
     .sc-hokXgN.VLsCC,
@@ -79,6 +93,14 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .sc-cqPOvA.kNAFhW:hover,
+    .sc-gGCbJM.hKGEcF:hover,
+    .sc-FQuPU.eRrfat:hover,
+    ._2sGTA a:hover,
+    a[class*="UploadButton"]:hover,
+    a[class*="PrimaryNavLink"]:hover,
+    .js-pagination--left svg:hover,
+    .js-pagination--right svg:hover,
     .sc-cHGsZl.igEyKy:hover,
     .sc-bhlBdH.iFPEQe:hover,
     .sc-hokXgN.VLsCC:hover,
@@ -102,6 +124,10 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .sc-gGCbJM.hKGEcF:active,
+    ._2sGTA a:active,
+    a[class*="UploadButton"]:active,
+    a[class*="PrimaryNavLink"]:active,
     .sc-cHGsZl.igEyKy:active,
     .sc-bhlBdH.iFPEQe:active,
     .sc-hokXgN.VLsCC:active,
@@ -136,10 +162,13 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    header,
     #topnav_desktop {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .sc-dxZgTM,
+    section[class*="UploadVideo__Container"],
     [role="menu"],
     .video_manager__column.video_manager__column--left,
     [id*="topnav"],
@@ -147,6 +176,12 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .sc-hBbWxd,
+    ._3h0gA,
+    div[class*="UploadPreviewModalContainer"],
+    h4[class*="VideoPicker__CustomHeader"],
+    div[class*="VideoPicker"],
+    div[class*="InfoCard"],
     ._2M555.sc-ugnQR.ffpHxd.sc-kasBVs.iQZdFy,
     .iris_rail_menu__header__title,
     div[role="title"] {
@@ -160,7 +195,19 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
-    svg {
+    svg rect,
+    svg path,
+    button svg,
+    button svg polyline,
+    button svg path,
+    button svg polygon {
         filter: invert(1) !important;
+    }
+    .timecode .box,
+    .vp-progress .played {
+        background-color: var(--MyX1) !important;
+    }
+    .timecode .box {
+        color: var(--MyW) !important;
     }
 }
