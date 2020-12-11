@@ -2,13 +2,20 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("chat.google.com") {
+    .DHBWQd,
+    .W55R9c,
+    .pWhTUc.krjOGe,
+    c-wiz[class="PGrLhd krjOGe "],
+    .SSPGKf.XCWNkf,
+    .Bl2pUd.krjOGe,
+    c-wiz[class="bzJiD WQKmIb eO2Zfd lEX7Ob"],
     html,
     body {
         background-color: var(--MyB) !important;
@@ -33,6 +40,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    span,
     p,
     a {
         color: var(--MyW) !important;
@@ -51,6 +59,10 @@
     small {
         color: var(--TwitterPink) !important;
     }
+    [role="option"],
+    .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7,
+    [role="button"]:not(.gb_D.gb_sc),
+    .Lw7GHd.snByac,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -66,6 +78,13 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .N9wOvf.bsaKEc[aria-selected="true"] [role="option"]:hover,
+    [role="option"][aria-selected="true"],
+    .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7.qs41qe,
+    [role="listitem"][tabindex="0"],
+    [role="menuitem"]:hover,
+    [role="button"]:hover:not(.gb_D.gb_sc),
+    .Lw7GHd.snByac:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -83,6 +102,10 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    [role="option"]:active,
+    [role="button"]:active:not(.gb_D.gb_sc),
+    .Lw7GHd.snByac:active,
+    .ajDw2c:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -100,23 +123,42 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .RAIar,
+    .VEFddc,
+    .aXBtI.Wic03c,
+    .cZICLc.ajCeRb.XbbXmb,
+    .dJ9vNe.X4MYrd,
+    .QTQg5e {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .wbJc4,
+    .Xs68kb.ipgD,
+    .Wu2udb,
+    [role="banner"]>.wbJc4,
     header,
-    .stock_navbar {
+    [role="banner"] {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    .A2BXPe.n5uYMe.pYTmjf.mCOR5e,
+    [role="dialog"],
+    .yxIv1d.krjOGe {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .SXFjfb.DoYruc,
+    .xMqEEd,
+    .ctDTIf,
+    .XganBc.eLNT1d {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    .xMqEEd {
+        color: var(--Mygreen1) !important;
+        text-align: center !important;
+    }
+    [role="textbox"],
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -145,5 +187,32 @@
         margin: 8px;
         font-weight: 400;
         text-transform: none;
+    }
+    .hqlnxe,
+    [role="menu"] {
+        background-color: var(--Mygray3) !important;
+    }
+    .Zc1Emd.QIJiHb.MiRdyc,
+    .Zc1Emd,
+    .HTZBof.iq1Uvf.HmJAwd.hqKA3c,
+    .dsoUjb,
+    .eWw5ab,
+    .oGsu4 {
+        background-color: var(--Myred3) !important;
+        color: var(--MyW) !important;
+    }
+    .AflJR {
+        background-color: var(--Myred3) !important;
+    }
+    .iKCcE.hu21Y.VYsRpc,
+    .iKCcE.hu21Y.VYsRpc:hover {
+        background-color: var(--Myred3) !important;
+        color: var(--Myyellow1) !important;
+    }
+    svg {
+        filter: invert(1) !important;
+    }
+    .hlrRUb {
+        color: var(--MyW) !important;
     }
 }
