@@ -38,4 +38,7 @@ url("moz-extension://300cbd13-7634-484e-81ae-29683f2a28e0/newTab.xhtml") {
     .newtab-site:active {
         background-color: hsla(0, 100%, 50%, 0.472) !important;
     }
+    menu#context-menu[type="context"] {
+        display: none !important;
+    }
 }
