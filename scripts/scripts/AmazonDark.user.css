@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.24
+@version      0.0.25
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -325,6 +325,8 @@
     .hmenu {
         background-color: var(--Mygray3) !important;
     }
+    a[aria-label*="Amazon Pharmacy"],
+    #promoGrid,
     div[class*="style__socialShare"],
     #cbcc_content_container,
     #navFooter,
@@ -365,6 +367,11 @@
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    .apm-sidemodule.apm-spacing,
+    .apm-sidemodule-textleft,
+    .apm-sidemodule-textright,
+    .apm-hovermodule-slides,
+    .apm-hovermodule,
     .a-row.cardContainer,
     ul[class*="style__grid"],
     div[data-cel-widget*="search_result_"],
