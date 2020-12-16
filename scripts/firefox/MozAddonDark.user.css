@@ -2,7 +2,7 @@
 @name         Mozilla Addons Dark
 @namespace    https://danamw.github.io/Scripts/extra/MozAddonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/extra/MozAddonDark.user.css
-@version      0.0.12
+@version      0.0.13
 @description  Mozilla Addons Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -29,14 +29,29 @@ domain("addons.cdn.mozilla.net") {
     }
     * {
         text-decoration: none !important;
-        scrollbar-width: thin;
+        scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+     ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
     }
     .Page-content,
     .App-content {
         background: none !important;
         background-color: var(--Myback) !important;
         color: var(--Mytext) !important;
+    }
+    div[class="flex flex-col justify-between min-h-screen"] {
+        background-color: var(--MyB) !important;
     }
     footer {
         background: transparent !important;
@@ -203,6 +218,9 @@ domain("addons.cdn.mozilla.net") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    a.nu-settings-button,
+    a.cta-neutral.cta-base,
+    a[href][title="classic design link"],
     .Addon-all-reviews-link,
     .button,
     select,
@@ -221,6 +239,11 @@ domain("addons.cdn.mozilla.net") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.block:hover,
+    a.nu-settings-button:hover,
+    li.mt-3>a:hover,
+    a.cta-neutral.cta-base:hover,
+    a[href][title="classic design link"]:hover,
     .DropdownMenu-button:hover,
     .DropdownMenuitem:hover .Addon-all-reviews-link:hover,
     .button:hover,
@@ -236,7 +259,7 @@ domain("addons.cdn.mozilla.net") {
         appearance: none;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         border: none !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -247,6 +270,9 @@ domain("addons.cdn.mozilla.net") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
+    a.nu-settings-button:active,
+    a.cta-neutral.cta-base:active,
+    a[href][title="classic design link"]:active,
     .DropdownMenu-button:active,
     .Addon-all-reviews-link:active,
     .button:active,
@@ -271,10 +297,18 @@ domain("addons.cdn.mozilla.net") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
+    [role="banner"] {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    div[class="flex w-full pt-4 items-center flex-col tablet:w-auto tablet:relative"],
+    div.bg-white.shadow,
+    .drop-down-menu,
     li.SearchResult {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(60, 60, 60, 0.9) 100%, transparent) !important;
     }
+    .modal,
     .Notice.Notice-genericWarning.InstallWarning,
     .SecondaryHero-module,
     li.SearchResult:hover,
@@ -289,8 +323,14 @@ domain("addons.cdn.mozilla.net") {
     .Header-content .Header-title {
         border: none !important;
     }
+    div[class="flex w-full pt-4 items-center flex-col tablet:w-auto tablet:relative"],
+    .drop-down-menu,
     .SecondaryHero-module,
     li.SearchResult:hover {
         border: 1px solid var(--MyW) !important;
+    }
+    div#service[data-testid="settings-connected-service"]:hover,
+    .unit-row:hover {
+        background-color: var(--MyX1) !important;
     }
 }
