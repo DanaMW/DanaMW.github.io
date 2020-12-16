@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.25
+@version      0.0.26
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -270,12 +270,13 @@
         background-color: transparent !important;
     }
     #mbc-price-1,
-    a:active,
     a:visited span.nav-text:hover,
     a:hover {
-        color: var(--MyW) !important;
-        text-shadow: 0px 0px var(--Myred1) !important;
+        color: var(--Myred1) !important;
         text-decoration: none !important;
+    }
+    a:active {
+        color: var(--Mygreen1) !important;
     }
     h1,
     .a-price-symbol {
@@ -356,6 +357,9 @@
     .item {
         color: var(--MyW) !important;
     }
+    div[class="a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical"],
+    .a-row.ewc-compact-head,
+    div[class*="nav-flyout-buffer"],
     div[class*="style__navArea"],
     #hmenu-customer-profile,
     header,
@@ -399,5 +403,13 @@
     }
     .a-size-medium {
         color: var(--TwitterBlue) !important;
+    }
+    th {
+        background-color: transparent !important;
+        color: var(--TwitterBlue) !important;
+    }
+    bdi,
+    .a-color-price {
+        color: var(--Myyellow1) !important;
     }
 }
