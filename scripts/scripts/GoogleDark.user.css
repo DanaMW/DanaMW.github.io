@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.85
+@version      0.1.86
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -25,7 +25,10 @@ url-prefix("https://myaccount.google.com/"),
 url-prefix("https://gstatic.com/"),
 url-prefix("https://maps.google.com/"),
 url-prefix("https://groups.google.com/"),
-url-prefix("https://myactivity.google.com/") {
+url-prefix("https://myactivity.google.com/"),
+url-prefix("https://support.google.com/") {
+    .hcfe-content,
+    section[class="primary-container"],
     .bTZTkf.uXmgWc,
     g-more-link,
     div[class="HD8Pae luh4tb cUezCb xpd O9g5cc uUPGi"],
@@ -414,6 +417,7 @@ url-prefix("https://myactivity.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    div[class="YZrg6 HnRr5d iiFyne cd29Sd"],
     a.CjB7Ub.M6Nvye,
     .hide-focus-ring.bSP9c,
     .DOAbib,
@@ -469,7 +473,7 @@ url-prefix("https://myactivity.google.com/") {
     #TEPD0b,
     input.ksb,
     .hdtb-msel,
-    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]),
+    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]):not(.WpHeLc),
     .gb_O,
     .gb_fa,
     g-left-button,
@@ -503,6 +507,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[class="YZrg6 HnRr5d iiFyne cd29Sd"]:hover,
     .hide-focus-ring.bSP9c:hover,
     .DOAbib:hover,
     .DOAbib.ixImeb,
@@ -621,6 +626,7 @@ url-prefix("https://myactivity.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[class="YZrg6 HnRr5d iiFyne cd29Sd"]:active,
     .hide-focus-ring.bSP9c:active,
     .DOAbib:active,
     .BiYF3.HIf9ae:active,
@@ -892,6 +898,12 @@ url-prefix("https://myactivity.google.com/") {
     .URIeEf {
         color: var(--Myblue1) !important;
     }
+    .VfPpkd-vQzf8d,
+    .eqiJQ,
+    .Hc7Eff,
+    .PTHcyc,
+    .STVdUc,
+    .sVj82,
     .sbl1 {
         color: var(--MyW) !important;
     }
@@ -899,6 +911,8 @@ url-prefix("https://myactivity.google.com/") {
         color: var(--Mygreen1) !important;
         text-decoration: none !important;
     }
+    .aMZpic,
+    .pCMbHb,
     .RScZKc {
         color: var(--TwitterBlue) !important;
     }
@@ -1034,6 +1048,8 @@ url-prefix("https://myactivity.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    ul>li[class="JDAKTe ibdqA W7Aapd zpCp3 SmR8"]:hover>[role="link"],
+    ul>li>[role="link"]:hover,
     a .rg_ilmbg,
     div[class="h312td  RtIwE"],
     .rg_ilmbg {
@@ -1093,11 +1109,15 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Myred1) !important;
         color: var(--Myred1) !important;
     }
+    #profileIdentifier,
+    .w1I7fb,
     .PfcDvc,
     .EUjJDc,
     .banner h1 {
         color: var(--MyW) !important;
     }
+    .cRiDhf,
+    .BHzsHc,
     .rg_anbg * {
         color: var(--Myred1) !important;
     }
@@ -1236,6 +1256,7 @@ url-prefix("https://myactivity.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    article.page,
     .PWFwWc.DsryEe,
     .liYKde.g.VjDLd>div>div>div>div,
     .WpKAof:hover,
@@ -1476,6 +1497,7 @@ url-prefix("https://myactivity.google.com/") {
     .qmv19b>div {
         background-color: var(--Myred3) !important;
     }
+    footer,
     .nt4TEf.WCKaKb,
     .Aul2T.m6aMje {
         background-color: transparent !important;
@@ -1507,5 +1529,9 @@ url-prefix("https://myactivity.google.com/") {
     a.WpHeLc.VfPpkd-RLmnJb:hover {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
+    }
+    [role="radio"][aria-checked="true"] .jfk-radiobutton-radio,
+    [role="checkbox"][aria-checked="true"] {
+        background-color: var(--MyW) !important;
     }
 }
