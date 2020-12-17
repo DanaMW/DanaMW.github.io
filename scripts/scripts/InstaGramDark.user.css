@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.76
+@version      0.0.77
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -17,6 +17,7 @@
     .js.logged-in.client-root {
         background-color: var(--MyB) !important;
     }
+    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "] section[class="bR_3v  "],
     ._8UZ6e {
         display: none !important;
     }
@@ -37,6 +38,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    #verificationCodeDescription,
     .m7ETg,
     .YFq-A,
     div[class*="_7UhW9"][class*="xLCgt"],
@@ -46,6 +48,7 @@
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    a>span:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
@@ -191,6 +194,10 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .BvyAW,
+    .gr27e,
+    div[class="gr27e  "],
+    .eo2As.O9c_u,
     div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="XfCBB"][class*="g6RW6"],
     div[class*="lKHVe"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="vwCYk"][class*="XfCBB"][class*="g6RW6"],
     div[class="eo2As "],
@@ -229,16 +236,25 @@
         -webkit-appearance: radio;
         appearance: radio;
     }
+    div[class="zGtbP  "],
     div[class="_7zBYT tYjl_"],
     div[class="NP414  ccgHY  GZkEI"],
     .leaflet-popup-tip {
         background-color: var(--Myred3) !important;
     }
+    div[class="zGtbP  VideM"],
     div[class="AvhYw nLL4f"] {
         background-color: var(--Mygray3) !important;
     }
     header[class="vtbgv "] {
         border-top: 20px solid var(--Myred3) !important;
+    }
+    div[class="_9GP1n   "] {
+        background-color: transparent !important;
+    }
+    div[class*="_9GP1n"][class*="HlUSH"],
+    div[class*="_9GP1n"] {
+        border: none !important;
     }
     /* CLEAN UP ALL THIS SHIT DOWN HERE */
     /*------------------All filter INVERTS----------------*/
