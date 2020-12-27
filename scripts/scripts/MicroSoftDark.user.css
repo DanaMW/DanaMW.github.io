@@ -2,15 +2,16 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.41
-@description  Trying to fix shit.
+@version      0.0.42
+@description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("microsoft.com"),
 domain("account.microsoft.com"),
-domain("support.microsoft.com") {
+domain("support.microsoft.com"),
+domain("answers.microsoft.com") {
     .ng-scope.survey-background,
     #c-uhf-nav-cta,
     #bannerAboveUHF,
@@ -250,6 +251,9 @@ domain("support.microsoft.com") {
     .mscom-accordion-item-image {
         background-image: none !important;
     }
+    span>.prevPage,
+    span>.nextPage,
+    .pageNumberLayout,
     li>a.topNavDropdownTrigger,
     li>a.topNavDropdownLink,
     a.mectrl_resetStyle.mectrl_signout.mectrl_truncate,
@@ -290,6 +294,10 @@ domain("support.microsoft.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    span>.prevPage:hover,
+    span>.nextPage:hover,
+    .pageNumberLayout.selectedPageNumber,
+    .pageNumberLayout:hover,
     li>a.topNavDropdownTrigger:hover,
     li>a.topNavDropdownLink:hover,
     a.mectrl_resetStyle.mectrl_signout.mectrl_truncate:hover,
@@ -332,6 +340,9 @@ domain("support.microsoft.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    span>.prevPage:active,
+    span>.nextPage:active,
+    .pageNumberLayout:active,
     li>a.topNavDropdownTrigger:active,
     li>a.topNavDropdownLink:active,
     a.mectrl_resetStyle.mectrl_signout.mectrl_truncate:active,
@@ -421,6 +432,7 @@ domain("support.microsoft.com") {
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    .message-voting-container,
     .x-hidden-focus,
     [role="alert"],
     mee-alert,
@@ -445,6 +457,8 @@ domain("support.microsoft.com") {
     .msame_Header {
         background-color: transparent !important;
     }
+    a[role="menuitem"]:hover,
+    .message-voting-container,
     div[id*="home\.cards\.card"],
     div[id*="security.cards"],
     .pi-content,
@@ -459,6 +473,7 @@ domain("support.microsoft.com") {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    a[role="menuitem"],
     .c-channel-placement-content,
     #divTerms,
     .exampleComboPopup2,
@@ -502,5 +517,18 @@ domain("support.microsoft.com") {
     .mectrl_tooltip {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
+    }
+    .separator-line {
+        background-color: var(--Myyellow1) !important;
+    }
+    .forumSelect {
+        background-color: var(--Mygray2) !important;
+    }
+    .forumSelect.dropNavSelected {
+        background-color: var(--MyX1) !important;
+    }
+    .forumSelect:hover {
+        background-color: var(--Myred1) !important;
+        color: var(--Myyellow1) !important;
     }
 }
