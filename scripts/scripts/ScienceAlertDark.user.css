@@ -2,7 +2,7 @@
 @name         Science Alert Dark
 @namespace    http://danamw.github.io/scripts/scripts/ScienceAlertDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ScienceAlertDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -43,8 +43,14 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    h1 {
+        color: var(--Myyellow1) !important;
+    }
     h2 {
         color: var(--TwitterRed) !important;
+    }
+    .author-name-date>span {
+        color: var(--TwitterBlue) !important;
     }
     button {
         -moz-appearance: none;
@@ -99,16 +105,23 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .gsc-input-box,
+    .gsc-control-cse,
+    .category,
     .article-intro-container,
     .menu-article {
         background-image: none !important;
         background-color: transparent !important;
     }
+    li.child-item,
     .article-mainbody-container {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .ui-dialog-titlebar,
+    div[role="dialog"],
+    li.child-item:hover,
+    .main-article {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
