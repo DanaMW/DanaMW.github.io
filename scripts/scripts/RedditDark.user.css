@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.21
+@version      0.0.22
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -50,16 +50,21 @@ domain("embedly.com") {
         color: var(--MyW) !important;
         /* background-color: transparent !important; */
     }
+    .title {
+        color: var(--Myyellow1) !important;
+    }
     .jcf-option:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    .topbar,
     ._32kofHIEwuARK_15MrzAuT,
     #COIN_PURCHASE_DROPDOWN_ID {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .login-buttons a,
     a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP,
     a.choice,
     a[role="button"],
@@ -96,6 +101,7 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .login-buttons a:hover,
     a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP:hover,
     a.choice:hover,
     a[role="button"]:hover,
@@ -138,6 +144,7 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .login-buttons a:active,
     a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP:active,
     a.choice:active,
     a[role="button"]:active,
@@ -187,6 +194,7 @@ domain("embedly.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .main,
     footer,
     tbody,
     .jcf-list,
@@ -257,5 +265,8 @@ domain("embedly.com") {
         margin: 8px;
         font-weight: 400;
         text-transform: none;
+    }
+    .user-button svg {
+        filter: invert(1) !important;
     }
 }
