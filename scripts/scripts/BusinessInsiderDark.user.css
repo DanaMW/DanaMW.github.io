@@ -2,7 +2,7 @@
 @name         Business Insider Dark
 @namespace    http://danamw.github.io/scripts/scripts/BusinessInsiderDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BusinessInsiderDark.user.css
-@version      0.0.10
+@version      0.0.11
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -51,9 +51,13 @@
     .graviton {
         text-align: center !important;
     }
+    h1,
     h2.header-underline {
         color: var(--TwitterBlue) !important;
         text-align: center !important;
+    }
+    ul li {
+        color: var(--TwitterPink) !important;
     }
     .left-menu__submenu__item,
     .icon-set.share-button,
@@ -112,11 +116,17 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    header,
     .input-group {
         background-image: none !important;
         background-color: transparent !important;
         border: none !important;
     }
+    header {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    }
+    .component.drawer,
     .site-header__markets-now-section {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
