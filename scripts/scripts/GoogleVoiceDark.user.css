@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.34
+@version      0.0.35
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -19,7 +19,9 @@ domain("myaccount.google.com") {
     div[class="layout-align-center-stretch layout-column flex-nogrow B3EWm-WTKh3d"],
     gv-contact-list,
     .layout-column.aKQtkf-tJHJj,
+    /*
     [class*="layout-align"][aria-label="Dialpad"]:not([layout-align="start start"]),
+    */
     gv-message-entry,
     gv-message-entry div,
     gv-message-list-header,
@@ -179,6 +181,7 @@ domain("myaccount.google.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    [class*="layout-align"][aria-label="Dialpad"]:not([layout-align="start start"]),
     .block-container,
     md-sidenav,
     div[aria-label="Account Information"],
@@ -190,6 +193,7 @@ domain("myaccount.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    p[class="gmat-overline REV3g-t1uKQe grey-700"],
     .VInAq-tJHJj,
     simple-snack-bar,
     md-dialog-actions,
@@ -247,5 +251,9 @@ domain("myaccount.google.com") {
     }
     gv-device-icon>.icon {
         background-color: var(--MyX1) !important;
+    }
+    p[class="gmat-overline REV3g-t1uKQe grey-700"],
+    .did-display {
+        text-align: center !important;
     }
 }
