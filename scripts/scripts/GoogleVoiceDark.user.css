@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.35
+@version      0.0.36
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -128,6 +128,7 @@ domain("myaccount.google.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .md-ink-ripple::before,
     [role="button"][aria-selected="true"],
     a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:hover,
     a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"]:hover,
