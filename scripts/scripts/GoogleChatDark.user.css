@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -40,6 +40,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .jO7h3c,
     span,
     p,
     a {
@@ -50,6 +51,7 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    .KrrIce,
     h1 {
         color: var(--TwitterBlue) !important;
     }
@@ -78,6 +80,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .rGLf6d.PkxUw:hover,
     .N9wOvf.bsaKEc[aria-selected="true"] [role="option"]:hover,
     [role="option"][aria-selected="true"],
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7.qs41qe,
@@ -147,6 +150,8 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .ffyVOd,
+    .hU65Ef,
     .SXFjfb.DoYruc,
     .xMqEEd,
     .ctDTIf,
@@ -214,5 +219,8 @@
     }
     .hlrRUb {
         color: var(--MyW) !important;
+    }
+    .d6pS5.zflTfd {
+        box-shadow: none !important;
     }
 }
