@@ -2,7 +2,7 @@
 @name         Pinterest Dark
 @namespace    https://danamw.github.io/scripts/scripts/PinterestDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PinterestDark.user.css
-@version      0.0.16
+@version      0.0.17
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -186,16 +186,22 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    #SuggestionsMenu[role="listbox"] {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
     #SuggestionsMenu[role="listbox"],
     .Jea.fev.zI7.iyn.Hsu,
     .Jea.fev.gpV.zI7.iyn.Hsu {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+    div[class="Fje Jea jzS wYR zI7 iyn Hsu"],
     div[class="Dl7 SpV m8d ho- ygj _O1 XbT DHH kFh"] {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class="Jea gjz hA- wYR zI7 iyn Hsu"],
     div[class="Jea XiG jzS ujU zI7 iyn Hsu"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
@@ -212,5 +218,9 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    svg.gUZ.pBj.U9O.kVc>path,
+    svg.Hn_.gUZ.pBj.U9O.kVc>path {
+        filter: invert(1) !important;
     }
 }
