@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -51,10 +51,12 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    .yOUDAf,
     .KrrIce,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+    .aOHsTc,
     h2 {
         color: var(--TwitterRed) !important;
     }
@@ -63,7 +65,7 @@
     }
     [role="option"],
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7,
-    [role="button"]:not(.gb_D.gb_sc),
+    [role="button"]:not(.gb_D.gb_sc):not(.uXftcc),
     .Lw7GHd.snByac,
     button {
         -moz-appearance: none;
@@ -86,7 +88,7 @@
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7.qs41qe,
     [role="listitem"][tabindex="0"],
     [role="menuitem"]:hover,
-    [role="button"]:hover:not(.gb_D.gb_sc),
+    [role="button"]:hover:not(.gb_D.gb_sc):not(.uXftcc),
     .Lw7GHd.snByac:hover,
     button:hover {
         -moz-appearance: none;
@@ -106,7 +108,7 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
     [role="option"]:active,
-    [role="button"]:active:not(.gb_D.gb_sc),
+    [role="button"]:active:not(.gb_D.gb_sc):not(.uXftcc),
     .Lw7GHd.snByac:active,
     .ajDw2c:active,
     button:active {
@@ -223,5 +225,11 @@
     }
     .d6pS5.zflTfd {
         box-shadow: none !important;
+    }
+    .A2BXPe.n5uYMe.pYTmjf.mCOR5e {
+        border: 1px outset var(--Mygray1) !important;
+    }
+    .uXftcc {
+        border: 1px solid var(--Myred2) !important;
     }
 }
