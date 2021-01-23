@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.28
+@version      0.0.29
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -125,7 +125,7 @@
     .a-last>a,
     .nav-search-scope.nav-sprite,
     .wl-invite-button-contents,
-    input[type="submit"],
+    input[type="submit"]:not(.a-button-text):not(.a-button-input),
     .feed-left,
     .feed-right,
     .a-button-inner,
@@ -361,6 +361,7 @@
     .item {
         color: var(--MyW) !important;
     }
+    .apx-add-card-buttons-in-popover,
     div[class="a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical"],
     .a-row.ewc-compact-head,
     div[class*="nav-flyout-buffer"],
@@ -422,6 +423,7 @@
     .a-color-price {
         color: var(--Myyellow1) !important;
     }
+    .a-divider-inner,
     div.a-form-actions,
     div.a-container.sc-background-dark,
     div[role="main"] {
@@ -431,5 +433,8 @@
     .a-divider.a-divider-break.a-spacing-top-small h5 {
         background-color: var(--MyX1) !important;
         color: var(--Myyellow1) !important;
+    }
+    #apx-add-credit-card-action-test-id * .a-button-text {
+        color: var(--MyW) !important;
     }
 }
