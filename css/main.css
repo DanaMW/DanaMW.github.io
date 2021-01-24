@@ -47,12 +47,12 @@ html {
     width: 100%;
     height: 100%;
     background-color: hsla(0, 0%, 18%, 1);
-    background: url("/img/mybg.gif") repeat;
 }
 
 body {
     top: 50px;
-    background-color: #000000
+    background-color: #000000;
+    background: url("/img/mybg.gif") repeat;
 }
 
 nav {
@@ -158,9 +158,6 @@ div a {
 }
 
 .info a:hover {
-    /*
-    background: url("/image/MenuBar.png") no-repeat;
-    */
     background-image: -moz-linear-gradient(top, #00166b, #244aff);
     background-image: -webkit-linear-gradient(top, #00166b, #244aff);
     background-image: linear-gradient(top, #00166b, #244aff);
