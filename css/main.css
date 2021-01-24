@@ -8,6 +8,10 @@ img {
     scrollbar-color: #ff0000 #7e0000;
 }
 
+body {
+    background-color: #000000
+}
+
 a:link {
     color: #ffffff
 }
@@ -195,7 +199,6 @@ p {
     background-image: -moz-linear-gradient(top, hsla(0, 17%, 13%, 1), hsla(0, 15%, 8%, 0.1));
     background-image: -webkit-linear-gradient(top, hsla(0, 17%, 13%, 1), hsla(0, 15%, 8%, 0.1));
     background-image: linear-gradient(top, hsla(0, 17%, 13%, 1), hsla(0, 15%, 8%, 0.1));
-    /*background-color: hsla(0, 17%, 13%, 0.1) hsla(0, 15%, 8%, 0.2);*/
     margin-right: 20%;
     margin-left: 20%;
     text-align: center;
