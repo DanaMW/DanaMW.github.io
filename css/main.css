@@ -46,7 +46,7 @@ img#banner {
 html {
     width: 100%;
     height: 100%;
-    background-color: hsla(0, 0%, 18%, 1);
+    background-color: #000000;
 }
 
 body {
