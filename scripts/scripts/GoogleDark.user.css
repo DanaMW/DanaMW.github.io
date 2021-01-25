@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.91
+@version      0.1.92
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -354,9 +354,6 @@ url-prefix("https://support.google.com/") {
         width: 100px !important;
         min-width: 100px !important;
         max-width: 100px !important;
-        /*
-        text-align: center !important;
-        */
     }
     div[role="tab"][aria-selected="false"].hdtb-mitem.hdtb-imb:not([aria-expanded]) {
         height: 45px !important;
@@ -861,7 +858,6 @@ url-prefix("https://support.google.com/") {
         color: var(--MyW) !important;
     }
     .vk_c.card.obcontainer.card-section {
-        /*background-color: var(--Myred3) !important;*/
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myborder);
@@ -1261,9 +1257,6 @@ url-prefix("https://support.google.com/") {
     div[role="menubar"],
     .lcorif.fp-w,
     .vk_c.card-section,
-    /*
-    div[class*="wholepage-card"]:not([data-hveid="CD0QAQ"]),
-    */
     .Y653g,
     .MXwBff,
     a[jsname="uy6ald"],
@@ -1276,6 +1269,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  tcY7Yc"],
     article.page,
     .PWFwWc.DsryEe,
     .liYKde.g.VjDLd>div>div>div>div,
@@ -1403,7 +1397,6 @@ url-prefix("https://support.google.com/") {
     .sJyeOd.jrYUfb {
         border-left-color: var(--TwitterRed) !important;
     }
-    /* I question these two */
     .y8URue .g,
     .ifM9O .g,
     div[class="kp-blk knowledge-panel Wnoohf OJXvsb"],
@@ -1421,18 +1414,6 @@ url-prefix("https://support.google.com/") {
         width: 650px !important;
         max-width: 650px !important;
     }
-    /*
-    div[class="rc"][data-hveid="CAYQAA"],
-    div[class="rc"][data-hveid="CAUQAA"],
-    div[class="rc"][data-hveid="CAoQAA"],
-    div[class="rc"][data-hveid="CAgQAA"],
-    div[class="rc"][data-hveid="CDUQAg"],
-    div[class="rc"][data-hveid="CDQQAw"],
-    div[class="rc"][data-hveid="CDMQBQ"],
-    div[class="rc"][data-hveid="CDQQBQ"] {
-        margin-left: -15px !important;
-    }
-    */
     #result-stats,
     .amyZLb,
     span.XCKyNd {
@@ -1451,7 +1432,6 @@ url-prefix("https://support.google.com/") {
         background-color: var(--MyX1) !important;
     }
     .kp-wholepage.kp-wholepage-osrp.HSryR.EyBRub {
-        /*width: calc(100% - 5%) !important;*/
         width: 100% !important;
     }
     .liYKde.g.VjDLd {
