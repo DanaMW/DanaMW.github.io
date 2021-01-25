@@ -2,7 +2,7 @@
 @name         NPR Dark
 @namespace    http://danamw.github.io/scripts/scripts/NPRDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/NPRDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -45,6 +45,7 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    h3,
     h1 {
         color: var(--TwitterBlue) !important;
     }
@@ -54,7 +55,7 @@
     small {
         color: var(--TwitterPink) !important;
     }
-    button {
+    button:not([class*="fbStory"]):not([class*="story"]):not([class*="share"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -69,7 +70,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    button:hover {
+    button:hover:not([class*="fbStory"]):not([class*="story"]):not([class*="share"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -86,7 +87,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    button:active {
+    button:active:not([class*="fbStory"]):not([class*="story"]):not([class*="share"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -116,6 +117,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .recommended-story__info:hover,
     .agglocation.linkLocation,
     #subNavigation,
     .subnav-tools-wrap,
@@ -123,6 +125,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .story-sticky-header-inner,
     .branding,
     .submenu,
     #main-sidebar {
