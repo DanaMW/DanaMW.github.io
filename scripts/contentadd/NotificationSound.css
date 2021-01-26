@@ -1,7 +1,7 @@
 /* Notification Sound */
 
 @-moz-document url-prefix("moz-extension://8b0f6d5c-f1aa-4b39-9c9a-fdbcdd6f50b7/content/options.html"),
-url-prefix("moz-extension://edc7718e-572b-4be4-bdb3-7c023fdd1bdb/content/options.html"),
+url-prefix("moz-extension://cbce1dd3-194b-4e2b-b9b2-d1ba9f5467ca/content/options.html"),
 url-prefix("moz-extension://38ef8766-096d-4025-8d61-8e1ea9ea4994/content/options.html") {
     footer {
         background: var(--Mygray3) !important;
