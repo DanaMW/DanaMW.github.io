@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -63,6 +63,10 @@
     small {
         color: var(--TwitterPink) !important;
     }
+    .gb_Rb,
+    div[class="gb_jb gb_fb"],
+    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"],
+    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"],
     [role="option"],
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7,
     [role="button"]:not(.gb_D.gb_sc):not(.uXftcc),
@@ -82,6 +86,10 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .gb_Rb:hover,
+    div[class="gb_jb gb_fb"]:hover,
+    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:hover,
+    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:hover,
     .rGLf6d.PkxUw:hover,
     .N9wOvf.bsaKEc[aria-selected="true"] [role="option"]:hover,
     [role="option"][aria-selected="true"],
@@ -107,6 +115,10 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .gb_Rb:active,
+    div[class="gb_jb gb_fb"]:active,
+    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:active,
+    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:active,
     [role="option"]:active,
     [role="button"]:active:not(.gb_D.gb_sc):not(.uXftcc),
     .Lw7GHd.snByac:active,
@@ -146,6 +158,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    [aria-label="Account Information"],
     .A2BXPe.n5uYMe.pYTmjf.mCOR5e,
     [role="dialog"],
     .yxIv1d.krjOGe {
@@ -231,5 +244,8 @@
     }
     .uXftcc {
         border: 1px solid var(--Myred2) !important;
+    }
+    [aria-label="Account Information"] {
+        border: 1px solid var(--MyW) !important;
     }
 }

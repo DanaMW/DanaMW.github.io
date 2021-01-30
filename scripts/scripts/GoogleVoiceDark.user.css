@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.38
+@version      0.0.39
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -108,6 +108,10 @@ domain("myaccount.google.com") {
     small {
         color: var(--TwitterPink) !important;
     }
+    .gb_Rb,
+    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"],
+    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"],
+    .gb_jb.gb_fb,
     a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"],
     a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"],
     .mat-option,
@@ -128,6 +132,10 @@ domain("myaccount.google.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .gb_Rb:hover,
+    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:hover,
+    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:hover,
+    .gb_jb.gb_fb:hover,
     .md-ink-ripple::before,
     [role="button"][aria-selected="true"],
     a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:hover,
@@ -152,6 +160,10 @@ domain("myaccount.google.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .gb_Rb:active,
+    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:active,
+    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:active,
+    .gb_jb.gb_fb:active,
     a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:active,
     a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"]:active,
     a[role="tab"]:active,
