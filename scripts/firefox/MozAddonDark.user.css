@@ -2,7 +2,7 @@
 @name         Mozilla Addons Dark
 @namespace    https://danamw.github.io/Scripts/extra/MozAddonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/extra/MozAddonDark.user.css
-@version      0.0.14
+@version      0.0.15
 @description  Mozilla Addons Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -13,7 +13,8 @@ url-prefix("https://accounts.firefox.com"),
 domain("mozilla.net"),
 domain("mozilla.org"),
 domain("addons-amo.cdn.mozilla.net"),
-domain("addons.cdn.mozilla.net") {
+domain("addons.cdn.mozilla.net"),
+domain("wiki.mozilla.org") {
     /* -----------------------------------------
     privacy.resistFingerprinting.block_mozAddonManager (Create with value TRUE)
     extensions.webextensions.restrictedDomains (edit out addons.mozilla.org)
