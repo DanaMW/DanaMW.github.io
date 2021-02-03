@@ -2,7 +2,7 @@
 @name         Mozilla Addons Dark
 @namespace    https://danamw.github.io/Scripts/extra/MozAddonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/extra/MozAddonDark.user.css
-@version      0.0.15
+@version      0.0.16
 @description  Mozilla Addons Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -51,6 +51,8 @@ domain("wiki.mozilla.org") {
         background-color: var(--Myback) !important;
         color: var(--Mytext) !important;
     }
+    #footer,
+    .mw-body,
     div[class="flex flex-col justify-between min-h-screen"] {
         background-color: var(--MyB) !important;
     }
@@ -240,6 +242,7 @@ domain("wiki.mozilla.org") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .selected,
     a.block:hover,
     a.nu-settings-button:hover,
     li.mt-3>a:hover,
@@ -298,10 +301,13 @@ domain("wiki.mozilla.org") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
+    #mw-head,
     [role="banner"] {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    #mw-panel,
+    .toc,
     div[class="flex w-full pt-4 items-center flex-col tablet:w-auto tablet:relative"],
     div.bg-white.shadow,
     .drop-down-menu,
@@ -334,5 +340,15 @@ domain("wiki.mozilla.org") {
     div#service[data-testid="settings-connected-service"]:hover,
     .unit-row:hover {
         background-color: var(--MyX1) !important;
+    }
+    li {
+        color: var(--TwitterBlue) !important;
+    }
+    #p-search,
+    [role="search"],
+    form#searchform,
+    #simpleSearch {
+        background-color: transparent !important;
+        background-image: none !important;
     }
 }
