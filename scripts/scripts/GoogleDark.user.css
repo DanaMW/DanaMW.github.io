@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.93
+@version      0.1.94
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -274,22 +274,6 @@ url-prefix("https://support.google.com/") {
     .gb_wg.gb_Sb {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-    }
-    #fbar {
-        background-color: var(--MyX1) !important;
-        opacity: 0.1 !important;
-        height: 40px !important;
-        -moz-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
-        -webkit-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
-        transition: opacity 2s, height 2s, transform 2s !important;
-    }
-    #fbar:hover {
-        background-color: var(--MyX1) !important;
-        opacity: 0.8 !important;
-        height: 40px !important;
-        -moz-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
-        -webkit-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
-        transition: opacity 2s, height 2s, transform 2s !important;
     }
     #sbfblt {
         display: none !important;
@@ -1541,5 +1525,27 @@ url-prefix("https://support.google.com/") {
         text-align: center !important;
         margin-left: 5px !important;
         margin-right: 5px !important;
+    }
+    .c93Gbe {
+        background: transparent !important;
+    }
+    .KxwPGc.SSwjIe {
+        background-color: var(--MyX1) !important;
+        opacity: 0.1 !important;
+        height: 40px !important;
+        -moz-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
+        -webkit-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
+        transition: opacity 2s, height 2s, transform 2s !important;
+    }
+    .KxwPGc.SSwjIe:hover {
+        background-color: var(--MyX1) !important;
+        opacity: 0.9 !important;
+        height: 40px !important;
+        -moz-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
+        -webkit-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
+        transition: opacity 2s, height 2s, transform 2s !important;
+    }
+    .Qff0zd {
+        background: var(--Mygray3) !important;
     }
 }
