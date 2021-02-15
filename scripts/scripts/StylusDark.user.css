@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.37
+@version      0.0.38
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -77,9 +77,16 @@ regexp("moz-extension://.*") {
         padding-left: 25px !important;
     }
     .entry.Usercss .style-name-link::after {
+        position: relative !important;
+    }
+    .entry.Usercss .style-name-link::after {
+        content: 'UserCSS';
+    }
+    .entry.Usercss .style-name-link::after {
         background-color: var(--Myred2) !important;
+        color: var(--Mytext) !important;
         float: right;
-        padding-left: 25px !important;
+        padding-left: 3px !important;
         display: before;
     }
     #header {
