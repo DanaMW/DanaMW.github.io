@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.38
+@version      0.0.39
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -15,6 +15,7 @@ regexp("moz-extension://.*") {
     }
     img[src="https://www.google.com/s2/favicons?domain=ello.co"],
     img[src="https://www.google.com/s2/favicons?domain=github.com"],
+    img[src="https://www.google.com/s2/favicons?domain=githubusercontent.com"],
     svg[class="svg-icon select-arrow"] {
         filter: invert(1) !important;
     }
