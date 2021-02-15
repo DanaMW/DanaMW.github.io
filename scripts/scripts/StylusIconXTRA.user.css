@@ -2,7 +2,7 @@
 @name         Stylus IconXTRA
 @namespace    https://danamw.github.io/scripts/scripts/StylusIconXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusIconXTRA.user.css
-@version      0.0.13
+@version      0.0.14
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -95,7 +95,7 @@ regexp("moz-extension://.*") {
         padding-top: 16px !important;
     }
     .newUI #style-78 img[src="https://www.google.com/s2/favicons?domain=githubusercontent.com"] {
-        background: url(https://www.google.com/s2/favicons?domain=github.com) no-repeat !important;
+        background: url(https://www.google.com/s2/favicons?domain=githubstatus.com) no-repeat !important;
         height: 0 !important;
         width: 0 !important;
         padding-left: 16px !important;
