@@ -2,7 +2,7 @@
 @name         CNN Dark
 @namespace    https://danamw.github.io/scripts/scripts/CnnDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CnnDark.user.css
-@version      0.0.17
+@version      0.0.18
 @description  Some CNN Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.com
@@ -123,6 +123,7 @@
     }
     nav>ul>li,
     nav.sibling.sibling--next,
+    nav.sibling.sibling--previous,
     button:not([title="Play Video"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -144,6 +145,7 @@
     nav>ul>li:hover,
     header,
     nav.sibling.sibling--next:hover,
+    nav.sibling.sibling--previous:hover,
     #nav,
     button:hover:not([title="Play Video"]) {
         -moz-appearance: none;
@@ -167,6 +169,7 @@
     }
     nav>ul>li:active,
     nav.sibling.sibling--next:active,
+    nav.sibling.sibling--previous:active,
     button:active:not([title="Play Video"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
