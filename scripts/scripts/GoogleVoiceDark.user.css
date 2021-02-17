@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.40
+@version      0.0.41
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -265,6 +265,8 @@ domain("myaccount.google.com") {
     .mat-checked {
         background-color: transparent !important;
     }
+    /* this is the bad connect bar */
+    .zQ5vdd-haAclf,
     .full-snackbar,
     gv-device-icon>.icon {
         background-color: var(--MyX1) !important;
