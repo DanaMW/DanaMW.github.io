@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.13
+@version      0.0.14
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -265,5 +265,10 @@
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
         border: 2px solid var(--MyB) !important;
+    }
+    .Mh0NNb.MoCXad.Mp2Z0b.misTTe,
+    .aGJE1b {
+        background-color: var(--MyX1) !important;
+        border-radius: 5px !important;
     }
 }
