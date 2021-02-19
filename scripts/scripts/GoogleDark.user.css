@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.1.94
+@version      0.1.95
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -188,8 +188,8 @@ url-prefix("https://support.google.com/") {
     .ZZ9xL {
         color: var(--Myred1) !important;
     }
-    .gsfi {
-        border-radius: 25px !important;
+    a#hdtb-tls {
+        border: none !important;
     }
     .clear-button,
     div[role="button"][aria-label="Search"] {
@@ -200,7 +200,6 @@ url-prefix("https://support.google.com/") {
     input[aria-label="Search Google Account"],
     input[aria-label="Search"] {
         text-align: center !important;
-        border-radius: 25px !important;
         color: var(--MyW) !important;
         border: 2px solid var(--Myred2) !important;
     }
@@ -221,6 +220,7 @@ url-prefix("https://support.google.com/") {
     .UVgjof {
         padding-left: 10px !important;
     }
+    .WvKfwe.a3spGf,
     .yQ0wwc,
     scrolling-carousel,
     div[jsname="ixzLGf"],
@@ -233,6 +233,8 @@ url-prefix("https://support.google.com/") {
     div[role="main"]:not([class="s7iwrf gMPiLc  Kdcijb"]) {
         background-color: hsla(0, 87%, 12%, 0.8) !important;
     }
+    .s5Xfw,
+    .WUrS5.gsrt,
     #resultStats {
         color: var(--MyW) !important;
     }
@@ -373,12 +375,6 @@ url-prefix("https://support.google.com/") {
     .ab_dropdown {
         background-color: var(--Mygray3) !important;
     }
-    a#hdtb-tls {
-        border: none !important;
-    }
-    .xkfVF {
-        border-radius: 15px;
-    }
     form {
         background: transparent !important;
     }
@@ -396,6 +392,8 @@ url-prefix("https://support.google.com/") {
     .gb_m {
         z-index: 10000 !important;
     }
+    .OeVqAd.nDuq,
+    .OeVqAd,
     .QtDoYb,
     a[data-navigation="server"],
     circle {
@@ -720,9 +718,25 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .vwfsqc,
+    [role="list"],
+    .Kot7x.eXEBMb.Znsfnf {
+        background-color: var(--MyB) !important;
+    }
+    .JNkvid,
+    .UDZeY.OTFaAf,
+    .OeVqAd.nDuq,
+    .OeVqAd,
+    .wDYxhc,
     .yg51vc,
     .section-profile-stats-progressbar-bar {
         background-color: var(--Myred3) !important;
+    }
+    .OeVqAd.nDuq,
+    .OeVqAd {
+        border-radius: 15px !important;
+        left: -10px !important;
+        border: 1px solid var(--MyW) !important;
     }
     .section-profile-stats-progressbar-progress {
         background-color: var(--Myred1) !important;
@@ -756,7 +770,6 @@ url-prefix("https://support.google.com/") {
     }
     .jleFbf {
         color: var(--Mygray1) !important;
-        border-radius: 15px !important;
     }
     .gb_Z {
         background: transparent !important;
@@ -799,7 +812,6 @@ url-prefix("https://support.google.com/") {
     }
     .DRBylb {
         background-color: var(--Mygray2) !important;
-        border-radius: 15px !important;
     }
     #wp-tabs-container.I6TXqe.osrp-blk,
     div[class*="imspo"],
@@ -843,7 +855,6 @@ url-prefix("https://support.google.com/") {
     }
     .vk_c.card.obcontainer.card-section {
         color: var(--MyW) !important;
-        border-radius: 15px !important;
         border: 1px solid var(--Myborder);
     }
     .gb_Cf.gb_jb {
@@ -862,7 +873,6 @@ url-prefix("https://support.google.com/") {
     div[aria-label="Account Information"] {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        border-radius: 15px !important;
         border: 1px solid var(--Myborder) !important;
     }
     .gb_Ta.gb_z.gb_7b,
@@ -875,7 +885,6 @@ url-prefix("https://support.google.com/") {
     .hdtbU.hdtb-mn-o {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        border-radius: 15px !important;
         border: 1px solid var(--Myborder) !important;
     }
     .y8Jpof.rhsvw:hover {
@@ -1012,10 +1021,6 @@ url-prefix("https://support.google.com/") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-    .Tg7LZd,
-    .FiqGxd {
-        border-radius: 25px !important;
-    }
     .z1asCe.MZy1Rb {
         margin-right: -10px !important;
     }
@@ -1034,7 +1039,6 @@ url-prefix("https://support.google.com/") {
         text-decoration: none !important;
     }
     .xpdopen {
-        border-radius: 10px !important;
         background-color: var(--Myred3) !important;
     }
     #irc-pc {
@@ -1054,7 +1058,6 @@ url-prefix("https://support.google.com/") {
         background-color: var(--MyX1) !important;
     }
     .CAAQAQ {
-        border-radius: 15px !important;
         background-color: var(--Myred3) !important;
     }
     .yyjhs {
@@ -1276,7 +1279,6 @@ url-prefix("https://support.google.com/") {
     div[class*="modal-content"],
     [role="dialog"],
     .fLJSwc,
-    .OeVqAd,
     .ru14E.kF2iof,
     .K20DDe.HdaFGf.suApsd.R9GLFb.JXFbbc.Xbg0sb.ySjHwc,
     .UUcaod,
@@ -1311,6 +1313,7 @@ url-prefix("https://support.google.com/") {
         text-align: center !important;
         color: var(--MyW) !important;
     }
+    .mfMhoc,
     b,
     .lEoPHd,
     .ISnqu,
@@ -1418,8 +1421,10 @@ url-prefix("https://support.google.com/") {
     .kp-wholepage.kp-wholepage-osrp.HSryR.EyBRub {
         width: 100% !important;
     }
+    .g.VjDLd.mnr-c.g-blk,
+    .kp-blk.nGydZ.Wnoohf.OJXvsb,
     .liYKde.g.VjDLd {
-        width: 550px !important;
+        width: 575px !important;
     }
     html[itemtype="http://schema.org/WebPage"] .sfbgg {
         background-color: var(--MyB) !important;
