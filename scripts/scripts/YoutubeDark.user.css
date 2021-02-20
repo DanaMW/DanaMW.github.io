@@ -2,13 +2,14 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.20
+@version      0.0.21
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
-@preprocessor default
+@preprocessor stylus
 @var range smove "Slide Search Bar"[10, 0, 75, 1, "vw"]
 @var range swidth "Resize search input"[750, 100, 1000, 1, "px"]
+@var checkbox sshow "Show Chips in search" 1
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"),
@@ -88,11 +89,6 @@ domain("studio.youtube.com") {
         --yt-chat-bubble-self-border-color: rgba(255, 255, 255, 0.20);
         --yt-chat-bubble-self-background-color: #282828;
     }
-    /*
-    #items.ytd-grid-renderer {
-        width: calc(100% + 5%) !important;
-    }
-    */
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
@@ -200,6 +196,17 @@ domain("studio.youtube.com") {
         background-color: var(--Myred1);
         color: var(--Myred1);
     }
+    #chips-wrapper {
+        background: none !important;
+        border: none !important;
+        opacity: 0;
+    }
+    if sshow {
+        #chips-wrapper {
+            opacity: 1 !important;
+        }
+    }
+    iron-selector,
     #ink {
         background-color: var(--Myred3)
     }
@@ -209,7 +216,6 @@ domain("studio.youtube.com") {
     ytd-post-renderer[attachment="poll"],
     button#search-btn,
     .hidden.paper-tooltip,
-    /*#footer,*/
     .ytd-banner-promo-renderer,
     div[id="footer-container"],
     ytd-primetime-promo-renderer,
