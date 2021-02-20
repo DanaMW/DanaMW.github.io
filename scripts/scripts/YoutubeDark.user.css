@@ -2,14 +2,13 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.21
+@version      0.0.22
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
-@preprocessor stylus
+@preprocessor default
 @var range smove "Slide Search Bar"[10, 0, 75, 1, "vw"]
 @var range swidth "Resize search input"[750, 100, 1000, 1, "px"]
-@var checkbox sshow "Show Chips in search" 1
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"),
@@ -197,14 +196,12 @@ domain("studio.youtube.com") {
         color: var(--Myred1);
     }
     #chips-wrapper {
+        display: none !important;
+        /*
         background: none !important;
         border: none !important;
         opacity: 0;
-    }
-    if sshow {
-        #chips-wrapper {
-            opacity: 1 !important;
-        }
+        */
     }
     iron-selector,
     #ink {
