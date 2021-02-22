@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -70,7 +70,7 @@
     a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"],
     [role="option"],
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7,
-    [role="button"]:not(.gb_D.gb_sc):not(.uXftcc),
+    div[role="button"]:not(.gb_D.gb_sc):not(.uXftcc),
     .Lw7GHd.snByac,
     button {
         -moz-appearance: none;
@@ -95,9 +95,10 @@
     .N9wOvf.bsaKEc[aria-selected="true"] [role="option"]:hover,
     [role="option"][aria-selected="true"],
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7.qs41qe,
-    [role="listitem"][tabindex="0"],
+    span[role="listitem"][tabindex="0"],
+    span[role="listitem"]>div:hover,
     [role="menuitem"]:hover,
-    [role="button"]:hover:not(.gb_D.gb_sc):not(.uXftcc),
+    div[role="button"]:hover:not(.gb_D.gb_sc):not(.uXftcc),
     .Lw7GHd.snByac:hover,
     button:hover {
         -moz-appearance: none;
@@ -141,6 +142,14 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    div[aria-label*="Collapse"] {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        display: initial !important;
+    }
+    .gb_wf.gb_qf,
+    form.gb_Ve[role="search"],
     .is2u3.JEBAHf,
     .RAIar,
     .VEFddc,
@@ -162,6 +171,8 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .BFRaWe,
+    .IsPLi.krjOGe,
     [aria-label="Account Information"],
     .A2BXPe.n5uYMe.pYTmjf.mCOR5e,
     [role="dialog"],
@@ -169,6 +180,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .Xln1ef,
     .SXFjfb,
     div[class="g3VIld qRVtHc i0ZSQc cp4Mw si1Yoe Up8vH J9Nfi iWO5td"],
     .ffyVOd,
@@ -191,6 +203,7 @@
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+    input.gb_gf,
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
