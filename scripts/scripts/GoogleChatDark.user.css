@@ -2,13 +2,14 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.16
+@version      0.0.17
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("chat.google.com") {
+@-moz-document domain("chat.google.com"),
+url-prefix("https://mail.google.com/mail/u/0/chat/") {
     .Bqp03e,
     .DHBWQd,
     .W55R9c,
@@ -70,7 +71,7 @@
     a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"],
     [role="option"],
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7,
-    div[role="button"]:not(.gb_D.gb_sc):not(.uXftcc),
+    [role="button"]:not(.gb_D.gb_sc):not(.uXftcc),
     .Lw7GHd.snByac,
     button {
         -moz-appearance: none;
@@ -86,6 +87,9 @@
         transition: border-color .3s ease, box-shadow .7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+    a[role="button"]:hover {
+        filter: invert(0) !important;
     }
     .gb_Rb:hover,
     div[class="gb_jb gb_fb"]:hover,
@@ -148,8 +152,8 @@
         appearance: none;
         display: initial !important;
     }
+    form.gb_Ve,
     .gb_wf.gb_qf,
-    form.gb_Ve[role="search"],
     .is2u3.JEBAHf,
     .RAIar,
     .VEFddc,
@@ -160,6 +164,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    .dKv0S.BUXyJd.AUFR7b,
     .HrE5Tb,
     .QTQg5e,
     .wbJc4,
@@ -171,6 +176,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .pS5UB,
     .BFRaWe,
     .IsPLi.krjOGe,
     [aria-label="Account Information"],
