@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -71,13 +71,13 @@ url-prefix("https://mail.google.com/mail/u/0/chat/") {
     a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"],
     [role="option"],
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7,
-    [role="button"]:not(.gb_D.gb_sc):not(.uXftcc),
+    div[role="button"],
     .Lw7GHd.snByac,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
-        appearance: none;
         border: none !important;
+        appearance: none;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -102,7 +102,7 @@ url-prefix("https://mail.google.com/mail/u/0/chat/") {
     span[role="listitem"][tabindex="0"],
     span[role="listitem"]>div:hover,
     [role="menuitem"]:hover,
-    div[role="button"]:hover:not(.gb_D.gb_sc):not(.uXftcc),
+    div[role="button"]:hover,
     .Lw7GHd.snByac:hover,
     button:hover {
         -moz-appearance: none;
@@ -126,7 +126,7 @@ url-prefix("https://mail.google.com/mail/u/0/chat/") {
     a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:active,
     a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:active,
     [role="option"]:active,
-    [role="button"]:active:not(.gb_D.gb_sc):not(.uXftcc),
+    div[role="button"]:active,
     .Lw7GHd.snByac:active,
     .ajDw2c:active,
     button:active {
@@ -216,6 +216,10 @@ url-prefix("https://mail.google.com/mail/u/0/chat/") {
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    input.gb_gf {
+        height: 25px !important;
+        margin-top: 10px !important;
     }
     .tooltip {
         display: block;
