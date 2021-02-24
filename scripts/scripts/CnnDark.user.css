@@ -2,7 +2,7 @@
 @name         CNN Dark
 @namespace    https://danamw.github.io/scripts/scripts/CnnDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CnnDark.user.css
-@version      0.0.19
+@version      0.0.20
 @description  Some CNN Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.com
@@ -72,6 +72,7 @@
     .cd__headline-text {
         color: var(--MyW) !important;
     }
+    .headline__text,
     h3,
     strong,
     a:hover {
@@ -86,6 +87,7 @@
         text-decoration: none !important;
         text-align: center !important;
     }
+    h1.headline,
     h1.pg-headline {
         color: var(--Myred1) !important;
         text-shadow: 1px -1px 0 var(--MyW) !important;
