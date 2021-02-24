@@ -2,10 +2,10 @@
 @name         CNN Dark
 @namespace    https://danamw.github.io/scripts/scripts/CnnDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CnnDark.user.css
-@version      0.0.20
+@version      0.0.21
 @description  Some CNN Tweaks
 @author       Dana Meli
-@homepageURL  https://danamw.github.com
+@homepageURL  https://danamw.github.io
 ==/UserStyle==*/
 
 @-moz-document domain("cnn.com") {
