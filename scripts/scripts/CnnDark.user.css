@@ -2,7 +2,7 @@
 @name         CNN Dark
 @namespace    https://danamw.github.io/scripts/scripts/CnnDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CnnDark.user.css
-@version      0.0.18
+@version      0.0.19
 @description  Some CNN Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.com
@@ -23,11 +23,14 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    .layout__content-wrapper,
+    .layout__content-wrapper.layout-with-rail__content-wrapper,
+    .layout-with-rail__content-wrapper,
     footer,
     section,
     article,
     body[class] {
-        background-color: var(--Myback) !important;
+        background-color: var(--MyB) !important;
         color: var(--Mytext) !important;
     }
     * {
