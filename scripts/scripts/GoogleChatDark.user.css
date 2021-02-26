@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.19
+@version      0.0.20
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -293,5 +293,10 @@ url-prefix("https://mail.google.com/mail/u/0/chat/") {
     .aGJE1b {
         background-color: var(--MyX1) !important;
         border-radius: 5px !important;
+    }
+    .ajp {
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+        border: 2px solid var(--MyW) !important;
     }
 }
