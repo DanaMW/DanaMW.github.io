@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.1
+@version      0.2.2
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -30,7 +30,6 @@ url-prefix("https://support.google.com/") {
     .hcfe-content,
     section[class="primary-container"],
     .bTZTkf.uXmgWc,
-    g-more-link,
     div[class="HD8Pae luh4tb cUezCb xpd O9g5cc uUPGi"],
     .Xeztj.xuc,
     #main,
@@ -106,6 +105,21 @@ url-prefix("https://support.google.com/") {
     .dU5Kl {
         border: none !important;
     }
+    #kp-wp-tab-overview,
+    .qFWqn,
+    .gb_F.gb_na,
+    .PaEvOc,
+    .section-review,
+    div[class*="__root"],
+    div[class*="__container"],
+    .section-subheader,
+    .section-omnibox-spacer,
+    .section-result,
+    .u4DeMc,
+    .ikIPKb,
+    div[class*="smsauth-interstitial-infobox"],
+    .act-tim-txt-cnt>div,
+    #timer-stopwatch-container,
     .mod,
     .UDZeY.OTFaAf,
     .Uh4Mac,
@@ -129,6 +143,9 @@ url-prefix("https://support.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    #kp-wp-tab-overview {
+        background: var(--MyB) !important;
+    }
     .exp-outline {
         border: none !important;
         border-radius: 0px !important;
@@ -141,23 +158,6 @@ url-prefix("https://support.google.com/") {
     .g.VjDLd.mnr-c.g-blk {
         margin-left: -5px !important;
         width: 575px !important;
-    }
-    .qFWqn,
-    .gb_F.gb_na,
-    .PaEvOc,
-    .section-review,
-    div[class*="__root"],
-    div[class*="__container"],
-    .section-subheader,
-    .section-omnibox-spacer,
-    .section-result,
-    .u4DeMc,
-    .ikIPKb,
-    div[class*="smsauth-interstitial-infobox"],
-    .act-tim-txt-cnt>div,
-    #timer-stopwatch-container {
-        background-image: none !important;
-        background-color: transparent !important;
     }
     .exp-outline,
     div.g {
@@ -726,6 +726,7 @@ url-prefix("https://support.google.com/") {
     .Kot7x.eXEBMb.Znsfnf {
         background-color: var(--MyB) !important;
     }
+    div[role="complementary"],
     .JNkvid,
     .UDZeY.OTFaAf,
     .OeVqAd.nDuq,
