@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.64
+@version      0.0.65
 @description  My Twitter Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -149,6 +149,8 @@ domain("twimg.com") {
     .css-1dbjc4n.r-1awozwy.r-sdzlij.r-18u37iz.r-1777fci.r-dnmrzs.r-1sp51qo.r-o7ynqc.r-6416eg {
         width: 235px !important;
     }
+    a[class="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21 r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"],
+    div[class="css-18t94o4 css-1dbjc4n r-1habvwh r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"],
     a[class="css-4rbku5 css-18t94o4 css-1dbjc4n r-1loqt21 r-16y2uox r-dnmrzs r-1ny4l3l r-o7ynqc r-6416eg"],
     div[class="css-1dbjc4n r-1awozwy r-sdzlij r-18u37iz r-1777fci r-dnmrzs r-1sp51qo r-o7ynqc r-6416eg"],
     div[class="css-1dbjc4n r-18u37iz r-16y2uox r-d9fdf6 r-9qu9m4"],
@@ -177,6 +179,8 @@ domain("twimg.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21 r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"]:hover,
+    div[class="css-18t94o4 css-1dbjc4n r-1habvwh r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"]:hover,
     .css-1dbjc4n.r-1awozwy.r-18u37iz a:hover,
     div[class="css-1dbjc4n r-1awozwy r-18u37iz"] a:hover,
     div[class="css-1dbjc4n r-1awozwy r-zv2cs0 r-sdzlij r-18u37iz r-1777fci r-dnmrzs r-1sp51qo r-o7ynqc r-6416eg"]:hover,
@@ -211,6 +215,8 @@ domain("twimg.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[class="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21 r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"]:active,
+    div[class="css-18t94o4 css-1dbjc4n r-1habvwh r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"]:active,
     .css-1dbjc4n.r-1awozwy.r-18u37iz a:active,
     div[class="css-1dbjc4n r-1awozwy r-zv2cs0 r-sdzlij r-18u37iz r-1777fci r-dnmrzs r-1sp51qo r-o7ynqc r-6416eg"]:active,
     div[class="css-1dbjc4n r-18u37iz r-16y2uox r-d9fdf6 r-9qu9m4"]:active,
@@ -249,15 +255,18 @@ domain("twimg.com") {
     .css-1dbjc4n.r-bie543.r-1d2f490.r-1xcajam.r-zchlnj.r-ipm5af.r-1siec45.r-o7ynqc.r-axxi2z.r-136ojw6 {
         background-color: var(--Myred1) !important;
     }
+    div[class="css-1dbjc4n r-xoduu5 r-xyw6el r-mk0yit r-13qz1uu"],
     .css-1dbjc4n.r-bjte33.r-sdzlij.r-16y2uox.r-1wbh5a2.r-1j3t67a.r-1w50u8q,
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         text-align: center !important;
+        border: 1px solid var(--MyW) !important;
     }
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
+        border: 1px solid var(--MyW) !important;
     }
     .css-1dbjc4n.r-bjte33.r-sdzlij.r-16y2uox.r-1wbh5a2.r-1j3t67a.r-1w50u8q {
         border: 1px solid var(--MyW) !important;
@@ -306,6 +315,10 @@ domain("twimg.com") {
     div[class="css-901oao css-bfa6kz r-aaos50 r-z2wwpe r-111h2gw r-1q142lx r-1qd0xha r-n6v787 r-16dba41 r-1sf4r6n r-1f6r7vd r-bcqeeo r-ou255f r-qvutc0"] {
         border: 1px solid var(--MyW) !important;
         color: var(--MyW) !important;
+    }
+    .css-1dbjc4n.r-15zivkp.r-1bymd8e.r-13qz1uu {
+        color: var(--MyW) !important;
+        border: 1px solid var(--MyW) !important;
     }
     .css-901oao.r-jwli3a.r-6koalj.r-16y2uox.r-1qd0xha.r-1b6yd1w.r-16dba41.r-ad9z0x.r-bcqeeo.r-qvutc0 {
         background-color: var(--Mygray3) !important;
@@ -394,6 +407,9 @@ domain("twimg.com") {
         background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    .css-1dbjc4n.r-1f1sjgu,
+    div[class="css-1dbjc4n r-150rngu r-kemksi r-z2wwpe r-qo02w8 r-1d2f490 r-8fhv3p r-h3f8nf r-1rnoaur r-1r851ge r-u8s1d r-zchlnj r-ipm5af"],
+    .css-1dbjc4n.r-nsbfu8,
     .css-1dbjc4n.r-1oqcu8e,
     div[class="css-1dbjc4n r-yfoy6g r-1f0042m r-16y2uox r-1wbh5a2"],
     div[class="css-1dbjc4n r-aqfbo4 r-yfoy6g r-1ila09b r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q"],
@@ -425,6 +441,7 @@ domain("twimg.com") {
     div[class="css-1dbjc4n r-1uaug3w r-1uhd6vh r-t23y2h r-1phboty r-rs99b7 r-15d164r r-1udh08x"] {
         display: none !important;
     }
+    .css-1dbjc4n.r-1ysxnx4.r-k0dy70.r-1867qdf.r-1phboty.r-rs99b7.r-1ifxtd0.r-1bro5k0.r-1udh08x,
     section[aria-label="Section details"],
     section[aria-label="Section navigation"] {
         border: none !important;
@@ -433,6 +450,7 @@ domain("twimg.com") {
         margin-left: 175px !important;
         margin-right: -400px !important;
     }
+    .css-1dbjc4n.r-nsbfu8,
     div[class="css-1dbjc4n r-t23y2h r-1wbh5a2 r-rsyp9y r-1pjcn9w r-htvplk r-1udh08x r-1potc6q"],
     div[class="css-1dbjc4n r-aqfbo4 r-yfoy6g r-1ila09b r-rull8r r-qklmqi r-gtdqiz r-ipm5af r-1g40b8q"],
     div[class="css-1dbjc4n r-yfoy6g r-1f0042m r-xnswec r-1ekmkwe r-1udh08x r-1rnoaur r-1r851ge r-1xcajam"] {
