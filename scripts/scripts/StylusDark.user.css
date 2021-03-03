@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.39
+@version      0.0.40
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -19,14 +19,6 @@ regexp("moz-extension://.*") {
     svg[class="svg-icon select-arrow"] {
         filter: invert(1) !important;
     }
-    /*
-    h1#manage-heading::after {
-        --installed: eval("document.querySelector('#installed').data-total");
-        content: ' ';
-        background: eval("document.querySelector('#installed').data-total");
-        position: relative;
-    }
-    */
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
@@ -136,7 +128,7 @@ regexp("moz-extension://.*") {
     a#sync-dropbox-import,
     a#file-all-styles,
     a#sync-dropbox-export,
-    button {
+    button:not(.fake) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -158,7 +150,7 @@ regexp("moz-extension://.*") {
     a#sync-dropbox-import:hover,
     a#file-all-styles:hover,
     a#sync-dropbox-export:hover,
-    button:hover {
+    button:hover:not(.fake) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -182,7 +174,7 @@ regexp("moz-extension://.*") {
     a#sync-dropbox-import:active,
     a#file-all-styles:active,
     a#sync-dropbox-export:active,
-    button:active {
+    button:active:not(.fake) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -302,6 +294,15 @@ regexp("moz-extension://.*") {
         background-color: var(--Myback) !important;
         border-color: var(--Myborder) !important;
     }
+    .menu-items-wrapper,
+    #options-title,
+    select#manage.newUI.sort,
+    select,
+    #message-box.danger #message-box-title {
+        background-color: var(--Myred1) !important;
+        background-image: linear-gradient(to top, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
+    }
+    option,
     #options,
     body,
     #help-popup,
@@ -311,14 +312,6 @@ regexp("moz-extension://.*") {
     .dropdown-content,
     #header {
         background-color: var(--Mygray3) !important;
-    }
-    .menu-items-wrapper,
-    #options-title,
-    select#manage.newUI.sort,
-    select,
-    #message-box.danger #message-box-title {
-        background-color: var(--Myred1) !important;
-        background-image: linear-gradient(to top, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
     }
     select#manage.newUI.sort,
     select {
@@ -332,5 +325,8 @@ regexp("moz-extension://.*") {
     }
     #stylus {
         background-color: var(--MyB) !important;
+    }
+    #searchMode {
+        width: 150px !important;
     }
 }
