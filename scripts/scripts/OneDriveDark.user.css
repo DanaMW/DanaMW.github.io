@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.18
+@version      0.0.19
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -296,11 +296,15 @@
         background-color: transparent !important;
         background-image: none !important;
     }
+    .ms-Tile-foreground,
     div[class="ms-TextField-fieldGroup"] {
         background: transparent !important;
     }
     [role="listbox"],
     div[id*="ms-searchux-popup"] {
         background-color: var(--Mygray3) !important;
+    }
+    .ms-Tile:hover {
+        border: 2px solid var(--Myred1) !important;
     }
 }
