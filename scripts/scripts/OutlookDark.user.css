@@ -2,9 +2,9 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.26
+@version      0.0.27
 @author       Dana Meli
-@homepageURL  https://github.com/DanaMW
+@homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("outlook.live.com") {
