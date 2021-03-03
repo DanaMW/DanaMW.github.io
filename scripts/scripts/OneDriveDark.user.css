@@ -219,6 +219,9 @@
         background-color: var(--Myred1) !important;
         color: var(--Myred1) !important;
     }
+    form[class*="ms-suiteux-search-box"] {
+        color: var(--MyW) !important;
+    }
     div.InfoPane-itemDetails-name,
     dt {
         color: var(--Myred1) !important;
@@ -234,7 +237,6 @@
         color: var(--MyW) !important;
     }
     input,
-    /* .od-SearchBox.od-SearchBox--active input, */
     .ms-TextField,
     textarea,
     .od-SharingSection-PermissionsPile {
@@ -242,7 +244,7 @@
         color: var(--MyW) !important;
         border-radius: 15px !important;
     }
-    .ms-TextField {
+    input[role="combobox"] .ms-TextField {
         border-radius: 15px !important;
         background-color: transparent !important;
     }
@@ -289,7 +291,16 @@
     .od-QuotaBar-used {
         border-color: var(--Myred1) !important;
     }
+    .m_YdpO5_33Q22e4K9wQQN,
+    #leftRegion {
+        background-color: transparent !important;
+        background-image: none !important;
+    }
     div[class="ms-TextField-fieldGroup"] {
         background: transparent !important;
+    }
+    [role="listbox"],
+    div[id*="ms-searchux-popup"] {
+        background-color: var(--Mygray3) !important;
     }
 }
