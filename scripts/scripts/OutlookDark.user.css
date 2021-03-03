@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.25
+@version      0.0.26
 @author       Dana Meli
 @homepageURL  https://github.com/DanaMW
 ==/UserStyle== */
@@ -85,6 +85,7 @@
     [data-icon-name] {
         color: var(--MyW) !important;
     }
+    ._2vxq4e-RE_RciEKv4n4_e1,
     li a.internal.sign-in-link,
     .cJ5P-H7zqLg6pBWAa13NW,
     ._3MzUg_7Zg60Ni1B0EDVQhm,
@@ -116,6 +117,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    ._2vxq4e-RE_RciEKv4n4_e1:hover,
     [role="tablist"] button[aria-selected="true"],
     li a.internal.sign-in-link:hover,
     div[role="option"]:hover,
@@ -154,6 +156,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    ._2vxq4e-RE_RciEKv4n4_e1:active,
     li a.internal.sign-in-link:active,
     div[role="option"]:active,
     .cJ5P-H7zqLg6pBWAa13NW:active,
@@ -217,13 +220,19 @@
     p {
         color: var(--MyW) !important;
     }
+    div[id*="tooltip"] {
+        color: var(--MyW) !important;
+        background-color: var(--MyX1) !important;
+        border: 1px solid var(--MyW) !important;
+        padding: 5px !important;
+    }
     .ms-Button--icon,
     .ms-Button-icon,
     .ms-TooltipHost {
         color: var(--MyW) !important;
     }
     div[class="ms-TooltipHost host_90558a24"] span {
-        color: var(--MyB) !important;
+        color: var(--MyW) !important;
     }
     .ms-FocusZone.ms-CommandBar.root-63 {
         border: none !important;
@@ -288,6 +297,7 @@
         color: var(--Myred1) !important;
         text-shadow: 1px 1px var(--MyW) !important;
     }
+    .ms-SearchBox,
     .DqR_QI9wxI9eR6VFTBDcQ input {
         background-color: transparent !important;
         border: 0px !important;
@@ -353,6 +363,7 @@
     ._8uJK7LDpldUqus9UI9KSJ {
         border: 1px solid var(--Myborder) !important;
     }
+    ._2B5Bk35a4VI6DkWUz5m9Bl,
     div[role="search"][aria-expanded="true"],
     .EXpXXWDkglZE1NREQfUSS,
     ._19WyHWm87o4U-k9OKPlmvM,
@@ -370,9 +381,6 @@
     }
     div[class="YPLuJFkgGK34etG1TZUef _24Ur2oCdGv_KCSejfCwqfI _2162cg2PKhp97ciIpv47en"] {
         background-color: var(--Myred2) !important;
-    }
-    .ms-Button.ms-Button--action.ms-Button--command:not([title="Add to Favorites"]) {
-        width: 140px !important
     }
     .UfkPU70ry9_wuIKJ_R0Ni,
     ._3O9j7O6oo-vHZrlM1roRYs,
