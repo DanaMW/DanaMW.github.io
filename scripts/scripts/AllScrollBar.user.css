@@ -2,13 +2,13 @@
 @name 		  All For Scrollbars
 @namespace    http://danamw.github.io/scripts/scripts/AllScrollBar.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AllScrollBar.user.css
-@version      0.0.12
+@version      0.0.13
 @author       Dana Meli
 @description  Scrollbars Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("*") {
+@-moz-document regexp("^:/*/*") {
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
