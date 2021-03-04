@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.27
+@version      0.0.29
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -71,6 +71,7 @@
     .ms-Overlay {
         background-color: var(--MyX4) !important;
     }
+    ._1zRzYBa3Ymm8oRb7igyJMT._177lsrBTpZRGEjUSCd-G5O.vSSK79jcl7wRxs0frlrQI,
     .m_YdpO5_33Q22e4K9wQQN.o365sx-appName,
     ._2_T0Im6ostMX7PPGpbrJGj,
     ._1zxENq4RxEC9ydsMnwBcAu,
@@ -85,6 +86,8 @@
     [data-icon-name] {
         color: var(--MyW) !important;
     }
+    span[class*="wellItem"]:not([class*="ReadWriteCommonWell"]),
+    div[class*="RecipientWellLabelWithContactPicker"],
     ._2vxq4e-RE_RciEKv4n4_e1,
     li a.internal.sign-in-link,
     .cJ5P-H7zqLg6pBWAa13NW,
@@ -117,6 +120,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    span[class*="wellItem"]:not([class*="ReadWriteCommonWell"]):hover,
+    div[class*="RecipientWellLabelWithContactPicker"]:hover,
     ._2vxq4e-RE_RciEKv4n4_e1:hover,
     [role="tablist"] button[aria-selected="true"],
     li a.internal.sign-in-link:hover,
@@ -156,6 +161,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    span[class*="wellItem"]:not([class*="ReadWriteCommonWell"]):active,
+    div[class*="RecipientWellLabelWithContactPicker"]:active,
     ._2vxq4e-RE_RciEKv4n4_e1:active,
     li a.internal.sign-in-link:active,
     div[role="option"]:active,
@@ -193,6 +200,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    ._2ES3fWQLAEojIJTfsimZI4,
+    ._3h2F0teYDuRazaFSQGdJRS,
     .ZXaaK9lo4E9sH50KY3o0C._2PxBL_S6KFCMTya8zm3aLF,
     ._1_ag99JsBHxI6S4FP5ayPv,
     button._33q0KHy2ceHx9Ea1A4VXHj,
@@ -220,7 +229,7 @@
     p {
         color: var(--MyW) !important;
     }
-    div[id*="tooltip"] {
+    div[id*="tooltip"]:not([style*="hidden"]) {
         color: var(--MyW) !important;
         background-color: var(--MyX1) !important;
         border: 1px solid var(--MyW) !important;
@@ -257,6 +266,7 @@
     .ms-Panel {
         background-color: rgba(0, 0, 0, 0.8) !important;
     }
+    ._1yIHkYLrqDZpAMQ3L2YILh._1E-ojjaYGhOxCgHp9Pe315._1zRzYBa3Ymm8oRb7igyJMT._1_Z6L2mLNZ_Q_ulUip_yki._2Ht9U0YzzfQGXALqVdO2MN:hover,
     .ms-FocusZone._2kfDeOFfxzMSAlw5Ao6nK6,
     ._2cwuuRoCT0hoPP-A-ajugG,
     ._2RWmJQCKUjEfGLTYu_0cC5,
@@ -315,6 +325,9 @@
     .ms-Toggle-thumb.thumb-75 {
         color: var(--Myred1) !important;
     }
+    ._1yIHkYLrqDZpAMQ3L2YILh._1E-ojjaYGhOxCgHp9Pe315._1zRzYBa3Ymm8oRb7igyJMT._1_Z6L2mLNZ_Q_ulUip_yki._2Ht9U0YzzfQGXALqVdO2MN {
+        border-bottom: 1px solid var(--MyB) !important;
+    }
     .div[class="_2SvWF44TZgwj95spKJn8Za"] {
         border: none !important;
         border-color: transparent !important;
@@ -363,6 +376,8 @@
     ._8uJK7LDpldUqus9UI9KSJ {
         border: 1px solid var(--Myborder) !important;
     }
+    ._1yIHkYLrqDZpAMQ3L2YILh._1E-ojjaYGhOxCgHp9Pe315._1zRzYBa3Ymm8oRb7igyJMT._1_Z6L2mLNZ_Q_ulUip_yki._2Ht9U0YzzfQGXALqVdO2MN,
+    ._2ytdpP7VUsE7x7PbqO3GDw,
     ._2B5Bk35a4VI6DkWUz5m9Bl,
     div[role="search"][aria-expanded="true"],
     .EXpXXWDkglZE1NREQfUSS,
@@ -417,5 +432,27 @@
     .allowTextSelection {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
+    }
+    div[style*="background-color: rgb(51, 51, 51)"] {
+        background-color: var(--MyB) !important;
+    }
+    .ms-TextField-fieldGroup,
+    div[class*="wellItemBox"],
+    span[class*="wellItem"] {
+        background-color: transparent !important;
+    }
+    div[class*="wellItemBox"] {
+        margin-top: -1px !important;
+    }
+    span[class*="wellItem"]:not([class*="ReadWriteCommonWell"]),
+    span[class*="wellItemBox"],
+    ._3qnDesSIMrWsTEZbhvg-z0 {
+        border-radius: 15px !important;
+    }
+    input.ms-BasePicker-input {
+        background-color: var(--Mygray3) !important;
+    }
+    .laGnUXZu6QC88ONZDEBcE {
+        background-color: var(--MyB) !important;
     }
 }
