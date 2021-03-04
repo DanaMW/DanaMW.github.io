@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.79
+@version      0.0.80
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -177,10 +177,11 @@
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
     }
+    [class=" Dw_ki"],
+    .g47SY.lOXF2,
     div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"],
     ._9XapR,
-    ._7zBYT,
-    header {
+    ._7zBYT {
         background-color: var(--Myred3) !important;
     }
     .stock_navbar {
@@ -198,6 +199,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    header,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
     div[class="       tHaIX              Igw0E     IwRSH      eGOV_         _4EzTm                                                                                   XfCBB             HcJZg              "],
     .BvyAW,
@@ -206,7 +208,6 @@
     .eo2As.O9c_u,
     div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="XfCBB"][class*="g6RW6"],
     div[class*="lKHVe"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="vwCYk"][class*="XfCBB"][class*="g6RW6"],
-    div[class="eo2As "],
     ._41KYi,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
     .S-mcP,
@@ -248,6 +249,7 @@
     .leaflet-popup-tip {
         background-color: var(--Myred3) !important;
     }
+    .f7Bj3,
     div[class="zGtbP  VideM"],
     div[class="AvhYw nLL4f"] {
         background-color: var(--Mygray3) !important;
@@ -264,17 +266,26 @@
     }
     /* CLEAN UP ALL THIS SHIT DOWN HERE */
     /*------------------All filter INVERTS----------------*/
+    svg {
+        filter: invert(1);
+    }
+    svg[aria-label="Unlike"] {
+        filter: invert(0);
+    }
+    svg:hover {
+        filter: invert(0.5);
+    }
+    /*
     .lf6L3:hover,
     .QBdPU:hover,
     svg:hover,
     svg>path:hover,
-    /*
     svg[aria-label="View Thread Details"]>path:hover,
     svg[aria-label="New Message"]>path:hover,
     svg[aria-label="Saved"],
     svg[aria-label="Settings"],
     svg[aria-label="Profile"],
-    */
+    div[class="QBdPU "]>svg,
     img.s4Iyt:hover {
         filter: invert(1);
     }
@@ -293,6 +304,9 @@
     .glyphsSpriteApp_instagram__outline__24__grey_9:hover,
     .jWQqO.Szr5J {
         filter: invert(0) !important;
+    }
+    div[class="QBdPU "]>svg:hover {
+        color: var(--Myred1) !important;
     }
     .loggedoutSpriteFollow_Contextual_Login,
     .coreSpriteDesktopNavActivity,
@@ -317,6 +331,10 @@
     .vTJ4h.Dz3II {
         padding: 5px;
     }
+    span[class*="glyphs"] {
+        filter: invert(1);
+    }
+    */
     /*--------------------------Main Article--------------*/
     a.FPmhX.notranslate.yrJyr {
         color: var(--Mygreen2) !important;
@@ -333,6 +351,7 @@
     div[class="                     Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
         background-color: var(--Mygray3);
     }
+    div[class="eo2As "],
     ._-1_m6,
     .NgKI_,
     div[class="                  Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
@@ -356,9 +375,6 @@
     }
     .mt3GC {
         border: 2px var(--Myred1) !important;
-    }
-    span[class*="glyphs"] {
-        filter: invert(1);
     }
     div[class="_7UhW9   xLCgt       qyrsm  _0PwGv       uL8Hv          fTMOG"],
     div[class="_7UhW9  PIoXz        qyrsm KV-D4        uL8Hv         "],
