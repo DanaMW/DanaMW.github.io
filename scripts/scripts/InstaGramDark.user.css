@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.80
+@version      0.0.81
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -264,7 +264,6 @@
     div[class*="_9GP1n"] {
         border: none !important;
     }
-    /* CLEAN UP ALL THIS SHIT DOWN HERE */
     /*------------------All filter INVERTS----------------*/
     svg {
         filter: invert(1);
@@ -275,66 +274,6 @@
     svg:hover {
         filter: invert(0.5);
     }
-    /*
-    .lf6L3:hover,
-    .QBdPU:hover,
-    svg:hover,
-    svg>path:hover,
-    svg[aria-label="View Thread Details"]>path:hover,
-    svg[aria-label="New Message"]>path:hover,
-    svg[aria-label="Saved"],
-    svg[aria-label="Settings"],
-    svg[aria-label="Profile"],
-    div[class="QBdPU "]>svg,
-    img.s4Iyt:hover {
-        filter: invert(1);
-    }
-    .coreSpriteDismissLarge:hover {
-        filter: brightness(150%);
-    }
-    .loggedoutSpriteFollow_Contextual_Login:hover {
-        filter: invert(0.5)
-    }
-    .glyphsSpriteGlyph_volume_off,
-    .glyphsSpriteComment_like_active,
-    .glyphsSpriteUser__outline__24__grey_9:hover,
-    .glyphsSpriteHeart__outline__24__grey_9:hover,
-    .glyphsSpriteSafari__outline__24__grey_9:hover,
-    .glyphsSpriteMobile_nav_type_logo:hover,
-    .glyphsSpriteApp_instagram__outline__24__grey_9:hover,
-    .jWQqO.Szr5J {
-        filter: invert(0) !important;
-    }
-    div[class="QBdPU "]>svg:hover {
-        color: var(--Myred1) !important;
-    }
-    .loggedoutSpriteFollow_Contextual_Login,
-    .coreSpriteDesktopNavActivity,
-    .Eqt6g,
-    .OfoBO,
-    .J6kyg,
-    .Hg3oE.Szr5J,
-    .Szr5J.ptsdu,
-    .Szr5J.K_WbV,
-    .Szr5J.bMltT,
-    .aU2HW {
-        filter: invert(1);
-    }
-    div[class*="coreSpritePagingChevron"],
-    span[class*="glyphsSpriteHeart__filled"] {
-        filter: invert(0) !important;
-    }
-    .NXSaZ.Hg3oE.Szr5J,
-    .aU2HW:hover {
-        filter: invert(0);
-    }
-    .vTJ4h.Dz3II {
-        padding: 5px;
-    }
-    span[class*="glyphs"] {
-        filter: invert(1);
-    }
-    */
     /*--------------------------Main Article--------------*/
     a.FPmhX.notranslate.yrJyr {
         color: var(--Mygreen2) !important;
