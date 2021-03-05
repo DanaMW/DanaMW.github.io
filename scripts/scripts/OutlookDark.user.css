@@ -2,12 +2,13 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.29
+@version      0.0.30
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
-@-moz-document domain("outlook.live.com") {
+@-moz-document domain("outlook.live.com"),
+url-prefix("https://to-do.live.com/tasks/") {
     body {
         --white: #000 !important;
         background-color: var(--MyB) !important;
@@ -71,6 +72,7 @@
     .ms-Overlay {
         background-color: var(--MyX4) !important;
     }
+    /* LOOK AT ME */
     ._1zRzYBa3Ymm8oRb7igyJMT._177lsrBTpZRGEjUSCd-G5O.vSSK79jcl7wRxs0frlrQI,
     .m_YdpO5_33Q22e4K9wQQN.o365sx-appName,
     ._2_T0Im6ostMX7PPGpbrJGj,
@@ -86,6 +88,8 @@
     [data-icon-name] {
         color: var(--MyW) !important;
     }
+    ._3LK7n62pZNZdB1jn4kA9BT,
+    button[class="ms-Button _33rLSYbzxvhXjgYTwfjWQI _1yXkaiMFfrJerhRD_mw8tk _1ojerECVeZlAkHtklkKOj5 ms-Button--commandBar root-62"],
     span[class*="wellItem"]:not([class*="ReadWriteCommonWell"]),
     div[class*="RecipientWellLabelWithContactPicker"],
     ._2vxq4e-RE_RciEKv4n4_e1,
@@ -120,6 +124,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    ._3LK7n62pZNZdB1jn4kA9BT:hover,
     span[class*="wellItem"]:not([class*="ReadWriteCommonWell"]):hover,
     div[class*="RecipientWellLabelWithContactPicker"]:hover,
     ._2vxq4e-RE_RciEKv4n4_e1:hover,
@@ -129,17 +134,17 @@
     .cJ5P-H7zqLg6pBWAa13NW:hover,
     ._2gP9fdm7RzEmjjcsBauln7:hover,
     button[class*="ms-Button"]:hover div>._3zNuolxAjR8iraHQcrGFPD,
-    div[aria-selected="true"],
-    div[tabindex="0"]:not([aria-selected="false"]):not([role="checkbox"]):not(.ms-Image):not([role="listbox"]),
     .ms-ContextualMenu-item:hover,
     a[role="link"]:hover,
     button:hover,
-    div[role="treeitem"]:hover,
+    div[role="treeitem"]:hover:not([title="Folders"]):not([title="Groups"]),
     div[class^="ms-CommandBarItem"]:hover,
     button[id="CommandBar23Mark all as readRead"]:hover,
     button[id="CommandBar23New messageAdd"]:hover,
     button:not([role="checkbox"]):not([class*="ms-Toggle"]):hover,
     a[role="menuitem"]:hover,
+    div[aria-selected="true"],
+    div[tabindex="0"]:not([aria-selected="false"]):not([role="checkbox"]):not(.ms-Image):not([role="listbox"]):not([title="Folders"]):not([title="Groups"]),
     button[aria-label="On"],
     button[aria-pressed="true"],
     .ms-Dropdown-title,
@@ -161,6 +166,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    ._3LK7n62pZNZdB1jn4kA9BT:active,
     span[class*="wellItem"]:not([class*="ReadWriteCommonWell"]):active,
     div[class*="RecipientWellLabelWithContactPicker"]:active,
     ._2vxq4e-RE_RciEKv4n4_e1:active,
@@ -358,11 +364,13 @@
         border: none !important;
     }
     /*--------------Search Bar---------------------*/
+    div[id="searchBoxId-Calendar"],
     input[aria-owns="searchSuggestionsCallout"],
     div[role="search"][aria-expanded="true"],
     div[role="search"][aria-expanded="true"] div[id="searchBoxId"] {
         background-color: initial;
     }
+    div[id="searchBoxId-Calendar"],
     input[aria-owns=""],
     div[role="search"]:not([aria-expanded="true"]) div[id="searchBoxId"] {
         background-color: transparent;
@@ -418,14 +426,24 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    #searchBoxId-Calendar,
     #searchBoxId-Mail,
     ._3qa8OvFCuxvXSKgE8anB8n._2qT5ADBP8BLM75uYgKPBGs {
         background-color: transparent !important;
     }
+    div[title="Folders"],
+    div[title="Groups"] {
+        background-color: transparent !important;
+        background-image: none !important;
+    }
+    div[role="treeitem"][title="Folders"],
+    div[role="treeitem"][title="Groups"],
     #appLauncherMainView {
+        background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     #appLauncher {
+        background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
     ._2zOpJb7ZbCN0X1DoeFyiYw.JWNdg1hee9_Rz6bIGvG1c,
@@ -454,5 +472,25 @@
     }
     .laGnUXZu6QC88ONZDEBcE {
         background-color: var(--MyB) !important;
+    }
+    /* Calender Stuff */
+    div[id*="header"],
+    .zu9KAy_JkAamHbwDt0dkb {
+        background-color: transparent !important;
+    }
+    ._1gN-hBAX4-oQBZrlooxAzS {
+        background-color: var(--Mygray2) !important;
+        Border: 1px solid var(--MyW) !important;
+    }
+    /* Today */
+    ._1gN-hBAX4-oQBZrlooxAzS.wLZVBi_RWIoVQSybtp_ZX.OBrYajlsckthZj2jJ7_X6 {
+        background-color: var(--MyX1) !important;
+    }
+    /* Days Past */
+    ._1gN-hBAX4-oQBZrlooxAzS._1eVi3K5CaiP-HwnRkAj2C- {
+        background-color: var(--Mygray3) !important;
+    }
+    ._1gN-hBAX4-oQBZrlooxAzS:hover {
+        background-color: var(--Mygray1) !important;
     }
 }
