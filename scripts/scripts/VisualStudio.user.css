@@ -2,14 +2,15 @@
 @name         VisualStudio
 @namespace    https://danamw.github.io/scripts/scripts/VisualStudio.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/VisualStudio.user.css
-@version      0.0.20
+@version      0.0.21
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("visualstudio.com"),
-domain("my.visualstudio.com") {
+domain("my.visualstudio.com"),
+domain("visualstudio.microsoft.com") {
     #benefitsCentView,
     div[role="main"],
     .vs-categories,
@@ -98,6 +99,15 @@ domain("my.visualstudio.com") {
     ul li {
         color: var(--MyW) !important;
     }
+    div[class="col content-box-wrapper content-wrapper-background link-area-link-icon link-type-text icon-hover-animation-none"],
+    div[class="fusion-column-wrapper fusion-flex-column-wrapper-legacy"],
+    div[class="fusion-separator-border sep-single sep-solid"],
+    h1,
+    h2,
+    h3 {
+        background-color: transparent !important;
+    }
+    ul[role="menu"],
     .ux-item-details,
     #section-banner {
         background-color: var(--Mygray3) !important;
@@ -120,6 +130,7 @@ domain("my.visualstudio.com") {
     .upperBand,
     #ux-header,
     .header-section {
+        background-color: var(--Myred3) !important;
         background: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
     h3 {
@@ -209,6 +220,9 @@ domain("my.visualstudio.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    div[class="fusion-text fusion-text-10 download-hero-icon-header"],
+    div[class="fusion-text fusion-text-6 download-hero-icon-header"],
+    div[class="fusion-builder-row fusion-builder-row-inner fusion-row"],
     div[class*="BenefitTile"],
     .BenefitTile.VSD-COM-00001.Large,
     .carousel,
@@ -216,6 +230,7 @@ domain("my.visualstudio.com") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    .vscom-picker-tool-dropdowns,
     div[class*="ms-CommandBar"],
     .lowerBand,
     .widget {
