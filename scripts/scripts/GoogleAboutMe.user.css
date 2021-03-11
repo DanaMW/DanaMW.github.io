@@ -2,7 +2,7 @@
 @name         Google About Me
 @namespace    http://danamw.github.io/scripts/scripts/GoogleAboutMe.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleAboutMe.user.css
-@version      0.0.11
+@version      0.0.12
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -60,6 +60,7 @@ domain("about.google") {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
+    .glue-button,
     div[role="button"],
     div[aria-label="Add info"],
     button {
@@ -77,6 +78,7 @@ domain("about.google") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .glue-button:hover,
     button.sub-nav-item-button.selected,
     div[role="button"]:hover,
     div[aria-label="Add info"]:hover,
@@ -97,6 +99,7 @@ domain("about.google") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .glue-button:active,
     div[role="button"]:active,
     div[aria-label="Add info"]:active,
     button:active {
@@ -116,6 +119,9 @@ domain("about.google") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    a[class*="glue-tile"],
+    .scSurveySurveytitlebannerroot,
+    .scSurveySurveymanagerbottom-banner,
     .butter-bar,
     div[role="alertdialog"],
     .agU3I,
@@ -128,6 +134,7 @@ domain("about.google") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    div[class*="blog-item"],
     div[role="menu"],
     div[role="dialog"],
     .TzzWqb,
@@ -135,6 +142,9 @@ domain("about.google") {
     div[data-cardtype] {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    div[class*="blog-item"]:hover {
+        background-color: var(--MyX1) !important;
     }
     .OabDMe.cXrdqd.Y2Zypf {
         background-color: var(--Myred1) !important;
@@ -170,8 +180,12 @@ domain("about.google") {
     h3 {
         color: var(--TwitterPink) !important;
     }
+    h1,
     span.blog {
         color: var(--TwitterRed) !important;
+    }
+    h5 {
+        color: var(--MyW) !important;
     }
     .post-date {
         color: var(--Mytext) !important;
