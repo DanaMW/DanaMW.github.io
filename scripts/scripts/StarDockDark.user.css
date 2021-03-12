@@ -2,13 +2,14 @@
 @name         StarDock Dark
 @namespace    https://danamw.github.io/scripts/scripts/StarDockDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StarDockDark.user.css
-@version      0.0.13
+@version      0.0.14
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("stardock.com") {
+@-moz-document domain("stardock.com"),
+domain("stardock.us") {
     .tray,
     .forum,
     #ctl00_ctl00__Body,
@@ -84,6 +85,9 @@
     a:not(.button) {
         color: var(--MyW) !important;
     }
+    .submenu>a[href]:hover {
+        background-color: var(--MyX1) !important;
+    }
     li a:hover,
     h3,
     /*:not(.button):not(.bvlbutton)*/
@@ -124,6 +128,7 @@
     span[class="		active    "] a {
         background-image: none !important;
     }
+    a[id*="_Content__Products__TabRepeater__TabLink"],
     .bvlbutton,
     .button[target="_blank"][href],
     input[type="submit"],
@@ -238,6 +243,7 @@
     .welcome {
         color: var(--Myred1) !important;
     }
+    .submenu>a[href],
     select,
     input {
         background-color: var(--Mygray3) !important;
@@ -274,5 +280,17 @@
         background-image: none !important;
         background-color: var(--Myred1) !important;
         color: var(--Mygreen1) !important;
+    }
+    .qtip,
+    .qtip-content,
+    .tooltip {
+        background-image: none !important;
+        background: transparent !important;
+    }
+    .qtip-content,
+    .tooltip {
+        background: var(--MyX1) !important;
+        border: 1px solid var(--MyW) !important;
+        color: var(--MyW) !important;
     }
 }
