@@ -87,6 +87,9 @@ domain("visualstudio.microsoft.com") {
     a:hover {
         color: var(--Myred1) !important;
     }
+    h4 {
+        color: var(--TwitterBlue) !important;
+    }
     input,
     .homepage-searchbox-container {
         background-color: var(--Mygray3) !important;
@@ -113,6 +116,7 @@ domain("visualstudio.microsoft.com") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+    tr,
     .gallery-item-cardHomePage {
         background-color: var(--Myred3) !important;
     }
@@ -151,13 +155,13 @@ domain("visualstudio.microsoft.com") {
     .nav.navbar-nav.navbar-left {
         background-color: var(--MyB) !important;
     }
+    a.meta-data-list-link,
     span[id*="Dropdown"],
     .ms-CommandBarItem,
     .buttons>a,
     #nav-extensions,
     .c-select,
     li a[id*="nav-"],
-    /*a[href]:not([href="#review-details"]):not([target="_blank"]):not([id*="carousel-"]),*/
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -173,6 +177,7 @@ domain("visualstudio.microsoft.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.meta-data-list-link:hover,
     span[id*="Dropdown"]:hover,
     .ms-CommandBarItem:hover,
     .buttons>a:hover,
@@ -197,6 +202,7 @@ domain("visualstudio.microsoft.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.meta-data-list-link:active,
     span[id*="Dropdown"]:active,
     .ms-CommandBarItem:active,
     .buttons>a:active,
