@@ -1,5 +1,6 @@
+.composite.title,
 .ActivityBar {
-    background-image: linear-gradient( to top, rgb(65, 21, 21), rgb(97, 22, 22), rgb(189, 38, 38) 100%, transparent) !important;
+    background-image: linear-gradient(to top, rgb(65, 21, 21), rgb(97, 22, 22), rgb(189, 38, 38) 100%, transparent) !important;
 }
 
 .monaco-workbench .monaco-scrollable-element>.scrollbar>.slider {
