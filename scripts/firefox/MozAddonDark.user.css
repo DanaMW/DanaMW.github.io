@@ -209,6 +209,7 @@ domain("wiki.mozilla.org") {
         border-radius: 15px;
         border: 1px solid var(--MyW) !important;
     }
+    [role="listbox"],
     .DropdownMenu-items {
         background-color: var(--Mygray3) !important;
     }
@@ -242,6 +243,7 @@ domain("wiki.mozilla.org") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    p.SearchSuggestion:hover,
     .selected,
     a.block:hover,
     a.nu-settings-button:hover,
