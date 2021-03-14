@@ -64,6 +64,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
     strong {
         color: var(--MyW) !important;
     }
+    .form-submit>button#submit-button,
+    .ml12>a.ws-nowrap,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -79,6 +81,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .form-submit>button#submit-button:hover,
+    .ml12>a.ws-nowrap:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -96,6 +100,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .form-submit>button#submit-button:active,
+    .ml12>a.ws-nowrap:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -130,7 +136,8 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-    textarea {
+    .s-code-block,
+    .ps-relative>textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
@@ -158,5 +165,15 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
         margin: 8px;
         font-weight: 400;
         text-transform: none;
+    }
+    .answer-votes {
+        background-color: var(--Myred2) !important;
+    }
+    blockquote::before {
+        color: var(--Myred1) !important;
+        background-color: var(--Myred1) !important;
+    }
+    blockquote {
+        background-color: var(--Mygreen3) !important;
     }
 }
