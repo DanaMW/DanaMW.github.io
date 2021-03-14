@@ -31,6 +31,10 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    div[class*="Hamburger"],
+    svg {
+        filter: invert(1) !important;
+    }
     p,
     a {
         color: var(--MyW) !important;
@@ -41,6 +45,17 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    span[class*="ArticleLeadArt_attribution"] {
+        color: var(--TwitterBlue) !important;
+    }
+    small {
+        color: var(--TwitterPink) !important;
+    }
+    h2 {
+        color: var(--TwitterRed) !important;
+    }
+    ul>li[class*="Nav_navListItem"] a,
+    a[class*="NudgeShared_button"],
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -59,6 +74,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    li[class*="Nav_navListItem"] a:hover,
+    a[class*="NudgeShared_button"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -79,6 +96,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[class*="NudgeShared_button"] a:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -103,10 +121,11 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    .stock {
+    #paywall {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    #rubric,
     nav {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
@@ -118,15 +137,15 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
-    /*
-    div[class="c-nudge__container c-nudge-compressed__container"] {
-        background-color: transparent !important;
-        color: transparent !important;
-    }
-    */
     div[class="c-nudge__container c-nudge-compressed__container"],
     #atl-wordmark,
     ul[class*="c-share-social"] {
         display: none !important;
+    }
+    #paywall {
+        border: 1px solid var(--MyW) !important;
+    }
+    #rubric {
+        text-align: center !important;
     }
 }
