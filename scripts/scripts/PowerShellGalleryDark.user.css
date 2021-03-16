@@ -2,7 +2,7 @@
 @name         PowerShell Gallery Dark
 @namespace    http://danamw.github.io/scripts/scripts/PowerShellGalleryDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PowerShellGalleryDark.user.css
-@version      0.0.6
+@version      0.0.7
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -31,6 +31,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    span,
     a,
     h2,
     h3 {
@@ -45,10 +46,15 @@
     th {
         color: var(--Myred1) !important;
     }
-    li[role="presentation"] {
-        padding-left: 30px !important;
+    .panel-body,
+    nav,
+    ul.dropdown-menu,
+    #profile-picture-container {
+        background-color: transparent !important;
+        background-image: none !important;
     }
-    li[role="presentation"],
+    #cancel-change-notifications,
+    li[role="presentation"] a,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -64,14 +70,15 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    li[role="presentation"]:hover,
+    #cancel-change-notifications:hover,
+    li[role="presentation"] a:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -82,14 +89,15 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    li[role="presentation"]:active,
+    #cancel-change-notifications:active,
+    li[role="presentation"] a:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--MyX3) !important;
+        background-color: var(--Mygreen3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
@@ -104,10 +112,16 @@
     .jumbotron {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    ul[role="tablist"],
+    .panel-body,
+    #profile-picture-container,
+    ul.dropdown-menu,
     .install-tabs,
     .shadowbox {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    nav {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
     #install-item-text,
     input {
@@ -116,10 +130,6 @@
         border-radius: 25px !important;
         color: var(--MyW) !important;
         border: 2px solid var(--Myred2) !important;
-    }
-    nav[role="navigation"] {
-        background-color: var(--MyX1) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
     footer.footer {
         display: none !important;
