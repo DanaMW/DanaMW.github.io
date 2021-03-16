@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.42
+@version      0.0.43
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -332,10 +332,12 @@ regexp("moz-extension://.*") {
     button.install {
         width: 200px !important;
     }
-    div[id*="style"] {
-        height: 36px !important;
-    }
     .update.fake::after {
-        background-color: var(--MyX6) !important;
+        background-color: var(--Mygreen1) !important;
+    }
+    .newUI .entry {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
     }
 }
