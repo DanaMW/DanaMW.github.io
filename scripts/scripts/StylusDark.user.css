@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.44
+@version      0.0.46
 @description  Trying to fix shit.
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -339,6 +339,7 @@ regexp("moz-extension://.*") {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        display: flex
+        display: flex !important;
+        border: none !important;
     }
 }
