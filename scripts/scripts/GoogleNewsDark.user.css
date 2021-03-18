@@ -2,11 +2,18 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.36
+@version      0.0.37
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
+
+::root {
+    --light-color-tooltip-text: var(--MyW);
+    --dark-color-tooltip-text: var(--MyW);
+    --light-color-tooltip-background: var(--MyX1);
+    --dark-color-tooltip-background: var(--MyX1);
+}
 
 @-moz-document domain("news.google.com") {
     c-wiz,
@@ -26,6 +33,10 @@
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
+        --light-color-tooltip-text: var(--MyW) !important;
+        --dark-color-tooltip-text: var(--MyW) !important;
+        --light-color-tooltip-background: var(--MyX1) !important;
+        --dark-color-tooltip-background: var(--MyX1) !important;
     }
      ::-webkit-scrollbar {
         background: var(--Myred3) !important;
@@ -45,10 +56,6 @@
     header {
         background-image: none !important;
         background-color: transparent !important;
-    }
-    .aGJE1b,
-    [data-tooltip] {
-        background-color: var(--MyX1) !important;
     }
     .gb_r,
     h3,
@@ -274,8 +281,7 @@
         border: 1px solid var(--Myred1) !important;
         border-radius: 15px !important;
     }
-    div[class="To2ZZb u9jkpc hpDt6e DbQnIe rrijPb R7GTQ keNKEd "]:hover,
-    tooltip {
+    div[class="To2ZZb u9jkpc hpDt6e DbQnIe rrijPb R7GTQ keNKEd "]:hover {
         background-color: var(--MyX1) !important;
     }
     .Qo7o0c {
