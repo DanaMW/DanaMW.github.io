@@ -78,7 +78,13 @@
 				"hidden": true,
 				"name": "Azure Cloud Shell",
 				"source": "Windows.Terminal.Azure"
-			}
+			},
+ {
+     "guid": "{aa8efdb5-3cbe-50b2-a332-9203dc1ee217}",
+     "hidden": false,
+     "name": "Fedora",
+     "source": "Windows.Terminal.Wsl"
+ }
 		]
 	},
 
