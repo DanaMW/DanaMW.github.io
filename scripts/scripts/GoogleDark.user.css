@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.2
+@version      0.2.3
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1497,6 +1497,7 @@ url-prefix("https://support.google.com/") {
     .Aul2T.m6aMje {
         background-color: transparent !important;
     }
+    .hLcKi,
     a[title="Google apps"],
     .gb_xc .gb_x.gb_Vb,
     .JOmIqc,
