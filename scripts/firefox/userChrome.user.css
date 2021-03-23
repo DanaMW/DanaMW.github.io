@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.28
+@version     0.0.29
 @description Mozilla UserChrome File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -64,6 +64,10 @@ html,
 body {
     background: var(--Mygray3) !important;
     color: var(--MyW) !important;
+}
+
+#tabbrowser-tabs {
+    background: var(--Mygray3) !important;
 }
 
 notification.animated[value="Protocol Registration: web+mastodon"] {
