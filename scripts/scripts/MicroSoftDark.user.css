@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.42
+@version      0.0.43
 @description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -12,6 +12,7 @@
 domain("account.microsoft.com"),
 domain("support.microsoft.com"),
 domain("answers.microsoft.com") {
+    div[id*="coreui-banner"],
     .ng-scope.survey-background,
     #c-uhf-nav-cta,
     #bannerAboveUHF,
@@ -28,6 +29,7 @@ domain("answers.microsoft.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    div[id*="StoreLocations-HighlightHero"],
     ul>li>span[class="infosupport-column-second-span ng-binding x-hidden-focus"],
     #home-index,
     #root,
@@ -408,7 +410,7 @@ domain("answers.microsoft.com") {
     }
     .c-uhff-base,
     footer {
-        background-color: var(--Myback) !important;
+        background-color: var(--B) !important;
         color: var(--MyW) !important;
     }
     .community-header-component {
@@ -530,5 +532,17 @@ domain("answers.microsoft.com") {
     .forumSelect:hover {
         background-color: var(--Myred1) !important;
         color: var(--Myyellow1) !important;
+    }
+    source,
+    picture,
+    section {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    section[role="tabpanel"] picture>img {
+        filter: invert(1) !important;
     }
 }
