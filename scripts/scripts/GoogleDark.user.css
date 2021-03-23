@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.3
+@version      0.2.5
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1262,6 +1262,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  tcY7Yc hG48Q"],
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  tcY7Yc"],
     article.page,
     .PWFwWc.DsryEe,
@@ -1290,7 +1291,7 @@ url-prefix("https://support.google.com/") {
     .UUcaod,
     #eer-ra,
     .Ih2lSe,
-    div[role="heading"]:not(.LGOjhe):not(.UKbGGd):not(.iKt1P):not(.mCBkyc):not(.xP45xc):not(.junCMe):not(.JiQld.oz3cqf.p5AXld),
+    div[role="heading"]:not(.LGOjhe):not(.UKbGGd):not(.iKt1P):not(.mCBkyc):not(.xP45xc):not(.junCMe):not(.JiQld.oz3cqf.p5AXld):not(.mu6pme):not(.C1b4sb),
     .MXwBff:hover,
     .gb_F.gb_na,
     a[jsname="uy6ald"]:hover,
