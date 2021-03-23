@@ -2,18 +2,11 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.37
+@version      0.0.38
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
-
-::root {
-    --light-color-tooltip-text: var(--MyW);
-    --dark-color-tooltip-text: var(--MyW);
-    --light-color-tooltip-background: var(--MyX1);
-    --dark-color-tooltip-background: var(--MyX1);
-}
 
 @-moz-document domain("news.google.com") {
     c-wiz,
