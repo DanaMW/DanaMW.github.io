@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.23
+@version      0.0.24
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -399,6 +399,7 @@ domain("studio.youtube.com") {
     .video-extras-sparkbars {
         margin-bottom: 30px !important;
     }
+    label,
     .account-page-header,
     button span.yt-uix-button-content,
     a {
@@ -610,6 +611,7 @@ domain("studio.youtube.com") {
         background-color: var(--Myblue3) !important;
         color: var(--MyW) !important;
     }
+    #live-chat-message-input,
     ytcp-navigation-drawer {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
@@ -665,6 +667,7 @@ domain("studio.youtube.com") {
         margin-top: -20px !important;
         box-shadow: none !important;
     }
+    #input,
     input#query-input,
     #masthead-search-terms,
     .masthead-search-terms-border,
