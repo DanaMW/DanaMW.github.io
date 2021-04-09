@@ -1584,4 +1584,10 @@ url-prefix("https://docs.google.com/picker") {
     div[style="animation:1.7s cubic-bezier(.17,0,.1,.87)1.2s kf-s;background:#fafbfb;border-radius:330px;height:660px;left:50%;margin:-406px -330px;top:50%;transform:scale(0);width:660px"] {
         background: var(--MyX1) !important;
     }
+    .la-k .la-m {
+        background: transparent !important;
+    }
+    .la-b .la-m {
+        background: #f1f3f4;
+    }
 }
