@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.25
+@version      0.0.26
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -29,9 +29,9 @@ domain("studio.youtube.com") {
         --yt-basic-foreground-body-color: hsla(0, 87%, 12%, 0.4) !important;
         --yt-basic-background-color: hsla(0, 87%, 12%, 0.4) !important;
         --yt-std-body-300: hsla(0, 87%, 12%, 0.4) !important;
-        --yt-std-surface-200: hsl(0, 0%, 11%);
-        --yt-std-surface-300: hsl(0, 0%, 14%);
-        --yt-std-surface-400: hsl(0, 0%, 16%);
+        --yt-std-surface-200: hsl(0, 100%, 6%);
+        --yt-std-surface-300: hsl(0, 100%, 7%);
+        --yt-std-surface-400: hsl(0, 95%, 7%);
         --yt-primary-color: hsla(0, 87%, 12%, 0.4) !important;
         --yt-primary-text-color: hsla(0, 100%, 100%, .88);
         --yt-hovered-text-color: hsla(0, 100%, 100%, .74);
@@ -58,7 +58,7 @@ domain("studio.youtube.com") {
         --yt-button-active-color: hsla(0, 100%, 100%, .88);
         --yt-copyright-text: hsla(0, 0%, 100%, .6);
         --yt-guide-entry-text-color: hsla(0, 100%, 100%, .88);
-        --yt-thumbnail-placeholder-color: hsl(0, 0%, 16%);
+        --yt-thumbnail-placeholder-color: hsl(0, 95%, 9%);
         --yt-primary-disabled-button-text-color: hsla(0, 0%, 100%, .2);
         --yt-featured-channel-title-text-color: hsla(0, 100%, 100%, .5);
         --yt-formatted-string-deemphasize-color: hsl(0, 0%, 53.3%);
@@ -68,25 +68,25 @@ domain("studio.youtube.com") {
         --yt-menu-hover-backgound-color: hsla(0, 87%, 12%, 0.4) !important;
         --yt-menu-focus-background-color: hsla(0, 87%, 12%, 0.4) !important;
         --yt-searchbox-text-color: var(--yt-primary-text-color);
-        --yt-material-searchbox-inactive: hsl(0, 0%, 7%);
+        --yt-material-searchbox-inactive: hsl(0, 100%, 4%);
         --yt-material-searchbox-active: hsl(0, 0%, 100%);
         --yt-material-searchbox-inactive-shadow: hsla(0, 0%, 0%, .04);
         --yt-material-searchbox-active-shadow: hsla(0, 0%, 0%, .26);
         --yt-material-searchbox-inset: hsla(0, 0%, 0%, .04);
-        --yt-material-searchbox-text-color: hsl(0, 0%, 6.7%);
-        --yt-app-background: hsl(0, 0%, 7%);
-        --yt-main-app-background: hsl(0, 0%, 7%);
-        --yt-main-app-background-tmp: hsl(0, 0%, 7%);
-        --yt-guide-background: hsl(0, 0%, 11%);
-        --yt-dialog-background: hsl(0, 0%, 14%);
-        --yt-searchbox-background: hsl(0, 0%, 7%);
+        --yt-material-searchbox-text-color: rgb(17, 0, 0);
+        --yt-app-background: hsl(0, 100%, 3%);
+        --yt-main-app-background: hsl(0, 100%, 3%);
+        --yt-main-app-background-tmp: hsl(0, 100%, 3%);
+        --yt-guide-background: hsl(0, 94%, 6%);
+        --yt-dialog-background: hsl(0, 100%, 7%);
+        --yt-searchbox-background: hsl(0, 100%, 3%);
         --yt-channel-header-background: hsla(0, 0%, 11%, .8);
         --yt-sidebar-background: hsla(0, 0%, 11%, .8);
-        --yt-transcript-background: hsl(0, 0%, 11%);
+        --yt-transcript-background: hsl(0, 94%, 6%);
         --yt-chat-bubble-other-border-color: rgba(255, 255, 255, 0.20);
         --yt-chat-bubble-other-background-color: transparent;
         --yt-chat-bubble-self-border-color: rgba(255, 255, 255, 0.20);
-        --yt-chat-bubble-self-background-color: #282828;
+        --yt-chat-bubble-self-background-color: #2b0000;
     }
     * {
         text-decoration: none !important;
@@ -462,7 +462,6 @@ domain("studio.youtube.com") {
     ytd-menu-service-item-renderer,
     [role="button"]:not([slot="more-button"]),
     .yt-uix-form-input-select-content,
-    /*yt-icon-button#guide-button,*/
     .ytp-prev-button.ytp-button,
     .ytp-next-button.ytp-button,
     .yt-uix-button.load-more-button,
@@ -774,30 +773,34 @@ domain("studio.youtube.com") {
     #toast,
     div[class="badge badge-style-type-simple style-scope ytd-badge-supported-renderer"],
     paper-toast,
-    paper-dialog {
-        background-color: var(--MyX1) !important;
-        border: 1px solid var(--MyW) !important;
-        color: var(--MyW) !important;
-    }
-    #channel-header,
-    #tabs-inner-container {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    #channel-header {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-    #tabs-inner-container {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-    div#container {
-        -moz-user-select: text !important;
-        -webkit-user-select: text !important;
-        user-select: text !important;
-    }
-    ytd-clarification-renderer {
-        display: none !important;
-    }
+    div#left-arrow background-color: var(--Mygray1) !important;
+    background-image: linear-gradient(to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(41, 41, 41, 0.9),
+    rgba(75, 75, 75, 0.9) 100%,
+    transparent) !important;
+}
+
+#tabs-inner-container {
+    background-color: var(--Myred3) !important;
+    background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+}
+
+div#container {
+    -moz-user-select: text !important;
+    -webkit-user-select: text !important;
+    user-select: text !important;
+}
+
+ytd-clarification-renderer {
+    display: none !important;
+}
+
+#left-arrow-button,
+#left-arrow-button::after,
+#right-arrow-button {
+    background-color: var(--Myred3) !important;
+}
+
+
 }
