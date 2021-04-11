@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.8
+@version      0.2.9
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -27,6 +27,7 @@ url-prefix("https://gstatic.com/"),
 url-prefix("https://groups.google.com/"),
 url-prefix("https://myactivity.google.com/"),
 url-prefix("https://support.google.com/") {
+    .notification,
     .hcfe-content,
     section[class="primary-container"],
     .bTZTkf.uXmgWc,
@@ -166,6 +167,9 @@ url-prefix("https://support.google.com/") {
     .hgKElc b,
     h1 {
         color: var(--TwitterBlue) !important;
+    }
+    h3 {
+        color: var(--TwitterRed) !important;
     }
     blockquote,
     li,
@@ -505,6 +509,7 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[id*="onebar-"]>li:hover,
     .NZmxZe.qlsyCb:hover,
     .hdtb-mitem:hover,
     .hdtb-mitem.hdtb-msel,
@@ -1241,6 +1246,7 @@ url-prefix("https://support.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    .children,
     [class*="body-content"],
     .mnr-c.uOaWdb,
     .iMCzjd,
@@ -1266,6 +1272,8 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    section>h2,
+    .navigation-title-container,
     .rCjKj,
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  tcY7Yc hG48Q"],
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  tcY7Yc"],
@@ -1600,6 +1608,9 @@ url-prefix("https://support.google.com/") {
     .section-directions-options {
         background-color: var(--Myred3) !important;
     }
+    section.parent.selected {
+        background: var(--Myred2) !important;
+    }
     [class*="section-padding"],
     [class*="section-divider"],
     #searchbox,
@@ -1623,5 +1634,8 @@ url-prefix("https://support.google.com/") {
     }
     .directions-mode-line {
         border-bottom: 1px solid var(--Myred1) !important;
+    }
+    .note {
+        background-color: var(--Mygreen1) !important;
     }
 }
