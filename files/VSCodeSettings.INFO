@@ -1,7 +1,7 @@
 {
   "workbench.colorTheme": "Red",
   "atomKeymap.promptV3Features": true,
-"editor.multiCursorModifier": "alt",
+  "editor.multiCursorModifier": "alt",
   "workbench.startupEditor": "none",
   "editor.minimap.enabled": true,
   "editor.quickSuggestions": {
@@ -30,8 +30,6 @@
     "package.json": true,
     "typings.json": true
   },
-"window.zoomLevel": 1,
-  "telemetry.enableTelemetry": false,
   "colorHelper.formatsOrder": [
     "hex",
     "hsl",
@@ -42,14 +40,16 @@
     "cmyk",
     "gray"
   ],
-  "eslint.validate": ["javascript", "javascriptreact", "jquery"],
-  "scss.lint.emptyRules": "ignore",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "jquery"
+  ],
   "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-  "powershell.powerShellDefaultVersion": "PowerShell Core 7.x (x64)",
+  "powershell.powerShellDefaultVersion": "PowerShell (x64)",
   "git.path": "D:\\bin\\git\\bin\\git.exe",
   "git.defaultCloneDirectory": "D:\\Development\\GitHub\\",
   "zenMode.hideStatusBar": false,
-  "editor.formatOnSave": true,
   "files.autoGuessEncoding": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -69,32 +69,41 @@
   "telemetry.enableCrashReporter": true,
   "explorer.confirmDragAndDrop": false,
   "colorHelper.resident": true,
-  "css.fileExtensions": ["css", "scss", "less", "sass"],
-  "vscode_custom_css.imports": [
-    "file:///home/dana/Development/GitHub/DanaMW.github.io/scripts/extra/CustomVSCode.css"
+  "css.fileExtensions": [
+    "css",
+    "scss",
+    "less",
+    "sass"
   ],
-  "vscode_custom_css.policy": true,
   "eslint.run": "onSave",
-  "editor.hover.sticky": true,
   "editor.mouseWheelZoom": true,
   "editor.cursorStyle": "block",
   "editor.links": true,
-  "editor.hover.enabled": true,
   "workbench.colorCustomizations": {
     "terminal.background": "#000000",
     "editor.background": "#000000",
     "scrollbarSlider.hoverBackground": "#11ff00",
-    "scrollbarSlider.hoverBackground.active": "#ff0000",
     "scrollbarSlider.background": "#ff0000",
+    "scrollbarSlider.activeBackground": "#065500",
     "editorGroup.border": "#ff0000",
     "terminal.border": "#ff0000",
     "contrastActiveBorder": "#ff0000",
+    "panel.background": "#690000",
     "panelTitle.activeBorder": "#ff0000",
+    "panelTitle.activeForeground": "#ffffff",
     "editor.selectionBackground": "#ff0000",
     "window.activeBorder": "#ffffff",
     "window.inactiveBorder": "#707070",
     "editor.selectionForeground": "#ffffff",
-    "statusBarItem.errorBackground": "#eeff00"
+    "statusBarItem.errorBackground": "#eeff00",
+    "dropdown.border": "#afafaf",
+    "input.background": "#141414",
+    "input.border": "#afafaf",
+    "tab.activeBackground": "#ff0000",
+    "tab.activeBorder": "#11ff00",
+    "tab.inactiveBackground": "#690000",
+    "button.hoverBackground": "#ff0000",
+    "dropdown.background": "#141414"
   },
   "workbench.activityBar.visible": true,
   "window.menuBarVisibility": "visible",
@@ -102,16 +111,9 @@
   "git.showPushSuccessNotification": true,
   "git.autofetch": true,
   "colorHelper.disableGpu": -1,
-  "[powershell]": {
-    "editor.codeLens": false
-  },
-  "editor.cursorWidth": 2,
+  "editor.cursorWidth": 1,
   "workbench.commandPalette.history": 25,
-  "powershell.developer.editorServicesLogLevel": "Normal",
-  "json.trace.server": "messages",
-  "editor.accessibilitySupport": "off",
   "editor.parameterHints.cycle": true,
-  "editor.selectionHighlight": false,
   "workbench.commandPalette.preserveInput": true,
   "breadcrumbs.enabled": true,
   "debug.enableAllHovers": true,
@@ -135,6 +137,8 @@
     "Myred",
     "Mytext",
     "PSVERSION",
+    "Saggio",
+    "Sicuro",
     "Tolower",
     "Winmgmt",
     "asay",
@@ -157,7 +161,6 @@
   "gitlens.settings.mode": "advanced",
   "jshint.lintHTML": true,
   "eslint.alwaysShowStatus": true,
-  "editor.detectIndentation": false,
   "npm-intellisense.packageSubfoldersIntellisense": true,
   "npm-intellisense.scanDevDependencies": true,
   "npm-intellisense.showBuildInLibs": true,
@@ -215,7 +218,6 @@
     "yaml",
     "yml"
   ],
-  "css.completion.completePropertyWithSemicolon": false,
   "css.lint.duplicateProperties": "warning",
   "eslint.experimental.incrementalSync": true,
   "eslint.lintTask.enable": true,
@@ -223,17 +225,42 @@
   "[css]": {
     "editor.defaultFormatter": "michelemelluso.code-beautifier"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.renderWhitespace": "none",
   "editor.suggestSelection": "first",
   "json.maxItemsComputed": 7000,
-  "terminal.integrated.cwd": "D:\\bin",
   "settingsSync.ignoredSettings": [
     "terminal.integrated.cwd",
     "terminal.integrated.shell.windows",
     "terminal.external.windowsExec"
-],
-"diffEditor.ignoreTrimWhitespace": false
+  ],
+  "editor.formatOnSave": true,
+  "editor.smoothScrolling": true,
+  "editor.formatOnPaste": false,
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.decorations.colors": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "powershell.buttons.showPanelMovementButtons": true,
+  "projectManager.git.baseFolders": [
+    "D:\\Development\\GitHub",
+    "D:\\bin"
+  ],
+  "powershell.codeFormatting.autoCorrectAliases": true,
+  "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
+  "powershell.codeFormatting.useCorrectCasing": true,
+  "powershell.codeFormatting.whitespaceBetweenParameters": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "firefox.executable": "c:\\Program Files\\Firefox Developer Edition\\firefox.exe",
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "razor.disabled": true,
+  "typescript.locale": "en",
+  "editor.glyphMargin": false,
+  "vscode_custom_css.staging_dir": "C:\\Users\\dana\\.vscode\\aacss",
+  "firefox.profile": "sqm4k96k.dev-edition-default",
+  "firefox.profileDir": "c:\\Users\\dana\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\",
+  "firefox.port": 6080,
+  "firefox.keepProfileChanges": true,
+  "terminal.integrated.cwd": "D:\\bin",
+  "telemetry.enableTelemetry": false,
+  "window.zoomLevel": 1
 }
