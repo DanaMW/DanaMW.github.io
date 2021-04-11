@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.28
+@version      0.0.29
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -745,6 +745,7 @@ domain("studio.youtube.com") {
         user-select: none;
         cursor: default;
     }
+    .badge.badge-style-type-simple,
     #tooltip,
     #tooltip.paper-tooltip {
         display: block;
@@ -760,6 +761,13 @@ domain("studio.youtube.com") {
         border-radius: 2px;
         margin: 8px;
         font-weight: 400;
+        text-transform: none;
+    }
+    .badge.badge-style-type-simple {
+        background: var(--MyX1) !important;
+        opacity: 0.6;
+        color: white;
+        border: 1px solid var(--MyW) !important;
         text-transform: none;
     }
     ytd-watch-flexy,
@@ -794,5 +802,18 @@ domain("studio.youtube.com") {
     #left-arrow-button::after,
     #right-arrow-button {
         background-color: var(--Myred3) !important;
+    }
+    .badge.badge-style-type-verified>yt-icon>svg {
+        color: var(--TwitterBlue) !important;
+        transform: scale(1.25);
+    }
+    #container.ytd-sentiment-bar-renderer {
+        background: var(--Myred2) !important;
+    }
+    #like-bar.ytd-sentiment-bar-renderer {
+        background: var(--Myred1) !important;
+    }
+    span.style-scope.ytd-badge-supported-renderer {
+        filter: brightness(200%);
     }
 }
