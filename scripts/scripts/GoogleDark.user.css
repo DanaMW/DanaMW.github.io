@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.7
+@version      0.2.8
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -21,9 +21,9 @@ url-prefix("https://accounts.google.com/"),
 url-prefix("https://plus.google.com/"),
 url-prefix("https://policies.google.com/"),
 url-prefix("https://photos.google.com/"),
+url-prefix("https://maps.google.com/"),
 url-prefix("https://myaccount.google.com/"),
 url-prefix("https://gstatic.com/"),
-url-prefix("https://maps.google.com/"),
 url-prefix("https://groups.google.com/"),
 url-prefix("https://myactivity.google.com/"),
 url-prefix("https://support.google.com/") {
@@ -209,7 +209,6 @@ url-prefix("https://support.google.com/") {
         margin-top: 6px !important;
     }
     .yQ0wwc,
-    #searchbox,
     input[aria-hidden="true"],
     .a4bIc,
     .sbib_b,
@@ -491,7 +490,7 @@ url-prefix("https://support.google.com/") {
     .iv_msusc,
     g-fab,
     a#hdtb-tls,
-    button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]) {
+    button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -611,7 +610,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:hover,
     g-fab:hover,
     a#hdtb-tls:hover,
-    button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]) {
+    button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -708,7 +707,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:active,
     g-fab:active,
     a#hdtb-tls:active,
-    button:active:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]) {
+    button:active:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -1242,6 +1241,7 @@ url-prefix("https://support.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    [class*="body-content"],
     .mnr-c.uOaWdb,
     .iMCzjd,
     .mvD5nc,
@@ -1266,6 +1266,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .rCjKj,
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  tcY7Yc hG48Q"],
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  tcY7Yc"],
     article.page,
@@ -1584,5 +1585,43 @@ url-prefix("https://support.google.com/") {
     }
     .rQEFy.NZmxZe {
         border-bottom: 2px solid var(--Mygreen1) !important;
+    }
+    .goog-tooltip.tooltip-dark,
+    .goog-tooltip,
+    .tooltip-dark {
+        background-color: var(--MyX1) !important;
+        opacity: 0.8;
+        color: var(--MyW) !important;
+        padding: 8px;
+        border-radius: 2px;
+        border: 1px solid var(--MyW) !important;
+    }
+    .section-categorical-shortcut,
+    .section-directions-options {
+        background-color: var(--Myred3) !important;
+    }
+    [class*="section-padding"],
+    [class*="section-divider"],
+    #searchbox,
+    .section-trip-header,
+    .widget-directions-omnibox .searchbox,
+    .widget-directions-omnibox,
+    .widget-directions-dragger {
+        background: var(--Myred3) !important;
+    }
+    img[src="//maps.gstatic.com/tactile/directions/text_mode/maneuvers-2x.png"],
+    .section-trip-header-back:hover,
+    button[class*="sprite"]:hover {
+        filter: invert(1) !important;
+    }
+    .section-layout.section-layout-flex-horizontal {
+        background-color: var(--MyX1) !important;
+    }
+    .directions-mode-distance-time {
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
+    }
+    .directions-mode-line {
+        border-bottom: 1px solid var(--Myred1) !important;
     }
 }
