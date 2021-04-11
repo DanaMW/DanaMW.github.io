@@ -2,13 +2,14 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.19
+@version      0.0.20
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("onedrive.live.com") {
+    div[class*="PremiumUpsellBanner"],
     .LeftNav-subLinksAsComponent .od-PremiumUpsellBanner.od-PremiumUpsellBanner--cursor {
         display: none !important;
     }
@@ -222,6 +223,9 @@
     form[class*="ms-suiteux-search-box"] {
         color: var(--MyW) !important;
     }
+    .ms-suiteux-search-box {
+        background-color: var(--Myred1) !important;
+    }
     div.InfoPane-itemDetails-name,
     dt {
         color: var(--Myred1) !important;
@@ -300,11 +304,18 @@
     div[class="ms-TextField-fieldGroup"] {
         background: transparent !important;
     }
+    .od-BasePage-infoPane,
     [role="listbox"],
     div[id*="ms-searchux-popup"] {
         background-color: var(--Mygray3) !important;
     }
     .ms-Tile:hover {
         border: 2px solid var(--Myred1) !important;
+    }
+    .LeftNav-linkGroupHeader {
+        text-align: center !important;
+    }
+    div[class*="ms-TextField"] {
+        background-color: var(--Mygray3) !important;
     }
 }
