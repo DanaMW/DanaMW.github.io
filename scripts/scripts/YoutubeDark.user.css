@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.27
+@version      0.0.28
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -774,34 +774,25 @@ domain("studio.youtube.com") {
     #toast,
     div[class="badge badge-style-type-simple style-scope ytd-badge-supported-renderer"],
     paper-toast,
-    div#left-arrow background-color: var(--Mygray1) !important;
-    background-image: linear-gradient(to top,
-    rgba(0, 0, 0, 0.8),
-    rgba(41, 41, 41, 0.9),
-    rgba(75, 75, 75, 0.9) 100%,
-    transparent) !important;
-}
-
-#tabs-inner-container {
-    background-color: var(--Myred3) !important;
-    background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-}
-
-div#container {
-    -moz-user-select: text !important;
-    -webkit-user-select: text !important;
-    user-select: text !important;
-}
-
-ytd-clarification-renderer {
-    display: none !important;
-}
-
-#left-arrow-button,
-#left-arrow-button::after,
-#right-arrow-button {
-    background-color: var(--Myred3) !important;
-}
-
-
+    div#left-arrow {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    #tabs-inner-container {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    div#container {
+        -moz-user-select: text !important;
+        -webkit-user-select: text !important;
+        user-select: text !important;
+    }
+    ytd-clarification-renderer {
+        display: none !important;
+    }
+    #left-arrow-button,
+    #left-arrow-button::after,
+    #right-arrow-button {
+        background-color: var(--Myred3) !important;
+    }
 }
