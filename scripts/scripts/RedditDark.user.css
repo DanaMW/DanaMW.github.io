@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.22
+@version      0.0.23
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -64,6 +64,12 @@ domain("embedly.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    #appleid-signin-container::before,
+    #google-sso::before {
+        background: transparent !important;
+    }
+    #appleid-signin-container,
+    #google-sso,
     .login-buttons a,
     a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP,
     a.choice,
@@ -228,7 +234,7 @@ domain("embedly.com") {
     }
     div[id*=t3]:hover {
         border-color: var(--Myred1) !important;
-        border-width: 2px !important;
+        border-width: 1px !important;
     }
     ._3hUbl08LBz2mbXjy0iYhOS,
     ._3b8u2OJXaSDdBWoRB7zUoK,

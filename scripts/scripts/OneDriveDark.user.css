@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.20
+@version      0.0.21
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -304,6 +304,8 @@
     div[class="ms-TextField-fieldGroup"] {
         background: transparent !important;
     }
+    ._1Fcbxg1PZKNlfmnlw5wn_Z,
+    ._3_P5bI-YL_0SpzRv3ZcrqR,
     .od-BasePage-infoPane,
     [role="listbox"],
     div[id*="ms-searchux-popup"] {
