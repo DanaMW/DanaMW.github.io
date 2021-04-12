@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.9
+@version      0.2.10
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -171,6 +171,7 @@ url-prefix("https://support.google.com/") {
     h3 {
         color: var(--TwitterRed) !important;
     }
+    .FozYP,
     blockquote,
     li,
     p,
@@ -417,6 +418,7 @@ url-prefix("https://support.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .qtwiP,
     .NZmxZe.qlsyCb,
     .hdtb-mitem,
     div[class="YZrg6 HnRr5d iiFyne cd29Sd"],
@@ -509,6 +511,7 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .qtwiP:hover,
     a[id*="onebar-"]>li:hover,
     .NZmxZe.qlsyCb:hover,
     .hdtb-mitem:hover,
@@ -632,6 +635,7 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .qtwiP:active,
     .NZmxZe.qlsyCb:active,
     div[class="YZrg6 HnRr5d iiFyne cd29Sd"]:active,
     .hide-focus-ring.bSP9c:active,
@@ -1611,6 +1615,8 @@ url-prefix("https://support.google.com/") {
     section.parent.selected {
         background: var(--Myred2) !important;
     }
+    .EDblX.DAVP1,
+    g-scrolling-carousel,
     [class*="section-padding"],
     [class*="section-divider"],
     #searchbox,
