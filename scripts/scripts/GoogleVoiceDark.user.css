@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.42
+@version      0.0.43
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,7 +13,8 @@
 
 @-moz-document domain("voice.google.com"),
 domain("googleusercontent.com"),
-domain("myaccount.google.com") {
+domain("myaccount.google.com"),
+domain("docs.google.com") {
     div[class="layout-align-start-center layout-row flex B3EWm-ipGt7"],
     div[class="layout-align-center-center layout-column flex-nogrow B3EWm-s4tt0c"],
     div[class="layout-align-center-stretch layout-column flex-nogrow B3EWm-WTKh3d"],
@@ -285,5 +286,28 @@ domain("myaccount.google.com") {
     }
     gv-dialpad {
         background-color: var(--Mygray3) !important;
+    }
+    md-menu-content.md-default-theme,
+    md-menu-content {
+        background: var(--Mygray3) !important;
+    }
+    iframe#sksotdehhtnb,
+    .ee-Li-ie {
+        background-color: var(--Mygray3) !important;
+        border-top: 1px solid var(--Mygray3) !important;
+    }
+    .md-body-1.B3EWm-pfZwlb,
+    .ee-hn-hf-hn-qh {
+        background-color: var(--Myred3) !important;
+    }
+    .ee-hn-hf-cb {
+        color: var(--MyW) !important;
+    }
+    .GYQtq-ocIXwb {
+        background: var(--MyB) !important;
+    }
+    .q2hAhb-RZ063d {
+        border-top: 1px solid var(--MyW) !important;
+        border-bottom: 1px solid var(--MyW) !important;
     }
 }
