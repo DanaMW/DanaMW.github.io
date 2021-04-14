@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.24
+@version      0.0.25
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -172,8 +172,6 @@ url-prefix("https://mail.google.com/chat/") {
         background-image: none !important;
         background-color: transparent !important;
     }
-    .dKv0S.BUXyJd.AUFR7b,
-    .HrE5Tb,
     .QTQg5e,
     .wbJc4,
     .Xs68kb.ipgD,
@@ -260,6 +258,17 @@ url-prefix("https://mail.google.com/chat/") {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+    div[class="vIO7af "] {
+        Border-bottom: 3px solid var(--Myred2) !important;
+    }
+    .HrE5Tb,
+    .dKv0S.BUXyJd.AUFR7b {
+        background-color: var(--MyX1) !important;
+        opacity: 0.8 !important;
+    }
+    div#ow207[class="U26fgb c7fp5b FS4hgd Da1OLc XMGPDb i5PBGe dKv0S aWboPb"][role="button"] .g4jUVc {
+        opacity: 1 !important;
+    }
     .AflJR {
         background-color: var(--Myred3) !important;
     }
@@ -286,6 +295,7 @@ url-prefix("https://mail.google.com/chat/") {
     [aria-label="Account Information"] {
         border: 1px solid var(--MyW) !important;
     }
+    .xLoQZb,
     .iKCcE,
     div[class="B8q9Gf qnQFwb hu21Y VYsRpc"],
     .zlPNZe,
@@ -314,5 +324,8 @@ url-prefix("https://mail.google.com/chat/") {
     }
     .acY {
         color: var(--MyB) !important;
+    }
+    .tNBef.ZFkohe {
+        color: var(--Myyellow1) !important;
     }
 }
