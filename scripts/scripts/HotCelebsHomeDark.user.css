@@ -2,7 +2,7 @@
 @name         HotCelebsHome Dark
 @namespace    https://danamw.github.io/scripts/scripts/HotCelebsHomeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/HotCelebsHomeDark.user.css
-@version      0.0.9
+@version      0.0.10
 @description  HotCelebsHome Dark Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -188,5 +188,8 @@
     .code-block>a[rel="sponsored noopener"]>img,
     .code-block>a[rel="sponsored noopener"]>img .code-block {
         display: none !important;
+    }
+    #object_container[style="width:100%;height:500px"] {
+        height: 0px !important;
     }
 }
