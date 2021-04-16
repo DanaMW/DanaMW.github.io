@@ -2,7 +2,7 @@
 @name         Google Drive Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDriveDark.user.css
-@version      0.0.20
+@version      0.0.22
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -24,7 +24,7 @@
     .YEXPof,
     html,
     body {
-        background-color: var(--Myback) !important;
+        background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
     * {
@@ -46,6 +46,18 @@
     }
     svg {
         filter: invert(1) !important;
+    }
+    .Zz99o,
+    .WYuW0e.RDfNAe {
+        background-color: var(--Mygray2) !important;
+    }
+    .WYuW0e:hover,
+    .WYuW0e.GZwC2b.dPmH0b:hover,
+    .WYuW0e.RDfNAe:hover {
+        background-color: var(--MyX1) !important;
+    }
+    .WYuW0e.GZwC2b.dPmH0b {
+        background-color: var(--Myred3) !important;
     }
     div[role="button"],
     div[role="option"]>div,
@@ -293,5 +305,14 @@
     }
     .lb-k-V-r {
         color: var(--TwitterBlue) !important;
+    }
+    .B-ZB7aWe-UvFRu.L3Yhxc-Ya {
+        background-color: var(--Mygreen1) !important;
+    }
+    .B-Nd-ZB7aWe-UvFRu {
+        background-color: var(--Myred2) !important;
+    }
+    div[data-target="upgrade-storage"] {
+        display: none !important;
     }
 }
