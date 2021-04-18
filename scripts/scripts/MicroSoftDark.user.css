@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.46
+@version      0.0.47
 @description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -180,6 +180,9 @@ domain("answers.microsoft.com") {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+    .table-responsive>table>tbody>tr {
+        background-color: var(--Mygray2) !important;
+    }
     form {
         background: transparent !important;
     }
@@ -254,6 +257,8 @@ domain("answers.microsoft.com") {
     .mscom-accordion-item-image {
         background-image: none !important;
     }
+    .cat-links>a,
+    .tags-links>a,
     span>.prevPage,
     span>.nextPage,
     .pageNumberLayout,
@@ -297,6 +302,8 @@ domain("answers.microsoft.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .cat-links>a:hover,
+    .tags-links>a:hover,
     span>.prevPage:hover,
     span>.nextPage:hover,
     .pageNumberLayout.selectedPageNumber,
@@ -343,6 +350,8 @@ domain("answers.microsoft.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .cat-links>a:active,
+    .tags-links>a:active,
     span>.prevPage:active,
     span>.nextPage:active,
     .pageNumberLayout:active,
@@ -476,6 +485,7 @@ domain("answers.microsoft.com") {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+    .post-card,
     a[role="menuitem"],
     .c-channel-placement-content,
     #divTerms,
@@ -561,5 +571,10 @@ domain("answers.microsoft.com") {
     #threadBottomSection,
     #threadSummaryAnswersSection {
         background-color: var(--MyB) !important;
+    }
+    a.facebook,
+    a.twitter,
+    a.linkedin {
+        filter: invert(1) !important;
     }
 }
