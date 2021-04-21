@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.30
+@version     0.0.31
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -310,7 +310,6 @@ url("about:addons") {
     dd:hover {
         color: var(--Myred1) !important;
     }
-    input,
     .textbox-input,
     #searchFilter,
     #header-utils-btn,
@@ -323,6 +322,7 @@ url("about:addons") {
     }
     td.cell-value,
     #about-config-search,
+    input[mozactionhint="search"],
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -424,6 +424,7 @@ search-textbox:hover {
     background-color: var(--Myred1) !important;
 }
 
+button.more-options-button,
 button.primary,
 button.disco-cta-button,
 span.category-name,
@@ -444,6 +445,7 @@ button[action="install-postponed"],
     box-shadow: 0 1px 4px 1px var(--MyB) !important;
 }
 
+button.more-options-button:hover,
 button.primary:hover,
 button.disco-cta-button:hover,
 button.category[selected=""] span.category-name,
@@ -471,6 +473,7 @@ button[role="menuitem"]:hover {
     background-color: var(--MyX1) !important;
 }
 
+button.more-options-button:active,
 button.primary:active,
 button.disco-cta-button:active,
 span.category-name:active,
@@ -534,7 +537,18 @@ button[action="install-postponed"]:active,
     #full {
         background: var(--MyB) !important;
     }
+    search-textbox,
+    input[placeholder="Search addons.mozilla.org"],
     search-addons search-textbox input[mozactionhint="search"] {
         color: var(--MyW) !important;
+    }
+    input {
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
     }
 }
