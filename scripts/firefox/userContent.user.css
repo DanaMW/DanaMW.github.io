@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.31
+@version     0.0.32
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -543,6 +543,18 @@ button[action="install-postponed"]:active,
         color: var(--MyW) !important;
     }
     input {
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+}
+
+@-moz-document url("about:preferences") {
+    input[placeholder="Find in Settings"] {
         -moz-appearance: none;
         appearance: none;
         background-color: var(--Mygray3) !important;
