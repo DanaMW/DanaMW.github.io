@@ -119,9 +119,14 @@ menu[label*="Save In"] {
     color: var(--Mygray1) !important;
 }
 
+menu:hover,
+menuitem:hover,
+[class*=".menuitem-iconic"]:hover,
+
+/**/
+
 .menu-iconic.bookmark-item:hover,
 .menu-iconic.bookmark-item.subviewbutton:hover,
-.menuitem-iconic:hover,
 .customizationmode-button:hover {
     background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred2), var(--Myred3)) !important;
     color: var(--MyW) !important;
@@ -568,6 +573,7 @@ window#alertNotification {
     z-index: 1000000;
 }
 
+menuitem,
 [role="menuitem"],
 label {
     color: var(--MyW) !important;
