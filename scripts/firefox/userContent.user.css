@@ -310,6 +310,7 @@ url("about:addons") {
     dd:hover {
         color: var(--Myred1) !important;
     }
+    input,
     .textbox-input,
     #searchFilter,
     #header-utils-btn,
