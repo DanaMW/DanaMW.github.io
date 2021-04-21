@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.31
+@version     0.0.32
 @description Mozilla UserChrome File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -335,20 +335,27 @@ menupopup>menu>menupopup {
     border-radius: 25px !important;
 }
 
-arrowscrollbox:not([id-"tabbrowser-tabs"]) {
+arrowscrollbox {
     border: 1px solid var(--Myred1) !important;
 }
 
-menuseperator,
-[id*="frame-sep"],
-[id*="context-media"],
-[id*="context-sep"] {
+#tabbrowser-arrowscrollbox {
+    border: none !important;
+}
+
+
+/* New */
+
+menuseparator {
     appearance: none !important;
     border-top: 2px solid var(--Myred1) !important;
     border-bottom: none !important;
     padding: 0 !important;
     margin: 2px 1em !important;
 }
+
+
+/* End */
 
 .customizationmode-button,
 .toolbarbutton-1,
