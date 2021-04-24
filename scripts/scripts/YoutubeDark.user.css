@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.31
+@version      0.0.32
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -130,6 +130,14 @@ domain("studio.youtube.com") {
     html {
         background-image: none !important;
     }
+    a,
+    p,
+    h1 {
+        color: var(--MyW) !important;
+    }
+    img#illustration {
+        background: var(--MyB) !important;
+    }
     app-drwer {
         scrollbar-color: var(--Myred1) var(--Myred3);
         scrollbar-width: thin;
@@ -256,6 +264,8 @@ domain("studio.youtube.com") {
     #text-container {
         text-align: center !important;
     }
+    .tooltip,
+    #tooltip,
     paper-toast,
     #toast,
     tp-yt-paper-toast,
@@ -406,9 +416,18 @@ domain("studio.youtube.com") {
     .toggle-bar.style-scope.paper-toggle-button {
         background-color: var(--Myblue1) !important;
     }
+    .subscribers-title,
+    .section-title-text {
+        color: var(--TwitterBlue) !important;
+    }
     .video-extras-sparkbars {
         margin-bottom: 30px !important;
     }
+    .section-subtitle-text,
+    .issue-text,
+    .title,
+    .content-text,
+    .title-text,
     label,
     .account-page-header,
     button span.yt-uix-button-content,
@@ -462,6 +481,8 @@ domain("studio.youtube.com") {
     #ytpc_ytcontrol_button {
         height: 25px !important;
     }
+    .feature-level-status,
+    li.menu-item,
     #collapse-controls-section,
     yt-chip-cloud-chip-renderer,
     #guide-button,
@@ -493,6 +514,9 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .feature-level-status.feature-level-unlocked,
+    li.menu-item[selected],
+    li.menu-item:hover,
     li.sbsb_c.gsfs.sbsb_d,
     #collapse-controls-section:hover,
     yt-chip-cloud-chip-renderer:hover,
@@ -533,6 +557,7 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    li.menu-item:active,
     #collapse-controls-section:active,
     yt-chip-cloud-chip-renderer:active,
     ytd-menu-service-item-renderer:active,
@@ -676,6 +701,7 @@ domain("studio.youtube.com") {
         margin-top: -20px !important;
         box-shadow: none !important;
     }
+    input,
     #input,
     input#query-input,
     #masthead-search-terms,
@@ -783,16 +809,31 @@ domain("studio.youtube.com") {
     .header,
     #header-section {
         background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+        background-image: linear-gradient(to top, var(--Myred3), var(--Myred2), var(--Myred1) 100%, transparent) !important;
     }
+    .tab-content.yta-screen,
+    #right-side-bar,
+    #content,
+    #second-container,
+    #first-container,
+    ytcp-video-visibility-select,
+    ytcp-contracts-settings,
+    ytcp-navigation,
+    div[class="main-container style-scope ytcd-video-snapshot-upload"],
     div[class="badge badge-style-type-simple style-scope ytd-badge-supported-renderer"],
     div#left-arrow {
         background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+        background-image: linear-gradient(to top, var(--Mygray3), var(--Mygray2), var(--Mygray1) 100%, transparent) !important;
     }
+    div[class="layout horizontal style-scope yta-card-container"],
+    .button-area,
+    .footer.style-scope.ytcp-dialog,
+    ytcd-basic-card,
+    ytcd-video-snapshot-upload,
+    #intro,
     #tabs-inner-container {
         background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+        background-image: linear-gradient(to top, var(--Myred3), var(--Myred2), var(--Myred1) 100%, transparent) !important;
     }
     div#container {
         -moz-user-select: text !important;
@@ -819,5 +860,32 @@ domain("studio.youtube.com") {
     }
     span.style-scope.ytd-badge-supported-renderer {
         filter: brightness(200%);
+    }
+    .header,
+    .header-content {
+        text-align: center !important;
+    }
+    ytcp-primary-action-bar,
+    .ytcp-table-header,
+    #filter-bar,
+    #table-header,
+    ytcp-sticky-header {
+        background: var(--Myred3) !important;
+    }
+    #selectionBar.style-scope.tp-yt-paper-tabs {
+        background-color: var(--Mygreen1) !important;
+    }
+    .ytcp-primary-action-bar {
+        color: var(--TwitterBlue) !important;
+    }
+    div[role="rowgroup"] {
+        background-color: transparent !important;
+    }
+    .ytgn-video-row .ytcp-video-row {
+        background-color: var(--Mygray2) !important;
+    }
+    .row-highlighted,
+    .ytcp-video-row.row-selected {
+        background-color: var(--Mygray1) !important;
     }
 }
