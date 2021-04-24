@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.34
+@version      0.0.35
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -816,7 +816,7 @@ domain("studio.youtube.com") {
     }
     .tab-content.yta-screen,
     #right-side-bar,
-    #content:not(.yt-related-chip-cloud-renderer),
+    #content:not(.yt-related-chip-cloud-renderer):not(.ytd-expander):not(.ytd-item-section-renderer):not(.ytd-settings-options-renderer):not(.ytd-radio-renderer):not(.ytd-rich-item-renderer),
     #second-container,
     #first-container,
     ytcp-video-visibility-select,
@@ -868,6 +868,7 @@ domain("studio.youtube.com") {
     .header-content {
         text-align: center !important;
     }
+    ytd-thumbnail-overlay-resume-playback-renderer,
     #content>yt-chip-cloud-renderer,
     ytcp-primary-action-bar,
     .ytcp-table-header,
@@ -876,8 +877,9 @@ domain("studio.youtube.com") {
     ytcp-sticky-header {
         background: var(--Myred3) !important;
     }
-    #selectionBar.style-scope.tp-yt-paper-tabs {
+    #selectionBar.tp-yt-paper-tabs {
         background-color: var(--Mygreen1) !important;
+        border-bottom-color: var(--Mygreen1) !important;
     }
     .ytcp-primary-action-bar {
         color: var(--TwitterBlue) !important;
