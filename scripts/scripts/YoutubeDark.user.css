@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.32
+@version      0.0.33
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -109,6 +109,7 @@ domain("studio.youtube.com") {
     a[class*="covering-overlay"] {
         opacity: 0 !important;
     }
+    .ytd-statement-banner-renderer,
     .style-scope.ytd-compact-promoted-item-renderer {
         display: none !important;
     }
@@ -187,6 +188,8 @@ domain("studio.youtube.com") {
         color: var(--MyW) !important;
         height: 50 !important;
     }
+    .ytd-rich-item-renderer:hover,
+    #details:hover,
     .ytcp-paper-tooltip-placeholder {
         border-color: transparent !important;
         color: var(--Myred1) !important;
@@ -813,7 +816,7 @@ domain("studio.youtube.com") {
     }
     .tab-content.yta-screen,
     #right-side-bar,
-    #content,
+    #content:not(.yt-related-chip-cloud-renderer),
     #second-container,
     #first-container,
     ytcp-video-visibility-select,
@@ -865,6 +868,7 @@ domain("studio.youtube.com") {
     .header-content {
         text-align: center !important;
     }
+    #content>yt-chip-cloud-renderer,
     ytcp-primary-action-bar,
     .ytcp-table-header,
     #filter-bar,
