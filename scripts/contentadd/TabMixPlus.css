@@ -1,0 +1,10 @@
+/* TabMixPlus */
+
+@-moz-document url-prefix("moz-extension://f562f7d9-514c-4c3d-863a-b356fe76149b/preferences/preferences.html"),
+url-prefix("moz-extension://f562f7d9-514c-4c3d-863a-b356fe76149b/preferences/preferences.html"),
+url-prefix("moz-extension://f562f7d9-514c-4c3d-863a-b356fe76149b/preferences/preferences.html") {
+    0 html,
+    body {
+        background-color: var(--MyB) !important;
+    }
+}

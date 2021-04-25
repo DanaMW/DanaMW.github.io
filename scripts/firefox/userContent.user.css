@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.32
+@version     0.0.33
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -320,16 +320,6 @@ url("about:addons") {
         color: var(--MyB) !important;
         border: 1px solid var(--Myred1) !important;
     }
-    td.cell-value,
-    #about-config-search,
-    input[mozactionhint="search"],
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        text-align: center !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
     label {
         background-color: transparent !important;
     }
@@ -542,25 +532,23 @@ button[action="install-postponed"]:active,
     search-addons search-textbox input[mozactionhint="search"] {
         color: var(--MyW) !important;
     }
-    input {
-        -moz-appearance: none;
-        appearance: none;
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        text-align: center !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
 }
 
-@-moz-document url("about:preferences") {
-    input[placeholder="Find in Settings"] {
-        -moz-appearance: none;
-        appearance: none;
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        text-align: center !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
+
+/*
+search-textbox>input,
+input[mozactionhint="search"],
+input[placeholder="Find in Settings"]
+*/
+
+td.cell-value,
+#about-config-search,
+input {
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--Mygray3) !important;
+    color: var(--MyW) !important;
+    text-align: center !important;
+    border-radius: 15px !important;
+    border: 1px solid var(--Myred1) !important;
 }
