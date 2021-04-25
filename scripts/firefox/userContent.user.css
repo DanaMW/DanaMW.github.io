@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.36
+@version     0.0.38
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -65,13 +65,6 @@ url("about:addons") {
         background-color: var(--MyX1) !important;
     }
     /*
-    button:hover,
-    button {
-        background-image: none !important;
-        border: none !important;
-    }
-    */
-    /*
     button.primary,
     button.disco-cta-button,
     button[action="install-postponed"],
@@ -80,7 +73,12 @@ url("about:addons") {
         background-image: none !important;
         border: none !important;
     }
+    #sidebar * richlistitem,
+    #sidebar * #categories>.category,
+    #sidebar * richlistitem.category,
+    #sidebar * richlistitem#category.category,
     */
+    *|*.category,
     td.cell-edit,
     td.cell-reset,
     menulist,
@@ -118,6 +116,10 @@ url("about:addons") {
         background-color: transparent !important;
     }
     */
+    #categories>.category:hover,
+    #categories>.category[selected],
+    [selected],
+    richlistitem.category[selected],
     #categories>.category[selected],
     #categories>.category.selected td.cell-edit:hover,
     td.cell-reset:hover,
