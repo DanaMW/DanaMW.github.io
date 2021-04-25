@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.35
+@version     0.0.36
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -9,9 +9,17 @@
 
 @-moz-document url-prefix("about"),
 url("about:addons") {
+    span[data-l10n-id="discopane-intro"],
+    .warning,
+    .addon-card-message[type="warning"],
     .addon-card-message[type="warning"],
     #private-browsing-notice {
         display: none !important;
+    }
+    *:focus,
+    *:focus-visible,
+    *:-moz-focusring {
+        border-color: var(--Myred1) !important;
     }
     .main-heading,
     .main-search,
@@ -50,18 +58,36 @@ url("about:addons") {
         border: none !important;
         text-align: center !important;
     }
+    button.more-options-button {
+        color: var(--MyW) !important;
+    }
+    button.more-options-button:hover {
+        background-color: var(--MyX1) !important;
+    }
+    /*
     button:hover,
     button {
         background-image: none !important;
         border: none !important;
     }
+    */
+    /*
+    button.primary,
+    button.disco-cta-button,
+    button[action="install-postponed"],
+    button:hover,
+    button {
+        background-image: none !important;
+        border: none !important;
+    }
+    */
     td.cell-edit,
     td.cell-reset,
     menulist,
     .sidebar-footer-button,
     #help-button,
-    .category,
-    button:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
+    #preferencesButton,
+    button:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete):not(.more-options-button):not([role="menuitem"]):not(.back-button) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -84,21 +110,26 @@ url("about:addons") {
         filter: blur(0) !important;
         text-shadow: none !important;
     }
+    /*
     button[class*="button-"],
     td.cell-edit:hover,
     td.cell-reset:hover {
         background-image: none !important;
         background-color: transparent !important;
     }
-    td.cell-edit:hover,
+    */
+    #categories>.category[selected],
+    #categories>.category.selected td.cell-edit:hover,
     td.cell-reset:hover,
     menulist:hover,
     .sidebar-footer-button:hover,
-    #help-button:hover,
     .category[aria-selected="true"],
     .category[selected="true"],
     .category:hover,
-    button:hover:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
+    button[role="menuitem"]:hover,
+    #help-button:hover,
+    #preferencesButton:hover,
+    button:hover:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete):not(.more-options-button):not([role="menuitem"]):not(.back-button) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -115,13 +146,16 @@ url("about:addons") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    /*
     td.cell-edit:active,
     td.cell-reset:active,
     menulist:active,
     .sidebar-footer-button:active,
-    #help-button:active,
     .category:active,
-    button:active:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete) {
+    */
+    #help-button:active,
+    #preferencesButton:active,
+    button:active:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete):not(.more-options-button):not([role="menuitem"]):not(.back-button) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -135,8 +169,8 @@ url("about:addons") {
         -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+        transition-timing-function: linear !important;
     }
     label#warningTitle.title-text {
         color: var(--Myred1) !important;
@@ -159,9 +193,6 @@ url("about:addons") {
     }
     .addon-view[notification="warning"] {
         --view-highlight-color: var(--Myback) !important;
-    }
-    .warning {
-        display: none !important;
     }
     #header-search:hover,
     #header-search {
@@ -245,7 +276,7 @@ url("about:addons") {
         color: var(--MyW) !important;
     }
     p {
-        color: var(--Mygreen1) !important;
+        color: var(--MyW) !important;
     }
     #ltr,
     li a,
@@ -357,19 +388,21 @@ url("about:addons") {
     .content-blocking-category {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    button:hover,
-    button {
-        background-image: none !important;
-        border: none !important;
+    #about-config-search,
+    td.cell-value,
+    input:not([type="checkbox"]):not([type="radio"]) {
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+        border-radius: 5px !important;
+        border: 1px solid var(--Myred1) !important;
     }
 }
 
 #addons-page {
     background-color: var(--MyB) !important;
-}
-
-.addon-card-message[type="warning"] {
-    display: none !important;
 }
 
 .addon.card {
@@ -414,10 +447,14 @@ search-textbox:hover {
     background-color: var(--Myred1) !important;
 }
 
+
+/*
+#help-button,
+button.category,
+#preferencesButton,
 button.more-options-button,
 button.primary,
 button.disco-cta-button,
-span.category-name,
 button[action="install-postponed"],
 .page-options-menu {
     -moz-appearance: none;
@@ -485,6 +522,7 @@ button[action="install-postponed"]:active,
     transition-timing-function: linear !important;
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
+*/
 
 @-moz-document url("about:performance") {
     #dispatch-tbody {
@@ -531,19 +569,5 @@ button[action="install-postponed"]:active,
     input[placeholder="Search addons.mozilla.org"],
     search-addons search-textbox input[mozactionhint="search"] {
         color: var(--MyW) !important;
-    }
-}
-
-@-moz-document url-prefix("about") {
-    #about-config-search,
-    td.cell-value,
-    input:not([type="checkbox"]):not([type="radio"]) {
-        -moz-appearance: none;
-        appearance: none;
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        text-align: center !important;
-        border-radius: 5px !important;
-        border: 1px solid var(--Myred1) !important;
     }
 }
