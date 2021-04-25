@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.34
+@version     0.0.35
 @description Mozilla UserContent File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -534,14 +534,16 @@ button[action="install-postponed"]:active,
     }
 }
 
-td.cell-value,
-#about-config-search,
-input:not([type="checkbox"]):not([type="radio"]) {
-    -moz-appearance: none;
-    appearance: none;
-    background-color: var(--Mygray3) !important;
-    color: var(--MyW) !important;
-    text-align: center !important;
-    border-radius: 5px !important;
-    border: 1px solid var(--Myred1) !important;
+@-moz-document url-prefix("about") {
+    #about-config-search,
+    td.cell-value,
+    input:not([type="checkbox"]):not([type="radio"]) {
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+        border-radius: 5px !important;
+        border: 1px solid var(--Myred1) !important;
+    }
 }
