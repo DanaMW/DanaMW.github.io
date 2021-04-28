@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.13
+@version      0.2.14
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -359,7 +359,6 @@ url-prefix("https://support.google.com/") {
     #action-menu,
     .suggestions,
     .section-suggestions,
-    .section-layout,
     .xkfVF,
     select {
         background-color: var(--Mygray2) !important;
@@ -504,6 +503,7 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .Xmhro.wnroEb,
     .qtwiP:hover,
     a[id*="onebar-"]>li:hover,
     .NZmxZe.qlsyCb:hover,
@@ -914,6 +914,7 @@ url-prefix("https://support.google.com/") {
     .URIeEf {
         color: var(--Myblue1) !important;
     }
+    .nqE1hb.qWrlPb,
     .VfPpkd-vQzf8d,
     .eqiJQ,
     .Hc7Eff,
@@ -1597,6 +1598,7 @@ url-prefix("https://support.google.com/") {
     .J1hqV {
         border: none !important;
     }
+    .r1JIJb,
     .B58ezc {
         color: var(--MyW) !important;
     }
@@ -1613,6 +1615,9 @@ url-prefix("https://support.google.com/") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+    .widget-pane-content,
+    .section-layout,
+    .section-review-snippet,
     .section-categorical-shortcut,
     .section-directions-options {
         background-color: var(--Myred3) !important;
@@ -1636,9 +1641,11 @@ url-prefix("https://support.google.com/") {
     button[class*="sprite"]:hover {
         filter: invert(1) !important;
     }
+    /*
     .section-layout.section-layout-flex-horizontal {
         background-color: var(--MyX1) !important;
     }
+    */
     .directions-mode-distance-time {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
@@ -1667,5 +1674,8 @@ url-prefix("https://support.google.com/") {
     }
     .hAPCZc:hover {
         background-color: var(--Myyellow1) !important;
+    }
+    .section-review-snippet {
+        border: 1px solid var(--MyW) !important;
     }
 }
