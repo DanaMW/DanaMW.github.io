@@ -79,7 +79,7 @@
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
-        color: var(--Mytext) !important;
+        color: var(--MyW) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
@@ -314,5 +314,9 @@
     }
     div[data-target="upgrade-storage"] {
         display: none !important;
+    }
+    div[role="button"] a,
+    div[class="KL4NAf "] {
+        color: var(--MyW) !important;
     }
 }
