@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.26
+@version      0.0.27
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -12,6 +12,7 @@
 
 @-moz-document domain("chat.google.com"),
 url-prefix("https://mail.google.com/chat/") {
+    .UDyRYe,
     [role="complementary"],
     .Bqp03e,
     .DHBWQd,
@@ -73,6 +74,7 @@ url-prefix("https://mail.google.com/chat/") {
     small {
         color: var(--TwitterPink) !important;
     }
+    .wmFscd,
     .gb_Rb,
     div[class="gb_jb gb_fb"],
     a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"],
@@ -99,6 +101,8 @@ url-prefix("https://mail.google.com/chat/") {
     a[role="button"]:hover {
         filter: invert(0) !important;
     }
+    .wmFscd[aria-selected="true"],
+    .wmFscd:hover,
     .gb_Rb:hover,
     div[class="gb_jb gb_fb"]:hover,
     a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:hover,
@@ -129,6 +133,7 @@ url-prefix("https://mail.google.com/chat/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .wmFscd:active,
     .gb_Rb:active,
     div[class="gb_jb gb_fb"]:active,
     a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:active,
@@ -160,6 +165,8 @@ url-prefix("https://mail.google.com/chat/") {
         appearance: none;
         display: initial !important;
     }
+    .dJ9vNe,
+    .dJ9vNe.DbQnIe,
     form[role="search"],
     .gb_wf.gb_qf,
     .is2u3.JEBAHf,
