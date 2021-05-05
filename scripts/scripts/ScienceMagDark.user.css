@@ -2,7 +2,7 @@
 @name         ScienceMag Dark
 @namespace    http://danamw.github.io/scripts/scripts/ScienceMagDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ScienceMagDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,6 +13,9 @@
     body {
         background-color: var(--MyB) !important;
     }
+    #paywall-hello,
+    .tp-backdrop.tp-active,
+    .tp-modal,
     #coronalert,
     div[class*="promo"],
     #sci-footer-end {
