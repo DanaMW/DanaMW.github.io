@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.36
+@version      0.0.38
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -109,6 +109,7 @@ domain("studio.youtube.com") {
     a[class*="covering-overlay"] {
         opacity: 0 !important;
     }
+    .ytp-ce-element,
     .ytd-statement-banner-renderer,
     .style-scope.ytd-compact-promoted-item-renderer {
         display: none !important;
