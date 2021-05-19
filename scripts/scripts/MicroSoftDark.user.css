@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.47
+@version      0.0.48
 @description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -30,6 +30,7 @@ domain("answers.microsoft.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    #main-content-landing-react,
     div[id*="StoreLocations-HighlightHero"],
     ul>li>span[class="infosupport-column-second-span ng-binding x-hidden-focus"],
     #home-index,
