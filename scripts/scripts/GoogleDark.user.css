@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.18
+@version      0.2.19
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -493,7 +493,7 @@ url-prefix("https://support.google.com/") {
     .iv_msusc,
     g-fab,
     a#hdtb-tls,
-    button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]) {
+    button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -617,7 +617,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:hover,
     g-fab:hover,
     a#hdtb-tls:hover,
-    button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]) {
+    button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -716,7 +716,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:active,
     g-fab:active,
     a#hdtb-tls:active,
-    button:active:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]) {
+    button:active:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -1535,6 +1535,8 @@ url-prefix("https://support.google.com/") {
     .Aul2T.m6aMje {
         background-color: transparent !important;
     }
+    .directions-group-disclose,
+    .Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe,
     .hLcKi,
     a[title="Google apps"],
     .gb_xc .gb_x.gb_Vb,
