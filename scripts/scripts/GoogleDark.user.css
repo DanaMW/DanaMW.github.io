@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.19
+@version      0.2.20
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -46,6 +46,9 @@ url-prefix("https://support.google.com/") {
     .sfibbbc,
     .SSBXXc {
         left: calc(1vw + var(--smove) - 10vw) !important;
+    }
+    .A8SBwf {
+        height: 40px !important;
     }
     html[itemtype="http://schema.org/SearchResultsPage"] .tsf-p,
     html[itemtype="http://schema.org/SearchResultsPage"] .A8SBwf {
@@ -203,6 +206,10 @@ url-prefix("https://support.google.com/") {
         text-align: center !important;
         color: var(--MyW) !important;
         border: 2px solid var(--Myred2) !important;
+        height: 40px !important;
+    }
+    input.gLFyf.gsfi {
+        height: 40px !important;
     }
     input.Ax4B8.ZAGvjd {
         height: 35px !important;
@@ -987,6 +994,15 @@ url-prefix("https://support.google.com/") {
     }
     .yuRUbf a {
         color: var(--TwitterRed) !important;
+    }
+    .logo,
+    #logo {
+        width: 93px !important;
+        height: 40px !important;
+        padding-right: 0px !important;
+        margin-right: 0px !important;
+        padding-left: 0px !important;
+        margin-left: 0px !important;
     }
     #logo:hover,
     #hplogo:hover {
