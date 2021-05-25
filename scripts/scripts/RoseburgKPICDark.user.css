@@ -2,7 +2,7 @@
 @name         Roseburg KPIC Dark
 @namespace    http://danamw.github.io/scripts/scripts/RoseburgKPICDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RoseburgKPICDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -42,9 +42,15 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
-    h1 {
+    blockquote {
+        border-color: var(--TwitterBlue) !important;
+    }
+    blockquote,
+    h3 {
         color: var(--TwitterBlue) !important;
     }
+    .panelTitle,
+    h1,
     h2 {
         color: var(--TwitterRed) !important;
     }
