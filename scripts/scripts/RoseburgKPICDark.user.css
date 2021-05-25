@@ -2,7 +2,7 @@
 @name         Roseburg KPIC Dark
 @namespace    http://danamw.github.io/scripts/scripts/RoseburgKPICDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RoseburgKPICDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -115,11 +115,13 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    [class*="twitterLayout-module"],
+    [class*="brandLayout"] {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    #js-PopularGallery-Container,
+    [class*="index_Subscribe"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -143,5 +145,16 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    #js-CustomBrand-Container,
+    [class*="index-module"] {
+        background-color: var(--Myred3) !important;
+    }
+    [id*="js-StationPick"],
+    #js-Entertainment-Container,
+    #js-OffBeat-Container,
+    [class*="sectionLayout"],
+    [class*="heroLayout"] {
+        background-color: var(--Mygray3) !important;
     }
 }
