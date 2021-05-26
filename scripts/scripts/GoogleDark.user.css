@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.21
+@version      0.2.22
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -47,9 +47,11 @@ url-prefix("https://support.google.com/") {
     .SSBXXc {
         left: calc(1vw + var(--smove) - 10vw) !important;
     }
+    .RNNXgb,
     .A8SBwf.sbfc,
     .A8SBwf {
         height: 40px !important;
+        padding-left: 0px !important;
     }
     html[itemtype="http://schema.org/SearchResultsPage"] .tsf-p,
     html[itemtype="http://schema.org/SearchResultsPage"] .A8SBwf {
@@ -112,6 +114,10 @@ url-prefix("https://support.google.com/") {
     .dU5Kl {
         border: none !important;
     }
+    .bqVbBf.jfFgAc.CqMNyc,
+    .qFRZdb,
+    .P2Dfkf.vmod,
+    .V0adRc.WgBtV.POrPle,
     #kp-wp-tab-overview,
     .qFWqn,
     .gb_F.gb_na,
@@ -209,6 +215,7 @@ url-prefix("https://support.google.com/") {
         border: 2px solid var(--Myred2) !important;
         height: 40px !important;
     }
+    .gLFyf,
     input.gLFyf.gsfi {
         height: 40px !important;
     }
@@ -290,6 +297,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+    .iblpc,
     #sbfblt {
         display: none !important;
     }
