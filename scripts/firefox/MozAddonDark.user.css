@@ -2,7 +2,7 @@
 @name         Mozilla Addons Dark
 @namespace    https://danamw.github.io/Scripts/extra/MozAddonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/extra/MozAddonDark.user.css
-@version      0.0.17
+@version      0.0.18
 @description  Mozilla Addons Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -222,6 +222,7 @@ domain("wiki.mozilla.org") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    button.relative,
     a.nu-settings-button,
     a.cta-neutral.cta-base,
     a[href][title="classic design link"],

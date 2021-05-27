@@ -2,7 +2,7 @@
 @name         StackExtra
 @namespace    http://danamw.github.io/scripts/scripts/StackExtra.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StackExtra.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -132,7 +132,7 @@ regexp("^https?:\/\/stackoverflow.[^\.]*\.com.*") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    #announcement-banner {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
