@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.48
+@version      0.0.49
 @description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -11,7 +11,8 @@
 @-moz-document domain("microsoft.com"),
 domain("account.microsoft.com"),
 domain("support.microsoft.com"),
-domain("answers.microsoft.com") {
+domain("answers.microsoft.com"),
+domain("account.live.com") {
     div[id*="coreui-banner"],
     .ng-scope.survey-background,
     #c-uhf-nav-cta,
@@ -20,6 +21,10 @@ domain("answers.microsoft.com") {
     .c-uhfh-alert {
         /* f-information epb-container epb-default-color */
         display: none !important;
+    }
+    .identity {
+        color: var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
     }
     #Footer,
     mee-drawer,
@@ -30,6 +35,7 @@ domain("answers.microsoft.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .middle,
     #main-content-landing-react,
     div[id*="StoreLocations-HighlightHero"],
     ul>li>span[class="infosupport-column-second-span ng-binding x-hidden-focus"],
@@ -58,6 +64,9 @@ domain("answers.microsoft.com") {
     strong,
     span {
         color: var(--MyW) !important;
+    }
+    .inner {
+        text-align: center !important;
     }
     * {
         text-decoration: none !important;
@@ -445,6 +454,7 @@ domain("answers.microsoft.com") {
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+    .inner,
     .message-voting-container,
     .x-hidden-focus,
     [role="alert"],
@@ -470,6 +480,7 @@ domain("answers.microsoft.com") {
     .msame_Header {
         background-color: transparent !important;
     }
+    .inner,
     a[role="menuitem"]:hover,
     .message-voting-container,
     div[id*="home\.cards\.card"],
@@ -509,6 +520,7 @@ domain("answers.microsoft.com") {
     .copy-box {
         background-color: var(--MyB) !important;
     }
+    #iPageTitle,
     td>h3 {
         color: var(--TwitterBlue) !important;
     }
