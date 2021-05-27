@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.22
+@version      0.2.23
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -27,6 +27,7 @@ url-prefix("https://gstatic.com/"),
 url-prefix("https://groups.google.com/"),
 url-prefix("https://myactivity.google.com/"),
 url-prefix("https://support.google.com/") {
+    .tkcine,
     .wqSOMc.b4iS2b,
     .notification,
     .hcfe-content,
@@ -275,6 +276,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
+    .Qy8Hid.UvA7Nd.C1c7Td.eO2Zfd,
     .Bhmw4,
     .AvBz0e,
     .lV0vqc,
@@ -849,6 +851,7 @@ url-prefix("https://support.google.com/") {
     .DRBylb {
         background-color: var(--Mygray2) !important;
     }
+    .L8hPl,
     #wp-tabs-container.I6TXqe.osrp-blk,
     div[class*="imspo"],
     .imso-hov:hover,
@@ -1316,6 +1319,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class="mrslJ ZjAUM  nkLxl rZGTQc DbuWcd"],
     .PwjeAc:hover,
     .bTLhlf,
     .O51MUd,
