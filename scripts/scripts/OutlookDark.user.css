@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.30
+@version      0.0.31
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -298,7 +298,9 @@ url-prefix("https://to-do.live.com/tasks/") {
     .ms-ChoiceFieldGroup,
     .ms-Dialog-main,
     .ms-Panel-main {
-        background-color: var(--Mygray3) !important;
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+        /* background-color: var(--Mygray3) !important; */
         color: var(--Mytext) !important;
         border: 1px solid var(--Myborder) !important;
     }
