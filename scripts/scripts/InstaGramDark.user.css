@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.87
+@version      0.0.88
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -19,6 +19,7 @@
     .js.logged-in.client-root {
         background-color: var(--MyB) !important;
     }
+    div[class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"],
     div[class="           wpHm3          Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                        O1flK  fm1AK    "],
     .DCpAF,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "] section[class="bR_3v  "],
@@ -42,6 +43,7 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    h4,
     #verificationCodeDescription,
     .m7ETg,
     .YFq-A,
@@ -205,6 +207,8 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class*="pV7Qt"][class*="tHaIX"][class*="Igw0E"][class*="rBNOH"][class*="YBx95"][class*="_4EzTm"][class*="XfCBB"][class*="nGS-Y"],
+    div[role="presentation"],
     header,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
     div[class="       tHaIX              Igw0E     IwRSH      eGOV_         _4EzTm                                                                                   XfCBB             HcJZg              "],
@@ -272,12 +276,18 @@
         border: none !important;
     }
     /*------------------All filter INVERTS----------------*/
+    span[class="glyphsSpriteFriend_Follow u-__7"],
+    div[class="FuWoR -wdIA     x7xX2 "],
+    div[class*="coreSpritePagingChevron"],
+    button[class="_5f5mN       jIbKX KUBKM      yZn4P   "] svg path,
+    button[class="_5f5mN       jIbKX KUBKM      yZn4P  m4t9r "] svg path,
     svg {
         filter: invert(1);
     }
     svg[aria-label="Unlike"] {
         filter: invert(0);
     }
+    button svg path:hover,
     svg:hover {
         filter: invert(0.5);
     }
@@ -405,5 +415,26 @@
     header[class="vtbgv "] {
         border-color: transparent !important;
         border: 10px var(--Mygreen1) !important;
+    }
+    div[class="RR-M- h5uC0"] {
+        margin-top: 65px !important;
+    }
+    .q9xVd::after {
+        background-color: var(--Mygreen1) !important;
+    }
+    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="_22l1"][class*="aGBdT"][class*="BI4qX"] {
+        text-align: center !important;
+    }
+    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"][class*="HVWg4"] {
+        height: 60px !important;
+    }
+    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"][class*="HVWg4"]:hover {
+        height: 100px !important;
+    }
+    svg[class="_8-yf5 edmGD"] {
+        fill: var(--Myred1) !important;
+    }
+    img.s4Iyt:hover {
+        filter: invert(1) !important;
     }
 }
