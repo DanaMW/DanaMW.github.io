@@ -2,7 +2,7 @@
 @name         Google Duo Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleDuoDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDuoDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -52,6 +52,7 @@
     h1 {
         color: var(--TwitterBlue) !important;
     }
+    .tegPMc,
     h2 {
         color: var(--TwitterRed) !important;
     }
@@ -74,6 +75,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .z80M1:hover,
     [role="button"]:hover:not([aria-label="Google apps"]),
     li.P2EK7d:hover,
     button:hover {
@@ -111,15 +113,21 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .jdWZuc,
+    .PVcBVd,
     form[role="search"] {
         background-image: none !important;
         background-color: transparent !important;
+    }
+    div[class="L0cwud-J42Xof-LwH6nd-sM5MNb"] {
+        text-align: center !important;
     }
     header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .JAPqpe.K0NPx,
     div[class="XfpsVe J9fJmf"],
     .PbnGhe.oJeWuf.fb0g6 {
         background-color: var(--Mygray1) !important;
@@ -137,13 +145,11 @@
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
-        border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
