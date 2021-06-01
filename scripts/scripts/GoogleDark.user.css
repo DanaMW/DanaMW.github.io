@@ -264,6 +264,7 @@
          background-color: var(--Myback) !important;
          color: var(--MyW) !important;
      }
+     .uoFCfc,
      .Qy8Hid.UvA7Nd.C1c7Td.eO2Zfd,
      .Bhmw4,
      .AvBz0e,
@@ -480,7 +481,7 @@
      #TEPD0b,
      input.ksb,
      .hdtb-msel,
-     [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]):not(.WpHeLc):not(.rIbAWc):not(.hdtb-dd-b):not(.ExCKkf.z1asCe.rzyADb):not([class*="viewerfooter-navigation-button"]):not(.widget-viewer-header-flag-button),
+     [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]):not(.WpHeLc):not(.rIbAWc):not(.hdtb-dd-b):not(.ExCKkf.z1asCe.rzyADb):not([class*="viewerfooter-navigation-button"]):not(.widget-viewer-header-flag-button):not(.uquUgf.NhRr3b),
      .gb_O,
      .gb_fa,
      g-left-button,
@@ -602,7 +603,7 @@
      .hdtbItm:hover,
      .mitem:hover,
      .mitem.msel,
-     [role="button"]:hover:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]):not(.rIbAWc):not(.hdtb-dd-b):not(.ExCKkf.z1asCe.rzyADb):not([class*="viewerfooter-navigation-button"]):not(.widget-viewer-header-flag-button),
+     [role="button"]:hover:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]):not(.rIbAWc):not(.hdtb-dd-b):not(.ExCKkf.z1asCe.rzyADb):not([class*="viewerfooter-navigation-button"]):not(.widget-viewer-header-flag-button):not(.uquUgf.NhRr3b),
      a[role="menuitem"]:hover,
      .gb_O:hover,
      .gb_fa.gb_ng:hover,
@@ -702,7 +703,7 @@
      input.ksb:active,
      .hdtbItm:active,
      .mitem:active,
-     [role="button"]:active:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not(.gmlSVb):not([aria-label="About this Result"]):not(.rIbAWc):not(.hdtb-dd-b):not(.ExCKkf.z1asCe.rzyADb):not([class*="viewerfooter-navigation-button"]):not(.widget-viewer-header-flag-button),
+     [role="button"]:active:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not(.gmlSVb):not([aria-label="About this Result"]):not(.rIbAWc):not(.hdtb-dd-b):not(.ExCKkf.z1asCe.rzyADb):not([class*="viewerfooter-navigation-button"]):not(.widget-viewer-header-flag-button):not(.uquUgf.NhRr3b),
      a[role="menuitem"]:active,
      .gb_O:active,
      .gb_fa.gb_ng:active,
@@ -739,11 +740,14 @@
          transition-timing-function: linear !important;
          text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
      }
+     ._WAm2YJd509_6BKPdv9AE141,
      .vwfsqc,
      [role="list"],
      .Kot7x.eXEBMb.Znsfnf {
          background-color: var(--MyB) !important;
      }
+     .I6TXqe.osrp-blk,
+     .rpBMYb.kno-ftr,
      .widget-pane,
      .A1cqac-kPTQic-g8b3y,
      .Nehgve,
