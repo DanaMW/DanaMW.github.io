@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.25
+@version      0.2.26
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -830,6 +830,7 @@
      .rlc__slider-page {
          background-image: -moz-linear-gradient(top, var(--Myred2), var(--Myred3)) !important;
      }
+     ul[role="menu"],
      .UHywFd-content,
      ul[aria-dropeffect="move"],
      .widget-settings-pane,
