@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.40
+@version      0.0.41
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -818,7 +818,6 @@ domain("studio.youtube.com") {
     }
     .tab-content.yta-screen,
     #right-side-bar,
-    #content:not(.yt-related-chip-cloud-renderer):not(.ytd-expander):not(.ytd-item-section-renderer):not(.ytd-settings-options-renderer):not(.ytd-radio-renderer):not(.ytd-rich-item-renderer):not(.ytd-playlist-renderer),
     #second-container,
     #first-container,
     ytcp-video-visibility-select,
@@ -895,6 +894,11 @@ domain("studio.youtube.com") {
     .row-highlighted,
     .ytcp-video-row.row-selected {
         background-color: var(--Mygray1) !important;
+    }
+    .yt-live-chat-text-message-renderer,
+    yt-live-chat-text-message-renderer .yt-live-chat-text-message-renderer {
+        background-image: none !important;
+        background-color: transparent !important;
     }
     /*
     textarea {
