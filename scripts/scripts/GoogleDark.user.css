@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.26
+@version      0.2.27
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -1276,6 +1276,8 @@
      div#appbar.appbar {
          background: transparent !important;
      }
+     div[class*="runway"],
+     .widget-layer.widget-layer-shown,
      .DTDhxc.eqAW0b,
      .children,
      [class*="body-content"],
@@ -1303,6 +1305,7 @@
          background-color: var(--Mygray3) !important;
          background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
      }
+     #reveal-card>div,
      div[class="mrslJ ZjAUM  nkLxl rZGTQc DbuWcd"],
      .PwjeAc:hover,
      .bTLhlf,
@@ -1383,6 +1386,8 @@
      g-scrolling-carousel {
          background-color: var(--Mygray3) !important;
      }
+     .section-layout.section-cardbox,
+     div[class*="suggestions"],
      td,
      td.ellip,
      .OAssce,
