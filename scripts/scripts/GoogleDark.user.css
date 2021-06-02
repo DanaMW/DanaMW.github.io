@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.27
+@version      0.2.28
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -278,6 +278,7 @@
      .cwtlb {
          background-color: var(--Mygray3) !important;
      }
+     .piCU0,
      .match-mod-horizontal-padding.cbphWd {
          color: var(--MyW) !important;
      }
@@ -746,6 +747,7 @@
      .Kot7x.eXEBMb.Znsfnf {
          background-color: var(--MyB) !important;
      }
+     .YQu3fc-Sp6b6c,
      .I6TXqe.osrp-blk,
      .rpBMYb.kno-ftr,
      .widget-pane,
