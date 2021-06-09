@@ -104,6 +104,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
     alertify-inner {
         color: #000 !important;
     }
+    #feedbuttons .alertify-button,
     .imagebutton,
     tr select,
     td a.alertify-button {
@@ -121,6 +122,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    #feedbuttons .alertify-button:hover,
     .imagebutton:hover,
     tr select:hover,
     td a.alertify-button:hover {
@@ -140,6 +142,7 @@ url-prefix("moz-extension://fd77d657-7eff-4295-91d3-7a45e043b7c3/option.html") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    #feedbuttons .alertify-button:active,
     .imagebutton:active,
     tr select:active,
     td a.alertify-button:active {
