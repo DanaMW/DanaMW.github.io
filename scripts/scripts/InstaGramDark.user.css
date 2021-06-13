@@ -2,13 +2,14 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.91
+@version      0.0.92
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
 ==/UserStyle== */
 
-@-moz-document domain("instagram.com") {
+@-moz-document domain("instagram.com"),
+domain("cdninstagram.com") {
     div[class="ByB5K enqOc "],
     div[class="_nuMd VZk0N "],
     footer,
