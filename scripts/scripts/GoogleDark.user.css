@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.28
+@version      0.2.29
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -465,6 +465,7 @@
      .Gj7ine,
      div[aria-label="Google apps"] li>a,
      li.mitem,
+     a[class*="settings"],
      div[role="tab"]:not([aria-expanded]),
      a.widget-settings-button,
      a[href*="https://accounts.google.com"],
@@ -501,7 +502,7 @@
      .iv_msusc,
      g-fab,
      a#hdtb-tls,
-     button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose) {
+     button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
          -moz-appearance: none;
          -webkit-appearance: none;
          appearance: none;
@@ -516,6 +517,7 @@
          transition-timing-function: linear !important;
          box-shadow: 0 1px 4px 1px var(--MyB) !important;
      }
+     li[class*="menu"]:hover,
      .esVihe:hover,
      .Xmhro.wnroEb,
      .qtwiP:hover,
@@ -625,7 +627,7 @@
      .img_btn:hover,
      g-fab:hover,
      a#hdtb-tls:hover,
-     button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose) {
+     button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
          -moz-appearance: none;
          -webkit-appearance: none;
          appearance: none;
@@ -724,7 +726,7 @@
      .img_btn:active,
      g-fab:active,
      a#hdtb-tls:active,
-     button:active:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose) {
+     button:active:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
          -moz-appearance: none;
          -webkit-appearance: none;
          appearance: none;
@@ -1095,6 +1097,7 @@
          background-image: none !important;
          background-color: transparent !important;
      }
+     .ZQyzS-aVTXAb:hover,
      ul>li[class="JDAKTe ibdqA W7Aapd zpCp3 SmR8"]:hover>[role="link"],
      ul>li>[role="link"]:hover,
      a .rg_ilmbg,
@@ -1388,6 +1391,7 @@
      g-scrolling-carousel {
          background-color: var(--Mygray3) !important;
      }
+     div[class*="header"],
      .section-layout.section-cardbox,
      div[class*="suggestions"],
      td,
