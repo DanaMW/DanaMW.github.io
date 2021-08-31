@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.22
+@version      0.1.23
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -23,7 +23,8 @@ url-prefix("https://contacts.google.com/widget"),
 url-prefix("https://contacts.google.com/"),
 url-prefix("https://gsuite.google.com"),
 url-prefix("https://ssl.gstatic.com"),
-url-prefix("https://docs.google.com/picker") {
+url-prefix("https://docs.google.com/picker"),
+url-prefix("https://chat.google.com") {
     td[bgcolor],
     html,
     body {
@@ -665,6 +666,7 @@ url-prefix("https://docs.google.com/picker") {
         background-color: var(--Mygray3) !important;
     }
     input[disabled=""],
+    input[aria-label="Search all conversations"],
     input[aria-label="Search mail"] {
         color: var(--Mytext) !important;
         background-color: var(--Mygray3) !important;
@@ -1494,6 +1496,7 @@ url-prefix("https://docs.google.com/picker") {
         border-radius: 25px !important;
     }
     input#gs_taif50,
+    input[aria-label="Search all conversations"],
     input[aria-label="Search mail"] {
         margin-top: -13px !important;
         height: 28px !important;
@@ -1592,5 +1595,12 @@ url-prefix("https://docs.google.com/picker") {
     }
     .la-b .la-m {
         background: #f1f3f4;
+    }
+    .oAzRtb.krjOGe[role="textbox"],
+    div[role="textbox"] {
+        height: 15px !important;
+    }
+    .Bl2pUd.krjOGe {
+        background: var(--Myred3) !important;
     }
 }
