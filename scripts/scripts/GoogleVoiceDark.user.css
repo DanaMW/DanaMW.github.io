@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.45
+@version      0.0.46
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -201,7 +201,6 @@ domain("docs.google.com") {
     md-sidenav,
     div[aria-label="Account Information"],
     .help-panel-views,
-    .mat-form-field-wrapper,
     div[class="mat-form-field-outline ng-tns-c23-145 ng-star-inserted"],
     div[class^="ng-star-inserted"]:not([role="tablist"]),
     gv-account-number {
@@ -314,5 +313,12 @@ domain("docs.google.com") {
     .gvPageRoot [_nghost-uai-c32] .inner-circle[_ngcontent-uai-c32],
     .inner-circle {
         background-color: var(--Mygreen1) !important;
+    }
+    #contact-list,
+    .mat-form-field-wrapper,
+    .input-row,
+    section.root.show {
+        background-image: none !important;
+        background: var(--Myred3) !important;
     }
 }
