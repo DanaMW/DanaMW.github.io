@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.31
+@version      0.2.32
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -774,6 +774,9 @@
          border-radius: 15px !important;
          left: -10px !important;
          border: 1px solid var(--MyW) !important;
+     }
+     .sI5x9c:hover {
+         background-color: var(--Myred2) !important;
      }
      .section-profile-stats-progressbar-progress {
          background-color: var(--Myred1) !important;
