@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.33
+@version      0.0.34
 @description  Github Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -119,6 +119,7 @@ url-prefix("wss://live.github.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .menu-item,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.previous_page.disabled:hover,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.previous_page,
@@ -186,6 +187,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .menu-item:hover,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap:hover,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.previous_page:not(disabled):hover,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page:hover,
@@ -255,6 +257,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .menu-item:active,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap:active,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.previous_page:not(disabled):active,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page:active,
@@ -535,7 +538,11 @@ url-prefix("wss://live.github.com") {
     article {
         background-color: transparent !important;
     }
+    .TableObject:hover,
     div[role="grid"] div[role="row"].navigation-focus {
         background-color: var(--MyX1) !important;
+    }
+    .menu-heading {
+        text-align: center !important;
     }
 }
