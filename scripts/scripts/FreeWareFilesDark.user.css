@@ -2,7 +2,7 @@
 @name         FreeWareFiles Dark
 @namespace    https://danamw.github.io/scripts/scripts/FreeWareFilesDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/FreeWareFilesDark.user.css
-@version      0.0.12
+@version      0.0.13
 @description  FreeWareFiles Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -200,13 +200,11 @@
     }
     a:not([list-group-item]) {
         text-decoration: none !important;
-        color: var(--Myblue1) !important;
-        text-shadow: 1px -1px 0 var(--MyW) !important;
+        color: var(--MyW1) !important;
     }
     a:hover {
         text-decoration: none !important;
         color: var(--Myred1) !important;
-        text-shadow: 1px -1px 0 var(--MyB) !important;
     }
     p[class="size-txt1"] {
         text-decoration: none !important;
