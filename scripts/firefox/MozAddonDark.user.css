@@ -2,7 +2,7 @@
 @name         Mozilla Addons Dark
 @namespace    https://danamw.github.io/Scripts/extra/MozAddonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/extra/MozAddonDark.user.css
-@version      0.0.18
+@version      0.0.19
 @description  Mozilla Addons Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -51,6 +51,9 @@ domain("wiki.mozilla.org") {
         background-color: var(--Myback) !important;
         color: var(--Mytext) !important;
     }
+    .c-footer,
+    footer,
+    main[role="main"],
     #footer,
     .mw-body,
     div[class="flex flex-col justify-between min-h-screen"] {
@@ -213,6 +216,8 @@ domain("wiki.mozilla.org") {
     .DropdownMenu-items {
         background-color: var(--Mygray3) !important;
     }
+    .c-menu-panel,
+    .c-menu-panel-container,
     .DropdownMenu-items .DropdownMenuitem {
         background-color: var(--Mygray3) !important;
     }
@@ -222,6 +227,7 @@ domain("wiki.mozilla.org") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    #download-button-primary,
     button.relative,
     a.nu-settings-button,
     a.cta-neutral.cta-base,
@@ -244,6 +250,7 @@ domain("wiki.mozilla.org") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    #download-button-primary:hover,
     p.SearchSuggestion:hover,
     .selected,
     a.block:hover,
@@ -277,6 +284,7 @@ domain("wiki.mozilla.org") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
+    #download-button-primary:active,
     a.nu-settings-button:active,
     a.cta-neutral.cta-base:active,
     a[href][title="classic design link"]:active,
@@ -304,6 +312,9 @@ domain("wiki.mozilla.org") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
+    div[class="c-navigation top-header-navigation mzp-is-sticky nav-button-is-ready mzp-is-scrolling mzp-is-hidden"],
+    div[class="c-navigation top-header-navigation mzp-is-sticky nav-button-is-ready mzp-is-scrolling"],
+    div[class="c-navigation top-header-navigation mzp-is-sticky nav-button-is-ready"],
     #mw-head,
     [role="banner"] {
         background-color: var(--Myred3) !important;
