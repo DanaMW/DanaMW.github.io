@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.49
+@version      0.0.50
 @description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -22,6 +22,7 @@ domain("account.live.com") {
         /* f-information epb-container epb-default-color */
         display: none !important;
     }
+    .download-wrap,
     .identity {
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
