@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.33
+@version      0.2.34
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -265,6 +265,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
+    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  hTY94b HYI7Re UsCJq oHk1cc"],
     .uoFCfc,
     .Qy8Hid.UvA7Nd.C1c7Td.eO2Zfd,
     .Bhmw4,
@@ -1753,6 +1754,7 @@ url-prefix("https://support.google.com/") {
     header.xNklye {
         background-image: none !important;
     }
+    .RB5IPd>.HJOYV.HJOYVc57.l7Wukc>img,
     button[class="hryX1e  rN3O0d"]>figure>img,
     .YPzqGd {
         filter: invert(0) !important;
