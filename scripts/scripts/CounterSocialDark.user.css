@@ -2,7 +2,7 @@
 @name         CounterSocial Dark
 @namespace    https://danamw.github.io192.168.0.3/scripts/scripts/CounterSocialDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CounterSocialDark.user.css
-@version      0.0.33
+@version      0.0.34
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -27,6 +27,8 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    #jvlabelWrap,
+    #newsTicker4,
     .killsmallscreen,
     /*img[src="cososhare.png"],
     a[title="UPLOAD TO COSOSHARE"],
@@ -37,6 +39,12 @@
     #pagepeel,
     div#slide-out-div.slide-out-div {
         display: none !important;
+    }
+    .cd-main-content,
+    .demo-box,
+    #newsTicker4 {
+        height: 0px !important;
+        background-color: var(--MyB) !important;
     }
     .moodometer {
         background-color: transparent !important;
