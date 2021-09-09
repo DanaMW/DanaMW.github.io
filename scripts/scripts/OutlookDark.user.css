@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.31
+@version      0.0.32
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -206,6 +206,8 @@ url-prefix("https://to-do.live.com/tasks/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    ._3GhkIhRt0r3Gs9Hr1CMJOt,
+    ._28ithXDZzMqSN0YAG2rCVn,
     ._2ES3fWQLAEojIJTfsimZI4,
     ._3h2F0teYDuRazaFSQGdJRS,
     .ZXaaK9lo4E9sH50KY3o0C._2PxBL_S6KFCMTya8zm3aLF,
@@ -215,9 +217,13 @@ url-prefix("https://to-do.live.com/tasks/") {
     ._2F6rWwLisyawGGg32JOcop {
         display: none;
     }
+    ._3uDKZZbosbt_MutV5HLmnr._3AhvfFCmTCMeJ_TiEpVcdH,
     ._2OCtm1RwKiOworCJN7L7Bi._2m7vDFXPCobbyU6u212VBY {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
+    }
+    ._3uDKZZbosbt_MutV5HLmnr._3AhvfFCmTCMeJ_TiEpVcdH:hover {
+        background-color: var(--Myx1) !important;
     }
     ._22iZPI0NO5yLVm7ZEwwWUB {
         background-color: var(--Mygray1) !important;
@@ -386,6 +392,8 @@ url-prefix("https://to-do.live.com/tasks/") {
     ._8uJK7LDpldUqus9UI9KSJ {
         border: 1px solid var(--Myborder) !important;
     }
+    ._3DtajPDCgcod22k2Lj913U._1n2-cmjz7wai2ImcUAHRgH.XirTdELItKhIpkqfelgS0._3kOv5H95uriW0UJqnzxQyY,
+    ._3QPZQ5EKW75gf_TTWTYZ_w,
     ._1yIHkYLrqDZpAMQ3L2YILh._1E-ojjaYGhOxCgHp9Pe315._1zRzYBa3Ymm8oRb7igyJMT._1_Z6L2mLNZ_Q_ulUip_yki._2Ht9U0YzzfQGXALqVdO2MN,
     ._2ytdpP7VUsE7x7PbqO3GDw,
     ._2B5Bk35a4VI6DkWUz5m9Bl,
