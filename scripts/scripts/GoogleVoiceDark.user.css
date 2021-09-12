@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.49
+@version      0.0.50
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -208,6 +208,7 @@ domain("docs.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .ge-Gi-ic.ge-Hi-ke,
     [class="banner"],
     div[class="layout-align-start-center layout-row YYoZ8c-VeKiLd"],
     .did-display,
@@ -221,6 +222,9 @@ domain("docs.google.com") {
     mat-dialog-container {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    .fFW7wc.XKSfm-Sx9Kwc-xJ5Hnf {
+        background: var(--MyB) !important;
     }
     textarea {
         background-color: var(--Mygray3) !important;
@@ -284,6 +288,9 @@ domain("docs.google.com") {
     .md-virtual-repeat-scroller,
     gv-side-nav {
         border: 1px solid var(--MyW) !important;
+    }
+    .ge-dn-jf-dn-ph {
+        background-color: var(--Mygray2) !important;
     }
     gv-dialpad {
         background-color: var(--Mygray3) !important;
