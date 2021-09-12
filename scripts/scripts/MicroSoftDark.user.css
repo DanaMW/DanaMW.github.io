@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.50
+@version      0.0.51
 @description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -134,6 +134,7 @@ domain("account.live.com") {
     ul>li a {
         color: var(--MyW) !important;
     }
+    a.f-post-link.c-heading-6.m-chevron,
     .internav a:hover,
     .current,
     a[id*="shellmenu_"]:hover,
@@ -168,6 +169,7 @@ domain("account.live.com") {
     mee-banner .amc-banner {
         background-image: none !important;
     }
+    .stories-sidebar-widgets,
     mee-banner .amc-banner,
     list-card-content,
     simple-card-content,
