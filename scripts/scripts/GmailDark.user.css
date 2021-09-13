@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.23
+@version      0.1.24
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -280,6 +280,10 @@ url-prefix("https://chat.google.com") {
     .J-JN-I-Kq,
     .J-JN-I-JW {
         background-color: var(--Myred1) !important;
+    }
+    .bNfiFb,
+    .bNfiFb.qs41qe {
+        background-color: var(--Myred2) !important;
     }
     .aT5-aOt-I-JX-Jw,
     .brC-dA-I-JX-Jw {
@@ -1602,5 +1606,8 @@ url-prefix("https://chat.google.com") {
     }
     .Bl2pUd.krjOGe {
         background: var(--Myred3) !important;
+    }
+    .aqvEkc {
+        color: var(--MyW) !important;
     }
 }
