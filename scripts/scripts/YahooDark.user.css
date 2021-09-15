@@ -13,7 +13,7 @@
     body {
         background-color: var(--MyB) !important;
     }
-    .stock {
+    .close-button-inner {
         display: none !important;
     }
     * {
@@ -110,7 +110,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    header,
+    /* header:not(.caas-header), */
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -143,5 +143,8 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    #module-article>div {
+        background-color: var(--Mygray3) !important;
     }
 }
