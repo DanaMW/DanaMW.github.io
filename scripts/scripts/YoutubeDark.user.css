@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.44
+@version      0.0.45
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -639,6 +639,7 @@ domain("studio.youtube.com") {
     ytd-two-column-browse-results-renderer.style-scope {
         background-color: hsla(0, 87%, 12%, 0.4) !important;
     }
+    ytd-compact-movie-renderer:hover,
     ytd-compact-video-renderer:hover {
         background-color: hsla(0, 100%, 25%, 0.4) !important;
     }
