@@ -2,7 +2,7 @@
 @name         Yahoo News
 @namespace    http://danamw.github.io/scripts/scripts/YahooDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YahooDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -111,7 +111,7 @@
         background-color: transparent !important;
     }
     /* header:not(.caas-header), */
-    .stock_navbar {
+    #ybar-inner-wrap {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
@@ -144,6 +144,7 @@
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+    ._yb_12951,
     #module-article>div {
         background-color: var(--Mygray3) !important;
     }
