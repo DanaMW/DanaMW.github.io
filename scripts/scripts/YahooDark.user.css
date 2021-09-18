@@ -2,7 +2,7 @@
 @name         Yahoo News
 @namespace    http://danamw.github.io/scripts/scripts/YahooDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YahooDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -12,6 +12,9 @@
 url-prefix("https://login.yahoo.com/"),
 url-prefix("https://mail.yahoo.com/"),
 url-prefix("https://data.mail.yahoo.com/") {
+    .main-content,
+    .login-footer,
+    #login-body,
     .Bgc\(\$bg-body\),
     [id*="footer"],
     html,
@@ -62,7 +65,12 @@ url-prefix("https://data.mail.yahoo.com/") {
     strong {
         color: var(--MyW) !important;
     }
-    button {
+    .main-menu-item,
+    .li-personalinfo,
+    .li-security,
+    .li-activity,
+    .li-preferences,
+    button:not(.pure-button) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -77,6 +85,12 @@ url-prefix("https://data.mail.yahoo.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .main-menu-item:hover,
+    .li-personalinfo:hover,
+    .li-security:hover,
+    .li-activity:hover,
+    .li-preferences:hover,
+    .selected,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -94,6 +108,11 @@ url-prefix("https://data.mail.yahoo.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .main-menu-item:active,
+    .li-personalinfo:active,
+    .li-security:active,
+    .li-activity:active,
+    .li-preferences:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -116,15 +135,23 @@ url-prefix("https://data.mail.yahoo.com/") {
         background-color: transparent !important;
     }
     /* header:not(.caas-header), */
+    .tdevice-item-holder:hover,
+    .mbr-desktop-hd,
     #ybar-inner-wrap {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    .notice-holder {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    /* .pure-g, */
+    .yns-notifications:hover,
+    .mc-secondary-ctas,
+    .mc-card-row,
+    .delete-session-msg,
+    .remove-feedback,
+    .login-box {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -149,11 +176,29 @@ url-prefix("https://data.mail.yahoo.com/") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+    #notifDropdownContainer,
+    ._yb_1qocr,
+    #ybarMailMessages,
+    #ybarMailPreview,
+    .side-bar,
+    .sidebar-container,
     ._yb_12951,
     #module-article>div {
         background-color: var(--Mygray3) !important;
     }
     #YDC-Col1 {
         background-color: var(--Mygray2) !important;
+    }
+    .bottom-cta.bottom-sticky,
+    .mbr-login-hd {
+        background-color: transparent !important;
+    }
+    .separator {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    .separator {
+        color: var(--Mygreen1) !important;
+        background-color: var(--Mygreen1) !important;
     }
 }
