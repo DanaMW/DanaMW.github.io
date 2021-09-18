@@ -2,7 +2,7 @@
 @name         Yahoo News
 @namespace    http://danamw.github.io/scripts/scripts/YahooDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YahooDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -12,6 +12,7 @@
 url-prefix("https://login.yahoo.com/"),
 url-prefix("https://mail.yahoo.com/"),
 url-prefix("https://data.mail.yahoo.com/") {
+    .Bgc\(\$bg-body\),
     [id*="footer"],
     html,
     body {
@@ -151,5 +152,8 @@ url-prefix("https://data.mail.yahoo.com/") {
     ._yb_12951,
     #module-article>div {
         background-color: var(--Mygray3) !important;
+    }
+    #YDC-Col1 {
+        background-color: var(--Mygray2) !important;
     }
 }
