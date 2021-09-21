@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.0.96
+@version      0.0.97
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -20,6 +20,7 @@ domain("cdninstagram.com") {
     .js.logged-in.client-root {
         background-color: var(--MyB) !important;
     }
+    ._6zPK7.PS7Gk,
     div[class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"],
     div[class="           wpHm3          Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                        O1flK  fm1AK    "],
     .DCpAF,
@@ -210,6 +211,7 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class="                     Igw0E   rBNOH           CcYR1  ybXk5    _4EzTm                                                                                                              "],
     div[class="_4Kbb_ _54f4m"],
     div[class*="pV7Qt"][class*="tHaIX"][class*="Igw0E"][class*="rBNOH"][class*="YBx95"][class*="_4EzTm"][class*="XfCBB"][class*="nGS-Y"],
     div[role="presentation"],
