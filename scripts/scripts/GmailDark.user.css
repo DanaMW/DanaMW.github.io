@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.25
+@version      0.1.26
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -850,7 +850,7 @@ url-prefix("https://chat.google.com/") {
     div[role="button"]:not(.zDiulc):not(.HxMcae):not(.lr):not([aria-label*="side panel"]):not(.uq),
     a[aria-label="More Google apps"],
     a.gb_c,
-    button:not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search Mail"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not([aria-label="Search mail"]):not(.OB):not(.SV):not(.OB):not(.Cy),
+    button:not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search Mail"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not([aria-label="Search all conversations"]):not(.OB):not(.SV):not(.OB):not(.Cy),
     select,
     tr.To,
     .gb_fa,
@@ -913,7 +913,7 @@ url-prefix("https://chat.google.com/") {
     div[role="button"]:not(.zDiulc):not(.HxMcae):not(.lr):not([aria-label*="side panel"]):not(.uq):hover,
     a[aria-label="More Google apps"]:hover,
     a.gb_c:hover,
-    button:not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search Mail"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not([aria-label="Search mail"]):not(.OB):not(.SV):not(.OB):not(.Cy):hover,
+    button:not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search all conversations"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not([aria-label="Search mail"]):not(.OB):not(.SV):not(.OB):not(.Cy):hover,
     select:hover,
     tr.To:hover,
     .gb_fa:hover,
@@ -969,7 +969,7 @@ url-prefix("https://chat.google.com/") {
     div[role="button"]:hover:not(.zDiulc):not(.HxMcae):not(.lr):not([aria-label*="side panel"]):not(.uq),
     a[aria-label="More Google apps"]:hover,
     a.gb_c:hover,
-    button:hover:not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search Mail"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not(.SV):not(.OB):not(.Cy),
+    button:hover:not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search all conversations"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not(.SV):not(.OB):not(.Cy),
     select:hover,
     tr.To:hover,
     .gb_fa:hover,
@@ -1056,7 +1056,7 @@ url-prefix("https://chat.google.com/") {
     div[role="button"]:not(.zDiulc):not(.HxMcae):not(.lr):not([aria-label*="side panel"]):not(.uq):active,
     a[aria-label="More Google apps"]:active,
     a.gb_c:active,
-    button:not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search Mail"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not([aria-label="Search mail"]):not(.OB):not(.SV):not(.OB):not(.Cy):active,
+    button:not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search all conversations"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not([aria-label="Search mail"]):not(.OB):not(.SV):not(.OB):not(.Cy):active,
     select:active,
     tr.To:active,
     .gb_fa:active,
