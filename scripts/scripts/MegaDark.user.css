@@ -2,13 +2,15 @@
 @name         Mega Dark
 @namespace    http://danamw.github.io/scripts/scripts/MegaDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MegaDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("mega.nz") {
+    #help2-main,
+    .bottom-menu.body,
     .grid-scrolling-table,
     html,
     body {
@@ -77,6 +79,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .device-select.link:hover,
+    .device-selector,
     .top-menu-item:hover,
     .dropdown-item:hover,
     button:hover {
@@ -124,10 +128,15 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    .device-selector-top,
+    .d-section-container,
+    .main-content-pad {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .sidebar-menu-slider.directory,
+    .sidebar-device-container,
+    .sidebar-menu-container.fixed,
     .fm-left-panel {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
@@ -159,6 +168,7 @@
     .ui-selected {
         background-color: var(--Mygray1) !important;
     }
+    .device-container-hover,
     .top-menu-popup,
     .dropdown {
         background-color: var(--Mygray3) !important;
@@ -180,5 +190,9 @@
     }
     .storage {
         background-color: var(--Myred3) !important;
+    }
+    .dropdown.account.js-dropdown-account,
+    .dropdown.js-dropdown-notification {
+        background-color: transparent !important;
     }
 }
