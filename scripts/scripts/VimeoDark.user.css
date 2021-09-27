@@ -2,7 +2,7 @@
 @name         Vimeo Dark
 @namespace    http://danamw.github.io/scripts/scripts/VimeoDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/VimeoDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -45,6 +45,7 @@
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    ul.topnav_menu_desktop_main,
     div#topnav_menu_avatar.topnav_menu_avatar {
         background: transparent !important;
     }
@@ -66,6 +67,7 @@
     section[class*="CoverVideo"] {
         background-color: var(--MyX1) !important;
     }
+    span.hero-play-btn__button,
     .sc-gGCbJM.hKGEcF,
     ._2sGTA a,
     a[class*="UploadButton"],
@@ -77,7 +79,7 @@
     .sc-hokXgN.VLsCC,
     ._3jCKf.-kEHD.sc-hEsumM.kAHuFd,
     input[type="submit"],
-    [role="menuitem"],
+    [role="menuitem"]:not(.topnav_desktop_menu_items_dropdown_item--multilevel),
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -93,6 +95,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    span.hero-play-btn__button:hover,
     .sc-cqPOvA.kNAFhW:hover,
     .sc-gGCbJM.hKGEcF:hover,
     .sc-FQuPU.eRrfat:hover,
@@ -106,7 +109,7 @@
     .sc-hokXgN.VLsCC:hover,
     ._3jCKf.-kEHD.sc-hEsumM.kAHuFd:hover,
     input[type="submit"]:hover,
-    [role="menuitem"]:hover,
+    [role="menuitem"]:hover:not(.topnav_desktop_menu_items_dropdown_item--multilevel),
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -124,6 +127,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    span.hero-play-btn__button:active,
     .sc-gGCbJM.hKGEcF:active,
     ._2sGTA a:active,
     a[class*="UploadButton"]:active,
@@ -133,7 +137,7 @@
     .sc-hokXgN.VLsCC:active,
     ._3jCKf.-kEHD.sc-hEsumM.kAHuFd:active,
     input[type="submit"]:active,
-    [role="menuitem"]:active,
+    [role="menuitem"]:active:not(.topnav_desktop_menu_items_dropdown_item--multilevel),
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -162,11 +166,15 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    header,
+    header:not(.hero__title),
     #topnav_desktop {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .sc-jRhVzh,
+    .sc-bfYoXt,
+    #dialog-content,
+    .iris_card__details,
     .sc-dxZgTM,
     section[class*="UploadVideo__Container"],
     [role="menu"],
@@ -176,6 +184,13 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .sc-sPYgB:hover,
+    .sc-hcnlBt,
+    .sc-hcnlBt:hover,
+    .card_bottom,
+    .sc-dHmInP,
+    [class*="iris_"] [class*="videos-form__notification"],
+    #dialog-title,
     .sc-hBbWxd,
     ._3h0gA,
     div[class*="UploadPreviewModalContainer"],
@@ -187,6 +202,12 @@
     div[role="title"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
     }
     input {
         background-color: var(--Mygray3) !important;
@@ -209,5 +230,21 @@
     }
     .timecode .box {
         color: var(--MyW) !important;
+    }
+    [class*="TopNav__Dropdown"],
+    ul.row_elements {
+        background-color: var(--Mygray3) !important;
+    }
+    span[class*="Categories__Tag"] {
+        background-color: var(--MyX1) !important;
+    }
+    .iris_card__description::after {
+        background-color: var(--Myred1) !important;
+    }
+    .grid_module {
+        border-color: var(--Myred1) !important;
+    }
+    span.hero-play-btn__button:hover svg {
+        filter: invert(1) !important;
     }
 }
