@@ -2,7 +2,7 @@
 @name         Pinterest Dark
 @namespace    https://danamw.github.io/scripts/scripts/PinterestDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PinterestDark.user.css
-@version      0.0.18
+@version      0.0.19
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -223,5 +223,8 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
     svg.gUZ.pBj.U9O.kVc>path,
     svg.Hn_.gUZ.pBj.U9O.kVc>path {
         filter: invert(1) !important;
+    }
+    a.Wk9.xQ4.CCY.czT.ho-.kVc.DI9.BG7 {
+        background-color: var(--Myred1) !important;
     }
 }
