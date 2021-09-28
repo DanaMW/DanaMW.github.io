@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.1.2
+@version      0.1.3
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -154,6 +154,7 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-quote-detail.quoted-tweet.nbfc.br--14.padding-al.margin-b--8.position-rel.margin-tm.is-actionable {
         border: 1px solid var(--Mygray1) !important;
     }
+    p.nbfc.color-twitter-darker-gray,
     p {
         color: var(--MyW) !important;
     }
@@ -542,9 +543,6 @@ url-prefix("https://twitter.com/i/safety/") {
     header[class="js-compose-header compose-header"] {
         margin-right: 15px !important;
     }
-    /*
-    .column-header-links,
-    */
     div[role="button"]:not([style*="position: absolute"]),
     .Button.Button--primary.block.txt-size--18.txt-center,
     .js-dismiss,
@@ -601,9 +599,6 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-header-action:hover,
     .js-drawer-close:hover,
     .js-detail-view-inline-text:hover,
-    /*
-    .column-header-links:hover,
-    */
     .js-action-header-button:hover,
     .mdl-btn-media:hover,
     .new-tweets-bar:hover,
@@ -649,9 +644,6 @@ url-prefix("https://twitter.com/i/safety/") {
     .js-header-action:active,
     .js-drawer-close:active,
     .js-detail-view-inline-text:active,
-    /*
-    .column-header-links:active,
-    */
     .js-action-header-button:active,
     .mdl-btn-media:active,
     .new-tweets-bar:active,
@@ -728,7 +720,6 @@ url-prefix("https://twitter.com/i/safety/") {
         padding: 0 !important;
         margin: 0 !important;
         color: var(--MyW) !important;
-        /*text-align: center !important;*/
     }
     button.js-user-actions-menu.btn.btn-round.btn-on-dark,
     button.js-action-unfollow.action-text.unfollow-text {
@@ -776,13 +767,6 @@ url-prefix("https://twitter.com/i/safety/") {
         -moz-transform: skewY(7deg) !important;
         transform: skewY(7deg) !important;
     }
-    /*
-    .is-selected:hover,
-    .username:hover {
-        text-decoration: none !important;
-        color: var(--MyW) !important;
-    }
-    */
     .mdl-col-settings,
     .compose-remember-state,
     .compose,
@@ -939,12 +923,6 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     #calbody,
     .popover,
-    /*
-    .column-holder,
-    .column-panel,
-    .column-content,
-    .columnContent,
-    */
     .js-media-added .compose-media-bar-holder,
     .js-conversation-show-more.conversation-more.stream-item.is-actionable.txt-link.padding-v--10:hover,
     .Notification-content,
@@ -974,7 +952,6 @@ url-prefix("https://twitter.com/i/safety/") {
     .prf-actions {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-        /*background: -moz-linear-gradient(top, rgba(188, 50, 53, 1) 0%, rgba(153, 12, 14, 1) 34%, rgba(147, 29, 31, 1) 67%, rgba(79, 15, 16, 1) 100%) !important;*/
     }
     .js-detail-header,
     .js-column-header.js-action-header,
@@ -1156,7 +1133,6 @@ url-prefix("https://twitter.com/i/safety/") {
     }
     html.dark .Tooltip,
     .Tooltip {
-        /*margin: -13px 0 0 13px;*/
         border-radius: 5px;
         background: var(--MyX1) !important;
         border: 1px solid var(--MyW) !important;
@@ -1224,22 +1200,7 @@ url-prefix("https://twitter.com/i/safety/") {
     a.link-complex:hover {
         color: var(--TwitterRed) !important;
     }
-    /*
-    .tweetdeck-logo.height--24.width--26.color-transparent.txt-size--0 {
-        position: relative !important;
+    a[data-drawer="accountSettings"] {
+        margin-left: 0px !important;
     }
-    .tweetdeck-logo.height--24.width--26.color-transparent.txt-size--0 {
-        content: ' ';
-        background: something goes here.
-        height: 24px;
-        width: 26px;
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding-left: 24px !important;
-        padding-top: 26px !important;
-        opacity: 1;
-        filter: grayscale(0);
-    }
-    */
 }
