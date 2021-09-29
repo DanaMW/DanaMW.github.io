@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.27
+@version      0.1.28
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -669,16 +669,24 @@ url-prefix("https://chat.google.com/") {
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
     }
-    input[disabled=""],
     input[aria-label="Search all conversations"],
+    input[disabled=""],
     input[aria-label="Search mail"] {
         color: var(--Mytext) !important;
         background-color: var(--Mygray3) !important;
-        height: 25px !important;
+        height: 28px !important;
         margin-top: -3px !important;
         border: 2px solid var(--Myborder) !important;
         border-radius: 15px !important;
         text-align: center !important;
+    }
+    input#gs_taif50,
+    input[aria-label="Search all conversations"] {
+        margin-top: -22px !important;
+    }
+    input[aria-label="Search mail"] {
+        margin-top: -13px !important;
+        height: 28px !important;
     }
     div.KXUPI {
         border: 2px solid var(--Myborder) !important;
@@ -1501,12 +1509,6 @@ url-prefix("https://chat.google.com/") {
     table.gstl_50.gstt {
         margin-top: 10px !important;
         border-radius: 25px !important;
-    }
-    input#gs_taif50,
-    input[aria-label="Search all conversations"],
-    input[aria-label="Search mail"] {
-        margin-top: -13px !important;
-        height: 28px !important;
     }
     .zS.Uf,
     [role="menu"],
