@@ -2,14 +2,15 @@
 @name         HuffPostDark
 @namespace    http://danamw.github.io/scripts/scripts/HuffPostDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/HuffPostDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("huffpost.com") {
-    section.zone.zone--trending.zone--trending-special.js-cet-subunit,
+    #entry-header,
+    section.zone.zone--trending,
     html,
     body {
         background-color: var(--MyB) !important;
@@ -52,6 +53,7 @@
     small {
         color: var(--TwitterPink) !important;
     }
+    .dek,
     .card__description,
     h3,
     h4,
@@ -116,7 +118,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    header:not([class*="entry-header"]),
+    header:not([class*="entry"]),
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -149,5 +151,9 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    section,
+    .card {
+        border-color: var(--Myred1) !important;
     }
 }
