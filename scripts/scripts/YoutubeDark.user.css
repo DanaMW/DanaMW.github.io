@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.45
+@version      0.0.46
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -322,17 +322,24 @@ domain("studio.youtube.com") {
     #toggleButton {
         border-radius: 50% !important;
     }
-    .ytd-searchbox,
+    #center {
+        position: absolute !important;
+    }
+    /*
+    .ytd-searchbox#search,
     .style-scope.ytd-searchbox,
     #masthead-search-terms,
-    #search-input.ytd-searchbox-spt {
+    #search-input.ytd-searchbox-spt
+    */
+    #center {
+        position: absolute !important;
         width: var(--swidth) !important;
     }
-    yt-icon.style-scope.ytd-searchbox {
-        width: 50px !important;
-    }
+    /*
     form#masthead-search,
-    form#search-form {
+    form#search-form
+    */
+    #center {
         position: absolute !important;
         left: var(--smove);
     }
@@ -688,6 +695,7 @@ domain("studio.youtube.com") {
         background-color: transparent !important;
     }
     /* --------------------------REWORKING SEARCHBOX--------------------- */
+    /*
     button#search-icon-legacy {
         height: 35px !important;
         width: 35px !important;
@@ -695,6 +703,7 @@ domain("studio.youtube.com") {
         margin-top: -20px !important;
         margin-left: 5px !important;
     }
+    */
     #search-container.ytd-searchbox-spt {
         background-color: transparent !important;
         border-color: transparent !important;
@@ -705,7 +714,9 @@ domain("studio.youtube.com") {
         background-color: transparent !important;
         border-color: transparent !important;
         border: none !important;
-        margin-top: -20px !important;
+        /*
+        margin-top: -5px !important;
+        */
         box-shadow: none !important;
     }
     input,
