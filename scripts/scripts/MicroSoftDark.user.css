@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.51
+@version      0.0.53
 @description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -22,11 +22,7 @@ domain("account.live.com") {
         /* f-information epb-container epb-default-color */
         display: none !important;
     }
-    .download-wrap,
-    .identity {
-        color: var(--MyW) !important;
-        background-color: var(--Mygray3) !important;
-    }
+    #table2>div[data-grid="col-12"],
     #Footer,
     mee-drawer,
     nav#topNav.topNav,
@@ -35,6 +31,12 @@ domain("account.live.com") {
     .jumbotron {
         background-image: none !important;
         background-color: transparent !important;
+    }
+    #table2>div[data-grid="col-12"]>div[class*="c-table"],
+    .download-wrap,
+    .identity {
+        color: var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
     }
     .middle,
     #main-content-landing-react,
@@ -424,6 +426,7 @@ domain("account.live.com") {
         background: transparent !important;
         background-color: transparent !important;
     }
+    nav,
     #CenterRegion,
     .pi-page-bar,
     #pmg-global-header,
