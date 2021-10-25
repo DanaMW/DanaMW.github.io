@@ -2,7 +2,7 @@
 @name         Science Tech Daily Dark
 @namespace    http://danamw.github.io/scripts/scripts/ScienceTechDailyDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ScienceTechDailyDark.user.css
-@version      0.0.6
+@version      0.0.7
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -40,9 +40,13 @@
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    span.glossaryLink,
     em,
     h3 {
         color: var(--TwitterBlue) !important;
+    }
+    span.glossaryLink:hover {
+        color: var(--TwitterRed) !important;
     }
     a:hover {
         color: var(--MyW) !important;
@@ -160,5 +164,30 @@
     }
     .wp-caption-text {
         color: var(--Mygray2) !important;
+    }
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+        text-align: center !important;
+    }
+    #tt,
+    .cmtt,
+    [aria-label="Tooltip content"],
+    [role="tooltip"],
+    .tooltip {
+        background-color: var(--MyX1) !important;
+        opacity: 0.4;
+        color: var(--MyW) !important;
+        padding: 8px;
+        border-radius: 2px;
+        border: 1px solid var(--MyW) !important;
     }
 }
