@@ -2,13 +2,15 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("walmart.com") {
+@-moz-document domain("walmart.com"),
+domain("walmartimages.com") {
+    footer,
     html,
     body {
         background-color: var(--MyB) !important;
@@ -38,6 +40,9 @@
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    span {
+        color: var(--MyW) !important;
+    }
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
@@ -57,6 +62,9 @@
     strong {
         color: var(--MyW) !important;
     }
+    a.w_CQ.w_CT.w_CW.mt3,
+    a.w_CQ.w_CT,
+    html .b--black,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -72,6 +80,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.w_CQ.w_CT.w_CW.mt3:hover,
+    html .b--black:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -89,6 +99,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.w_CT:active,
+    html .b--black:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -110,7 +122,6 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -119,6 +130,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    header:not([class*="items"]),
     .stock {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
@@ -143,5 +155,32 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    .db:not([alt="Walmart"]),
+    .pa3,
+    .h-100.pa4.pa3-l.pa4-xl.flex.flex-column,
+    .w_CG,
+    .pb0,
+    .bg-white {
+        background-color: var(--Mygray3) !important;
+    }
+    .w_DQ.w_DN,
+    .w_A {
+        background-color: var(--Myred1) !important;
+        color: var(--MyW) !important;
+    }
+    .black {
+        color: var(--Myyellow1) !important;
+    }
+    .bg-dark-blue {
+        background-color: var(--Myred3) !important;
+    }
+    img[class="h-100"],
+    img[class*="bg-white"] {
+        filter: invert(.75)
+    }
+    img[class="h-100"]:hover,
+    img[class*="bg-white"]:hover {
+        filter: invert(.25)
     }
 }
