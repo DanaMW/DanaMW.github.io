@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.53
+@version      0.0.54
 @description  Microsoft Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -13,6 +13,7 @@ domain("account.microsoft.com"),
 domain("support.microsoft.com"),
 domain("answers.microsoft.com"),
 domain("account.live.com") {
+    div[id*="uhf-upgrade-banner"],
     div[id*="coreui-banner"],
     .ng-scope.survey-background,
     #c-uhf-nav-cta,
@@ -38,6 +39,7 @@ domain("account.live.com") {
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
     }
+    .supHomeAndLandingPageModuleThemeWrapper,
     .middle,
     #main-content-landing-react,
     div[id*="StoreLocations-HighlightHero"],
@@ -272,6 +274,7 @@ domain("account.live.com") {
     .mscom-accordion-item-image {
         background-image: none !important;
     }
+    a[class*="ExternalLink"][class*="Button"],
     .cat-links>a,
     .tags-links>a,
     span>.prevPage,
@@ -317,6 +320,7 @@ domain("account.live.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class*="ExternalLink"][class*="Button"]:hover,
     .cat-links>a:hover,
     .tags-links>a:hover,
     span>.prevPage:hover,
@@ -365,6 +369,7 @@ domain("account.live.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[class*="ExternalLink"][class*="Button"]:active,
     .cat-links>a:active,
     .tags-links>a:active,
     span>.prevPage:active,
@@ -411,7 +416,6 @@ domain("account.live.com") {
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-        /* color: #117722 */
     }
     .pi-page-bar,
     .auth-control,
@@ -426,7 +430,6 @@ domain("account.live.com") {
         background: transparent !important;
         background-color: transparent !important;
     }
-    nav,
     #CenterRegion,
     .pi-page-bar,
     #pmg-global-header,
@@ -580,9 +583,11 @@ domain("account.live.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    /*
     section[role="tabpanel"] picture>img {
         filter: invert(1) !important;
     }
+    */
     .thread-message:hover,
     #threadQuestion:hover {
         border: 2px solid var(--Myred1) !important;
@@ -595,5 +600,11 @@ domain("account.live.com") {
     a.twitter,
     a.linkedin {
         filter: invert(1) !important;
+    }
+    .m-sitebanner {
+        background-color: var(--Myred3) !important;
+    }
+    li.supHomepageIcon:hover {
+        box-shadow: 0 0 30px var(--Myred1) !important;
     }
 }
