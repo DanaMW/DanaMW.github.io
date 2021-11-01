@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.33
+@version      0.0.34
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -56,6 +56,9 @@ url-prefix("https://to-do.live.com/") {
     ._2-J2gmvd9CGTxM9nLTuPkt {
         background-color: var(--Myred1) !important;
     }
+    ._2pgPuiYVeGmoCVy7ItyRTi._3l1LPpECV0e33O0IU3JOWv,
+    .ms-FocusZone.css-155.ms-CommandBar.root-179,
+    div[role="menubar"],
     .hL2Nid7LIBIDzXPtab9dT,
     ._2BCZP_W9VLRv-NN3SC1nnS.fxwJwkd4_ngPI8kgzfk88._7fiIAr1gtfi5q48-tfia- {
         background: var(--Mygray3) !important;
@@ -73,11 +76,11 @@ url-prefix("https://to-do.live.com/") {
         background-color: var(--MyX4) !important;
     }
     /* LOOK AT ME */
+    ._3DZt_ue17vQd7KQk1Slj6D._10-cTshmCNPgyphrPvQIbV.o365sx-button,
     ._1zRzYBa3Ymm8oRb7igyJMT._177lsrBTpZRGEjUSCd-G5O.vSSK79jcl7wRxs0frlrQI,
     .m_YdpO5_33Q22e4K9wQQN.o365sx-appName,
     ._2_T0Im6ostMX7PPGpbrJGj,
     ._1zxENq4RxEC9ydsMnwBcAu,
-    [role="menubar"],
     html[dir],
     div[aria-selected="true"],
     div[tabindex="0"]:not([aria-selected="false"]),
@@ -206,6 +209,7 @@ url-prefix("https://to-do.live.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    ._1T52orUcm8Tx8YGTEn_hnM,
     ._38q9kfVlcNA62oQUTbgvLT._2atHZl-IhpN84h24Mt1JCU,
     ._3GhkIhRt0r3Gs9Hr1CMJOt,
     ._28ithXDZzMqSN0YAG2rCVn,
@@ -237,7 +241,6 @@ url-prefix("https://to-do.live.com/") {
     a[target="_blank"]:not([class^="ms-Button"]):not([button]):not([class^="_2nuO6UZprDTWqhUqw7gX1l"]):hover,
     a:hover {
         color: var(--Myred1) !important;
-        text-shadow: 1px -1px 0 var(--MyB) !important;
     }
     p {
         color: var(--MyW) !important;
@@ -307,7 +310,6 @@ url-prefix("https://to-do.live.com/") {
     .ms-Panel-main {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-        /* background-color: var(--Mygray3) !important; */
         color: var(--Mytext) !important;
         border: 1px solid var(--Myborder) !important;
     }
@@ -498,6 +500,7 @@ url-prefix("https://to-do.live.com/") {
         background-color: var(--MyX1) !important;
     }
     /* Days Past */
+    ._1CeAIHzID37KPlA8YSGw_o,
     ._1gN-hBAX4-oQBZrlooxAzS._1eVi3K5CaiP-HwnRkAj2C- {
         background-color: var(--Mygray3) !important;
     }
