@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.37
+@version     0.0.38
 @description Mozilla UserChrome File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -73,6 +73,7 @@ body {
 }
 
 #tabbrowser-tabs {
+    height: 35px !important;
     background: var(--Mygray3) !important;
 }
 
