@@ -77,6 +77,11 @@ body {
     background: var(--Mygray3) !important;
 }
 
+.tab-icon-image,
+.tab-text.tab-label {
+    margin-top: -5px !important;
+}
+
 notification.animated[value="Protocol Registration: web+mastodon"] {
     display: none !important;
 }
