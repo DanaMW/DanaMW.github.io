@@ -2,7 +2,7 @@
 @name         Roseburg KPIC Dark
 @namespace    http://danamw.github.io/scripts/scripts/RoseburgKPICDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RoseburgKPICDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,7 +13,7 @@
     body {
         background-color: var(--MyB) !important;
     }
-    .stock {
+    .native {
         display: none !important;
     }
     * {
@@ -121,6 +121,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    div[class*="sidebarLayout-module_"],
     [class*="twitterLayout-module"],
     [class*="brandLayout"] {
         background-color: var(--Mygray1) !important;
