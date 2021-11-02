@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.52
+@version      0.0.53
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -196,6 +196,7 @@ domain("docs.google.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .ge-Ei-If.ge-Ci-Zb-If,
     .md-virtual-repeat-scroller,
     [class*="layout-align"][aria-label="Dialpad"]:not([layout-align="start start"]),
     .block-container,
@@ -208,7 +209,9 @@ domain("docs.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .ge-Gi-ic.ge-Hi-ke,
+    .ge-Ei-hc.ge-Df-ke,
+    .ge-Fi-ke,
+    div.ge-Gi-ic.ge-Hi-ke,
     [class="banner"],
     div[class="layout-align-start-center layout-row YYoZ8c-VeKiLd"],
     .did-display,
