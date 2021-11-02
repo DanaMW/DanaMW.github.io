@@ -2,7 +2,7 @@
 @name         Live Science Dark
 @namespace    http://danamw.github.io/scripts/scripts/LiveScienceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/LiveScienceDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -46,6 +46,7 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    li,
     h1 {
         color: var(--TwitterBlue) !important;
     }
@@ -124,7 +125,7 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    div[class*="trending"],
+    nav,
     .wrapper {
         background-image: none !important;
         background-color: transparent !important;
@@ -139,6 +140,8 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class*="popular-box"],
+    .author-block,
     .most-popular-item:hover,
     .separator-heading {
         background-color: var(--Myred3) !important;
