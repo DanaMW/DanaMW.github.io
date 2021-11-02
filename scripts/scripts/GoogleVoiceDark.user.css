@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.51
+@version      0.0.52
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -20,9 +20,6 @@ domain("docs.google.com") {
     div[class="layout-align-center-stretch layout-column flex-nogrow B3EWm-WTKh3d"],
     gv-contact-list,
     .layout-column.aKQtkf-tJHJj,
-    /*
-    [class*="layout-align"][aria-label="Dialpad"]:not([layout-align="start start"]),
-    */
     gv-message-entry,
     gv-message-entry div,
     gv-message-list-header,
@@ -73,6 +70,8 @@ domain("docs.google.com") {
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .phone-number-details,
+    .secondary-text,
     .dOUild-Od0oM,
     ng-transclude,
     gv-thread-item-detail,
@@ -92,6 +91,7 @@ domain("docs.google.com") {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    .primary-text,
     div[class="GHQeBe-qdm4Zd gmat-subhead-1"],
     .grey-900,
     .call-as-label,
@@ -208,9 +208,6 @@ domain("docs.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    /*
-    .container,
-    */
     .ge-Gi-ic.ge-Hi-ke,
     [class="banner"],
     div[class="layout-align-start-center layout-row YYoZ8c-VeKiLd"],
