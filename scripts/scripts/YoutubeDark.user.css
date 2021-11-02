@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.46
+@version      0.0.47
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -190,6 +190,7 @@ domain("studio.youtube.com") {
         color: var(--MyW) !important;
         height: 50 !important;
     }
+    ytd-thumbnail-overlay-endorsement-renderer,
     .ytd-rich-item-renderer:hover,
     #details:hover,
     .ytcp-paper-tooltip-placeholder {
@@ -214,11 +215,6 @@ domain("studio.youtube.com") {
     }
     #chips-wrapper {
         display: none !important;
-        /*
-        background: none !important;
-        border: none !important;
-        opacity: 0;
-        */
     }
     iron-selector,
     #ink {
@@ -325,20 +321,10 @@ domain("studio.youtube.com") {
     #center {
         position: absolute !important;
     }
-    /*
-    .ytd-searchbox#search,
-    .style-scope.ytd-searchbox,
-    #masthead-search-terms,
-    #search-input.ytd-searchbox-spt
-    */
     #center {
         position: absolute !important;
         width: var(--swidth) !important;
     }
-    /*
-    form#masthead-search,
-    form#search-form
-    */
     #center {
         position: absolute !important;
         left: var(--smove);
@@ -695,15 +681,6 @@ domain("studio.youtube.com") {
         background-color: transparent !important;
     }
     /* --------------------------REWORKING SEARCHBOX--------------------- */
-    /*
-    button#search-icon-legacy {
-        height: 35px !important;
-        width: 35px !important;
-        border-radius: 50% !important;
-        margin-top: -20px !important;
-        margin-left: 5px !important;
-    }
-    */
     #search-container.ytd-searchbox-spt {
         background-color: transparent !important;
         border-color: transparent !important;
@@ -714,9 +691,6 @@ domain("studio.youtube.com") {
         background-color: transparent !important;
         border-color: transparent !important;
         border: none !important;
-        /*
-        margin-top: -5px !important;
-        */
         box-shadow: none !important;
     }
     input,
@@ -731,7 +705,6 @@ domain("studio.youtube.com") {
         text-align: center !important;
         border-radius: 25px !important;
         border: 2px solid var(--MyB) !important;
-        /*width: 750px !important;*/
     }
     ytd-guide-entry-renderer {
         border-radius: 25px !important;
@@ -925,20 +898,4 @@ domain("studio.youtube.com") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-    ytd-destination-button-renderer
-    /*
-    textarea {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-        text-align: center !important;
-    }
-    */
 }
