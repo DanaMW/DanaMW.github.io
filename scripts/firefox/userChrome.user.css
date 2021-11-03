@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.38
+@version     0.0.39
 @description Mozilla UserChrome File
 @author      Dana Meli
 @homepageURL https://danamw.github.io
@@ -73,14 +73,19 @@ body {
 }
 
 #tabbrowser-tabs {
+    /*
     height: 35px !important;
+    */
     background: var(--Mygray3) !important;
 }
 
+
+/*
 .tab-icon-image,
 .tab-text.tab-label {
     margin-top: -5px !important;
 }
+*/
 
 notification.animated[value="Protocol Registration: web+mastodon"] {
     display: none !important;
