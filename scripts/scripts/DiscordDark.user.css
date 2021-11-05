@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.89
+@version      0.0.90
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -115,15 +115,6 @@
     div[class*="nameUnreadText"][class*="name"][class*="overflowEllipsis"] {
         color: var(--Mygreen1) !important;
     }
-    /*
-    button[class^="button"][class*="button"],
-    div[class*="button"],
-    button[class*="iconButtonDefault"],
-    svg[class*="iconInactive"],
-    #app-mount div[class^="chat"] div[class*="titlewraper"] .channel-mute-button {
-        opacity: 1;
-    }
-    */
     div[class*="messages"],
     div[class*="scroller"][class*="systemPad"][class*="messages"],
     div[class^="chatContent"],
@@ -700,9 +691,11 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    /*
     span[class*="expandedFolderBackground"] {
         background-color: var(--MyX1) !important;
     }
+    */
     div[class*="footer"],
     div[class*="menu"],
     div[class*="resultsGroup"],
@@ -716,11 +709,10 @@
         background-color: var(--MyX1) !important;
         border: 1px solid var(--MyW) !important;
     }
-    /*
-    div[class*="container-"],
-    */
     h2 div[class*="children"],
-    div[class*="background"],
+    div[class*="card"],
+    li[class*="feature"],
+    li[class*="tier"],
     div[class*="grid-"],
     div[class*="item"]:hover,
     #app-mount * div[class*="userPopout"],
