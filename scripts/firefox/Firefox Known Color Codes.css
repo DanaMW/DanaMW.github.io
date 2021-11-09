@@ -1,4 +1,7 @@
 root {
+    --Progress-bar-color: rgb(255, 0, 0);
+    --scrollbar-color: rgb(255, 0, 0) rgb(76, 0, 0);
+    --panel-border-radius: 15px;
     --card-outline-color: rgb(255, 0, 0) !important;
     --in-content-border-focus: rgb(255, 0, 0) !important;
     --primary-background: rgb(25, 25, 25) !important;
@@ -156,8 +159,8 @@ root {
     --button-bgcolor: rgb(43, 42, 51);
     --button-hover-bgcolor: rgb(82, 82, 94);
     --button-active-bgcolor: rgb(91, 91, 102);
-    --button-primary-bgcolor: rgb(0, 221, 255);
-    --button-primary-hover-bgcolor: rgb(128, 235, 255);
+    --button-primary-bgcolor: rgb(255, 0, 0) !important;
+    --button-primary-hover-bgcolor: rgb(255, 0, 0) !important;
     --button-primary-active-bgcolor: rgb(170, 242, 255);
     --button-primary-color: rgb(43, 42, 51);
     --error-text-color: rgb(255, 154, 162);
