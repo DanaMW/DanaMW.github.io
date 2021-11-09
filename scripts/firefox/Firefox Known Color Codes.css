@@ -1,4 +1,50 @@
+/* ==UserStyle==
+@name         Colors
+@namespace    http://danamw.github.io/scripts/firefox/Firefox Known Color Codes.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/firefox/Firefox Known Color Codes.css
+@description  My Variable Colors For My Scripts
+@version      0.0.2
+@author       Dana Meli
+@homepageURL  https://danamw.github.io
+==/UserStyle== */
+
 root {
+    --TwitterBlue: hsl(203, 89%, 53%) !important;
+    --TwitterRed: hsl(341, 75%, 51%) !important;
+    --TwitterPink: hsl(340, 75%, 36%) !important;
+    --MyB: rgb(0, 0, 0);
+    --MyW: rgb(255, 255, 255);
+    --Myback: rgb(25, 25, 25);
+    --Mytext: rgb(229, 229, 229);
+    --Myred1: rgb(255, 0, 0);
+    --Myred2: rgb(153, 0, 0);
+    --Myred3: rgb(76, 0, 0);
+    --Mypurple1: rgb(255, 0, 255);
+    --Mypurple2: rgb(153, 0, 153);
+    --Mypurple3: rgb(76, 0, 76);
+    --Mygreen1: rgb(0, 255, 0);
+    --Mygreen2: rgb(0, 153, 0);
+    --Mygreen3: rgb(0, 76, 0);
+    --Myblue1: rgb(0, 0, 255);
+    --Myblue2: rgb(0, 0, 153);
+    --Myblue3: rgb(0, 0, 76);
+    --Mygray1: rgb(127, 127, 127);
+    --Mygray2: rgb(76, 76, 76);
+    --Mygray3: rgb(38, 38, 38);
+    --Myyellow1: rgb(255, 255, 0);
+    --Myyellow3: rgb(153, 153, 0);
+    --Myyellow2: rgb(76, 76, 0);
+    --Myeditback: rgb(38, 38, 38);
+    --Mydialog: rgb(63, 63, 63);
+    --Myborder: rgb(153, 153, 153);
+    --MyX1: rgba(255, 0, 0, 0.4);
+    --MyX2: rgba(0, 255, 0, 0.4);
+    --MyX3: rgba(0, 0, 255, 0.4);
+    --MyX4: rgba(89, 89, 89, 0.4);
+    --MyX5: rgba(255, 0, 255, 0.4);
+    --MyX6: rgba(255, 255, 0, 0.4);
+    --MyXB: rgba(0, 0, 0, 0.4);
+    --MyXW: rgba(255, 255, 255, 0.4);
     --Progress-bar-color: rgb(255, 0, 0);
     --scrollbar-color: rgb(255, 0, 0) rgb(76, 0, 0);
     --panel-border-radius: 15px;
