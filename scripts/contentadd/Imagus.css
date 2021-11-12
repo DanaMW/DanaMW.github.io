@@ -2,7 +2,7 @@
 
 @-moz-document url-prefix("moz-extension://abe2dc4b-7966-4c4f-b8b0-31b47df2b5f2/options.html"),
 url-prefix("moz-extension://c7c1c486-a9e0-42df-ae51-1710008a8d3a/options.html"),
-url-prefix("moz-extension://59482ab9-06be-4384-926f-c46dc83006dc/options.html") {
+url-prefix("moz-extension://ac0e87bb-1a08-4a2d-8f05-daff3692d0d1/options.html") {
      ::-moz-selection {
         background: rgb(255, 0, 0) !important;
     }

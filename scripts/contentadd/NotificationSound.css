@@ -2,7 +2,7 @@
 
 @-moz-document url-prefix("moz-extension://8b0f6d5c-f1aa-4b39-9c9a-fdbcdd6f50b7/content/options.html"),
 url-prefix("moz-extension://cbce1dd3-194b-4e2b-b9b2-d1ba9f5467ca/content/options.html"),
-url-prefix("moz-extension://38ef8766-096d-4025-8d61-8e1ea9ea4994/content/options.html") {
+url-prefix("moz-extension://0ee0ea5c-19b3-4618-9d10-e960ab1ca276/content/options.html") {
     footer {
         background: var(--Mygray3) !important;
         color: white;

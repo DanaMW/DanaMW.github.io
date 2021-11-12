@@ -2,7 +2,7 @@
 
 @-moz-document url("moz-extension://5cc26774-0176-4f6c-971d-c40928844caa/newTab.xhtml"),
 url("moz-extension://335ebeea-19ad-495d-a556-2fad3751e303/newTab.xhtml"),
-url("moz-extension://300cbd13-7634-484e-81ae-29683f2a28e0/newTab.xhtml") {
+url("moz-extension://478a607a-1da0-4981-a260-f7181f0c509d/newTab.xhtml") {
     body {
         background-color: hsl(0, 0%, 10%);
         --shadow-hover: rgb(255, 0, 0);
