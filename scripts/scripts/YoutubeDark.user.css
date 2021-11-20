@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.47
+@version      0.0.48
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -190,6 +190,7 @@ domain("studio.youtube.com") {
         color: var(--MyW) !important;
         height: 50 !important;
     }
+    ytd-thumbnail-overlay-bottom-panel-renderer,
     ytd-thumbnail-overlay-endorsement-renderer,
     .ytd-rich-item-renderer:hover,
     #details:hover,
