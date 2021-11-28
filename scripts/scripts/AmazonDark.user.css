@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.33
+@version      0.0.34
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -35,6 +35,7 @@
     br {
         color: var(--Mygray1) !important;
     }
+    .a-container,
     .a-row,
     #dp,
     .stores-page,
