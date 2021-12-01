@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -126,12 +126,16 @@ domain("walmartimages.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    .w_s.w_v.w-50.pb4.mb1,
+    .pv4.ph2,
+    .w_s.w_w,
+    #sign-in-form {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .bg-washed-blue.flex.flex-row.flex-nowrap.items-center.content-center.pa4,
     header:not([class*="items"]),
-    .stock {
+    .pv4.ph3 {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -182,5 +186,9 @@ domain("walmartimages.com") {
     img[class="h-100"]:hover,
     img[class*="bg-white"]:hover {
         filter: invert(.25)
+    }
+    .w_AZ,
+    .w_u {
+        background-color: var(--Myblue2) !important;
     }
 }
