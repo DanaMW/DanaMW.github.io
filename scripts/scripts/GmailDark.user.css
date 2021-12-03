@@ -16,7 +16,7 @@
 
 @-moz-document domain("mail.google.com"),
 domain("hangouts.google.com"),
-url-prefix("https://mail.google.com/mail/"),
+url-prefix("https://mail.google.com/"),
 url-prefix("https://accounts.google.com/"),
 url-prefix("https://apis.google.com/"),
 url-prefix("https://contacts.google.com/widget"),
@@ -500,6 +500,13 @@ url-prefix("https://chat.google.com/") {
     .hB,
     .f {
         filter: invert(1);
+    }
+    span.Yfed6d svg:hover {
+        filter: invert(0) !important;
+    }
+    div.gsrV1e svg,
+    [role="button"]:hover svg {
+        color: var(--MyW) !important;
     }
     .Ahnnze,
     div.ah.aiv.aJS,
