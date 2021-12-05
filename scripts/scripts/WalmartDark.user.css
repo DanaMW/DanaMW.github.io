@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -126,6 +126,8 @@ domain("walmartimages.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .w_1,
+    .w_DB.w_DF,
     .w_s.w_v.w-50.pb4.mb1,
     .pv4.ph2,
     .w_s.w_w,
@@ -188,8 +190,16 @@ domain("walmartimages.com") {
     img[class*="bg-white"]:hover {
         filter: invert(.25)
     }
+    .w_DB,
+    .w_DD,
     .w_AZ,
     .w_u {
-        background-color: var(--Myblue2) !important;
+        background-color: var(--Mygray3) !important;
+    }
+    .green {
+        color: var(--Mygreen1) !important;
+    }
+    [class*="gray"] {
+        color: var(--MyW) !important;
     }
 }
