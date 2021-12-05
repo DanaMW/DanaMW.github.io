@@ -2,7 +2,7 @@
 @name         Google Contacts Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleContactsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleContactsDark.user.css
-@version      0.0.33
+@version      0.0.34
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -35,6 +35,8 @@ url-prefix("https://maps.googleapis.com") {
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .ZdTvdf,
+    .HQw1re,
     .as9eHe,
     .gb_A.gb_z.gb_U.gb_7b.gb_B.gb_H,
     .gb_C.gb_v,
