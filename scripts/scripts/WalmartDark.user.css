@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -62,6 +62,7 @@ domain("walmartimages.com") {
     strong {
         color: var(--MyW) !important;
     }
+    a[href="/help"],
     a.w_CQ.w_CT.w_CW.mt3,
     a.w_CQ.w_CT,
     html .b--black,
@@ -80,6 +81,7 @@ domain("walmartimages.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[href="/help"]:hover,
     a.w_CQ.w_CT.w_CW.mt3:hover,
     html .b--black:hover,
     button:hover {
@@ -99,6 +101,7 @@ domain("walmartimages.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[href="/help"]:active,
     a.w_CT:active,
     html .b--black:active,
     button:active {
@@ -190,6 +193,7 @@ domain("walmartimages.com") {
     img[class*="bg-white"]:hover {
         filter: invert(.25)
     }
+    .w_DR,
     .w_DB,
     .w_DD,
     .w_AZ,
