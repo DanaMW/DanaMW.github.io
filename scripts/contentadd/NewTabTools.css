@@ -1,7 +1,7 @@
 /* new tab tools */
 
 @-moz-document url("moz-extension://5cc26774-0176-4f6c-971d-c40928844caa/newTab.xhtml"),
-url("moz-extension://335ebeea-19ad-495d-a556-2fad3751e303/newTab.xhtml"),
+url("moz-extension://aeca2122-be1b-42b8-8e37-13b6196b742c/newTab.xhtml"),
 url("moz-extension://478a607a-1da0-4981-a260-f7181f0c509d/newTab.xhtml") {
     body {
         background-color: hsl(0, 0%, 10%);

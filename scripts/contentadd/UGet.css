@@ -1,7 +1,7 @@
 /* uget */
 
 @-moz-document url-prefix("moz-extension://ee152554-a7ab-4223-bc4d-997986682d89/"),
-url-prefix("moz-extension://2a5d600f-5ba9-489a-95dc-c9c92b62a85b/"),
+url-prefix("moz-extension://6ef5035e-2b40-4e8b-8e9b-187e85c3422d/"),
 url-prefix("moz-extension://9ec527d7-0a86-4ff1-952c-9a5a32b9ec1f/") {
     panelmultiview[id="customizationui-widget-multiview"] {
         background-color: var(--Mygray3) !important;
