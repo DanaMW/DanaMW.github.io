@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.0
+@version      0.1.2
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -20,12 +20,11 @@ domain("cdninstagram.com") {
     .js.logged-in.client-root {
         background-color: var(--MyB) !important;
     }
-    div[class="ByB5K enqOc -iWfv  "],
+    div[class*="ByB5K"][class*="enqOc"][class*="-iWfv"],
     ._6zPK7.PS7Gk,
-    div[class*="DPiy6"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"],
-    div[class="           wpHm3          Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                        O1flK  fm1AK    "],
+    div[class*="wpHm3"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="O1flK"][class*="fm1AK"],
     .DCpAF,
-    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm          qD5Mv                                                                                                    "] section[class="bR_3v  "],
+    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="qD5Mv"] section[class="bR_3v  "],
     ._8UZ6e {
         display: none !important;
     }
@@ -63,7 +62,7 @@ domain("cdninstagram.com") {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
-    div[class="_7UhW9      x-6xq   MMzan  KV-D4          uL8Hv     l4b0S    "],
+    div[class*="_7UhW9"][class*="x-6xq"][class*="MMzan"][class*="KV-D4"][class*="uL8Hv"][class*="l4b0S"],
     .Nm9Fw,
     h1 {
         color: var(--TwitterBlue) !important;
@@ -76,7 +75,8 @@ domain("cdninstagram.com") {
     small {
         color: var(--TwitterPink) !important;
     }
-    div[class="                     Igw0E   rBNOH        eGOV_     ybXk5    _4EzTm                                                                                                               rOtsg ZUqME"],
+    .ZyFrc,
+    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="rOtsg"][class*="ZUqME"],
     div[class="  _6FEQj CMoMH   RQUXn _8_yLp  "] {
         background-color: var(--MyX1) !important;
     }
@@ -213,6 +213,8 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class*="DPiy6"][class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"],
+    [class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"]>[class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="L-sTb"][class*="HcJZg"],
     div[class*="qF0y9"][class*="Igw0E"][class*="rBNOH"][class*="CcYR1"][class*="ybXk5"][class*="_4EzTm"],
     div[class="_4Kbb_ _54f4m"],
     div[class*="pV7Qt"][class*="tHaIX"][class*="Igw0E"][class*="rBNOH"][class*="YBx95"][class*="_4EzTm"][class*="XfCBB"][class*="nGS-Y"],
@@ -366,7 +368,9 @@ domain("cdninstagram.com") {
      :link:hover {
         color: var(--Myred1) !important;
     }
+    /*
     div[class="pV7Qt  _6Rvw2      DPiy6          Igw0E   rBNOH        eGOV_         _4EzTm                                                                                   XfCBB            g6RW6               "],
+    */
     ._41KYi.LQtnO,
     label,
     textarea {
@@ -461,4 +465,24 @@ domain("cdninstagram.com") {
     div[class="v1Nh3 kIKUG  _bz0w"]:hover {
         box-shadow: 0px 0px 10px var(--Myred1) !important;
     }
+    /*
+    .oNO81 {
+        position: relative !important;
+    }
+    .oNO81 {
+        position: absolute !important;
+        left: 0px !important;
+    }
+    .uueGX,
+    [class*="frMpI"][class*="-sxBV"],
+    [class*="DPiy6"][class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"] {
+        position: relative !important;
+    }
+    .uueGX,
+    [class*="frMpI"][class*="-sxBV"],
+    [class*="DPiy6"][class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"] {
+        position: absolute !important;
+        right: 0px !important;
+    }
+    */
 }
