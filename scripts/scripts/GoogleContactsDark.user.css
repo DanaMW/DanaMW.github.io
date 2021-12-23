@@ -2,7 +2,7 @@
 @name         Google Contacts Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleContactsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleContactsDark.user.css
-@version      0.0.34
+@version      0.0.35
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -35,6 +35,7 @@ url-prefix("https://maps.googleapis.com") {
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .BUKp6c.TMOHoc.w6Uk4b,
     .ZdTvdf,
     .HQw1re,
     .as9eHe,
@@ -202,7 +203,6 @@ url-prefix("https://maps.googleapis.com") {
     .jqJLq:hover .CAX6Sd {
         color: var(--MyW) !important;
     }
-    .PWsB5e,
     .e2txse,
     .W81Qsb {
         background-color: var(--Mygray2) !important;
@@ -222,6 +222,7 @@ url-prefix("https://maps.googleapis.com") {
     .RANAid {
         filter: invert(1)
     }
+    .PWsB5e,
     div[aria-label="Google apps"],
     .gb_J.gb_A,
     .gb_J.gb_B,
@@ -267,6 +268,7 @@ url-prefix("https://maps.googleapis.com") {
         border: 2px solid var(--Myborder) !important;
         border-radius: 15px !important;
     }
+    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  dlP5vf eZjKfd"],
     .BPX1ed.jrhe5d {
         background-color: var(--Mygray2) !important;
     }
@@ -316,11 +318,15 @@ url-prefix("https://maps.googleapis.com") {
     svg:hover {
         filter: invert(1) !important;
     }
+    a.AuCDse.kTeh9L,
     div[class="E6Tb7b iMwYAb"]>span#c392.PDfZbf[role="button"] {
         background-image: none !important;
         background-color: transparent !important;
     }
     span#c392.PDfZbf[role="button"] {
         background: transparent !important;
+    }
+    a.AuCDse.kTeh9L:hover {
+        background-color: var(--MyX1) !important;
     }
 }
