@@ -2,18 +2,20 @@
 @name         Broadcastify Dark
 @namespace    http://danamw.github.io/scripts/scripts/BroadcastifyDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BroadcastifyDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("broadcastify.com") {
+@-moz-document domain("broadcastify.com"),
+url-prefix("https://www.broadcastify.com/*/") {
     html,
     body {
         background-color: var(--MyB) !important;
     }
-    .stock {
+    img[src="https://s.broadcastify.com/sm/Broadcastify_470x60_5c.jpg"],
+    .alert.alert-info.text-center {
         display: none !important;
     }
     * {
@@ -57,6 +59,7 @@
     strong {
         color: var(--MyW) !important;
     }
+    #\33 4902,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -72,6 +75,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    #\33 4902:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -89,6 +93,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    #\33 4902:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -106,20 +111,21 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    .btable td {
         background-image: none !important;
         background-color: transparent !important;
     }
-    header,
+    #header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    .card-body {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    #headerSpacer,
+    .card-header {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -143,5 +149,12 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    .contentBox {
+        background-color: var(--Mygray3) !important;
+    }
+    .btable td,
+    .c.m {
+        background-color: var(--Mygray2) !important;
     }
 }
