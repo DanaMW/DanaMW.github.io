@@ -7,7 +7,7 @@
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 @preprocessor default
-@var range smove "Slide Search Bar"[10, 0, 75, 1, "vw"]
+@var range smove "Slide Search Bar"[10, 7, 75, 1, "vw"]
 @var range swidth "Resize search input"[750, 100, 1000, 1, "px"]
 ==/UserStyle== */
 
