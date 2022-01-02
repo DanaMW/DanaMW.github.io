@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.91
+@version      0.0.92
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -212,6 +212,10 @@
         border: 1px solid var(--Myred2) !important;
         padding: 3px !important;
         margin-left: 15px !important;
+    }
+    time[id*="message-timestamp"] {
+        color: var(--MyW) !important;
+        font-weight: bold;
     }
     div[class*="metadata"] {
         color: var(--MyW) !important;
@@ -432,13 +436,19 @@
     div[class*="inputWrapper"][class*="vertical"][class*="flex"][class*="directionColumn"] {
         border: 1px solid var(--Myblue2) !important;
     }
-    li>div[class*="mentioned"],
     .actions div.action.join,
     .actions div.action.create {
         background-color: var(--MyX1) !important;
     }
     li>div[class*="mentioned"] {
+        background-color: var(--MyX6) !important;
+    }
+    li>div[class*="mentioned"]:hover {
         background-color: var(--Myyellow3) !important;
+    }
+    li>div[class*="mentioned"]::before {
+        background-color: var(--Myyellow1) !important;
+        width: 4px !important;
     }
     .form-inner,
     .create-guild-container.deprecated {
