@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.6
+@version      0.1.7
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -155,7 +155,10 @@ domain("cdninstagram.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
-    .pbgfb {
+    /*
+    .pbgfb
+    */
+    [class=" cTBqC"] {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         background-size: 1904px 80px !important;
@@ -367,9 +370,6 @@ domain("cdninstagram.com") {
      :link:hover {
         color: var(--Myred1) !important;
     }
-    /*
-    div[class="pV7Qt  _6Rvw2      DPiy6          Igw0E   rBNOH        eGOV_         _4EzTm                                                                                   XfCBB            g6RW6               "],
-    */
     ._41KYi.LQtnO,
     label,
     textarea {
