@@ -2,7 +2,7 @@
 @name         GreasyFork Dark
 @namespace    https://danamw.github.io/scripts/scripts/GreasyForkDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GreasyForkDark.user.css
-@version      0.0.7
+@version      0.0.8
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -101,6 +101,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    #additional-info,
     .PanelInfo.PanelCategories,
     .FilterMenu,
     section.text-content,
@@ -113,6 +114,7 @@
         background-color: var(--MyB) !important;
         border-color: var(--Myred1) !important;
     }
+    #script-info,
     .MeBox,
     p.notice,
     li a:hover,
