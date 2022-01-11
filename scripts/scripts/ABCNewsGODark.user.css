@@ -2,7 +2,7 @@
 @name         ABCNewsGODark
 @namespace    http://danamw.github.io/scripts/scripts/ABCNewsGODark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ABCNewsGODark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -42,14 +42,13 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
-    h1 {
+    h1,
+    h2 {
         color: var(--TwitterBlue) !important;
     }
-    h2 {
-        color: var(--TwitterRed) !important;
-    }
+    [class*="Byline"],
     small {
-        color: var(--TwitterPink) !important;
+        color: var(--MyW) !important;
     }
     h3,
     h4,
@@ -110,12 +109,12 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    header,
+    nav,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    .Article {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
