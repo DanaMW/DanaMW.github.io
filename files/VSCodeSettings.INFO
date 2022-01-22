@@ -42,10 +42,9 @@
         "javascriptreact",
         "jquery"
     ],
-    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "powershell.powerShellDefaultVersion": "PowerShell (x64)",
     "git.path": "D:\\bin\\git\\bin\\git.exe",
-    "git.defaultCloneDirectory": "D:\\Development\\GitHub\\",
+    "git.defaultCloneDirectory": "D:\\Development\\github\\",
     "zenMode.hideStatusBar": false,
     "files.autoGuessEncoding": true,
     "files.insertFinalNewline": true,
@@ -229,7 +228,10 @@
         "firefox.executable",
         "firefox.profile",
         "firefox.profileDir",
-        "firefox.port"
+        "firefox.port",
+        "vscode_custom_css.staging_dir",
+        "projectManager.vscode.baseFolders",
+        "projectManager.git.baseFolders"
     ],
     "editor.formatOnSave": true,
     "editor.smoothScrolling": true,
@@ -239,8 +241,7 @@
     "workbench.editor.highlightModifiedTabs": true,
     "powershell.buttons.showPanelMovementButtons": true,
     "projectManager.git.baseFolders": [
-        "D:\\Development\\GitHub",
-        "D:\\bin"
+        "D:\\Development\\GitHub"
     ],
     "powershell.codeFormatting.autoCorrectAliases": true,
     "powershell.codeFormatting.trimWhitespaceAroundPipe": true,
@@ -255,11 +256,15 @@
     "typescript.locale": "en",
     "editor.glyphMargin": false,
     "vscode_custom_css.staging_dir": "C:\\Users\\dana\\.vscode\\aacss",
-    "firefox.profile": "sqm4k96k.dev-edition-default",
-    "firefox.profileDir": "C:\\Users\\dana\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\",
+    "firefox.profile": "gwy4nqp8.dev-edition-default",
     "firefox.port": 6080,
     "firefox.keepProfileChanges": true,
     "terminal.integrated.cwd": "D:\\bin",
     "svgviewer.showzoominout": true,
-    "terminal.integrated.tabs.enabled": true
+    "window.zoomLevel": 1,
+    "terminal.integrated.tabs.enabled": true,
+    "git.confirmSync": false,
+    "firefox.profileDir": "C:\\Users\\dana\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\gwy4nqp8.dev-edition-default",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.untitled.hint": "hidden"
 }
