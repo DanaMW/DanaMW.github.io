@@ -2,7 +2,7 @@
 @name         Google Translate Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleTranslateDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleTranslateDark.user.css
-@version      0.0.14
+@version      0.0.15
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -77,6 +77,7 @@
     .gt-cd-cl {
         background-color: var(--MyX1) !important;
     }
+    .Llmcnf,
     .gt-baf-back,
     .language_list_item,
     li[role="menuitem"]:hover a {
@@ -154,6 +155,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .KjuTac,
     .Dwvecf,
     .gb_rc,
     div[role="menu"] {
@@ -227,6 +229,9 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    .qSb8Pe.RCaXn.KKjvXb,
+    .qSb8Pe:hover,
+    .Bcbxbe:hover,
     .gb_Kc {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -249,5 +254,14 @@
     .ordo2.RCaXn.KKjvXb,
     .ySES5:hover {
         background-color: var(--Myred1) !important;
+    }
+    .vSUSRc {
+        background: var(--Mygray2) !important;
+    }
+    svg>path {
+        filter: invert(1) !important;
+    }
+    i {
+        color: var(--Myred1) !important;
     }
 }
