@@ -2,7 +2,7 @@
 @name         Google Translate Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleTranslateDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleTranslateDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -106,6 +106,7 @@
     .gb_6d.gb_Ae.gb_ee.gb_de {
         border: none !important;
     }
+    span.MtFg0:hover,
     a[aria-label="More Google apps"]:hover,
     .gb_d:hover,
     .gb_uc,
@@ -155,11 +156,17 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .zpzJBc,
     .KjuTac,
     .Dwvecf,
     .gb_rc,
     div[role="menu"] {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+    .zWtKC,
+    .zpzJBc {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
     #spelling-correction,
     .gt-score-dot {
@@ -247,9 +254,12 @@
     .TcXXXb {
         color: var(--TwitterBlue) !important;
     }
+    .FwR7Pc,
+    .PG9puc,
     .ordo2:hover,
     .ySES5 {
         background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
     }
     .ordo2.RCaXn.KKjvXb,
     .ySES5:hover {
@@ -263,5 +273,8 @@
     }
     i {
         color: var(--Myred1) !important;
+    }
+    .GQpbTd {
+        background-color: var(--Mygray2) !important;
     }
 }
