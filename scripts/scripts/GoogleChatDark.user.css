@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.32
+@version      0.0.33
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -12,6 +12,7 @@
 
 @-moz-document domain("chat.google.com"),
 url-prefix("https://mail.google.com/chat/"),
+url-prefix("https://mail.google.com/"),
 url-prefix("https://tasks.google.com/") {
     .tsUmnc,
     .byY7Yb,
@@ -77,6 +78,7 @@ url-prefix("https://tasks.google.com/") {
     small {
         color: var(--TwitterPink) !important;
     }
+    [role=button] .FuN4Dd.NMPajd,
     div[class="af6rLc  w63zXd"]>.FuN4Dd.NMPajd,
     span[role="listitem"],
     .wmFscd,
@@ -106,6 +108,7 @@ url-prefix("https://tasks.google.com/") {
     a[role="button"]:hover {
         filter: invert(0) !important;
     }
+    [role=button] .FuN4Dd.NMPajd:hover,
     div[class="af6rLc  w63zXd"]>.FuN4Dd.NMPajd:hover,
     .wmFscd[aria-selected="true"],
     .wmFscd:hover,
@@ -172,6 +175,7 @@ url-prefix("https://tasks.google.com/") {
         appearance: none;
         display: initial !important;
     }
+    [role=button] .FuN4Dd.NMPajd:active,
     .dJ9vNe,
     .dJ9vNe.DbQnIe,
     form[role="search"],
@@ -206,6 +210,8 @@ url-prefix("https://tasks.google.com/") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [role=dialog],
+    .gyDYrb,
     .wAf7Pd.Z5tRwf,
     [role="alertdialog"],
     div[class="XganBc "],
@@ -345,5 +351,8 @@ url-prefix("https://tasks.google.com/") {
     }
     .tNBef.ZFkohe {
         color: var(--Myyellow1) !important;
+    }
+    .ItO8Dd {
+        background-color: var(--Mygreen1) !important;
     }
 }
