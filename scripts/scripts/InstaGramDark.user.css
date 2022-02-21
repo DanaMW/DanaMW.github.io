@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.10
+@version      0.1.11
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -213,7 +213,7 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    [class="_8Rm4L bLWKA  vboSt  _6E_wP ccgHY  GZkEI"],
+    [class*="_8Rm4L"][class*="bLWKA"][class*="vboSt"][class*="_6E_wP"][class*="ccgHY"][class*="GZkEI"],
     [class*="DPiy6"][class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"],
     [class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"]>[class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="L-sTb"][class*="HcJZg"],
     div[class*="qF0y9"][class*="Igw0E"][class*="rBNOH"][class*="CcYR1"][class*="ybXk5"][class*="_4EzTm"],
