@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.33
+@version      0.0.34
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -249,6 +249,10 @@ url-prefix("https://tasks.google.com/") {
     input[aria-label="Search in chat and rooms"] {
         height: 25px !important;
         margin-top: 10px !important;
+    }
+    /* HERE IS THE STUFF   */
+    input[aria-label="Find people, spaces, and messages"] {
+        margin-top: -10px !important;
     }
     .brC-ays,
     .tooltip {
