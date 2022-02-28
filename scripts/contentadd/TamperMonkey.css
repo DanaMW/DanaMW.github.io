@@ -1,6 +1,6 @@
 /* TamperMonkey */
 
-@-moz-document url-prefix("moz-extension://bd107089-2f75-4216-8cdc-9af04edb9c31/options.html"),
+@-moz-document url-prefix("moz-extension://25e8d6b5-9ba8-46d1-9a0b-f578cb9fe6cd/options.html"),
 url-prefix("moz-extension://5f7df380-eb51-4cb0-94cf-3ccc3447b3f2/options.html"),
 url-prefix("moz-extension://b6c4870e-0a85-4db0-9b10-e3b43945516b/options.html") {
     * {
