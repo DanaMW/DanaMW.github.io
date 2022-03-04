@@ -2,7 +2,7 @@
 @name         CNN Dark
 @namespace    https://danamw.github.io/scripts/scripts/CnnDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CnnDark.user.css
-@version      0.0.23
+@version      0.0.24
 @description  Some CNN Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -126,6 +126,7 @@
     #nav__plain-header {
         background-color: transparent !important;
     }
+    .cn__title,
     nav>ul>li,
     nav.sibling.sibling--next,
     nav.sibling.sibling--previous,
@@ -147,6 +148,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .cn__title:hover,
     nav>ul>li:hover,
     header,
     nav.sibling.sibling--next:hover,
@@ -172,6 +174,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .cn__title:active,
     nav>ul>li:active,
     nav.sibling.sibling--next:active,
     nav.sibling.sibling--previous:active,
