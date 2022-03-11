@@ -2,7 +2,7 @@
 @name         Business Insider Dark
 @namespace    http://danamw.github.io/scripts/scripts/BusinessInsiderDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BusinessInsiderDark.user.css
-@version      0.0.12
+@version      0.0.13
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -53,6 +53,7 @@
     .graviton {
         text-align: center !important;
     }
+    h2.asset-header,
     h1,
     h2.header-underline {
         color: var(--TwitterBlue) !important;
@@ -197,5 +198,12 @@
     }
     span[class="price-section__absolute-value"] {
         color: var(--Mytext) !important;
+    }
+    span[class*="price-section"]::after {
+        color: var(--MyW) !important;
+    }
+    nav>span>a {
+        border-color: var(--Mygreen1) !important;
+        border-width: 2px !important;
     }
 }
