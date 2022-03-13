@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.41
+@version      0.2.42
 @author       Dana Meli
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -21,11 +21,11 @@ url-prefix("https://accounts.google.com/"),
 url-prefix("https://plus.google.com/"),
 url-prefix("https://policies.google.com/"),
 url-prefix("https://photos.google.com/"),
-url-prefix("https://maps.google.com/"),
 url-prefix("https://myaccount.google.com/"),
 url-prefix("https://gstatic.com/"),
 url-prefix("https://groups.google.com/"),
 url-prefix("https://myactivity.google.com/"),
+url-prefix("https://maps.google.com/"),
 url-prefix("https://support.google.com/") {
     .B6Rt6d.zcLWac.eejsDc,
     .tkcine,
@@ -44,6 +44,9 @@ url-prefix("https://support.google.com/") {
     body {
         background-color: var(--MyB) !important;
     }
+    /*
+    url-prefix("https://maps.google.com/"),
+    */
     .jOYx5b,
     .sfibbbc,
     .SSBXXc {
@@ -239,7 +242,10 @@ url-prefix("https://support.google.com/") {
     .Mza7yc,
     .UVgjof,
     div[role="main"]:not([class="s7iwrf gMPiLc  Kdcijb"]) {
+        background-color: var(--Myred3) !important;
+        /*
         background-color: hsla(0, 87%, 12%, 0.8) !important;
+        */
     }
     .s5Xfw,
     .WUrS5.gsrt,
@@ -507,7 +513,7 @@ url-prefix("https://support.google.com/") {
     .iv_msusc,
     g-fab,
     a#hdtb-tls,
-    button:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.widget-minimap-shim) {
+    button:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.widget-minimap-shim) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -522,6 +528,7 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .sbse:hover,
     span.NQyKp.Maj6Tc,
     span.NQyKp:hover,
     [role="menuitemradio"]:hover,
@@ -636,7 +643,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:hover,
     g-fab:hover,
     a#hdtb-tls:hover,
-    button:hover:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
+    button:hover:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -737,7 +744,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:active,
     g-fab:active,
     a#hdtb-tls:active,
-    button:active:not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
+    button:active:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -1296,6 +1303,8 @@ url-prefix("https://support.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    [class*="gstl"],
+    .DAdBuc,
     .wqSOMc,
     div[class*="runway"],
     .widget-layer.widget-layer-shown,
@@ -1326,6 +1335,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .section-cardbox,
     .IiNaue,
     #reveal-card>div,
     div[class="mrslJ ZjAUM  nkLxl rZGTQc DbuWcd"],
@@ -1772,9 +1782,11 @@ url-prefix("https://support.google.com/") {
     .YPzqGd {
         filter: invert(0) !important;
     }
-    /* .wDYxhc.NFQFxe.viOShc.LKPcQc,
-    .gyEfO {
-        padding: 10px !important;
+    #omnibox-container>div>div>div {
+        background-color: transparent !important;
+        background-image: none !important;
     }
-    */
+    #omnibox-container>div>div>div {
+        background-color: var(--Myred3) !important;
+    }
 }
