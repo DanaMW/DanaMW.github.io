@@ -2,7 +2,7 @@
 @name         Google Contacts Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleContactsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleContactsDark.user.css
-@version      0.0.35
+@version      0.0.36
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -55,6 +55,7 @@ url-prefix("https://maps.googleapis.com") {
     a:hover {
         color: var(--MyW) !important;
     }
+    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  j3urvf"],
     .JuD4Cc,
     div[class*="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  dlP5vf MxVEac"],
     .u3WVdc.jBmls {
@@ -296,6 +297,7 @@ url-prefix("https://maps.googleapis.com") {
     div[jscontroller="kxccwc"] div[class="HgcLF "] {
         background-color: var(--MyX1) !important;
     }
+    .b26zWc.kTeh9.nkZfFf:hover,
     .sdnrlc.g5h8P,
     .GCNTjc,
     .fbkutb {
@@ -329,4 +331,8 @@ url-prefix("https://maps.googleapis.com") {
     a.AuCDse.kTeh9L:hover {
         background-color: var(--MyX1) !important;
     }
+    .DOt6Qd {
+        color: var(--TwitterBlue) !important;
+    }
+    .SJ5KS {}
 }
