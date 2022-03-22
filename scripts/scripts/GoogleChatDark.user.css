@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.34
+@version      0.0.35
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -90,7 +90,7 @@ url-prefix("https://tasks.google.com/") {
     .IL9EXe.PL5Wwe.dHI9xe.rcdhB.WD3P7,
     div[role="button"]:not(.aT5-aOt-I.brC-dA-I),
     .Lw7GHd.snByac,
-    button:not(.gb_pf.gb_qf) {
+    button:not(.gb_pf.gb_qf):not([aria-label="Advanced search options"]):not([aria-label="Search mail"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         border: none !important;
@@ -125,7 +125,7 @@ url-prefix("https://tasks.google.com/") {
     [role="menuitem"]:hover,
     div[role="button"]:hover:not(.aT5-aOt-I.brC-dA-I),
     .Lw7GHd.snByac:hover,
-    button:hover {
+    button:hover:not(.gb_pf.gb_qf):not([aria-label="Advanced search options"]):not([aria-label="Search mail"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -152,7 +152,7 @@ url-prefix("https://tasks.google.com/") {
     div[role="button"]:active:not(.aT5-aOt-I.brC-dA-I),
     .Lw7GHd.snByac:active,
     .ajDw2c:active,
-    button:active {
+    button:active:not(.gb_pf.gb_qf):not([aria-label="Advanced search options"]):not([aria-label="Search mail"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
