@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.13
+@version      0.1.14
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -10,6 +10,8 @@
 
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
+    main[role="main"],
+    ._a015._a7cl,
     [class*="CZW53"],
     div[class="ByB5K enqOc "],
     div[class="_nuMd VZk0N "],
@@ -21,6 +23,9 @@ domain("cdninstagram.com") {
     .js.logged-in.client-root {
         background-color: var(--MyB) !important;
     }
+    ._9-t7,
+    [class="_9_68 _9_6a _9_6h _9_6p _9_6u _9_6_"],
+    [class=" _9-ts"],
     div[class*="ByB5K"][class*="enqOc"][class*="-iWfv"],
     ._6zPK7.PS7Gk,
     div[class*="wpHm3"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="O1flK"][class*="fm1AK"],
@@ -156,6 +161,10 @@ domain("cdninstagram.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    [class=" _a4tc"] {
+        background-color: transparent !important;
+    }
+    [class=" _a4tc"],
     [class=" cTBqC"] {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -168,6 +177,7 @@ domain("cdninstagram.com") {
         -webkit-transition: all linear 2s;
         transition: all ease-in-out 2s;
     }
+    ._9z_7,
     .XajnB,
     ._lz6s {
         -moz-appearance: none;
@@ -184,6 +194,7 @@ domain("cdninstagram.com") {
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
+        border: none !important;
     }
     div[class="zGtbP IPQK5 VideM "],
     .rQDP3,
@@ -214,6 +225,10 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class="_a1bn  _9-f2 _9-f5 _9-fd _9-fm  _9-fy _9-g8"],
+    [class="_9zjb _9zjc _9zjd"],
+    [class="_a1bn  _9-f2 _9-f5 _9-fg _9-fi _9-fm"],
+    [class=" _9-eq _a1bn  _9-f2 _9-f7 _9-fd _9-fm  _9-g5"],
     [class*="_8Rm4L"][class*="bLWKA"][class*="vboSt"][class*="_6E_wP"][class*="ccgHY"][class*="GZkEI"],
     [class*="DPiy6"][class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"],
     [class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"]>[class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="L-sTb"][class*="HcJZg"],
@@ -266,6 +281,9 @@ domain("cdninstagram.com") {
         -webkit-appearance: radio;
         appearance: radio;
     }
+    [class="_9zpb _9zpc  _9_qr _9_qt _9_a8 _9_aa"],
+    ._a04c,
+    ._a03x,
     div[class="zGtbP  "],
     div[class="_7zBYT tYjl_"],
     div[class="NP414  ccgHY  GZkEI"],
@@ -339,6 +357,7 @@ domain("cdninstagram.com") {
     .Szr5J.bMltT {
         z-index: 10;
     }
+    article:hover,
     ._8Rm4L.M9sTE.L_LMM.SgTZ1:hover {
         box-shadow: 0 0 30px var(--Myred1) !important;
     }
