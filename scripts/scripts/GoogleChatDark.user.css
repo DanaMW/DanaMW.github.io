@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.35
+@version      0.0.36
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,6 +13,7 @@
 @-moz-document domain("chat.google.com"),
 url-prefix("https://mail.google.com/chat/"),
 url-prefix("https://mail.google.com/"),
+url-prefix("https://meet.google.com/"),
 url-prefix("https://tasks.google.com/") {
     .tsUmnc,
     .byY7Yb,
@@ -210,6 +211,7 @@ url-prefix("https://tasks.google.com/") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .jSlHNc,
     [role=dialog],
     .gyDYrb,
     .wAf7Pd.Z5tRwf,
@@ -238,6 +240,7 @@ url-prefix("https://tasks.google.com/") {
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+    .AYGmkd,
     input.gb_gf,
     input {
         background-color: var(--Mygray3) !important;
@@ -358,5 +361,8 @@ url-prefix("https://tasks.google.com/") {
     }
     .ItO8Dd {
         background-color: var(--Mygreen1) !important;
+    }
+    .SwwApf.qkl0pe {
+        background: transparent !important;
     }
 }
