@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.53
+@version      0.0.54
 @description  YouTube Tweaks
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -501,6 +501,8 @@ domain("studio.youtube.com") {
     ytd-subscribe-button-renderer>paper-button,
     #avatar-btn,
     paper-button,
+    #search-icon-legacy,
+    [aria-label="Notifications"],
     button:not([aria-label="Search"]):not(.yt-icon-button),
     #button:not(.yt-icon-button) {
         -moz-appearance: none;
@@ -542,6 +544,7 @@ domain("studio.youtube.com") {
     paper-button:hover,
     #avatar-btn:hover,
     .sbsb_c.gsfs:hover,
+    [aria-label="Notifications"]:hover,
     button:hover:not([aria-label="Guide"]):not([aria-label="Search"]):not(.yt-icon-button),
     #button:hover:not([aria-label="Guide"]):not(.yt-icon-button) {
         -moz-appearance: none;
@@ -581,6 +584,7 @@ domain("studio.youtube.com") {
     paper-button:active,
     #avatar-btn:active,
     .sbsb_c.gsfs:active,
+    [aria-label="Notifications"]:active,
     button:active:not([aria-label="Guide"]):not([aria-label="Search"]):not(.yt-icon-button),
     #button:active:not([aria-label="Guide"]):not(.yt-icon-button) {
         -moz-appearance: none;
