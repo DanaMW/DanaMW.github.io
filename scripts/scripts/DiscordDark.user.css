@@ -2,7 +2,7 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.93
+@version      0.0.94
 @description  Dark Discord Style
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -420,6 +420,7 @@
         border-radius: 5px !important;
         text-align: center !important;
     }
+    /*
     .Select-value,
     #app-mount * div[class*="sidebar"] div[class*="header"]:nth-child(9),
     #app-mount * div[class*="sidebar"] div[class*="header"]:nth-child(1) {
@@ -427,6 +428,7 @@
         border-radius: 5px !important;
         text-align: center !important;
     }
+    */
     #app-mount * h4[class*="title"] {
         text-align: center !important;
     }
@@ -705,11 +707,6 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    /*
-    span[class*="expandedFolderBackground"] {
-        background-color: var(--MyX1) !important;
-    }
-    */
     div[class*="footer"],
     div[class*="menu"],
     div[class*="resultsGroup"],
@@ -894,4 +891,10 @@
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+    /*
+    div[class*="headerContent"][class*="primaryInfo"]>h1[class*="name"] {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+    */
 }
