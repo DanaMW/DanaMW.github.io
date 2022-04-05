@@ -562,7 +562,7 @@ tab {
 
 .tabbrowser-tab .tab-content[selected] {
     background-color: var(--Myred2) !important;
-    border-top: 1px solid var(--Mygreen1) !important;
+    border-top: 2px solid var(--Mygreen1) !important;
 }
 
 .tabbrowser-tab:hover .tab-content[selected] {
