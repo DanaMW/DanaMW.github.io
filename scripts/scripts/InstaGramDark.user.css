@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.15
+@version      0.1.16
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -207,10 +207,11 @@ domain("cdninstagram.com") {
     ._7zBYT {
         background-color: var(--Myred3) !important;
     }
-    .stock_navbar {
+    [class="_a1bn  _9-f2 _9-f5 _9-fd _9-fi _9-fm  _9-fx _9-g5"]:hover {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    ._9-rn._9-ro,
     div[class*="tHaIX"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"][class*="HcJZg"],
     ._9eogI.hfWwk,
     ._9gMUf,
@@ -225,6 +226,9 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    ._a3gq,
+    ._9-es._a1bn._9-f2._9-fd._9-fm,
+    [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _9-4g _a6hd"]:hover,
     [class="_a1bn  _9-f2 _9-f5 _9-fd _9-fm  _9-fy _9-g8"],
     [class="_9zjb _9zjc _9zjd"],
     [class="_a1bn  _9-f2 _9-f5 _9-fg _9-fi _9-fm"],
@@ -486,5 +490,8 @@ domain("cdninstagram.com") {
     [class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="YBx95"][class*="_4EzTm"][class*="XfCBB"][class*="g6RW6"] {
         background-color: var(--MyX1) !important;
         color: var(--MyB) !important;
+    }
+    ._9_68._9_6b._9_6i._9_6j._9_6t {
+        color: var(--MyW) !important;
     }
 }
