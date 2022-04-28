@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.37
+@version      0.0.38
 @description  Amazon Dark
 @author       Dana Meli
 @homepageURL  https://DanaMW.github.io
@@ -126,6 +126,7 @@
     .nav-search-scope.nav-sprite {
         background-image: none !important;
     }
+    td.prodDetAttrValue,
     .a-button-text,
     .nav-search-submit-text,
     .fresh-shoveler .as-title-block .a-color-base,
@@ -133,6 +134,9 @@
     span.description,
     .a-size-small {
         color: var(--MyW) !important;
+    }
+    [class*="tablemodule"] {
+        background-color: var(--Mygray3) !important;
     }
     a.nav-a,
     li[role="tab"],
@@ -169,6 +173,7 @@
     .wl-invite-button-contents:hover {
         filter: invert(0) !important;
     }
+    .a-declarative:hover,
     .s-suggestion.is-hovered,
     a.nav-a:hover,
     .a-link-normal.item:hover,
@@ -251,6 +256,7 @@
         background-image: none !important;
         background-color: var(--Mygray2) !important;
     }
+    tr:hover,
     div[class*="bxc-grid-overlay"] {
         background-color: var(--MyX1) !important;
     }
