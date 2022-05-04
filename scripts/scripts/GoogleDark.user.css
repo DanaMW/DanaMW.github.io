@@ -431,6 +431,7 @@ url-prefix("https://support.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    a.aTVMOe>.lY57Fd,
     span.NQyKp,
     .RunE3b,
     .esVihe,
@@ -528,6 +529,8 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class*="aTVMOe  qs41qe"]>.lY57Fd,
+    a.aTVMOe>.lY57Fd:hover,
     .sbse:hover,
     span.NQyKp.Maj6Tc,
     span.NQyKp:hover,
@@ -660,6 +663,7 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a>.lY57Fd:active,
     span.NQyKp:active,
     .RunE3b:active,
     .esVihe:active,
@@ -1303,6 +1307,7 @@ url-prefix("https://support.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    .utyhx,
     [class*="gstl"],
     .DAdBuc,
     .wqSOMc,
@@ -1798,5 +1803,11 @@ url-prefix("https://support.google.com/") {
     }
     .moredetailsareatitle {
         color: var(--TwitterBlue) !important;
+    }
+    .NDFFt {
+        background: var(--Myred3) !important;
+    }
+    .RSDz9d {
+        color: var(--MyW) !important;
     }
 }
