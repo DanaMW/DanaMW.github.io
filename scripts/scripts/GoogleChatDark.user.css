@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.37
+@version      0.0.38
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -14,7 +14,8 @@
 url-prefix("https://mail.google.com/chat/"),
 url-prefix("https://mail.google.com/"),
 url-prefix("https://meet.google.com/"),
-url-prefix("https://tasks.google.com/") {
+url-prefix("https://tasks.google.com/"),
+url-prefix("https://docs.google.com/") {
     .tsUmnc,
     .byY7Yb,
     .UDyRYe,
@@ -109,6 +110,7 @@ url-prefix("https://tasks.google.com/") {
     a[role="button"]:hover {
         filter: invert(0) !important;
     }
+    .jO7h3c:hover,
     [role=button] .FuN4Dd.NMPajd:hover,
     div[class="af6rLc  w63zXd"]>.FuN4Dd.NMPajd:hover,
     .wmFscd[aria-selected="true"],
@@ -201,6 +203,11 @@ url-prefix("https://tasks.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .qhOH9d,
+    .TNg8Ce,
+    .ndfHFb-CpWD9d-eKpHRd-bN97Pc,
+    .ndfHFb-XuHpsb-bN97Pc,
+    .uYzQZe,
     .pS5UB,
     .BFRaWe,
     .IsPLi.krjOGe,
@@ -211,6 +218,12 @@ url-prefix("https://tasks.google.com/") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class*="PV0kIb og1JP Uo8r7 GZNwRc"],
+    .kZyufc,
+    .ndfHFb-jyrRxf-tJHJj,
+    .iXlbzd.JcDdO,
+    .ndfHFb-rBfmuc-E2o6qc-tJHJj,
+    [class="g3VIld Wm6zM Up8vH Whe8ub hFEqNb J9Nfi iWO5td"],
     .jSlHNc,
     [role=dialog],
     .gyDYrb,
@@ -233,14 +246,19 @@ url-prefix("https://tasks.google.com/") {
         color: var(--Mygreen1) !important;
         text-align: center !important;
     }
+    .ZWZruf,
+    [class="fjSJOb XhFOdb pt4Wqc"] {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
     [role="textbox"],
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 1px !important;
-        /*
-        border: 1px solid var(--Myred1) !important;
-        */
+    }
+    .gtjro {
+        color: var(--MyW) !important;
     }
     .AYGmkd,
     input.gb_gf,
@@ -351,6 +369,8 @@ url-prefix("https://tasks.google.com/") {
         color: var(--MyX1) !important;
         border: 2px solid var(--MyW) !important;
     }
+    .w2HF5c,
+    .sxojMb,
     .a3I P {
         color: var(--MyW) !important;
     }
