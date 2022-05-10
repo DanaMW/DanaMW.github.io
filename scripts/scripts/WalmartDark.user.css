@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -10,6 +10,7 @@
 
 @-moz-document domain("walmart.com"),
 domain("walmartimages.com") {
+    .bg-dark-blue,
     footer,
     html,
     body {
@@ -40,9 +41,6 @@ domain("walmartimages.com") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-    span {
-        color: var(--MyW) !important;
-    }
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
@@ -62,11 +60,10 @@ domain("walmartimages.com") {
     strong {
         color: var(--MyW) !important;
     }
-    .w_Bu,
-    a[href="/help"],
-    a.w_CQ.w_CT.w_CW.mt3,
-    a.w_CQ.w_CT,
-    html .b--black,
+    span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"],
+    .flex.pa3.pa4-l.shadow-1.br3,
+    a.white.no-underline.highlight-focus-hover.ph2,
+    .w_AC.w_AF.w_AI,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -82,10 +79,14 @@ domain("walmartimages.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    .w_Bu:hover,
-    a[href="/help"]:hover,
-    a.w_CQ.w_CT.w_CW.mt3:hover,
-    html .b--black:hover,
+    span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:hover,
+    .flex.pa3.pa4-l.shadow-1.br3:hover,
+    a.white.no-underline.highlight-focus-hover.ph2:hover,
+    li.list:hover,
+    .w_AC.w_AF.w_AI:hover,
+    a.desktop-header-flyout-link:hover,
+    .pa4>a:hover,
+    .w_Cx.w_Cy,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -103,10 +104,11 @@ domain("walmartimages.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    .w_Bu:active,
-    a[href="/help"]:active,
-    a.w_CT:active,
-    html .b--black:active,
+    span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:active,
+    .flex.pa3.pa4-l.shadow-1.br3.bg-washed-blue:active,
+    a.white.no-underline.highlight-focus-hover.ph2:active,
+    li.list:active,
+    .w_AC.w_AF.w_AI:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -128,27 +130,24 @@ domain("walmartimages.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .w_AF,
-    .w_1,
-    .w_DB.w_DF,
-    .w_s.w_v.w-50.pb4.mb1,
-    .pv4.ph2,
-    .w_s.w_w,
-    #sign-in-form {
+    .w_h {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .w_Av,
-    .pv3.ph3.ph4-m,
-    .bg-washed-blue.flex.flex-row.flex-nowrap.items-center.content-center.pa4,
-    header:not([class*="items"]),
-    .pv4.ph3 {
+    h2.mb0.mt3.f5.lh-copy.dark-gray,
+    .black>.items-center,
+    .bg-washed-blue.items-center,
+    a[link-identifier="viewAllDepartment"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    h2.mb0.mt3.f5.lh-copy.dark-gray {
+        text-align: center !important;
     }
     textarea {
         background-color: var(--Mygray3) !important;
@@ -156,6 +155,10 @@ domain("walmartimages.com") {
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+    a[link-identifier="viewAllDepartment"] {
+        text-align: center !important;
+    }
+    select,
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -171,62 +174,57 @@ domain("walmartimages.com") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
-    .db:not([alt="Walmart"]),
-    .pa3,
-    .h-100.pa4.pa3-l.pa4-xl.flex.flex-column,
-    .w_CG,
-    .pb0,
+    * {
+        border-color: var(--Myred1) !important;
+    }
     .bg-white {
+        background: var(--Mygray3) !important;
+    }
+    .bg-washed-blue.list {
         background-color: var(--Mygray3) !important;
     }
-    .w_DQ.w_DN,
-    .w_A {
-        background-color: var(--Myred1) !important;
-        color: var(--MyW) !important;
-    }
-    .black {
-        color: var(--Myyellow1) !important;
-    }
-    .bg-dark-blue {
-        background-color: var(--Myred3) !important;
-    }
-    img[class="h-100"],
-    img[class*="bg-white"] {
-        filter: invert(.75)
-    }
-    img[class="h-100"]:hover,
-    img[class*="bg-white"]:hover {
-        filter: invert(.25)
-    }
-    .w_DR,
-    .w_DB,
-    .w_DD,
-    .w_AZ,
-    .w_u {
-        background-color: var(--Mygray3) !important;
-    }
-    .green {
-        color: var(--Mygreen1) !important;
-    }
-    [class*="gray"] {
-        color: var(--MyW) !important;
-    }
-    .w_CX {
-        background-color: var(--TwitterRed) !important;
-    }
-    .w_Gq {
-        background: var(--Myyellow3) !important;
-    }
-    .w_Gt {
-        background: var(--Myyellow1) !important;
-    }
-    .f2 {
-        color: var(--Myyellow1) !important;
-    }
-    .f-headline {
+    .w_DF.b.w_DH.w_DL,
+    .mid-gray {
         color: var(--TwitterBlue) !important;
     }
-    .w_Dh {
+    .mid-gray>div {
+        color: var(--MyW) !important;
+    }
+    .dark-gray {
+        color: var(--Mygray1) !important;
+    }
+    .green {
+        color: var(--Mygreen2) !important;
+    }
+    .ph4.pt4.pb2,
+    div[data-testid="account-flyout"] {
+        background-color: var(--Mygray3) !important;
+    }
+    #text {
+        color: var(--Myyellow1) !important;
+    }
+    .w_6,
+    .w_DF.ml.w_DH.w_DL {
+        color: var(--Myyellow1) !important;
+    }
+    [role="alert"],
+    .w_IZ {
         background-color: var(--MyX1) !important;
     }
+    .w_Da .w_Db {
+        color: var(--MyW) !important;
+    }
+    .w_Da.w_Dc .w_Db::after {
+        background-color: var(--Mygreen1) !important;
+    }
+    /*
+    .h-100:hover {
+        filter: invert(1) !important;
+        border-radius: 50% !important;
+    }
+    .h-100:active {
+        filter: invert(1) !important;
+        border-radius: 25% !important;
+    }
+    */
 }
