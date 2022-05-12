@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.21
+@version      0.0.22
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -144,6 +144,9 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.ms-Nav-link.link-100:hover,
+    a.ms-Nav-link.link-91,
+    a.ms-Nav-link.link-91:hover,
     #appLauncherTop,
     span[id*="header"]:hover,
     button#allAppsLink:hover,
@@ -270,6 +273,7 @@
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+    [class*="LeftNav-navContent"],
     div[class*="od-DetailsPane"],
     .od-FolderCoverTile,
     .InfoPaneSection--preview,
@@ -280,6 +284,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class*="groupHeader"],
     .od-Share,
     div[class*="ms-Callout"],
     .ms-Tooltip,
@@ -288,6 +293,10 @@
     [role="gridcell"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+    [class*="groupHeader"] {
+        text-align: center !important;
+        color: var(--Myyellow1) !important;
     }
     .od-QuotaBar-total {
         border-color: var(--Myred3) !important;
@@ -319,5 +328,15 @@
     }
     div[class*="ms-TextField"] {
         background-color: var(--Mygray3) !important;
+    }
+    g>rect {
+        background: var(--MyX1) !important;
+        color: var(--MyW) !important;
+    }
+    [class*="calloutMain"],
+    [class*="textCallout"],
+    text {
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
     }
 }
