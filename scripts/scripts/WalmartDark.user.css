@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.9
+@version      0.0.11
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -60,6 +60,7 @@ domain("walmartimages.com") {
     strong {
         color: var(--MyW) !important;
     }
+    .dib.relative>a,
     span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"],
     .flex.pa3.pa4-l.shadow-1.br3,
     a.white.no-underline.highlight-focus-hover.ph2,
@@ -79,6 +80,7 @@ domain("walmartimages.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .dib.relative>a:hover,
     span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:hover,
     .flex.pa3.pa4-l.shadow-1.br3:hover,
     a.white.no-underline.highlight-focus-hover.ph2:hover,
@@ -104,6 +106,7 @@ domain("walmartimages.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .dib.relative>a:active,
     span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:active,
     .flex.pa3.pa4-l.shadow-1.br3.bg-washed-blue:active,
     a.white.no-underline.highlight-focus-hover.ph2:active,
@@ -135,6 +138,8 @@ domain("walmartimages.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .w_AT,
+    [data-testid="sticky-buy-box"]>div>div,
     .w_h {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
@@ -166,16 +171,20 @@ domain("walmartimages.com") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+    .w_E2.w_E5.w_FB.absolute,
+    .w_E2.w_E8.w_FC.mr1.mt1.ph1,
     .tooltip {
         background-color: var(--MyX1) !important;
-        opacity: 0.4;
+        opacity: 0.7;
         color: var(--MyW) !important;
-        padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
     * {
         border-color: var(--Myred1) !important;
+    }
+    .black {
+        color: var(--MyW) !important;
     }
     .bg-white {
         background: var(--Mygray3) !important;
@@ -196,6 +205,8 @@ domain("walmartimages.com") {
     .green {
         color: var(--Mygreen2) !important;
     }
+    .b--near-white>div,
+    .bg-washed-blue:not(footer),
     .ph4.pt4.pb2,
     div[data-testid="account-flyout"] {
         background-color: var(--Mygray3) !important;
@@ -207,6 +218,7 @@ domain("walmartimages.com") {
     .w_DF.ml.w_DH.w_DL {
         color: var(--Myyellow1) !important;
     }
+    .w_E2.w_E8.w_FC.mr1.mt1.ph1,
     [role="alert"],
     .w_IZ {
         background-color: var(--MyX1) !important;
@@ -217,14 +229,9 @@ domain("walmartimages.com") {
     .w_Da.w_Dc .w_Db::after {
         background-color: var(--Mygreen1) !important;
     }
-    /*
-    .h-100:hover {
-        filter: invert(1) !important;
-        border-radius: 50% !important;
+    .w_E2.w_E8.w_FB.absolute {
+        background-color: var(--MyX3) !important;
+        color: var(--MyW) !important;
+        border: 1px solid var(--MyW) !important;
     }
-    .h-100:active {
-        filter: invert(1) !important;
-        border-radius: 25% !important;
-    }
-    */
 }
