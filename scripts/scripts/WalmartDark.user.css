@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.11
+@version      0.0.12
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -60,6 +60,9 @@ domain("walmartimages.com") {
     strong {
         color: var(--MyW) !important;
     }
+    a[aria-label="Previous Page"],
+    a[aria-label="Next Page"],
+    a[aria-label*="Go to Page"],
     .dib.relative>a,
     span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"],
     .flex.pa3.pa4-l.shadow-1.br3,
@@ -80,6 +83,12 @@ domain("walmartimages.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    label:hover,
+    a[aria-label="Previous Page"]:hover,
+    a[aria-label="Next Page"]:hover,
+    a[aria-label*="Go to Page"]:hover,
+    a[aria-current="page"],
+    .sans-serif.pa1.lh-copy.border-box.bg-white,
     .dib.relative>a:hover,
     span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:hover,
     .flex.pa3.pa4-l.shadow-1.br3:hover,
@@ -106,6 +115,11 @@ domain("walmartimages.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[aria-label="Previous Page"]:active,
+    a[aria-label="Next Page"]:active,
+    a[aria-label*="Go to Page"]:active,
+    a[aria-current="page"]:active,
+    .sans-serif.pa1.lh-copy.border-box.bg-white:active,
     .dib.relative>a:active,
     span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:active,
     .flex.pa3.pa4-l.shadow-1.br3.bg-washed-blue:active,
@@ -189,6 +203,8 @@ domain("walmartimages.com") {
     .bg-white {
         background: var(--Mygray3) !important;
     }
+    .w_Hm,
+    .w_Hg.w_Hh.w_Hi::before,
     .bg-washed-blue.list {
         background-color: var(--Mygray3) !important;
     }
@@ -218,17 +234,20 @@ domain("walmartimages.com") {
     .w_DF.ml.w_DH.w_DL {
         color: var(--Myyellow1) !important;
     }
+    .mr1.mt1.ph1,
     .w_E2.w_E8.w_FC.mr1.mt1.ph1,
     [role="alert"],
     .w_IZ {
         background-color: var(--MyX1) !important;
     }
+    .mr1.mt1.ph1,
     .w_Da .w_Db {
         color: var(--MyW) !important;
     }
     .w_Da.w_Dc .w_Db::after {
         background-color: var(--Mygreen1) !important;
     }
+    .w_E9.w_FF.w_FI.absolute,
     .w_E2.w_E8.w_FB.absolute {
         background-color: var(--MyX3) !important;
         color: var(--MyW) !important;
