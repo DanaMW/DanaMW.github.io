@@ -663,6 +663,8 @@ menuseparator,
     background-color: var(--Myred1) !important;
 }
 
+
+/*
 #urlbar[breakout],
 #urlbar[breakout][breakout-extend] {
     --urlbar-height: 28px !important;
@@ -685,6 +687,7 @@ menuseparator,
     box-shadow: 0 1px 4px rgba(0, 0, 0, .05) !important;
     animation: none !important;
 }
+*/
 
 #tabbrowser-arrowscrollbox {
     pointer-events: none
