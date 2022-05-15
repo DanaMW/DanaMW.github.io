@@ -323,7 +323,9 @@ menupopup>menu>menupopup {
     border-left: 1px solid var(--MyW) !important;
     left: 0% !important;
     right: 0% !important;
+    /*
     width: 55% !important;
+    */
 }
 
 
@@ -663,8 +665,6 @@ menuseparator,
     background-color: var(--Myred1) !important;
 }
 
-
-/*
 #urlbar[breakout],
 #urlbar[breakout][breakout-extend] {
     --urlbar-height: 28px !important;
@@ -687,7 +687,6 @@ menuseparator,
     box-shadow: 0 1px 4px rgba(0, 0, 0, .05) !important;
     animation: none !important;
 }
-*/
 
 #tabbrowser-arrowscrollbox {
     pointer-events: none
