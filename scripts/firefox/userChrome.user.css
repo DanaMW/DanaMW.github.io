@@ -73,19 +73,8 @@ body {
 }
 
 #tabbrowser-tabs {
-    /*
-    height: 35px !important;
-    */
     background: var(--Mygray3) !important;
 }
-
-
-/*
-.tab-icon-image,
-.tab-text.tab-label {
-    margin-top: -5px !important;
-}
-*/
 
 notification.animated[value="Protocol Registration: web+mastodon"] {
     display: none !important;
@@ -136,18 +125,6 @@ menu[label*="Save In"] {
     background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray2), var(--Mygray3)) !important;
     color: var(--Mygray1) !important;
 }
-
-
-/*
-#context-back:active:hover,
-#context-forward:active:hover,
-#context-stop:active:hover,
-#context-reload:active:hover,
-#context-bookmarkpage:hover {
-    background: -moz-linear-gradient(top, var(--Myred1), var(--Myred2), var(--Myred3)) !important;
-    color: var(--MyW) !important;
-}
-*/
 
 menu:hover,
 menuitem:hover,
@@ -288,9 +265,6 @@ menupopup>menu>menupopup {
     color: var(--MyW) !important;
 }
 
-
-/* #############  URLBAR ######################## */
-
 #urlbar-background,
 #urlbar {
     -moz-appearance: none !important;
@@ -323,13 +297,7 @@ menupopup>menu>menupopup {
     border-left: 1px solid var(--MyW) !important;
     left: 0% !important;
     right: 0% !important;
-    /*
-    width: 55% !important;
-    */
 }
-
-
-/* #############  URLBAR ######################## */
 
 #PopupAutoCompleteRichResult[selected=true],
 .autocomplete-richlistitem[selected=true],
@@ -363,9 +331,6 @@ arrowscrollbox {
     border: none !important;
 }
 
-
-/* New */
-
 menuseparator {
     appearance: none !important;
     border-top: 2px solid var(--Myred1) !important;
@@ -380,9 +345,6 @@ menubar {
     appearance: none !important;
     background: var(--Mygray3) !important;
 }
-
-
-/* End */
 
 .customizationmode-button,
 .toolbarbutton-1,
