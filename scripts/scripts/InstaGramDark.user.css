@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.17
+@version      0.1.18
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -91,6 +91,7 @@ domain("cdninstagram.com") {
     a._9VEo1 {
         width: 70px !important;
     }
+    [class="sqdOP yWX7d    y3zKF     "],
     a._9VEo1,
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "],
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"],
@@ -110,6 +111,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    [class="sqdOP yWX7d    y3zKF     "]:hover,
     ._9-4g:hover,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                        JI_ht                                                                      "] button[class="sqdOP yWX7d    y3zKF     "]:hover,
     a._9VEo1:hover,
@@ -135,6 +137,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    [class="sqdOP yWX7d    y3zKF     "]:active,
     a._9VEo1:active,
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:active,
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:active,
