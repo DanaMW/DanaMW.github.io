@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.18
+@version      0.1.19
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana Meli
@@ -10,6 +10,7 @@
 
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
+
     main[role="main"],
     ._a015._a7cl,
     [class*="CZW53"],
@@ -23,6 +24,7 @@ domain("cdninstagram.com") {
     .js.logged-in.client-root {
         background-color: var(--MyB) !important;
     }
+
     ._9-t7,
     [class="_9_68 _9_6a _9_6h _9_6p _9_6u _9_6_"],
     [class=" _9-ts"],
@@ -34,23 +36,29 @@ domain("cdninstagram.com") {
     ._8UZ6e {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     .VIsJD,
     h4,
     #verificationCodeDescription,
@@ -63,34 +71,42 @@ domain("cdninstagram.com") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a>span:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     div[class*="_7UhW9"][class*="x-6xq"][class*="MMzan"][class*="KV-D4"][class*="uL8Hv"][class*="l4b0S"],
     .Nm9Fw,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     time,
     h3,
     h2 {
         color: var(--TwitterRed) !important;
     }
+
     small {
         color: var(--TwitterPink) !important;
     }
+
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="rOtsg"][class*="ZUqME"],
     div[class="  _6FEQj CMoMH   RQUXn _8_yLp  "] {
         background-color: var(--MyX1) !important;
     }
+
     div[class="                     Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
         background-color: var(--MyX3) !important;
     }
+
     a._9VEo1 {
         width: 70px !important;
     }
+
     [class="sqdOP yWX7d    y3zKF     "],
     a._9VEo1,
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "],
@@ -111,6 +127,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     [class="sqdOP yWX7d    y3zKF     "]:hover,
     ._9-4g:hover,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                        JI_ht                                                                      "] button[class="sqdOP yWX7d    y3zKF     "]:hover,
@@ -137,6 +154,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     [class="sqdOP yWX7d    y3zKF     "]:active,
     a._9VEo1:active,
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:active,
@@ -159,15 +177,18 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
     div[class="       tHaIX              Igw0E     IwRSH      eGOV_         _4EzTm                                                                                   XfCBB             HcJZg              "],
     div[class="uo5MA  _2ciX tWgj8 XWrBI "] {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     [class=" _a4tc"] {
         background-color: transparent !important;
     }
+
     [class=" _a4tc"],
     [class=" cTBqC"] {
         background-color: var(--Myred3) !important;
@@ -181,6 +202,7 @@ domain("cdninstagram.com") {
         -webkit-transition: all linear 2s;
         transition: all ease-in-out 2s;
     }
+
     ._9z_7,
     .XajnB,
     ._lz6s {
@@ -200,6 +222,15 @@ domain("cdninstagram.com") {
         filter: brightness(75%) !important;
         border: none !important;
     }
+
+    /*
+    [class="vdqkn hijV1 pn134"],
+    */
+    [class*="vdqkn"] {
+        opacity: 0;
+    }
+
+    [class="zGtbP IPQK5 VideM opExi"],
     ._9-u6,
     div[class="zGtbP IPQK5 VideM "],
     .rQDP3,
@@ -212,10 +243,12 @@ domain("cdninstagram.com") {
     ._7zBYT {
         background-color: var(--Myred3) !important;
     }
+
     [class="_a1bn  _9-f2 _9-f5 _9-fd _9-fi _9-fm  _9-fx _9-g5"]:hover {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     ._9z_0,
     ._9-rn._9-ro,
     div[class*="tHaIX"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"][class*="HcJZg"],
@@ -232,6 +265,7 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     [class="_9-ej  _9-eq _a1bn  _9-f2 _9-f5 _9-ff _9-fm  _9-fx _9-g9"],
     ._a3gq,
     ._9-es._a1bn._9-f2._9-fd._9-fm,
@@ -268,6 +302,7 @@ domain("cdninstagram.com") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     ._01UL2,
     textarea {
         background-color: var(--Mygray3) !important;
@@ -275,6 +310,7 @@ domain("cdninstagram.com") {
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -282,16 +318,19 @@ domain("cdninstagram.com") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     section * input[type="checkbox"] {
         -moz-appearance: checkbox;
         -webkit-appearance: checkbox;
         appearance: checkbox;
     }
+
     section * input[type="radio"] {
         -moz-appearance: radio;
         -webkit-appearance: radio;
         appearance: radio;
     }
+
     [class="_9zpb _9zpc  _9_qr _9_qt _9_a8 _9_aa"],
     ._a04c,
     ._a03x,
@@ -301,22 +340,27 @@ domain("cdninstagram.com") {
     .leaflet-popup-tip {
         background-color: var(--Myred3) !important;
     }
+
     .f7Bj3,
     div[class="zGtbP  VideM"],
     div[class="AvhYw nLL4f"] {
         background-color: var(--Mygray3) !important;
     }
+
     header[class="vtbgv "] {
         border-top: 20px solid var(--Myred3) !important;
     }
+
     div[class*="_9GP1n"][class*="HlUSH"],
     div[class*="_9GP1n"] {
         background-color: transparent !important;
     }
+
     div[class*="_9GP1n"][class*="HlUSH"],
     div[class*="_9GP1n"] {
         border: none !important;
     }
+
     /*------------------All filter INVERTS----------------*/
     span[class="glyphsSpriteFriend_Follow u-__7"],
     div[class="FuWoR -wdIA     x7xX2 "],
@@ -326,29 +370,36 @@ domain("cdninstagram.com") {
     svg {
         filter: invert(1);
     }
+
     svg[aria-label="Unlike"] {
         filter: invert(0);
     }
+
     button svg path:hover,
     svg:hover {
         filter: invert(0.5);
     }
+
     /*--------------------------Main Article--------------*/
     a.FPmhX.notranslate.yrJyr {
         color: var(--Mygreen2) !important;
     }
+
     div[class="_7UhW9   xLCgt      MMzan  KV-D4        uL8Hv     l4b0S    "],
     .TqC_a {
         color: var(--MyW) !important;
         font-weight: bold !important;
     }
+
     .TqC_a:hover {
         color: var(--MyB) !important;
         font-weight: bold !important;
     }
+
     div[class="                     Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
         background-color: var(--Mygray3);
     }
+
     div[class="eo2As "],
     ._-1_m6,
     .NgKI_,
@@ -357,24 +408,30 @@ domain("cdninstagram.com") {
     .M9sTE {
         background-color: var(--Myred3);
     }
+
     ._0T_XJ.zRsZI::after,
     ._0T_XJ.zRsZI::before {
         background-image: none !important;
     }
+
     ._8Rm4L.M9sTE.L_LMM.SgTZ1 {
         background-color: var(--Myred3);
         border: 2px solid var(--Myborder);
     }
+
     .Szr5J.bMltT {
         z-index: 10;
     }
+
     article:hover,
     ._8Rm4L.M9sTE.L_LMM.SgTZ1:hover {
         box-shadow: 0 0 30px var(--Myred1) !important;
     }
+
     .mt3GC {
         border: 2px var(--Myred1) !important;
     }
+
     div[class="_7UhW9   xLCgt       qyrsm  _0PwGv       uL8Hv          fTMOG"],
     div[class="_7UhW9  PIoXz        qyrsm KV-D4        uL8Hv         "],
     .BcJ68,
@@ -382,24 +439,29 @@ domain("cdninstagram.com") {
     .FPmhX {
         color: var(--MyW) !important;
     }
+
     /*-------------------Main colors-----------------------*/
     .zV_Nj {
         color: var(--Myblue1);
     }
+
     .gElp9 a {
         color: var(--Mygreen1) !important;
     }
+
     a,
     p,
     p span,
     div a {
         color: var(--MyW) !important;
     }
+
     span[class="_3G4x7  l93RR"]:hover,
     a:hover,
-     :link:hover {
+    :link:hover {
         color: var(--Myred1) !important;
     }
+
     ._41KYi.LQtnO,
     label,
     textarea {
@@ -407,6 +469,7 @@ domain("cdninstagram.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     textarea,
     input:not([type="radio"]):not([type="checkbox"]) {
         background-color: var(--MyB) !important;
@@ -414,6 +477,7 @@ domain("cdninstagram.com") {
         border-radius: 25px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     .mwD2G,
     input[type="radio"],
     input[type="checkbox"] {
@@ -421,89 +485,114 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray2) !important;
         border: 1px solid var(--MyW) !important;
     }
+
     input[type="radio"][checked="true"] {
         color: var(--MyB) !important;
     }
+
     .mwD2G::before {
         background-color: var(--MyW) !important;
     }
+
     section[class="sH9wk  _JgwE "] textarea {
         background-color: var(--MyB) !important;
     }
+
     .ZUqME,
     .vtWDf,
     .YlNGR,
     .kM-aa.NP414.ccgHY.GZkEI {
         background-color: var(--Mygray2) !important;
     }
+
     .YQf7h.xptSB {
         background-color: var(--Myred2) !important;
     }
+
     div[class="_7UhW9   xLCgt      MMzan     fDdiY       uL8Hv      M8ipN   "]:hover {
         color: var(--Myred1) !important;
     }
+
     div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*=" _4EzTm"] {
         background-color: transparent !important;
     }
+
     li.wo9IH {
         background-color: var(--Mygray3) !important;
     }
+
     div[class="ByB5K enqOc "],
     div[class="_nuMd VZk0N "] {
         height: 0px !important;
         opacity: 0 !important;
     }
+
     .v9tJq.AAaSh,
     header[class="vtbgv "] {
         border-color: transparent !important;
         border: 10px var(--Mygreen1) !important;
     }
+
     div[class="RR-M- h5uC0"] {
         margin-top: 65px !important;
     }
+
     .q9xVd::after {
         background-color: var(--Mygreen1) !important;
     }
+
     div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="_22l1"][class*="aGBdT"][class*="BI4qX"] {
         text-align: center !important;
     }
+
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"][class*="HVWg4"] {
         height: 60px !important;
     }
+
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"][class*="HVWg4"]:hover {
         height: 100px !important;
     }
+
     svg[class="_8-yf5 edmGD"] {
         fill: var(--Myred1) !important;
     }
+
     img.s4Iyt:hover {
         filter: invert(1) !important;
     }
+
     .gwgGR {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .eDd9Z {
         background-color: var(--Myred3) !important;
     }
+
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                  soMvl                  JI_ht                  DhRcB                                                    "]>svg>path {
         filter: invert(1) !important;
         fill: var(--Myred1) !important;
     }
+
     .pKKVh:hover,
     div[class="v1Nh3 kIKUG  _bz0w"]:hover {
         box-shadow: 0px 0px 10px var(--Myred1) !important;
     }
+
     [class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="YBx95"][class*="_4EzTm"][class*="XfCBB"][class*="g6RW6"] {
         background-color: var(--MyX1) !important;
         color: var(--MyB) !important;
     }
+
     ._9_68._9_6b._9_6i._9_6j._9_6t {
         color: var(--MyW) !important;
     }
+
     i.sp_jGofMAV8_AJ.sx_017b10 {
         filter: invert(1);
     }
+
     [class="_9_68 _9_6b _9_6h _9_6j _9_6x"] {
         color: var(--MyW) !important;
     }
