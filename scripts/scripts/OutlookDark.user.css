@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.34
+@version      0.0.35
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -209,6 +209,8 @@ url-prefix("https://to-do.live.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .pBKjV,
+    div[class="VPtFl"],
     ._1T52orUcm8Tx8YGTEn_hnM,
     ._38q9kfVlcNA62oQUTbgvLT._2atHZl-IhpN84h24Mt1JCU,
     ._3GhkIhRt0r3Gs9Hr1CMJOt,
@@ -232,6 +234,9 @@ url-prefix("https://to-do.live.com/") {
     }
     ._22iZPI0NO5yLVm7ZEwwWUB {
         background-color: var(--Mygray1) !important;
+    }
+    [class="ms-FocusZone css-158 uLemZ tIUi7 ajH43 Ug8SS customScrollBar disableTextSelection"] {
+        border: 1px solid var(--MyW) !important;
     }
     .ms-Checkbox-text,
     a[target="_blank"]:not([class^="ms-Button"]):not([button]):not([class^="_2nuO6UZprDTWqhUqw7gX1l"]) {
@@ -302,6 +307,8 @@ url-prefix("https://to-do.live.com/") {
         color: var(--Mytext) !important;
         border: 1px solid var(--Myborder) !important;
     }
+    [class="PJjsL LI4NJ Cq6Ob XeVDa lgESa cRItr notRibbonUIRefresh"],
+    .hLnYp,
     div.ms-CommandBar,
     div.ms-Panel-contentInner,
     .ms-Panel-content,
@@ -344,6 +351,10 @@ url-prefix("https://to-do.live.com/") {
     }
     ._1yIHkYLrqDZpAMQ3L2YILh._1E-ojjaYGhOxCgHp9Pe315._1zRzYBa3Ymm8oRb7igyJMT._1_Z6L2mLNZ_Q_ulUip_yki._2Ht9U0YzzfQGXALqVdO2MN {
         border-bottom: 1px solid var(--MyB) !important;
+    }
+    .DXfU6.UEzMv.o365sx-button,
+    ._3XjCbKdKOEIOUJsh2GlYnZ.o365sx-appName {
+        background: transparent !important;
     }
     .div[class="_2SvWF44TZgwj95spKJn8Za"] {
         border: none !important;
@@ -506,5 +517,8 @@ url-prefix("https://to-do.live.com/") {
     }
     ._1gN-hBAX4-oQBZrlooxAzS:hover {
         background-color: var(--Mygray1) !important;
+    }
+    .thumb-422 {
+        background-color: var(--Myred1) !important;
     }
 }
