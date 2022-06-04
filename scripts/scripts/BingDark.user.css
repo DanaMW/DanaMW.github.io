@@ -2,7 +2,7 @@
 @name         Bing Dark
 @namespace    https://danamw.github.io/scripts/scripts/BingDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BingDark.user.css
-@version      0.0.10
+@version      0.0.11
 @author       Dana L. Meli-Wischman
 @description  Dark Style Bing.
 @homepageURL  https://DanaMW.github.io
@@ -14,43 +14,12 @@
 ==/UserStyle== */
 
 @-moz-document domain("bing.com") {
-    input[type="search"] {
-        width: var(--swidth) !important;
-    }
-    .b_searchboxForm {
-        position: relative !important;
-        left: calc(1px + var(--smove) - 10px) !important;
-    }
-    #b_content {
-        position: relative !important;
-        left: calc(1px + var(--cmove) - 10px) !important;
-        overflow: scroll;
-    }
-    #b_content[style*="padding-top"],
-    nav>ul>li.b_active>a[h*="ID=images"] {
-        position: relative !important;
-        left: 0px !important;
-    }
-    nav.b_scopebar {
-        position: relative !important;
-        left: calc(1px + var(--bmove) - 10px) !important;
-    }
-    .hp_body.no_image {
-        background-image: none !important;
-    }
-    div[role="main"],
-    #rfPane,
-    .moduleCont,
+    [class="row no-margins has-compact-header"],
     html,
     body {
         background-color: var(--MyB) !important;
     }
-    #miniheader,
-    .tab-disable,
-    .vert_make_default,
-    #vs_foot,
-    footer,
-    #b_opalpers {
+    footer {
         display: none !important;
     }
     * {
@@ -70,74 +39,42 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-    div[class*="nwsq_"],
-    .nwsq_ci,
-    .b_scard,
-    .sa_tm_text,
-    .b_promoteText,
-    li,
-    .na_t,
     p,
-    .vrhde,
-    nav>ul>li>a,
-    li>a:hover,
-    .hb_title_col,
-    h2 a,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
     a:hover {
         color: var(--Myred1) !important;
+        text-decoration: none !important;
     }
-    a[class=" grpitm "]:hover {
-        color: var(--MyW) !important;
-    }
-    .vrht,
-    .title,
-    .feed-main-title,
-    #intrtitle,
-    .hb_value_col,
-    h2 {
+    .bnp_hfly_tittle,
+    h1 {
         color: var(--TwitterBlue) !important;
     }
-    div[class*="dc_"],
-    .b_expansion_text,
-    .b_secondaryText,
-    .vrhmd,
-    .snippet,
-    .grptit {
+    h2 {
         color: var(--TwitterRed) !important;
     }
-    #id_rh,
-    li.scope {
-        width: 75px !important;
-        height: 40px !important;
-        margin: none !important;
-        padding: none !important;
+    small {
+        color: var(--TwitterPink) !important;
     }
-    li.scope a {
-        margin-left: 15px !important;
+    .as_rmhswarningtxt,
+    h3,
+    h4,
+    h5,
+    strong {
+        color: var(--MyW);
     }
-    li>a,
-    #intrschpane {
-        border: none !important;
+    .ctxt,
+    select,
+    input[type="text"] {
+        color: var(--Myyellow1) !important;
     }
-    #landing_tabs li>a {
-        padding-right: 10px !important;
-        padding-left: 10px !important;
-    }
-    .edit_interests,
-    #hideShowCaro,
-    .tab-navl:not(.tab-disable),
-    .tab-navr:not(.tab-disable),
-    li[id*="tab"],
-    nav>ul>li,
-    #landing_tabs li>a,
-    .rightNav.enabled,
-    .leftNav.enabled,
-    li.scope,
-    a[role="button"],
+    .b_icon.tooltip,
+    label.search.icon.tooltip,
+    [role="button"],
+    .btn.white,
+    .btn.blue,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -146,31 +83,23 @@
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
         -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
         -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
         transition: border-color .3s ease, box-shadow .7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    ul>li[id*="sa_"]:hover,
-    .edit_interests:hover,
-    #hideShowCaro:hover,
-    #hbsettings::selection,
+    li.overflow_item:hover,
+    /*
+    li>a:hover,
+    */
+    .btn.white:hover,
+    .btn.blue:hover,
+    .sa_hv,
+    li[role="option"]:hover,
     .hb_section:hover,
-    .tab-navl:hover:not(.tab-disable),
-    .tab-navr:hover:not(.tab-disable),
-    /*li:hover,*/
-    .tab-active[role="tab"],
-    [role="tab"]:hover,
-    nav>ul>li:hover,
-    nav>ul>li.b_active,
-    #landing_tabs li>a:hover,
-    a[role="menuitem"]:hover,
-    div[role="menuitem"]:hover,
-    .rightNav.enabled:hover,
-    .leftNav.enabled:hover,
-    li.scope:hover,
-    a[role="button"]:hover,
+    .hb_section:focus,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -186,18 +115,11 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        /*text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;*/
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    .edit_interests:active,
-    #hideShowCaro:active,
-    .tab-navl:active:not(.tab-disable),
-    .tab-navr:active:not(.tab-disable),
-    nav>ul>li:active,
-    #landing_tabs li>a:active,
-    .rightNav.enabled:active,
-    .leftNav.enabled:active,
-    li.scope:active,
-    a[role="button"]:active,
+    .btn.white:active,
+    .btn.blue:active,
+    .hb_section:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -213,60 +135,40 @@
         -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
-        /*text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;*/
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    div>.cr>div,
-    .tab-navl:not(.tab-disable)>svg,
-    .tab-navr:not(.tab-disable)>svg {
-        filter: invert(180) !important;
-    }
-    form {
-        border: none !important;
-        box-shadow: none !important;
-    }
-    .b_promoteText,
-    .infopt,
-    div.hp_body.no_image,
-    .localnews,
-    #intrbar_wrapper,
-    #landing_tabs,
-    [role="search"],
-    header,
-    form {
+    .stock {
         background-image: none !important;
         background-color: transparent !important;
     }
-    div.hp_body.no_image {
-        background-color: var(--MyB) !important;
+    header,
+    .stock_navbar {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    ul>li[id*="sa_"] {
-        background-color: var(--Mygray3) !important;
+    header {
+        border: none !important;
     }
-    ol#b_results>li,
-    .nsn-body,
-    #HBContent,
-    .module {
+    .dropzone,
+    .as_rmhswarning,
+    .bnp_hfly_actionbar {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .nwsq_ci,
-    ol#b_results>li:hover,
-    .box,
-    .rc_vlImgFact,
-    .nws_cwrp,
-    .nws_itm,
-    li.b_ans,
-    #vrhcid,
-    .disambig-outline,
-    .idni.item,
-    li.item:not(img),
-    .musCardCont,
-    .vs_rowitem {
+    .sbipane.accDialog,
+    .b_speech_cont,
+    [class*="modal"],
+    select,
+    .float_button_bar,
+    .bnp_fly_sp.bnp_fly_hp {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-    #vrhcid.vrhc {
-        border: 1px solid var(--MyW) !important;
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
     }
     input {
         background-color: var(--Mygray3) !important;
@@ -275,23 +177,43 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
-    .spl-dtab,
-    a[class=" grpitm "]:hover,
-    .news-card.newsitem.cardcommon:hover,
-    .b_promoteText:hover,
-    .icon_text,
-    .hp_text,
-    .crs_pane,
-    .itile {
+    .tooltip {
         background-color: var(--MyX1) !important;
+        opacity: 0.4;
+        color: var(--MyW) !important;
+        padding: 8px;
+        border-radius: 2px;
+        border: 1px solid var(--MyW) !important;
     }
-    .news-card.newsitem.cardcommon {
-        border-bottom: 2px solid var(--Myred1) !important;
+    img:hover {
+        filter: brightness(150%);
     }
-    #b_header {
-        border-color: var(--Myred1) !important;
+    ul.overflow_menu,
+    .me_sectioncontent,
+    ul[role="listbox"],
+    .hpfo.hb_hpqexp.slide_down {
+        background-color: var(--Mygray3) !important;
     }
-    .b_logo>img:hover {
-        filter: brightness(150%) !important;
+    .hb_title_col {
+        color: var(--MyW) !important;
+    }
+    #sw_as,
+    [class*="sb_form hassbi"] {
+        background-color: transparent !important;
+    }
+    .b_searchboxForm {
+        background: transparent !important;
+    }
+    .pb-title-nav-strip {
+        background-color: var(--Myred3) !important;
+    }
+    .title {
+        color: var(--Mygreen1) !important;
+    }
+    li.overflow_item a {
+        color: var(--MyW) !important;
+    }
+    .sbitit {
+        color: var(--MyB) !important;
     }
 }
