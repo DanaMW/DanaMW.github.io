@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.22
+@version      0.1.23
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -94,6 +94,9 @@ domain("cdninstagram.com") {
     a._9VEo1 {
         width: 70px !important;
     }
+    [class="_aam1 _aam2 _aam3 _aam5"] {
+        width: 150% !important;
+    }
     ul._ab85>li,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"],
     [class="sqdOP yWX7d    y3zKF     "],
@@ -178,7 +181,7 @@ domain("cdninstagram.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
-    [class="_ab6o _ab6p _ab6q"],
+    [class*="_ab6o _ab6p _ab6q"],
     [class=" _a4tc"] {
         background-color: transparent !important;
     }
@@ -357,7 +360,7 @@ domain("cdninstagram.com") {
     }
     /*------------------All filter INVERTS----------------*/
     span[class="glyphsSpriteFriend_Follow u-__7"],
-    div[class="FuWoR -wdIA     x7xX2 "],
+    div[class="FuWoR -wdIA x7xX2 "],
     div[class*="coreSpritePagingChevron"],
     button[class="_5f5mN       jIbKX KUBKM      yZn4P   "] svg path,
     button[class="_5f5mN       jIbKX KUBKM      yZn4P  m4t9r "] svg path,
