@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.23
+@version      0.1.24
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -239,6 +239,7 @@ domain("cdninstagram.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    [class="_ab8w  _ab94 _ab96 _ab9f _ab9m _ab9p  _abb_  _ab9z"],
     ._9z_0,
     ._9-rn._9-ro,
     div[class*="tHaIX"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"][class*="HcJZg"],
@@ -255,6 +256,7 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class="_ab21 _ab22 _ab23"],
     ._aav4._aav5,
     [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o"],
     ._acj1,
@@ -347,13 +349,16 @@ domain("cdninstagram.com") {
     header[class="vtbgv "] {
         border-top: 20px solid var(--Myred3) !important;
     }
+    ._aa5k,
     div[class*="_9GP1n"][class*="HlUSH"],
     div[class*="_9GP1n"] {
         background-color: transparent !important;
     }
+    [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8"],
     [class="_aaiu _aaiw"] {
         border: 1px solid var(--MyW) !important;
     }
+    ._aa5k,
     div[class*="_9GP1n"][class*="HlUSH"],
     div[class*="_9GP1n"] {
         border: none !important;
@@ -430,6 +435,9 @@ domain("cdninstagram.com") {
     .gElp9 a {
         color: var(--Mygreen1) !important;
     }
+    ._aacl,
+    ._aa4o,
+    [class="_aacl _aacn _aacu _aacx _aad6"],
     a,
     p,
     p span,
