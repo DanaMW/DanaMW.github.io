@@ -2,7 +2,7 @@
 @name         Pinterest Dark
 @namespace    https://danamw.github.io/scripts/scripts/PinterestDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PinterestDark.user.css
-@version      0.0.20
+@version      0.0.21
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -90,6 +90,13 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
     .appContent {
         background-color: var(--Myred3) !important;
     }
+    /*
+    [class="Eqh fev zI7 iyn Hsu"],
+    #searchBoxContainer {
+        width: 50% !important;
+        min-width: 0px !important;
+    }
+    */
     #searchBoxContainer,
     .gpV.zI7.iyn.Hsu {
         background-color: transparent !important;
@@ -104,6 +111,7 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         background: transparent !important;
         background-color: transparent !important;
     }
+    .jzS.un8.TB_,
     .qJc.xcv.L4E.zI7.iyn.Hsu,
     .HeaderContent,
     .qJc.xcv.L4E.zI7.iyn.Hsu {
@@ -111,7 +119,7 @@ regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|c
         -webkit-appearance: none;
         appearance: none;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
+        background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
         opacity: 1.0 !important;
