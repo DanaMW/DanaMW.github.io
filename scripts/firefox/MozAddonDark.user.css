@@ -2,7 +2,7 @@
 @name         Mozilla Addons Dark
 @namespace    https://danamw.github.io/Scripts/extra/MozAddonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/extra/MozAddonDark.user.css
-@version      0.0.19
+@version      0.0.20
 @description  Mozilla Addons Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -10,6 +10,7 @@
 
 @-moz-document url-prefix("https://addons.mozilla.org"),
 url-prefix("https://accounts.firefox.com"),
+url-prefix("https://firefox-source-docs.mozilla.org/"),
 domain("mozilla.net"),
 domain("mozilla.org"),
 domain("addons-amo.cdn.mozilla.net"),
@@ -26,7 +27,7 @@ domain("wiki.mozilla.org") {
         appearance: none;
         background: none !important;
         background-color: var(--Myred2) !important;
-        color: var(--Mytext) !important;
+        color: var(--MyW) !important;
     }
     * {
         text-decoration: none !important;
@@ -51,6 +52,8 @@ domain("wiki.mozilla.org") {
         background-color: var(--Myback) !important;
         color: var(--Mytext) !important;
     }
+    .wy-nav-content,
+    .wy-nav-content-wrap,
     .c-footer,
     footer,
     main[role="main"],
@@ -59,12 +62,16 @@ domain("wiki.mozilla.org") {
     div[class="flex flex-col justify-between min-h-screen"] {
         background-color: var(--MyB) !important;
     }
+    .gsc-input-box,
     footer {
         background: transparent !important;
     }
     .Card-contents {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
         color: var(--Mytext) !important;
+    }
+    .reference.internal {
+        background-color: var(--Mygray3) !important;
     }
     .settings,
     div#react-view {
@@ -250,6 +257,8 @@ domain("wiki.mozilla.org") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.reference.internal[aria-expanded="true"],
+    a.reference.internal:hover,
     #download-button-primary:hover,
     p.SearchSuggestion:hover,
     .selected,
@@ -329,6 +338,7 @@ domain("wiki.mozilla.org") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(60, 60, 60, 0.9) 100%, transparent) !important;
     }
+    [class="gsc-control-cse gsc-control-cse-en"],
     div[class="max-w-md bg-white mx-auto rounded-xl"],
     .modal,
     .Notice.Notice-genericWarning.InstallWarning,

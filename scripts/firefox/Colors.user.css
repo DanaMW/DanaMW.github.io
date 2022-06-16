@@ -3,7 +3,7 @@
 @namespace    http://danamw.github.io/scripts/firefox/Colors.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/firefox/Colors.user.css
 @description  My Variable Colors For My Scripts
-@version      0.3.2
+@version      0.3.3
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -50,7 +50,7 @@
     --MyX7: rgba(255, 55, 0, 0.4);
     --MyXB: rgba(0, 0, 0, 0.4);
     --MyXW: rgba(255, 255, 255, 0.4);
-    --Progress-bar-color: rgb(255, 0, 0);
+    --Progress-bar-color: rgb(255, 0, 0) !important;
     --scrollbar-color: rgb(255, 0, 0) rgb(76, 0, 0);
     --panel-border-radius: 15px;
     --card-outline-color: rgb(255, 0, 0) !important;
@@ -206,13 +206,13 @@
     --card-shadow: var(--shadow-10);
     --card-shadow-hover: var(--card-shadow), 0 0 0 5px var(--card-outline-color);
     --card-shadow-focus: 0 0 0 2px var(--blue-50), 0 0 0 6px var(--blue-50-a30);
-    --button-bgcolor: rgb(43, 42, 51);
-    --button-hover-bgcolor: rgb(82, 82, 94);
-    --button-active-bgcolor: rgb(91, 91, 102);
+    --button-bgcolor: rgb(255, 0, 0) !important;
+    --button-hover-bgcolor: rgb(255, 154, 162) !important;
+    --button-active-bgcolor: rgb(255, 0, 0) !important;
     --button-primary-bgcolor: rgb(255, 0, 0) !important;
-    --button-primary-hover-bgcolor: rgb(255, 0, 0) !important;
-    --button-primary-active-bgcolor: rgb(255, 0, 0);
-    --button-primary-color: rgb(43, 42, 51);
+    --button-primary-hover-bgcolor: rgb(255, 154, 162) !important;
+    --button-primary-active-bgcolor: rgb(255, 0, 0) !important;
+    --button-primary-color: rgb(255, 0, 0) !important;
     --error-text-color: rgb(255, 154, 162);
     --input-bgcolor: rgb(66, 65, 77);
     --input-color: rgb(251, 251, 254);
