@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.70
+@version      0.0.71
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -22,7 +22,6 @@ domain("docs.google.com") {
     .layout-column.aKQtkf-tJHJj,
     gv-message-entry,
     gv-message-entry div,
-    gv-message-list-header,
     gv-message-list,
     md-content,
     ng-transclude,
@@ -213,6 +212,8 @@ domain("docs.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    gv-message-list-header,
+    .gvMessageListHeader-messageHeader,
     .mat-menu-content,
     .ge-zi-ic.ge-Ai-ke,
     .ge-Ci-ic.ge-Di-ke.ge-eo-Di,
@@ -263,25 +264,25 @@ domain("docs.google.com") {
     }
     [class*="bubble"] {
         background-color: var(--Myred2) !important;
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myred1) !important;
     }
     [class*="incoming"]>div>div>div {
         background-color: var(--Myblue2) !important;
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myred1) !important;
     }
     mat-divider {
         border-color: var(--Myred1) !important;
     }
     div[aria-label="Account Information"] {
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myred1) !important;
     }
     div[class*="Bqxti-VCkuzd"] {
         background-color: var(--Myred2) !important;
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myred1) !important;
     }
     div[class*="Bqxti-MJZihc"] {
         background-color: var(--Myblue2) !important;
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myred1) !important;
     }
     .md-body-1.B3EWm-pfZwlb,
     .mat-checked {
@@ -303,7 +304,7 @@ domain("docs.google.com") {
     gv-inbox-summary-ng2,
     .md-virtual-repeat-scroller,
     gv-side-nav {
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myred1) !important;
     }
     .ge-dn-jf-dn-ph {
         background-color: var(--Mygray2) !important;
@@ -318,7 +319,7 @@ domain("docs.google.com") {
     iframe#sksotdehhtnb,
     .ee-Li-ie {
         background-color: var(--Mygray3) !important;
-        border-top: 1px solid var(--Mygray3) !important;
+        border-top: 1px solid var(--Myred1) !important;
     }
     .md-body-1.B3EWm-pfZwlb,
     .ee-hn-hf-hn-qh {
@@ -331,8 +332,8 @@ domain("docs.google.com") {
         background: var(--MyB) !important;
     }
     .q2hAhb-RZ063d {
-        border-top: 1px solid var(--MyW) !important;
-        border-bottom: 1px solid var(--MyW) !important;
+        border-top: 1px solid var(--Myred1) !important;
+        border-bottom: 1px solid var(--Myred1) !important;
     }
     .outer-circle,
     .gvPageRoot [_nghost-uai-c32] .inner-circle[_ngcontent-uai-c32],
@@ -365,5 +366,8 @@ domain("docs.google.com") {
     .md-button,
     md-menu-item {
         color: var(--MyW) !important;
+    }
+    * {
+        border-color: var(--Myred1) !important;
     }
 }
