@@ -3,12 +3,13 @@
 @namespace    http://danamw.github.io/scripts/firefox/Colors.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/firefox/Colors.user.css
 @description  My Variable Colors For My Scripts
-@version      0.3.1
+@version      0.3.2
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 :root {
+    --in-context-primary-button-background: rgb(255, 0, 0) !important;
     --TwitterBlue: hsl(203, 89%, 53%) !important;
     --TwitterRed: hsl(341, 75%, 51%) !important;
     --TwitterPink: hsl(340, 75%, 36%) !important;
