@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.74
+@version      0.0.75
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -213,6 +213,7 @@ domain("docs.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    gv-thread-details-header>.header,
     gv-message-list-header,
     .gvMessageListHeader-messageHeader,
     .mat-menu-content,
@@ -262,17 +263,6 @@ domain("docs.google.com") {
     }
     input[placeholder] {
         color: var(--MyW) !important;
-    }
-    [class*="bubble"] {
-        background-color: var(--Myred2) !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    [class*="incoming"]>div>div>div {
-        background-color: var(--Myblue2) !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    mat-divider {
-        border-color: var(--Myred1) !important;
     }
     div[aria-label="Account Information"] {
         border: 1px solid var(--Myred1) !important;
@@ -380,5 +370,17 @@ domain("docs.google.com") {
     }
     .mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb {
         background-color: var(--Mygreen1) !important;
+    }
+    [class*="bubble"] {
+        background-color: var(--Myred2);
+        border: 1px solid var(--Myred1);
+    }
+    .gvMessageItem-incoming.gvMessageItem-bubble,
+    .gvMessageItem-incoming.gvMessageItem-bubble a {
+        background-color: var(--Myblue2) !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+    mat-divider {
+        border-color: var(--Myred1) !important;
     }
 }
