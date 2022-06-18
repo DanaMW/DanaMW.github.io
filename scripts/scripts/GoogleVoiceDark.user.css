@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.76
+@version      0.0.77
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -213,6 +213,7 @@ domain("docs.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class="md-body-1 gvMessageEntry-thumbnailWrapper"],
     gv-thread-details-header>.header,
     gv-message-list-header,
     .gvMessageListHeader-messageHeader,
@@ -289,6 +290,7 @@ domain("docs.google.com") {
     .did-display {
         text-align: center !important;
     }
+    [role="option"]>[class="ge-Ym-jf-Ym-lh"],
     gv-side-nav {
         background-color: var(--Myred3) !important;
     }
@@ -385,5 +387,9 @@ domain("docs.google.com") {
     }
     .picker.modal-dialog-bg {
         background-color: var(--MyB) !important;
+    }
+    .ge-Ym-jf-cb {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
     }
 }
