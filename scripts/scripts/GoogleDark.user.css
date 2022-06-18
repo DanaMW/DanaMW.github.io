@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.48
+@version      0.2.49
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -431,6 +431,8 @@ url-prefix("https://support.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    a.T2ozWe,
+    jsl>a.T2ozWe,
     a.aTVMOe>.lY57Fd,
     span.NQyKp,
     .RunE3b,
@@ -514,7 +516,7 @@ url-prefix("https://support.google.com/") {
     .iv_msusc,
     g-fab,
     a#hdtb-tls,
-    button:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.widget-minimap-shim) {
+    button:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.widget-minimap-shim):not(.yHc72.qk5Wte) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -529,6 +531,8 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.T2ozWe:hover,
+    jsl>a.T2ozWe:hover,
     a[class*="aTVMOe  qs41qe"]>.lY57Fd,
     a.aTVMOe>.lY57Fd:hover,
     .sbse:hover,
@@ -646,7 +650,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:hover,
     g-fab:hover,
     a#hdtb-tls:hover,
-    button:hover:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
+    button:hover:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.yHc72.qk5Wte) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -663,6 +667,8 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.T2ozWe:active,
+    jsl>a.T2ozWe:active,
     a>.lY57Fd:active,
     span.NQyKp:active,
     .RunE3b:active,
@@ -1342,6 +1348,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .devices-container,
     .HJCejf,
     .lsrnD,
     .section-cardbox,
@@ -1370,7 +1377,6 @@ url-prefix("https://support.google.com/") {
     .c.ptJHdc.commercial-unit-desktop-rhs.mnr-c.VjDLd,
     .bYhoud,
     md-card,
-    div[class*="gm-style"],
     .y8Jpof:hover,
     g-card .hntNk.vk_c.vk_bk,
     .c.ptJHdc.commercial-unit-desktop-rhs.mnr-c.rhsvw,
@@ -1811,5 +1817,8 @@ url-prefix("https://support.google.com/") {
     }
     .RSDz9d {
         color: var(--MyW) !important;
+    }
+    .device-info.visible {
+        background-color: var(--Mygray1) !important;
     }
 }
