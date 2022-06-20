@@ -100,7 +100,6 @@
         "button.hoverBackground": "#ff0000",
         "dropdown.background": "#141414"
     },
-    "workbench.activityBar.visible": true,
     "window.menuBarVisibility": "visible",
     "git.enableSmartCommit": true,
     "git.showPushSuccessNotification": true,
@@ -118,6 +117,12 @@
     "html-css-class-completion.enableEmmetSupport": true,
     "csscomb.formatOnSave": true,
     "cSpell.userWords": [
+        "asay",
+        "autoscroller",
+        "bing",
+        "cmdletbinding",
+        "epicker",
+        "esversion",
         "Fiamma",
         "Gmail",
         "Imagus",
@@ -130,24 +135,20 @@
         "Mypurple",
         "Myred",
         "Mytext",
-        "PSVERSION",
-        "Saggio",
-        "Sicuro",
-        "Tolower",
-        "Winmgmt",
-        "asay",
-        "autoscroller",
-        "bing",
-        "cmdletbinding",
-        "epicker",
-        "esversion",
         "nano",
         "power",
+        "PSVERSION",
+        "pwsh",
         "recurse",
+        "Saggio",
         "sandboxie",
         "shell",
+        "Sicuro",
+        "Tolower",
         "ublock",
-        "wbem"
+        "wbem",
+        "Winmgmt",
+        "Wischman"
     ],
     "terminal.integrated.rightClickBehavior": "default",
     "cSpell.language": "en",
@@ -266,5 +267,13 @@
     "git.confirmSync": false,
     "firefox.profileDir": "C:\\Users\\dana\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\gwy4nqp8.dev-edition-default",
     "security.workspace.trust.untrustedFiles": "open",
-    "workbench.editor.untitled.hint": "hidden"
+    "workbench.editor.untitled.hint": "hidden",
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "spellchecker.ignoreWordsList": [
+        "PowerShell",
+        "pwsh"
+    ],
+    "editor.foldingMaximumRegions": 7500
 }

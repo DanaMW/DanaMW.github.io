@@ -103,7 +103,7 @@
         ],
         "description": "var(--Mygreen1)"
     },
-    "Mygree2": {
+    "Mygreen2": {
         "prefix": "var(--Mygreen2)",
         "body": [
             "var(--Mygreen2) !important;",
@@ -180,6 +180,27 @@
         ],
         "description": "var(--Mypurple3)"
     },
+    "Myorange1": {
+        "prefix": "var(--Myorange1)",
+        "body": [
+            "var(--Myorange1) !important;",
+        ],
+        "description": "var(--Myorange1)"
+    },
+    "Myorange2": {
+        "prefix": "var(--Myorange2)",
+        "body": [
+            "var(--Myorange2) !important;",
+        ],
+        "description": "var(--Myorange2)"
+    },
+    "Myorange3": {
+        "prefix": "var(--Myorange3)",
+        "body": [
+            "var(--Myorange3) !important;",
+        ],
+        "description": "var(--Myorange3)"
+    },
     "MyX1": {
         "prefix": "var(--MyX1)",
         "body": [
@@ -221,6 +242,13 @@
             "var(--MyX6) !important;",
         ],
         "description": "var(--MyX6)"
+    },
+    "MyX7": {
+        "prefix": "var(--MyX7)",
+        "body": [
+            "var(--MyX7) !important;",
+        ],
+        "description": "var(--MyX7)"
     },
     "MyXB": {
         "prefix": "var(--MyXB)",
