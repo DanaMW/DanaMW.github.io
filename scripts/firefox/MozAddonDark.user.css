@@ -2,7 +2,7 @@
 @name         Mozilla Addons Dark
 @namespace    https://danamw.github.io/Scripts/extra/MozAddonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/Scripts/extra/MozAddonDark.user.css
-@version      0.0.20
+@version      0.0.21
 @description  Mozilla Addons Dark
 @author       Dana Meli
 @homepageURL  https://danamw.github.io
@@ -49,9 +49,10 @@ domain("wiki.mozilla.org") {
     .Page-content,
     .App-content {
         background: none !important;
-        background-color: var(--Myback) !important;
-        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        color: var(--MyW) !important;
     }
+    body,
     .wy-nav-content,
     .wy-nav-content-wrap,
     .c-footer,
@@ -364,6 +365,15 @@ domain("wiki.mozilla.org") {
     div#service[data-testid="settings-connected-service"]:hover,
     .unit-row:hover {
         background-color: var(--MyX1) !important;
+    }
+    .Notice,
+    .Notice-warning,
+    .SiteNotices,
+    .Notice.Notice-warning.SiteNotices {
+        background-color: var(--Myorange1) !important;
+    }
+    .Notice-text {
+        color: var(--MyW) !important;
     }
     li {
         color: var(--TwitterBlue) !important;
