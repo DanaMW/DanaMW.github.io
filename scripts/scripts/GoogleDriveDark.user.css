@@ -2,7 +2,7 @@
 @name         Google Drive Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDriveDark.user.css
-@version      0.0.24
+@version      0.0.25
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -103,9 +103,8 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    /*
-    .a-s-yd-J.a-s-yd-Sa.Sa,
-    */
+    .lfDNBb.mvx98e:hover,
+    .FYhd9e:hover,
     div[role="button"]:hover,
     .le-Ba-d-j:hover,
     div[role="tab"]:hover,
@@ -183,6 +182,7 @@
         border-radius: 15px !important;
         text-align: center !important;
     }
+    #_Eq2Xzc_c172,
     .brklx>span,
     .o1Bmbe,
     .r6xIie,
@@ -233,6 +233,10 @@
     .gb_hf.a-nb-Va-d-Gk-M,
     .gb_bf.gb_cf {
         border-radius: 50% !important;
+    }
+    [class="I9OJHe mdf2C yid0mf  iPMcJc FyWfTd nsKVp"],
+    [class="VfPpkd-WsjYwc KC1dQ BKdRne  xEuuXd"] {
+        background-color: var(--Myorange3) !important;
     }
     .l-u-Ab-zb,
     .l-u-xb {
@@ -328,5 +332,8 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    .Zz99o {
+        background: var(--MyB) !important;
     }
 }
