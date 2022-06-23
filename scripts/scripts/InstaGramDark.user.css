@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.25
+@version      0.1.26
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -97,6 +97,7 @@ domain("cdninstagram.com") {
     [class="_aam1 _aam2 _aam3 _aam5"] {
         width: 150% !important;
     }
+    .-qQT3,
     ul._ab85>li,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"],
     [class="sqdOP yWX7d    y3zKF     "],
@@ -119,6 +120,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .-qQT3:hover,
     ul._ab85>li:hover,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"]:hover,
     [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8"]:hover,
@@ -151,6 +153,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .-qQT3:active,
     ul._ab85>li:active,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"]:active,
     [class="sqdOP yWX7d    y3zKF     "]:active,
@@ -277,7 +280,6 @@ domain("cdninstagram.com") {
     div[class*="qF0y9"][class*="Igw0E"][class*="rBNOH"][class*="CcYR1"][class*="ybXk5"][class*="_4EzTm"],
     div[class="_4Kbb_ _54f4m"],
     div[class*="pV7Qt"][class*="tHaIX"][class*="Igw0E"][class*="rBNOH"][class*="YBx95"][class*="_4EzTm"][class*="XfCBB"][class*="nGS-Y"],
-    div[role="presentation"],
     header,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
     div[class="       tHaIX              Igw0E     IwRSH      eGOV_         _4EzTm                                                                                   XfCBB             HcJZg              "],
@@ -393,6 +395,7 @@ domain("cdninstagram.com") {
         color: var(--MyB) !important;
         font-weight: bold !important;
     }
+    [class="         DPiy6    qF0y9          Igw0E     IwRSH        YBx95     acqo5   _4EzTm                                                                                                              "],
     div[class="                     Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
         background-color: var(--Mygray3);
     }
@@ -544,8 +547,7 @@ domain("cdninstagram.com") {
     div[class="v1Nh3 kIKUG  _bz0w"]:hover {
         box-shadow: 0px 0px 10px var(--Myred1) !important;
     }
-    [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p"]:hover,
-    [class="_ab8w  _ab94 _ab99 _ab9h _ab9m _ab9p  _ab9- _abaa"] {
+    [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p"]:hover {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
@@ -561,5 +563,25 @@ domain("cdninstagram.com") {
     }
     [class="_aacl _aaco _aacu _aacx _aada"] {
         color: var(--TwitterBlue) !important;
+    }
+    i[aria-label="Instagram"]:hover {
+        filter: invert(1)
+    }
+    [class=" _aawf _aawg"] input[class="_aawh _aawj _aauy"] {
+        border: 1px solid var(--MyW) !important;
+    }
+    input[type="checkbox"]>div::before {
+        color: var(--Myred1) !important;
+    }
+    ._a3gq ._aahe:checked~._aahg::before {
+        border-bottom: 2px solid var(--MyW) !important;
+        border-left: 2px solid var(--MyW) !important;
+    }
+    ._a3gq ._ac7h:checked {
+        border: 5px solid var(--MyW) !important;
+    }
+    .tlZCJ:checked~.mwD2G::before {
+        border-bottom: 2px solid var(--MyW) !important;
+        border-left: 2px solid var(--MyW) !important;
     }
 }
