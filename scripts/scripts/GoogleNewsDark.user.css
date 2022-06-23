@@ -2,7 +2,7 @@
 @name         Google News Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleNewsDark.user.css
-@version      0.0.40
+@version      0.0.41
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -58,6 +58,7 @@
     a {
         color: var(--MyW) !important;
     }
+    .Qq1e4d,
     small {
         color: var(--TwitterBlue) !important;
     }
@@ -94,6 +95,8 @@
         border-radius: 15px !important;
         text-align: center !important;
     }
+    .jKHa4e,
+    .VfPpkd-TkwUic,
     a[href*="https://policies.google.com/privacy"],
     a[href*="https://accounts.google.com/AddSession"],
     a[href*="https://myaccount.google.com"],
@@ -126,6 +129,11 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .jKHa4e:hover,
+    .kyvwAb:hover,
+    li.JbTTm.VfPpkd-StrnGf-rymPhb-ibnC6b:hover,
+    .VfPpkd-StrnGf-rymPhb-ibnC6b.VfPpkd-StrnGf-rymPhb-ibnC6b-OWXEXe-gk6SMd,
+    .VfPpkd-TkwUic:hover,
     a[href*="https://policies.google.com/privacy"]:hover,
     a[href*="https://accounts.google.com/AddSession"]:hover,
     a[href*="https://myaccount.google.com"]:hover,
@@ -167,6 +175,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .VfPpkd-TkwUic:active,
     a[href*="https://policies.google.com/privacy"]:active,
     a[href*="https://accounts.google.com/AddSession"]:active,
     a[href*="https://myaccount.google.com"]:active,
@@ -239,11 +248,10 @@
         opacity: 0.7;
         border-radius: 5px !important;
     }
+    .b3Z44d,
     div[jsname="oQnINb"] {
         background-color: var(--TwitterBlue) !important;
         opacity: 0.7;
-        border-top-left-radius: 5px !important;
-        border-top-right-radius: 5px !important;
     }
     div[jscontroller="IRBuIc"] {
         background-color: var(--MyX1) !important;
@@ -256,6 +264,11 @@
     .d7hoq {
         z-index: 100;
     }
+    .ndIcDe,
+    .ryo59b,
+    .i0Zvib,
+    .Ly25Ed,
+    .kyvwAb,
     div[role="listbox"],
     div[role="menu"],
     .YtXOzd.j7vNaf,
@@ -263,6 +276,8 @@
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class="dSva6b JQQdOc  yETrXb Ir3o3e"],
+    .IFHyqb,
     .Jur22e.R7GTQ.keNKEd.j7vNaf,
     .YtXOzd.j7vNaf:hover,
     .NiLAwe:hover {
@@ -284,8 +299,18 @@
         border: 1px solid var(--Myred1) !important;
         border-radius: 15px !important;
     }
+    .WwrzSb:hover {
+        background-color: var(--MyXW) !important;
+        filter: brightness(50%)
+    }
+    [class="QuqGMc cGpFjf"]:hover,
+    [class="QuqGMc "]:hover,
+    .PO9Zff.Ccj79.kUVvS:hover,
     div[class="To2ZZb u9jkpc hpDt6e DbQnIe rrijPb R7GTQ keNKEd "]:hover {
         background-color: var(--MyX1) !important;
+    }
+    [class="PO9Zff Ccj79 kUVvS"]:hover {
+        border: 1px solid var(--Myred1) !important;
     }
     .Qo7o0c {
         color: var(--TwitterRed) !important;
@@ -304,5 +329,43 @@
         -moz-user-select: text !important;
         -webkit-user-select: text !important;
         user-select: text !important;
+    }
+    .EctEBd.KKjvXb {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nTN4Wc {
+        background-color: transparent !important;
+    }
+    .dm7YTc .mOEsz,
+    .dm7YTc .uYJoFd,
+    .dm7YTc .z4zgPb,
+    .dm7YTc .isdDAc .rnfEof,
+    .dm7YTc .aBRa1c,
+    .dm7YTc .n0uym,
+    .dm7YTc .Cc1bcb {
+        background: var(--Myred1) !important;
+    }
+    .brSCsc::after {
+        background-color: var(--Mygreen1) !important;
+    }
+    .dm7YTc .KfaKvb,
+    .dm7YTc .KDoq1 {
+        border-color: var(--Myred1) !important;
+    }
+    .UOVeFe {
+        background-color: transparent !important;
+    }
+    .Atp3Bb,
+    [class="Ly25Ed"],
+    [class="ndIcDe"],
+    [class="ryo59b"],
+    [class="i0Zvib"],
+    [class="sQBzPb"],
+    [class="isdDAc pKNUIc AUPVK"] {
+        border: 2px solid var(--Myred1) !important;
+    }
+    .dm7YTc .Ax3bC {
+        border-bottom-color: var(--Myred1) !important;
     }
 }
