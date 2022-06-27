@@ -2,7 +2,7 @@
 @name         Google Drive Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDriveDark.user.css
-@version      0.0.25
+@version      0.0.26
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -59,6 +59,7 @@
     .WYuW0e.GZwC2b.dPmH0b {
         background-color: var(--Myred3) !important;
     }
+    span[class="VfPpkd-XPtOyb VfPpkd-XPtOyb-OWXEXe-cpiE8 P2wJPb YfmZeb tTvXye MhRzze EuHQ0d Vo0FCd  m0PB1"],
     div[role="button"],
     div[role="option"]>div,
     .le-Ba-d-j,
@@ -103,6 +104,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+    li[class=" VfPpkd-StrnGf-rymPhb-ibnC6b"]:hover,
     .lfDNBb.mvx98e:hover,
     .FYhd9e:hover,
     div[role="button"]:hover,
@@ -181,6 +183,36 @@
         border: 2px solid var(--Myborder) !important;
         border-radius: 15px !important;
         text-align: center !important;
+    }
+    [role="listbox"] {
+        color: var(--MyW) !important;
+        background-color: var(--Mygray3) !important;
+        border: 2px solid var(--Myborder) !important;
+        border-radius: 15px !important;
+    }
+    .EDtwUe,
+    [class=" VfPpkd-StrnGf-rymPhb-L8ivfd-fmcmS"] {
+        color: var(--TwitterBlue) !important;
+    }
+    [class="I9OJHe mdf2C yid0mf  CDELXb iPMcJc FyWfTd nsKVp"] {
+        background-color: var(--Mygray2) !important;
+    }
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+    .RJS6zb,
+    .h93iPc {
+        color: var(--Myyellow1) !important;
+    }
+    .quTB6,
+    .WaWjk {
+        color: var(--TwitterRed) !important;
+    }
+    svg[class="Q6yead QJZfhe "]>path {
+        filter: invert(1);
     }
     #_Eq2Xzc_c172,
     .brklx>span,
@@ -277,12 +309,14 @@
     div[role="listbox"]>div {
         background-color: var(--Mygray2) !important;
     }
+    [class="I9OJHe mdf2C yid0mf  FyWfTd nsKVp"],
     .lb-k-V.lb-k-V-xt,
     .lb-k.ca-k.Hb-ja-Na,
     div[role="dialog"] {
         background-image: none !important;
         background-color: transparent !important;
     }
+    [class="I9OJHe mdf2C yid0mf  CDELXb FyWfTd nsKVp"],
     section,
     div[class="a-s-tb-sc-Ja a-s-tb-Kg a-s-tb-sc-Ja-J"],
     .lb-k.ca-k.Hb-ja-Na,
