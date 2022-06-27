@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.23
+@version      0.0.24
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -284,6 +284,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [role="alertdialog"],
     [class*="groupHeader"],
     .od-Share,
     div[class*="ms-Callout"],
