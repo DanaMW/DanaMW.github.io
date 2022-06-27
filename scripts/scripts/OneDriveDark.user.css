@@ -2,7 +2,7 @@
 @name         OneDrive Dark
 @namespace    http://danamw,github.io/scripts/scripts/OneDriveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OneDriveDark.user.css
-@version      0.0.27
+@version      0.0.28
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -58,6 +58,7 @@
     a:hover {
         color: var(--Myred1) !important;
     }
+    [class="mectrl_truncate"],
     .SharerHeader-title,
     h2 {
         color: var(--TwitterBlue) !important;
@@ -130,6 +131,8 @@
         -webkit-appearance: none !important;
         background-image: none !important;
     }
+    [class="mectrl_resetStyle primaryAction signIn"],
+    a[class="mectrl_resetStyle mectrl_signout mectrl_truncate"],
     [class="ms-Button-flexContainer flexContainer-106"],
     button#allAppsLink,
     #c_clogoc,
@@ -159,8 +162,11 @@
     i[class*="root-"] {
         background-color: transparent !important;
     }
-    div[aria-current="page"]>[class="ms-Button-flexContainer flexContainer-106"],
-    [class="ms-Button-flexContainer flexContainer-106"]:hover,
+    [class="mectrl_resetStyle primaryAction signIn"]:hover,
+    a[class="mectrl_resetStyle mectrl_signout mectrl_truncate"]:hover,
+    a[aria-current="page"],
+    a[class="ms-Button ms-Button--action ms-Button--command ms-Nav-link link-101"]:hover,
+    a[class="ms-Button-flexContainer flexContainer-106"]:hover,
     a.ms-Nav-link.link-100:hover,
     a.ms-Nav-link.link-91,
     a.ms-Nav-link.link-91:hover,
@@ -195,6 +201,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    [class="mectrl_resetStyle primaryAction signIn"]:active,
+    a[class="mectrl_resetStyle mectrl_signout mectrl_truncate"]:active,
     [class="ms-Button-flexContainer flexContainer-106"]:active,
     button#allAppsLink:active,
     #c_clogoc:active,
@@ -241,6 +249,7 @@
         background-color: var(--Myred1) !important;
         color: var(--Myred1) !important;
     }
+    [class="mectrl_name mectrl_truncate"],
     form[class*="ms-suiteux-search-box"] {
         color: var(--MyW) !important;
     }
@@ -256,6 +265,8 @@
     dd {
         color: var(--MyW) !important;
     }
+    a[class="ms-Button ms-Button--action ms-Button--command ms-Nav-link link-101"],
+    .od-LeftNav,
     .od-SearchBox,
     div[role="dialog"] {
         background-color: var(--Mygray2) !important;
@@ -303,6 +314,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .mectrl_currentAccount,
     [role="alertdialog"],
     [class*="groupHeader"],
     .od-Share,
@@ -358,5 +370,8 @@
     text {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
+    }
+    .ms-FolderCover-metadata {
+        color: var(--Myorange1) !important;
     }
 }
