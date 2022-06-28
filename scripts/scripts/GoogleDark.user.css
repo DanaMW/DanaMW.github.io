@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.51
+@version      0.2.52
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -523,7 +523,7 @@ url-prefix("https://support.google.com/") {
     .iv_msusc,
     g-fab,
     a#hdtb-tls,
-    button:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.widget-minimap-shim):not(.yHc72.qk5Wte) {
+    button:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.widget-minimap-shim):not(.yHc72.qk5Wte):not(.hRcu8b.Hk4XGb):not(.Cjxjdb):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -657,7 +657,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:hover,
     g-fab:hover,
     a#hdtb-tls:hover,
-    button:hover:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.yHc72.qk5Wte) {
+    button:hover:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.yHc72.qk5Wte):not(.hRcu8b.Hk4XGb):not(.Cjxjdb.pvAs7c):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -761,7 +761,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:active,
     g-fab:active,
     a#hdtb-tls:active,
-    button:active:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]) {
+    button:active:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.hRcu8b.Hk4XGb):not(.Cjxjdb.pvAs7c):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -906,6 +906,7 @@ url-prefix("https://support.google.com/") {
     .JcdYse {
         color: var(--Mygreen1) !important;
     }
+    .RmaIBf.vLnCgb,
     .AYBNrd.JuE4Vc,
     .slVwZ,
     .kno-fb-ctx,
@@ -1116,6 +1117,15 @@ url-prefix("https://support.google.com/") {
     .N5YmOc.kJXJmd,
     .iKjWAf.a-no-hover-decoration.irc-nic.isr-rtc {
         background-color: var(--Mygray2) !important;
+    }
+    .G7m0Af.a52Cae {
+        border: solid 3px var(--Mygreen1) !important;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-bottom: 0;
     }
     .DPvwYc.enXqmb {
         color: var(--Mygreen1) !important;
