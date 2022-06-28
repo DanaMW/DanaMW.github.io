@@ -1729,6 +1729,12 @@ url-prefix("https://support.google.com/") {
     .rQEFy.NZmxZe {
         border-bottom: 2px solid var(--Mygreen1) !important;
     }
+    .VfPpkd-gIZMF {
+        background-image: none !important;
+        background-color: none !important;
+    }
+    .tooltip,
+    #tooltip,
     .goog-tooltip.tooltip-dark,
     .goog-tooltip,
     .tooltip-dark {
