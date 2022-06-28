@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.54
+@version      0.2.55
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -230,6 +230,7 @@ url-prefix("https://support.google.com/") {
         padding-left: 10px !important;
     }
     /* RED RED */
+    #kp-wp-tab-overview,
     .g.Ww4FFb.tF2Cxc,
     .PACTRd.Hk4XGb,
     .aIFcqe,
@@ -254,6 +255,7 @@ url-prefix("https://support.google.com/") {
     div[role="main"]:not([class="s7iwrf gMPiLc  Kdcijb"]) {
         background-color: var(--Myred3) !important;
     }
+    .vJOb1e.aIfcHf:hover,
     .WZIVy:hover,
     .g.Ww4FFb.tF2Cxc:hover {
         background-color: var(--MyX1) !important;
@@ -996,7 +998,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Myback) !important;
     }
     .URIeEf {
-        color: var(--Myblue1) !important;
+        color: var(--MyW) !important;
     }
     .nqE1hb.qWrlPb,
     .VfPpkd-vQzf8d,
@@ -1864,5 +1866,8 @@ url-prefix("https://support.google.com/") {
     }
     .device-info.visible {
         background-color: var(--Mygray1) !important;
+    }
+    .goog-slider-thumb {
+        border-radius: 50%;
     }
 }
