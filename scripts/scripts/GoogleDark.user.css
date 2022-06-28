@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.52
+@version      0.2.53
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -229,6 +229,8 @@ url-prefix("https://support.google.com/") {
     .UVgjof {
         padding-left: 10px !important;
     }
+    /* RED RED */
+    .g.Ww4FFb.tF2Cxc,
     .PACTRd.Hk4XGb,
     .aIFcqe,
     .DMPNfb,
@@ -251,6 +253,10 @@ url-prefix("https://support.google.com/") {
     .UVgjof,
     div[role="main"]:not([class="s7iwrf gMPiLc  Kdcijb"]) {
         background-color: var(--Myred3) !important;
+    }
+    .WZIVy:hover,
+    .g.Ww4FFb.tF2Cxc:hover {
+        background-color: var(--MyX1) !important;
     }
     .mL3xi,
     .O9Q0Ff-NmME3c-Utye1-V67aGc,
@@ -438,6 +444,8 @@ url-prefix("https://support.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    a[class="k8XOCe R0xfCb VCOFK s8bAkb"],
+    div[class="MXl0lf tKtwEb wHYlTd"],
     a.T2ozWe,
     jsl>a.T2ozWe,
     a.aTVMOe>.lY57Fd,
@@ -538,6 +546,8 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[class="k8XOCe R0xfCb VCOFK s8bAkb"]:hover,
+    div[class="MXl0lf tKtwEb wHYlTd"]:hover,
     a.T2ozWe:hover,
     jsl>a.T2ozWe:hover,
     a[class*="aTVMOe  qs41qe"]>.lY57Fd,
@@ -674,6 +684,8 @@ url-prefix("https://support.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[class="k8XOCe R0xfCb VCOFK s8bAkb"]:active,
+    div[class="MXl0lf tKtwEb wHYlTd"]:active,
     a.T2ozWe:active,
     jsl>a.T2ozWe:active,
     a>.lY57Fd:active,
@@ -777,6 +789,9 @@ url-prefix("https://support.google.com/") {
         transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+    [class="ZkkK1e yUTMj k1U36b"] {
+        background-color: transparent !important;
     }
     ._WAm2YJd509_6BKPdv9AE141,
     .vwfsqc,
@@ -1033,6 +1048,7 @@ url-prefix("https://support.google.com/") {
         color: var(--TwitterBlue) !important;
         text-decoration: none !important;
     }
+    .hXhhq,
     .yuRUbf a:visited:hover,
     a:visited:hover,
     a[href]:visited h3>span:hover {
@@ -1130,6 +1146,8 @@ url-prefix("https://support.google.com/") {
     .DPvwYc.enXqmb {
         color: var(--Mygreen1) !important;
     }
+    .qDDjIb.fKMMOd,
+    .uNkOhe,
     div[role="heading"]>div,
     .BkKHtf,
     .nJGrxf {
@@ -1148,6 +1166,7 @@ url-prefix("https://support.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .kp4pkd:hover,
     .ZQyzS-aVTXAb:hover,
     ul>li[class="JDAKTe ibdqA W7Aapd zpCp3 SmR8"]:hover>[role="link"],
     ul>li>[role="link"]:hover,
@@ -1594,6 +1613,7 @@ url-prefix("https://support.google.com/") {
         text-align: center !important;
         background-color: transparent !important;
     }
+    .sI5x9c:hover,
     .y8Jpof.kpQuGf:hover,
     .g:hover,
     .AUiS2 {
@@ -1799,6 +1819,7 @@ url-prefix("https://support.google.com/") {
         background-color: var(--Mygreen1) !important;
         border-color: var(--Mygreen1) !important;
     }
+    .sieBfb,
     .bNowYc-vJ7A6b-LtZq3b-lubWrc {
         color: var(--Myyellow1) !important;
     }
