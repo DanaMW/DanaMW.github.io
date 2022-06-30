@@ -2,7 +2,7 @@
 @name         Google Contacts Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleContactsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleContactsDark.user.css
-@version      0.0.38
+@version      0.0.39
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -14,6 +14,7 @@ url-prefix("https://maps.googleapis.com") {
     body {
         background-color: var(--Myback) !important;
     }
+    .vRMGwf.oJeWuf,
     .CAX6Sd,
     .z80M1 {
         color: var(--MyW) !important;
@@ -46,6 +47,7 @@ url-prefix("https://maps.googleapis.com") {
     .ZvpjBb.C8Dkz {
         background-color: var(--Mygray3) !important;
     }
+    .wuyg4e,
     .jlpDMe,
     .gb_r,
     a.hUL4le[target="_blank"],
@@ -55,9 +57,8 @@ url-prefix("https://maps.googleapis.com") {
     a:hover {
         color: var(--MyW) !important;
     }
-    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  j3urvf"],
+    div[class*="VfPpkd-WsjYwc"],
     .JuD4Cc,
-    div[class*="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  dlP5vf MxVEac"],
     .u3WVdc.jBmls {
         background-color: var(--Mygray2) !important;
     }
@@ -118,6 +119,7 @@ url-prefix("https://maps.googleapis.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    [class="MocG8c aCjZuc LMgvRb KKjvXb"]:hover,
     a[role="button"]:hover,
     span[role="row"]:hover,
     .gb_f:hover,
@@ -215,6 +217,7 @@ url-prefix("https://maps.googleapis.com") {
     a.L8jIaf {
         color: var(--MyW) !important;
     }
+    a[class*="AuCDse"]:hover,
     a.jnnKcb,
     .eQMted,
     a.L8jIaf {
@@ -223,6 +226,7 @@ url-prefix("https://maps.googleapis.com") {
     .RANAid {
         filter: invert(1)
     }
+    .JvO9cb,
     .PWsB5e,
     div[aria-label="Google apps"],
     .gb_J.gb_A,
@@ -251,9 +255,10 @@ url-prefix("https://maps.googleapis.com") {
     input[type="text"] {
         border: 1px solid var(--Myred1) !important;
     }
+    .ncFHed,
     textarea,
     input {
-        color: var(--Mytext) !important;
+        color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
     }
     input[aria-label="Search"] {
@@ -335,5 +340,11 @@ url-prefix("https://maps.googleapis.com") {
     .DOt6Qd {
         color: var(--TwitterBlue) !important;
     }
-    .SJ5KS {}
+    .CO1lLb {
+        color: var(--Myyellow1) !important;
+    }
+    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  dlP5vf eZjKfd ItcExd  ctrAd A6HzBf"],
+    .OA0qNb.ncFHed {
+        border: 2px solid var(--MyW) !important;
+    }
 }
