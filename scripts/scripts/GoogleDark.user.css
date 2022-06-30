@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.56
+@version      0.2.57
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -232,7 +232,25 @@ url-prefix("https://support.google.com/") {
     .UVgjof {
         padding-left: 10px !important;
     }
+    .DOoYke,
+    canvas.elevation-profile-graph {
+        background-color: var(--Myred3) !important;
+    }
+    .elevation-profile-graph,
+    .DOoYke .elevation-profile-hover-dot {
+        border: 2px solid var(--Myred1) !important;
+    }
+    .wiI7pd,
+    .NXZeCe,
+    .ivN21e,
+    .Fk3sm {
+        color: var(--MyW) !important;
+    }
     /* RED RED */
+    [class="e07Vkf kA9KIf"],
+    .epArK,
+    .AeaXub,
+    .AHtA5e,
     .pzaG1c,
     .layer.toggleTraffic,
     #kp-wp-tab-overview,
@@ -260,6 +278,7 @@ url-prefix("https://support.google.com/") {
     div[role="main"]:not([class="s7iwrf gMPiLc  Kdcijb"]) {
         background-color: var(--Myred3) !important;
     }
+    .ymw5uf,
     .MaBVm,
     .VaFJzb.P8Seg,
     .QcfdK.qp.P8Seg,
@@ -542,7 +561,7 @@ url-prefix("https://support.google.com/") {
     .iv_msusc,
     g-fab,
     a#hdtb-tls,
-    button:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.widget-minimap-shim):not(.yHc72.qk5Wte):not(.hRcu8b.Hk4XGb):not(.Cjxjdb):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb):not(.QhDnB.MkiBcd):not(.BfRbx) {
+    button:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.widget-minimap-shim):not(.yHc72.qk5Wte):not(.hRcu8b.Hk4XGb):not(.Cjxjdb):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb):not(.QhDnB.MkiBcd):not(.BfRbx):not(.J45yZc):not(.Tya61d) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -678,7 +697,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:hover,
     g-fab:hover,
     a#hdtb-tls:hover,
-    button:hover:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.yHc72.qk5Wte):not(.hRcu8b.Hk4XGb):not(.Cjxjdb.pvAs7c):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb):not(.QhDnB.MkiBcd):not(.BfRbx) {
+    button:hover:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not([aria-label="Search"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not([class*="section-header"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.yHc72.qk5Wte):not(.hRcu8b.Hk4XGb):not(.Cjxjdb.pvAs7c):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb):not(.QhDnB.MkiBcd):not(.BfRbx):not(.J45yZc):not(.Tya61d) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -784,7 +803,7 @@ url-prefix("https://support.google.com/") {
     .img_btn:active,
     g-fab:active,
     a#hdtb-tls:active,
-    button:active:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.hRcu8b.Hk4XGb):not(.Cjxjdb.pvAs7c):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb):not(.QhDnB.MkiBcd):not(.BfRbx) {
+    button:active:not([class*="minimap"]):not([jsaction="pane.imagepack.button"]):not([aria-labelledby="widget-minimap-caption"]):not([jsaction="settings.close"]):not(.widget-runway-card-button):not([aria-label="Clear search"]):not(.section-trip-header-back):not([class*="sprite"]):not(.Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe):not(.directions-group-disclose):not([class*="header"]):not(.hRcu8b.Hk4XGb):not(.Cjxjdb.pvAs7c):not(.jN2ORe.Hk4XGb):not(.efms9b.Hk4XGb):not(.QhDnB.MkiBcd):not(.BfRbx):not(.J45yZc):not(.Tya61d) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -813,6 +832,8 @@ url-prefix("https://support.google.com/") {
     * {
         border-color: var(--Myred3) !important;
     }
+    /* RED HERE */
+    .e07Vkf.kA9KIf.dS8AEf,
     .DAdBuc,
     .Lj9fsd,
     #hdtbMenus,
@@ -838,6 +859,9 @@ url-prefix("https://support.google.com/") {
     [class="m6QErb iS1Ot"] {
         background-color: var(--TwitterBlue) !important;
     }
+    .fMc7Ne {
+        background-color: var(--Mygreen1) !important;
+    }
     .FAER9b,
     .MMkI0b {
         color: var(--MyB) !important;
@@ -861,9 +885,13 @@ url-prefix("https://support.google.com/") {
     .Mw2I7 {
         border: 1px solid var(--Myred1) !important;
     }
+    .tTyJAb,
     .ab_dropdownlnkinfo.ab_dropdownchecklist div,
     #ss-bimodal-strict {
         color: var(--MyW) !important;
+    }
+    .UgBNB {
+        color: var(--Myyellow1) !important;
     }
     .jZWadf,
     .ndYZfc,
@@ -1194,6 +1222,7 @@ url-prefix("https://support.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+    .bDIshd:hover,
     .WHf7fb:hover,
     .kp4pkd:hover,
     .ZQyzS-aVTXAb:hover,
@@ -1669,6 +1698,7 @@ url-prefix("https://support.google.com/") {
     .Aul2T.m6aMje {
         background-color: transparent !important;
     }
+    .J45yZc,
     .directions-group-disclose,
     .Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe,
     .hLcKi,
