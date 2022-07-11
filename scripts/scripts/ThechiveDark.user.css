@@ -2,7 +2,7 @@
 @name         The Chive Dark
 @namespace    https://danamw.github.io/scripts/scripts/ThechiveDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ThechiveDark.user.css
-@version      0.0.7
+@version      0.0.8
 @description  Thechive Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -66,6 +66,12 @@
         color: var(--Mytext) !important;
         background-color: var(--Myback) !important;
         border: 1px solid var(--Myborder) !important;
+    }
+    strong {
+        color: var(--Myyellow1) !important;
+    }
+    p {
+        color: var(--MyW) !important;
     }
     #more-content-area,
     div.button.facebook-button,
