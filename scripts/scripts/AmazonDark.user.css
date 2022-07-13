@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.44
+@version      0.0.45
 @description  Amazon Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
@@ -62,6 +62,8 @@
     .rhf-border {
         border-color: transparent !important
     }
+    div[class="a-row a-spacing-medium widgetLink-group"],
+    [class="a-row a-spacing-medium"],
     .nav-search-field,
     .nav-searchbar {
         background-color: transparent !important;
@@ -168,6 +170,9 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    #a-page[aria-hidden="true"] {
+        background-color: var(--MyXB) !important;
+    }
     .a-disabled {
         opacity: 0.5 !important;
     }
@@ -177,7 +182,6 @@
     .s-suggestion:hover,
     .s-pagination-item:hover,
     .s-pagination-item.s-pagination-selected,
-    .a-declarative:hover,
     .s-suggestion.is-hovered,
     a.nav-a:hover,
     .a-link-normal.item:hover,
@@ -319,9 +323,7 @@
     .rhf-border,
     .a-carousel-container,
     .a-carousel-viewport,
-    .a-cardui {
-        background-color: var(--Mygray2) !important;
-    }
+    .a-cardui,
     .a-section {
         background: var(--MyB) !important;
     }
