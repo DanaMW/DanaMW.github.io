@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.31
+@version      0.1.32
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -128,7 +128,7 @@ domain("cdninstagram.com") {
     [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8"]:hover,
     [class="_aaiu _aaiw"]:hover,
     [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p _abyi _abcm"],
-    [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p"]>a:hover,
+    [class*=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p"]>a:hover,
     [class="sqdOP yWX7d    y3zKF     "]:hover,
     ._9-4g:hover,
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                        JI_ht                                                                      "] button[class="sqdOP yWX7d    y3zKF     "]:hover,
@@ -228,7 +228,7 @@ domain("cdninstagram.com") {
     ._a3gq ._aa1x,
     [class="_aa__ _ackf _ackh"],
     [class="_ab6k _ab6l _ab6m  _aa1v _aa1x _ackf _ackh"],
-    [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p"],
+    [class*=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p"],
     ._abyk,
     [class="zGtbP IPQK5 VideM opExi"],
     ._9-u6,
@@ -248,6 +248,7 @@ domain("cdninstagram.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    [class="_ab8w  _ab94 _ab97 _ab9h _ab9m _ab9p  _aba0 _abac _abcm"],
     [class="_ab8w  _ab94 _ab96 _ab9f _ab9m _ab9p  _abb_  _ab9z"],
     ._9z_0,
     ._9-rn._9-ro,
@@ -270,7 +271,7 @@ domain("cdninstagram.com") {
     [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o"],
     ._acj1,
     [class="_ab8w  _ab94 _ab97 _ab9i _ab9k _ab9p _abcm"],
-    [class="_ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p  _ab9_ _abab"],
+    [class*="_ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p  _ab9_ _abab"],
     ._aa4j,
     [class="_9-ej  _9-eq _a1bn  _9-f2 _9-f5 _9-ff _9-fm  _9-fx _9-g9"],
     ._a3gq,
