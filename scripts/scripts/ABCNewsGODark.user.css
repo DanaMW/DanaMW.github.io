@@ -2,14 +2,14 @@
 @name         ABCNewsGODark
 @namespace    http://danamw.github.io/scripts/scripts/ABCNewsGODark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ABCNewsGODark.user.css
-@version      0.0.7
+@version      0.0.8
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("go.com") {
-    .FITT_Article,
+    [class*="FITT_Article"],
     [class="KFrHz roSia LGeIL otUPp xQgMU "],
     html,
     body {
@@ -35,6 +35,9 @@
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    * {
+        border-color: var(--Myred1) !important;
+    }
     p,
     a {
         color: var(--MyW) !important;
@@ -44,6 +47,10 @@
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    .wIScF>span {
+        color: var(--TwitterRed);
+    }
+    [class="xTlfF sapCZ "],
     h1,
     h2 {
         color: var(--TwitterBlue) !important;
