@@ -2,7 +2,7 @@
 @name         My Router Dark
 @namespace    https://danamw.github.io/scripts/scripts/MyRouterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MyRouterDark.user.css
-@version      0.0.13
+@version      0.0.14
 @author       Dana L. Meli-Wischman
 @description  My Router Dark
 @homepageURL  https://danamw.github.io
@@ -10,7 +10,8 @@
 
 @-moz-document url-prefix("http://192.168.0.1/"),
 url-prefix("http://192.168.1.1/"),
-url-prefix("http://remote.localdomain.net/") {
+url-prefix("http://remote.localdomain.net/"),
+url-prefix("https://use1-eweb.tplinkcloud.com/") {
     html,
     body {
         background-color: var(--MyB) !important;
@@ -43,6 +44,7 @@ url-prefix("http://remote.localdomain.net/") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    .name,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
@@ -56,6 +58,9 @@ url-prefix("http://remote.localdomain.net/") {
     small {
         color: var(--TwitterPink) !important;
     }
+    .widget-wrap-outer.paragraph-wrap-outer,
+    .duration-container.widget-container,
+    .content,
     h3,
     h4,
     h5,
@@ -65,6 +70,19 @@ url-prefix("http://remote.localdomain.net/") {
     .text-wrap-display {
         color: var(--TwitterBlue) !important;
     }
+    .status-total-num,
+    .text {
+        color: var(--Mygreen1) !important;
+    }
+    .icon {
+        background-color: transparent !important;
+    }
+    .status-total,
+    .unit {
+        color: var(--TwitterBlue) !important;
+    }
+    #login_login.btn.form-control,
+    .button-button,
     input.combobox-text,
     .navigator-li,
     button {
@@ -82,6 +100,8 @@ url-prefix("http://remote.localdomain.net/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    #login_login.btn.form-control:hover,
+    .button-button:hover,
     input.combobox-text:hover,
     .navigator-li:hover,
     li.combobox-list:hover,
@@ -103,6 +123,8 @@ url-prefix("http://remote.localdomain.net/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    #login_login.btn.form-control:active,
+    .button-button:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -120,7 +142,7 @@ url-prefix("http://remote.localdomain.net/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    [class="login-card container widget-container panel-container form"] {
         background-image: none !important;
         background-color: transparent !important;
     }
@@ -129,10 +151,16 @@ url-prefix("http://remote.localdomain.net/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    .paging-wrap,
+    .devicesList-item-content,
+    .msg-btn-wrap,
     #navigator {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    [class="container grid-header-container"],
+    .widget-title,
+    .login-card-wrap,
     .panel-header {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
@@ -150,6 +178,12 @@ url-prefix("http://remote.localdomain.net/") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+    [class="container widget-container notice-bar-container success"] {
+        background-color: var(--MyX1) !important;
+        opacity: 0.7;
+        color: var(--MyW) !important;
+        border: 1px solid var(--MyW) !important;
+    }
     .tooltip {
         background-color: var(--MyX1) !important;
         opacity: 0.4;
@@ -158,27 +192,38 @@ url-prefix("http://remote.localdomain.net/") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+    .widget-content.msg-content-container,
     .page-content-container {
         background-color: var(--Myred3) !important;
     }
-    .combobox-list-wrap,
-    .panel-content {
+    .combobox-list-wrap {
         background-color: var(--Mygray3) !important;
     }
+    [class="logout-confirm-msg global-confirm container widget-container msg-container prompt"],
     .combobox-list-wrap,
     [id*="widget"].networkmap-panel {
         border: 2px solid var(--MyW) !important;
     }
+    .widget-wrap-outer.paragraph-wrap-outer,
     .panel-title-text {
         color: var(--Myyellow1) !important;
+    }
+    .panel-header {
+        text-align: center;
     }
     li[class="navigator-li navigator-li-level1  has-sub-navi opened has-child-selected"] {
         background-color: var(--Mygray2) !important;
     }
+    /*
     .widget-wrap.text-wrap {
         background-color: var(--Mygray2) !important;
     }
-    @media screen and (min-width: 768px) #main-menu li.navigator-li.selected::after {
+    */
+    li.navigator-li.selected::after {
         border-bottom-color: var(--TwitterPink) !important;
+    }
+    .error-tips-wrapper {
+        background-color: var(--Myred2) !important;
+        color: var(--Myyellow1) !important;
     }
 }
