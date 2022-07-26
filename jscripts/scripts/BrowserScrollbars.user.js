@@ -3,9 +3,9 @@
 // @namespace     https://danamw.github.io/jscripts/scripts/BrowserScrollbars.user.js
 // @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/BrowserScrollbars.user.js
 // @icon          https://danamw.github.io/img/eyeball128.png
-// @version       0.0.3
+// @version       0.0.4
 // @description   Some Damn BrowserScrollbars
-// @author        Dana Meli
+// @author        Dana Meli-Wischman
 // @match         *://*/*
 // @grant         none
 // ==/UserScript==

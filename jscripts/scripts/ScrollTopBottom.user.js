@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name          ScrollTopBottom
-// @version       0.0.4
+// @version       0.0.5
 // @namespace     https://danamw.github.io/jscripts/scripts/ScrollTopBottom.user.js
 // @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/ScrollTopBottom.user.js
 // @icon          https://danamw.github.io/img/eyeball128.png
 // @description   It makes SomeScript Darker.
-// @author        Dana Meli
+// @author        Dana Meli-Wischman
 // @include       *://*/*
 // @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
 // ==/UserScript==

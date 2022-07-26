@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         GoogleImageView
-// @version      0.0.8
+// @version      0.0.9
 // @namespace    https://raw.githubusercontent.com/danamw/GoogleImageView/master/GoogleImageView.user.js
 // @updateURL    https://raw.githubusercontent.com/danamw/GoogleImageView/master/GoogleImageView.user.js
-// @author       Dana Meli
+// @author       Dana Meli-Wischman
 // @author       (Original) narcknowitallinsomniacass (But no one likes a know it all ass)
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @description  A new view image replacement used on Google Image Search

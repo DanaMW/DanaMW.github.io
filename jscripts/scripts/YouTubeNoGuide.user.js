@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name          YouTubeNoGuide
-// @version       0.0.4
+// @version       0.0.5
 // @namespace     https://danamw.github.io/jscripts/scripts/YouTubeNoGuide.user.js
 // @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/YouTubeNoGuide.user.js
 // @icon          https://danamw.github.io/img/eyeball128.png
 // @description   Bye Bye YT Guide.
-// @author        Dana Meli
+// @author        Dana Meli-Wischman
 // @grant         GM_registerMenuCommand
 // @grant         GM_unregisterMenuCommand
 // @grant         GM_getValue

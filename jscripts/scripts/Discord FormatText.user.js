@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Discord FormatText
 // @namespace    file:///D:/Development/_JS Scripting/Discord FormatText.user.js
-// @version      0.0.3
+// @version      0.0.4
 // @description  Some Damn UserScript
-// @author       Dana Meli
+// @author       Dana Meli-Wischman
 // @icon         https://danamw.github.io/img/eyeball128.png
 // @include      /https?://discordapp\.com/channels/*/
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js

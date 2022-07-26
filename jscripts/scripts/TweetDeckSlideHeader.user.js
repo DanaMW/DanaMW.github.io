@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name          TweetDeckSlideHeader
-// @version       0.0.4
+// @version       0.0.5
 // @namespace     https://danamw.github.io/jscripts/scripts/TweetDeckSlideHeader.user.js
 // @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/TweetDeckSlideHeader.user.js
 // @icon          https://danamw.github.io/img/eyeball128.png
 // @description   It makes SomeScript Darker.
-// @author        Dana Meli
+// @author        Dana Meli-Wischman
 // @include       https://twitter.com/*
 // @include       http://twitter.com/*
 // @include       http://*.twitter.com/*

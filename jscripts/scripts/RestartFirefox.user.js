@@ -3,9 +3,9 @@
 // @namespace     https://danamw.github.io/jscripts/scripts/RestartFirefox.user.js
 // @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/RestartFirefox.user.js
 // @icon          https://danamw.github.io/img/eyeball128.png
-// @version       0.0.5
+// @version       0.0.6
 // @description   Some Damn UserScript
-// @author        Dana Meli
+// @author        Dana Meli-Wischman
 // @match         *://*/*
 // @require       https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
 // @grant         none

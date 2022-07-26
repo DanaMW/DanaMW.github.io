@@ -1,6 +1,6 @@
 /*
     Name:       Red
-    Author:     Dana  Meli
+    Author:     Dana Meli-Wischman
 */
 
 .cm-s-red.CodeMirror, .cm-s-red .CodeMirror-gutters {

@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name          AutoRefreshTwitter
-// @version       0.0.4
+// @version       0.0.5
 // @namespace     https://danamw.github.io/jscripts/scripts/AutoRefreshTwitter.user.js
 // @updateURL     https://raw.githubusercontent.com/danamw/danamw.github.io/master/jscripts/scripts/AutoRefreshTwitter.user.js
 // @icon          https://danamw.github.io/img/eyeball128.png
 // @description   It makes Twitter auto refresh.
-// @author        Dana Meli
+// @author        Dana Meli-Wischman
 // @include       https://*.twitter.com/*
 // @include       https://twitter.com/*
 // ==/UserScript==
