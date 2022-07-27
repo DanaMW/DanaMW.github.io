@@ -2,7 +2,7 @@
 @name         My Router Dark
 @namespace    https://danamw.github.io/scripts/scripts/MyRouterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MyRouterDark.user.css
-@version      0.0.14
+@version      0.0.15
 @author       Dana L. Meli-Wischman
 @description  My Router Dark
 @homepageURL  https://danamw.github.io
@@ -58,6 +58,7 @@ url-prefix("https://use1-eweb.tplinkcloud.com/") {
     small {
         color: var(--TwitterPink) !important;
     }
+    .td-content,
     .widget-wrap-outer.paragraph-wrap-outer,
     .duration-container.widget-container,
     .content,
@@ -77,9 +78,16 @@ url-prefix("https://use1-eweb.tplinkcloud.com/") {
     .icon {
         background-color: transparent !important;
     }
+    .time-machine-step-title,
     .status-total,
     .unit {
         color: var(--TwitterBlue) !important;
+    }
+    .time-machine-note {
+        color: var(--TwitterRed) !important;
+    }
+    em {
+        color: var(--Myyellow1) !important;
     }
     #login_login.btn.form-control,
     .button-button,
@@ -184,13 +192,14 @@ url-prefix("https://use1-eweb.tplinkcloud.com/") {
         color: var(--MyW) !important;
         border: 1px solid var(--MyW) !important;
     }
+    .tip-text-box,
     .tooltip {
         background-color: var(--MyX1) !important;
-        opacity: 0.4;
+        opacity: 0.7;
         color: var(--MyW) !important;
         padding: 8px;
         border-radius: 2px;
-        border: 1px solid var(--MyW) !important;
+        border: 1px solid var(--Myyellow1) !important;
     }
     .widget-content.msg-content-container,
     .page-content-container {
