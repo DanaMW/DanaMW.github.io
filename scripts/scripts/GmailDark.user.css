@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.33
+@version      0.1.34
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -678,6 +678,7 @@ url-prefix("https://chat.google.com/") {
     }
     input[aria-label="Search all conversations"],
     input[disabled=""],
+    input[aria-label="Search in mail"],
     input[aria-label="Search mail"] {
         color: var(--Mytext) !important;
         background-color: var(--Mygray3) !important;
@@ -692,6 +693,7 @@ url-prefix("https://chat.google.com/") {
         margin-top: -22px !important;
     }
     input#gs_taif50,
+    input[aria-label="Search in mail"],
     input[aria-label="Search mail"] {
         margin-top: -13px !important;
         height: 28px !important;
