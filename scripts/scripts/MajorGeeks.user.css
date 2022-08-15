@@ -2,7 +2,7 @@
 @name         MajorGeeksGetsDark
 @namespace    http://danamw.github.io/scripts/scripts/MajorGeeks.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MajorGeeks.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -51,7 +51,8 @@
     small {
         color: var(--TwitterPink) !important;
     }
-    .ma0inpage .content,
+    .geekphrase,
+    .mainpage .content,
     .altmainpage .content,
     h3,
     h4,
@@ -156,30 +157,41 @@
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+    /*
+    THREE
+    */
+    .pagefooter,
+    .pageheader,
+    .pageborder,
+    .colright .content,
+    .colleft .content,
     .centerborder h1 {
-        height: 168px;
-        margin: 0px;
-        font-weight: bold;
         /*
         color: #ffffff;
         */
-        font-family: 'Lucida Grande', 'Bitstream Vera Sans', Verdana, Lucida, Helvetica, sans-serif;
-        font-style: normal;
-        text-transform: none;
-        text-align: left;
         background-color: var(--Mygray3);
-        font-size: 12px;
-        background-image: none;
-        text-shadow: none;
         border-color: #ffffff;
         border-style: solid solid solid solid;
-        border-width: 0pt;
-        -moz-border-radius-topleft: 15px;
-        -webkit-border-top-left-radius: 15px;
-        border-top-left-radius: 15px;
-        -moz-border-radius-topright: 15px;
-        -webkit-border-top-right-radius: 15px;
-        border-top-right-radius: 15px;
-        overflow: auto;
+    }
+    /*
+    TWO
+    */
+    .pagelink br,
+    .navigation {
+        background-color: var(--Mygray2) !important;
+        border-color: var(--MyW) !important;
+    }
+    /*
+    ONE
+    .altmainpage .geekycontent
+    */
+    .geekytitle,
+    .geekyinsidecontent,
+    .mainpage .geekycontent {
+        background-color: var(--Mygray1) !important;
+        border-color: var(--MyW) !important;
+    }
+    .pagefooter {
+        color: var(--Myyellow1) !important;
     }
 }
