@@ -2,7 +2,7 @@
 @name         MajorGeeksGetsDark
 @namespace    http://danamw.github.io/scripts/scripts/MajorGeeks.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MajorGeeks.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -60,11 +60,15 @@
     strong {
         color: var(--MyW) !important;
     }
+    strong:hover {
+        color: var(--MyMyred1) !important;
+    }
     /*
     [class*="pagelink"] {
         padding: 5px !important;
     }
     */
+    select.geekyvotes,
     .pagelinkselected,
     .pagelink,
     button {
@@ -82,6 +86,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    select.geekyvotes:hover,
     .pagelink:hover,
     button:hover {
         -moz-appearance: none;
@@ -100,6 +105,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    select.geekyvotes:active,
     .pagelinkselected:active,
     .pagelink:active,
     button:active {
@@ -132,7 +138,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    .geekywraplight h1 {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -183,10 +189,14 @@
     }
     /*
     ONE
-    .altmainpage .geekycontent
     */
+    .geekycolumn,
+    .geekywraplight,
     .geekytitle,
     .geekyinsidecontent,
+    .mainpage .content,
+    .altmainpage .content,
+    .altmainpage .geekycontent,
     .mainpage .geekycontent {
         background-color: var(--Mygray1) !important;
         border-color: var(--MyW) !important;
