@@ -2,14 +2,14 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.36
+@version      0.1.37
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
 ==/UserStyle== */
-
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
+
     ._aa5b,
     [class="_aam1 _aam2 _aam3 _aam5"],
     [class="_aalm _aaln _aalo"],
@@ -26,6 +26,7 @@ domain("cdninstagram.com") {
     .js.logged-in.client-root {
         background-color: var(--MyB) !important;
     }
+
     [class="_aacl _aacp _aacu _aacx _aad6 _aadc"],
     ._a9_b,
     ._aak3,
@@ -39,23 +40,29 @@ domain("cdninstagram.com") {
     ._8UZ6e {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     ._ad7z,
     .VIsJD,
     h4,
@@ -69,38 +76,47 @@ domain("cdninstagram.com") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a>span:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     div[class*="_7UhW9"][class*="x-6xq"][class*="MMzan"][class*="KV-D4"][class*="uL8Hv"][class*="l4b0S"],
     .Nm9Fw,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     time,
     h3,
     h2 {
         color: var(--TwitterRed) !important;
     }
+
     small {
         color: var(--TwitterPink) !important;
     }
+
     ._aa06,
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="rOtsg"][class*="ZUqME"],
     div[class="  _6FEQj CMoMH   RQUXn _8_yLp  "] {
         background-color: var(--MyX1) !important;
     }
+
     div[class="                     Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
         background-color: var(--MyX3) !important;
     }
+
     a._9VEo1 {
         width: 70px !important;
     }
+
     [class="_aam1 _aam2 _aam3 _aam5"] {
         width: 150% !important;
     }
+
     .-qQT3,
     ul._ab85>li,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"],
@@ -124,6 +140,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     .-qQT3:hover,
     ul._ab85>li:hover,
     [class=" _ab8o _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p _abcm"],
@@ -158,6 +175,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     .-qQT3:active,
     ul._ab85>li:active,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"]:active,
@@ -183,17 +201,23 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
+    [class="_ab6o _ab6p _ab6q"],
+    [class="_aalv _aalx _aalz"],
+    [class="_aam1 _aam2 _aam5"],
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
     div[class="       tHaIX              Igw0E     IwRSH      eGOV_         _4EzTm                                                                                   XfCBB             HcJZg              "],
     div[class="uo5MA  _2ciX tWgj8 XWrBI "] {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     [class="_acfk _acfl _acfm"],
     [class*="_ab6o _ab6p _ab6q"],
     [class=" _a4tc"] {
         background-color: transparent !important;
     }
+
     ._aaw8,
     [class=" cTBqC"],
     [class=" _aaw8"] {
@@ -208,6 +232,7 @@ domain("cdninstagram.com") {
         -webkit-transition: all linear 2s;
         transition: all ease-in-out 2s;
     }
+
     ._acum {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -225,12 +250,16 @@ domain("cdninstagram.com") {
         filter: brightness(75%) !important;
         border: none !important;
     }
+
     li>a[role="link"]:hover {
         border-left: 2px solid var(--Mygreen1) !important;
     }
+
     [class*="vdqkn"] {
         opacity: 0;
     }
+
+    ._ae2s._ae3w,
     [class="_aarz _aar- _aar_"],
     [role="menuitem"],
     ._ab12,
@@ -253,11 +282,13 @@ domain("cdninstagram.com") {
     ._7zBYT {
         background-color: var(--Myred3) !important;
     }
+
     ._lz6s,
     [class="_a1bn  _9-f2 _9-f5 _9-fd _9-fi _9-fm  _9-fx _9-g5"]:hover {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     ._ab5s,
     [class="_ab8w  _ab94 _ab97 _ab9h _ab9m _ab9p  _aba0 _abac _abcm"],
     [class="_ab8w  _ab94 _ab96 _ab9f _ab9m _ab9p  _abb_  _ab9z"],
@@ -277,6 +308,7 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     [class="_ab21 _ab22 _ab23"],
     ._aav4._aav5,
     [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o"],
@@ -319,6 +351,7 @@ domain("cdninstagram.com") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     ._01UL2,
     textarea {
         background-color: var(--Mygray3) !important;
@@ -326,6 +359,7 @@ domain("cdninstagram.com") {
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -333,16 +367,19 @@ domain("cdninstagram.com") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     section * input[type="checkbox"] {
         -moz-appearance: checkbox;
         -webkit-appearance: checkbox;
         appearance: checkbox;
     }
+
     section * input[type="radio"] {
         -moz-appearance: radio;
         -webkit-appearance: radio;
         appearance: radio;
     }
+
     ._aatk,
     ._aasx,
     [class=" _aaoe _aaso _aasp"],
@@ -357,6 +394,7 @@ domain("cdninstagram.com") {
     .leaflet-popup-tip {
         background-color: var(--Myred3) !important;
     }
+
     [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o _abcm"],
     ._ab83,
     ._aa61,
@@ -368,24 +406,29 @@ domain("cdninstagram.com") {
     div[class="AvhYw nLL4f"] {
         background-color: var(--Mygray3) !important;
     }
+
     header[class="vtbgv "] {
         border-top: 20px solid var(--Myred3) !important;
     }
+
     ._aa5k,
     div[class*="_9GP1n"][class*="HlUSH"],
     div[class*="_9GP1n"] {
         background-color: transparent !important;
     }
+
     [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8"],
     [class="_aaiu _aaiw"] {
         border: 1px solid var(--MyW) !important;
     }
+
     [class="_acfk _acfl _acfm"],
     ._aa5k,
     div[class*="_9GP1n"][class*="HlUSH"],
     div[class*="_9GP1n"] {
         border: none !important;
     }
+
     /*------------------All filter INVERTS----------------*/
     span[class="glyphsSpriteFriend_Follow u-__7"],
     div[class="FuWoR -wdIA x7xX2 "],
@@ -395,30 +438,37 @@ domain("cdninstagram.com") {
     svg {
         filter: invert(1);
     }
+
     svg[aria-label="Unlike"] {
         filter: invert(0);
     }
+
     button svg path:hover,
     svg:hover {
         filter: invert(0.5);
     }
+
     /*--------------------------Main Article--------------*/
     a.FPmhX.notranslate.yrJyr {
         color: var(--Mygreen2) !important;
     }
+
     div[class="_7UhW9   xLCgt      MMzan  KV-D4        uL8Hv     l4b0S    "],
     .TqC_a {
         color: var(--MyW) !important;
         font-weight: bold !important;
     }
+
     .TqC_a:hover {
         color: var(--MyB) !important;
         font-weight: bold !important;
     }
+
     [class="         DPiy6    qF0y9          Igw0E     IwRSH        YBx95     acqo5   _4EzTm                                                                                                              "],
     div[class="                     Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
         background-color: var(--Mygray3);
     }
+
     div[class="eo2As "],
     ._-1_m6,
     .NgKI_,
@@ -427,24 +477,30 @@ domain("cdninstagram.com") {
     .M9sTE {
         background-color: var(--Myred3);
     }
+
     ._0T_XJ.zRsZI::after,
     ._0T_XJ.zRsZI::before {
         background-image: none !important;
     }
+
     ._8Rm4L.M9sTE.L_LMM.SgTZ1 {
         background-color: var(--Myred3);
         border: 2px solid var(--Myborder);
     }
+
     .Szr5J.bMltT {
         z-index: 10;
     }
+
     article:hover:not(._ab83),
     ._8Rm4L.M9sTE.L_LMM.SgTZ1:hover {
         box-shadow: 0 0 30px var(--Myred1) !important;
     }
+
     .mt3GC {
         border: 2px var(--Myred1) !important;
     }
+
     div[class="_7UhW9   xLCgt       qyrsm  _0PwGv       uL8Hv          fTMOG"],
     div[class="_7UhW9  PIoXz        qyrsm KV-D4        uL8Hv         "],
     .BcJ68,
@@ -452,13 +508,16 @@ domain("cdninstagram.com") {
     .FPmhX {
         color: var(--MyW) !important;
     }
+
     /*-------------------Main colors-----------------------*/
     .zV_Nj {
         color: var(--Myblue1);
     }
+
     .gElp9 a {
         color: var(--Mygreen1) !important;
     }
+
     ._aacl,
     ._aa4o,
     [class="_aacl _aacn _aacu _aacx _aad6"],
@@ -468,11 +527,13 @@ domain("cdninstagram.com") {
     div a {
         color: var(--MyW) !important;
     }
+
     span[class="_3G4x7  l93RR"]:hover,
     a:hover,
-     :link:hover {
+    :link:hover {
         color: var(--Myred1) !important;
     }
+
     ._41KYi.LQtnO,
     label,
     textarea {
@@ -480,6 +541,7 @@ domain("cdninstagram.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     textarea,
     input:not([type="radio"]):not([type="checkbox"]) {
         background-color: var(--MyB) !important;
@@ -487,6 +549,7 @@ domain("cdninstagram.com") {
         border-radius: 25px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     .mwD2G,
     input[type="radio"],
     input[type="checkbox"] {
@@ -494,122 +557,157 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray2) !important;
         border: 1px solid var(--MyW) !important;
     }
+
     input[type="radio"][checked="true"] {
         color: var(--MyB) !important;
     }
+
     .mwD2G::before {
         background-color: var(--MyW) !important;
     }
+
     section[class="sH9wk  _JgwE "] textarea {
         background-color: var(--MyB) !important;
     }
+
     .ZUqME,
     .vtWDf,
     .YlNGR,
     .kM-aa.NP414.ccgHY.GZkEI {
         background-color: var(--Mygray2) !important;
     }
+
     .YQf7h.xptSB {
         background-color: var(--Myred2) !important;
     }
+
     div[class="_7UhW9   xLCgt      MMzan     fDdiY       uL8Hv      M8ipN   "]:hover {
         color: var(--Myred1) !important;
     }
+
     div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*=" _4EzTm"] {
         background-color: transparent !important;
     }
+
     li.wo9IH {
         background-color: var(--Mygray3) !important;
     }
+
     div[class="ByB5K enqOc "],
     div[class="_nuMd VZk0N "] {
         height: 0px !important;
         opacity: 0 !important;
     }
+
     .v9tJq.AAaSh,
     header[class="vtbgv "] {
         border-color: transparent !important;
         border: 10px var(--Mygreen1) !important;
     }
+
     div[class="RR-M- h5uC0"] {
         margin-top: 65px !important;
     }
+
     .q9xVd::after {
         background-color: var(--Mygreen1) !important;
     }
+
     div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="_22l1"][class*="aGBdT"][class*="BI4qX"] {
         text-align: center !important;
     }
+
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"][class*="HVWg4"] {
         height: 60px !important;
     }
+
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"][class*="HVWg4"]:hover {
         height: 100px !important;
     }
+
     svg[class="_8-yf5 edmGD"] {
         fill: var(--Myred1) !important;
     }
+
     img.s4Iyt:hover {
         filter: invert(1) !important;
     }
+
     .gwgGR {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .eDd9Z {
         background-color: var(--Myred3) !important;
     }
+
     div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                  soMvl                  JI_ht                  DhRcB                                                    "]>svg>path {
         filter: invert(1) !important;
         fill: var(--Myred1) !important;
     }
+
     .pKKVh:hover,
     div[class="v1Nh3 kIKUG  _bz0w"]:hover {
         box-shadow: 0px 0px 10px var(--Myred1) !important;
     }
+
     [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p"]:hover {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
+
     [class="_aacl _aaco _aacu _aacx _aad6 _aade"],
     ._9_68._9_6b._9_6i._9_6j._9_6t {
         color: var(--MyW) !important;
     }
+
     i.sp_jGofMAV8_AJ.sx_017b10 {
         filter: invert(1);
     }
+
     [class="_9_68 _9_6b _9_6h _9_6j _9_6x"] {
         color: var(--MyW) !important;
     }
+
     [class="_aacl _aaco _aacu _aacx _aada"] {
         color: var(--TwitterBlue) !important;
     }
+
     i[aria-label="Instagram"]:hover {
         filter: invert(1)
     }
+
     [class=" _aawf _aawg"] input[class="_aawh _aawj _aauy"] {
         border: 1px solid var(--MyW) !important;
     }
+
     input[type="checkbox"]>div::before {
         color: var(--Myred1) !important;
     }
+
     ._a3gq ._aahe:checked~._aahg::before {
         border-bottom: 2px solid var(--MyW) !important;
         border-left: 2px solid var(--MyW) !important;
     }
+
     ._a3gq ._ac7h:checked {
         border: 5px solid var(--MyW) !important;
     }
+
     .tlZCJ:checked~.mwD2G::before {
         border-bottom: 2px solid var(--MyW) !important;
         border-left: 2px solid var(--MyW) !important;
     }
+
     [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p"]:hover {
         background-color: transparent !important;
     }
+
     ._a3gq ._ad8l {
         background-color: var(--Mygray3) !important;
     }
+
     ._abaq>div>div>div>div>div>div {
         background-color: var(--Mygray3) !important;
     }
