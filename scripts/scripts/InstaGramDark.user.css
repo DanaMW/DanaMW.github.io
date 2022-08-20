@@ -2,13 +2,14 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.37
+@version      0.1.38
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
 ==/UserStyle== */
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
+
     ._aa5b,
     [class="_aam1 _aam2 _aam3 _aam5"],
     [class="_aalm _aaln _aalo"],
@@ -25,6 +26,7 @@ domain("cdninstagram.com") {
     .js.logged-in.client-root {
         background-color: var(--MyB) !important;
     }
+
     [class="_aacl _aacp _aacu _aacx _aad6 _aadc"],
     ._a9_b,
     ._aak3,
@@ -38,23 +40,29 @@ domain("cdninstagram.com") {
     ._8UZ6e {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
+
     ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
+
     ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
+
     ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
+
     ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     ._ad7z,
     .VIsJD,
     h4,
@@ -68,38 +76,47 @@ domain("cdninstagram.com") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a>span:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     div[class*="_7UhW9"][class*="x-6xq"][class*="MMzan"][class*="KV-D4"][class*="uL8Hv"][class*="l4b0S"],
     .Nm9Fw,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     time,
     h3,
     h2 {
         color: var(--TwitterRed) !important;
     }
+
     small {
         color: var(--TwitterPink) !important;
     }
+
     ._aa06,
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="rOtsg"][class*="ZUqME"],
     div[class="  _6FEQj CMoMH   RQUXn _8_yLp  "] {
         background-color: var(--MyX1) !important;
     }
+
     div[class="                     Igw0E     IwRSH        YBx95       _4EzTm                                                                                   XfCBB            g6RW6               "] {
         background-color: var(--MyX3) !important;
     }
+
     a._9VEo1 {
         width: 70px !important;
     }
+
     [class="_aam1 _aam2 _aam3 _aam5"] {
         width: 150% !important;
     }
+
     .-qQT3,
     ul._ab85>li,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"],
@@ -115,14 +132,22 @@ domain("cdninstagram.com") {
         border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                hsl(0, 0%, 0%) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
+        -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     .-qQT3:hover,
     ul._ab85>li:hover,
     [class=" _ab8o _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p _abcm"],
@@ -147,13 +172,20 @@ domain("cdninstagram.com") {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Myred1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
         outline: none !important;
-        opacity: 1.0 !important;
+        opacity: 1 !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
@@ -173,13 +205,20 @@ domain("cdninstagram.com") {
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Mygreen1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                rgba(168, 168, 168, 0.5) 48%,
+                hsla(0, 0%, 0%, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
-        opacity: 1.0 !important;
+        opacity: 1 !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
@@ -204,7 +243,14 @@ domain("cdninstagram.com") {
     [class=" cTBqC"],
     [class=" _aaw8"] {
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Myred1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
         background-size: 1904px 80px !important;
         background-position: center !important;
         border-radius: 0;
@@ -221,13 +267,20 @@ domain("cdninstagram.com") {
         appearance: none;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Myred1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
         outline: none !important;
-        opacity: 1.0 !important;
+        opacity: 1 !important;
         color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
         border: none !important;
@@ -268,7 +321,14 @@ domain("cdninstagram.com") {
     ._lz6s,
     [class="_a1bn  _9-f2 _9-f5 _9-fd _9-fi _9-fm  _9-fx _9-g5"]:hover {
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Myred1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
     }
 
     ._ab5s,
@@ -288,7 +348,11 @@ domain("cdninstagram.com") {
     ul.wW1cu,
     article.PVkFi {
         background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+        background-image: linear-gradient(to top,
+                rgba(0, 0, 0, 0.8),
+                rgba(41, 41, 41, 0.9),
+                rgba(75, 75, 75, 0.9) 100%,
+                transparent) !important;
     }
 
     [class="_ab21 _ab22 _ab23"],
@@ -331,7 +395,11 @@ domain("cdninstagram.com") {
     div[class="zGtbP IPQK5 VideM"],
     [role="dialog"]>._1XyCr {
         background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+        background-image: linear-gradient(to top,
+                rgba(65, 21, 21, 0.8),
+                rgba(97, 22, 22, 0.8),
+                rgba(189, 38, 38, 0.8) 100%,
+                transparent) !important;
     }
 
     ._01UL2,
@@ -657,7 +725,7 @@ domain("cdninstagram.com") {
     }
 
     i[aria-label="Instagram"]:hover {
-        filter: invert(1)
+        filter: invert(1);
     }
 
     [class=" _aawf _aawg"] input[class="_aawh _aawj _aauy"] {
