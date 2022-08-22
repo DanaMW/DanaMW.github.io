@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.14
+@version      0.0.15
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -67,6 +67,7 @@ domain("walmartimages.com") {
         color: var(--TwitterPink) !important;
     }
 
+    .f5,
     .f7,
     h3,
     h4,
@@ -176,6 +177,13 @@ domain("walmartimages.com") {
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
 
+    .flex.items-center.items-top-l.justify-left,
+    [class="w_R w_U w-50 mr3"],
+    [class="w_R w_U w-50 pb4 mb1"],
+    .pa4,
+    .w_Cc,
+    .w_T,
+    .pa3,
     footer,
     .w_AT,
     [data-testid="sticky-buy-box"]>div>div,
@@ -184,7 +192,9 @@ domain("walmartimages.com") {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
-
+    [class="flex justify-between pv3 ph3 ph4-m"],
+    .flex.justify-center.pv3,
+    .w_F0.w_F2,
     .w_GL.w_GN,
     h2.mb0.mt3.f5.lh-copy.dark-gray,
     .black>.items-center,
@@ -236,6 +246,8 @@ domain("walmartimages.com") {
         color: var(--MyW) !important;
     }
 
+    [class="w_R w_U od-print-view"],
+    [class="bg-near-white ba1 mb3 pv2 w-100 h-100 flex justify-center items-center"],
     .bg-white {
         background: var(--Mygray3) !important;
     }
