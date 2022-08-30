@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.59
+@version      0.2.60
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -28,6 +28,7 @@ url-prefix("https://myactivity.google.com/"),
 url-prefix("https://maps.google.com/"),
 url-prefix("https://support.google.com/"),
 url-prefix("https://fiber.google.com/") {
+
     .B6Rt6d.zcLWac.eejsDc,
     .tkcine,
     .wqSOMc.b4iS2b,
@@ -45,6 +46,7 @@ url-prefix("https://fiber.google.com/") {
     body {
         background-color: var(--MyB) !important;
     }
+
     /*
     url-prefix("https://maps.google.com/"),
     */
@@ -53,17 +55,20 @@ url-prefix("https://fiber.google.com/") {
     .SSBXXc {
         left: calc(1vw + var(--smove) - 10vw) !important;
     }
+
     html[itemtype="http://schema.org/SearchResultsPage"] .tsf-p,
     html[itemtype="http://schema.org/SearchResultsPage"] .A8SBwf {
         position: relative !important;
         width: var(--swidth) !important;
         left: calc(1vw + var(--smove) - 10vw) !important;
     }
+
     html[itemtype="http://schema.org/SearchResultsPage"] .A8SBwf.sbfc {
         position: relative !important;
         width: var(--swidth) !important;
         left: calc(2vw + var(--smove) - 10vw) !important;
     }
+
     .jOYx5b,
     .sfibbbc,
     div[jsname="RNNXgb"] {
@@ -72,50 +77,62 @@ url-prefix("https://fiber.google.com/") {
         background: transparent !important;
         border: none !important;
     }
+
     html[itemtype="http://schema.org/WebPage"] div[jsname="RNNXgb"] {
         width: initial !important;
         margin: auto !important;
     }
+
     .tAcEof,
     #hdtb-msb {
         position: relative !important;
     }
+
     .tAcEof,
     #hdtb-msb {
         position: sticky !important;
         margin: 0 auto;
         left: calc(1vw + var(--bmove) - 10vw) !important;
     }
+
     #rcnt {
         position: relative !important;
         left: calc(1vw + var(--cmove) - 10vw) !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3);
         box-shadow: none !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     .piCU0.qWrlPb,
     .rc,
     .r {
         text-align: center !important;
     }
+
     .dU5Kl {
         border: none !important;
     }
+
     .m3xpad.vLnCgb,
     .bqVbBf.jfFgAc.CqMNyc,
     .qFRZdb,
@@ -159,9 +176,11 @@ url-prefix("https://fiber.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     #kp-wp-tab-overview {
         background: var(--MyB) !important;
     }
+
     .exp-outline {
         border: none !important;
         border-radius: 0px !important;
@@ -171,14 +190,17 @@ url-prefix("https://fiber.google.com/") {
         left: 0px !important;
         transform: none !important;
     }
+
     .g.VjDLd.mnr-c.g-blk {
         margin-left: -5px !important;
         width: 575px !important;
     }
+
     .exp-outline,
     div.g {
         border-bottom: 2px solid var(--MyX1) !important;
     }
+
     .piCU0.qWrlPb,
     .FozYP,
     blockquote,
@@ -189,28 +211,35 @@ url-prefix("https://fiber.google.com/") {
     .fxgdke {
         color: var(--MyW) !important;
     }
+
     #irc-cl {
         border: 1px solid var(--MyW) !important;
     }
+
     .irc_mi {
         border: 3px solid var(--Mygray3) !important;
     }
+
     .ll0QOb {
         background-color: var(--Myred1) !important;
         border-color: var(--MyB) !important;
     }
+
     .yrQA5d,
     .ZZ9xL {
         color: var(--Myred1) !important;
     }
+
     a#hdtb-tls {
         border: none !important;
     }
+
     .clear-button,
     div[role="button"][aria-label="Search"] {
         border: none !important;
         border-radius: 50% !important;
     }
+
     input[aria-label="Search Google Maps"],
     input[aria-label="Search Google Account"],
     input[aria-label="Search"] {
@@ -218,9 +247,11 @@ url-prefix("https://fiber.google.com/") {
         color: var(--MyW) !important;
         border: 2px solid var(--Myred2) !important;
     }
+
     button[aria-label="Search"]::before {
         filter: invert(1) !important;
     }
+
     .yQ0wwc,
     input[aria-hidden="true"],
     .a4bIc,
@@ -229,25 +260,30 @@ url-prefix("https://fiber.google.com/") {
         box-shadow: none !important;
         background-color: transparent !important;
     }
+
     .Mza7yc,
     .UVgjof {
         padding-left: 10px !important;
     }
+
     .xpdbox.xpdclose,
     .DOoYke,
     canvas.elevation-profile-graph {
         background-color: var(--Myred3) !important;
     }
+
     .elevation-profile-graph,
     .DOoYke .elevation-profile-hover-dot {
         border: 2px solid var(--Myred1) !important;
     }
+
     .wiI7pd,
     .NXZeCe,
     .ivN21e,
     .Fk3sm {
         color: var(--MyW) !important;
     }
+
     /* RED RED */
     [class="e07Vkf kA9KIf"],
     .epArK,
@@ -280,6 +316,7 @@ url-prefix("https://fiber.google.com/") {
     div[role="main"]:not([class="s7iwrf gMPiLc  Kdcijb"]) {
         background-color: var(--Myred3) !important;
     }
+
     .ymw5uf,
     .MaBVm,
     .VaFJzb.P8Seg,
@@ -289,6 +326,7 @@ url-prefix("https://fiber.google.com/") {
     .g.Ww4FFb.tF2Cxc:hover {
         background-color: var(--MyX1) !important;
     }
+
     .mL3xi,
     .O9Q0Ff-NmME3c-Utye1-V67aGc,
     .s5Xfw,
@@ -296,6 +334,7 @@ url-prefix("https://fiber.google.com/") {
     #resultStats {
         color: var(--MyW) !important;
     }
+
     .aajZCb {
         background-color: var(--Mygray3) !important;
         border-bottom: 2px solid var(--Myred1) !important;
@@ -303,19 +342,23 @@ url-prefix("https://fiber.google.com/") {
         border-left: 2px solid var(--Myred1) !important;
         border-radius: 0 !important;
     }
+
     .sbai {
         color: var(--Mygreen1) !important;
     }
+
     .cwtlwm,
     #cwmcwd {
         background-color: var(--Mygray1) !important;
     }
+
     .gb_C.gb_v,
     #NotFQb.rpnBye>input.vXQmIe.gsrt.iita3B4HP__g-7Ob2ZtRDv2s,
     #HG5Seb.rpnBye>input.vXQmIe.gsrt.iita3B4HP__g-TAgAjI3bJNo {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
+
     .CkrTOd,
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  hTY94b HYI7Re UsCJq oHk1cc"],
     .uoFCfc,
@@ -332,10 +375,12 @@ url-prefix("https://fiber.google.com/") {
     .cwtlb {
         background-color: var(--Mygray3) !important;
     }
+
     .piCU0,
     .match-mod-horizontal-padding.cbphWd {
         color: var(--MyW) !important;
     }
+
     .PwjeAc,
     .gb_jb,
     .gb_C.gb_u,
@@ -343,10 +388,12 @@ url-prefix("https://fiber.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .iblpc,
     #sbfblt {
         display: none !important;
     }
+
     .lr_dct_lbl_blk.lr_dct_lbl_box,
     div.ellip,
     span.ellip,
@@ -357,12 +404,14 @@ url-prefix("https://fiber.google.com/") {
         background-color: transparent !important;
         border: none !important;
     }
+
     .JC0tCe,
     #mKlEF,
     #irc_cb {
         background-color: var(--MyB) !important;
         border-radius: 50% !important;
     }
+
     .RAjCxe,
     .x7WrMb,
     span[id*="wob"],
@@ -371,27 +420,33 @@ url-prefix("https://fiber.google.com/") {
     .u1CfKc {
         color: var(--Myred1) !important;
     }
+
     .YTDezd {
         background-color: var(--Mygreen1) !important;
     }
+
     .xJVnIb,
     .title,
     .HF3S5b {
         color: var(--Mygreen1) !important;
     }
+
     .sbqs_c {
         color: var(--Myred1) !important;
     }
+
     #irc_cb:hover {
         background-color: var(--Myred1) !important;
         color: var(--MyW) !important;
     }
+
     .rgiKub,
     .M6t4T,
     .GiKO7c:hover,
     #hdtb-msb-vis a.q.qs:hover {
         color: var(--MyW) !important;
     }
+
     .hdtb-mitem:not(.hdtb-msel) {
         border-bottom: var(--Myred1) !important;
         width: 100px !important;
@@ -399,6 +454,7 @@ url-prefix("https://fiber.google.com/") {
         max-width: 100px !important;
         height: 45px !important;
     }
+
     .hdtb-mitem.hdtb-msel,
     .hdtb-mitem>.hide-focus-ring,
     .hdtb-mitem.hdtb-imb>a.hide-focus-ring,
@@ -411,15 +467,19 @@ url-prefix("https://fiber.google.com/") {
         min-width: 100px !important;
         max-width: 100px !important;
     }
+
     div[role="tab"][aria-selected="false"].hdtb-mitem.hdtb-imb:not([aria-expanded]) {
         height: 45px !important;
     }
+
     #hdtb-msb-vis a.q.qs {
         top: 0 !important;
     }
+
     .widget-reveal-card-placeholder {
         background-color: transparent !important;
     }
+
     .scene-footer,
     .widget-reveal-card.widget-reveal-card-open,
     #action-menu,
@@ -430,37 +490,47 @@ url-prefix("https://fiber.google.com/") {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+
     .TrT0Xe {
         color: var(--Mygray1) !important;
     }
+
     #pnprev,
     #pnnext {
         text-align: center !important;
     }
+
     .ab_button {
         padding: 5px !important;
     }
+
     div[aria-label="Google apps"],
     .ab_dropdown {
         background-color: var(--Mygray3) !important;
     }
+
     form {
         background: transparent !important;
     }
+
     a[href*="https://accounts.google.com"] {
         margin-left: 0 !important;
         text-align: center !important;
     }
+
     g-fab {
         border-radius: 50% !important;
     }
+
     div[role="tab"][aria-selected="true"]:not(.hdtb-mitem.hdtb-imb),
     div[role="tab"]:not(.hdtb-mitem.hdtb-imb) {
         border: none !important;
     }
+
     .gb_m {
         z-index: 10000 !important;
     }
+
     .OeVqAd.nDuq,
     .OeVqAd,
     .QtDoYb,
@@ -469,6 +539,7 @@ url-prefix("https://fiber.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     .NZmxZe,
     .rQEFy {
         height: 17px !important;
@@ -476,6 +547,7 @@ url-prefix("https://fiber.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+
     a[class="k8XOCe R0xfCb VCOFK s8bAkb"],
     div[class="MXl0lf tKtwEb wHYlTd"],
     a.T2ozWe,
@@ -578,6 +650,7 @@ url-prefix("https://fiber.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     a[class="k8XOCe R0xfCb VCOFK s8bAkb"]:hover,
     div[class="MXl0lf tKtwEb wHYlTd"]:hover,
     a.T2ozWe:hover,
@@ -716,6 +789,7 @@ url-prefix("https://fiber.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     a[class="k8XOCe R0xfCb VCOFK s8bAkb"]:active,
     div[class="MXl0lf tKtwEb wHYlTd"]:active,
     a.T2ozWe:active,
@@ -822,18 +896,22 @@ url-prefix("https://fiber.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     [class="ZkkK1e yUTMj k1U36b"] {
         background-color: transparent !important;
     }
+
     ._WAm2YJd509_6BKPdv9AE141,
     .vwfsqc,
     [role="list"],
     .Kot7x.eXEBMb.Znsfnf {
         background-color: var(--MyB) !important;
     }
+
     * {
         border-color: var(--Myred3) !important;
     }
+
     /* RED HERE */
     .e07Vkf.kA9KIf.dS8AEf,
     .DAdBuc,
@@ -855,46 +933,57 @@ url-prefix("https://fiber.google.com/") {
     .section-profile-stats-progressbar-bar {
         background-color: var(--Myred3) !important;
     }
+
     .Io6YTe {
         color: var(--TwitterBlue) !important;
     }
+
     [class="m6QErb iS1Ot"] {
         background-color: var(--TwitterBlue) !important;
     }
+
     .fMc7Ne {
         background-color: var(--Mygreen1) !important;
     }
+
     .FAER9b,
     .MMkI0b {
         color: var(--MyB) !important;
     }
+
     .OeVqAd.nDuq,
     .OeVqAd {
         border-radius: 15px !important;
         left: -10px !important;
         border: 1px solid var(--MyW) !important;
     }
+
     .sI5x9c:hover {
         background-color: var(--Myred2) !important;
     }
+
     .vJ10Cb,
     .section-profile-stats-progressbar-progress {
         background-color: var(--Myred1) !important;
     }
+
     .vJ10Cb,
     .pzaG1c,
     .Mw2I7.UkaFJe,
     .Mw2I7 {
         border: 1px solid var(--Myred1) !important;
     }
+
     .tTyJAb,
     .ab_dropdownlnkinfo.ab_dropdownchecklist div,
     #ss-bimodal-strict {
         color: var(--MyW) !important;
     }
+
     .UgBNB {
         color: var(--Myyellow1) !important;
     }
+
     .jZWadf,
     .ndYZfc,
     .gb_Qd.gb_7d.gb_Zd {
@@ -902,6 +991,7 @@ url-prefix("https://fiber.google.com/") {
         background: transparent !important;
         border: none !important;
     }
+
     .jZWadf,
     .ndYZfc,
     header {
@@ -909,17 +999,21 @@ url-prefix("https://fiber.google.com/") {
         padding: none !important;
         margin: none !important;
     }
+
     .OZ8wsd,
     .i3LlFf,
     .fl.ellip.oBrLN {
         color: var(--Mygreen1) !important;
     }
+
     .jleFbf {
         color: var(--Mygray1) !important;
     }
+
     .gb_Z {
         background: transparent !important;
     }
+
     .Z4o1ee.GyDlGb.cd29Sd.iiFyne,
     .iKjWAf.irc-nic.isr-rtc.a-no-hover-decoration,
     .VkpGBb,
@@ -927,6 +1021,7 @@ url-prefix("https://fiber.google.com/") {
     .jleFbf {
         background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray3)) !important;
     }
+
     .widget-pane-content-holder,
     .Z4o1ee.GyDlGb.cd29Sd.iiFyne:hover,
     .iKjWAf.irc-nic.isr-rtc.a-no-hover-decoration:hover,
@@ -936,17 +1031,21 @@ url-prefix("https://fiber.google.com/") {
         background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred3)) !important;
         color: var(--MyW) !important;
     }
+
     .dJcyOc,
     .sfibbbc {
         background-color: transparent !important;
         border: none !important;
     }
+
     .abup {
         background-image: -moz-linear-gradient(top, var(--Myred3), var(--Myred2)) !important;
     }
+
     .rlc__slider-page {
         background-image: -moz-linear-gradient(top, var(--Myred2), var(--Myred3)) !important;
     }
+
     [role="menu"],
     ul[role="menu"],
     .UHywFd-content,
@@ -956,12 +1055,15 @@ url-prefix("https://fiber.google.com/") {
     .widget-settings-list {
         background: var(--Mygray3) !important;
     }
+
     .EikfZ.ipJuRUm9UY4A-GQSfLE1fUrA.IFC-animate {
         color: var(--MyW) !important;
     }
+
     .DRBylb {
         background-color: var(--Mygray2) !important;
     }
+
     .L8hPl,
     #wp-tabs-container.I6TXqe.osrp-blk,
     div[class*="imspo"],
@@ -976,9 +1078,11 @@ url-prefix("https://fiber.google.com/") {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+
     .JcdYse {
         color: var(--Mygreen1) !important;
     }
+
     .RmaIBf.vLnCgb,
     .AYBNrd.JuE4Vc,
     .slVwZ,
@@ -993,6 +1097,7 @@ url-prefix("https://fiber.google.com/") {
     .widget-settings-header {
         background-color: var(--Myred3) !important;
     }
+
     .JAPqpe.K0NPx,
     .gb_Nb,
     #cdrlnk.q,
@@ -1004,10 +1109,12 @@ url-prefix("https://fiber.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .vk_c.card.obcontainer.card-section {
         color: var(--MyW) !important;
         border: 1px solid var(--Myborder);
     }
+
     .gb_Cf.gb_jb {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -1015,9 +1122,11 @@ url-prefix("https://fiber.google.com/") {
         border-bottom-right-radius: 15px !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     div[aria-label="Account Information"] {
         background-image: none !important;
     }
+
     .eula-modal,
     div[class*="download__panel"]:not(.download__panel-logo),
     .gb_3f.gb_ob,
@@ -1026,6 +1135,7 @@ url-prefix("https://fiber.google.com/") {
         color: var(--MyW) !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     .gb_Ta.gb_z.gb_7b,
     .gb_hf.gb_Za.gb_hd,
     .gb_ba.gb_g,
@@ -1038,9 +1148,11 @@ url-prefix("https://fiber.google.com/") {
         color: var(--MyW) !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     .y8Jpof.rhsvw:hover {
         background: var(--Myred3) !important;
     }
+
     .xERobd,
     g-inner-card,
     #hdtbSum,
@@ -1048,14 +1160,17 @@ url-prefix("https://fiber.google.com/") {
         background: var(--Myred3) !important;
         box-shadow: none !important;
     }
+
     input {
         text-align: center !important;
         color: var(--MyW) !important;
         background-color: var(--Myback) !important;
     }
+
     .URIeEf {
         color: var(--MyW) !important;
     }
+
     .nqE1hb.qWrlPb,
     .VfPpkd-vQzf8d,
     .eqiJQ,
@@ -1066,15 +1181,18 @@ url-prefix("https://fiber.google.com/") {
     .sbl1 {
         color: var(--MyW) !important;
     }
+
     h4 {
         color: var(--Mygreen1) !important;
         text-decoration: none !important;
     }
+
     .aMZpic,
     .pCMbHb,
     .RScZKc {
         color: var(--TwitterBlue) !important;
     }
+
     a[href],
     .W8wzH,
     i,
@@ -1087,6 +1205,7 @@ url-prefix("https://fiber.google.com/") {
     a {
         color: var(--MyW) !important;
     }
+
     a h3>span:hover,
     a:hover b,
     a>b:hover,
@@ -1101,81 +1220,96 @@ url-prefix("https://fiber.google.com/") {
     a:hover {
         color: var(--Myred1) !important;
     }
+
     a[href]:visited h3>span,
     a:visited {
         color: var(--TwitterBlue) !important;
         text-decoration: none !important;
     }
+
     .hXhhq,
     .yuRUbf a:visited:hover,
     a:visited:hover,
     a[href]:visited h3>span:hover {
         color: var(--Myyellow1) !important;
     }
+
     .yuRUbf a:visited,
     .hgKElc b,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     .yuRUbf a {
         color: var(--TwitterRed) !important;
     }
+
     #logo:hover,
     #hplogo:hover {
         -moz-animation: goo-spin 400ms linear 2;
         -webkit-animation: goo-spin 400ms linear 2;
         animation: goo-spin 400ms linear 2;
     }
+
     .goo-spin {
         -moz-animation: goo-spin 500ms linear;
         -webkit-animation: goo-spin 300ms linear;
         animation: goo-spin 500ms linear;
     }
+
     .goo-pulse {
         -moz-animation: goo-spin 1s steps(8);
         -webkit-animation: goo-spin 1s steps(8);
         animation: goo-spin 1s steps(8);
     }
+
     @-moz-keyframes goo-spin {
         0% {
             -moz-transform: rotate(0deg);
             -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
         }
+
         100% {
             -moz-transform: rotate(360deg);
             -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
         }
     }
+
     @-webkit-keyframes goo-spin {
         0% {
             -moz-transform: rotate(0deg);
             -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
         }
+
         100% {
             -moz-transform: rotate(359deg);
             -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
         }
     }
+
     @keyframes goo-spin {
         0% {
             -moz-transform: rotate(0deg);
             -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
         }
+
         100% {
             -moz-transform: rotate(359deg);
             -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
         }
     }
+
     span>b {
         color: var(--Mygray2) !important;
         background-color: transparent !important;
     }
+
     .BiYF3.HIf9ae,
     .LN9Pb,
     .V6Ytv,
@@ -1184,14 +1318,17 @@ url-prefix("https://fiber.google.com/") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     .z1asCe.MZy1Rb {
         margin-right: -10px !important;
     }
+
     .ahh38c,
     .N5YmOc.kJXJmd,
     .iKjWAf.a-no-hover-decoration.irc-nic.isr-rtc {
         background-color: var(--Mygray2) !important;
     }
+
     .G7m0Af.a52Cae {
         border: solid 3px var(--Mygreen1) !important;
         border-image-outset: 0;
@@ -1201,9 +1338,11 @@ url-prefix("https://fiber.google.com/") {
         border-image-width: 1;
         border-bottom: 0;
     }
+
     .DPvwYc.enXqmb {
         color: var(--Mygreen1) !important;
     }
+
     .qDDjIb.fKMMOd,
     .uNkOhe,
     div[role="heading"]>div,
@@ -1212,18 +1351,22 @@ url-prefix("https://fiber.google.com/") {
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
+
     .xpdopen {
         background-color: var(--Myred3) !important;
     }
+
     #irc-pc {
         color: var(--Myred1) !important;
         border-color: var(--Myred1) !important;
         width: 50px;
     }
+
     div[class="h312td  RtIwE"] {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     .bDIshd:hover,
     .WHf7fb:hover,
     .kp4pkd:hover,
@@ -1235,19 +1378,24 @@ url-prefix("https://fiber.google.com/") {
     .rg_ilmbg {
         background-color: var(--MyX1) !important;
     }
+
     .CAAQAQ {
         background-color: var(--Myred3) !important;
     }
+
     .yyjhs {
         background-color: var(--Mygray2) !important;
     }
+
     .uHTtdf {
         color: var(--Mygreen2) !important;
     }
+
     .S1C7Re,
     .V7ewqe {
         color: var(--Mytext) !important;
     }
+
     .yo6zD,
     .H3pCR,
     .Rs3Epd,
@@ -1259,6 +1407,7 @@ url-prefix("https://fiber.google.com/") {
     .yo6zD.k1mQyc {
         color: var(--Mygray1) !important;
     }
+
     .hXYDxb,
     .KqnMib:hover,
     .MZ9Js,
@@ -1266,6 +1415,7 @@ url-prefix("https://fiber.google.com/") {
     .SHEkIb.gsmt {
         color: var(--Myred1) !important;
     }
+
     div[class="tsp-fr tsp-fs tsp-cpd tsp-cbd"]:hover,
     .oldgiscontent,
     .WOSiSc.l9Rm1d,
@@ -1274,21 +1424,25 @@ url-prefix("https://fiber.google.com/") {
         border: none !important;
         border-color: var(--Myred3) !important;
     }
+
     .dw-sb-cont,
     .kp-blk,
     .rl_item.rl_item_base,
     .NFQFxe.viOShc.LKPcQc.mod {
         background-color: var(--Myred3) !important;
     }
+
     .goog-slider-thumb {
         background-image: none !important;
         background-color: var(--Myred2) !important;
         color: var(--Myred2) !important;
     }
+
     .goog-slider-thumb-dragging {
         background-color: var(--Myred1) !important;
         color: var(--Myred1) !important;
     }
+
     #profileIdentifier,
     .w1I7fb,
     .PfcDvc,
@@ -1296,28 +1450,35 @@ url-prefix("https://fiber.google.com/") {
     .banner h1 {
         color: var(--MyW) !important;
     }
+
     .cRiDhf,
     .BHzsHc,
     .rg_anbg * {
         color: var(--Myred1) !important;
     }
+
     .rg_bx.rg_di.rg_el.ivg-i.fmbrQQxz::before {
         border-bottom-color: var(--TwitterRed) !important;
     }
+
     .oldgisrelatedthumbdata.oldgisrelatedcurrentselection {
         box-shadow: 0px 0px 0px 1px var(--Myred1), 0px 0px 0px 3px var(--Myred1) !important;
     }
+
     .oldgisrelatedthumbdata:hover,
     .oldgisseemore:hover .oldgisrelatedthumbdata {
         box-shadow: 0px 0px 0px 1px var(--Myred1), 0px 0px 0px 3px var(--Myred1) !important;
     }
+
     .oldgisrelatedthumbdata:active,
     .oldgisseemore:active .oldgisrelatedthumbdata {
         box-shadow: 0px 0px 0px 1px var(--Myred1), 0px 0px 0px 3px var(--Myred1) !important;
     }
+
     .oldgisimageareaimage {
         border: 2px solid var(--Myred1) !important;
     }
+
     .oldgisbuttonclose::before,
     .oldgisbuttonclose::after {
         content: "";
@@ -1327,6 +1488,7 @@ url-prefix("https://fiber.google.com/") {
         background: var(--MyW) !important;
         left: 50%;
     }
+
     .oldgisbuttonprev::before,
     .oldgisbuttonnext::before {
         content: "";
@@ -1338,20 +1500,24 @@ url-prefix("https://fiber.google.com/") {
         position: absolute;
         transform: rotate(45deg);
     }
+
     .oldgisbuttonprev::before {
         border-left: 3px solid var(--MyW) !important;
         border-bottom: 3px solid var(--MyW) !important;
         transform: rotate(45deg);
         left: 12px;
     }
+
     .oldgisbuttonnext::before {
         border-top: 3px solid var(--MyW) !important;
         border-right: 3px solid var(--MyW) !important;
         right: 10px;
     }
+
     .rg_bx.rg_di.rg_el.ivg-i.fmbrQQxz {
         border: 5px solid var(--TwitterRed) !important;
     }
+
     #smbw,
     #xjs {
         position: relative !important;
@@ -1359,10 +1525,12 @@ url-prefix("https://fiber.google.com/") {
         padding: 0px !important;
         left: 0px !important;
     }
+
     .nJGrxf.FnqxG,
     .mVDMnf.nJGrxf {
         text-align: center !important;
     }
+
     .VmOpGe,
     body,
     html {
@@ -1370,14 +1538,17 @@ url-prefix("https://fiber.google.com/") {
         color: var(--MyW) !important;
         /*background: url("https://danamw.github.io/img/GoogleBG.jpg") repeat !important;*/
     }
+
     .EHzcec.eejsDc {
         background-color: var(--Mygray3) !important;
         border: 1px solid var(--MyW) !important;
     }
+
     g-more-link,
     .zTpPx.V7Sr0.vH5Lmd {
         text-align: center;
     }
+
     g-tray-header,
     g-scrolling-carousel,
     .mod.NFQFxe.viOShc.LKPcQc,
@@ -1395,22 +1566,27 @@ url-prefix("https://fiber.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     .TRTe9b.DArqwd,
     div[role="heading"] {
         text-align: center !important;
     }
+
     .WuRuJe {
         background-color: var(--Mygreen1) !important;
     }
+
     .gb_qb,
     .gb_ob.gb_pb {
         color: var(--TwitterBlue) !important;
     }
+
     .GHuRVb,
     .rl_item.rl_item_base.bPrEDb,
     div#appbar.appbar {
         background: transparent !important;
     }
+
     .utyhx,
     [class*="gstl"],
     .DAdBuc,
@@ -1444,6 +1620,7 @@ url-prefix("https://fiber.google.com/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     .devices-container,
     .HJCejf,
     .lsrnD,
@@ -1510,10 +1687,12 @@ url-prefix("https://fiber.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     .bYhoud>div {
         text-align: center !important;
         color: var(--MyW) !important;
     }
+
     .mfMhoc,
     b,
     .lEoPHd,
@@ -1521,14 +1700,17 @@ url-prefix("https://fiber.google.com/") {
     #mBMHK {
         color: var(--TwitterBlue) !important;
     }
+
     .Yhekq,
     header.mSUZQd {
         background-color: transparent !important;
     }
+
     .CBPSbf,
     g-scrolling-carousel {
         background-color: var(--Mygray3) !important;
     }
+
     .I6TXqe,
     div[class*="header"],
     .section-layout.section-cardbox,
@@ -1539,38 +1721,47 @@ url-prefix("https://fiber.google.com/") {
     .YtVmAd {
         background-color: var(--Myred3) !important;
     }
+
     .YtVmAd>div {
         background-color: var(--Myred1) !important;
     }
+
     .bx0cub {
         border-color: var(--Myred1) !important;
     }
+
     .Z1is9,
     .mjO7gf {
         color: var(--TwitterPink) !important;
     }
+
     .kyas6e,
     #upgrade.znsu3 {
         background-color: var(--MyB) !important;
     }
+
     cite:hover {
         color: var(--Myred1) !important;
     }
+
     .eFM0qc {
         display: none !important;
     }
+
     .TbwUpd {
         width: 100% !important;
         left: 0 !important;
         right: 50% !important;
         margin: 0 auto !important;
     }
+
     .iHM8f,
     cite {
         color: var(--MyW) !important;
         background-color: transparent !important;
         text-align: center !important;
     }
+
     .lnqoVe-RWgCYc,
     .c0L1fd,
     .Uw4age,
@@ -1578,18 +1769,23 @@ url-prefix("https://fiber.google.com/") {
     .tNjlP {
         color: var(--MyW) !important;
     }
+
     .isv-r.PNCib.MSM1fd.BUooTd.fmbrQQxz::before {
         border-bottom-color: var(--TwitterPink) !important;
     }
+
     .isv-r.PNCib.MSM1fd.BUooTd.fmbrQQxz {
         border: 1px solid var(--Myred1) !important;
     }
+
     .caRMob.Nubvqd {
         background-color: var(--TwitterRed) !important;
     }
+
     .sJyeOd.jrYUfb {
         border-left-color: var(--TwitterRed) !important;
     }
+
     .y8URue .g,
     .ifM9O .g,
     div[class="kp-blk knowledge-panel Wnoohf OJXvsb"],
@@ -1607,87 +1803,108 @@ url-prefix("https://fiber.google.com/") {
         width: 650px !important;
         max-width: 650px !important;
     }
+
     #result-stats,
     .amyZLb,
     span.XCKyNd {
         color: var(--TwitterRed) !important;
     }
+
     .g.rhsvw.mnr-c.g-blk,
     .g.rhsvw.kno-kp.mnr-c.g-blk,
     .xdpopen {
         width: 450px !important;
     }
+
     .kno-ftr {
         margin-right: 10px !important;
     }
+
     .isv-r.PNCib.MSM1fd.BUooTd.sizepropagated .gishoverinfo {
         background: var(--MyX1) !important;
         background-color: var(--MyX1) !important;
     }
+
     .kp-wholepage.kp-wholepage-osrp.HSryR.EyBRub {
         width: 100% !important;
     }
+
     .g.VjDLd.mnr-c.g-blk,
     .kp-blk.nGydZ.Wnoohf.OJXvsb,
     .liYKde.g.VjDLd {
         width: 575px !important;
     }
+
     html[itemtype="http://schema.org/WebPage"] .sfbgg {
         background-color: var(--MyB) !important;
     }
+
     html[itemtype="http://schema.org/SearchResultsPage"] .sfbg,
     html[itemtype="http://schema.org/SearchResultsPage"] .sfbgg {
         background-color: var(--Myred3) !important;
     }
+
     div[class*="modal"] {
         background-color: var(--MyXB) !important;
     }
+
     .ZVWN5d {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .RJn8N.xXEKkb.ellip.oz3cqf.p5AXld,
     .g0qmle,
     .P5Bobd {
         color: var(--TwitterBlue) !important;
     }
+
     svg:hover {
         filter: brightness(200%) !important;
     }
+
     .iHyq8c,
     .N60dNb.mfMhoc,
     .nL0W0>div {
         color: var(--MyW) !important;
     }
+
     .hqwb1b {
         background-color: transparent !important;
     }
+
     .MGqjK {
         background-color: var(--MyB) !important;
     }
+
     .mWyH1d.hide-focus-ring.UgLoB div {
         padding: 0px !important;
     }
+
     .Hhmu2e.wDYxhc.NFQFxe.viOShc.LKPcQc,
     .SPZz6b {
         text-align: center !important;
         background-color: transparent !important;
     }
+
     .sI5x9c:hover,
     .y8Jpof.kpQuGf:hover,
     .g:hover,
     .AUiS2 {
         background-color: var(--MyX1) !important;
     }
+
     .xTFaxe.z1asCe.SaPW2b {
         right: 0px !important;
     }
+
     .qmv19b>div:hover,
     span.XCKyNd,
     [role="button"]:hover {
         filter: brightness(150%) !important;
         color: var(--MyW) !important;
     }
+
     .s8GCU,
     .YisXab,
     .eReC4e.FbgB9,
@@ -1695,11 +1912,13 @@ url-prefix("https://fiber.google.com/") {
     .qmv19b>div {
         background-color: var(--Myred3) !important;
     }
+
     footer,
     .nt4TEf.WCKaKb,
     .Aul2T.m6aMje {
         background-color: transparent !important;
     }
+
     .J45yZc,
     .directions-group-disclose,
     .Tzqkt-T3iPGc-MZArnb-JIbuQc-LgbsSe,
@@ -1716,15 +1935,19 @@ url-prefix("https://fiber.google.com/") {
     button img:not([src*="https"]) {
         filter: invert(1) !important;
     }
+
     .QuQCEd.up0e5 {
         filter: invert(70%) !important;
     }
+
     svg path[d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"] {
         filter: invert(180) !important;
     }
+
     figure>img[class="YPzqGd Vz93id"] {
         filter: invert(0) !important;
     }
+
     .o3j99.n1xJcf.Ne6nSd,
     .BYwrnd,
     .QtDoYb.MJvped,
@@ -1735,23 +1958,28 @@ url-prefix("https://fiber.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+
     [role="radio"][aria-checked="true"] .jfk-radiobutton-radio,
     [role="checkbox"][aria-checked="true"] {
         background-color: var(--MyW) !important;
     }
+
     #gb,
     div[class="gb_pa gb_Zd gb_Va gb_vc gb_Hc"],
     .sfbg {
         background-color: transparent !important;
     }
+
     .tF2Cxc {
         text-align: center !important;
         margin-left: 5px !important;
         margin-right: 5px !important;
     }
+
     .c93Gbe {
         background: transparent !important;
     }
+
     #fbar,
     .KxwPGc.SSwjIe {
         background-color: var(--MyX1) !important;
@@ -1761,6 +1989,7 @@ url-prefix("https://fiber.google.com/") {
         -webkit-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
         transition: opacity 2s, height 2s, transform 2s !important;
     }
+
     #fbar:hover,
     .KxwPGc.SSwjIe:hover {
         background-color: var(--MyX1) !important;
@@ -1770,30 +1999,37 @@ url-prefix("https://fiber.google.com/") {
         -webkit-transition: opacity 2s, height 2s, -webkit-transform 2s !important;
         transition: opacity 2s, height 2s, transform 2s !important;
     }
+
     .Qff0zd {
         background: var(--Mygray3) !important;
     }
+
     .dAEiw.dXdtIf,
     .cG5GOd,
     .gb_Zd.gb_Ta.gb_Kd {
         background: var(--Myred3) !important;
         box-shadow: none !important;
     }
+
     .yg51vc,
     .J1hqV {
         border: none !important;
     }
+
     .r1JIJb,
     .B58ezc {
         color: var(--MyW) !important;
     }
+
     .rQEFy.NZmxZe {
         border-bottom: 2px solid var(--Mygreen1) !important;
     }
+
     .VfPpkd-gIZMF {
         background-image: none !important;
         background-color: none !important;
     }
+
     .tooltip,
     #tooltip,
     .goog-tooltip.tooltip-dark,
@@ -1806,6 +2042,7 @@ url-prefix("https://fiber.google.com/") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+
     .widget-pane-content,
     .section-layout,
     .section-review-snippet,
@@ -1813,9 +2050,11 @@ url-prefix("https://fiber.google.com/") {
     .section-directions-options {
         background-color: var(--Myred3) !important;
     }
+
     section.parent.selected {
         background: var(--Myred2) !important;
     }
+
     .EDblX.DAVP1,
     g-scrolling-carousel,
     [class*="section-padding"],
@@ -1827,27 +2066,33 @@ url-prefix("https://fiber.google.com/") {
     .widget-directions-dragger {
         background: var(--Myred3) !important;
     }
+
     img[src="//maps.gstatic.com/tactile/directions/text_mode/maneuvers-2x.png"],
     .section-trip-header-back:hover,
     button[class*="sprite"]:hover {
         filter: invert(1) !important;
     }
+
     .directions-mode-distance-time {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
+
     .directions-mode-line {
         border-bottom: 1px solid var(--Myred1) !important;
     }
+
     .note {
         background-color: var(--Mygreen1) !important;
     }
+
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -1855,30 +2100,38 @@ url-prefix("https://fiber.google.com/") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     .hAPCZc {
         background-color: var(--TwitterBlue) !important;
     }
+
     .hAPCZc:hover {
         background-color: var(--Myyellow1) !important;
     }
+
     .section-review-snippet {
         border: 1px solid var(--MyW) !important;
     }
+
     div[class="VfPpkd-qNpTzb-ajuXxc-ZMv3u"] {
         background-color: var(--Myred3) !important;
     }
+
     div[class="VfPpkd-WsjYwc KC1dQ BKdRne "],
     .gHHdVb-haAclf {
         background-color: var(--Mygray3) !important;
     }
+
     .Eb8yy,
     .IunoJc {
         background-color: var(--Mygray2) !important;
     }
+
     div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  hG48Q"],
     .qsUfse {
         background-color: var(--Mygray1) !important;
     }
+
     .GCSyeb,
     div[class="VfPpkd-qNpTzb-P4pF8c VfPpkd-qNpTzb-Vw3Xuf-ZMv3u"],
     span[class="VfPpkd-qNpTzb-P4pF8c-SmKAyb"] {
@@ -1886,10 +2139,12 @@ url-prefix("https://fiber.google.com/") {
         background-color: var(--Mygreen1) !important;
         border-color: var(--Mygreen1) !important;
     }
+
     .sieBfb,
     .bNowYc-vJ7A6b-LtZq3b-lubWrc {
         color: var(--Myyellow1) !important;
     }
+
     .N5YmOc.kJXJmd,
     div[class="  N5YmOc kJXJmd bvW4md"],
     button[class="hryX1e  rN3O0d"],
@@ -1898,35 +2153,48 @@ url-prefix("https://fiber.google.com/") {
     header.xNklye {
         background-image: none !important;
     }
+
     .RB5IPd>.HJOYV.HJOYVc57.l7Wukc>img,
     button[class="hryX1e  rN3O0d"]>figure>img,
     .YPzqGd {
         filter: invert(0) !important;
     }
+
     #omnibox-container>div>div>div {
         background-color: transparent !important;
         background-image: none !important;
     }
+
     #omnibox-container>div>div>div {
         background-color: var(--Myred3) !important;
     }
+
     .oldgiscontent.moredetailsarea .moredetailsareaheader,
     .oldgiscontent {
         background-color: var(--MyB) !important;
     }
+
     .moredetailsareatitle {
         color: var(--TwitterBlue) !important;
     }
+
     .NDFFt {
         background: var(--Myred3) !important;
     }
+
     .RSDz9d {
         color: var(--MyW) !important;
     }
+
     .device-info.visible {
         background-color: var(--Mygray1) !important;
     }
+
     .goog-slider-thumb {
         border-radius: 50%;
+    }
+
+    .iDjcJe.IX9Lgd.wwB5gf {
+        text-align: center !important;
     }
 }
