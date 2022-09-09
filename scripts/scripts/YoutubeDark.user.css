@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.57
+@version      0.0.58
 @description  YouTube Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -1046,5 +1046,13 @@ domain("studio.youtube.com") {
     body[dir="ltr"]>div>div {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
+    }
+
+    #ryd-bar-container {
+        background-color: var(--Mygreen3) !important;
+    }
+
+    #ryd-bar {
+        background-color: var(--Mygreen1) !important;
     }
 }
