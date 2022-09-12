@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.25
+@version      0.0.26
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,6 +13,7 @@ domain("redditinc.com"),
 domain("gfycat.com"),
 domain("redditmedia.com"),
 domain("embedly.com") {
+
     ._2L5G9B5yaoqW3IegiYN-FL,
     ._3ozFtOe6WpJEMUtxDOIvtU,
     html,
@@ -20,28 +21,35 @@ domain("embedly.com") {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
+
     ._2vEf-C2keJaBMY9qk_BxVn,
     ._1b1Jalg2nxA_Z-BjKXRfAV {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
         --Toaster-indicatorColor: var(--MyX1) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     .gif-views,
     h2,
     span,
@@ -50,24 +58,33 @@ domain("embedly.com") {
         color: var(--MyW) !important;
         /* background-color: transparent !important; */
     }
+
     .title {
         color: var(--Myyellow1) !important;
     }
+
     .jcf-option:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     .topbar,
     ._32kofHIEwuARK_15MrzAuT,
     #COIN_PURCHASE_DROPDOWN_ID {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     #appleid-signin-container::before,
     #google-sso::before {
         background: transparent !important;
     }
+
+    i._1F-AgkBVxGxQsEfI3oVkVa._1dJtiWITrnvIbQdXgYgdym,
+    a._3dZnYgFFpifT-M_Vs2FAq6,
+    i._3dZnYgFFpifT-M_Vs2FAq6,
+    a._24UNt1hkbrZxLzs5vkvuDh,
     #appleid-signin-container,
     #google-sso,
     .login-buttons a,
@@ -107,6 +124,11 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
+    i._1F-AgkBVxGxQsEfI3oVkVa._1dJtiWITrnvIbQdXgYgdym:hover,
+    a._3dZnYgFFpifT-M_Vs2FAq6:hover,
+    i._3dZnYgFFpifT-M_Vs2FAq6:hover,
+    a._24UNt1hkbrZxLzs5vkvuDh:hover,
     .login-buttons a:hover,
     a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP:hover,
     a.choice:hover,
@@ -150,6 +172,11 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
+    i._1F-AgkBVxGxQsEfI3oVkVa._1dJtiWITrnvIbQdXgYgdym:active,
+    a._3dZnYgFFpifT-M_Vs2FAq6:active,
+    i._3dZnYgFFpifT-M_Vs2FAq6:active,
+    a._24UNt1hkbrZxLzs5vkvuDh:active,
     .login-buttons a:active,
     a._3K5j589m2GGg7J3pR96mQf._2HZPVURuk0Na0mbosSZJDP:active,
     a.choice:active,
@@ -188,18 +215,21 @@ domain("embedly.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .menuarea,
     div.iframe__bottom,
     header>div {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     div[role="banner"],
     #nav,
     header>div {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     .main,
     footer,
     tbody,
@@ -212,6 +242,7 @@ domain("embedly.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     table[bgcolor="#ffed9c"],
     div.iframe__bottom,
     .Post:hover,
@@ -222,6 +253,7 @@ domain("embedly.com") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -229,33 +261,41 @@ domain("embedly.com") {
         border: 2px solid var(--MyB) !important;
         text-align: center !important;
     }
+
     #COIN_PURCHASE_DROPDOWN_ID {
         border-radius: 25px !important;
     }
+
     div[id*=t3]:hover {
         border-color: var(--Myred1) !important;
         border-width: 1px !important;
     }
+
     ._3hUbl08LBz2mbXjy0iYhOS,
     ._3b8u2OJXaSDdBWoRB7zUoK,
     ._61i6grM3um1yuw4GrN97P {
         background-color: var(--MyX1) !important;
     }
+
     ._27SH1SRzjtOk_2NB2YC-FR {
         border: 1px solid var(--MyW) !important;
     }
+
     .large-text {
         color: var(--TwitterBlue) !important;
     }
+
     ._1wzhGvvafQFOWAyA157okr,
     .trdUvQxqQHHqQKOUBcgnr.EjdBJNEwygtHMKiHd3Bnv {
         background-color: var(--MyX1) !important;
     }
+
     pre {
         background-color: var(--MyB) !important;
         border: 2px solid var(--Myred1) !important;
         border-radius: 0px !important;
     }
+
     .tooltip {
         display: block;
         outline: none;
@@ -272,9 +312,11 @@ domain("embedly.com") {
         font-weight: 400;
         text-transform: none;
     }
+
     .user-button svg {
         filter: invert(1) !important;
     }
+
     form._1DeR7_QiQnu2UK0e2dDfYD {
         background-color: transparent !important;
         border: none !important;
