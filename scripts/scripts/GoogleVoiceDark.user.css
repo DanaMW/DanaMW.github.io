@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.86
+@version      0.0.87
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -15,6 +15,7 @@
 domain("googleusercontent.com"),
 domain("myaccount.google.com"),
 domain("docs.google.com") {
+
     .container,
     .messages-container,
     div[class="layout-align-start-center layout-row flex B3EWm-ipGt7"],
@@ -42,35 +43,44 @@ domain("docs.google.com") {
     body {
         background-color: var(--MyB) !important;
     }
+
     form[action="/search"] {
         position: relative !important;
     }
+
     form[action="/search"] {
         margin: 0 auto;
         width: var(--twidth) !important;
         left: calc(1px + var(--tmove)) !important;
         background-color: transparent !important;
     }
+
     .stock {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     .phone-number-details,
     .secondary-text,
     .dOUild-Od0oM,
@@ -88,10 +98,12 @@ domain("docs.google.com") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a:hover {
         color: var(--TwitterRed) !important;
         text-decoration: none !important;
     }
+
     .primary-text,
     div[class="GHQeBe-qdm4Zd gmat-subhead-1"],
     .grey-900,
@@ -100,6 +112,7 @@ domain("docs.google.com") {
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     .phone-number,
     .phone-number-name,
     .internalHeader,
@@ -107,9 +120,11 @@ domain("docs.google.com") {
     h2 {
         color: var(--TwitterRed) !important;
     }
+
     small {
         color: var(--TwitterPink) !important;
     }
+
     gmat-input-chip,
     .gb_Rb,
     a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"],
@@ -135,6 +150,7 @@ domain("docs.google.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     gmat-input-chip:hover,
     .mat-ripple.container.ng-star-inserted.batch-selected.batch-selecting::before,
     .container.mat-ripple.read.ng-star-inserted.batch-selected.batch-selecting::before,
@@ -166,6 +182,7 @@ domain("docs.google.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     gmat-input-chip:active,
     .gb_Rb:active,
     a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:active,
@@ -192,15 +209,19 @@ domain("docs.google.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .md-body-1 {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
+    [class="je-yi-hc je-Gf-ne"],
     .layout-align-start-center.layout-column,
     .ge-Ei-If.ge-Ci-Zb-If,
     .md-virtual-repeat-scroller,
@@ -215,6 +236,8 @@ domain("docs.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
+    [class="je-yi-ic je-zi-ne je-bo-zi"],
     [class*="fe-yi-ic fe-zi-je"],
     gv-tel-registration-banner-ng2>.container,
     [class="md-body-1 gvMessageEntry-thumbnailWrapper"],
@@ -245,15 +268,23 @@ domain("docs.google.com") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
+    [class="je-yi-hc je-Gf-ne"],
+    .je-Gf-tc {
+        text-align: center !important;
+    }
+
     .fFW7wc.XKSfm-Sx9Kwc-xJ5Hnf {
         background: var(--MyB) !important;
     }
+
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -261,82 +292,103 @@ domain("docs.google.com") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     input[aria-label="Search"] {
         color: var(--MyW) !important;
         height: 25px !important;
         margin-top: 8px !important;
     }
+
     input[placeholder] {
         color: var(--MyW) !important;
     }
+
     div[aria-label="Account Information"] {
         border: 1px solid var(--Myred1) !important;
     }
+
     div[class*="Bqxti-VCkuzd"] {
         background-color: var(--Myred2) !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     div[class*="Bqxti-MJZihc"] {
         background-color: var(--Myblue2) !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     .md-body-1.B3EWm-pfZwlb,
     .mat-checked {
         background-color: transparent !important;
     }
+
     /* this is the bad connect bar */
     .zQ5vdd-haAclf,
     .full-snackbar,
     gv-device-icon>.icon {
         background-color: var(--MyX1) !important;
     }
+
     p[class="gmat-overline REV3g-t1uKQe grey-700"],
     .did-display {
         text-align: center !important;
     }
+
     [role="option"]>[class="ge-Ym-jf-Ym-lh"],
     gv-side-nav {
         background-color: var(--Myred3) !important;
     }
+
     gv-inbox-summary-ng2,
     .md-virtual-repeat-scroller,
     gv-side-nav {
         border: 1px solid var(--Myred1) !important;
     }
+
     .ge-dn-jf-dn-ph {
         background-color: var(--Mygray2) !important;
     }
+
+    [class="je-wi-Zb-xi-Yb-fh"],
     gv-dialpad {
         background-color: var(--Mygray3) !important;
     }
+
     md-menu-content.md-default-theme,
     md-menu-content {
         background: var(--Mygray3) !important;
     }
+
     iframe#sksotdehhtnb,
     .ee-Li-ie {
         background-color: var(--Mygray3) !important;
         border-top: 1px solid var(--Myred1) !important;
     }
+
     .md-body-1.B3EWm-pfZwlb,
     .ee-hn-hf-hn-qh {
         background-color: var(--Myred3) !important;
     }
+
     .ee-hn-hf-cb {
         color: var(--MyW) !important;
     }
+
     .GYQtq-ocIXwb {
         background: var(--MyB) !important;
     }
+
     .q2hAhb-RZ063d {
         border-top: 1px solid var(--Myred1) !important;
         border-bottom: 1px solid var(--Myred1) !important;
     }
+
     .outer-circle,
     .gvPageRoot [_nghost-uai-c32] .inner-circle[_ngcontent-uai-c32],
     .inner-circle {
         background-color: var(--Mygreen1) !important;
     }
+
     #contact-list,
     .mat-form-field-wrapper,
     .input-row,
@@ -344,63 +396,78 @@ domain("docs.google.com") {
         background-image: none !important;
         background: var(--Myred3) !important;
     }
+
     .rkljfb-ymuZHc .rkljfb-rVkNNe.rkljfb-rVkNNe.rkljfb-rVkNNe,
     .gvPageRoot [_nghost-hfp-c299] .container.batch-selected[_ngcontent-hfp-c299] .batch-selection[_ngcontent-hfp-c299] {
         background-color: var(--MyX2) !important;
     }
+
     .message-row>.avatar,
     .status>.sender-timestamp {
         background-color: transparent !important;
         border: none !important;
         color: var(--Mytext) !important;
     }
+
     md-divider {
         background-color: var(--Myred1) !important;
         color: var(--Myred1) !important;
         border-color: var(--Myred1) !important;
     }
+
     .gmat-body-2,
     .md-button,
     md-menu-item {
         color: var(--MyW) !important;
     }
+
     * {
         border-color: var(--Myred1) !important;
     }
+
     .mat-slide-toggle-bar.mat-slide-toggle-bar-no-side-margin {
         background-color: var(--Myred3) !important;
         border: 0.5px solid var(--MyW) !important;
     }
+
     .mat-slide-toggle-thumb {
         background-color: var(--Myorange2) !important;
     }
+
     .mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb {
         background-color: var(--Mygreen1) !important;
     }
+
     .gvPageRoot .bubble,
     [class*="bubble"] {
         background-color: var(--Myred2) !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     .gvPageRoot .incoming .bubble,
     .gvMessageItem-incoming.gvMessageItem-bubble,
     .gvMessageItem-incoming.gvMessageItem-bubble a {
         background-color: var(--Myblue2) !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     mat-divider {
         border-color: var(--Myred1) !important;
     }
+
     .picker.modal-dialog-bg {
         background-color: var(--MyB) !important;
     }
+
     .ge-Ym-jf-cb {
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
+
     .gb_Se {
         border: none !important;
     }
+
     md-input-container.md-default-theme .md-input:-moz-placeholder,
     md-input-container .md-input:-moz-placeholder,
     md-input-container.md-default-theme .md-input::placeholder,
