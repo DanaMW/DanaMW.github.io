@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.54
+@version      0.0.55
 @description  Additional styling for Stylus
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -112,6 +112,7 @@ regexp("moz-extension://.*") {
     #header {
         color: var(--Mytext) !important;
         border: 1px solid var(--Myborder) !important;
+        background-color: var(--Mygray3) !important;
     }
 
     input {
