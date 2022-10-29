@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.60
+@version      0.2.61
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -548,6 +548,7 @@ url-prefix("https://fiber.google.com/") {
         max-width: 78px !important;
     }
 
+    a[class=" EhlvJf"],
     a[class="k8XOCe R0xfCb VCOFK s8bAkb"],
     div[class="MXl0lf tKtwEb wHYlTd"],
     a.T2ozWe,
@@ -651,6 +652,9 @@ url-prefix("https://fiber.google.com/") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    [class="N5YmOc kJXJmd"]:hover,
+    a[class=" EhlvJf KKjvXb"],
+    a[class=" EhlvJf"]:hover,
     a[class="k8XOCe R0xfCb VCOFK s8bAkb"]:hover,
     div[class="MXl0lf tKtwEb wHYlTd"]:hover,
     a.T2ozWe:hover,
@@ -1056,10 +1060,13 @@ url-prefix("https://fiber.google.com/") {
         background: var(--Mygray3) !important;
     }
 
+    .meUf6b,
     .EikfZ.ipJuRUm9UY4A-GQSfLE1fUrA.IFC-animate {
         color: var(--MyW) !important;
     }
 
+    [class=" I6g62c R2b1Pb"],
+    [class="  QW4Pie"],
     .DRBylb {
         background-color: var(--Mygray2) !important;
     }
