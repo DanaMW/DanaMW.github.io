@@ -28,8 +28,9 @@ url-prefix("https://myactivity.google.com/"),
 url-prefix("https://maps.google.com/"),
 url-prefix("https://support.google.com/"),
 url-prefix("https://fiber.google.com/"),
-url-prefix("https://console.cloud.google.com/products"),
-url-prefix("https://actions.google.com/project") {
+url-prefix("https://console.cloud.google.com/"),
+url-prefix("https://www.googletagmanager.com/"),
+url-prefix("https://console.actions.google.com/") {
 
     .B6Rt6d.zcLWac.eejsDc,
     .tkcine,
@@ -1957,6 +1958,7 @@ url-prefix("https://actions.google.com/project") {
         filter: invert(0) !important;
     }
 
+    [class*="topnav"],
     .o3j99.n1xJcf.Ne6nSd,
     .BYwrnd,
     .QtDoYb.MJvped,
@@ -2205,5 +2207,16 @@ url-prefix("https://actions.google.com/project") {
 
     .iDjcJe.IX9Lgd.wwB5gf {
         text-align: center !important;
+    }
+
+    div[class="console-viewport layout-column flex-100"],
+    .md-menu-backdrop,
+    md-backdrop {
+        background-color: var(--MyB) !important;
+        background-image: none !important;
+    }
+
+    ng-transclude {
+        color: var(--MyW) !important;
     }
 }
