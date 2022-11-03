@@ -8,8 +8,10 @@
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("tiktok.com") {
+@-moz-document domain("tiktok.com"),
+url-prefix("https://www.tiktok.com/setting") {
 
+    [class*="Input"],
     html,
     body {
         background-color: var(--MyB) !important;
@@ -41,6 +43,7 @@
         background: var(--Mygreen2) !important;
     }
 
+    [class*="DraftEditor"],
     p,
     a {
         color: var(--MyW) !important;
@@ -71,6 +74,9 @@
         color: var(--MyW) !important;
     }
 
+    /*
+    [class*="DiscoverItem"],
+    */
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -87,6 +93,9 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    a[class*="ShareLink"]:hover,
+    div[class*="Upload"]:hover,
+    li[class*="ItemWrapper"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -128,6 +137,12 @@
         background-color: transparent !important;
     }
 
+    [class*="Upload"] {
+        background-color: transparent !important;
+        border: none !important;
+    }
+
+    [class*="DivHeaderContainer"],
     header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
@@ -139,9 +154,14 @@
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
-    .stock {
+    .Stock {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+
+    [class*="DivProfileContainer"],
+    [class*="DivContainer"] {
+        background-color: var(--Mygray3) !important;
     }
 
     textarea {
@@ -166,5 +186,10 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+
+    [class*="BottomCommentContainer"],
+    [class="tiktok-3q30id-DivContentContainer e1mecfx00"] {
+        background-color: var(--Mygray3) !important;
     }
 }
