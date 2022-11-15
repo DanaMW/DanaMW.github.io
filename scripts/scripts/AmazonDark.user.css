@@ -2,45 +2,54 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.46
+@version      0.0.47
 @description  Amazon Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("amazon.com") {
+
     *,
     html {
         scrollbar-color: var(--Myred1) var(--Myred3);
         scrollbar-width: thin;
         text-decoration: none !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-     ::marker {
+
+    ::marker {
         color: var(--Mygreen1) !important;
     }
+
     li,
     b,
     br {
         color: var(--Mygray1) !important;
     }
+
     #sw-atc-details-single-container,
     .a-container,
     #sw-full-view-container {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     .a-page,
     #a-page,
     #sw-full-view-container,
@@ -58,16 +67,19 @@
         background-color: var(--MyB);
         color: var(--MyW)
     }
+
     .nav-searchbar,
     .rhf-border {
         border-color: transparent !important
     }
+
     div[class="a-row a-spacing-medium widgetLink-group"],
     [class="a-row a-spacing-medium"],
     .nav-search-field,
     .nav-searchbar {
         background-color: transparent !important;
     }
+
     input:not([type="submit"]) {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -75,12 +87,15 @@
         border-radius: 15px !important;
         border: 1px solid var(--MyW) !important;
     }
+
     input[name="submit.addToCart"] {
         padding: 0px !important;
     }
+
     *|*:any-link:not(svg|a) {
         text-decoration: none !important;
     }
+
     div[class*="nav-timeline"],
     div[id*="nav-flyout"],
     td[class*="comparison"],
@@ -89,45 +104,56 @@
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     li.selected[role="tab"] .a-row,
     a:link,
     *|*:link {
         color: rgb(0, 0, 238);
         text-decoration: none !important;
     }
+
     .milestone-bar_background {
         background-color: transparent !important;
     }
+
     .hmenu-item.hmenu-title {
         color: var(--Mygreen1) !important;
     }
+
     .milestone-marker::before,
     .milestone-markers::after {
         background-color: var(--Mygreen1) !important;
     }
+
     .card-lite.product-shoveler,
     #promise-background-container {
         background-color: transparent !important;
     }
+
     #cbcc_banner,
     .rhf-divider-no-gradient {
         border-color: var(--Myred1) !important;
     }
+
     .nav-timeline-dot.nav-timeline-icon {
         background-color: var(--Myred1) !important;
     }
+
     .rhf-header,
     .nav-title {
         color: var(--Myred1) !important;
     }
+
     h2[class*="ya-card__heading"] {
         color: var(--Mygreen1) !important;
     }
+
     ul>li>a,
     ul.a-pagination li.a-normal,
     .nav-search-scope.nav-sprite {
         background-image: none !important;
     }
+
     td.prodDetAttrValue,
     .a-button-text,
     .nav-search-submit-text,
@@ -137,9 +163,11 @@
     .a-size-small {
         color: var(--MyW) !important;
     }
+
     [class*="tablemodule"] {
         background-color: var(--Mygray3) !important;
     }
+
     .s-pagination-item,
     a.nav-a,
     li[role="tab"],
@@ -170,15 +198,19 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     #a-page[aria-hidden="true"] {
         background-color: var(--MyXB) !important;
     }
+
     .a-disabled {
         opacity: 0.5 !important;
     }
+
     .wl-invite-button-contents:hover {
         filter: invert(0) !important;
     }
+
     .s-suggestion:hover,
     .s-pagination-item:hover,
     .s-pagination-item.s-pagination-selected,
@@ -217,6 +249,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     .s-pagination-item:active,
     a.nav-a:active,
     li.selected[role="tab"]:active,
@@ -251,6 +284,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .gw-card-layout .desktop-row>div,
     table,
     #mako-subnav-helper,
@@ -265,17 +299,21 @@
         background-image: none !important;
         background-color: var(--Mygray2) !important;
     }
+
     tr:hover,
     div[class*="bxc-grid-overlay"] {
         background-color: var(--MyX1) !important;
     }
+
     .a-fixed-right-grid.wl-list.selected.a-spacing-micro.a-spacing-top-micro {
         background-color: transparent !important;
     }
+
     #primeSubnav.a-container.a-global-nav-wrapper {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     h2.header,
     #primeSubnav.a-container.a-global-nav-wrapper,
     header,
@@ -283,6 +321,7 @@
     .w-popover-header {
         background-color: var(--Myred3) !important;
     }
+
     div[class*="style__navArea"],
     #nav-main,
     #nav-belt,
@@ -305,19 +344,23 @@
         text-decoration: none !important;
         background-color: transparent !important;
     }
+
     #mbc-price-1,
     a:visited span.nav-text:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     a:active {
         color: var(--Mygreen1) !important;
     }
+
     h1,
     .a-price-symbol {
         color: var(--Mygreen2) !important;
     }
+
     .wl-list,
     .rhf-frame,
     .rhf-border,
@@ -327,10 +370,13 @@
     .a-section {
         background: var(--MyB) !important;
     }
+
+    [class="a-accordion-row-a11y a-accordion-row a-declarative accordion-header mobb-header-css"],
     .billboardRowWrapper,
     div[id*="desktop"] {
         background-color: var(--Mygray2) !important;
     }
+
     .a-popover-wrapper {
         background-color: var(--Myred3) !important;
         border-right: 1px solid var(--MyW) !important;
@@ -338,34 +384,42 @@
         border-bottom: 1px solid var(--MyW) !important;
         border-left: 1px solid var(--MyW) !important;
     }
+
     .a-popover-inner {
         border-right: 1px solid var(--MyW) !important;
     }
+
     .nav-sprite,
     .nav-search-submit-text {
         color: var(--MyW) !important;
     }
+
     .a-icon.a-icon-close {
         filter: invert(1) !important;
     }
+
     .a-tabs.a-declarative,
     #nav-subnav {
         background-color: var(--Myred3) !important;
     }
+
     li.a-tab-heading.a-active a,
     div[aria-level="1"] {
         background-color: transparent !important;
     }
+
     li.a-tab-heading.a-active:hover a {
         color: var(--Mygreen1) !important;
         border-top: 1px solid var(--Myred1) !important;
     }
+
     .nav-carousel-container,
     .nav-template,
     .nav-coreFlyout,
     .hmenu {
         background-color: var(--Mygray3) !important;
     }
+
     .holidayTracker2020-sceneContainer,
     .snow-animation-canvas,
     #themed-banner-container,
@@ -384,24 +438,30 @@
     #gw-desktop-herotator.tall .a-carousel-viewport::before {
         display: none !important;
     }
+
     #gw-desktop-herotator.tall .a-carousel-container {
         overflow: hidden !important;
     }
+
     .prime-sub-nav-item-container {
         padding-right: 10px !important;
         padding-left: 10px !important;
     }
+
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .delivery-box__secondary-text,
     a[role="link"]>span {
         color: var(--Mygray1) !important;
     }
+
     .item {
         color: var(--MyW) !important;
     }
+
     .apx-add-card-buttons-in-popover,
     div[class="a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical"],
     .a-row.ewc-compact-head,
@@ -417,6 +477,7 @@
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+
     .a-accordion-inner,
     .apm-sidemodule.apm-spacing,
     .apm-sidemodule-textleft,
@@ -433,37 +494,46 @@
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     .a-expander-header,
     span[id*="cr-lighthouse"]:hover {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
+
     .a-expander-header:hover {
         background-color: var(--Myred1) !important;
         color: var(--MyW) !important;
     }
+
     .s-desktop-content {
         background-color: var(--MyB) !important;
     }
+
     span[itemprop="name"] {
         color: var(--MyB) !important;
     }
+
     .a-size-medium {
         color: var(--TwitterBlue) !important;
     }
+
     th {
         background-color: transparent !important;
         color: var(--TwitterBlue) !important;
     }
+
     .itemImages-quantityLabel,
     .item-view-qty {
         background-color: var(--Myyellow1) !important;
         color: var(--MyB) !important;
     }
+
     bdi,
     .a-color-price {
         color: var(--Myyellow1) !important;
     }
+
     .a-divider-inner,
     div.a-form-actions,
     div.a-container.sc-background-dark,
@@ -471,17 +541,21 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+
     .a-divider.a-divider-break.a-spacing-top-small h5 {
         background-color: var(--MyX1) !important;
         color: var(--Myyellow1) !important;
     }
+
     #apx-add-credit-card-action-test-id * .a-button-text {
         color: var(--MyW) !important;
     }
+
     .status-card .pt-status-milestones .pt-status-milestone .pt-status-milestone-marker.active,
     .status-card .pt-status-milestones .pt-status-milestone .pt-status-milestone-bar .pt-status-milestone-bar-progress {
         background-color: var(--Myred1) !important;
     }
+
     .pt-status-milestone-marker-check.active {
         color: var(--Mygreen1) !important;
     }
