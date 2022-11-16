@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name         TechHubSocial Dark 11/16/2022, 3:29:21 AM
+@name         TechHubSocial Dark
 @namespace    http://danamw.github.io/scripts/scripts/TechHubSocial.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TechHubSocial.user.css
 @version      0.0.2
-@author       Dana Meli
+@author       Dana l. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
@@ -139,7 +139,7 @@
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
-    .stock {
+    .compose-form__buttons-wrapper {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
