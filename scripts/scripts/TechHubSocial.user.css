@@ -2,7 +2,7 @@
 @name         TechHubSocial Dark
 @namespace    http://danamw.github.io/scripts/scripts/TechHubSocial.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TechHubSocial.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana l. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -71,6 +71,7 @@
         color: var(--MyW) !important;
     }
 
+    a.column-link,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -87,6 +88,8 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    a.column-link:hover,
+    li>a[role="button"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -105,6 +108,7 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    a.column-link:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -134,11 +138,13 @@
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
 
-    .stock {
+    .status-card {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
+    .status-card:hover,
+    .column-subheading,
     .compose-form__buttons-wrapper {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
@@ -149,6 +155,12 @@
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
+    }
+
+    .scrollable,
+    [class*="drawer"],
+    [class*="compose"] {
+        background-color: var(--Mygray2) !important;
     }
 
     input {
@@ -168,9 +180,21 @@
         border: 1px solid var(--MyW) !important;
     }
 
+    .dropdown-menu,
     .search-popout {
         background: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border: 1px solid var(--MyW) !important;
+    }
+
+    .column-subheading {
+        text-align: center;
+    }
+
+    .notification:hover,
+    .status__wrapper:hover,
+    [class="status status-public"]:hover {
+        background-color: var(--MyB) !important;
+        border: 1px solid var(--Myred1) !important;
     }
 }
