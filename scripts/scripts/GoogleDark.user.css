@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.71
+@version      0.2.72
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -294,7 +294,9 @@ url-prefix("https://console.actions.google.com/") {
     .AHtA5e,
     .pzaG1c,
     .layer.toggleTraffic,
+    /*
     #kp-wp-tab-overview,
+    */
     .PACTRd.Hk4XGb,
     .aIFcqe,
     .DMPNfb,
