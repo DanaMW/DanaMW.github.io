@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.42
+@version     0.0.43
 @description Mozilla UserChrome File
 @author      Dana Meli-Wischman
 @homepageURL https://danamw.github.io
@@ -385,7 +385,7 @@ toolbarbutton {
 toolbarbutton focus,
 toolbarbutton:-moz-focusring {
     -moz-appearance: none !important;
-    appearance: none !important;
+    -webkit-appearance: none !important;
     outline: none !important;
     background: none !important;
     border-style: none !important;
