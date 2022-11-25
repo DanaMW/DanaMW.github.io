@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.72
+@version      0.2.73
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -2223,5 +2223,10 @@ url-prefix("https://console.actions.google.com/") {
 
     ng-transclude {
         color: var(--MyW) !important;
+    }
+
+
+    .g {
+        background-color: var(--MyX4) !important;
     }
 }

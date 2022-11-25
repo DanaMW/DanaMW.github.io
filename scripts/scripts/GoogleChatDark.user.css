@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.40
+@version      0.0.41
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -300,6 +300,7 @@ url-prefix("https://docs.google.com/") {
         border-radius: 25px !important;
     }
 
+    input[class="gb_ef aJh"],
     input[aria-label="Search all conversations"] {
         margin-bottom: -0px !important;
         margin-top: -10px !important;
@@ -447,5 +448,18 @@ url-prefix("https://docs.google.com/") {
 
     .SwwApf.qkl0pe {
         background: transparent !important;
+    }
+
+    .VlXfTe,
+    .aB6 {
+        background-color: var(--Mygray3) !important;
+    }
+
+    .aB9 {
+        color: var(--TwitterBlue) !important;
+    }
+
+    [class="T-I T-I-KE L3 aDV"]::before {
+        background-: transparent !important;
     }
 }
