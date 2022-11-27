@@ -3,62 +3,79 @@
 @namespace    http://danamw.github.io/scripts/scripts/ObserverToday.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/ObserverToday.user.css
 @version      0.0.2
-@author       Dana Meli
+@author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("observertoday.com") {
+
     html,
     body {
         background-color: var(--MyB) !important;
     }
+
     .mc-modal,
     #SignupForm_0,
     .stock {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     h2 {
         color: var(--TwitterRed) !important;
     }
+
     small {
         color: var(--TwitterPink) !important;
     }
+
     h3,
     h4,
     h5,
     strong {
         color: var(--MyW) !important;
     }
+
+    li>a,
+    li>a.page-numbers,
+    li>span.page-numbers,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -74,6 +91,11 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
+    li>a:hover,
+    li>a.page-numbers:hover,
+    li>span.page-numbers:hover,
+    li>span.page-numbers.current,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -91,6 +113,10 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
+    li>a:active,
+    li>a.page-numbers:active,
+    li>span.page-numbers:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -108,29 +134,36 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+
+    #top_footer {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+
+    #all_access,
+    .sidenav {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+
+    #slide_search {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -138,6 +171,7 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     .tooltip {
         background-color: var(--MyX1) !important;
         opacity: 0.4;
@@ -145,5 +179,24 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+
+    #homepage_news,
+    .pagination li span,
+    #inside_left_column,
+    .content_wrap,
+    .category {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+
+    #content,
+    #right_column_inside {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+
+    aside {
+        color: var(--MyW) !important;
     }
 }
