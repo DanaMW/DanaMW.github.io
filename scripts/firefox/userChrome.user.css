@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.43
+@version     0.0.44
 @description Mozilla UserChrome File
 @author      Dana Meli-Wischman
 @homepageURL https://danamw.github.io
@@ -730,7 +730,9 @@ browser#html-view-browser {
     background: var(--MyB) !important;
 }
 
+/*
 #page-action-buttons {
     width: 34px !important;
     height: 42px !important;
 }
+*/
