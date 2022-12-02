@@ -23,6 +23,7 @@
 
 .downloadProgress::-moz-progress-bar {
     -moz-appearance: none !important;
+    appearance: none !important;
     background-color: none !important;
     background-image: none !important;
 }
@@ -143,6 +144,7 @@ findbar {
 
 tooltip {
     -moz-appearance: initial !important;
+    appearance: initial !important;
     padding: 0px !important;
 }
 
@@ -191,6 +193,7 @@ tooltip {
 #bookmarks-view,
 #historyTree {
     -moz-appearance: none !important;
+    appearance: none !important;
     background-color: var(--Mygray3) !important;
     color: var(--MyW) !important;
 }
@@ -385,7 +388,7 @@ toolbarbutton {
 toolbarbutton focus,
 toolbarbutton:-moz-focusring {
     -moz-appearance: none !important;
-    -webkit-appearance: none !important;
+    appearance: none !important;
     outline: none !important;
     background: none !important;
     border-style: none !important;
@@ -409,7 +412,7 @@ toolbarbutton:hover {
 .toolbarbutton-1:hover .toolbarbutton-icon,
 .toolbarbutton-1:hover .toolbarbutton-badge-stack {
     -moz-appearance: none !important;
-    -webkit-appearance: none !important;
+    appearance: none !important;
     background: none !important;
     border: none !important;
 }
@@ -499,6 +502,7 @@ toolbarbutton:active,
 
 .tabbrowser-tab {
     -moz-appearance: none !important;
+    appearance: none !important;
 }
 
 .toolbar-items {
@@ -724,4 +728,9 @@ toolbarbutton#scrollbutton-down {
 
 browser#html-view-browser {
     background: var(--MyB) !important;
+}
+
+#page-action-buttons {
+    width: 34px !important;
+    height: 42px !important;
 }
