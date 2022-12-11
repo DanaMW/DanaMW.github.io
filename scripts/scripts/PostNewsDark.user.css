@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -70,6 +70,7 @@ url-prefix("https://launcher.spot.im/spot/") {
     strong {
         color: var(--MyW) !important;
     }
+    button[id*="radix"],
     span[role="button"],
     a.c-bqseKE,
     button {
@@ -87,6 +88,7 @@ url-prefix("https://launcher.spot.im/spot/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    button[id*="radix"]:hover,
     a.c-bqseKE:hover,
     button:hover {
         -moz-appearance: none;
@@ -105,6 +107,7 @@ url-prefix("https://launcher.spot.im/spot/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    button[id*="radix"]:active,
     a.c-bqseKE:active,
     button:active {
         -moz-appearance: none;
@@ -132,10 +135,11 @@ url-prefix("https://launcher.spot.im/spot/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    .c-jnGYto.c-jUkCYw {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .c-jnGYto.c-jUkCYw[class*="activeTab-true"],
     h2[class*="c-dAqCK"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
@@ -185,6 +189,10 @@ url-prefix("https://launcher.spot.im/spot/") {
         background-color: var(--Mygray2) !important;
         border: 2px ridge var(--MyW) !important;
     }
+    .c-bITVNu,
+    .c-jaySyu,
+    .c-fSoVva,
+    [role="tabpanel"],
     .c-furorF,
     .c-gnsQwv,
     [class*="EmptyState"] {
@@ -193,5 +201,21 @@ url-prefix("https://launcher.spot.im/spot/") {
     }
     h2[class*="c-dAqCK"] {
         color: var(--MyW) !important;
+    }
+    .c-jnGYto.c-jUkCYw[class*="activeTab-true"]::after {
+        background-color: var(--Mygreen1) !important;
+        color: var(--Mygreen1) !important;
+        border-color: var(--Mygreen1) !important;
+    }
+    .c-jnGYto.c-jUkCYw[class*="activeTab-true"]:hover::after,
+    .c-jUkCYw:hover::after {
+        border-color: var(--Myred1) !important;
+        background-color: var(--Myred1) !important;
+    }
+    .c-hxkEWD-ibfYWt-css {
+        border-color: var(--Myred1) !important;
+    }
+    .c-jnGYto[data-state="active"]::after {
+        border-color: var(--Mygreen1) !important;
     }
 }
