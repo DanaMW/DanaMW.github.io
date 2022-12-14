@@ -2,7 +2,7 @@
 @name         Google Translate Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleTranslateDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleTranslateDark.user.css
-@version      0.0.18
+@version      0.0.19
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -227,6 +227,7 @@
         border: 1px solid var(--MyW) !important;
         color: var(--MyW) !important;
     }
+    .KkbLmb,
     div[role="region"],
     .gb_H.gb_z,
     .gb_H.gb_y {
@@ -276,5 +277,12 @@
     }
     .GQpbTd {
         background-color: var(--Mygray2) !important;
+    }
+    .PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb,
+    span[class="VfPpkd-AznF2e-wEcVzc VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb"],
+    .yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-YVzG2b::before,
+    .yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-YVzG2b::after {
+        background-color: var(--Mygreen1) !important;
+        border-color: var(--Mygreen1) !important;
     }
 }
