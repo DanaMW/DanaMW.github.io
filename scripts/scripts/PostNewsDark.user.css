@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -64,6 +64,7 @@ url-prefix("https://launcher.spot.im/spot/") {
     time {
         color: var(--Myyellow1) !important;
     }
+    * p,
     h3,
     h4,
     h5,
