@@ -2,14 +2,14 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("post.news"),
-url-prefix("https://launcher.spot.im/spot/") {
+domain("spot.im") {
     html,
     body {
         background-color: var(--MyB) !important;
@@ -34,6 +34,7 @@ url-prefix("https://launcher.spot.im/spot/") {
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .c-FHWXc-dTWEjN-hierarchy-PRIMARY_DARK,
     .c-FHWXc-Pbzoi-hierarchy-PRIMARY,
     .c-gnsQwv {
         background-color: transparent !important;
@@ -64,12 +65,18 @@ url-prefix("https://launcher.spot.im/spot/") {
     time {
         color: var(--Myyellow1) !important;
     }
+    .c-FHWXc-hQDKtx-hierarchy-TERTIARY,
+    p,
     * p,
     h3,
     h4,
     h5,
     strong {
         color: var(--MyW) !important;
+    }
+    img[alt="Tip button icon"],
+    .c-cdQeth>span>svg {
+        filter: invert(1) !important;
     }
     button[id*="radix"],
     span[role="button"],
@@ -190,6 +197,8 @@ url-prefix("https://launcher.spot.im/spot/") {
         background-color: var(--Mygray2) !important;
         border: 2px ridge var(--MyW) !important;
     }
+    div[class*="richie-editor__container"],
+    .c-foFVYh,
     .c-bITVNu,
     .c-jaySyu,
     .c-fSoVva,
@@ -218,5 +227,8 @@ url-prefix("https://launcher.spot.im/spot/") {
     }
     .c-jnGYto[data-state="active"]::after {
         border-color: var(--Mygreen1) !important;
+    }
+    .c-foFVYh {
+        border: 1px solid var(--MyW) !important;
     }
 }
