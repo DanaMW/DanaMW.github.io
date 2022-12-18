@@ -9,7 +9,7 @@
 @preprocessor default
 @var range swidth "Change Search Width"[300, 300, 1000, 1, "px"]
 @var range smove "Move Search Bar" [10, 0, 70, 1, "vw"]
-@var range bmove "Move The Buttons" [10, 0, 70, 1, "vw"]
+@var range bmove "Move The Buttons" [10, 0, 100, 1, "vw"]
 @var range cmove "Move The Column" [10, 0, 70, 1, "vw"]
 ==/UserStyle== */
 
@@ -76,15 +76,26 @@ url-prefix("https://console.actions.google.com/") {
         width: initial !important;
         margin: auto !important;
     }
+    .xhjkHe,
+    .TrmO7,
+    .d8ghCb.zFJcl.t3fq1,
+    .nfdoRb,
     .tAcEof,
     #hdtb-msb {
         position: relative !important;
     }
+    .xhjkHe,
+    .TrmO7,
+    .d8ghCb.zFJcl.t3fq1,
+    .nfdoRb,
     .tAcEof,
     #hdtb-msb {
         position: sticky !important;
         margin: 0 auto;
         left: calc(1vw + var(--bmove) - 10vw) !important;
+    }
+    .nfdoRb {
+        overflow: hidden !important;
     }
     #rcnt {
         position: relative !important;
@@ -475,6 +486,8 @@ url-prefix("https://console.actions.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    .sbct.yMAEcf,
+    .zItAnd.FOU1zf a,
     .ZFiwCf,
     a[class=" EhlvJf"],
     a[class="k8XOCe R0xfCb VCOFK s8bAkb"],
@@ -579,6 +592,7 @@ url-prefix("https://console.actions.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .zItAnd.FOU1zf a:hover,
     .ZFiwCf:hover,
     [class="N5YmOc kJXJmd"]:hover,
     a[class=" EhlvJf KKjvXb"],
