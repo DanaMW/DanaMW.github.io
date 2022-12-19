@@ -21,6 +21,7 @@ domain("spot.im") {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
+        border-color: var(--Myred1) !important;
     }
      ::-webkit-scrollbar {
         background: var(--Myred3) !important;
@@ -147,6 +148,7 @@ domain("spot.im") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .c-jvqXaZ,
     .c-jnGYto.c-jUkCYw[class*="activeTab-true"],
     h2[class*="c-dAqCK"] {
         background-color: var(--Myred3) !important;
@@ -196,6 +198,9 @@ domain("spot.im") {
     .c-fOFkuT {
         background-color: var(--Mygray2) !important;
         border: 2px ridge var(--MyW) !important;
+        /*
+        overflow: hidden;
+        */
     }
     div[class*="richie-editor__container"],
     .c-foFVYh,
@@ -230,5 +235,13 @@ domain("spot.im") {
     }
     .c-foFVYh {
         border: 1px solid var(--MyW) !important;
+    }
+    li.c-jrOhEA::before {
+        background-color: var(--Myyellow1) !important;
+        color: var(--MyB) !important;
+    }
+    .c-diTqIq.c-diTqIq-kdaqIN-isActive-true {
+        background-color: transparent !important;
+        color: var(--Myyellow1) !important;
     }
 }
