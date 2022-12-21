@@ -2,14 +2,15 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.6
+@version      0.0.7
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("post.news"),
-domain("spot.im") {
+url-prefix("https://launcher.spot.im/"),
+url-prefix("https://js.stripe.com/") {
     html,
     body {
         background-color: var(--MyB) !important;
@@ -75,6 +76,7 @@ domain("spot.im") {
     strong {
         color: var(--MyW) !important;
     }
+    .c-cdQeth>span>svg>polyline,
     img[alt="Tip button icon"],
     .c-cdQeth>span>svg {
         filter: invert(1) !important;
@@ -144,10 +146,13 @@ domain("spot.im") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+    div[class*="Menu"],
+    li.c-iQSkIN,
     .c-jnGYto.c-jUkCYw {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    div[class*="Header"],
     .c-jvqXaZ,
     .c-jnGYto.c-jUkCYw[class*="activeTab-true"],
     h2[class*="c-dAqCK"] {
@@ -180,14 +185,16 @@ domain("spot.im") {
         padding-right: 5px !important;
     }
     .c-ilLoxd {
-        background-color: var(--Myred3) !important;
+        background-color: var(--MyB) !important;
     }
     article {
         background: var(--Mygray3) !important;
     }
+    .c-PJLV:hover {
+        border: 1px solid var(--Myred1) !important;
+    }
     article:hover {
         background: var(--Mygray2) !important;
-        border: 1px solid var(--Myred1) !important;
     }
     .c-foJpPP {
         transition: none !important;
@@ -214,6 +221,10 @@ domain("spot.im") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+    label {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
     h2[class*="c-dAqCK"] {
         color: var(--MyW) !important;
     }
@@ -236,6 +247,7 @@ domain("spot.im") {
     .c-foFVYh {
         border: 1px solid var(--MyW) !important;
     }
+    .c-dVvJMv,
     li.c-jrOhEA::before {
         background-color: var(--Myyellow1) !important;
         color: var(--MyB) !important;
