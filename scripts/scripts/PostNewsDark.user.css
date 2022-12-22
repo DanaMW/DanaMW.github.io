@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.7
+@version      0.0.8
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -81,6 +81,7 @@ url-prefix("https://js.stripe.com/") {
     .c-cdQeth>span>svg {
         filter: invert(1) !important;
     }
+    a.c-cdQeth,
     button[id*="radix"],
     span[role="button"],
     a.c-bqseKE,
@@ -99,6 +100,7 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a.c-cdQeth:hover,
     button[id*="radix"]:hover,
     a.c-bqseKE:hover,
     button:hover {
@@ -118,6 +120,7 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.c-cdQeth:active,
     button[id*="radix"]:active,
     a.c-bqseKE:active,
     button:active {
@@ -205,11 +208,7 @@ url-prefix("https://js.stripe.com/") {
     .c-fOFkuT {
         background-color: var(--Mygray2) !important;
         border: 2px ridge var(--MyW) !important;
-        /*
-        overflow: hidden;
-        */
     }
-    div[class*="richie-editor__container"],
     .c-foFVYh,
     .c-bITVNu,
     .c-jaySyu,
