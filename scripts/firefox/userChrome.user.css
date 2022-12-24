@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.44
+@version     0.0.45
 @description Mozilla UserChrome File
 @author      Dana Meli-Wischman
 @homepageURL https://danamw.github.io
@@ -9,7 +9,6 @@
 
 @namespace html "http://www.w3.org/1999/xhtml";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
-
 :root {
     scrollbar-width: thin;
     scrollbar-color: var(--Myred1) var(--Myred3);
@@ -547,6 +546,7 @@ tab {
     text-align: center !important;
 }
 
+
 /*
 tabbrowser-tab:not([labelendaligned], :hover) > .tab-stack > .tab-content > .tab-close-button {
     padding-inline-start: 0;
@@ -578,6 +578,7 @@ tabbrowser-tab:not([labelendaligned], :hover) > .tab-stack > .tab-content > .tab
     display: -moz-inline-box;
   }
 */
+
 tabbrowser-tab:not([labelendaligned], :hover)>.tab-stack>.tab-content>.tab-close-button {
     padding-inline-start: 0;
     width: 17px;
@@ -623,7 +624,6 @@ tab .tab-close-button:hover,
     -moz-transform: scale(1.25, 1.25) !important;
     transform: scale(1.25, 1.25) !important;
 }
-
 
 #alertBox[animate] {
     animation-timing-function: cubic-bezier(.12, 1.23, .48, 1.09);
@@ -729,6 +729,7 @@ toolbarbutton#scrollbutton-down {
 browser#html-view-browser {
     background: var(--MyB) !important;
 }
+
 
 /*
 #page-action-buttons {

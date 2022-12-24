@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.41
+@version      0.0.42
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -16,7 +16,6 @@ url-prefix("https://mail.google.com/"),
 url-prefix("https://meet.google.com/"),
 url-prefix("https://tasks.google.com/"),
 url-prefix("https://docs.google.com/") {
-
     .tsUmnc,
     .byY7Yb,
     .UDyRYe,
@@ -33,39 +32,31 @@ url-prefix("https://docs.google.com/") {
     body {
         background-color: var(--MyB) !important;
     }
-
     .stock {
         display: none !important;
     }
-
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar-thumb {
+     ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:hover {
+     ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:active {
+     ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-
     form[role="search"] {
         position: absolute !important;
         left: calc(1vw + var(--csmove)) !important;
         width: var(--cswidth) !important;
     }
-
     .jO7h3c,
     span,
     p,
@@ -73,27 +64,22 @@ url-prefix("https://docs.google.com/") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
-
     .yOUDAf,
     .KrrIce,
     h1 {
         color: var(--TwitterBlue) !important;
     }
-
     .aOHsTc,
     h2 {
         color: var(--TwitterRed) !important;
     }
-
     small {
         color: var(--TwitterPink) !important;
     }
-
     [role=button] .FuN4Dd.NMPajd,
     div[class="af6rLc  w63zXd"]>.FuN4Dd.NMPajd,
     span[role="listitem"],
@@ -121,11 +107,9 @@ url-prefix("https://docs.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-
     a[role="button"]:hover {
         filter: invert(0) !important;
     }
-
     .jO7h3c:hover,
     [role=button] .FuN4Dd.NMPajd:hover,
     div[class="af6rLc  w63zXd"]>.FuN4Dd.NMPajd:hover,
@@ -161,7 +145,6 @@ url-prefix("https://docs.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-
     div[class="af6rLc  w63zXd"]>.FuN4Dd.NMPajd:active,
     .wmFscd:active,
     .gb_Rb:active,
@@ -189,14 +172,12 @@ url-prefix("https://docs.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-
     div[aria-label*="Collapse"] {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         display: initial !important;
     }
-
     [role=button] .FuN4Dd.NMPajd:active,
     .dJ9vNe,
     .dJ9vNe.DbQnIe,
@@ -212,7 +193,6 @@ url-prefix("https://docs.google.com/") {
         background-image: none !important;
         background-color: transparent !important;
     }
-
     .QTQg5e,
     .wbJc4,
     .Xs68kb.ipgD,
@@ -223,7 +203,6 @@ url-prefix("https://docs.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-
     .qhOH9d,
     .TNg8Ce,
     .ndfHFb-CpWD9d-eKpHRd-bN97Pc,
@@ -239,7 +218,6 @@ url-prefix("https://docs.google.com/") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-
     [class*="PV0kIb og1JP Uo8r7 GZNwRc"],
     .kZyufc,
     .ndfHFb-jyrRxf-tJHJj,
@@ -264,29 +242,24 @@ url-prefix("https://docs.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-
     .xMqEEd {
         color: var(--Mygreen1) !important;
         text-align: center !important;
     }
-
     .ZWZruf,
     [class="fjSJOb XhFOdb pt4Wqc"] {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
-
     [role="textbox"],
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 1px !important;
     }
-
     .gtjro {
         color: var(--MyW) !important;
     }
-
     .AYGmkd,
     input.gb_gf,
     input {
@@ -295,28 +268,22 @@ url-prefix("https://docs.google.com/") {
         border-radius: 1px !important;
         border: 1px solid var(--Myred1) !important;
     }
-
     .AYGmkd {
         border-radius: 25px !important;
     }
-
     input[class="gb_ef aJh"],
     input[aria-label="Search all conversations"] {
         margin-bottom: -0px !important;
         margin-top: -10px !important;
     }
-
     input[aria-label="Search in chat and rooms"] {
-
         height: 25px !important;
         margin-top: 10px !important;
     }
-
     /* HERE IS THE STUFF   */
     input[aria-label="Find people, spaces, and messages"] {
         margin-top: -10px !important;
     }
-
     .brC-ays,
     .tooltip {
         display: block;
@@ -334,13 +301,11 @@ url-prefix("https://docs.google.com/") {
         font-weight: 400;
         text-transform: none;
     }
-
     [role="listbox"],
     .hqlnxe,
     [role="menu"] {
         background-color: var(--Mygray3) !important;
     }
-
     .ZnUPVd,
     .Zc1Emd.QIJiHb.MiRdyc,
     .Zc1Emd,
@@ -351,55 +316,43 @@ url-prefix("https://docs.google.com/") {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
-
     div[class="vIO7af "] {
         Border-bottom: 3px solid var(--Myred2) !important;
     }
-
     .HrE5Tb,
     .dKv0S.BUXyJd.AUFR7b {
         background-color: var(--MyX1) !important;
         opacity: 0.8 !important;
     }
-
     div#ow207[class="U26fgb c7fp5b FS4hgd Da1OLc XMGPDb i5PBGe dKv0S aWboPb"][role="button"] .g4jUVc {
         opacity: 1 !important;
     }
-
     .AflJR {
         background-color: var(--Myred3) !important;
     }
-
     .iKCcE.hu21Y.VYsRpc,
     .iKCcE.hu21Y.VYsRpc:hover {
         background-color: var(--Myred3) !important;
         color: var(--Myyellow1) !important;
     }
-
     svg {
         filter: invert(1) !important;
     }
-
     .hlrRUb {
         color: var(--MyW) !important;
     }
-
     .d6pS5.zflTfd {
         box-shadow: none !important;
     }
-
     .A2BXPe.n5uYMe.pYTmjf.mCOR5e {
         border: 1px outset var(--Mygray1) !important;
     }
-
     .uXftcc {
         border: 1px solid var(--Myred2) !important;
     }
-
     [aria-label="Account Information"] {
         border: 1px solid var(--MyW) !important;
     }
-
     .xLoQZb,
     .iKCcE,
     div[class="B8q9Gf qnQFwb hu21Y VYsRpc"],
@@ -408,57 +361,46 @@ url-prefix("https://docs.google.com/") {
     .zlPNZe:hover {
         background-color: var(--Myred3) !important;
     }
-
     .U8d2H,
     .FMTudf {
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
         border: 2px solid var(--MyB) !important;
     }
-
     .Mh0NNb.MoCXad.Mp2Z0b.misTTe,
     .aGJE1b {
         background-color: var(--MyX1) !important;
         border-radius: 5px !important;
     }
-
     .ajp {
         background-color: var(--MyX1) !important;
         color: var(--MyX1) !important;
         border: 2px solid var(--MyW) !important;
     }
-
     .w2HF5c,
     .sxojMb,
     .a3I P {
         color: var(--MyW) !important;
     }
-
     .acY {
         color: var(--MyB) !important;
     }
-
     .tNBef.ZFkohe {
         color: var(--Myyellow1) !important;
     }
-
     .ItO8Dd {
         background-color: var(--Mygreen1) !important;
     }
-
     .SwwApf.qkl0pe {
         background: transparent !important;
     }
-
     .VlXfTe,
     .aB6 {
         background-color: var(--Mygray3) !important;
     }
-
     .aB9 {
         color: var(--TwitterBlue) !important;
     }
-
     [class="T-I T-I-KE L3 aDV"]::before {
         background-: transparent !important;
     }

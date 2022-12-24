@@ -3,7 +3,7 @@
 @namespace    https://danamw.github.io/scripts/scripts/TweetdeckDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TweetdeckDark.user.css
 @description  A Dark TweetDeck Script
-@version      0.1.8
+@version      0.1.9
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
@@ -13,12 +13,10 @@ url-prefix("https://pbs.twimg.com/"),
 url-prefix("https://abs.twimg.com/"),
 url-prefix("https://ton.twimg.com/tweetdeck-web/"),
 url-prefix("https://twitter.com/i/safety/") {
-
     li[class*="stream-item"] [class*="promoted"],
     div[class="stream suggested-tweet-stream permalink-replies"] {
         display: none !important;
     }
-
     .js-app-columns-container.app-columns-container,
     iframe.r-1yadl64.r-16y2uox,
     iframe.r-1yadl64.r-16y2uox body,
@@ -28,30 +26,24 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: none !important;
         background-color: var(--MyB) !important;
     }
-
     * {
         outline: none !important;
         text-decoration: none !important;
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar-thumb {
+     ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:hover {
+     ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:active {
+     ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-
     input,
     select {
         background-color: var(--Mygray3) !important;
@@ -60,54 +52,44 @@ url-prefix("https://twitter.com/i/safety/") {
         border-radius: 25px !important;
         border: 1px solid var(--Myred1) !important;
     }
-
     .padding-a--12.border-divider.flex:hover,
     a.list-twitter-list:hover,
     li.list-listmember:hover {
         background-color: var(--MyX1) !important;
     }
-
     #column-navigator {
         scrollbar-width: none;
     }
-
     Notification-body {
         color: var(--MyW) !important;
     }
-
     section.js-column.column {
         margin-right: 0px !important;
         margin-left: 0px !important;
     }
-
     section.js-column.column.is-focused {
         margin-right: 5px !important;
         margin-left: 5px !important;
         box-shadow: 5px 5px var(--Mygreen1), -5px -5px var(--Mygreen1) !important;
     }
-
     .js-app-header.pin-all.app-header.is-condensed {
         margin-left: 0px !important;
         margin-right: -5px !important;
         padding-right: 0px !important;
     }
-
     .js-app-columns.app-columns.horizontal-flow-container.without-tweet-drag-handles {
         padding-left: 0px !important;
         margin-left: 1px !important;
     }
-
     b[class="fullname inline-block link-complex-target fullname-badged  badge-verified position-rel txt-ellipsis"],
     b[class="fullname inline-block link-complex-target fullname-badged  badge-verified position-rel txt-ellipsis"]::before {
         height: 25px !important;
     }
-
     .css-1dbjc4n.r-1awozwy.r-1p0dtai.r-1777fci.r-1d2f490.r-ywje51.r-u8s1d.r-zchlnj.r-ipm5af,
     .css-901oao.r-daml9f.r-n6v787.r-19jlu03.r-285fr0.r-q4m81j {
         z-index: 10000 !important;
         background: transparent !important;
     }
-
     .more-tweets-glow {
         max-width: 100%;
         height: 6px !important;
@@ -116,31 +98,25 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: radial-gradient(ellipse farthest-corner at 50% 100%, rgb(255, 0, 0) 0%, rgb(255, 0, 0) 25%, rgba(255, 255, 255, 0) 75%) !important;
         background-color: var(--Mygray3) !important;
     }
-
     div[role="progressbar"] {
         z-index: 10000 !important;
         background: transparent !important;
     }
-
     .scrubBar {
         background-color: var(--Mygray2) !important;
     }
-
     .thread,
     .scrubber .scrubHandle,
     .scrubber .playedBar {
         background-color: var(--Myred1) !important;
     }
-
     textarea.js-compose-text.compose-text.bg-color-twitter-white.txt-size--14.scroll-v.scroll-styled-v.scroll-styled-h.scroll-alt.padding-a--0 {
         color: var(--MyW) !important;
         background-color: var(--Myback) !important;
     }
-
     .position-rel.compose-text-container.margin-v--6.br--4 {
         background-color: transparent !important;
     }
-
     .social-proof-for-tweet-title,
     .column-scroller.scroll-v.pin-all,
     .js-compose-text.compose-text.bg-color-twitter-white.txt-size-variable--14.scroll-v.scroll-styled-v.scroll-styled-h.scroll-alt,
@@ -152,88 +128,71 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
     }
-
     li>a {
         color: var(--MyW) !important;
         border-width: 0px !important;
     }
-
     .js-login-form.form-login.startflow-panel-rounded {
         border-color: var(--Myred1) !important;
         border-width: 2px !important;
         border-radius: 15px !important;
         background-color: var(--MyX1) !important;
     }
-
     .form-legend.padding-axl {
         text-align: center !important;
         color: var(--MyW) !important;
     }
-
     select#list-account {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
-
     div[class="margin-b--15 padding-t--25 padding-h--15 bg-color-twitter-white color-twitter-deep-black width--490"] {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
-
     a[class="js-media-image-link block med-link media-item media-size-medium   is-zoomable"],
     .js-quote-detail.quoted-tweet.nbfc.br--14.padding-al.margin-b--8.position-rel.margin-tm.is-actionable {
         border: 1px solid var(--Mygray1) !important;
     }
-
     p.nbfc.color-twitter-darker-gray,
     p {
         color: var(--MyW) !important;
     }
-
     p[class="account-bio txt-sub-antialiased color-twitter-darker-gray txt-size-variable--13 padding-t--5"] {
         color: var(--Mygray1) !important;
     }
-
     .list-listmember {
         padding-right: 5px !important;
         left: 5px !important;
     }
-
     .js-modal-panel.mdl.s-tall-fixed {
         width: 700px !important;
         border: 2px solid var(--Myborder) !important;
         border-radius: 15px !important;
     }
-
     li i.icon.icon-xsmall.icon-dot.column-nav-updates {
         color: var(--Myred1) !important;
         z-index: 1000000 !important;
     }
-
     i[class="icon Icon icon-content"],
     b.non-selectable-item.txt-ellipsis,
     .column-head-title,
     .mdl-btn-media {
         color: var(--MyW) !important;
     }
-
     .column-number {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-
     .js-dropdown-content {
         text-align: center !important;
     }
-
     li.is-selectable a:hover {
         color: var(--MyW) !important;
     }
-
     div[class="button-group"]>button[class="Button--link btn-options-tray padding-hn "] {
         padding-right: 10px !important;
     }
-
     html,
     body,
     table,
@@ -255,7 +214,6 @@ url-prefix("https://twitter.com/i/safety/") {
         -webkit-appearance: none !important;
         appearance: none !important;
     }
-
     select.js-mentioning,
     select.js-tweets-from,
     select.js-retweets,
@@ -264,7 +222,6 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--MyW) !important;
         border: 1px solid var(--MyW) !important;
     }
-
     a.twitter-timeline-link span.js-display-url,
     a.js-user-profile-link[class*="js-action"] .username:hover,
     a.pretty-link b {
@@ -272,13 +229,11 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-
     li>a>strong,
     strong {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-
     strong[class="fullname txt-size--24 hyphenate"],
     div.js-account-profile-header.account-profile-header,
     .padding-h--16,
@@ -290,11 +245,9 @@ url-prefix("https://twitter.com/i/safety/") {
         text-decoration: none !important;
         background-color: transparent !important;
     }
-
     strong[class="fullname txt-size--24 hyphenate"] {
         color: var(--Mytext) !important;
     }
-
     p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"],
     .is-selected,
     .username,
@@ -304,7 +257,6 @@ url-prefix("https://twitter.com/i/safety/") {
     a.link-complex {
         color: var(--TwitterBlue) !important;
     }
-
     p[class="color-twitter-blue txt-link txt-ellipsis link-complex-target margin-t--5"]:hover,
     .is-selected:hover,
     .username:hover,
@@ -320,16 +272,13 @@ url-prefix("https://twitter.com/i/safety/") {
         text-decoration: none !important;
         color: var(--TwitterRed) !important;
     }
-
     .js-tweet-text,
     .js-tweet-text .tweet-text {
         color: var(--Mytext) !important;
     }
-
     .ProfileTweet-actionButton:hover {
         color: var(--Mygray1) !important;
     }
-
     .drawer-header-title,
     [class*="count"]:not([class*="account"]),
     [class*="fullname"],
@@ -338,7 +287,6 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--TwitterBlue) !important;
         border-color: transparent !important;
     }
-
     .mdl-inner,
     .item-box,
     .SummaryCard-contentContainer,
@@ -356,19 +304,16 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: none !important;
         background-color: transparent !important;
     }
-
     .TwitterCard .CardContent,
     .SummaryCard-contentContainer.TwitterCardsGrid-col--12,
     .SummaryCard-content.TwitterCardsGrid-ltr {
         background-color: transparent !important;
     }
-
     article[class="stream-item js-stream-item  is-draggable  "],
     .js-stream-item-content.item-box,
     .js-stream-item-content.item-box.js-show-detail {
         background-image: linear-gradient(to top, rgba(42, 42, 42, 0.8), rgba(75, 75, 75, 0.9), rgba(90, 90, 90, 0.9) 100%, transparent) !important;
     }
-
     /* DARKNESS HERE */
     div[class="css-1dbjc4n r-1uaug3w r-18bvks7 r-t23y2h r-1phboty r-rs99b7 r-1loqt21 r-18u37iz r-1udh08x r-o7ynqc r-1j63xyz"]:hover,
     div[class="css-1dbjc4n r-1uaug3w r-18bvks7 r-t23y2h r-1phboty r-rs99b7 r-1loqt21 r-1udh08x r-o7ynqc r-1j63xyz"]:hover,
@@ -415,7 +360,6 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: none !important;
         background-color: var(--MyB) !important;
     }
-
     .js-customtimeline-name,
     .js-customtimeline-description,
     .dropdown-menu,
@@ -423,7 +367,6 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: transparent !important;
         color: var(--MyW) !important;
     }
-
     div[contenteditable="true"],
     input[type=text],
     input[type=password],
@@ -471,17 +414,14 @@ url-prefix("https://twitter.com/i/safety/") {
     .MomentCapsuleSummary--card {
         background-color: var(--Mygray2) !important;
     }
-
     [class*="Overlay"],
     .QuoteTweet--unavailable {
         background-color: var(--Myback) !important;
     }
-
     .count .count-inner {
         background-color: var(--Myred3) !important;
         text-decoration: none !important;
     }
-
     [class*="head"],
     li,
     .item-box:hover *:not(.dropdown-menu),
@@ -525,16 +465,13 @@ url-prefix("https://twitter.com/i/safety/") {
     .TwitterCard-container {
         border-color: transparent !important;
     }
-
     .dropdown-caret .caret-inner {
         border-bottom: 9px solid hsl(0, 0%, 9%) !important;
     }
-
     .dropdown-divider,
     .WebToast {
         border-bottom: 1px solid var(--MyB) !important;
     }
-
     a,
     div:not(.global-nav-inner):not(.content-header):not(.ProfileHeading-content),
     ul,
@@ -545,18 +482,15 @@ url-prefix("https://twitter.com/i/safety/") {
     .Streams-dividerText {
         border-radius: 4px !important;
     }
-
     input[type=text],
     input[type=password],
     [role="textbox"] {
         border-radius: 25px !important;
         border: 2px solid var(--Myborder) !important;
     }
-
     .item-box {
         box-shadow: 0 1px 9px -3px var(--Mygray3) inset, 0 -1px 6px 0 var(--MyB) inset !important;
     }
-
     .item-box:hover,
     input[type=text],
     input[type=password],
@@ -572,7 +506,6 @@ url-prefix("https://twitter.com/i/safety/") {
         box-shadow: 0 1px 5px 0 var(--MyB) inset, 0 -1px 1px 0 hsl(0, 0%, 60%) inset !important;
         background-color: var(--MyB) !important;
     }
-
     .ProfileTweet,
     .MatchItem,
     ul.js-nav-links li,
@@ -582,19 +515,16 @@ url-prefix("https://twitter.com/i/safety/") {
         box-shadow: 0 1px 9px -3px var(--Mygray3) inset, 0 -1px 6px 0 var(--MyB) inset !important;
         background-color: var(--Myback) !important;
     }
-
     .global-nav-inner,
     .ProfileCanopy-navBar,
     .content-header,
     .ProfileHeading-content {
         box-shadow: 0 1px 5px 0 var(--MyB) !important;
     }
-
     div[class*="footer"],
     .dm-to {
         box-shadow: none !important;
     }
-
     .dropdown-menu,
     .modal-content,
     .ProfileAvatar,
@@ -602,28 +532,23 @@ url-prefix("https://twitter.com/i/safety/") {
     .WebToast {
         box-shadow: 0 1px 5px 1px var(--MyB) !important;
     }
-
     .js-action-header-button {
         margin-bottom: 5px !important;
     }
-
     .js-detail-view-inline-text {
         text-align: center !important;
     }
-
     div[class="position-rel compose-text-container padding-a--10 br--4"],
     button[class="js-dm-button js-show-tip btn btn-on-blue full-width txt-left padding-v--6 padding-h--12 margin-b--12"],
     button[class="js-schedule-button js-show-tip btn btn-on-blue full-width txt-left margin-b--12 padding-v--6 padding-h--12"],
     button[class="js-add-image-button js-show-tip needsclick btn btn-on-blue full-width txt-left margin-b--12 padding-v--6 padding-h--12"] {
         margin-left: -6px !important;
     }
-
     button[class="js-send-button js-spinner-button js-show-tip Button--primary btn-extra-height padding-v--6 padding-h--12 is-disabled"],
     div[class="js-account-selector-grid-toggle pull-right account-selector-grid-toggle"],
     header[class="js-compose-header compose-header"] {
         margin-right: 15px !important;
     }
-
     div[role="button"]:not([style*="position: absolute"]),
     .Button.Button--primary.block.txt-size--18.txt-center,
     .js-dismiss,
@@ -663,7 +588,6 @@ url-prefix("https://twitter.com/i/safety/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-
     .typeahead-item.s-selected,
     .js-hide-drawer.margin-t--8.margin-b--10.Button.Button--primary.Button--large.tweet-button.txt-left:not(.is-hidden),
     .search-tip-item-hover.txt-size--12:hover,
@@ -714,7 +638,6 @@ url-prefix("https://twitter.com/i/safety/") {
         transition-timing-function: linear !important;
         filter: brightness(75%) !important;
     }
-
     div[role="button"]:active:not([style*="position: absolute"]),
     .Button.Button--primary.block.txt-size--18.txt-center:active,
     .js-dismiss:active,
@@ -759,29 +682,23 @@ url-prefix("https://twitter.com/i/safety/") {
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
-
     .js-hide-drawer.margin-t--8.margin-b--10.Button.Button--primary.Button--large.tweet-button.txt-left:not(.is-hidden) {
         width: 200px !important;
         opacity: 0.6 !important;
     }
-
     .js-compose-title.compose-title-text.txt-ellipsis.inline-block {
         color: var(--MyW) !important;
         margin-top: 6px !important;
     }
-
     .pin-bottom-full-width.old-composer-footer {
         background-color: transparent !important;
     }
-
     .js-compose-close.is-actionable.icon.icon-close.margin-v--20.pull-right {
         filter: invert(0.5) !important;
     }
-
     .js-compose-close.is-actionable.icon.icon-close.margin-v--20.pull-right:hover {
         filter: invert(1) !important;
     }
-
     li[class*="active"] a,
     .GridTimeline-footerIcon {
         -moz-appearance: none;
@@ -790,23 +707,19 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: transparent !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, hsla(0, 100%, 50%, .8) 0%, transparent 99%), linear-gradient(180deg, hsl(0, 0%, 50%), hsl(0, 0%, 0%) 85%, hsl(0, 0%, 33%)) !important;
     }
-
     .tweet,
     .ProfileTweet,
     .MatchItem,
     ul.js-nav-links li {
         margin-bottom: 4px !important;
     }
-
     [class*="count"]:not([class*="account"]) {
         opacity: 1 !important;
     }
-
     .js-social-proof.social-proof-container.txt-size--13.cf.padding-al::before {
         padding: 0 !important;
         margin: 0 !important;
     }
-
     a[rel="user"],
     .social-proof-names.pull-right,
     .pull-left {
@@ -814,7 +727,6 @@ url-prefix("https://twitter.com/i/safety/") {
         margin: 0 !important;
         color: var(--MyW) !important;
     }
-
     button.js-user-actions-menu.btn.btn-round.btn-on-dark,
     button.js-action-unfollow.action-text.unfollow-text {
         min-height: 30px !important;
@@ -822,18 +734,15 @@ url-prefix("https://twitter.com/i/safety/") {
         height: 30px !important;
         border: none !important;
     }
-
     .Footer-adsModule {
         display: none !important;
     }
-
     .facet-type,
     .button-tray,
     .with-column-divider-bottom,
     .js-action-header.column-header {
         background-color: var(--Mygray2) !important;
     }
-
     .js-detail-container,
     .search-input,
     .js-app-header-inner,
@@ -841,22 +750,18 @@ url-prefix("https://twitter.com/i/safety/") {
     .app-title {
         background-color: var(--Myback) !important;
     }
-
     .avatar {
         border: 2px solid var(--MyB) !important;
     }
-
     .avatar:hover,
     .nbfc img.avatar:hover,
     .tweet-avatar.avatar:hover {
         border: 2px solid var(--Myred1) !important;
     }
-
     li>a.btn {
         height: 80px !important;
         width: 80px !important;
     }
-
     .icon-sliders:hover {
         -moz-appearance: none !important;
         -webkit-appearance: none !important;
@@ -864,12 +769,10 @@ url-prefix("https://twitter.com/i/safety/") {
         -moz-transform: scale(1.1, 1.1) !important;
         transform: scale(1.1, 1.1) !important;
     }
-
     .icon-sliders:hover {
         -moz-transform: skewY(7deg) !important;
         transform: skewY(7deg) !important;
     }
-
     .mdl-col-settings,
     .compose-remember-state,
     .compose,
@@ -877,7 +780,6 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--MyB) !important;
         background-color: var(--Mygray3) !important;
     }
-
     div[class="bg-color-twitter-white color-twitter-dark-gray padding-v--20"],
     .customtimeline-details,
     .mdl-column-med,
@@ -889,95 +791,75 @@ url-prefix("https://twitter.com/i/safety/") {
         color: var(--MyW) !important;
         background-color: var(--Mygray2) !important;
     }
-
     div[class="js-modal-panel mdl s-full med-fullpanel"] {
         border: 2px solid var(--Myborder) !important;
     }
-
     .controls {
         color: var(--Myblue1) !important;
     }
-
     .detail-view-inline-text {
         background-color: var(--Myback) !important;
     }
-
     .attribution:hover,
     .column-head-title:hover {
         text-decoration: none !important;
         color: var(--Myred1) !important;
         cursor: pointer !important;
     }
-
     header.js-detail-header.column-header {
         background-color: var(--Myback) !important;
     }
-
     .search-input,
     .compose-text {
         color: var(--Mytext) !important;
         background-color: var(--Mygray2) !important;
     }
-
     .compose-text-container,
     .compose-reply-tweet {
         color: var(--Mytext) !important;
         background-color: var(--Mygray3) !important;
     }
-
     .link-complex-target {
         text-decoration: none !important;
     }
-
     p[class="username"]:hover {
         background-color: transparent !important;
     }
-
     .keyboard-shortcut-definition {
         color: var(--MyW) !important;
     }
-
     .text-like-keyboard-key {
         background-color: var(--MyMygray1) !important;
     }
-
     a.url-ext {
         color: var(--Mygreen1) !important;
     }
-
     .column-type-icon.icon[class*="icon-"]:hover,
     span.column-heading:hover,
     a.js-other-replies-link.other-replies-link:hover,
     a.url-ext:hover {
         color: var(--Myred1) !important;
     }
-
     a.js-other-replies-link.other-replies-link {
         color: var(--TwitterBlue) !important;
     }
-
     iframe.js-media-native-video {
         background-color: none !important;
     }
-
     .bg-color-twitter-white {
         background-color: var(--Mygray2) !important;
     }
-
     .bg-color-twitter-white {
         border: 1px solid var(--Myborder) !important;
     }
-
     .column-message,
     .js-column-header.js-action-header.flex-shrink--0.column-header {
         border-bottom: 1px solid var(--Mygray1) !important;
     }
-
     .icon-retweet-filled {
         display: initial !important;
         color: var(--Mygreen1) !important;
     }
-
     .flex.flex-row,
     .s-profile.prf,
     .js-modal-inner,
@@ -987,18 +869,15 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: initial !important;
         border-radius: 25px !important;
     }
-
     div[class*="js-tweet"][class*="tweet"] {
         background-color: transparent !important;
         background-image: none !important;
     }
-
     .mdl,
     .js-modals-containers,
     .js-modal-inner {
         border-radius: 25px !important;
     }
-
     .caldisabled,
     #calweeks,
     #calbody,
@@ -1028,11 +907,9 @@ url-prefix("https://twitter.com/i/safety/") {
         background-image: none !important;
         background-color: transparent !important;
     }
-
     .js-dropdown.dropdown-menu {
         border: 1px solid var(--MyW) !important;
     }
-
     #calweeks,
     .js-dropdown.dropdown-menu,
     ul.lst.lst-modal,
@@ -1050,7 +927,6 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: var(--Mygray3) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(60, 60, 60, 0.9) 100%, transparent) !important;
     }
-
     a[class="flex flex-column flex-auto"]>div[class="css-1dbjc4n r-16y2uox r-1wbh5a2 r-1777fci r-wgs6xk r-5f36wq r-1b9bua6"]:hover,
     #calbody,
     .popover,
@@ -1084,220 +960,170 @@ url-prefix("https://twitter.com/i/safety/") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-
     .js-detail-header,
     .js-column-header.js-action-header,
     div[data-testid="filterMessage"] {
         border: 1px solid var(--MyB) !important;
     }
-
     .js-icon-favorite.icon.icon-favorite-toggle.txt-center.pull-left {
         color: #a01744 !important;
     }
-
     .js-icon-favorite.icon.icon-favorite-toggle.txt-center.pull-left.icon-heart-filled {
         color: #e0245e !important;
     }
-
     .icon.icon-reply,
     .icon.icon-reply.txt-center.pull-left {
         color: #00588f !important;
     }
-
     .icon.icon-reply.txt-center.pull-left.icon-reply-filled {
         color: #1da1f2 !important;
     }
-
     .js-icon-retweet.icon.icon-retweet-toggle.txt-center.pull-left {
         color: #348300 !important;
     }
-
     .js-icon-retweet.icon.icon-retweet-toggle.txt-center.pull-left.icon-retweet-filled {
         color: #72f21d !important;
     }
-
     a span.txt-ellipsis:hover {
         color: #1da1f2 !important;
     }
-
     .icon.icon-close.icon-center-24::before {
         padding: 5px !important;
     }
-
     .icon-reply {
         color: var(--Mygreen3) !important;
     }
-
     .icon-retweet {
         color: var(--Myblue2) !important;
     }
-
     .color-twitter-darker-gray {
         color: var(--Mygray2) !important;
     }
-
     .color-twitter-white {
         color: var(--MyW) !important;
     }
-
     .color-twitter-gray {
         color: var(--Myred1) !important;
     }
-
     .color-twitter-blue {
         color: #1da1f2 !important;
     }
-
     .color-twitter-red {
         color: #e0245e
     }
-
     .color-twitter-deep-red {
         color: #a01744
     }
-
     .color-twitter-green {
         color: #17bf63
     }
-
     .color-twitter-deep-black {
         color: var(--MyB) !important;
     }
-
     .color-twitter-dark-black {
         color: var(--MyB) !important;
     }
-
     .color-twitter-dark-gray {
         color: var(--Myred1) !important;
     }
-
     .color-twitter-black {
         color: var(--MyB) !important;
     }
-
     .color-twitter-yellow {
         color: #ffad1f
     }
-
     .color-transparent {
         color: initial !important
     }
-
     .text-like-keyboard-key,
     .bg-color-twitter-white {
         background-color: var(--MyW) !important;
     }
-
     .bg-color-twitter-blue {
         background-color: #1da1f2
     }
-
     .bg-color-twitter-deep-blue {
         background-color: #005fd1
     }
-
     .bg-color-twitter-medium-blue {
         background-color: #1da1f2
     }
-
     .bg-color-twitter-deep-black {
         background-color: var(--MyB) !important;
     }
-
     .bg-color-twitter-red {
         background-color: #e0245e
     }
-
     .bg-color-twitter-light-gray {
         background-color: var(--Myred1) !important;
     }
-
     .bg-color-twitter-lightest-gray {
         background-color: var(--Myred1) !important;
     }
-
     .bg-color-twitter-midnight-dark-gray {
         background-color: var(--MyB) !important;
     }
-
     .bg-color-twitter-midnight-darkest-gray {
         background-color: var(--MyB) !important;
     }
-
     .bg-color-twitter-yellow {
         background-color: #ffad1f
     }
-
     .bg-color-transparent {
         background-color: initial !important;
     }
-
     .hover-bg-color-twitter-white:focus,
     .hover-bg-color-twitter-white:hover {
         background-color: #fff
     }
-
     .hover-bg-color-twitter-lightest-gray:focus,
     .hover-bg-color-twitter-lightest-gray:hover {
         background-color: var(--Myred1) !important;
     }
-
     .hover-bg-color-twitter-faint-blue:focus,
     .hover-bg-color-twitter-faint-blue:hover {
         background-color: var(--Myred1) !important;
     }
-
     .border-color-twitter-blue {
         border-color: var(--MyW) !important;
     }
-
     .border-color-twitter-white {
         border-color: var(--MyW) !important;
     }
-
     .is-inverted-light {
         color: var(--Myred1) !important;
     }
-
     .is-inverted-light a,
     .is-inverted-light a:active,
     .is-inverted-light a:focus,
     .is-inverted-light a:hover {
         color: var(--TwitterBlue) !important;
     }
-
     .is-inverted-light .txt-mute {
         color: var(--Mygray2) !important;
     }
-
     .is-inverted-light .txt-mute a:not(:hover):not(:focus) {
         color: var(--Mygray2) !important;
     }
-
     .is-inverted-light .account-bio {
         color: var(--MyW) !important;
     }
-
     .js-detail-view-inline.detail-view-inline {
         position: initial !important;
         background-color: transparent !important;
     }
-
     .application.js-app button.js-show-drawer,
     .application.js-app button.js-header-action {
         width: 200px !important;
         margin-left: -10px !important;
         padding-left: 5px;
     }
-
     .application.js-app.is-condensed button.js-show-drawer,
     .application.js-app.is-condensed button.js-header-action {
         width: 60px !important;
         margin-left: -10px !important;
         padding-left: 5px;
     }
-
     .Tooltip-inner,
     .Tooltip-content,
     .tooltip_box {
@@ -1312,7 +1138,6 @@ url-prefix("https://twitter.com/i/safety/") {
         padding: 6px 6px !important;
         text-align: center
     }
-
     html.dark .Tooltip,
     .Tooltip {
         border-radius: 5px;
@@ -1328,7 +1153,6 @@ url-prefix("https://twitter.com/i/safety/") {
         background-clip: padding-box;
         transition: opacity .2s ease-in-out
     }
-
     .tooltip-inner,
     html.dark .tooltip-inner,
     .tooltip .tooltip-inner {
@@ -1341,7 +1165,6 @@ url-prefix("https://twitter.com/i/safety/") {
         border: 1px solid var(--MyW) !important;
         border-radius: 15px !important;
     }
-
     .Tooltip .Tooltip-content,
     html.dark .Tooltip--dark,
     .Tooltip--dark,
@@ -1354,12 +1177,10 @@ url-prefix("https://twitter.com/i/safety/") {
         border-color: var(--MyW) !important;
         box-shadow: none
     }
-
     html.dark .TooltipHoverTarget,
     .TooltipHoverTarget {
         background-image: linear-gradient(90deg, var(--MyX1) 50%, transparent 0) !important;
     }
-
     .is-inverted-light .account-link,
     .nbfc a,
     a[target],
@@ -1368,29 +1189,24 @@ url-prefix("https://twitter.com/i/safety/") {
     li.js-item-launch:hover {
         color: var(--TwitterBlue)
     }
-
     a[target]:hover,
     .account-link.txt-bold:hover,
     .account-link:hover {
         color: var(--Myred1) !important;
     }
-
     .lst-profile li a:hover {
         -moz-appearance: none !important;
         -webkit-appearance: none !important;
         color: var(--TwitterBlue) !important;
     }
-
     link-complex-target,
     a.link-complex {
         color: var(--TwitterBlue) !important;
     }
-
     link-complex-target:hover,
     a.link-complex:hover {
         color: var(--TwitterRed) !important;
     }
-
     a[data-drawer="accountSettings"] {
         margin-left: 0px !important;
     }

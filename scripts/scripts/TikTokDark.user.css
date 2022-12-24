@@ -2,7 +2,7 @@
 @name         TikTok Dark
 @namespace    http://danamw.github.io/scripts/scripts/TikTokDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TikTokDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana Meli
 @description  Dark Style
 @homepageURL  https://DanaMW.github.io
@@ -10,70 +10,56 @@
 
 @-moz-document domain("tiktok.com"),
 url-prefix("https://www.tiktok.com/setting") {
-
     [class*="Input"],
     html,
     body {
         background-color: var(--MyB) !important;
     }
-
     .stock {
         display: none !important;
     }
-
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar-thumb {
+     ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:hover {
+     ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:active {
+     ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-
     [class*="DraftEditor"],
     p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
-
     h1 {
         color: var(--TwitterBlue) !important;
     }
-
     h2 {
         color: var(--TwitterRed) !important;
     }
-
     small {
         color: var(--TwitterPink) !important;
     }
-
     h3,
     h4,
     h5,
     strong {
         color: var(--MyW) !important;
     }
-
     [class*="StyledTopicItemLink"],
     [class*="DiscoverItemContainer"],
     button {
@@ -91,7 +77,6 @@ url-prefix("https://www.tiktok.com/setting") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-
     [class*="DiscoverItemContainer"]:hover,
     a[class*="ShareLink"]:hover,
     div[class*="Upload"]:hover,
@@ -113,7 +98,6 @@ url-prefix("https://www.tiktok.com/setting") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-
     [class*="DiscoverItemContainer"]:active,
     button:active {
         -moz-appearance: none;
@@ -132,47 +116,39 @@ url-prefix("https://www.tiktok.com/setting") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-
     .stock {
         background-image: none !important;
         background-color: transparent !important;
     }
-
     [class*="Upload"] {
         background-color: transparent !important;
         border: none !important;
     }
-
     [class*="DivHeaderContainer"],
     header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-
     .stock {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-
     .Stock {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-
     [class*="ScrollContainer"],
     [class*="DivProfileContainer"],
     [class*="DivContainer"] {
         background-color: var(--Mygray3) !important;
     }
-
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
-
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -180,7 +156,6 @@ url-prefix("https://www.tiktok.com/setting") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
-
     .tooltip {
         background-color: var(--MyX1) !important;
         opacity: 0.4;
@@ -189,12 +164,10 @@ url-prefix("https://www.tiktok.com/setting") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
-
     [class*="BottomCommentContainer"],
     [class="tiktok-3q30id-DivContentContainer e1mecfx00"] {
         background-color: var(--Mygray3) !important;
     }
-
     [class*="ProfileContainer"] {
         border: 1px solid var(--MyW) !important;
     }

@@ -2,72 +2,59 @@
 @name         The Atlantic Dark
 @namespace    https://danamw.github.io/scripts/scripts/TheAtlanticDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TheAtlanticDark.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("theatlantic.com") {
-
     #main-content,
     html,
     body.t-article {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
-
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar-thumb {
+     ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:hover {
+     ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:active {
+     ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-
     div[class*="Hamburger"],
     svg {
         filter: invert(1) !important;
     }
-
     p,
     a {
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
-
     h1,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
-
     span[class*="ArticleLeadArt_attribution"] {
         color: var(--TwitterBlue) !important;
     }
-
     small {
         color: var(--TwitterPink) !important;
     }
-
     h2 {
         color: var(--TwitterRed) !important;
     }
-
     ul>li[class*="Nav_navListItem"] a,
     a[class*="NudgeShared_button"],
     button {
@@ -88,7 +75,6 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-
     li[class*="Nav_navListItem"] a:hover,
     a[class*="NudgeShared_button"]:hover,
     button:hover {
@@ -111,7 +97,6 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-
     a[class*="NudgeShared_button"] a:active,
     button:active {
         -moz-appearance: none;
@@ -133,30 +118,25 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-
     [class*="Nav_mainNav"] {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-
     nav {
         background-image: none !important;
         background-color: transparent !important;
     }
-
     [class*="SearchOverlay_root"],
     [class*="ExpandedNav_root"],
     #paywall {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-
     #rubric,
     nav {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -164,17 +144,14 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
-
     div[class="c-nudge__container c-nudge-compressed__container"],
     #atl-wordmark,
     ul[class*="c-share-social"] {
         display: none !important;
     }
-
     #paywall {
         border: 1px solid var(--MyW) !important;
     }
-
     #rubric {
         text-align: center !important;
     }

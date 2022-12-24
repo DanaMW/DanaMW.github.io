@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.62
+@version      0.0.63
 @description  YouTube Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -13,10 +13,9 @@
 
 @-moz-document domain("youtube.com"),
 domain("studio.youtube.com") {
-    :not(.style-scope)[hidden] {
+     :not(.style-scope)[hidden] {
         display: initial !important;
     }
-
     #movie_player,
     #container,
     #player-container-outer,
@@ -25,9 +24,8 @@ domain("studio.youtube.com") {
         -moz-user-select: none !important;
         -webkit-user-select: none !important;
     }
-
     html:not(.style-scope)[dark],
-    :not(.style-scope)[dark] {
+     :not(.style-scope)[dark] {
         --yt-basic-foreground-body-color: hsla(0, 87%, 12%, 0.4) !important;
         --yt-basic-background-color: hsla(0, 87%, 12%, 0.4) !important;
         --yt-std-body-300: hsla(0, 87%, 12%, 0.4) !important;
@@ -90,34 +88,27 @@ domain("studio.youtube.com") {
         --yt-chat-bubble-self-border-color: rgba(255, 255, 255, 0.20);
         --yt-chat-bubble-self-background-color: #2b0000;
     }
-
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-
-    ::-webkit-scrollbar-thumb {
+     ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:hover {
+     ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-
-    ::-webkit-scrollbar-thumb:active {
+     ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-
     .ytp-ce-element.ytp-ce-playlist.ytp-ce-element-show,
     a[class*="covering-overlay"] {
         opacity: 0 !important;
     }
-
     #dismissible[class*="brand"],
     yt-mealbar-promo-renderer,
     #comment-teaser,
@@ -127,59 +118,48 @@ domain("studio.youtube.com") {
     .style-scope.ytd-compact-promoted-item-renderer {
         display: none !important;
     }
-
     ytd-active-account-header-renderer {
         position: relative;
         top: 500px !important;
     }
-
     .ytd-multi-page-menu-renderer {
         background: var(--Mygray2) !important;
     }
-
     html {
         overflow: scroll;
         overflow-x: hidden;
         scrollbar-color: var(--Myred1) var(--Myred3);
         scrollbar-width: thin;
     }
-
     head,
     body,
     html {
         background-image: none !important;
     }
-
     a,
     p,
     h1 {
         color: var(--MyW) !important;
     }
-
     img#illustration {
         background: var(--MyB) !important;
     }
-
     app-drwer {
         scrollbar-color: var(--Myred1) var(--Myred3);
         scrollbar-width: thin;
     }
-
     app-drawer {
         scrollbar-color: var(--Myred1) var(--Myred3);
         scrollbar-width: thin;
     }
-
     template.style-scope.paper-item {
         background-color: transparent !important;
     }
-
     #creator-page,
     .style-scope.paper-item {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
-
     .sbdd_b,
     .sbsb_a,
     ytd-watch-flexy,
@@ -187,29 +167,24 @@ domain("studio.youtube.com") {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
-
     .yt-uix-button-menu,
     .eytd_list_item {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
         border: none !important;
     }
-
     .eytd_list {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
-
     .ytd-section-list-renderer {
         border-top: 1px solid var(--Myred3) !important;
         border-bottom: 1px solid var(--Myred3) !important;
     }
-
     ytd-active-account-header-renderer {
         position: relative;
         top: 0 !important;
     }
-
     ytd-active-account-header-renderer {
         display: flex;
         align-items: top;
@@ -218,7 +193,6 @@ domain("studio.youtube.com") {
         color: var(--MyW) !important;
         height: 50 !important;
     }
-
     ytd-playlist-panel-video-renderer:hover,
     .style-scope.ytd-playlist-panel-renderer[selected],
     #header ytd-simple-menu-header-renderer,
@@ -231,35 +205,28 @@ domain("studio.youtube.com") {
         color: var(--Myred1) !important;
         background-color: var(--MyX1) !important;
     }
-
     #show-more {
         text-align: center !important;
     }
-
     button {
         border: none !important;
     }
-
     .toggle-container {
         background-color: var(--Myred2);
         border-radius: 25px;
     }
-
     #togglebutton {
         background-image: none !important;
         background-color: var(--Myred1);
         color: var(--Myred1);
     }
-
     #chips-wrapper {
         display: none !important;
     }
-
     iron-selector,
     #ink {
         background-color: var(--Myred3)
     }
-
     ytd-rich-shelf-renderer,
     ytd-inline-survey-renderer,
     ytd-post-renderer[surface_="backstage-surface-type-home"],
@@ -274,7 +241,6 @@ domain("studio.youtube.com") {
     .waves {
         display: none !important;
     }
-
     html:not(.style-scope) {
         --primary-text-color: #FFFFFF !important;
         --disabled-text-color: #959090 !important;
@@ -286,15 +252,12 @@ domain("studio.youtube.com") {
         overflow-y: scroll;
         overflow-x: hidden;
     }
-
     #contents {
         width: calc(width + 20vw) !important;
     }
-
     .ytp-progress-bar {
         background-color: var(--Myred3);
     }
-
     paper-tooltip {
         display: block;
         position: absolute;
@@ -306,11 +269,9 @@ domain("studio.youtube.com") {
         user-select: none;
         cursor: default;
     }
-
     #text-container {
         text-align: center !important;
     }
-
     .tooltip,
     #tooltip,
     paper-toast,
@@ -334,27 +295,23 @@ domain("studio.youtube.com") {
         line-height: 1.8rem;
         text-transform: none;
     }
-
     ytd-browse.style-scope.ytd-page-manager,
     .ytp-progress-bar-padding,
     .ytp-chrome-controls,
     .ytp-gradient-bottom {
         background-color: transparent;
     }
-
     .ytd-player,
     .html5-video-player,
     .ytd-player,
     .ytp-player-content {
         background-color: var(--MyB) !important;
     }
-
     .video-stream html5-main-video,
     ytd-section-list-renderer {
         width: calc(100% + 100px) !important;
         background-color: hsla(0, 87%, 12%, 0.4) !important;
     }
-
     #scroll-container #meta-contents,
     #info-contents,
     #comments,
@@ -362,38 +319,30 @@ domain("studio.youtube.com") {
         padding-right: 25px;
         padding-left: 25px;
     }
-
     #movie_player {
         background-color: hsla(0, 96%, 11%, 0.150) !important;
     }
-
     #toggleButton {
         border-radius: 50% !important;
     }
-
     #center {
         position: absolute !important;
     }
-
     #center {
         position: absolute !important;
         width: var(--swidth) !important;
     }
-
     #center {
         position: absolute !important;
         left: var(--smove);
     }
-
     #secondary,
     .style-scope.ytd-watch-flexy {
         background-color: transparent !important;
     }
-
     .masthead-logo-renderer-logo {
         margin-left: 50px !important;
     }
-
     .ytcp-app-icon,
     .style-scope.ytd-topbar-logo-renderer:hover,
     .masthead-logo-renderer-logo:hover {
@@ -401,66 +350,56 @@ domain("studio.youtube.com") {
         -webkit-animation: yt-spin 500ms linear;
         animation: fa-spin yt-spin 500ms linear;
     }
-
     .yt-spin {
         -moz-animation: yt-spin 500ms linear;
         -webkit-animation: yt-spin 500ms linear;
         animation: yt-spin 500ms linear;
     }
-
     .yt-pulse {
         -moz-animation: yt-spin 500ms steps(8);
         -webkit-animation: yt-spin 500ms steps(8);
         animation: yt-spin 500ms steps(8);
     }
-
     @-moz-keyframes yt-spin {
         0% {
             -moz-transform: rotate(0deg);
             -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
         }
-
         100% {
             -moz-transform: rotate(360deg);
             -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
         }
     }
-
     @-webkit-keyframes yt-spin {
         0% {
             -moz-transform: rotate(0deg);
             -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
         }
-
         100% {
             -moz-transform: rotate(359deg);
             -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
         }
     }
-
     @keyframes yt-spin {
         0% {
             -moz-transform: rotate(0deg);
             -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
         }
-
         100% {
             -moz-transform: rotate(359deg);
             -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
         }
     }
-
     #item-title,
     yt-formatted-string {
         color: var(--MyW) !important;
     }
-
     yt-icon,
     .ytd-button-renderer,
     paper-ripple,
@@ -469,7 +408,6 @@ domain("studio.youtube.com") {
     button {
         background-color: transparent !important;
     }
-
     .ytd-guide-renderer,
     #guide-inner-content,
     #top {
@@ -477,25 +415,20 @@ domain("studio.youtube.com") {
         background-color: var(--Myred3) !important;
         scrollbar-width: none !important;
     }
-
     #title,
     button[class="yt-uix-button"] {
         color: var(--Myred1) !important;
     }
-
     .toggle-bar.style-scope.paper-toggle-button {
         background-color: var(--Myblue1) !important;
     }
-
     .subscribers-title,
     .section-title-text {
         color: var(--TwitterBlue) !important;
     }
-
     .video-extras-sparkbars {
         margin-bottom: 30px !important;
     }
-
     .section-subtitle-text,
     .issue-text,
     .title,
@@ -507,43 +440,34 @@ domain("studio.youtube.com") {
     a {
         color: var(--MyW) !important;
     }
-
     #entity-label,
     h3,
     #account-page-header-title {
         color: var(--Myred1) !important;
     }
-
     .sbpqs_a {
         color: var(--Myred1) !important;
     }
-
     .sbqs_c {
         color: var(--Myblue1) !important;
     }
-
     b {
         color: var(--Mygray2) !important;
     }
-
     paper-button {
         -webkit-appearance: none !important;
         -moz-appearance: none !important;
         background-image: none !important;
     }
-
     #guide-button {
         border-radius: 50% !important;
     }
-
     .alerts-wrapper {
         background-color: var(--Myred1) !important;
     }
-
     #alerts #confirmBox {
         background-color: var(--Myred1) !important;
     }
-
     .creator-sidebar-item-link,
     .creator-sidebar-item.selected,
     .creator-sidebar-item:hover,
@@ -552,7 +476,6 @@ domain("studio.youtube.com") {
         background-color: transparent !important;
         background-image: none !important;
     }
-
     input[type="checkbox"],
     input.yt-uix-form-input-checkbox.setting-checkbox {
         -webkit-appearance: checkbox;
@@ -560,12 +483,10 @@ domain("studio.youtube.com") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-
     #ytpc_ytcontrol_loop,
     #ytpc_ytcontrol_button {
         height: 25px !important;
     }
-
     #search-icon-legacy,
     .feature-level-status,
     li.menu-item,
@@ -602,7 +523,6 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-
     #search-icon-legacy:hover,
     .feature-level-status.feature-level-unlocked,
     li.menu-item[selected],
@@ -648,7 +568,6 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-
     #search-icon-legacy:active,
     li.menu-item:active,
     #collapse-controls-section:active,
@@ -690,38 +609,31 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-
     #labelAndInputContainer,
     .paper-input-input {
         background-color: var(--MyX4) !important;
     }
-
     .howto-circle,
     .pairing-code-input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
-
     span.title:hover {
         color: var(--MyW) !important;
     }
-
     main,
     .ytg-fl.account-container {
         background: none !important;
     }
-
     ytd-watch-flexy[flexy_][is-two-columns_] #transcript-loader.ytd-watch-flexy,
     ytd-watch-flexy[flexy_][is-two-columns_] #playlist.ytd-watch-flexy,
     ytd-playlist-panel-renderer#playlist {
         background: none !important;
         background-image: none !important;
     }
-
     ytd-universal-watch-card-renderer {
         padding-left: 100px !important;
     }
-
     #sections.style-scope.ytd-universal-watch-card-renderer,
     ytd-watch-card-rich-header-renderer,
     ytd-watch-flexy[flexy_][is-two-columns_] #transcript-loader.ytd-watch-flexy,
@@ -734,12 +646,10 @@ domain("studio.youtube.com") {
     ytd-two-column-browse-results-renderer.style-scope {
         background-color: hsla(0, 87%, 12%, 0.4) !important;
     }
-
     ytd-compact-movie-renderer:hover,
     ytd-compact-video-renderer:hover {
         background-color: hsla(0, 100%, 25%, 0.4) !important;
     }
-
     #main-menu,
     .ytcd-carousel-card,
     #video-snapshot,
@@ -749,50 +659,41 @@ domain("studio.youtube.com") {
         background-color: var(--Myblue3) !important;
         color: var(--MyW) !important;
     }
-
     #live-chat-message-input,
     ytcp-navigation-drawer {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
         border: 2px solid var(--Mytext) !important;
     }
-
     ytcd-channel-facts-item {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
-
     div[class*="table-cell"],
     div[id*="metrics-table"],
     svg {
         color: var(--MyW) !important;
     }
-
     .yt-help-icon.yt-sprite {
         filter: invert(0);
     }
-
     .yt-masthead-picker-footer,
     .yt-masthead-account-picker.yt-uix-clickcard-card-content {
         background-color: var(--Mygray3) !important;
     }
-
     span[class="yt-uix-button-arrow"] {
         filter: invert(1) !important;
     }
-
     paper-button[class="dropdown-trigger style-scope yt-dropdown-menu"],
     paper-button[class="style-scope ytd-expander"] {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
-
     yt-formatted-string[class="style-scope yt-next-continuation"]:hover,
     yt-formatted-string[class="style-scope yt-next-continuation"] {
         background: transparent !important;
         background-color: transparent !important;
     }
-
     /* --------------------------REWORKING SEARCHBOX--------------------- */
     #search-container.ytd-searchbox-spt {
         background-color: transparent !important;
@@ -800,14 +701,12 @@ domain("studio.youtube.com") {
         border: none !important;
         box-shadow: none !important;
     }
-
     #container.style-scope.ytd-searchbox {
         background-color: transparent !important;
         border-color: transparent !important;
         border: none !important;
         box-shadow: none !important;
     }
-
     input,
     #input,
     input#query-input,
@@ -821,11 +720,9 @@ domain("studio.youtube.com") {
         border-radius: 25px !important;
         border: 2px solid var(--MyB) !important;
     }
-
     ytd-guide-entry-renderer {
         border-radius: 25px !important;
     }
-
     /* ---------------------------TOP BANNER----------------------------- */
     .sbfl_b,
     ytcp-header,
@@ -835,20 +732,17 @@ domain("studio.youtube.com") {
         background-color: transparent !important;
         background: none !important;
     }
-
     ytcp-header {
         background-color: var(--MyB) !important;
         height: 60px !important;
         border: none !important;
     }
-
     #masthead-positioner,
     #yt-masthead-container {
         background-color: var(--MyB) !important;
         height: 35px !important;
         border: none !important;
     }
-
     ytcp-header,
     #yt-masthead-container,
     #container.style-scope.ytd-masthead,
@@ -862,7 +756,6 @@ domain("studio.youtube.com") {
         opacity: 1 !important;
         z-index: 10000 !important;
     }
-
     ytd-masthead#masthead.chunked.masthead-finish {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -874,12 +767,10 @@ domain("studio.youtube.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
-
     #avatar-btn>yt-img-shadow>img#img {
         border-radius: 50% !important;
         border: 2px solid var(--MyW) !important;
     }
-
     paper-tooltip {
         display: block;
         position: absolute;
@@ -891,7 +782,6 @@ domain("studio.youtube.com") {
         user-select: none;
         cursor: default;
     }
-
     .badge.badge-style-type-simple,
     #tooltip,
     #tooltip.paper-tooltip {
@@ -910,7 +800,6 @@ domain("studio.youtube.com") {
         font-weight: 400;
         text-transform: none;
     }
-
     .badge.badge-style-type-simple {
         background: var(--MyX1) !important;
         opacity: 0.6;
@@ -918,18 +807,15 @@ domain("studio.youtube.com") {
         border: 1px solid var(--MyW) !important;
         text-transform: none;
     }
-
     ytd-watch-flexy,
     .ytd-app {
         background: url("https://danamw.github.io/img/ytbg.jpg") repeat !important;
     }
-
     .header,
     #header-section {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, var(--Myred3), var(--Myred2), var(--Myred1) 100%, transparent) !important;
     }
-
     .tab-content.yta-screen,
     #right-side-bar,
     #second-container,
@@ -943,7 +829,6 @@ domain("studio.youtube.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, var(--Mygray3), var(--Mygray2), var(--Mygray1) 100%, transparent) !important;
     }
-
     div[class="layout horizontal style-scope yta-card-container"],
     .button-area,
     .footer.style-scope.ytcp-dialog,
@@ -954,45 +839,36 @@ domain("studio.youtube.com") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, var(--Myred3), var(--Myred2), var(--Myred1) 100%, transparent) !important;
     }
-
     div#container {
         -moz-user-select: text !important;
         -webkit-user-select: text !important;
         user-select: text !important;
     }
-
     ytd-clarification-renderer {
         display: none !important;
     }
-
     #left-arrow-button,
     #left-arrow-button::after,
     #right-arrow-button {
         background-color: var(--Myred3) !important;
     }
-
     .badge.badge-style-type-verified>yt-icon>svg {
         color: var(--TwitterBlue) !important;
         transform: scale(1.25);
     }
-
     #container.ytd-sentiment-bar-renderer {
         background: var(--Myred2) !important;
     }
-
     #like-bar.ytd-sentiment-bar-renderer {
         background: var(--Myred1) !important;
     }
-
     span.style-scope.ytd-badge-supported-renderer {
         filter: brightness(200%);
     }
-
     .header,
     .header-content {
         text-align: center !important;
     }
-
     ytd-thumbnail-overlay-resume-playback-renderer,
     #content>yt-chip-cloud-renderer,
     ytcp-primary-action-bar,
@@ -1002,64 +878,51 @@ domain("studio.youtube.com") {
     ytcp-sticky-header {
         background: var(--Myred3) !important;
     }
-
     #selectionBar.tp-yt-paper-tabs {
         background-color: var(--Mygreen1) !important;
         border-bottom-color: var(--Mygreen1) !important;
     }
-
     .ytcp-primary-action-bar {
         color: var(--TwitterBlue) !important;
     }
-
     div[role="rowgroup"] {
         background-color: transparent !important;
     }
-
     .ytgn-video-row .ytcp-video-row {
         background-color: var(--Mygray2) !important;
     }
-
     .row-highlighted,
     .ytcp-video-row.row-selected {
         background-color: var(--Mygray1) !important;
     }
-
     .yt-live-chat-text-message-renderer,
     yt-live-chat-text-message-renderer .yt-live-chat-text-message-renderer {
         background-image: none !important;
         background-color: transparent !important;
     }
-
     ytd-destination-button-renderer {
         border: 1px solid var(--MyW) !important;
     }
-
     ytd-destination-button-renderer,
     .stock {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-
     ytd-destination-button-renderer:hover {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-
     #formatus,
     body[dir="ltr"]>div>div {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
-
     #ryd-bar-container {
         background-color: var(--Mygreen3) !important;
     }
-
     #ryd-bar {
         background-color: var(--Mygreen1) !important;
     }
-
     canvas {
         opacity: 0 !important;
     }
