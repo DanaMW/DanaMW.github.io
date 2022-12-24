@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana Meli
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -155,7 +155,6 @@ url-prefix("https://js.stripe.com/") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    div[class*="Header"],
     .c-jvqXaZ,
     .c-jnGYto.c-jUkCYw[class*="activeTab-true"],
     h2[class*="c-dAqCK"] {
@@ -196,6 +195,9 @@ url-prefix("https://js.stripe.com/") {
     .c-PJLV:hover {
         border: 1px solid var(--Myred1) !important;
     }
+    [class="embedly-block false c-PJLV c-PJLV-foJpPP-isGif-false"]:hover {
+        background-color: var(--MyX1) !important;
+    }
     article:hover {
         background: var(--Mygray2) !important;
     }
@@ -209,6 +211,7 @@ url-prefix("https://js.stripe.com/") {
         background-color: var(--Mygray2) !important;
         border: 2px ridge var(--MyW) !important;
     }
+    .c-iQreDs,
     .c-foFVYh,
     .c-bITVNu,
     .c-jaySyu,
@@ -243,6 +246,7 @@ url-prefix("https://js.stripe.com/") {
     .c-jnGYto[data-state="active"]::after {
         border-color: var(--Mygreen1) !important;
     }
+    .c-iQreDs,
     .c-foFVYh {
         border: 1px solid var(--MyW) !important;
     }
