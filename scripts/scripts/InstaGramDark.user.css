@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.43
+@version      0.1.44
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -109,7 +109,7 @@ domain("cdninstagram.com") {
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "],
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"],
     a[class="h-aRd  fuQUr"],
-    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
+    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -143,7 +143,7 @@ domain("cdninstagram.com") {
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:hover,
     .-HRM-,
     a[class="h-aRd  fuQUr"]:hover,
-    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
+    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -169,7 +169,7 @@ domain("cdninstagram.com") {
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:active,
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:active,
     a[class="h-aRd  fuQUr"]:active,
-    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]) {
+    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -266,9 +266,8 @@ domain("cdninstagram.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+    ._ab9s,
     ._ac2t,
-    div[class="_ab8w  _ab94 _ab97 _ab9f _ab9m _ab9p  _ab9_ _abab _abcm"],
-    div[class="_ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o  _ab9w _abcm"],
     ._ac39,
     ._ab5s,
     [class="_ab8w  _ab94 _ab97 _ab9h _ab9m _ab9p  _aba0 _abac _abcm"],
@@ -278,9 +277,9 @@ domain("cdninstagram.com") {
     div[class*="tHaIX"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"][class*="HcJZg"],
     ._9eogI.hfWwk,
     ._9gMUf,
-    div[class="                     Igw0E     IwRSH      eGOV_          ui_ht                                                                          i0EQd                                   "]>div,
+    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="ui_ht"][class*="i0EQd"]>div,
     div[class="frMpI  -sxBV"],
-    div[class="                     Igw0E   rBNOH          YBx95       _4EzTm                                                                                     T9mq-            nGS-Y             "],
+    div[class*="Igw0E"][class*="rBNOH"][class*="YBx95"][class*="_4EzTm"][class*="T9mq-"][class*="nGS-Y"],
     .N9abW,
     a[class="-qQT3 rOtsg"],
     div[class="PUHRj  H_sJK"],
@@ -403,6 +402,7 @@ domain("cdninstagram.com") {
         border: none !important;
     }
     /*------------------All filter INVERTS----------------*/
+    ._aaw8:hover ._aawc._aawd,
     span[class="glyphsSpriteFriend_Follow u-__7"],
     div[class="FuWoR -wdIA x7xX2 "],
     div[class*="coreSpritePagingChevron"],
