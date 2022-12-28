@@ -2,14 +2,16 @@
 @name         StarDock Dark
 @namespace    https://danamw.github.io/scripts/scripts/StarDockDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StarDockDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("stardock.com"),
+url-prefix("https://support.stardock.com/"),
 domain("stardock.us") {
+    [class*="rw_full"]::before,
     .tray,
     .forum,
     #ctl00_ctl00__Body,
@@ -17,7 +19,7 @@ domain("stardock.us") {
     section,
     body {
         background-image: none !important;
-        background-color: var(--Myback) !important;
+        background-color: var(--MyB) !important;
     }
     * {
         text-decoration: none !important;
@@ -45,6 +47,12 @@ domain("stardock.us") {
     .container {
         background: transparent !important;
     }
+    [id="rw_full"]::before {
+        background-color: var(--MyB) !important;
+    }
+    .icon {
+        color: var(--MyW) !important;
+    }
     table,
     tbody,
     article,
@@ -53,6 +61,8 @@ domain("stardock.us") {
         border-radius: 15px !important;
         border: 2px solid var(--MyW) !important;
     }
+    #rw_header .rw_header_background::before,
+    #rw_header .rw_header_background .rw_preview_background,
     .message.None,
     header.container {
         background-color: var(--Myred3) !important;
@@ -70,6 +80,8 @@ domain("stardock.us") {
         background-image: none !important;
         border: 1px solid var(--MyB) !important;
     }
+    .subheader,
+    .collapse_sidebar,
     aside,
     .tray,
     div[id*="mceu_"],
@@ -101,6 +113,23 @@ domain("stardock.us") {
         background: none !important;
         background-color: transparent !important;
     }
+    .breadcrumb {
+        color: var(--Myyellow1) !important;
+    }
+    .children_nodes.open,
+    .menu_container {
+        background-color: var(--Mygray3) !important;
+    }
+    .document {
+        background-color: var(--Mygray1) !important;
+    }
+    [class*="byline_info"],
+    .date {
+        color: var(--TwitterBlue) !important;
+    }
+    .counter {
+        color: var(--TwitterRed) !important;
+    }
     form header,
     #Table1,
     body>header {
@@ -123,11 +152,14 @@ domain("stardock.us") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
+    .node_container,
     .head,
     header h3 a,
     span[class="		active    "] a {
         background-image: none !important;
     }
+    .icon,
+    .node_container,
     a[id*="_Content__Products__TabRepeater__TabLink"],
     .bvlbutton,
     .button[target="_blank"][href],
@@ -153,6 +185,9 @@ domain("stardock.us") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .icon:hover,
+    .node_container:hover,
+    .node_container.selected,
     .submenu::after:hover,
     .bvlbutton:hover,
     .button[target="_blank"][href]:hover,
