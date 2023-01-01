@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.44
+@version      0.1.45
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -10,6 +10,7 @@
 
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
+    #splash-screen,
     ._aa5b,
     [class="_aam1 _aam2 _aam3 _aam5"],
     [class="_aalm _aaln _aalo"],
@@ -124,6 +125,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    ._abn_,
     .x1i10hfl[role="button"]:hover,
     .-qQT3:hover,
     ul._ab85>li:hover,
@@ -266,12 +268,16 @@ domain("cdninstagram.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
     }
+    /*
+    [class*="_ab8w"][class*="_ab94"][class*="_ab97"][class*="_ab9f"][class*="_ab9m"][class*="_ab9p"][class*="_ab9_"][class*="_abab"][class*="_abcm"],
+    */
+    [class="_ab8w  _ab94 _ab97 _ab9f _ab9m _ab9p  _ab9_ _abab _abcm"],
+    [class="_ab8w  _ab94 _ab97 _ab9h _ab9m _ab9p  _aba0 _abac _abcm"],
+    [class="_ab8w  _ab94 _ab96 _ab9f _ab9m _ab9p  _abb_  _ab9z"],
     ._ab9s,
     ._ac2t,
     ._ac39,
     ._ab5s,
-    [class="_ab8w  _ab94 _ab97 _ab9h _ab9m _ab9p  _aba0 _abac _abcm"],
-    [class="_ab8w  _ab94 _ab96 _ab9f _ab9m _ab9p  _abb_  _ab9z"],
     ._9z_0,
     ._9-rn._9-ro,
     div[class*="tHaIX"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"][class*="HcJZg"],
@@ -385,6 +391,9 @@ domain("cdninstagram.com") {
     }
     header[class="vtbgv "] {
         border-top: 20px solid var(--Myred3) !important;
+    }
+    header[class*="x1qjc9v5"] {
+        border: 1px solid var(--MyW) !important;
     }
     ._aa5k,
     div[class*="_9GP1n"][class*="HlUSH"],
