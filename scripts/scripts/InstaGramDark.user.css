@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.45
+@version      0.1.46
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -104,6 +104,7 @@ domain("cdninstagram.com") {
     .x1i10hfl[role="button"],
     .-qQT3,
     ul._ab85>li,
+    [class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _acan _acap _acat _acaw _aj1- _a6hd"],
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"],
     [class="sqdOP yWX7d    y3zKF     "],
     a._9VEo1,
@@ -132,6 +133,7 @@ domain("cdninstagram.com") {
     [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9_ _aba8 _abcm"]:hover,
     [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8"]:hover,
     [class=" _ab8o _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p _abcm"],
+    [class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _acan _acap _acat _acaw _aj1- _a6hd"]:hover,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"]:hover,
     [class="_aaiu _aaiw"]:hover,
     [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p _abyi _abcm"],
@@ -165,6 +167,7 @@ domain("cdninstagram.com") {
     .x1i10hfl[role="button"]:active,
     .-qQT3:active,
     ul._ab85>li:active,
+    [class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _acan _acap _acat _acaw _aj1- _a6hd"]:active,
     [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"]:active,
     [class="sqdOP yWX7d    y3zKF     "]:active,
     a._9VEo1:active,
@@ -247,6 +250,7 @@ domain("cdninstagram.com") {
     ._aaz4,
     ._a3gq ._aa1x,
     [class="_aa__ _ackf _ackh"],
+    [class=" _ab6k _ab6m  _aa1x _ackf _ackh"],
     [class="_ab6k _ab6l _ab6m  _aa1v _aa1x _ackf _ackh"],
     [class*=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p"],
     ._abyk,
