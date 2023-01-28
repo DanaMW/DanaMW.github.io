@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.46
+@version      0.1.47
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -70,6 +70,10 @@ domain("cdninstagram.com") {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+    svg[class="_ab6-"] {
+        color: var(--MyW) !important;
+        fill: var(--MyW) !important;
+    }
     a>span:hover,
     a:hover {
         color: var(--Myred1) !important;
@@ -101,6 +105,7 @@ domain("cdninstagram.com") {
     [class="_aam1 _aam2 _aam3 _aam5"] {
         width: 150% !important;
     }
+    div[class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"],
     .x1i10hfl[role="button"],
     .-qQT3,
     ul._ab85>li,
@@ -126,6 +131,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"]:hover,
     ._abn_,
     .x1i10hfl[role="button"]:hover,
     .-qQT3:hover,
@@ -164,6 +170,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"]:active,
     .x1i10hfl[role="button"]:active,
     .-qQT3:active,
     ul._ab85>li:active,
