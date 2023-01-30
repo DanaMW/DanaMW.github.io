@@ -2,7 +2,7 @@
 @name         AdiIrc Dark
 @namespace    https://danamw.github.io/scripts/scripts/AdiircDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AdiircDark.user.css
-@version      0.0.11
+@version      0.0.12
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -91,6 +91,7 @@ domain("dev.adiirc.com") {
     #sidebar {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+    .issue,
     .news.box,
     .issues.box,
     select,
@@ -103,6 +104,7 @@ domain("dev.adiirc.com") {
     #project-jump>span {
         color: var(--MyW) !important;
     }
+    option,
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
