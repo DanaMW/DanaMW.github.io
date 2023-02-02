@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.47
+@version      0.1.48
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -153,7 +153,7 @@ domain("cdninstagram.com") {
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:hover,
     .-HRM-,
     a[class="h-aRd  fuQUr"]:hover,
-    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2) {
+    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2):not(._abl-) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -181,7 +181,7 @@ domain("cdninstagram.com") {
     a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:active,
     div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:active,
     a[class="h-aRd  fuQUr"]:active,
-    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2) {
+    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2):not(._abl-) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -439,6 +439,13 @@ domain("cdninstagram.com") {
         filter: invert(0.5);
     }
     /*--------------------------Main Article--------------*/
+    article:not(._ab83) {
+        border: 10px solid var(--Myred3) !important;
+        /*
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        */
+    }
     a.FPmhX.notranslate.yrJyr {
         color: var(--Mygreen2) !important;
     }
@@ -682,5 +689,11 @@ domain("cdninstagram.com") {
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    ._ab6->circle,
+    ._ab6->line,
+    ._ab6->polygon,
+    ._ab6->path {
+        filter: invert(1);
     }
 }
