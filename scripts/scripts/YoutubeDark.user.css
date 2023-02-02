@@ -2,8 +2,8 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.63
-@description  YouTube Tweaks
+@version      0.0.64
+@description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 @preprocessor default
@@ -300,12 +300,6 @@ domain("studio.youtube.com") {
     .ytp-chrome-controls,
     .ytp-gradient-bottom {
         background-color: transparent;
-    }
-    .ytd-player,
-    .html5-video-player,
-    .ytd-player,
-    .ytp-player-content {
-        background-color: var(--MyB) !important;
     }
     .video-stream html5-main-video,
     ytd-section-list-renderer {
@@ -926,4 +920,17 @@ domain("studio.youtube.com") {
     canvas {
         opacity: 0 !important;
     }
+    /*
+    .ytd-player,
+    .html5-video-player,
+    .ytd-player,
+    .ytp-player-content {
+        background-color: var(--MyB) !important;
+    }
+    .ytp-progress-bar-container.style-scope.ytd-player,
+    .ytp-chrome-bottom.style-scope.ytd-player,
+    .ytp-gradient-bottom.style-scope.ytd-player {
+        background: transparent !important;
+    }
+    */
 }
