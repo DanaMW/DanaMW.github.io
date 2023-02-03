@@ -730,6 +730,10 @@ browser#html-view-browser {
     background: var(--MyB) !important;
 }
 
+toolbarbutton.toolbarbutton-1 {
+    height: 42px !important;
+}
+
 
 /*
 #page-action-buttons {
