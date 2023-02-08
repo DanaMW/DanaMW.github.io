@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.48
+@version      0.1.49
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -10,34 +10,11 @@
 
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
-    #splash-screen,
-    ._aa5b,
-    [class="_aam1 _aam2 _aam3 _aam5"],
-    [class="_aalm _aaln _aalo"],
-    main[role="main"],
-    ._a015._a7cl,
-    [class*="CZW53"],
-    div[class="ByB5K enqOc "],
-    div[class="_nuMd VZk0N "],
-    footer,
-    main.SCxLW,
     html,
-    body,
-    .oYYFH,
-    .js.logged-in.client-root {
+    body {
         background-color: var(--MyB) !important;
     }
-    [class="_aacl _aacp _aacu _aacx _aad6 _aadc"],
-    ._a9_b,
-    ._aak3,
-    [class="_9_68 _9_6a _9_6h _9_6p _9_6u _9_6_"],
-    [class=" _9-ts"],
-    div[class*="ByB5K"][class*="enqOc"][class*="-iWfv"],
-    ._6zPK7.PS7Gk,
-    div[class*="wpHm3"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="O1flK"][class*="fm1AK"],
-    .DCpAF,
-    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="qD5Mv"] section[class="bR_3v  "],
-    ._8UZ6e {
+    .stock {
         display: none !important;
     }
     * {
@@ -57,131 +34,63 @@ domain("cdninstagram.com") {
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-    ._ad7z,
-    .VIsJD,
-    h4,
-    #verificationCodeDescription,
-    .m7ETg,
-    .YFq-A,
-    div[class*="_7UhW9"][class*="xLCgt"],
-    span,
     p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
-    svg[class="_ab6-"] {
-        color: var(--MyW) !important;
-        fill: var(--MyW) !important;
-    }
-    a>span:hover,
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
-    div[class*="_7UhW9"][class*="x-6xq"][class*="MMzan"][class*="KV-D4"][class*="uL8Hv"][class*="l4b0S"],
-    .Nm9Fw,
     h1 {
         color: var(--TwitterBlue) !important;
     }
-    time,
-    h3,
     h2 {
         color: var(--TwitterRed) !important;
     }
     small {
         color: var(--TwitterPink) !important;
     }
-    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="rOtsg"][class*="ZUqME"],
-    div[class="  _6FEQj CMoMH   RQUXn _8_yLp  "] {
-        background-color: var(--MyX1) !important;
+    h3,
+    h4,
+    h5,
+    strong {
+        color: var(--MyW) !important;
     }
-    div[class*="Igw0E"][class*="IwRSH"][class*="YBx95"][class*="_4EzTm"][class*="XfCBB"][class*="g6RW6"] {
-        background-color: var(--MyX3) !important;
-    }
-    a._9VEo1 {
-        width: 70px !important;
-    }
-    [class="_aam1 _aam2 _aam3 _aam5"] {
-        width: 150% !important;
-    }
-    div[class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"],
-    .x1i10hfl[role="button"],
-    .-qQT3,
-    ul._ab85>li,
-    [class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _acan _acap _acat _acaw _aj1- _a6hd"],
-    [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"],
-    [class="sqdOP yWX7d    y3zKF     "],
-    a._9VEo1,
-    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "],
-    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"],
-    a[class="h-aRd  fuQUr"],
-    button:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2) {
+    button {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-        -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-        transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    div[class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"]:hover,
-    ._abn_,
-    .x1i10hfl[role="button"]:hover,
-    .-qQT3:hover,
-    ul._ab85>li:hover,
-    [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9_ _aba8 _abcm"]:hover,
-    [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8"]:hover,
-    [class=" _ab8o _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p _abcm"],
-    [class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _acan _acap _acat _acaw _aj1- _a6hd"]:hover,
-    [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"]:hover,
-    [class="_aaiu _aaiw"]:hover,
-    [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p _abyi _abcm"],
-    [class*=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p"]>a:hover,
-    [class="sqdOP yWX7d    y3zKF     "]:hover,
-    ._9-4g:hover,
-    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                        JI_ht                                                                      "] button[class="sqdOP yWX7d    y3zKF     "]:hover,
-    a._9VEo1:hover,
-    a[class="_9VEo1 T-jvg"],
-    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:hover,
-    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:hover,
-    .-HRM-,
-    a[class="h-aRd  fuQUr"]:hover,
-    button:hover:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2):not(._abl-) {
+    button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
-        opacity: 1 !important;
+        opacity: 1.0 !important;
         color: var(--MyW) !important;
-        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    div[class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"]:active,
-    .x1i10hfl[role="button"]:active,
-    .-qQT3:active,
-    ul._ab85>li:active,
-    [class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _acan _acap _acat _acaw _aj1- _a6hd"]:active,
-    [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _acan _acap _acat _acaw _a6hd"]:active,
-    [class="sqdOP yWX7d    y3zKF     "]:active,
-    a._9VEo1:active,
-    a[class="sqdOP  L3NKy    _8A5w5   ZIAjV "]:active,
-    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"]:active,
-    a[class="h-aRd  fuQUr"]:active,
-    button:active:not(._4LVjf):not(.downloadBtn):not(.wpO6b):not(.coreSpriteDismissLarge):not([class="sqdOP yWX7d    y3zKF     "]):not(._abl-._abm2):not(._abl-) {
+    button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -190,485 +99,31 @@ domain("cdninstagram.com") {
         background-color: var(--Mygreen3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
-        opacity: 1 !important;
+        opacity: 1.0 !important;
         color: var(--MyW) !important;
-        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    [class="_ab6o _ab6p _ab6q"],
-    [class="_aalv _aalx _aalz"],
-    [class="_aam1 _aam2 _aam5"],
-    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
-    div[class="       tHaIX              Igw0E     IwRSH      eGOV_         _4EzTm                                                                                   XfCBB             HcJZg              "],
-    div[class="uo5MA  _2ciX tWgj8 XWrBI "] {
+    .stock {
         background-image: none !important;
         background-color: transparent !important;
     }
-    [class="_acfk _acfl _acfm"],
-    [class*="_ab6o _ab6p _ab6q"],
-    [class=" _a4tc"] {
-        background-color: transparent !important;
-    }
-    ._aaw8,
-    [class=" cTBqC"],
-    [class=" _aaw8"] {
+    header,
+    .stock_navbar {
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
-        background-size: 1904px 80px !important;
-        background-position: center !important;
-        border-radius: 0;
-        border: none !important;
-        border-color: transparent !important;
-        -moz-transition: all linear 2s;
-        -webkit-transition: all linear 2s;
-        transition: all ease-in-out 2s;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    ._acum {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
-        outline: none !important;
-        opacity: 1 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition-timing-function: linear !important;
-        filter: brightness(75%) !important;
-        border: none !important;
-    }
-    li>a[role="link"]:hover {
-        border-left: 2px solid var(--Mygreen1) !important;
-    }
-    [class*="vdqkn"] {
-        opacity: 0;
-    }
-    ._aa06,
-    ._ae2s._ae3w,
-    [class="_aarz _aar- _aar_"],
-    [role="menuitem"],
-    ._ab12,
-    ._aaz4,
-    ._a3gq ._aa1x,
-    [class="_aa__ _ackf _ackh"],
-    [class=" _ab6k _ab6m  _aa1x _ackf _ackh"],
-    [class="_ab6k _ab6l _ab6m  _aa1v _aa1x _ackf _ackh"],
-    [class*=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p"],
-    ._abyk,
-    [class="zGtbP IPQK5 VideM opExi"],
-    ._9-u6,
-    div[class="zGtbP IPQK5 VideM "],
-    .rQDP3,
-    div[class="eo2As  "],
-    .IpSxo,
-    [class=" Dw_ki"],
-    .g47SY.lOXF2,
-    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"],
-    ._9XapR,
-    ._7zBYT {
-        background-color: var(--Myred3) !important;
-    }
-    ._lz6s,
-    [class="_a1bn  _9-f2 _9-f5 _9-fd _9-fi _9-fm  _9-fx _9-g5"]:hover {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, 0.5) 48%, rgba(0, 0, 0, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, hsla(0, 0%, 66%, 0.2)) !important;
-    }
-    /*
-    [class*="_ab8w"][class*="_ab94"][class*="_ab97"][class*="_ab9f"][class*="_ab9m"][class*="_ab9p"][class*="_ab9_"][class*="_abab"][class*="_abcm"],
-    */
-    [class="_ab8w  _ab94 _ab97 _ab9f _ab9m _ab9p  _ab9_ _abab _abcm"],
-    [class="_ab8w  _ab94 _ab97 _ab9h _ab9m _ab9p  _aba0 _abac _abcm"],
-    [class="_ab8w  _ab94 _ab96 _ab9f _ab9m _ab9p  _abb_  _ab9z"],
-    ._ab9s,
-    ._ac2t,
-    ._ac39,
-    ._ab5s,
-    ._9z_0,
-    ._9-rn._9-ro,
-    div[class*="tHaIX"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"][class*="HcJZg"],
-    ._9eogI.hfWwk,
-    ._9gMUf,
-    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="ui_ht"][class*="i0EQd"]>div,
-    div[class="frMpI  -sxBV"],
-    div[class*="Igw0E"][class*="rBNOH"][class*="YBx95"][class*="_4EzTm"][class*="T9mq-"][class*="nGS-Y"],
-    .N9abW,
-    a[class="-qQT3 rOtsg"],
-    div[class="PUHRj  H_sJK"],
-    ul.wW1cu,
-    article.PVkFi {
+    .stock {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    ._acbs,
-    ._ac76,
-    ._ac78,
-    [class="_ab21 _ab22 _ab23"],
-    ._aav4._aav5,
-    [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o"],
-    ._acj1,
-    [class="_ab8w  _ab94 _ab97 _ab9i _ab9k _ab9p _abcm"],
-    [class*="_ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p  _ab9_ _abab"],
-    ._aa4j,
-    [class="_9-ej  _9-eq _a1bn  _9-f2 _9-f5 _9-ff _9-fm  _9-fx _9-g9"],
-    ._a3gq,
-    ._9-es._a1bn._9-f2._9-fd._9-fm,
-    [class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 nc684nl6 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl _9-4g _a6hd"]:hover,
-    [class="_a1bn  _9-f2 _9-f5 _9-fd _9-fm  _9-fy _9-g8"],
-    [class="_9zjb _9zjc _9zjd"],
-    [class="_a1bn  _9-f2 _9-f5 _9-fg _9-fi _9-fm"],
-    [class=" _9-eq _a1bn  _9-f2 _9-f7 _9-fd _9-fm  _9-g5"],
-    [class*="_8Rm4L"][class*="bLWKA"][class*="vboSt"][class*="_6E_wP"][class*="ccgHY"][class*="GZkEI"],
-    [class*="DPiy6"][class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="vwCYk"],
-    [class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"]>[class*="qF0y9"][class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="L-sTb"][class*="HcJZg"],
-    div[class*="qF0y9"][class*="Igw0E"][class*="rBNOH"][class*="CcYR1"][class*="ybXk5"][class*="_4EzTm"],
-    div[class="_4Kbb_ _54f4m"],
-    div[class*="pV7Qt"][class*="tHaIX"][class*="Igw0E"][class*="rBNOH"][class*="YBx95"][class*="_4EzTm"][class*="XfCBB"][class*="nGS-Y"],
-    header,
-    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
-    div[class="       tHaIX              Igw0E     IwRSH      eGOV_         _4EzTm                                                                                   XfCBB             HcJZg              "],
-    .BvyAW,
-    .gr27e,
-    div[class="gr27e  "],
-    .eo2As.O9c_u,
-    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="XfCBB"][class*="g6RW6"],
-    div[class*="lKHVe"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="vwCYk"][class*="XfCBB"][class*="g6RW6"],
-    ._41KYi,
-    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm                                                                                    L-sTb            HcJZg              "],
-    .S-mcP,
-    a[class="-qQT3 rOtsg"]:hover,
-    div[class="PUHRj  H_sJK"]:hover,
-    .leaflet-popup-content-wrapper,
-    section[class="bR_3v  "],
-    div[class="zGtbP IPQK5 VideM"],
-    [role="dialog"]>._1XyCr {
+    .stock {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-    ._01UL2,
-    textarea {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-        text-align: center !important;
-    }
-    section * input[type="checkbox"] {
-        -moz-appearance: checkbox;
-        -webkit-appearance: checkbox;
-        appearance: checkbox;
-    }
-    section * input[type="radio"] {
-        -moz-appearance: radio;
-        -webkit-appearance: radio;
-        appearance: radio;
-    }
-    [class="_aac4 _aac5 _aac6"],
-    ._aatk,
-    ._aasx,
-    [class=" _aaoe _aaso _aasp"],
-    [class="_aac4 _aac5 _aac6 _aac7"],
-    [class="_ab8w  _ab94 _ab97 _ab9i _ab9k _ab9p"],
-    [class="_9zpb _9zpc  _9_qr _9_qt _9_a8 _9_aa"],
-    ._a04c,
-    ._a03x,
-    div[class="zGtbP  "],
-    div[class="_7zBYT tYjl_"],
-    div[class="NP414  ccgHY  GZkEI"],
-    .leaflet-popup-tip {
-        background-color: var(--Myred3) !important;
-    }
-    [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o _abcm"],
-    ._ab83,
-    ._aa61,
-    [class="_aa5_ _aa60"],
-    ._aajc,
-    [class="_ab5z _ab5_"],
-    .f7Bj3,
-    div[class="zGtbP  VideM"],
-    div[class="AvhYw nLL4f"] {
-        background-color: var(--Mygray3) !important;
-    }
-    header[class="vtbgv "] {
-        border-top: 20px solid var(--Myred3) !important;
-    }
-    header[class*="x1qjc9v5"] {
-        border: 1px solid var(--MyW) !important;
-    }
-    ._aa5k,
-    div[class*="_9GP1n"][class*="HlUSH"],
-    div[class*="_9GP1n"] {
-        background-color: transparent !important;
-    }
-    [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8"],
-    [class="_aaiu _aaiw"] {
-        border: 1px solid var(--MyW) !important;
-    }
-    [class="_acfk _acfl _acfm"],
-    ._aa5k,
-    div[class*="_9GP1n"][class*="HlUSH"],
-    div[class*="_9GP1n"] {
-        border: none !important;
-    }
-    /*------------------All filter INVERTS----------------*/
-    ._aaw8:hover ._aawc._aawd,
-    span[class="glyphsSpriteFriend_Follow u-__7"],
-    div[class="FuWoR -wdIA x7xX2 "],
-    div[class*="coreSpritePagingChevron"],
-    button[class="_5f5mN       jIbKX KUBKM      yZn4P   "] svg path,
-    button[class="_5f5mN       jIbKX KUBKM      yZn4P  m4t9r "] svg path,
-    svg {
-        filter: invert(1);
-    }
-    svg[aria-label="Unlike"] {
-        filter: invert(0);
-    }
-    button svg path:hover,
-    svg:hover {
-        filter: invert(0.5);
-    }
-    /*--------------------------Main Article--------------*/
-    article:not(._ab83) {
-        border: 10px solid var(--Myred3) !important;
-        /*
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        */
-    }
-    a.FPmhX.notranslate.yrJyr {
-        color: var(--Mygreen2) !important;
-    }
-    div[class="_7UhW9   xLCgt      MMzan  KV-D4        uL8Hv     l4b0S    "],
-    .TqC_a {
-        color: var(--MyW) !important;
-        font-weight: bold !important;
-    }
-    .TqC_a:hover {
-        color: var(--MyB) !important;
-        font-weight: bold !important;
-    }
-    [class="         DPiy6    qF0y9          Igw0E     IwRSH        YBx95     acqo5   _4EzTm                                                                                                              "],
-    div[class="                     Igw0E     IwRSH       hLiUi       vwCYk                                                                                                               "] {
-        background-color: var(--Mygray3);
-    }
-    div[class="eo2As "],
-    ._-1_m6,
-    .NgKI_,
-    div[class="                  Igw0E     IwRSH      eGOV_         _4EzTm                                                                                               g6RW6               "],
-    .fx7hk,
-    .M9sTE {
-        background-color: var(--Myred3);
-    }
-    ._0T_XJ.zRsZI::after,
-    ._0T_XJ.zRsZI::before {
-        background-image: none !important;
-    }
-    ._8Rm4L.M9sTE.L_LMM.SgTZ1 {
-        background-color: var(--Myred3);
-        border: 2px solid var(--Myborder);
-    }
-    .Szr5J.bMltT {
-        z-index: 10;
-    }
-    article:hover:not(._ab83),
-    ._8Rm4L.M9sTE.L_LMM.SgTZ1:hover {
-        box-shadow: 0 0 30px var(--Myred1) !important;
-    }
-    .mt3GC {
-        border: 2px var(--Myred1) !important;
-    }
-    div[class="_7UhW9   xLCgt       qyrsm  _0PwGv       uL8Hv          fTMOG"],
-    div[class="_7UhW9  PIoXz        qyrsm KV-D4        uL8Hv         "],
-    .BcJ68,
-    .zV_Nj,
-    .FPmhX {
-        color: var(--MyW) !important;
-    }
-    /*-------------------Main colors-----------------------*/
-    .zV_Nj {
-        color: var(--Myblue1);
-    }
-    .gElp9 a {
-        color: var(--Mygreen1) !important;
-    }
-    ._aacl,
-    ._aa4o,
-    [class="_aacl _aacn _aacu _aacx _aad6"],
-    a,
-    p,
-    p span,
-    div a {
-        color: var(--MyW) !important;
-    }
-    span[class="_3G4x7  l93RR"]:hover,
-    a:hover,
-     :link:hover {
-        color: var(--Myred1) !important;
-    }
-    ._41KYi.LQtnO,
-    label,
-    textarea {
-        color: var(--MyW) !important;
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    textarea,
-    input:not([type="radio"]):not([type="checkbox"]) {
-        background-color: var(--MyB) !important;
-        color: var(--MyW) !important;
-        border-radius: 25px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    .mwD2G,
-    input[type="radio"],
-    input[type="checkbox"] {
-        color: var(--MyW) !important;
-        background-color: var(--Mygray2) !important;
-        border: 1px solid var(--MyW) !important;
-    }
-    input[type="radio"][checked="true"] {
-        color: var(--MyB) !important;
-    }
-    .mwD2G::before {
-        background-color: var(--MyW) !important;
-    }
-    section[class="sH9wk  _JgwE "] textarea {
-        background-color: var(--MyB) !important;
-    }
-    .ZUqME,
-    .vtWDf,
-    .YlNGR,
-    .kM-aa.NP414.ccgHY.GZkEI {
-        background-color: var(--Mygray2) !important;
-    }
-    .YQf7h.xptSB {
-        background-color: var(--Myred2) !important;
-    }
-    div[class="_7UhW9   xLCgt      MMzan     fDdiY       uL8Hv      M8ipN   "]:hover {
-        color: var(--Myred1) !important;
-    }
-    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*=" _4EzTm"] {
-        background-color: transparent !important;
-    }
-    li.wo9IH {
-        background-color: var(--Mygray3) !important;
-    }
-    div[class="ByB5K enqOc "],
-    div[class="_nuMd VZk0N "] {
-        height: 0px !important;
-        opacity: 0 !important;
-    }
-    .v9tJq.AAaSh,
-    header[class="vtbgv "] {
-        border-color: transparent !important;
-        border: 10px var(--Mygreen1) !important;
-    }
-    div[class="RR-M- h5uC0"] {
-        margin-top: 65px !important;
-    }
-    .q9xVd::after {
-        background-color: var(--Mygreen1) !important;
-    }
-    div[class*="Igw0E"][class*="IwRSH"][class*="eGOV_"][class*="_4EzTm"][class*="_22l1"][class*="aGBdT"][class*="BI4qX"] {
-        text-align: center !important;
-    }
-    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"][class*="HVWg4"] {
-        height: 60px !important;
-    }
-    div[class*="Igw0E"][class*="rBNOH"][class*="eGOV_"][class*="ybXk5"][class*="_4EzTm"][class*="XfCBB"][class*="HVWg4"]:hover {
-        height: 100px !important;
-    }
-    svg[class="_8-yf5 edmGD"] {
-        fill: var(--Myred1) !important;
-    }
-    img.s4Iyt:hover {
-        filter: invert(1) !important;
-    }
-    .gwgGR {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    .eDd9Z {
-        background-color: var(--Myred3) !important;
-    }
-    div[class="                     Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                  soMvl                  JI_ht                  DhRcB                                                    "]>svg>path {
-        filter: invert(1) !important;
-        fill: var(--Myred1) !important;
-    }
-    .pKKVh:hover,
-    div[class="v1Nh3 kIKUG  _bz0w"]:hover {
-        box-shadow: 0px 0px 10px var(--Myred1) !important;
-    }
-    [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p"]:hover {
-        background-color: var(--MyX1) !important;
-        color: var(--MyW) !important;
-    }
-    [class="_aacl _aaco _aacu _aacx _aad6 _aade"],
-    ._9_68._9_6b._9_6i._9_6j._9_6t {
-        color: var(--MyW) !important;
-    }
-    i.sp_jGofMAV8_AJ.sx_017b10 {
-        filter: invert(1);
-    }
-    [class="_9_68 _9_6b _9_6h _9_6j _9_6x"] {
-        color: var(--MyW) !important;
-    }
-    [class="_aacl _aaco _aacu _aacx _aada"] {
-        color: var(--TwitterBlue) !important;
-    }
-    i[aria-label="Instagram"]:hover {
-        filter: invert(1);
-    }
-    [class=" _aawf _aawg"] input[class="_aawh _aawj _aauy"] {
-        border: 1px solid var(--MyW) !important;
-    }
-    input[type="checkbox"]>div::before {
-        color: var(--Myred1) !important;
-    }
-    ._a3gq ._aahe:checked~._aahg::before {
-        border-bottom: 2px solid var(--MyW) !important;
-        border-left: 2px solid var(--MyW) !important;
-    }
-    ._a3gq ._ac7h:checked {
-        border: 5px solid var(--MyW) !important;
-    }
-    .tlZCJ:checked~.mwD2G::before {
-        border-bottom: 2px solid var(--MyW) !important;
-        border-left: 2px solid var(--MyW) !important;
-    }
-    [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p"]:hover {
-        background-color: transparent !important;
-    }
-    ._a3gq ._ad8l {
-        background-color: var(--Mygray3) !important;
-    }
-    ._abaq>div>div>div>div>div>div {
-        background-color: var(--Mygray3) !important;
-    }
-    [class="_afxv"],
-    [class=" _afxw"] {
-        border-radius: 50% !important;
-        /*
-        height: 40px !important;
-        width: 20px !important;
-        */
-    }
-    ._ac2v,
-    ._ac2p {
-        background-color: var(--Mygray2) !important;
-    }
-    [role="textbox"],
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -689,11 +144,5 @@ domain("cdninstagram.com") {
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
-    }
-    ._ab6->circle,
-    ._ab6->line,
-    ._ab6->polygon,
-    ._ab6->path {
-        filter: invert(1);
     }
 }
