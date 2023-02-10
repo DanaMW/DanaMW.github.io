@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.50
+@version      0.1.51
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -10,12 +10,18 @@
 
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
+    ._aa5b,
     [class="_aam1 _akej _ajrq _akek"],
     section,
     main,
     html,
     body {
         background-color: var(--MyB) !important;
+    }
+    [class="_aam1 _akej _ajrq _aam6 _akek"],
+    [class="_aalv _aalx _ajrr _akek"],
+    #splash-screen {
+        background: var(--MyXB) !important;
     }
     footer {
         display: none !important;
@@ -67,6 +73,7 @@ domain("cdninstagram.com") {
     strong {
         color: var(--MyW) !important;
     }
+    a[role="link"]>div,
     ._ad7z,
     [class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"],
     button {
@@ -84,6 +91,8 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    [class=" _ab8o _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p _abcm"],
+    a[role="link"]>div:hover,
     [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _aba0 _aba8 _abcm"]:hover,
     ._ad7z:hover,
     [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8 xn3w4p2"]:hover,
@@ -137,6 +146,9 @@ domain("cdninstagram.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    ._aa4j,
+    [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p  _aba8 _abcm"],
+    ._aak3._agh4,
     [role="dialog"],
     ._ab21 {
         background-color: var(--Myred3) !important;
@@ -163,10 +175,12 @@ domain("cdninstagram.com") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+    [class="x1qjc9v5 x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x78zum5 xdt5ytf x2lah0s xk390pu xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 xggy1nq x11njtxf"],
     [class=" x1cy8zhl x9f619 x78zum5 xdt5ytf x1gvbg2u x1y1aw1k xn6708d xx6bls6 x1ye3gou xvbhtw8 x1xgvd2v"],
     [class*="x6s0dn4 x1npaq5j x1c83p5e x1enjb0b x199158v x9f619"] {
         background-color: var(--Myred3) !important;
     }
+    ._abyk,
     ._ab85,
     ._ab83,
     ._aav4._aav5,
@@ -193,6 +207,20 @@ domain("cdninstagram.com") {
         background-color: var(--MyX1) !important;
     }
     article {
-        border: 2px solid var(--Myred1) !important;
+        border: 10px solid var(--Myred3) !important;
+    }
+    [class="_aac4 _aac5 _aac6 _aj3f"],
+    [class="_aacl _aaco _aacu _aacx _aad6 _aade"],
+    [class="_aamu _ae3_ _ae40 _ae41 _ae48 _agge"],
+    [class=" _ab6k _ab6m _aggc _aatb _aatc _aate _aatf _aath _aati"],
+    ._ae2s._ae3w._aggd,
+    [class="_ab8w  _ab94 _ab97 _ab9i _ab9k _ab9p _abcm"] {
+        background-color: var(--Myred3) !important;
+    }
+    [class="_aacl _aaco _aacu _aacy _aad6 _aade"] {
+        text-align: center !important;
+    }
+    [class="_aacl _aaco _aacu _aacy _aad6 _aade"] {
+        color: var(--Myyellow1) !important;
     }
 }
