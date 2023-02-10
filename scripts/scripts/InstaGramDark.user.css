@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.49
+@version      0.1.50
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -10,17 +10,21 @@
 
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
+    [class="_aam1 _akej _ajrq _akek"],
+    section,
+    main,
     html,
     body {
         background-color: var(--MyB) !important;
     }
-    .stock {
+    footer {
         display: none !important;
     }
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
+        border-color: var(--Myred1) !important;
     }
      ::-webkit-scrollbar {
         background: var(--Myred3) !important;
@@ -36,7 +40,7 @@ domain("cdninstagram.com") {
     }
     p,
     a {
-        color: var(--MyW) !important;
+        color: var(--Mypurple1) !important;
         background-color: transparent !important;
     }
     a:hover {
@@ -47,17 +51,24 @@ domain("cdninstagram.com") {
         color: var(--TwitterBlue) !important;
     }
     h2 {
+        color: var(--MyW) !important;
+    }
+    h3 {
         color: var(--TwitterRed) !important;
     }
     small {
         color: var(--TwitterPink) !important;
     }
+    ._aacx,
+    ._a9zv,
     h3,
     h4,
     h5,
     strong {
         color: var(--MyW) !important;
     }
+    ._ad7z,
+    [class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"],
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -73,6 +84,10 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _aba0 _aba8 _abcm"]:hover,
+    ._ad7z:hover,
+    [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8 xn3w4p2"]:hover,
+    [class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -90,6 +105,8 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    ._ad7z:active,
+    [class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"]:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -107,20 +124,21 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
-    .stock {
+    ._aa48 {
         background-image: none !important;
         background-color: transparent !important;
     }
     header,
-    .stock_navbar {
+    ._acum {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    .stock {
+    [class="_aady _aa_s"] {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    .stock {
+    [role="dialog"],
+    ._ab21 {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
@@ -144,5 +162,37 @@ domain("cdninstagram.com") {
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    [class=" x1cy8zhl x9f619 x78zum5 xdt5ytf x1gvbg2u x1y1aw1k xn6708d xx6bls6 x1ye3gou xvbhtw8 x1xgvd2v"],
+    [class*="x6s0dn4 x1npaq5j x1c83p5e x1enjb0b x199158v x9f619"] {
+        background-color: var(--Myred3) !important;
+    }
+    ._ab85,
+    ._ab83,
+    ._aav4._aav5,
+    [class="x9f619 x78zum5 x1c4vz4f xs83m0k xdl72j9 x1q0g3np x1a2a7pz x67bb7w x1n2onr6 x2lwn1j xeuugli"],
+    [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o _abcm"],
+    [class=" x1cy8zhl x9f619 x78zum5 xdt5ytf x1gvbg2u x1y1aw1k xn6708d xx6bls6 x1ye3gou xvbhtw8 x1xgvd2v x1o5hw5a xaeubzz"],
+    ._aa61 {
+        background-color: var(--Mygray2) !important;
+    }
+    ._aa61 {
+        border: 1px solid var(--MyW) !important;
+    }
+    svg._ab6->line,
+    svg._ab6->path,
+    svg._ab6->polygon,
+    svg._ab6->polyline,
+    svg._ab6->circle {
+        color: var(--Mygreen1) !important;
+    }
+    [class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xl565be xo1l8bm x5n08af xtoi2st xw06pyt x10wh9bi x1wdrske x8viiok x18hxmgj"] {
+        width: 100px !important;
+    }
+    .x1l895ks:hover {
+        background-color: var(--MyX1) !important;
+    }
+    article {
+        border: 2px solid var(--Myred1) !important;
     }
 }
