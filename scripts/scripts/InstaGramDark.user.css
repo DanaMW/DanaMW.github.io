@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.52
+@version      0.1.53
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -53,18 +53,21 @@ domain("cdninstagram.com") {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+    [class=" _ab8y  _ab94 _ab97 _ab9f _ab9k _ab9p _abcm"],
     h1 {
         color: var(--TwitterBlue) !important;
     }
     h2 {
         color: var(--MyW) !important;
     }
+    [class=" _ab8y  _ab94 _ab97 _ab9f _ab9k _ab9p _abcm"]:hover,
     h3 {
         color: var(--TwitterRed) !important;
     }
     small {
         color: var(--TwitterPink) !important;
     }
+    .x5n08af,
     ._aacx,
     ._a9zv,
     h3,
@@ -74,7 +77,9 @@ domain("cdninstagram.com") {
         color: var(--MyW) !important;
     }
     [class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x18d9i69 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1lq5wgf xgqcy7u x30kzoy x9jhf4c x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x78zum5 x1i0vuye xwhw2v2 x10w6t97 xl56j7k x17ydfre x1f6kntn x1swvt13 x1pi30zi x2b8uid xlyipyv x87ps6o x14atkfc x1n2onr6 x1d5wrs8 x1gjpkn9 x175jnsf xsz8vos"],
+    /*
     a[role="link"]>div,
+    */
     ._ad7z,
     [class="x9f619 x3nfvp2 x1z11no5 xjy5m1g x1mnwbp6 x4pb5v6 xr9ek0c xjpr12u xo237n4 x6pnmvc x7nr27j x12dmmrz xz9dl7a xn6708d xsag5q8 x1ye3gou x1l895ks x159b3zp xdoji71 x1v9afh1 x1sxb60h x1ug36kh xubc8zo x1dejxi8 x9k3k5o xs3sg5q x11hdxyr x12ldp4w x1wj20lx x1dn74xm xif99yt x172qv1o x10djquj x1lhsz42 xzauu7c"],
     button {
@@ -94,7 +99,9 @@ domain("cdninstagram.com") {
     }
     [class="x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w x972fbf xcfux6l x1qhh985 xm0m39n xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli xexx8yu x18d9i69 x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1lq5wgf xgqcy7u x30kzoy x9jhf4c x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x78zum5 x1i0vuye xwhw2v2 x10w6t97 xl56j7k x17ydfre x1f6kntn x1swvt13 x1pi30zi x2b8uid xlyipyv x87ps6o x14atkfc x1n2onr6 x1d5wrs8 x1gjpkn9 x175jnsf xsz8vos"]:hover,
     [class=" _ab8o _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p _abcm"],
+    /*
     a[role="link"]>div:hover,
+    */
     [class="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _aba0 _aba8 _abcm"]:hover,
     ._ad7z:hover,
     [class*="_ab8w  _ab94 _ab97 _ab9f _ab9k _ab9p  _ab9- _aba8 xn3w4p2"]:hover,
@@ -198,15 +205,25 @@ domain("cdninstagram.com") {
     ._aa61 {
         background-color: var(--Mygray2) !important;
     }
+    [class="xvbhtw8 xvb8j5 x9f619 x78zum5 xdt5ytf x1dr59a3 x1odjw0f xish69e x1y1aw1k x4uap5 xwib8y2 xkhd6sd xzmilaz x168nmei xoqspk4 x12v9rci xo71vjh x1n2onr6 x1zvrr1"] {
+        background-color: var(--Mygray3) !important;
+    }
     ._aa61 {
         border: 1px solid var(--MyW) !important;
     }
+    svg._ab6-,
     svg._ab6->line,
     svg._ab6->path,
     svg._ab6->polygon,
     svg._ab6->polyline,
     svg._ab6->circle {
         color: var(--Mygreen1) !important;
+    }
+    svg[class="x1lliihq x1n2onr6 x1hfr7tm"],
+    svg._ab6-[aria-label="Home"],
+    svg._ab6-[aria-label="Carousel"] {
+        color: var(--Mygreen1) !important;
+        fill: var(--Mygreen1) !important;
     }
     [class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xl565be xo1l8bm x5n08af xtoi2st xw06pyt x10wh9bi x1wdrske x8viiok x18hxmgj"] {
         width: 100px !important;
@@ -217,6 +234,8 @@ domain("cdninstagram.com") {
     article {
         border: 10px solid var(--Myred3) !important;
     }
+    [class="_ab8w  _ab94 _ab99 _ab9f _ab9k _ab9p _ab9r _abaj _abcm"],
+    [class="_ab8w  _ab94 _ab99 _ab9f _ab9m _ab9o _abcm"],
     [class=" _ab6k _ab6m _aggc _aatb _aatc _aate _aatf _aati"],
     [class="_aac4 _aac5 _aac6 _aj3f"],
     [class="_aacl _aaco _aacu _aacx _aad6 _aade"],
@@ -231,5 +250,11 @@ domain("cdninstagram.com") {
     }
     [class="_aacl _aaco _aacu _aacy _aad6 _aade"] {
         color: var(--Myyellow1) !important;
+    }
+    [class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _aa-z _aa-- _ac_u _a6hd"] {
+        border-top-color: var(--Mygreen1) !important;
+    }
+    [class="_acbv _acbw _acbx _acby"] {
+        border-bottom-color: var(--Mygreen1) !important;
     }
 }
