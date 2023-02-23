@@ -2,7 +2,7 @@
 @name         Bing Dark
 @namespace    https://danamw.github.io/scripts/scripts/BingDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BingDark.user.css
-@version      0.0.11
+@version      0.0.12
 @author       Dana L. Meli-Wischman
 @description  Dark Style Bing.
 @homepageURL  https://DanaMW.github.io
@@ -14,6 +14,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("bing.com") {
+    .cdx_mkt_hva,
     [class="row no-margins has-compact-header"],
     html,
     body {
@@ -58,6 +59,7 @@
     small {
         color: var(--TwitterPink) !important;
     }
+    [class*="cdx_"],
     .as_rmhswarningtxt,
     h3,
     h4,
@@ -70,6 +72,7 @@
     input[type="text"] {
         color: var(--Myyellow1) !important;
     }
+    .id_link,
     .b_icon.tooltip,
     label.search.icon.tooltip,
     [role="button"],
@@ -90,10 +93,10 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .ns-toggle-container,
+    [role="button"]:hover,
+    .id_link:hover,
     li.overflow_item:hover,
-    /*
-    li>a:hover,
-    */
     .btn.white:hover,
     .btn.blue:hover,
     .sa_hv,
@@ -117,6 +120,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .id_link:active,
     .btn.white:active,
     .btn.blue:active,
     .hb_section:active,
@@ -137,6 +141,11 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    [id*="inferencesToggle"],
+    [id*="interestType"],
+    #uberToggle {
+        text-align: center !important
+    }
     .stock {
         background-image: none !important;
         background-color: transparent !important;
@@ -155,6 +164,8 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .bnc-fc,
+    .id_currentAccount,
     .sbipane.accDialog,
     .b_speech_cont,
     [class*="modal"],
@@ -185,9 +196,14 @@
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+    .id_currentAccount {
+        border: 1px solid var(--MyW) !important;
+    }
     img:hover {
         filter: brightness(150%);
     }
+    #HBContent,
+    [class=" nohpfo slide_down"],
     ul.overflow_menu,
     .me_sectioncontent,
     ul[role="listbox"],
@@ -210,10 +226,21 @@
     .title {
         color: var(--Mygreen1) !important;
     }
+    .id_name,
     li.overflow_item a {
         color: var(--MyW) !important;
     }
     .sbitit {
         color: var(--MyB) !important;
+    }
+    .cdx_mkt_hva {
+        background: transparent !important;
+        background-image: none !important;
+    }
+    .cdx_mkt_hva {
+        background: var(--MyB) !important;
+    }
+    img[class*="cdx_"] {
+        filter: invert(1) !important;
     }
 }
