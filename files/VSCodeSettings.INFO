@@ -111,20 +111,24 @@
     "workbench.commandPalette.preserveInput": true,
     "breadcrumbs.enabled": true,
     "debug.enableAllHovers": true,
-     "scm.alwaysShowProviders": true,
+    "scm.alwaysShowProviders": true,
     "terminal.integrated.setLocaleVariables": true,
     "html-css-class-completion.enableEmmetSupport": true,
     "csscomb.formatOnSave": true,
     "cSpell.userWords": [
+        "aacss",
         "asay",
         "autoscroller",
         "bing",
+        "cdninstagram",
         "cmdletbinding",
+        "cmyk",
         "epicker",
         "esversion",
         "Fiamma",
         "Gmail",
         "Imagus",
+        "Loxd",
         "Meli",
         "Myback",
         "Myblue",
@@ -143,11 +147,13 @@
         "sandboxie",
         "shell",
         "Sicuro",
+        "svgviewer",
         "Tolower",
         "ublock",
         "wbem",
         "Winmgmt",
-        "Wischman"
+        "Wischman",
+        "yzhang"
     ],
     "terminal.integrated.rightClickBehavior": "default",
     "cSpell.language": "en",
@@ -217,7 +223,7 @@
     "eslint.lintTask.enable": true,
     "git.fetchOnPull": true,
     "[css]": {
-        "editor.defaultFormatter": "michelemelluso.code-beautifier"
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
     },
     "editor.suggestSelection": "first",
     "json.maxItemsComputed": 7000,
@@ -235,7 +241,6 @@
     ],
     "editor.formatOnSave": true,
     "editor.smoothScrolling": true,
-    "editor.formatOnPaste": false,
     "workbench.list.smoothScrolling": true,
     "workbench.editor.decorations.colors": true,
     "workbench.editor.highlightModifiedTabs": true,
@@ -272,7 +277,22 @@
     },
     "spellchecker.ignoreWordsList": [
         "PowerShell",
-        "pwsh"
+        "pwsh",
+        "StrangeScript",
+        "Meli",
+        "Wischman"
     ],
-    "editor.foldingMaximumRegions": 7500
+    "editor.foldingMaximumRegions": 7500,
+    "css.format.newlineBetweenSelectors": false,
+    "editor.renderWhitespace": "none",
+    "css.format.newlineBetweenRules": false,
+    "css.format.enable": true,
+    "editor.renderControlCharacters": false,
+    "prettier.endOfLine": "auto",
+    "window.commandCenter": true,
+    "diffEditor.diffAlgorithm": "experimental",
+    "diffEditor.codeLens": true,
+    "editor.minimap.autohide": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.accessibilitySupport": "off"
 }
