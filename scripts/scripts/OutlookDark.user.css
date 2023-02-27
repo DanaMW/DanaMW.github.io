@@ -2,7 +2,7 @@
 @name         Outlook Dark
 @namespace    http://danamw.github.io/scripts/scripts/OutlookDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/OutlookDark.user.css
-@version      0.0.36
+@version      0.0.37
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
@@ -209,6 +209,8 @@ url-prefix("https://to-do.live.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+    .z0duZ,
+    .Soq5F,
     .pBKjV,
     div[class="VPtFl"],
     ._1T52orUcm8Tx8YGTEn_hnM,
