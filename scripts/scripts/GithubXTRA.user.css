@@ -75,6 +75,9 @@ url-prefix("wss://live.github.com") {
         filter: brightness(125%);
         border-color: var(--Myred1) !important;
     }
+    [class="UnderlineNav-item js-responsive-underlinenav-item js-selected-navigation-item selected"]::after {
+        background-color: var(--Mygreen1) !important;
+    }
     h3 a {
         padding: 5px !important;
     }
