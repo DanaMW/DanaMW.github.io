@@ -59,6 +59,7 @@ url-prefix("moz-extension://40f2e966-1246-4b3d-9c50-5c1d95e03e5e/option.html") {
     div.node-text:hover {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
+        border: 1px solid var(--Mytext) !important;
     }
     div#mainfunctions div.menu-selected {
         color: var(--MyW) !important;
