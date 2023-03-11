@@ -2,13 +2,14 @@
 @name         CNN Dark
 @namespace    https://danamw.github.io/scripts/scripts/CnnDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CnnDark.user.css
-@version      0.0.26
+@version      0.0.27
 @description  Some CNN Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
 
 @-moz-document domain("cnn.com") {
+    [class="layout__content-wrapper layout-with-rail__content-wrapper"],
     html,
     body {
         background-color: var(--MyB) !important;
@@ -110,7 +111,7 @@
         background-image: none !important;
         background-color: transparent !important;
     }
-    header,
+    [class="header__subnav-mount"],
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -143,214 +144,5 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
-    }
-    .bx-align {
-        display: none !important;
-        color: var(--Myred1)
-    }
-    [id*="sponsored"],
-    div[id*="gigyaShareBar"],
-    div.user-msg.headerless.user-msg-flexbox {
-        display: none !important;
-    }
-    .el__leafmedia,
-    .zn-top {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    .layout__content-wrapper,
-    .layout__content-wrapper.layout-with-rail__content-wrapper,
-    .layout-with-rail__content-wrapper,
-    footer,
-    section,
-    article,
-    body[class] {
-        background-color: var(--MyB) !important;
-        color: var(--Mytext) !important;
-    }
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
-     ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
-     ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
-    [aria-label="video player"] {
-        z-index: 10000 !important;
-    }
-    h2 {
-        color: var(--Mytext) !important;
-    }
-    a[href] {
-        text-decoration: none !important;
-        color: var(--TwitterBlue) !important;
-        border: none !important;
-    }
-    .zn-body__paragraph,
-    .cd__timestamp,
-    a {
-        color: var(--MyW) !important;
-        background-color: transparent !important;
-        text-decoration: none !important;
-    }
-    .media__video-description,
-    .cd__headline-text {
-        color: var(--MyW) !important;
-    }
-    .headline__text,
-    h3,
-    strong,
-    a:hover {
-        color: var(--Myred1) !important;
-        text-decoration: none !important;
-    }
-    cite {
-        color: var(--Mygreen1) !important;
-    }
-    li>a:hover {
-        color: var(--MyW) !important;
-        text-decoration: none !important;
-        text-align: center !important;
-    }
-    h1.headline,
-    h1.pg-headline {
-        color: var(--Myred1) !important;
-        text-shadow: 1px -1px 0 var(--MyW) !important;
-    }
-    p {
-        color: var(--MyW) !important;
-    }
-    h2[class="cn__title   "],
-    .cn__title--link::before,
-    h2[class="cn__title "] {
-        background-color: var(--Myred2) !important;
-    }
-    div[class*="edition-picker"],
-    a[class*="logo-links"] {
-        background-color: transparent !important;
-    }
-    .cd__content,
-    .nav-section__name.js-nav-section-name,
-    .nav-section__submenu,
-    .logo,
-    .logo-links,
-    .container,
-    .drawer,
-    #menu,
-    #search-button,
-    .nav-section,
-    .nav__container,
-    .nav-menu-links,
-    div[class="Cell-i0zvfi-0 headerstyles__NavBarContent-sc-1vh4dor-4 gcRmuT"],
-    div[class="Flex-sc-1sqrs56-0 branding__BrandingContainer-drmgik-0 cGmtBu"],
-    div[class="Flex-sc-1sqrs56-0 headerstyles__HideOnMobile-sc-1vh4dor-9 gWkClp"],
-    .headline,
-    #edition-picker-toggle-desktop,
-    header,
-    nav,
-    #nav__plain-header {
-        background-color: transparent !important;
-    }
-    /*
-    .cn__title,
-    nav>ul>li,
-    */
-    nav.sibling.sibling--next,
-    nav.sibling.sibling--previous,
-    button:not([title="Play Video"]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-    /*
-    .cn__title:hover,
-    nav>ul>li:hover,
-    */
-    header,
-    nav.sibling.sibling--next:hover,
-    nav.sibling.sibling--previous:hover,
-    #nav,
-    button:hover:not([title="Play Video"]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-    /*
-    .cn__title:active,
-    nav>ul>li:active,
-    */
-    nav.sibling.sibling--next:active,
-    nav.sibling.sibling--previous:active,
-    button:active:not([title="Play Video"]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--MyX3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-    .ticker-ribbon,
-    .pg-right-rail-tall.pg-wrapper {
-        background-color: transparent !important;
-    }
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-        text-align: center !important;
-    }
-    .disclaimer {
-        background-color: var(--Myred3) !important;
     }
 }
