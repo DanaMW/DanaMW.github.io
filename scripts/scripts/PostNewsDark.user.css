@@ -2,8 +2,8 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.9
-@author       Dana Meli
+@version      0.0.10
+@author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
@@ -81,6 +81,9 @@ url-prefix("https://js.stripe.com/") {
     .c-cdQeth>span>svg {
         filter: invert(1) !important;
     }
+    a[data-testid*="tab"],
+    a[data-testid*="nav"][data-testid*="btn"],
+    a.h-fit,
     a.c-cdQeth,
     button[id*="radix"],
     span[role="button"],
@@ -100,6 +103,9 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    a[data-testid*="tab"]:hover,
+    a[data-testid*="nav"][data-testid*="btn"]:hover,
+    a.h-fit:hover,
     a.c-cdQeth:hover,
     button[id*="radix"]:hover,
     a.c-bqseKE:hover,
@@ -120,6 +126,9 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a[data-testid*="tab"]:active,
+    a[data-testid*="nav"][data-testid*="btn"]:active,
+    a.h-fit:active,
     a.c-cdQeth:active,
     button[id*="radix"]:active,
     a.c-bqseKE:active,
