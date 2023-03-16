@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.59
+@version      0.1.60
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -239,8 +239,12 @@ domain("cdninstagram.com") {
         background-color: var(--MyX1) !important;
     }
     article {
-        border: 10px solid var(--Myred3) !important;
+        border: 15px solid var(--Myred3) !important;
     }
+    article:hover {
+        box-shadow: 0px 0px 40px var(--Mygreen1) !important;
+    }
+    [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh x1qughib"],
     ._ab05,
     [class="_aa__ _ackf _ackh"],
     [class="_aatk _aatl"],
