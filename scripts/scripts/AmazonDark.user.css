@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.48
+@version      0.0.49
 @description  Amazon Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
@@ -392,6 +392,7 @@
         padding-right: 10px !important;
         padding-left: 10px !important;
     }
+    .sc-fvEvSO.jrukLV,
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
