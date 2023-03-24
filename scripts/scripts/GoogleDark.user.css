@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.76
+@version      0.2.77
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -30,7 +30,8 @@ url-prefix("https://support.google.com/"),
 url-prefix("https://fiber.google.com/"),
 url-prefix("https://console.cloud.google.com/"),
 url-prefix("https://www.googletagmanager.com/"),
-url-prefix("https://console.actions.google.com/") {
+url-prefix("https://console.actions.google.com/"),
+url-prefix("https://bard.google.com/") {
     .B6Rt6d.zcLWac.eejsDc,
     .tkcine,
     .wqSOMc.b4iS2b,
@@ -487,6 +488,7 @@ url-prefix("https://console.actions.google.com/") {
         width: 78px !important;
         max-width: 78px !important;
     }
+    mat-sidenav.response-container.ng-star-inserted,
     .sbct.yMAEcf,
     .zItAnd.FOU1zf a,
     .ZFiwCf,
@@ -856,6 +858,7 @@ url-prefix("https://console.actions.google.com/") {
         border-color: var(--Myred3) !important;
     }
     /* RED HERE */
+    mat-sidenav,
     .e07Vkf.kA9KIf.dS8AEf,
     .DAdBuc,
     .Lj9fsd,
@@ -1435,6 +1438,7 @@ url-prefix("https://console.actions.google.com/") {
     div#appbar.appbar {
         background: transparent !important;
     }
+    .response-container.ng-star-inserted,
     .utyhx,
     [class*="gstl"],
     .DAdBuc,
@@ -1553,6 +1557,7 @@ url-prefix("https://console.actions.google.com/") {
     g-scrolling-carousel {
         background-color: var(--Mygray3) !important;
     }
+    mat-form-field,
     .I6TXqe,
     div[class*="header"],
     .section-layout.section-cardbox,
@@ -1874,7 +1879,7 @@ url-prefix("https://console.actions.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
+        border: 1px solid var(--MyW) !important;
     }
     input {
         background-color: var(--Mygray3) !important;
@@ -1882,6 +1887,9 @@ url-prefix("https://console.actions.google.com/") {
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
+    }
+    textarea#mat-input-0 {
+        border: 1px solid var(--MyW) !important;
     }
     .hAPCZc {
         background-color: var(--TwitterBlue) !important;
@@ -1978,5 +1986,14 @@ url-prefix("https://console.actions.google.com/") {
     .TGGJzf {
         background-color: var(--Mygray2) !important;
         z-index: 2147483647 !important;
+    }
+    mat-icon.mat-icon {
+        color: var(--Mygreen1) !important;
+    }
+    img.gb_Hc {
+        filter: brightness(200%) !important;
+    }
+    img.gb_Hc:hover {
+        filter: brightness(0%) !important;
     }
 }
