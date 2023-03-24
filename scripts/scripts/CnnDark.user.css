@@ -2,13 +2,14 @@
 @name         CNN Dark
 @namespace    https://danamw.github.io/scripts/scripts/CnnDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CnnDark.user.css
-@version      0.0.28
+@version      0.0.29
 @description  Some CNN Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 ==/UserStyle==*/
 
 @-moz-document domain("cnn.com") {
+    footer,
     [class="layout__content-wrapper layout-with-rail__content-wrapper"],
     html,
     body {
@@ -144,5 +145,14 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+    [class*="related-content"] {
+        color: var(--Myborder) !important;
+    }
+    .timestamp {
+        color: var(--TwitterRed) !important;
+    }
+    [class*="alerts"] {
+        background-color: var(--Mygreen2) !important;
     }
 }
