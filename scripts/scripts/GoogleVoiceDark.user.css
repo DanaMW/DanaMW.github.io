@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.95
+@version      0.0.96
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -110,6 +110,7 @@ domain("docs.google.com") {
     small {
         color: var(--TwitterPink) !important;
     }
+    .dnd-status,
     gmat-input-chip,
     .gb_Rb,
     a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"],
@@ -135,6 +136,7 @@ domain("docs.google.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    .dnd-status:hover,
     gmat-input-chip:hover,
     .mat-ripple.container.ng-star-inserted.batch-selected.batch-selecting::before,
     .container.mat-ripple.read.ng-star-inserted.batch-selected.batch-selecting::before,
@@ -166,6 +168,7 @@ domain("docs.google.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    .dnd-status:active,
     gmat-input-chip:active,
     .gb_Rb:active,
     a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:active,
@@ -216,6 +219,8 @@ domain("docs.google.com") {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+    .anonymous-caller-id-banner,
+    .cdk-dialog-container,
     [class*="le-Ai-ic"],
     .le-zi-ic,
     .le-yi-ic,
@@ -435,5 +440,15 @@ domain("docs.google.com") {
     }
     [class="le-Zm-qf-Zm-jh"] {
         background-color: var(--Mygray2) !important;
+    }
+    svg>g,
+    svg>path {
+        color: var(--Mygreen1) !important;
+    }
+    .gb_Ze {
+        border: none;
+    }
+    .anonymous-caller-id-banner>div {
+        color: var(--Myyellow1) !important;
     }
 }
