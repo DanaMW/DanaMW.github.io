@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.77
+@version      0.2.78
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -490,7 +490,7 @@ url-prefix("https://bard.google.com/") {
     }
     mat-sidenav.response-container.ng-star-inserted,
     .sbct.yMAEcf,
-    .zItAnd.FOU1zf a,
+    a.zItAnd.FOU1zf,
     .ZFiwCf,
     a[class=" EhlvJf"],
     a[class="k8XOCe R0xfCb VCOFK s8bAkb"],
@@ -595,7 +595,7 @@ url-prefix("https://bard.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    .zItAnd.FOU1zf a:hover,
+    a.zItAnd.FOU1zf:hover,
     .ZFiwCf:hover,
     [class="N5YmOc kJXJmd"]:hover,
     a[class=" EhlvJf KKjvXb"],
@@ -738,6 +738,7 @@ url-prefix("https://bard.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    a.zItAnd.FOU1zf:active,
     .ZFiwCf:active,
     a[class="k8XOCe R0xfCb VCOFK s8bAkb"]:active,
     div[class="MXl0lf tKtwEb wHYlTd"]:active,
