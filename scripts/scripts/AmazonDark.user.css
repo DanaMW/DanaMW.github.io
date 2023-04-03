@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.49
+@version      0.0.50
 @description  Amazon Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
@@ -457,6 +457,7 @@
         background-color: transparent !important;
         color: var(--TwitterBlue) !important;
     }
+    .checkout-quantity-badge,
     .itemImages-quantityLabel,
     .item-view-qty {
         background-color: var(--Myyellow1) !important;
