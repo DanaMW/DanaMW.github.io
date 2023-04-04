@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.47
+@version     0.0.48
 @description Mozilla UserChrome File
 @author      Dana L. Meli-Wischman
 @homepageURL https://danamw.github.io
@@ -358,6 +358,7 @@ toolbarbutton {
     border-style: none !important;
 }
 
+.menuitem-iconic,
 .tab-close-button,
 button[action="install-postponed"],
 button[data-l10n-id="addon-updates-manual-updates-found"],
@@ -417,6 +418,7 @@ toolbarbutton:hover {
     border: none !important;
 }
 
+.menuitem-iconic:hover,
 .tab-close-button:hover,
 button[action="install-postponed"]:hover,
 button[data-l10n-id="addon-updates-manual-updates-found"]:hover,
@@ -452,6 +454,7 @@ toolbarbutton:hover:not([disabled="true"]) {
     text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
 
+.menuitem-iconic:active,
 .tab-close-button:active,
 button[action="install-postponed"]:active,
 button[data-l10n-id="addon-updates-manual-updates-found"]:active,
