@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.49
+@version     0.0.50
 @description Mozilla UserChrome File
 @author      Dana L. Meli-Wischman
 @homepageURL https://danamw.github.io
@@ -107,9 +107,9 @@ notification.animated[value="Protocol Registration: web+mastodon"] {
 }
 
 menu[label*="Save In"] {
-    -webkit-box-ordinal-group: 0 !important;
-    -moz-box-ordinal-group: 0 !important;
-    box-ordinal-group: 0 !important;
+    -webkit-box-ordinal-group: 1 !important;
+    -moz-box-ordinal-group: 1 !important;
+    box-ordinal-group: 1 !important;
 }
 
 #customization-palette-container,
