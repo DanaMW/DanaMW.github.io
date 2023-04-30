@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.16
+@version      0.0.17
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -36,6 +36,7 @@ domain("walmartimages.com") {
      ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+    .word-normal,
     p,
     a {
         color: var(--MyW) !important;
@@ -235,7 +236,7 @@ domain("walmartimages.com") {
         color: var(--MyW) !important;
     }
     .dark-gray {
-        color: var(--Mygray1) !important;
+        color: var(--MyW) !important;
     }
     .green {
         color: var(--Mygreen2) !important;
@@ -272,4 +273,16 @@ domain("walmartimages.com") {
         color: var(--MyW) !important;
         border: 1px solid var(--MyW) !important;
     }
+    .w_P_3h {
+        background-color: var(--Myred1) !important;
+    }
+    /*
+    Junk code did nothing yet
+    circle.w_GpzO,
+    circle.w_KFd8 {
+        background-color: var(--Myred1) !important;
+        color: var(--Myred1) !important;
+        border-color: var(--Myred1) !important;
+    }
+    */
 }
