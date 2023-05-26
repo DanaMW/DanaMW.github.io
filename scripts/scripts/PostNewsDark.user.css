@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.11
+@version      0.0.12
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -57,10 +57,6 @@ url-prefix("https://js.stripe.com/") {
     h1 {
         color: var(--TwitterBlue) !important;
     }
-    span,
-    h2 {
-        color: var(--TwitterRed) !important;
-    }
     small {
         color: var(--TwitterPink) !important;
     }
@@ -70,9 +66,11 @@ url-prefix("https://js.stripe.com/") {
     .c-FHWXc-hQDKtx-hierarchy-TERTIARY,
     p,
     * p,
+    h2,
     h3,
     h4,
     h5,
+    span,
     strong {
         color: var(--MyW) !important;
     }
@@ -81,6 +79,10 @@ url-prefix("https://js.stripe.com/") {
     .c-cdQeth>span>svg {
         filter: invert(1) !important;
     }
+    h3.items-center {
+        text-align: center !important;
+    }
+    div[class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"],
     li.cursor-pointer a,
     a[data-testid*="tab"],
     a[data-testid*="nav"][data-testid*="btn"],
@@ -104,6 +106,7 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+    div[class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"]:hover,
     li.cursor-pointer a:hover,
     a[data-testid*="tab"]:hover,
     a[data-testid*="nav"][data-testid*="btn"]:hover,
@@ -128,6 +131,7 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+    div[class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"]:active,
     li.cursor-pointer a:active,
     a[data-testid*="tab"]:active,
     a[data-testid*="nav"][data-testid*="btn"]:active,
@@ -212,7 +216,7 @@ url-prefix("https://js.stripe.com/") {
         background-color: var(--MyX1) !important;
     }
     article:hover {
-        background: var(--Mygray2) !important;
+        background: #210000 !important;
     }
     .c-foJpPP {
         transition: none !important;
