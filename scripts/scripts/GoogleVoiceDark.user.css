@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.0.96
+@version      0.0.97
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -222,6 +222,7 @@ domain("docs.google.com") {
     .anonymous-caller-id-banner,
     .cdk-dialog-container,
     [class*="le-Ai-ic"],
+    .le-Ci-ic,
     .le-zi-ic,
     .le-yi-ic,
     [class*="fe-yi-ic fe-zi-je"],
