@@ -2,7 +2,7 @@
 @name         CounterSocial Dark
 @namespace    https://danamw.github.io192.168.0.3/scripts/scripts/CounterSocialDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/CounterSocialDark.user.css
-@version      0.0.35
+@version      0.0.36
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -202,6 +202,8 @@
         color: var(--Mygreen1) !important;
     }
     /*div.column[aria-labelledby="Getting-started"] {*/
+
+    /*
     .column:last-child,
     .drawer:last-child {
         overflow-y: auto;
@@ -220,6 +222,7 @@
         -webkit-transition: ease-in-out width 500ms, height 500ms !important;
         transition-timing-function: linear !important;
     }
+    */
     .search-results__section,
     .search-results .search-results__section {
         z-index: 100000 !important;
