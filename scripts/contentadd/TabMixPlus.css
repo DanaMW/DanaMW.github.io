@@ -1,6 +1,7 @@
 /* TabMixPlus */
 
-@-moz-document url("moz-extension://2b539610-b38d-409a-8f12-19b77e1bfb7a/preferences/preferences.html"),
+@-moz-document url("moz-extension://d9c30d44-3254-492e-952d-9ac6ddc46048/preferences/preferences.html"),
+url("moz-extension://2b539610-b38d-409a-8f12-19b77e1bfb7a/preferences/preferences.html"),
 url-prefix("moz-extension://a9b265c9-a6d7-4ff5-81da-d13de2961234/preferences/preferences.html"),
 url-prefix("moz-extension://4e15e23c-8196-41ff-ba22-2c6d51ea6386/preferences/preferences.html") {
     #paneLinks,

@@ -1,6 +1,7 @@
 /* new tab tools */
 
-@-moz-document url("moz-extension://1d0533eb-e301-438c-8b1f-e762fad5ce0b/newTab.xhtml"),
+@-moz-document url("moz-extension://b41887aa-c455-4326-912f-31f712e24be3/newTab.xhtml"),
+url("moz-extension://1d0533eb-e301-438c-8b1f-e762fad5ce0b/newTab.xhtml"),
 url("moz-extension://aeca2122-be1b-42b8-8e37-13b6196b742c/newTab.xhtml"),
 url("moz-extension://478a607a-1da0-4981-a260-f7181f0c509d/newTab.xhtml") {
     body {

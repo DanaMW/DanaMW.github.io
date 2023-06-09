@@ -1,6 +1,7 @@
 /* UBlock */
 
-@-moz-document url-prefix("moz-extension://f555bcd6-6a51-40d1-8da7-be6e56785387/"),
+@-moz-document url-prefix("moz-extension://781377ec-48a4-4d15-83cd-911082887f6b/"),
+url-prefix("moz-extension://f555bcd6-6a51-40d1-8da7-be6e56785387/"),
 url-prefix("moz-extension://05536c61-4ab8-4831-a852-14bf7c278ffa/"),
 url-prefix("moz-extension://78179993-4332-4c92-a09f-13a17e393c21/") {
     div#actions,

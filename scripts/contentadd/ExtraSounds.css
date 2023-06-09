@@ -1,4 +1,5 @@
-@-moz-document url-prefix("moz-extension://e0ee149d-3d0f-453e-b60e-87a83270d11b/options/options.html"),
+@-moz-document url-prefix("moz-extension://881de92b-9b3d-494d-a15e-12ee9e88707d/options/options.html"),
+url-prefix("moz-extension://e0ee149d-3d0f-453e-b60e-87a83270d11b/options/options.html"),
 url-prefix("moz-extension://863c0ef2-9163-4cd7-bd7a-435b2ba72d2a/options/options.html"),
 url-prefix("moz-extension://966f4404-c46d-419c-bcf0-279ca1025b01/options/options.html") {
     #global-container,

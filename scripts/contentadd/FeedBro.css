@@ -1,6 +1,7 @@
 /* feedbro */
 
-@-moz-document url-prefix("moz-extension://f1c0b3d3-c492-4319-899e-135cb5912f70/reader.html"),
+@-moz-document url-prefix("moz-extension://e09a5662-2f68-4c1f-8b34-7fc8ecab54f4/reader.html"),
+url-prefix("moz-extension://f1c0b3d3-c492-4319-899e-135cb5912f70/reader.html"),
 url-prefix("moz-extension://64f0fb09-8b76-418e-a176-d79c932714c4/reader.html"),
 url-prefix("moz-extension://40f2e966-1246-4b3d-9c50-5c1d95e03e5e/option.html") {
     html,
