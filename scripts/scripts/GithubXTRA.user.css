@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.38
+@version      0.0.39
 @description  Github Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -15,33 +15,41 @@ url-prefix("wss://live.github.com") {
     a[class="filter-item "] {
         background-color: none !important;
     }
+
     button.width-full.text-left.btn-link.more-repos-link.js-more-repos-link {
         text-align: center !important;
         text-decoration: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
         border-color: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     html,
     body {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
+
     article.markdown-body.entry-content>pre,
     article h2,
     article h1,
@@ -50,89 +58,110 @@ url-prefix("wss://live.github.com") {
         -webkit-appearance: none;
         appearance: none;
     }
+
     article.markdown-body-entry-content pre,
     article h2,
     article h1 {
         border-color: var(--Myred1) !important;
     }
+
     #readme * pre {
         border-color: var(--TwitterBlue) !important;
     }
+
     h3,
     p,
     a {
         color: var(--MyW) !important;
     }
+
     a:hover {
         color: var(--Myred1) !important;
     }
+
     .gh-header-hide-if-sticky {
         background-color: var(--Myback) !important;
     }
+
     .UnderlineNav-item {
         height: 50px !important;
     }
+
     a.UnderlineNav-item.selected {
         filter: brightness(125%);
         border-color: var(--Myred1) !important;
     }
+
     [class="UnderlineNav-item js-responsive-underlinenav-item js-selected-navigation-item selected"]::after {
         background-color: var(--Mygreen1) !important;
     }
+
     h3 a {
         padding: 5px !important;
     }
 
-/* Finish here when you get a chance */
+    /* Finish here when you get a chance */
     [id*="tab"].selected,
     ul.UnderlineNav-body,
-    .UnderlineNav-item.selected, .UnderlineNav-item[aria-current]:not([aria-current="false"]),
+    .UnderlineNav-item.selected,
+    .UnderlineNav-item[aria-current]:not([aria-current="false"]),
     .UnderlineNav-item[role="tab"][aria-selected="true"] {
         border-bottom-color: 1px solid var(--Mygreen1) !important;
         color: var(--Myyellow1) !important;
         box-shadow: 0px 1px var(--Mygreen1) !important;
     }
+
     .header-search-key-slash:hover {
         filter: invert(0.25) !important;
     }
+
     svg.octicon.octicon-bell:hover {
         color: var(--MyW) !important;
     }
+
     .octicon.octicon-mark-github:hover,
     svg.octicon.octicon-bell.blankslate-icon:hover {
         color: var(--Myred1) !important;
     }
+
     .social-count,
     .topic-tag.topic-tag-link {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
+
     .topic-tag.topic-tag-link:hover,
     .topic-tag:hover {
         background-color: var(--Myred1) !important;
         color: var(--Mygreen1) !important;
         /*border-color: var(--MyW) !important;*/
     }
+
     div[class="Box-row Box-row--focus-gray py-2 mt-0 border-top-0 d-flex position-relative js-navigation-item navigation-focus"]:hover,
     tr.js-navigation-item:hover {
         background-color: var(--MyX1) !important;
     }
+
     .js-selected-navigation-item {
         border-top: 3px solid var(--Myred3) !important;
         padding: 0px 5px 0px 5px !important;
     }
+
     .js-selected-navigation-item.selected {
         border-top: 3px solid var(--Myred1) !important;
         border-color: var(--Myred1) !important;
     }
+
     .js-selected-navigation-item.selected:hover {
         border-color: var(--Myred1) !important;
     }
+
     .label,
     .ajax-pagination-form button.ajax-pagination-btn {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"],
     .menu-item,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap,
@@ -202,6 +231,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"]:hover,
     .menu-item:hover,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap:hover,
@@ -273,6 +303,7 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"]:active,
     .menu-item:active,
     div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap:active,
@@ -341,16 +372,20 @@ url-prefix("wss://live.github.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     a[class="u-photo d-block tooltipped tooltipped-s"] {
         border: 2px solid var(--Myborder) !important;
         border-radius: 5px !important;
     }
+
     .Counter {
         background-color: var(--Myred1) !important;
     }
+
     .header-search {
         background: transparent !important;
     }
+
     input,
     input#your-repos-filter,
     .js-user-status-container,
@@ -362,11 +397,16 @@ url-prefix("wss://live.github.com") {
         color: var(--MyW) !important;
         text-align: center !important;
     }
+
     .sidebar {
         background-image: none !important;
         background-color: transparent !important;
     }
+
+    /*
     .mt-2,
+    */
+    [class="container-xl px-3 px-md-4 px-lg-5 mt-2"],
     div[class="blankslate "],
     .sidebar,
     details-menu {
@@ -374,11 +414,24 @@ url-prefix("wss://live.github.com") {
         background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+
     .progress-pjax-loader>.progress-pjax-loader-bar {
         background-color: var(--Myred1) !important;
         box-shadow: 0 0 10px var(--MyX1) !important;
     }
+
+    #user-repositories-list {
+        border: 1px solid var(--MyB) !important;
+    }
+
+    li.col-12.d-flex.flex-justify-between.width-full.py-4.border-bottom {
+        background-color: var(--Mygray3) !important;
+    }
+
+    /*
     .mt-2:hover,
+    */
+    li.col-12.d-flex.flex-justify-between.width-full.py-4.border-bottom:hover,
     .BorderGrid-row:hover,
     .Box-header,
     .pagehead,
@@ -388,9 +441,11 @@ url-prefix("wss://live.github.com") {
         background-color: var(--Myred2) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     .BorderGrid-row {
         text-align: center !important;
     }
+
     div[class="position-relative d-md-flex flex-wrap flex-justify-between flex-items-center border-bottom color-border-secondary pb-3"],
     div[class="col-12 d-block width-full py-4 border-bottom color-border-secondary"],
     .border-bottom.color-border-secondary.py-3,
@@ -408,16 +463,19 @@ url-prefix("wss://live.github.com") {
     .Box.pinned-item-list-item {
         border-color: var(--Myred1) !important;
     }
+
     div[class="mt-4 position-sticky top-0 d-none d-md-block bg-white width-full border-bottom color-border-secondary"],
     div[class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light "] {
         border-color: var(--Mygreen1) !important;
     }
+
     ul li[class*="notifications-list-item p-0 pl-2 pb-2 pb-md-0 position-relative border-0 js-notifications-list-item js-navigation-item border-bottom border-gray-light"]:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         background-color: var(--MyX1) !important;
     }
+
     .Box.pinned-item-list-item,
     clipboard-copy:hover,
     .bg-gray.p-3.border-bottom,
@@ -427,20 +485,29 @@ url-prefix("wss://live.github.com") {
     .timeline-comment-label {
         background-color: var(--MyX1) !important;
     }
+
     a[class="u-photo d-block tooltipped tooltipped-s"],
     img.avatar {
         border-radius: 50% !important;
     }
+
+    .Label {
+        background-color: var(--Mygreen1) !important;
+        color: var(--MyB) !important;
+    }
+
     .Box,
     .blankslate {
         background-color: var(--MyB) !important;
         border-radius: 15px !important;
         border-color: var(--Myred1) !important;
     }
+
     .js-indicator-modifier.mail-status.unread {
         height: 14px !important;
         width: 14px !important;
     }
+
     .CodeMirror {
         background: #460101 !important;
         color: #ffffff !important;
@@ -451,20 +518,24 @@ url-prefix("wss://live.github.com") {
         outline: transparent !important;
         border: 1px solid #ffffff !important;
     }
+
     .CodeMirror .CodeMirror-selected {
         background: #a12525 !important;
         color: #ffd900
     }
+
     .CodeMirror .CodeMirror-line::selection,
     .CodeMirror .CodeMirror-line>span::selection,
     .CodeMirror .CodeMirror-line>span>span::selection {
         background: #a12525 !important;
     }
+
     .CodeMirror .CodeMirror-line::-moz-selection,
     .CodeMirror .CodeMirror-line>span::-moz-selection,
     .CodeMirror .CodeMirror-line>span>span::-moz-selection {
         background: #a12525
     }
+
     .CodeMirror .CodeMirror-gutter .CodeMirror-lint-markers,
     .CodeMirror-gutter .CodeMirror-lint-markers,
     .CodeMirror .CodeMirror-gutter .CodeMirror-foldgutter,
@@ -478,89 +549,116 @@ url-prefix("wss://live.github.com") {
         background: #460101;
         border-right: 2px solid #a12525;
     }
+
     .CodeMirror .CodeMirror-guttermarker {
         color: #0f0;
     }
+
     .CodeMirror-guttermarker-subtle {
         color: #ffe8e8;
     }
+
     .CodeMirror .CodeMirror-linenumber {
         color: #FFFFFF;
     }
+
     .CodeMirror-cursor {
         border-left: 1px solid #00FF00;
     }
+
     .CodeMirror span.cm-keyword {
         color: #00FF00;
         font-weight: bold;
     }
+
     .CodeMirror span.cm-atom {
         color: #3FF;
     }
+
     .CodeMirror span.cm-number {
         color: #fbff00;
     }
+
     .CodeMirror span.cm-def {
         color: #91b4ff;
     }
+
     .CodeMirror span.cm-variable {
         color: #F6C;
     }
+
     .CodeMirror span.cm-variable-2 {
         color: #c44eff;
     }
+
     .CodeMirror span.cm-variable-3,
     .CodeMirror span.cm-type {
         color: #ad7cec;
     }
+
     .CodeMirror span.cm-property {
         color: #62FFA0;
     }
+
     .CodeMirror span.cm-operator {
         color: #ecffb9;
     }
+
     .CodeMirror span.cm-comment {
         color: #00FF00;
     }
+
     .CodeMirror span.cm-string {
         color: #39C;
     }
+
     .CodeMirror span.cm-meta {
         color: #ffffff;
     }
+
     .CodeMirror span.cm-qualifier {
         color: #FFF700;
     }
+
     .CodeMirror span.cm-builtin {
         color: #ffffff;
     }
+
     .CodeMirror span.cm-bracket {
         color: #ffff00;
     }
+
     .CodeMirror span.cm-tag {
         color: #FFBD40;
     }
+
     .CodeMirror .cm-overlay,
     .CodeMirror span.cm-attribute {
         color: #FFF700;
     }
+
     .CodeMirror span.cm-error {
         color: #FF0000;
     }
+
     .CodeMirror .CodeMirror-activeline-background {
         background: #921111;
     }
+
     .Box-body {
         background-color: var(--MyB) !important;
     }
+
     p,
     article {
         background-color: transparent !important;
     }
+
     .TableObject:hover,
     div[role="grid"] div[role="row"].navigation-focus {
         background-color: var(--MyX1) !important;
     }
+
     .menu-heading {
         text-align: center !important;
     }
