@@ -2,59 +2,74 @@
 @name         NPR Dark
 @namespace    http://danamw.github.io/scripts/scripts/NPRDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/NPRDark.user.css
-@version      0.0.9
+@version      0.0.10
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("npr.org") {
+
     html,
     body {
         background-color: var(--MyB) !important;
     }
+
+    #onetrust-consent-sdk,
+    iframe[name*="__privateStripeMetricsController"],
     section[class="callout callout--donation"],
     footer,
     section[class="global-stickybar newsletter-stickybar"],
     section[class="callout callout--newsletter callout--news "] {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     h3,
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     h2 {
         color: var(--TwitterRed) !important;
     }
+
     small {
         color: var(--TwitterPink) !important;
     }
+
     button:not([class*="fbStory"]):not([class*="story"]):not([class*="share"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -70,6 +85,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     button:hover:not([class*="fbStory"]):not([class*="story"]):not([class*="share"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -87,6 +103,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     button:active:not([class*="fbStory"]):not([class*="story"]):not([class*="share"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -104,19 +121,23 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     #globalheader,
     .navigation {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     #tools-wrapper,
     .player-extras {
         background-color: transparent !important;
     }
+
     div[class="navigation__top-level-wrap"] {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     .callout__inner,
     .recommended-story__info:hover,
     .agglocation.linkLocation,
@@ -126,6 +147,7 @@
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     .localization,
     .subnav,
     .story-sticky-header-inner,
@@ -135,12 +157,14 @@
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -148,6 +172,7 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     .submenu {
         border: 1px solid var(--MyW) !important;
     }
