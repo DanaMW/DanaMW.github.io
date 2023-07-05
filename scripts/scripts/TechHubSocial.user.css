@@ -2,61 +2,83 @@
 @name         TechHubSocial Dark
 @namespace    http://danamw.github.io/scripts/scripts/TechHubSocial.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TechHubSocial.user.css
-@version      0.0.7
+@version      0.0.8
 @author       Dana l. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("techhub.social") {
+
     html,
     body {
         background-color: var(--MyB) !important;
     }
+
     .stock {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
+    span,
     p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     h2 {
         color: var(--TwitterRed) !important;
     }
+
     small {
         color: var(--TwitterPink) !important;
     }
+
     h3,
     h4,
     h5,
     strong {
         color: var(--MyW) !important;
     }
+
+    article {
+        /*
+        border-top: 5px solid var(--MyB) !important;
+        */
+    }
+
+    a.drawer__tab,
     a.column-link,
     button {
         -moz-appearance: none;
@@ -73,6 +95,8 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
+    a.drawer__tab:hover,
     a.column-link:hover,
     li>a[role="button"]:hover,
     button:hover {
@@ -92,6 +116,8 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
+    a.drawer__tab:active,
     a.column-link:active,
     button:active {
         -moz-appearance: none;
@@ -110,19 +136,29 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .stock {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
+    .report-modal__container,
+    .block-modal__container,
+    .mute-modal__container,
     .status-card {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
+    .report-modal__action-bar,
+    .block-modal__action-bar,
+    .mute-modal__action-bar,
     [class="column-header__collapsible-inner"],
     .status-card:hover,
     .column-subheading,
@@ -130,17 +166,20 @@
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     .scrollable,
     [class*="drawer"],
     [class*="compose"] {
         background-color: var(--Mygray2) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -148,6 +187,7 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     .flash-message,
     .notice,
     .tooltip {
@@ -158,26 +198,32 @@
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+
     .dropdown-menu,
     .search-popout {
         background: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border: 1px solid var(--MyW) !important;
     }
+
     .column-subheading {
         text-align: center;
     }
+
     .notification:hover,
     .status__wrapper:hover,
     [class="status status-public"]:hover {
         background-color: var(--MyB) !important;
     }
+
     .status__action-bar__button.star-icon.icon-button.deactivate {
         color: var(--Mygray1) !important;
     }
+
     .status__action-bar__button.star-icon.icon-button.active.activate>i.fa.fa-star.fa-fw::before {
         color: var(--Myyellow1) !important;
     }
+
     [role="region"] {
         width: 300px !important;
     }
