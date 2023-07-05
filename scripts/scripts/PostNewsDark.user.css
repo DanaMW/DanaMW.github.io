@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.12
+@version      0.0.13
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -11,86 +11,70 @@
 @-moz-document domain("post.news"),
 url-prefix("https://launcher.spot.im/"),
 url-prefix("https://js.stripe.com/") {
+
     html,
     body {
         background-color: var(--MyB) !important;
     }
+
     .stock {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
-        border-color: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
-    .c-FHWXc-dTWEjN-hierarchy-PRIMARY_DARK,
-    .c-FHWXc-Pbzoi-hierarchy-PRIMARY,
-    .c-gnsQwv {
-        background-color: transparent !important;
-        background-image: none !important;
-    }
+
     p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
-    .c-hamjEZ,
-    .c-dBPcrW,
-    .c-fkMsLp,
+
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
+    h2 {
+        color: var(--TwitterRed) !important;
+    }
+
     small {
         color: var(--TwitterPink) !important;
     }
-    time {
-        color: var(--Myyellow1) !important;
-    }
-    .c-FHWXc-hQDKtx-hierarchy-TERTIARY,
-    p,
-    * p,
-    h2,
+
     h3,
     h4,
     h5,
-    span,
     strong {
         color: var(--MyW) !important;
     }
-    .c-cdQeth>span>svg>polyline,
-    img[alt="Tip button icon"],
-    .c-cdQeth>span>svg {
-        filter: invert(1) !important;
-    }
-    h3.items-center {
-        text-align: center !important;
-    }
-    div[class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"],
-    li.cursor-pointer a,
-    a[data-testid*="tab"],
-    a[data-testid*="nav"][data-testid*="btn"],
-    a.h-fit,
-    a.c-cdQeth,
-    button[id*="radix"],
-    span[role="button"],
-    a.c-bqseKE,
+
+    [class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"],
+    li[class*="flex gap-2 p-3 rounded-lg"],
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -106,14 +90,9 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
-    div[class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"]:hover,
-    li.cursor-pointer a:hover,
-    a[data-testid*="tab"]:hover,
-    a[data-testid*="nav"][data-testid*="btn"]:hover,
-    a.h-fit:hover,
-    a.c-cdQeth:hover,
-    button[id*="radix"]:hover,
-    a.c-bqseKE:hover,
+
+    [class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"]:hover,
+    li[class*="flex gap-2 p-3 rounded-lg"]:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -131,14 +110,9 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
-    div[class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"]:active,
-    li.cursor-pointer a:active,
-    a[data-testid*="tab"]:active,
-    a[data-testid*="nav"][data-testid*="btn"]:active,
-    a.h-fit:active,
-    a.c-cdQeth:active,
-    button[id*="radix"]:active,
-    a.c-bqseKE:active,
+
+    [class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"]:active,
+    li[class*="flex gap-2 p-3 rounded-lg"]:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -156,34 +130,36 @@ url-prefix("https://js.stripe.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .stock {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
-    div[class*="Menu"],
-    li.c-iQSkIN,
-    .c-jnGYto.c-jUkCYw {
+
+    .stock {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
-    h3[class*="text-spidertooth"],
-    .c-jvqXaZ,
-    .c-jnGYto.c-jUkCYw[class*="activeTab-true"],
-    h2[class*="c-dAqCK"] {
+
+    .stock {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
+    [class*="richie-editor__container"],
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -191,6 +167,7 @@ url-prefix("https://js.stripe.com/") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     .tooltip {
         background-color: var(--MyX1) !important;
         opacity: 0.4;
@@ -198,91 +175,5 @@ url-prefix("https://js.stripe.com/") {
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
-    }
-    h2[class*="c-dAqCK"] {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
-    .c-ilLoxd {
-        background-color: var(--MyB) !important;
-    }
-    article {
-        background: var(--Mygray3) !important;
-    }
-    .c-PJLV:hover {
-        border: 1px solid var(--Myred1) !important;
-    }
-    [class="embedly-block false c-PJLV c-PJLV-foJpPP-isGif-false"]:hover {
-        background-color: var(--MyX1) !important;
-    }
-    article:hover {
-        background: #210000 !important;
-    }
-    .c-foJpPP {
-        transition: none !important;
-    }
-    article:hover .c-foJpPP {
-        background-color: var(--MyX1) !important;
-    }
-    .c-fOFkuT {
-        background-color: var(--Mygray2) !important;
-        border: 2px ridge var(--MyW) !important;
-    }
-    .c-iQreDs,
-    .c-foFVYh,
-    .c-bITVNu,
-    .c-jaySyu,
-    .c-fSoVva,
-    [role="tabpanel"],
-    .c-furorF,
-    .c-gnsQwv,
-    [class*="EmptyState"] {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    label {
-        background-color: var(--Mygray2) !important;
-        color: var(--MyW) !important;
-    }
-    h2[class*="c-dAqCK"] {
-        color: var(--MyW) !important;
-    }
-    .c-jnGYto.c-jUkCYw[class*="activeTab-true"]::after {
-        background-color: var(--Mygreen1) !important;
-        color: var(--Mygreen1) !important;
-        border-color: var(--Mygreen1) !important;
-    }
-    .c-jnGYto.c-jUkCYw[class*="activeTab-true"]:hover::after,
-    .c-jUkCYw:hover::after {
-        border-color: var(--Myred1) !important;
-        background-color: var(--Myred1) !important;
-    }
-    .c-hxkEWD-ibfYWt-css {
-        border-color: var(--Myred1) !important;
-    }
-    .c-jnGYto[data-state="active"]::after {
-        border-color: var(--Mygreen1) !important;
-    }
-    .c-iQreDs,
-    .c-foFVYh {
-        border: 1px solid var(--MyW) !important;
-    }
-    .c-dVvJMv,
-    li.c-jrOhEA::before {
-        background-color: var(--Myyellow1) !important;
-        color: var(--MyB) !important;
-    }
-    .c-diTqIq.c-diTqIq-kdaqIN-isActive-true {
-        background-color: transparent !important;
-        color: var(--Myyellow1) !important;
-    }
-    [class*="bg-spidertooth"] {
-        background-color: transparent !important;
-    }
-    h3[class*="text-spidertooth"] {
-        text-align: center !important;
-    }
-    #right-sidebar {
-        background-color: var(--Mygray3) !important;
     }
 }
