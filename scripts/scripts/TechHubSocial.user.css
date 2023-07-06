@@ -2,7 +2,7 @@
 @name         TechHubSocial Dark
 @namespace    http://danamw.github.io/scripts/scripts/TechHubSocial.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TechHubSocial.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana l. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -65,6 +65,7 @@
         color: var(--TwitterPink) !important;
     }
 
+    [class="confirmation-modal__container"],
     h3,
     h4,
     h5,
@@ -148,6 +149,7 @@
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
 
+    .confirmation-modal__container,
     .report-modal__container,
     .block-modal__container,
     .mute-modal__container,
@@ -156,6 +158,7 @@
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
+    .confirmation-modal__action-bar,
     .report-modal__action-bar,
     .block-modal__action-bar,
     .mute-modal__action-bar,
