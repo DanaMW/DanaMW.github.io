@@ -71,6 +71,12 @@
         color: var(--MyW) !important;
     }
 
+    [class="css-1rynq56 r-wzwllv r-kdyh1x r-jwli3a r-1enofrn r-vw2c0b r-1liledf r-s1qlax r-u8s1d r-ipm5af"] {
+        background-color: var(--Mygreen1) !important;
+    }
+
+    [role="menuitem"],
+    .r-1otgn73,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -87,6 +93,9 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    [aria-label="Compose post"]:hover,
+    [role="menuitem"]:hover,
+    .r-1otgn73:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -105,6 +114,9 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    [aria-label="Compose post"]:active,
+    [role="menuitem"]:active,
+    .r-1otgn73:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -121,6 +133,10 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+
+    .css-175oi2r [class*="css-175oi2r r-5kkj8d r-1sp51qo"]:hover {
+        background-color: var(--Mygray2) !important;
     }
 
     .stock {
