@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.13
+@version      0.0.14
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -73,6 +73,35 @@ url-prefix("https://js.stripe.com/") {
         color: var(--MyW) !important;
     }
 
+    * {
+        border-color: var(--Myred1) !important;
+
+    }
+
+    .contain-content:not(.mx-4),
+    footer,
+    article {
+        background-color: var(--Mygray1) !important;
+    }
+
+    article:hover .contain-content,
+    .contain-content:hover,
+    article:hover footer,
+    footer:hover,
+    article:hover {
+        background-color:
+            var(--Mygray3) !important;
+    }
+
+    section[class="relative z-0"] {
+        padding-bottom: 15px !important;
+        background-color: var(--MyB) !important;
+    }
+
+    section[class="relative z-0"]:hover {
+        background-color: var(--MyB) !important;
+    }
+
     [class="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full bg-lifespirit-300 text-spidertooth-000 dark:bg-lifespirit-400-dark dark:text-spidertooth-000-dark inline-block"],
     li[class*="flex gap-2 p-3 rounded-lg"],
     button {
@@ -131,13 +160,14 @@ url-prefix("https://js.stripe.com/") {
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
 
-    .stock {
+    [class="contain-content flex justify-between items-center pt-3 pb-3 mx-4"],
+    section[class="contain-content w-full"] {
         background-image: none !important;
         background-color: transparent !important;
     }
 
-    header,
-    .stock_navbar {
+    section[class="contain-content w-full"] header,
+    section[class="contain-content w-full"] {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
@@ -147,7 +177,7 @@ url-prefix("https://js.stripe.com/") {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
-    .stock {
+    .embedly-block:hover {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
