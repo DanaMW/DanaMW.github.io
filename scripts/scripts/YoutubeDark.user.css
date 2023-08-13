@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.67
+@version      0.0.68
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -12,7 +12,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("youtube.com"),
-domain("studio.youtube.com") {
+domain("studio.youtube.com"),
+url-prefix("https://tv.youtube.com/") {
+
     :not(.style-scope)[hidden] {
         display: initial !important;
     }
@@ -157,6 +159,7 @@ domain("studio.youtube.com") {
         color: var(--MyW) !important;
     }
 
+    .ytu-app,
     img#illustration {
         background: var(--MyB) !important;
     }
@@ -455,6 +458,7 @@ domain("studio.youtube.com") {
         color: var(--MyW) !important;
     }
 
+    .header-container,
     yt-icon,
     .ytd-button-renderer,
     paper-ripple,
@@ -565,6 +569,7 @@ domain("studio.youtube.com") {
     [class="ytp-volume-control-slider style-scope ytd-player ytp-volume-control-hover"],
     [class="ytp-volume-slider-handle style-scope ytd-player"],
     */
+    ytu-intent-chip a,
     #simplebox-placeholder,
     [class="ytp-time-display notranslate"],
     #search-icon-legacy,
@@ -604,6 +609,7 @@ domain("studio.youtube.com") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    ytu-intent-chip a:hover,
     #simplebox-placeholder:hover,
     [class="ytp-time-display notranslate style-scope ytd-player"]:hover,
     #search-icon-legacy:hover,
@@ -652,6 +658,7 @@ domain("studio.youtube.com") {
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    ytu-intent-chip a:active,
     #simplebox-placeholder:active,
     [class="ytp-time-display notranslate style-scope ytd-player"]:active,
     #search-icon-legacy:active,
@@ -1040,12 +1047,18 @@ domain("studio.youtube.com") {
         border: 1px solid var(--MyW) !important;
     }
 
+    .content.style-scope.ytu-overlay,
+    tp-yt-paper-dialog,
+    .style-scope.ytu-search-suggestions-section,
+    .text-container,
     ytd-destination-button-renderer,
-    .stock {
+    .text.style-scope.ytu-home-item {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
+    .yt-simple-endpoint.style-scope.ytu-endpoint,
+    .container.style-scope.ytu-epg-row,
     ytd-destination-button-renderer:hover {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
