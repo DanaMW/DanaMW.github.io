@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.67
+@version      0.1.68
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -10,6 +10,7 @@
 
 @-moz-document domain("instagram.com"),
 domain("cdninstagram.com") {
+
     ._aa5b,
     [class="_aam1 _akej _ajrq _akek"],
     section,
@@ -18,55 +19,69 @@ domain("cdninstagram.com") {
     body {
         background-color: var(--MyB) !important;
     }
+
     [class="_aam1 _akej _ajrq _aam6 _akek"],
     [class="_aalv _aalx _ajrr _akek"],
     #splash-screen {
         background: var(--MyXB) !important;
     }
+
     footer {
         display: none !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
         border-color: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     p,
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     a:hover {
         color: var(--Myred1) !important;
         text-decoration: none !important;
     }
+
     [class=" _ab8y  _ab94 _ab97 _ab9f _ab9k _ab9p _abcm"],
     h1 {
         color: var(--TwitterBlue) !important;
     }
+
     h2 {
         color: var(--MyW) !important;
     }
+
     [class=" _ab8y  _ab94 _ab97 _ab9f _ab9k _ab9p _abcm"]:hover,
     h3 {
         color: var(--TwitterRed) !important;
     }
+
     small {
         color: var(--TwitterPink) !important;
     }
+
     .x5n08af,
     ._aacx,
     ._a9zv,
@@ -76,6 +91,7 @@ domain("cdninstagram.com") {
     strong {
         color: var(--MyW) !important;
     }
+
     [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1pi30zi x1swvt13 x1l90r2v xyamay9 x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"],
     [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xc73u3c x5ib6vp xwib8y2 x1y1aw1k x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"],
     .x9f619.x3nfvp2.xr9ek0c,
@@ -98,6 +114,8 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
+    [class="x78zum5 xdt5ytf x5yr21d xqxnypn xh8yej3 x1bs97v6 x1q0q8m5 xso031l x11aubdm xnc8uc2"]>div,
     [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1pi30zi x1swvt13 x1l90r2v xyamay9 x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:hover,
     [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xc73u3c x5ib6vp xwib8y2 x1y1aw1k x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:hover,
     .x9f619.x3nfvp2.xr9ek0c:hover,
@@ -126,6 +144,7 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1pi30zi x1swvt13 x1l90r2v xyamay9 x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:active,
     [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xc73u3c x5ib6vp xwib8y2 x1y1aw1k x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1"]:active,
     .x9f619.x3nfvp2.xr9ek0c:active,
@@ -150,20 +169,24 @@ domain("cdninstagram.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     ._aa48 {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     header,
     ._acum {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     [class="_ab8w  _ab94 _ab97 _ab9h _ab9m _ab9p  _aba0 _abac _abcm"],
     [class="_aady _aa_s"] {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     [class="x6s0dn4 xrvj5dj x19g8pj0 x1dh5ka xyamay9 x1l90r2v x1mu97ne"],
     ._aa4j,
     [class=" _ab8s _ab8w  _ab94 _ab99 _ab9f _ab9m _ab9p  _aba8 _abcm"],
@@ -173,12 +196,14 @@ domain("cdninstagram.com") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -186,6 +211,7 @@ domain("cdninstagram.com") {
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     .tooltip {
         background-color: var(--MyX1) !important;
         opacity: 0.4;
@@ -194,6 +220,12 @@ domain("cdninstagram.com") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+
+    [class="x78zum5 xdt5ytf x5yr21d xqxnypn xh8yej3 x1bs97v6 x1q0q8m5 xso031l x11aubdm xnc8uc2"],
+    [class="xvbhtw8 x78zum5 xdt5ytf x5yr21d x1n2onr6"],
+    [class="x6s0dn4 x78zum5 x1q0g3np"],
+    [class="x1clw6ba x9f619 x1yrsyyn x1pi30zi x10b6aqq x1swvt13 xh8yej3"],
+    [class="x9f619 x78zum5 xdt5ytf x5yr21d xexx8yu x1pi30zi x1l90r2v x1swvt13 x10l6tqk xh8yej3"],
     [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh xr1yuqi xkrivgy x4ii5y1 x1gryazu x1n2onr6 x1plvlek xryxfnj x1iyjqo2 x2lwn1j xeuugli xdt5ytf x1a02dak xqjyukv x1cy8zhl x1oa3qoh x1nhvcw1"],
     li._acaz>[class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh x1nhvcw1"],
     [class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xl565be x1xlr1w8 x5n08af x1tu3fi x3x7a5m x10wh9bi x1wdrske x8viiok x18hxmgj"],
@@ -210,6 +242,7 @@ domain("cdninstagram.com") {
     [class*="x6s0dn4 x1npaq5j x1c83p5e x1enjb0b x199158v x9f619"] {
         background-color: var(--Myred3) !important;
     }
+
     [class*="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh"][class*="x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x6s0dn4 x1oa3qoh"],
     ._abyk,
     ._ab85,
@@ -222,12 +255,20 @@ domain("cdninstagram.com") {
     ._aa61 {
         background-color: var(--Mygray2) !important;
     }
+
     [class="xvbhtw8 xvb8j5 x9f619 x78zum5 xdt5ytf x1dr59a3 x1odjw0f xish69e x1y1aw1k x4uap5 xwib8y2 xkhd6sd xzmilaz x168nmei xoqspk4 x12v9rci xo71vjh x1n2onr6 x1zvrr1"] {
         background-color: var(--Mygray3) !important;
     }
+
     ._aa61 {
         border: 1px solid var(--MyW) !important;
     }
+
+    svg {
+        background: transparent !important;
+        background-color: transparent !important;
+    }
+
     svg.x1lliihq.x1n2onr6>line,
     svg.x1lliihq.x1n2onr6>polygon,
     svg._ab6-,
@@ -237,25 +278,36 @@ domain("cdninstagram.com") {
     svg._ab6->polyline,
     svg._ab6->circle {
         color: var(--Mygreen1) !important;
+        background: transparent !important;
+        background-color: transparent !important;
     }
+
     svg[class="x1lliihq x1n2onr6 x1hfr7tm"],
     svg._ab6-[aria-label="Home"],
     svg._ab6-[aria-label="Carousel"] {
         color: var(--Mygreen1) !important;
         fill: var(--Mygreen1) !important;
+        background: transparent !important;
+        background-color: transparent !important;
+
     }
+
     [class="x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye xl565be xo1l8bm x5n08af xtoi2st xw06pyt x10wh9bi x1wdrske x8viiok x18hxmgj"] {
         width: 100px !important;
     }
+
     .x1l895ks:hover {
         background-color: var(--MyX1) !important;
     }
+
     article {
-        border: 15px solid var(--Myred3) !important;
+        border: 5px solid var(--Myred3) !important;
     }
+
     article:hover {
         box-shadow: 0px 0px 40px var(--Mygreen1) !important;
     }
+
     [class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh x1qughib"],
     ._ab05,
     [class="_aa__ _ackf _ackh"],
@@ -271,29 +323,37 @@ domain("cdninstagram.com") {
     [class="_ab8w  _ab94 _ab97 _ab9i _ab9k _ab9p _abcm"] {
         background-color: var(--Myred3) !important;
     }
+
     [class="_aacl _aaco _aacu _aacy _aad6 _aade"] {
         text-align: center !important;
     }
+
     [class="_aacl _aaco _aacu _aacy _aad6 _aade"] {
         color: var(--Myyellow1) !important;
     }
+
     [class="x1i10hfl xjbqb8w x6umtig x1b1mbwd xaqea5y xav7gou x9f619 x1ypdohk xt0psk2 xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r xexx8yu x4uap5 x18d9i69 xkhd6sd x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _aa-z _aa-- _ac_u _a6hd"] {
         border-top-color: var(--Mygreen1) !important;
     }
+
     [class="_acbv _acbw _acbx _acby"] {
         border-bottom-color: var(--Mygreen1) !important;
     }
+
     [class="_aacl _aacp _aacu _aacx _aada"] {
         background-color: transparent !important;
     }
+
     [class="x6s0dn4 xrvj5dj x19g8pj0 x1dh5ka xyamay9 x1l90r2v x1mu97ne"],
     ._aak3._agh4,
     header {
         border: 1px solid var(--MyW) !important;
     }
+
     a.x1i10hfl[aria-selected="true"] {
         border-top: 1px solid var(--Mygreen1) !important;
     }
+
     span._abpn._9-j_ {
         filter: hue-rotate(50%) !important;
     }
