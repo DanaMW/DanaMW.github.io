@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name         Stock Dark
-@namespace    https://danamw.github.io/scripts/scripts/Stock.user.css
-@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/Stock.user.css
-@version      0.1.7
+@name         Spoutible
+@namespace    http://danamw.github.io/scripts/scripts/SpoutibleDark.user.css
+@updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/SpoutibleDark.user.css
+@version      0.0.2
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("stock.localdomain.net") {
+@-moz-document domain("spoutible.com") {
 
     html,
     body {
