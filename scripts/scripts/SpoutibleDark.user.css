@@ -2,7 +2,7 @@
 @name         Spoutible
 @namespace    http://danamw.github.io/scripts/scripts/SpoutibleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/SpoutibleDark.user.css
-@version      0.0.2
+@version      0.0.3
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -11,7 +11,10 @@
 @-moz-document domain("spoutible.com") {
 
     html,
-    body {
+    body,
+    .main-content-container-inner,
+    .main-content-container,
+    .sidebar {
         background-color: var(--MyB) !important;
     }
 
@@ -71,6 +74,8 @@
         color: var(--MyW) !important;
     }
 
+    .sidebar__nav-item,
+    .btn,
     button {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -87,6 +92,8 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    .sidebar__nav-item:hover,
+    .btn:hover,
     button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -105,6 +112,8 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    .sidebar__nav-item:active,
+    .btn:active,
     button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
@@ -123,12 +132,20 @@
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
 
+    .post-list-item {}
+
+    .sidebar-hashtags__item:hover,
+    .sidebar-users__item:hover,
+    .post-list-item:hover {
+        background-color: var(--MyX4) !important;
+    }
+
     .stock {
         background-image: none !important;
         background-color: transparent !important;
     }
 
-    header,
+    [class*="timeline-header"],
     .stock_navbar {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
