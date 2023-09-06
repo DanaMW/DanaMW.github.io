@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.71
+@version      0.0.72
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -12,8 +12,9 @@
 
 @-moz-document regexp("https://twitter.com(?!widget|cards).*"),
 regexp("https://mobile.twitter.com(?!widget|cards).*"),
-url-prefix("https://t.co"),
-url-prefix("https://help.twitter.com"),
+url-prefix("https://t.co/"),
+url-prefix("https://help.twitter.com/"),
+domain("x.com"),
 domain("twimg.com") {
     html {
         -webkit-tap-highlight-color: var(--MyXW) !important;
@@ -180,6 +181,16 @@ domain("twimg.com") {
         width: 235px !important;
     }
 
+    div[aria-label*="More menu items"],
+    a[aria-label*="Home"],
+    a[aria-label*="Search and explore"],
+    a[aria-label*="Notifications"],
+    a[aria-label*="Direct Messages"],
+    a[aria-label*="Lists"],
+    a[aria-label*="Bookmarks"],
+    a[aria-label*="Communities"],
+    a[aria-label*="Verified"],
+    a[aria-label*="Profile"],
     [class="css-901oao r-1awozwy r-jwli3a r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"],
     .r-1gg2371,
     a[class="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21 r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"],
@@ -215,6 +226,16 @@ domain("twimg.com") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    div[aria-label*="More menu items"]:hover,
+    a[aria-label*="Home"]:hover,
+    a[aria-label*="Search and explore"]:hover,
+    a[aria-label*="Notifications"]:hover,
+    a[aria-label*="Direct Messages"]:hover,
+    a[aria-label*="Lists"]:hover,
+    a[aria-label*="Bookmarks"]:hover,
+    a[aria-label*="Communities"]:hover,
+    a[aria-label*="Verified"]:hover,
+    a[aria-label*="Profile"]:hover,
     [class="css-901oao r-1awozwy r-jwli3a r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"]:hover,
     .r-1gg2371:hover,
     a[class="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21 r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"]:hover,
@@ -256,6 +277,16 @@ domain("twimg.com") {
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    div[aria-label*="More menu items"]:active,
+    a[aria-label*="Home"]:active,
+    a[aria-label*="Search and explore"]:active,
+    a[aria-label*="Notifications"]:active,
+    a[aria-label*="Direct Messages"]:active,
+    a[aria-label*="Lists"]:active,
+    a[aria-label*="Bookmarks"]:active,
+    a[aria-label*="Communities"]:active,
+    a[aria-label*="Verified"]:active,
+    a[aria-label*="Profile"]:active,
     [class="css-901oao r-1awozwy r-jwli3a r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"]:active,
     .r-1gg2371:active,
     a[class="css-4rbku5 css-18t94o4 css-1dbjc4n r-1habvwh r-1loqt21 r-6koalj r-eqz5dr r-16y2uox r-1ny4l3l r-oyd9sg r-13qz1uu"]:active,
