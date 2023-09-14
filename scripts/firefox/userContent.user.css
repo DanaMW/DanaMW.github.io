@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.51
+@version     0.0.52
 @description Mozilla UserContent File
 @author      Dana L. Meli-Wischman
 @homepageURL https://danamw.github.io
@@ -9,6 +9,7 @@
 
 @-moz-document url-prefix("about"),
 url("about:addons") {
+
     span[data-l10n-id="discopane-intro"],
     .warning,
     .addon-card-message[type="warning"],
@@ -16,11 +17,13 @@ url("about:addons") {
     #private-browsing-notice {
         display: none !important;
     }
+
     *:focus,
     *:focus-visible,
     *:-moz-focusring {
         border-color: var(--Myred1) !important;
     }
+
     .main-heading,
     .main-search,
     .sticky-container,
@@ -28,24 +31,29 @@ url("about:addons") {
     body {
         background-color: var(--MyB) !important;
     }
+
     section h2.list-section-heading {
         color: var(--Myred1) !important;
     }
+
     .addon[privateBrowsing="true"] .description.privateBrowsing-notice {
         background-color: transparent !important;
         color: var(--Mygreen1) !important;
     }
+
     .addon[privateBrowsing="false"] .description.privateBrowsing-notice {
         display: block !important;
         margin-left: 40px !important;
         background-color: transparent !important;
         color: var(--MyB) !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
+
     .addon.card {
         max-width: 100% !important;
         width: 100% !important;
@@ -54,16 +62,20 @@ url("about:addons") {
         margin-top: 1px !important;
         margin-bottom: 1px !important;
     }
+
     textbox {
         border: none !important;
         text-align: center !important;
     }
+
     button.more-options-button {
         color: var(--MyW) !important;
     }
+
     button.more-options-button:hover {
         background-color: var(--MyX1) !important;
     }
+
     *|*.category,
     td.cell-edit,
     td.cell-reset,
@@ -86,14 +98,17 @@ url("about:addons") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     .addon:hover .name {
         color: var(--MyW) !important;
     }
+
     .addon .name {
         color: var(--Myred1) !important;
         filter: blur(0) !important;
         text-shadow: none !important;
     }
+
     #categories>.category:hover,
     #categories>.category[selected],
     [selected],
@@ -126,6 +141,7 @@ url("about:addons") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     #help-button:active,
     #preferencesButton:active,
     button:active:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete):not(.more-options-button):not([role="menuitem"]):not(.back-button) {
@@ -145,28 +161,35 @@ url("about:addons") {
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
         transition-timing-function: linear !important;
     }
+
     label#warningTitle.title-text {
         color: var(--Myred1) !important;
     }
+
     #isDefaultLabel,
     .defaultBrowserBox {
         color: var(--Myred1) !important;
     }
+
     #alwaysCheckDefault,
     .content-box,
     .search-container,
     .pane-container {
         color: var(--Mytext) !important;
     }
+
     .relnotes body {
         background-color: transparent !important;
     }
-     ::-moz-progress-bar {
+
+    ::-moz-progress-bar {
         background-color: var(--Myred1) !important;
     }
+
     .addon-view[notification="warning"] {
         --view-highlight-color: var(--Myback) !important;
     }
+
     #header-search:hover,
     #header-search {
         -moz-appearance: none !important;
@@ -174,16 +197,20 @@ url("about:addons") {
         background-color: var(--MyB) !important;
         border: none !important;
     }
+
     #category-search[disabled="true"] {
         pointer-events: none !important;
     }
+
     .addon {
         -moz-appearance: none !important;
         appearance: none;
     }
+
     .disabled-postfix {
         color: var(--Mygreen2) !important;
     }
+
     panel-item,
     span[data-l10n-id="addon-updates-none-found"],
     [role="menuitem"],
@@ -192,9 +219,11 @@ url("about:addons") {
     .update-postfix {
         color: var(--MyW) !important;
     }
+
     .creator {
         color: var(--Mytext) !important;
     }
+
     .detail-view,
     #updates-container,
     #detail-name-container,
@@ -206,34 +235,44 @@ url("about:addons") {
     #detail-version {
         color: var(--Mytext) !important;
     }
+
     .addon-view[active="true"] .content-inner-container .basicinfo-container .name-container {
         color: var(--Myred1) !important;
     }
+
     .addon-view[active="true"] .content-inner-container .advancedinfo-container .description-outer-container .description-container .description {
         color: var(--Mytext) !important;
     }
+
     .addon-view[active="false"] .content-inner-container .basicinfo-container .name-container .name {
         color: var(--Myred3) !important;
     }
+
     .addon-view[active="false"] .content-inner-container .advancedinfo-container .description-outer-container .description-container .description {
         color: var(--Myred3) !important;
     }
+
     .text-link:hover {
         color: var(--MyW) !important;
     }
+
     #detail-state-menulist {
         background-color: var(--Myblue2) !important;
         color: var(--MyB) !important;
     }
+
     .category[selected="true"]:hover {
         color: var(--MyW) !important;
     }
+
     .category[aria-selected="true"]:hover {
         color: var(--MyW) !important;
     }
+
     .text-link:hover {
         color: var(--MyW) !important;
     }
+
     #addons-page {
         -moz-appearance: none;
         appearance: none;
@@ -241,30 +280,37 @@ url("about:addons") {
         background-color: var(--MyB) !important;
         color: var(--Mytext) !important;
     }
+
     addon-target-container {
         color: var(--MyB) !important;
         background-color: var(--Mygray1) !important;
     }
+
     .debug-button {
         color: var(--MyW) !important;
     }
+
     p {
         color: var(--MyW) !important;
     }
+
     #ltr,
     li a,
     a {
         color: var(--MyW) !important;
     }
+
     a:link:hover {
         color: var(--Myred1) !important;
     }
+
     .container,
     li a:hover,
     a:hover {
         color: var(--Myred1) !important;
         transition: width 110%, height 110%;
     }
+
     th,
     div[data-l10n-id="profiles-subtitle"],
     h3,
@@ -274,25 +320,30 @@ url("about:addons") {
         text-align: center;
         text-shadow: 1px -1px 0 var(--Myred1) !important;
     }
+
     .notice-box,
     td {
         background-color: var(--Mygray2) !important;
     }
+
     #aboutLogoContainer {
         -moz-appearance: none !important;
         appearance: none;
         padding-left: 70px;
         border: none !important
     }
+
     .dropmarker-icon {
         filter: invert(1);
     }
+
     .message-bar,
     .extension-controlled,
     .updateSettingCrossUserWarningContainer {
         background-color: var(--Myblue2) !important;
         color: var(--MyW) !important;
     }
+
     .content,
     .addon.extension {
         background-color: var(--Myred3) !important;
@@ -300,20 +351,25 @@ url("about:addons") {
         border: 1px solid var(--Myborder) !important;
         color: var(--MyW) !important;
     }
+
     .card {
         color: var(--Mytext) !important;
     }
+
     dd {
         color: var(--MyW) !important;
     }
+
     .card:hover {
         color: var(--MyW) !important;
         box-shadow: 0 0 20px var(--Myred1) !important;
     }
+
     section .list-section-heading,
     dd:hover {
         color: var(--Myred1) !important;
     }
+
     .textbox-input,
     #searchFilter,
     #header-utils-btn,
@@ -324,13 +380,16 @@ url("about:addons") {
         color: var(--MyB) !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     label {
         background-color: transparent !important;
     }
+
     button>.box-inherit.button-box,
     dropmarker {
         color: var(--MyW) !important;
     }
+
     aside,
     main,
     .card,
@@ -338,6 +397,7 @@ url("about:addons") {
         background-image: none !important;
         background-color: transparent
     }
+
     html,
     body,
     #addons-page,
@@ -345,10 +405,12 @@ url("about:addons") {
     main {
         background-color: var(--MyB) !important;
     }
+
     .card.addon {
         margin-bottom: 15px !important;
         border: none !important;
     }
+
     .downloadMainArea:hover,
     .download.download-state:hover,
     .download.download-state[selected="true"],
@@ -356,11 +418,13 @@ url("about:addons") {
     .content-blocking-category.selected {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     .card,
     .notice-box,
     .content-blocking-category {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     #about-config-search,
     td.cell-value,
     input:not([type="checkbox"]):not([type="radio"]) {
@@ -420,6 +484,7 @@ search-textbox:hover {
     background-color: var(--Myred1) !important;
 }
 
+[role="menu"],
 .radiorow,
 .buttonrow {
     background-color: var(--Mygray3) !important;
@@ -430,18 +495,23 @@ search-textbox:hover {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
+
     tr[data-l10n-id="item"] {
         background-color: var(--MyB) !important;
     }
+
     tr[data-l10n-id="item"]:hover {
         background-color: var(--MyX1) !important;
     }
+
     td {
         background-color: var(--MyB) !important;
     }
+
     td:hover {
         background-color: var(--MyX1) !important;
     }
+
     #dispatch-thead>tr>td {
         background-color: var(--Myred3) !important;
     }
@@ -454,6 +524,7 @@ search-textbox:hover {
 }
 
 @-moz-document url("about:preferences") {
+
     richlistitem,
     richlistbox#handlersView {
         background: var(--Myblue2) !important;
@@ -461,11 +532,13 @@ search-textbox:hover {
 }
 
 @-moz-document url("about:addons") {
+
     #content,
     #sidebar,
     #full {
         background: var(--MyB) !important;
     }
+
     search-textbox,
     input[placeholder="Search addons.mozilla.org"],
     search-addons search-textbox input[mozactionhint="search"] {

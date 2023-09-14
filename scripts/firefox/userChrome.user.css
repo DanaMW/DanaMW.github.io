@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserChrome File
 @namespace   https://danamw.github.io/scripts/firefox/userChrome.user.css
-@version     0.0.51
+@version     0.0.52
 @description Mozilla UserChrome File
 @author      Dana L. Meli-Wischman
 @homepageURL https://danamw.github.io
@@ -9,6 +9,7 @@
 
 @namespace html "http://www.w3.org/1999/xhtml";
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
 :root {
     scrollbar-width: thin;
     scrollbar-color: var(--Myred1) var(--Myred3);
