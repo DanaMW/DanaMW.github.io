@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.5
+@version      0.0.6
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -144,12 +144,12 @@
         background-color: transparent !important;
     }
 
-    header,
-    .stock_navbar {
+    [class="css-175oi2r r-150rngu r-18u37iz r-16y2uox r-1wbh5a2 r-lltvgl r-buy8e9 r-agouwx r-2eszeu"] {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
 
+    .css-175oi2r[data-testid*="feedItem"],
     [class="css-175oi2r r-5kkj8d r-1hfyk0a r-1loqt21"],
     [class="css-175oi2r r-5kkj8d r-1hfyk0a r-1qfoi16 r-95jzfe"],
     [class="css-175oi2r r-5kkj8d r-1loqt21 r-1hfyk0a r-ry3cjt"] {
@@ -157,11 +157,26 @@
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
+    .css-175oi2r[data-testid*="feedItem"]:hover,
     [class="css-175oi2r r-5kkj8d r-1hfyk0a r-1loqt21"]:hover,
     [class="css-175oi2r r-5kkj8d r-1hfyk0a r-1qfoi16 r-95jzfe"]:hover,
     [class="css-175oi2r r-5kkj8d r-1loqt21 r-1hfyk0a r-ry3cjt"]:hover {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+
+    .css-175oi2r[data-testid*="feedItem"]:hover {
+        box-shadow: 0px 0px 30px var(--Mygreen1) !important;
+    }
+
+    .css-175oi2r[data-testid*="feedItem"] {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        border: 1px solid var(--MyW) !important;
+    }
+
+    [class="css-175oi2r r-q5xsgd r-1jj8364 r-lchren r-1ye8kvj r-13qz1uu r-1ljd8xs r-13l2t4g r-sa2ff0"] {
+        border: none !important;
     }
 
     textarea {
