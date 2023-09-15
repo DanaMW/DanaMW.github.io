@@ -2,7 +2,7 @@
 @name         TechHubSocial Dark
 @namespace    http://danamw.github.io/scripts/scripts/TechHubSocial.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TechHubSocial.user.css
-@version      0.0.9
+@version      0.0.10
 @author       Dana l. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -143,6 +143,7 @@
         background-color: transparent !important;
     }
 
+    .notification__message,
     header,
     .stock_navbar {
         background-color: var(--Myred3) !important;
@@ -177,11 +178,13 @@
         border: 1px solid var(--Myred1) !important;
     }
 
+    /*
     .scrollable,
     [class*="drawer"],
     [class*="compose"] {
         background-color: var(--Mygray2) !important;
     }
+    */
 
     input {
         background-color: var(--Mygray3) !important;
@@ -213,14 +216,34 @@
         text-align: center;
     }
 
+    .compose-form__uploads-wrapper,
+    .scrollable,
+    .item-list {
+        background-color: var(--MyB);
+    }
+
+    article {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        border: 1px solid var(--MyW) !important;
+    }
+
+    .status__wrapper {
+        background-color: var(--Mygray1) !important;
+    }
+
+    .drawer,
+    .drawer__pager,
+    .drawer__inner,
+    .drawer__inner__mastodon,
     .notification:hover,
     .status__wrapper:hover,
     [class="status status-public"]:hover {
-        background-color: var(--MyB) !important;
+        background-color: var(--Mygray3) !important;
     }
 
-    .status__action-bar__button.star-icon.icon-button.deactivate {
-        color: var(--Mygray1) !important;
+    article:hover {
+        border: 1px solid var(--Myred1) !important;
     }
 
     .status__action-bar__button.star-icon.icon-button.active.activate>i.fa.fa-star.fa-fw::before {
