@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -83,22 +83,27 @@ url-prefix("https://js.stripe.com/") {
         background-color: var(--Mygray1) !important;
     }
 
+    footer:hover article,
     article:hover footer,
+    article:hover .contain-content,
     footer:hover,
     article:hover {
         background-color: var(--Mygray3) !important;
     }
 
 
-    section[class="relative z-0"] {
-        padding-bottom: 15px !important;
+    section.relative.z-0 {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
         background-color: var(--MyB) !important;
     }
 
-    section[class="relative z-0"]:hover {
+    section.relative.z-0:hover {
         background-color: var(--MyB) !important;
     }
 
+    [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"],
+    [role="button"],
     a[aria-label="Compose a post"]>div,
     li>a,
     button {
@@ -183,6 +188,7 @@ url-prefix("https://js.stripe.com/") {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
 
+    [class="css-175oi2r r-k200y r-13awgt0 r-15d164r r-1jkjb r-1uu6nss"],
     [class*="richie-editor__container"],
     textarea {
         background-color: var(--Mygray3) !important;
