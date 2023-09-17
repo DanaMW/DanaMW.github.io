@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.6
+@version      0.0.7
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -75,6 +75,7 @@
         background-color: var(--Mygreen1) !important;
     }
 
+    [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"],
     [role="menuitem"],
     .r-1otgn73:not(.r-170w6zn),
     button {
@@ -93,6 +94,7 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"]:hover,
     [aria-label="Compose post"]:hover,
     [role="menuitem"]:hover,
     .r-1otgn73:hover:not(.r-170w6zn),
@@ -114,6 +116,7 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"]:active,
     [aria-label="Compose post"]:active,
     [role="menuitem"]:active,
     .r-1otgn73:active:not(.r-170w6zn),
@@ -149,6 +152,7 @@
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
 
+    [class="css-175oi2r r-5kkj8d r-18u37iz r-1l7z4oj r-95jzfe"],
     .css-175oi2r[data-testid*="feedItem"],
     [class="css-175oi2r r-5kkj8d r-1hfyk0a r-1loqt21"],
     [class="css-175oi2r r-5kkj8d r-1hfyk0a r-1qfoi16 r-95jzfe"],
