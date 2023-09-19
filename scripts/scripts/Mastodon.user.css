@@ -2,7 +2,7 @@
 @name         Mastodon Dark
 @namespace    http://danamw.github.io/scripts/scripts/Mastodon.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/Mastodon.user.css
-@version      0.0.13
+@version      0.0.15
 @author       Dana l. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -71,10 +71,6 @@
     h5,
     strong {
         color: var(--MyW) !important;
-    }
-
-    article {
-        box-shadow: 0px 0px 30px var(--Mygreen1) !important;
     }
 
     a.drawer__tab,
@@ -175,14 +171,6 @@
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
-
-    /*
-    .scrollable,
-    [class*="drawer"],
-    [class*="compose"] {
-        background-color: var(--Mygray2) !important;
-    }
-    */
 
     input {
         background-color: var(--Mygray3) !important;
