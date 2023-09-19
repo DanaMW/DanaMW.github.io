@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.16
+@version      0.0.17
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -83,14 +83,13 @@ url-prefix("https://js.stripe.com/") {
         background-color: var(--Mygray1) !important;
     }
 
-    footer:hover article,
-    article:hover footer,
-    article:hover .contain-content,
-    footer:hover,
-    article:hover {
+    article:hover .contain-content:not(.w-full.truncate):not(.block) {
         background-color: var(--Mygray3) !important;
     }
 
+    article:hover {
+        box-shadow: 0px 0px 30px var(--Mygreen1) !important;
+    }
 
     section.relative.z-0 {
         margin-top: 10px !important;
