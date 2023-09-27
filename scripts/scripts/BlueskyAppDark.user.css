@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.9
+@version      0.0.10
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -75,6 +75,11 @@
         background-color: var(--Mygreen1) !important;
     }
 
+    .css-175oi2r>a {
+        text-align: center !important;
+    }
+
+    .css-175oi2r>a,
     [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"],
     [role="menuitem"],
     .r-1otgn73:not(.r-170w6zn),
@@ -94,6 +99,8 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    .css-175oi2r>a:hover,
+    [class*="css-175oi2r r-1loqt21 r-1otgn73"][style*="background-color: rgb(255, 255, 255)"],
     [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"]:hover,
     [aria-label="Compose post"]:hover,
     [role="menuitem"]:hover,
@@ -116,6 +123,7 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    .css-175oi2r>a:active,
     [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"]:active,
     [aria-label="Compose post"]:active,
     [role="menuitem"]:active,
@@ -140,6 +148,34 @@
 
     .css-175oi2r [class*="css-175oi2r r-5kkj8d r-1sp51qo"]:hover {
         background-color: var(--Mygray2) !important;
+    }
+
+    [class="css-175oi2r r-1awozwy r-1llaxt6 r-eu3ka r-1777fci r-1b7u577 r-1aockid"] {
+        background-color: transparent !important;
+    }
+
+    [class="css-175oi2r r-1dzdj1l r-10ptun7 r-1janqcz r-1ow6zhx"] {
+        background-color: var(--Myred1) !important;
+    }
+
+    .css-146c3p1.r-1loqt21 {
+        padding-left: 10px;
+        padding-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    [class="css-175oi2r r-1loqt21 r-1otgn73"] {
+        border-radius: 50%;
+    }
+
+    [class="css-175oi2r r-1loqt21 r-1otgn73"]>div {
+        border-radius: 50%;
+        border: 2px solid var(--MyB) !important;
+    }
+
+    [class="css-175oi2r r-1loqt21 r-1otgn73"]>div:hover {
+        border: 2px solid var(--Myred1) !important;
     }
 
     .stock {
