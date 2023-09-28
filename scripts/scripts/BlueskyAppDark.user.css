@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.12
+@version      0.0.13
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -166,6 +166,7 @@
         padding-bottom: 5px;
     }
 
+    /*
     [class="css-175oi2r r-1loqt21 r-1otgn73"] {
         border-radius: 50%;
     }
@@ -178,6 +179,7 @@
     [class="css-175oi2r r-1loqt21 r-1otgn73"]>div:hover {
         border: 2px solid var(--Myred1) !important;
     }
+    */
 
     .stock {
         background-image: none !important;
