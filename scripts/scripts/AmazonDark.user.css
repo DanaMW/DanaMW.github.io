@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.52
+@version      0.0.53
 @description  Amazon Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
@@ -466,6 +466,7 @@
         color: var(--MyW) !important;
     }
 
+    .sc-jRwbcX.bknLKA,
     .apx-add-card-buttons-in-popover,
     div[class="a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical"],
     .a-row.ewc-compact-head,
@@ -574,4 +575,12 @@
         border: 1px solid var(--Myred1) !important;
     }
 
+    div[class="lists-desktop-rio-icons"] img[role="presentation"] {
+        filter: invert(1);
+    }
+
+    [class="nav-search-submit nav-sprite"] {
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+    }
 }
