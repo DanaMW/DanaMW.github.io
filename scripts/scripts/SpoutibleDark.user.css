@@ -2,7 +2,7 @@
 @name         Spoutible
 @namespace    http://danamw.github.io/scripts/scripts/SpoutibleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/SpoutibleDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -10,6 +10,7 @@
 
 @-moz-document domain("spoutible.com") {
 
+    div.timeline-header::before,
     html,
     body,
     .main-content-container-inner,
@@ -74,6 +75,11 @@
         color: var(--MyW) !important;
     }
 
+    .go-back {
+        border-radius: 50%;
+    }
+
+    .go-back,
     .sidebar__nav-item,
     .btn,
     button {
@@ -92,6 +98,7 @@
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    .go-back:hover,
     .sidebar__nav-item:hover,
     .btn:hover,
     button:hover {
@@ -112,6 +119,7 @@
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    .go-back:active,
     .sidebar__nav-item:active,
     .btn:active,
     button:active {
@@ -132,12 +140,26 @@
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
 
-    .post-list-item {}
+    .post-list-item {
+        background-color: var(--Mygray3) !important;
+    }
 
+    .spout-og__description,
+    .quoted-spout {
+        background-color: var(--Mygray2) !important;
+    }
+
+    .post-list-item:hover {
+        box-shadow: 0px 0px 30px var(--Mygreen1) !important;
+    }
+
+    .spout-og__description:hover,
+    .quoted-spout:hover,
+    .post-list-item__content:hover,
     .sidebar-hashtags__item:hover,
     .sidebar-users__item:hover,
     .post-list-item:hover {
-        background-color: var(--MyX4) !important;
+        background-color: var(--Myred3) !important;
     }
 
     .stock {
@@ -146,19 +168,29 @@
     }
 
     [class*="timeline-header"],
-    .stock_navbar {
+    .profile-settings__title {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
 
-    .stock {
+    .display-settings__options-list,
+    [class*="sidebar-content"] {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
-    .stock {
+    .modal-content,
+    .sidebar-content,
+    [class*="sidebar__nav-group"] {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+
+    .homepage__pubbox,
+    .post-list-item,
+    .sidebar-content,
+    [class*="sidebar__nav-group"] {
+        border: 1px solid var(--Myred1) !important;
     }
 
     textarea {
@@ -183,5 +215,15 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+
+    .sidebar-content__header {
+        text-align: center;
+        background-image: none !important;
+        background-color: var(--Myred2) !important;
+    }
+
+    .display-settings__group-title {
+        text-align: center;
     }
 }
