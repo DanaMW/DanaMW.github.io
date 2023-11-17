@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.69
+@version      0.0.70
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -160,6 +160,8 @@ url-prefix("https://tv.youtube.com/") {
         color: var(--MyW) !important;
     }
 
+    .flow-page,
+    .main-page-container,
     .ytu-app,
     img#illustration {
         background: var(--MyB) !important;
@@ -878,6 +880,7 @@ url-prefix("https://tv.youtube.com/") {
         z-index: 10000 !important;
     }
 
+    .nav-bar,
     ytd-masthead#masthead.chunked.masthead-finish {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
@@ -1050,6 +1053,7 @@ url-prefix("https://tv.youtube.com/") {
         border: 1px solid var(--MyW) !important;
     }
 
+    .ytu-liveguide-station-group,
     .content.style-scope.ytu-overlay,
     tp-yt-paper-dialog,
     .style-scope.ytu-search-suggestions-section,
