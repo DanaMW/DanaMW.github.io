@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.81
+@version      0.2.82
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -563,6 +563,7 @@ url-prefix("https://bard.google.com/") {
         max-width: 78px !important;
     }
 
+    .Tg7LZd,
     .GKS7s,
     mat-sidenav.response-container.ng-star-inserted,
     .sbct.yMAEcf,
@@ -626,7 +627,7 @@ url-prefix("https://bard.google.com/") {
     a[href*="https://myaccount.google.com"]:not([aria-label="Change profile picture."]),
     .goog-select,
     .jfk-button,
-    a[aria-label="More Google apps"],
+    a[aria-label*="Google apps"],
     #gb_70,
     .VZLjze,
     .ab_button,
@@ -672,6 +673,7 @@ url-prefix("https://bard.google.com/") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    .Tg7LZd:hover,
     .GKS7s:hover,
     a.zItAnd.FOU1zf:hover,
     .ZFiwCf:hover,
@@ -745,6 +747,7 @@ url-prefix("https://bard.google.com/") {
     .action-menu-entry:hover,
     .suggest:hover,
     .Gj7ine:hover,
+    a[aria-label*="Google apps"]:hover,
     div[aria-label="Google apps"] li>a:hover,
     .hdtb-mitem.hdtb-imb>a.hide-focus-ring:hover,
     .hdtb-mitem.hdtb-imb>.q.qs:hover,
@@ -757,7 +760,6 @@ url-prefix("https://bard.google.com/") {
     a[href*="https://myaccount.google.com"]:hover:not([aria-label="Change profile picture."]),
     .goog-select:hover,
     .jfk-button:hover,
-    a[aria-label="More Google apps"]:hover,
     .LPW6zd.Mw2I7,
     .LPW6zd.Mw2I7.UkaFJe,
     #gb_70:hover,
@@ -817,6 +819,7 @@ url-prefix("https://bard.google.com/") {
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    .Tg7LZd:active,
     .GKS7s:active,
     a.zItAnd.FOU1zf:active,
     .ZFiwCf:active,
@@ -874,7 +877,7 @@ url-prefix("https://bard.google.com/") {
     a[href*="https://myaccount.google.com"]:active:not([aria-label="Change profile picture."]),
     .goog-select:active,
     .jfk-button:active,
-    a[aria-label="More Google apps"]:active,
+    a[aria-label*="Google apps"]:active,
     #gb_70:active,
     .VZLjze:active,
     .z80M1:active,
