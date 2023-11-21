@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.76
+@version      0.0.77
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -73,7 +73,6 @@ domain("twimg.com") {
         color: var(--MyW) !important;
         text-decoration: none !important;
     }
-
 
     aside[aria-label="Subscribe to Premium"] {
         display: none !important;
@@ -186,6 +185,7 @@ domain("twimg.com") {
         width: 235px !important;
     }
 
+    a[aria-label="Post"],
     div[aria-label*="More menu items"],
     a[aria-label*="Home"],
     a[aria-label*="Search and explore"],
@@ -232,6 +232,7 @@ domain("twimg.com") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    a[aria-label="Post"]:hover,
     [class="css-1dbjc4n r-1awozwy r-18u37iz r-1h3ijdo r-1777fci r-1jgb5lz r-sb58tz r-ymttw5 r-13qz1uu"],
     div[aria-label*="More menu items"]:hover,
     a[aria-label*="Home"]:hover,
@@ -285,6 +286,7 @@ domain("twimg.com") {
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    a[aria-label="Post"]:active,
     div[aria-label*="More menu items"]:active,
     a[aria-label*="Home"]:active,
     a[aria-label*="Search and explore"]:active,
@@ -333,6 +335,10 @@ domain("twimg.com") {
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+
+    div[class="css-175oi2r r-xoduu5 r-1kihuf0 r-sdzlij r-1p0dtai r-hdaws3 r-s8bhmr r-u8s1d r-13qz1uu"] {
+        background-color: var(--Mygreen1) !important;
     }
 
     /*
