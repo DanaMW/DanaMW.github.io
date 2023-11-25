@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.78
+@version      0.0.79
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -198,6 +198,7 @@ domain("twimg.com") {
     a[aria-label*="Communities"],
     a[aria-label*="Verified"],
     a[aria-label*="Profile"],
+    a[class*="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-k200y"],
     [class="css-901oao r-1awozwy r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"],
     [class="css-901oao r-1awozwy r-jwli3a r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"],
     .r-1gg2371,
@@ -248,6 +249,7 @@ domain("twimg.com") {
     a[aria-label*="Communities"]:hover,
     a[aria-label*="Verified"]:hover,
     a[aria-label*="Profile"]:hover,
+    a[class*="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-k200y"]:hover,
     [class="css-901oao r-1awozwy r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"]:hover,
     [class="css-901oao r-1awozwy r-jwli3a r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"]:hover,
     .r-1gg2371:hover,
@@ -303,6 +305,7 @@ domain("twimg.com") {
     a[aria-label*="Communities"]:active,
     a[aria-label*="Verified"]:active,
     a[aria-label*="Profile"]:active,
+    a[class*="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-k200y"]:active,
     [class="css-901oao r-1awozwy r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"]:active,
     [class="css-901oao r-1awozwy r-jwli3a r-6koalj r-18u37iz r-16y2uox r-37j5jr r-a023e6 r-b88u0q r-1777fci r-rjixqe r-bcqeeo r-q4m81j r-qvutc0"]:active,
     .r-1gg2371:active,
