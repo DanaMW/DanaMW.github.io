@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.81
+@version      0.0.82
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -235,6 +235,7 @@ domain("twimg.com") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    [class="css-175oi2r r-1awozwy r-18u37iz r-1h3ijdo r-1777fci r-1jgb5lz r-13qz1uu r-ymttw5 r-sb58tz"],
     [class="css-175oi2r r-1igl3o0 r-rull8r r-qklmqi r-1777fci r-1pn2ns4"]:hover,
     a[aria-label="Premium"]:hover,
     a[aria-label="Post"]:hover,
