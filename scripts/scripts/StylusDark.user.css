@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.58
+@version      0.0.59
 @description  Additional styling for Stylus
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -13,29 +13,36 @@ regexp("moz-extension://.*") {
     input[type="checkbox"] {
         background-color: var(--MyW) !important;
     }
+
     img[src="https://www.google.com/s2/favicons?domain=ello.co"],
     img[src="https://www.google.com/s2/favicons?domain=github.com"],
     img[src="https://www.google.com/s2/favicons?domain=githubusercontent.com"],
     svg[class="svg-icon select-arrow"] {
         filter: invert(1) !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     /*
     h2.style-name {
         max-width: 700px !important;
@@ -45,26 +52,32 @@ regexp("moz-extension://.*") {
     a.style-name {
         color: var(--Mygray1) !important;
     }
+
     a:hover {
         color: var(--Myred1) !important;
     }
+
     h2 {
         color: var(--TwitterPink) !important;
     }
+
     .disabled h2::after {
         background-color: var(--MyX1) !important;
         color: var(--Mytext) !important;
     }
+
     p.actions {
         width: 200px !important;
         align-content: center !important;
     }
+
     h2.style-name:hover .style-info,
     .style-info:hover,
     h2.style-name:hover .style-name-link,
     .style-name-link:hover {
         color: var(--TwitterRed) !important;
     }
+
     /*
     span.target::before,
     span.target::after,
@@ -74,7 +87,6 @@ regexp("moz-extension://.*") {
     a.expander {
         padding-left: 25px !important;
     }
-    */
     .style-name-link::after {
         position: relative !important;
     }
@@ -89,17 +101,21 @@ regexp("moz-extension://.*") {
         padding-left: 3px !important;
         display: before;
     }
+    */
     .style-info {
         color: var(--Myyellow1) !important;
     }
+
     #header {
         color: var(--Mytext) !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     input[type="checkbox"]:not(.slider):checked+.svg-icon.checked {
         display: inline-flex;
         transition: fill 0.1s ease 0s;
     }
+
     .svg-icon.checked {
         position: absolute;
         height: 8px;
@@ -108,44 +124,55 @@ regexp("moz-extension://.*") {
         fill: var(--MyW) !important;
         margin: 2px 0px 0px 2px;
     }
+
     input {
         background-color: var(--MyB) !important;
         color: var(--Mytext) !important;
         border: 1px solid var(--MyW) !important;
     }
+
     .svg-icon:hover {
         -moz-animation: 500ms infinite alternate flash;
         -webkit-animation: 500ms infinite alternate flash;
         animation: 500ms infinite alternate flash
     }
+
     @keyframes flash {
         0% {
             filter: brightness(0%)
         }
+
         25% {
             filter: brightness(25%)
         }
+
         50% {
             filter: brightness(50%)
         }
+
         75% {
             filter: brightness(75%)
         }
+
         100% {
             filter: brightness(100%)
         }
     }
+
     newUI .entry .style-name:hover::before,
     #filters-stats {
         background-color: var(--Myred2) !important;
     }
+
     select {
         color: var(--Mytext) !important;
         border: 1px groove var(--MyB) !important;
     }
+
     #installed::after {
         background-color: var(--Myback) !important;
     }
+
     a#unfile-all-styles,
     a#sync-dropbox-import,
     a#file-all-styles,
@@ -168,6 +195,7 @@ regexp("moz-extension://.*") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     a#unfile-all-styles:hover,
     a#sync-dropbox-import:hover,
     a#file-all-styles:hover,
@@ -192,6 +220,7 @@ regexp("moz-extension://.*") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     a#unfile-all-styles:active,
     a#sync-dropbox-import:active,
     a#file-all-styles:active,
@@ -216,30 +245,38 @@ regexp("moz-extension://.*") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     body {
         color: var(--Mytext) !important;
     }
+
     newUI .entry .style-name:hover::before {
         filter: brightness(150%);
         background-color: var(--MyW) !important;
     }
+
     a,
     a:visited {
         color: var(--Mytext) !important;
     }
+
     #save-button {
         color: var(--MyB) !important;
     }
+
     #save-button:hover {
         opacity: .1;
     }
+
     #save-button:after {
         color: var(--MyB) !important;
         content: 'd' !important;
     }
+
     body.dirty #save-button {
         color: var(--MyW) !important;
     }
+
     #apply-all-updates,
     body.dirty #save-button:hover {
         -moz-appearance: none;
@@ -261,57 +298,71 @@ regexp("moz-extension://.*") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
     }
+
     body.dirty #save-button:after {
         color: var(--MyW) !important;
         content: '?' !important;
     }
+
     #apply-all-updates:hover {
         filter: brightness(130%);
     }
+
     .newUI .entry:nth-child(2n) {
         background-color: var(--MyB) !important;
     }
+
     .svg-icon:hover,
     .newUI .entry:hover .svg-icon:hover {
         fill: var(--MyW) !important;
     }
+
     .newUI .no-update:not(.update-problem):not(.update-done) .up-to-date,
     .newUI .can-update .update {
         color: var(--MyB);
     }
+
     a.update::after {
         background-color: var(--Mygreen2) !important;
         color: var(--MyB) !important;
         border: 1px solid var(--MyB) !important;
         border-radius: 5px !important;
     }
+
     a.update::after:hover rect:hover {
         background-color: var(--Mygreen1) !important;
         color: var(--MyB) !important;
         border: 1px solid var(--MyB) !important;
         border-radius: 5px !important;
     }
+
     .warning {
         color: var(--Myred1) !important;
     }
+
     #confirm>div {
         background-color: var(--Mygray3);
         border: solid 2px rgba(0, 0, 0, 0.5);
     }
+
     .CodeMirror-linewidget .applies-to {
         color: var(--Mytext) !important;
         background: var(--Myback) !important;
         border-style: none !important;
     }
+
     .CodeMirror-linewidget .applies-to>label {
         color: var(--Mytext) !important;
     }
+
     select#manage.newUI.sort {
         height: 20px !important;
     }
+
     svg[class="svg-icon checked"] {
         filter: invert(1) !important;
     }
+
     .menu-items-wrapper,
     #options-title,
     select#manage.newUI.sort,
@@ -320,6 +371,7 @@ regexp("moz-extension://.*") {
         background-color: var(--Myred1) !important;
         background-image: linear-gradient(to top, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
     }
+
     option,
     #options,
     body,
@@ -331,55 +383,70 @@ regexp("moz-extension://.*") {
     #header {
         background-color: var(--Mygray3) !important;
     }
+
     select#manage.newUI.sort,
     select {
         width: 200px !important;
     }
+
     #actions.block,
     .odd {
         background-image: linear-gradient(to left, rgba(20, 20, 20, 0.8), rgba(75, 75, 75, 0.8), rgba(20, 20, 20, 0.8) 100%, transparent) !important;
     }
+
     .even {
         background-image: linear-gradient(to left, rgba(80, 0, 0, 0.8), rgba(170, 0, 0, 0.8), rgba(80, 0, 0, 0.8) 100%, transparent) !important;
     }
+
     /*  Normal Ones Below */
     .stock {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     header {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     #stylus {
         background-color: var(--MyB) !important;
     }
+
     #searchMode {
         width: 150px !important;
     }
+
     button.install {
         width: 200px !important;
     }
+
     .update.fake::after {
         background-color: var(--Mygreen1) !important;
     }
+
     #link-usw {
         display: none !important;
     }
+
     select.fit-width {
         width: 240px !important;
     }
+
     #message-box.center-dialog.injection-order>div {
         border: 1px solid var(--MyW) !important;
     }
+
     .onoffswitch span::before {
         background: var(--knob, #06483e)
     }
+
     .onoffswitch input:checked+span::before {
         right: 0;
         background-color: var(--Myred1) !important;
         box-shadow: 3px 6px 18px 0 rgba(0, 0, 0, 0.2);
     }
+
     /* CodeMirror Below */
     .CodeMirror {
         background: #460101 !important;
@@ -391,93 +458,120 @@ regexp("moz-extension://.*") {
         outline: transparent !important;
         border: 1px solid #ffffff !important;
     }
+
     .CodeMirror .CodeMirror-selected {
         background: #a12525 !important;
         color: #ffd900
     }
+
     .CodeMirror .CodeMirror-line::selection,
     .CodeMirror .CodeMirror-line>span::selection,
     .CodeMirror .CodeMirror-line>span>span::selection {
         background: #a12525 !important;
     }
+
     .CodeMirror .CodeMirror-line::-moz-selection,
     .CodeMirror .CodeMirror-line>span::-moz-selection,
     .CodeMirror .CodeMirror-line>span>span::-moz-selection {
         background: #a12525
     }
+
     .CodeMirror .CodeMirror-gutters {
         background: #460101;
         border-right: 2px solid #a12525;
     }
+
     .CodeMirror .CodeMirror-guttermarker {
         color: #0f0;
     }
+
     .CodeMirror-guttermarker-subtle {
         color: #ffe8e8;
     }
+
     .CodeMirror .CodeMirror-linenumber {
         color: #FFFFFF;
     }
+
     .CodeMirror-cursor {
         border-left: 1px solid #00FF00;
     }
+
     .CodeMirror span.cm-keyword {
         color: #00FF00;
         font-weight: bold;
     }
+
     .CodeMirror span.cm-atom {
         color: #3FF;
     }
+
     .CodeMirror span.cm-number {
         color: #fbff00;
     }
+
     .CodeMirror span.cm-def {
         color: #91b4ff;
     }
+
     .CodeMirror span.cm-variable {
         color: #F6C;
     }
+
     .CodeMirror span.cm-variable-2 {
         color: #c44eff;
     }
+
     .CodeMirror span.cm-variable-3,
     .CodeMirror span.cm-type {
         color: #ad7cec;
     }
+
     .CodeMirror span.cm-property {
         color: #62FFA0;
     }
+
     .CodeMirror span.cm-operator {
         color: #ecffb9;
     }
+
     .CodeMirror span.cm-comment {
         color: #00FF00;
     }
+
     .CodeMirror span.cm-string {
         color: #39C;
     }
+
     .CodeMirror span.cm-meta {
         color: #ffffff;
     }
+
     .CodeMirror span.cm-qualifier {
         color: #FFF700;
     }
+
     .CodeMirror span.cm-builtin {
         color: #ffffff;
     }
+
     .CodeMirror span.cm-bracket {
         color: #ffff00;
     }
+
     .CodeMirror span.cm-tag {
         color: #FFBD40;
     }
+
     .CodeMirror .cm-overlay,
     .CodeMirror span.cm-attribute {
         color: #FFF700;
     }
+
     .CodeMirror span.cm-error {
         color: #FF0000;
     }
+
     .CodeMirror .CodeMirror-activeline-background {
         background: #921111;
     }
