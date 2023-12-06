@@ -2,7 +2,7 @@
 @name         MicroSoft Dark
 @namespace    https://danamw.github.io/scripts/scripts/MicroSoftDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MicroSoftDark.user.css
-@version      0.0.58
+@version      0.0.59
 @description  Microsoft Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -13,6 +13,7 @@ domain("account.microsoft.com"),
 domain("support.microsoft.com"),
 domain("answers.microsoft.com"),
 domain("account.live.com") {
+
     div[id*="uhf-upgrade-banner"],
     div[id*="coreui-banner"],
     .ng-scope.survey-background,
@@ -23,6 +24,7 @@ domain("account.live.com") {
         /* f-information epb-container epb-default-color */
         display: none !important;
     }
+
     #table2>div[data-grid="col-12"],
     #Footer,
     mee-drawer,
@@ -33,6 +35,7 @@ domain("account.live.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     div[id*="popup"],
     #table2>div[data-grid="col-12"]>div[class*="c-table"],
     .download-wrap,
@@ -40,6 +43,7 @@ domain("account.live.com") {
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
     }
+
     .c-card-content,
     .ng-scope,
     .ms-Stack.css-222.x-hidden-focus,
@@ -69,35 +73,44 @@ domain("account.live.com") {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
+
     dd,
     dt,
     strong,
     span {
         color: var(--MyW) !important;
     }
+
     .inner {
         text-align: center !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     .mr-10.pb-10.pb-0-sm.x-hidden-focus {
         color: var(--Mygreen1) !important;
     }
+
     .internav a,
     tr[id^="69fc5dcc"],
     tr[id^="c5c6d034"],
@@ -121,6 +134,7 @@ domain("account.live.com") {
     .lia-button {
         background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray3)) !important;
     }
+
     .entry-box.container,
     .entry-area,
     .tab-pane,
@@ -129,6 +143,7 @@ domain("account.live.com") {
     form {
         background-color: transparent !important;
     }
+
     div[id*="popup"],
     input#cli_shellHeaderSearchInput {
         border: 2px solid !important;
@@ -137,13 +152,16 @@ domain("account.live.com") {
         color: var(--MyW) !important;
         text-align: center !important;
     }
+
     h4 {
         color: var(--Myred1) !important;
     }
+
     ul>li,
     ul>li a {
         color: var(--MyW) !important;
     }
+
     a.f-post-link.c-heading-6.m-chevron,
     .internav a:hover,
     .current,
@@ -165,20 +183,24 @@ domain("account.live.com") {
         background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred3)) !important;
         color: var(--MyW) !important;
     }
+
     .span.lia-paging-page-link,
     span.lia-paging-page-link a {
         background-color: transparent !important;
         text-decoration: none !important;
     }
+
     .mectrl_currentAccount,
     .itemRow.editorPickedItem,
     .f-multi-column.f-multi-column-6 {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     mee-banner .amc-banner {
         background-image: none !important;
     }
+
     .stories-sidebar-widgets,
     mee-banner .amc-banner,
     list-card-content,
@@ -191,38 +213,47 @@ domain("account.live.com") {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+
     table td {
         background-color: transparent !important;
     }
+
     table tbody .oddRow {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .unified-baseball-card,
     table tbody .evenRow {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+
     .table-responsive>table>tbody>tr {
         background-color: var(--Mygray2) !important;
     }
+
     form {
         background: transparent !important;
     }
+
     .section,
     div[id*="category-0-subcategory-"],
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .background-light-grey,
     #dropdownmenuitems {
         background-color: var(--Mygray3) !important;
     }
+
     .lia-link-navigation:hover {
         background-color: var(--Myred1) !important;
         color: var(--MyW) !important;
     }
+
     .resultsBackGround,
     td[id^="header_C"] a,
     .dataGridFixedHeader1,
@@ -230,32 +261,38 @@ domain("account.live.com") {
     .lia-panel-heading-bar {
         background-color: var(--Mygray2) !important;
     }
+
     .mectrl_headertext,
     p,
     h3,
     a {
         color: var(--MyW) !important;
     }
+
     h2,
     #ctl00_textTitleMaster,
     a:hover {
         color: var(--Myred1) !important;
     }
+
     h3,
     .left-container {
         background-color: var(--Myback);
     }
+
     blockquote,
     .m-card.thread-message-content,
     .thread-message,
     #threadSummarySideBar {
         background-color: var(--Mygray3) !important;
     }
+
     .message,
     #BodyBackground,
     #threadBottomSection {
         background-color: var(--Myback) !important;
     }
+
     .mectrl_bodyHeader,
     tr[id^="1993515d-09f1"],
     .moniker-picker,
@@ -264,22 +301,27 @@ domain("account.live.com") {
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
     }
+
     pre,
     code {
         background-color: var(--Mygray2) !important;
         color: var(--Mytext) !important;
     }
+
     .codeHeader {
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
     }
+
     .mscom-accordion-item-image {
         border-radius: 50% !important;
     }
+
     .mscom-accordion-item-image:hover,
     .mscom-accordion-item-image {
         background-image: none !important;
     }
+
     a[class*="ExternalLink"][class*="Button"],
     .cat-links>a,
     .tags-links>a,
@@ -326,6 +368,7 @@ domain("account.live.com") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     a[class*="ExternalLink"][class*="Button"]:hover,
     .cat-links>a:hover,
     .tags-links>a:hover,
@@ -375,6 +418,7 @@ domain("account.live.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     a[class*="ExternalLink"][class*="Button"]:active,
     .cat-links>a:active,
     .tags-links>a:active,
@@ -423,6 +467,7 @@ domain("account.live.com") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .pi-page-bar,
     .auth-control,
     .logo,
@@ -436,6 +481,7 @@ domain("account.live.com") {
         background: transparent !important;
         background-color: transparent !important;
     }
+
     #CenterRegion,
     .pi-page-bar,
     #pmg-global-header,
@@ -443,19 +489,23 @@ domain("account.live.com") {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     .c-uhff-base,
     footer {
         background-color: var(--B) !important;
         color: var(--MyW) !important;
     }
+
     .community-header-component {
         background-color: var(--Myred2) !important;
     }
+
     #sidebarContent,
     ul[role="tree"] {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .note,
     #meControlDropdown {
         background-color: var(--Mygray3) !important;
@@ -463,12 +513,15 @@ domain("account.live.com") {
         border-radius: 15px !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     .msame_TxtTrunc {
         color: var(--MyW) !important;
     }
+
     .community-menu-item:hover {
         background-color: var(--Myred1) !important;
     }
+
     .inner,
     .message-voting-container,
     .x-hidden-focus,
@@ -492,9 +545,11 @@ domain("account.live.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     .msame_Header {
         background-color: transparent !important;
     }
+
     .inner,
     a[role="menuitem"]:hover,
     .message-voting-container,
@@ -512,6 +567,9 @@ domain("account.live.com") {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
         color: var(--MyW) !important;
     }
+
+    table.banded tr,
+    .ocpAlert,
     .post-card,
     a[role="menuitem"],
     .c-channel-placement-content,
@@ -520,45 +578,61 @@ domain("account.live.com") {
     .entry-area {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
+    li[data-automation-test-id*="HighlightCarouselIndicators"]::after {
+        color: var(--Myyellow1) !important;
+    }
+
     .card-title {
         color: var(--Mygreen1) !important;
     }
+
     .timeline-TweetList {
         background-color: var(--Mygray2) !important;
     }
+
     .timeline-Header {
         background-color: var(--Myred2) !important;
         color: var(--MyB) !important;
     }
+
     .form-control,
     .input-group.direct-link,
     .copy-box {
         background-color: var(--MyB) !important;
     }
+
     #iPageTitle,
     td>h3 {
         color: var(--TwitterBlue) !important;
     }
+
     h2 .row-fluid div[class="span bp0-col-1-1 bp1-col-1-1 bp2-col-1-1 bp3-col-1-1"] {
         color: var(--TwitterRed) !important;
     }
+
     .mscom-link.mscom-accordion-item-link:hover {
         background-color: var(--MyX1) !important;
     }
+
     div[class*="c-heading"] {
         color: var(--TwitterRed) !important;
     }
+
     h3[class*="c-subheading"] {
         background-color: transparent !important;
     }
+
     a.ms-Button.ms-Button--action.ms-Button--command:hover,
     .ms-Stack.css-340:hover {
         background-color: var(--MyX1) !important;
     }
+
     .mectrl_tooltip {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
+
     .tooltip-inner {
         background-color: var(--Myred1) !important;
         opacity: 1;
@@ -567,19 +641,24 @@ domain("account.live.com") {
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+
     .separator-line {
         background-color: var(--Myyellow1) !important;
     }
+
     .forumSelect {
         background-color: var(--Mygray2) !important;
     }
+
     .forumSelect.dropNavSelected {
         background-color: var(--MyX1) !important;
     }
+
     .forumSelect:hover {
         background-color: var(--Myred1) !important;
         color: var(--Myyellow1) !important;
     }
+
     source,
     picture,
     section {
@@ -589,6 +668,7 @@ domain("account.live.com") {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     /*
     section[role="tabpanel"] picture>img {
         filter: invert(1) !important;
@@ -598,18 +678,22 @@ domain("account.live.com") {
     #threadQuestion:hover {
         border: 2px solid var(--Myred1) !important;
     }
+
     #threadBottomSection,
     #threadSummaryAnswersSection {
         background-color: var(--MyB) !important;
     }
+
     a.facebook,
     a.twitter,
     a.linkedin {
         filter: invert(1) !important;
     }
+
     .m-sitebanner {
         background-color: var(--Myred3) !important;
     }
+
     li.supHomepageIcon:hover {
         box-shadow: 0 0 30px var(--Myred1) !important;
     }
