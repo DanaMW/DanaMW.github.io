@@ -25,6 +25,7 @@ url-prefix("https://gsuite.google.com/"),
 url-prefix("https://ssl.gstatic.com/"),
 url-prefix("https://docs.google.com/picker"),
 url-prefix("https://chat.google.com/") {
+
     td[bgcolor],
     html,
     body {
@@ -32,13 +33,16 @@ url-prefix("https://chat.google.com/") {
         background-color: var(--MyB) !important;
         color: var(--Mytext) !important;
     }
+
     .aND.akj.aZ6.a5z.pp.aj3,
     .akc.aZ6.nH.oy8Mbf.nn.aCl {
         background-color: var(--MyB) !important;
     }
+
     div.no {
         float: var(--setLeft) !important;
     }
+
     span,
     .d-Na-JX-I.d-Na-M7-JX.d-Na-axY.d-Na-Gs,
     .d-Na-J3.d-Na-hFsbo.d-Na-JX-ax3,
@@ -48,6 +52,7 @@ url-prefix("https://chat.google.com/") {
     span.CJ {
         background-color: transparent !important;
     }
+
     .iNstf,
     /* EMAILFIX */
     div[style="color:rgb(33,33,33)"],
@@ -65,9 +70,11 @@ url-prefix("https://chat.google.com/") {
     .nH {
         background-color: var(--MyB) !important;
     }
+
     span[role="link"]::before {
         filter: invert(1) !important;
     }
+
     li,
     div[dir="auto"],
     #\:2u,
@@ -76,75 +83,92 @@ url-prefix("https://chat.google.com/") {
     a {
         color: var(--MyW) !important;
     }
+
     span.g2,
     br,
     b {
         color: var(--TwitterBlue) !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-color: var(--Myred1) var(--Myred3);
         scrollbar-width: thin !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     #lZwQje {
         display: none !important;
     }
+
     div.gb_td.gb_la {
         position: fixed !important;
         max-width: 90vw !important;
         width: 90vw !important;
         left: 0vw !important;
     }
+
     #aso_search_form_anchor {
         position: absolute !important;
         left: 0px !important;
     }
+
     #aso_search_form_anchor {
         position: absolute !important;
         left: calc(1vw + var(--smove)) !important;
         width: var(--swidth) !important;
     }
+
     .Kj-JD-Jh {
         background-color: var(--Myback) !important;
         color: var(--Myback) !important;
         opacity: 0.9 !important;
     }
+
     .WD,
     .At.Jf {
         background-color: var(--MyX1) !important;
     }
+
     .aWucv.tyA16,
     .cf,
     .r7,
     .nH.r4 {
         background: var(--MyB) !important;
     }
+
     .Hp {
         border-left: 1px solid var(--Mygray2) !important;
         margin-left: -1px !important;
         text-align: center !important;
     }
+
     .gb_ob.gb_pb {
         color: var(--TwitterRed) !important;
     }
+
     .Hp,
     .thead,
     .acts {
         background-color: var(--Mygray2) !important;
         color: var(--MyW) !important;
     }
+
     tr.cf.rc td,
     label,
     .aB,
@@ -154,36 +178,45 @@ url-prefix("https://chat.google.com/") {
         text-decoration: none !important;
         color: var(--MyW) !important;
     }
+
     span.Ca:hover,
     a:hover {
         text-decoration: none !important;
         color: var(--Myred1) !important;
     }
+
     h3>a {
         text-decoration: none !important;
         color: var(--MyW) !important;
     }
+
     a:visited {
         font-weight: bold !important;
         color: var(--Mygreen2) !important;
     }
+
     .Eg.KzhQXc.a-E.WopYHf.aZzjbc {
         background-color: var(--MyB) !important;
     }
+
     head,
     .aAX {
         background-color: var(--Myback) !important;
     }
+
     .ae0 {
         background-color: var(--Myred1) !important;
     }
+
     .acM.acN:hover {
         color: var(--Myred1) !important;
     }
+
     .qL {
         background-color: initial;
         color: initial;
     }
+
     .gb_2f.gb_nb,
     div[aria-label="Google apps"]>ul,
     .aZzjbc,
@@ -196,37 +229,47 @@ url-prefix("https://chat.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .Ih.Uf>.Eg.KzhQXc.a-E.WopYHf.aZzjbc {
         background-color: transparent !important;
     }
+
     .aYv {
         background-color: var(--Myblue1) !important;
     }
+
     .yV {
         background-color: var(--MyX1) !important;
         border: 1px solid var(--MyW) !important;
         border-radius: 5px !important;
     }
+
     .U8EhUb.BV {
         color: var(--MyW) !important;
     }
+
     .aSH,
     .aYy {
         background-color: var(--MyX3) !important;
     }
+
     .dL {
         background-color: var(--Mygreen3) !important;
     }
+
     .gb_Ne.gb_lf.gb_5e .gb_8e.gb_if>svg,
     .gb_Ne.gb_lf.gb_5e .gb_nf>svg {
         color: var(--MyW) !important;
     }
+
     .gb_Ne.gb_lf.gb_5e {
         border: none !important;
     }
+
     .gb_Ne.gb_lf.gb_5e .gb_of.gb_if {
         margin-top: 2px !important;
     }
+
     .Dj,
     .gb_7c.gb_vd.gb_R.gb_8c.gb_bg,
     .gb_ad.gb_lb.gb_3g.gb_R,
@@ -253,6 +296,7 @@ url-prefix("https://chat.google.com/") {
     .gb_Nc.gb_lb.gb_Mc.gb_ke {
         background: transparent !important;
     }
+
     .gb_l,
     .gb_a,
     .gb_m,
@@ -260,17 +304,20 @@ url-prefix("https://chat.google.com/") {
     .gb_Mc.gb_8c.gb_R.gb_Nc.gb_Ff {
         background-color: transparent !important;
     }
+
     .gb_8e.gb_if>svg,
     .gb_nf>svg,
     .gb_kf>svg {
         color: var(--MyW) !important;
         margin-left: -5px !important;
     }
+
     .gb_Df.gb_Pf,
     .gb_Df.gb_Nf {
         position: initial;
         margin-top: -50px;
     }
+
     .gb_Ea.gb_Tc.gb_ng.gb_f.gb_xf,
     #gbwa,
     .gb_Ea.gb_Tc.gb_pg.gb_f.gb_xf,
@@ -278,63 +325,79 @@ url-prefix("https://chat.google.com/") {
         border: none !important;
         background: transparent !important;
     }
+
     .J-JN-I-Kq,
     .J-JN-I-JW {
         background-color: var(--Myred1) !important;
     }
+
     .bNfiFb,
     .bNfiFb.qs41qe {
         background-color: var(--Myred2) !important;
     }
+
     .aT5-aOt-I-JX-Jw,
     .brC-dA-I-JX-Jw {
         background-color: var(--Myred3) !important;
     }
+
     .aT5-aOt-I-JX-Jw:hover,
     .brC-dA-I-JX-Jw:hover {
         background-color: var(--Myred1) !important;
     }
+
     .wO.nr,
     .aA6 {
         background-color: var(--Mygray3) !important;
     }
+
     div.aeZ {
         border-color: var(--Myred3) !important;
         background-color: var(--Myred3) !important;
     }
+
     div.aph {
         border-color: var(--Myred1) !important;
     }
+
     span.gb_db.gbii {
         position: initial !important;
     }
+
     div.uXhw3b,
     div.aph {
         margin-top: -60px !important;
     }
+
     div.apb {
         margin-top: -40px !important;
     }
+
     a.gb_ke.gb_fc {
         filter: invert(0) hue-rotate(100%) brightness(150%) !important;
     }
+
     a[href] {
         filter: brightness(150%) !important;
         color: var(--MyW) !important;
     }
+
     div.akc.aZ6.nH.oy8Mbf.nn.aCl {
         border-left: 3px solid var(--MyB) !important;
         border-right: 1px solid var(--MyB) !important;
         border-top: 2px solid var(--MyB) !important;
     }
+
     div.T0.aND.akj.aZ6.a5z.p.aj3,
     div.akcaZ6nHoy8MbfnnaCl {
         border-radius: 5px !important;
     }
+
     div.hN,
     div.h9.gt {
         background-color: var(--Myred2) !important;
     }
+
     .qK,
     td.a8X.gU,
     td.oc.gU,
@@ -348,6 +411,7 @@ url-prefix("https://chat.google.com/") {
     div.aoI {
         background-color: var(--Mygray2) !important;
     }
+
     html[stylus-iframe="https://mail.google.com"],
     iframe[src*="https://docs.google.com/picker"],
     div[role="dialog"],
@@ -356,17 +420,21 @@ url-prefix("https://chat.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     div[aria-label="Account Information"] {
         border: 1px solid var(--Myred1) !important;
     }
+
     .kf-Al-pn-qg-Qe {
         filter: invert(180%) !important;
     }
+
     .kf-Pk-ic.kf-Qk-Md.kf-Lp-Qk,
     .kf-Pk-Fi.kf-Qk-Fi {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     div.aoD.az6,
     div.aoD.hl,
     div.fX.aXjCH,
@@ -375,66 +443,83 @@ url-prefix("https://chat.google.com/") {
         background-color: var(--Mygray3) !important;
         border-bottom: 1px solid var(--Myborder) !important;
     }
+
     div[style*="#000000"],
     br,
     em {
         color: var(--MyW) !important;
     }
+
     strong {
         color: var(--Myblue1) !important;
     }
+
     td.alL,
     font {
         color: var(--Myred1) !important;
     }
+
     button.RlZRfc.YlMS9e,
     span.aXw.T-KT::before {
         filter: invert(0%) !important;
     }
+
     .Kj-JD-K7-K0 {
         color: var(--Myred1) !important;
         margin-left: 90px !important;
     }
+
     h2.hP,
     div.ha {
         background-color: var(--MyB) !important;
         color: var(--MyW) !important;
     }
+
     div.hN.so.Ij,
     div.xA.sMBrBc.oPevkb {
         background-color: var(--Mygray3) !important;
     }
+
     .bog>span {
         color: var(--Mygray1) !important;
     }
+
     div.gstq_d.gstq_a.gsfs {
         color: var(--Mygray2) !important;
     }
+
     .Tm.aeJ {
         background-color: var(--MyB) !important;
     }
+
     div.aim.ain {
         border-color: var(--Myred1) !important;
     }
+
     .zA.zE .y2 {
         color: var(--Myborder) !important;
     }
+
     .zAyO .y2 {
         color: var(--MyXW) !important;
     }
+
     .rc,
     td[class*="oZ-x3"] {
         color: var(--Myred1) !important;
     }
+
     td.PF.xY.PE::before {
         background-color: var(--Myred1) !important;
     }
+
     td,
     tr,
     .T-I.J-J5-Ji.T-I-KE.L3::before,
     .T-I.J-J5-Ji.T-I-KE.L3:hover::before {
         background-color: transparent !important;
     }
+
     .T-I:not([class="T-I J-J5-Ji T-I-KE L3"])::before,
     .T-Jo::before,
     .d-Na-JX-I::before,
@@ -444,13 +529,16 @@ url-prefix("https://chat.google.com/") {
     span.J-Ke.n4.ah9.aiu {
         background-color: var(--MyX1) !important;
     }
+
     span.J-Ke.n4.ah9:hover,
     span.J-Ke.n4.ah9.aiu:hover {
         background-color: var(--Myred1) !important;
     }
+
     .T-I {
         margin-right: 2px !important;
     }
+
     #\:fl,
     .vT,
     .gO,
@@ -458,13 +546,16 @@ url-prefix("https://chat.google.com/") {
     ._cYu {
         color: var(--MyW) !important;
     }
+
     .akh {
         left: 35px !important;
     }
+
     .uq,
     .pTh3n {
         filter: invert(0) !important;
     }
+
     path[d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"],
     path[d="M12,2C6.5,2,2,6.5,2,12c0,5.5,4.5,10,10,10s10-4.5,10-10C22,6.5,17.5,2,12,2z M12,18c-0.6,0-1-0.5-1-1h2 C13,17.5,12.5,18,12,18z M17,16H7v-0.6l1.2-1.2v-3c0-1.9,1-3.4,2.8-3.8V6.9C11.1,6.4,11.5,6,12,6s0.9,0.4,0.9,0.9v0.4 c1.8,0.4,2.8,2,2.8,3.8v3l1.2,1.2V16z"],
     path[d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"],
@@ -502,13 +593,16 @@ url-prefix("https://chat.google.com/") {
     .f {
         filter: invert(1);
     }
+
     span.Yfed6d svg:hover {
         filter: invert(0) !important;
     }
+
     div.gsrV1e svg,
     [role="button"]:hover svg {
         color: var(--MyW) !important;
     }
+
     .Ahnnze,
     div.ah.aiv.aJS,
     div.Ahnnze.a-E.uCXoPb,
@@ -519,6 +613,7 @@ url-prefix("https://chat.google.com/") {
     .IG {
         background-color: var(--Mygray2) !important;
     }
+
     #linkdialog-onweb-tab,
     div.a-E.Eg.nS,
     .x1bKod-Ga,
@@ -530,6 +625,7 @@ url-prefix("https://chat.google.com/") {
         color: var(--Mytext) !important;
         background-color: var(--Mygray2) !important;
     }
+
     .uD:hover,
     .l8:hover,
     .aB:hover,
@@ -537,19 +633,24 @@ url-prefix("https://chat.google.com/") {
         color: var(--Myred1) !important;
         text-shadow: 1px -1px 0 var(--MyB) !important;
     }
+
     .d-td-c-u:hover {
         filter: brightness(125%) !important;
     }
+
     span.nU .J-Ke {
         color: var(--MyW) !important;
         padding-right: 20px !important;
     }
+
     .J-J5-Ji {
         vertical-align: center !important;
     }
+
     .TN {
         text-align: center !important;
     }
+
     .LS0B,
     div.LWLRfd.Ef.RU.uR,
     .EV,
@@ -557,13 +658,16 @@ url-prefix("https://chat.google.com/") {
         background-color: var(--Mygray1) !important;
         color: var(--Mytext) !important;
     }
+
     table,
     tbody td {
         background-color: transparent !important;
     }
+
     .aON {
         color: transparent !important;
     }
+
     div.Ef.pS,
     .oY:hover,
     div.z-b-G.tJJIje,
@@ -571,11 +675,13 @@ url-prefix("https://chat.google.com/") {
         color: var(--Myred1) !important;
         background-color: var(--Mygray2) !important;
     }
+
     div.hN.VU,
     div.SPTjUd.a-E.Eg,
     .pdW3fd {
         background-color: var(--Mygray2) !important;
     }
+
     .aAT,
     .aAU {
         -moz-appearance: none;
@@ -591,16 +697,19 @@ url-prefix("https://chat.google.com/") {
         background-position-y: 0%;
         background-size: auto auto;
     }
+
     .d-Na-JG-M {
         color: var(--Mytext) !important;
         background-color: var(--Myback) !important;
         border: 2px solid var(--MyW) !important;
     }
+
     button {
         -moz-appearance: none !important;
         -webkit-appearance: none !important;
         appearance: none !important;
     }
+
     table[class="cf alO"],
     .ICsgXc,
     .oL,
@@ -623,6 +732,7 @@ url-prefix("https://chat.google.com/") {
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
     }
+
     .gb_Ta.gb_z.gb_7b,
     .gb_C.gb_u,
     .qDm3sf.bBI3Tb,
@@ -640,22 +750,27 @@ url-prefix("https://chat.google.com/") {
         border-radius: 5px !important;
         border: 1px solid var(--MyW) !important;
     }
+
     .w-Pv {
         border: 1px solid var(--Myborder) !important;
     }
+
     .J-LC-Jz,
     .J-JK-Jz {
         color: var(--Mytext) !important;
     }
+
     div[class="CWGGG Tt"],
     span[class="r4QAme"] {
         z-index: 4 !important;
         color: var(--MyW) !important;
     }
+
     .kKTUO {
         color: var(--Mygreen1) !important;
         background-color: var(--Mygray3) !important;
     }
+
     div.KXUPI,
     table[id="gs_sbt50"],
     .tk,
@@ -677,6 +792,7 @@ url-prefix("https://chat.google.com/") {
         color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
     }
+
     input[aria-label="Search all conversations"],
     input[disabled=""],
     input[aria-label="Search in mail"],
@@ -689,51 +805,63 @@ url-prefix("https://chat.google.com/") {
         border-radius: 15px !important;
         text-align: center !important;
     }
+
     input#gs_taif50,
     input[aria-label="Search all conversations"] {
         margin-top: -22px !important;
     }
+
     input#gs_taif50,
     input[aria-label="Search in mail"],
     input[aria-label="Search mail"] {
         margin-top: -13px !important;
         height: 28px !important;
     }
+
     div.KXUPI {
         border: 2px solid var(--Myborder) !important;
         border-radius: 15px !important;
     }
+
     .Kj-JD-Jz,
     .Kj-JD-K7 {
         text-align: center !important;
     }
+
     .gb_2e.gb_df {
         position: initial !important;
         margin-top: -43px !important;
     }
+
     button.J-at1-auR.J-at1-atl {
         position: relative;
         right: 335px !important;
     }
+
     div.Kj-JD-K7.Kj-JD-K7-bsT {
         border-radius: 15px !important;
     }
+
     .Kj-JD-Jl {
         align-content: center !important;
     }
+
     .Kj-JD {
         color: var(--Mytext) !important;
         border: 2px solid var(--Myborder) !important;
         border-radius: 15px !important;
     }
+
     .ihxlQe:hover {
         color: var(--Myred1) !important;
     }
+
     div.J-M-Jz.aXjCH {
         -moz-appearance: checkbox-container;
         -webkit-appearance: checkbox-container;
         appearance: checkbox-container;
     }
+
     .gb_C.gb_v,
     .gb_ea.gb_8,
     .EIlDfe,
@@ -741,6 +869,7 @@ url-prefix("https://chat.google.com/") {
     div.oL.aDm {
         background-color: var(--Mygray3) !important;
     }
+
     div.J-N.J-Ks.J-Ks-KO .J-N-Jo {
         -moz-appearance: checkbox;
         -webkit-appearance: checkbox;
@@ -749,6 +878,7 @@ url-prefix("https://chat.google.com/") {
         border-color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     div.J-LC-Jo.J-J5-Ji {
         -moz-appearance: checkbox;
         -webkit-appearance: checkbox;
@@ -757,45 +887,55 @@ url-prefix("https://chat.google.com/") {
         border-color: var(--MyW) !important;
         background-color: transparent !important;
     }
+
     div[class="J-JK J-JK-JT"],
     div[class="J-LC J-LC-JT"],
     div[class="eo2HSb HZkERb"] {
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
     }
+
     .n291pb.uaxL4e {
         border-radius: 50%;
         border: 1px solid var(--Myborder) !important;
     }
+
     .Roy1If,
     .UR.UG,
     span[class="tL8wMe EMoHub"] {
         color: var(--MyW) !important;
     }
+
     .ci {
         display: none !important;
     }
+
     .tk.TmwRj.Sn.GjkoZd .KRQuhe,
     .tk.TmwRj.Sn .KRQuhe {
         background-color: var(--Myblue2) !important;
         color: var(--MyW) !important;
     }
+
     .tk.TmwRj.pj.GjkoZd .KRQuhe,
     .tk.TmwRj.pj .KRQuhe {
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
     }
+
     .gb_R {
         background-color: var(--Myback) !important;
     }
+
     .azX {
         background-color: var(--Myred3) !important;
         border-color: var(--Myred3) !important;
         color: var(--Mytext) !important;
     }
+
     .gsop_j {
         color: var(--MyXB) !important;
     }
+
     div[style*="background: rgb(255, 255, 255) none repeat scroll 0% 0%; left: 0px; position: absolute; top: 0px; z-index: 1101; opacity: 0.5;"] {
         background: var(--MyB) none repeat scroll 0% 0% !important;
         left: 0px;
@@ -804,6 +944,7 @@ url-prefix("https://chat.google.com/") {
         z-index: 1101;
         opacity: 0.5 !important;
     }
+
     div[style="background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(190, 190, 190); height: auto; position: absolute; width: auto; z-index: 1101; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; overflow: visible; visibility: visible; left: 469px; top: 49px;"] {
         background: var(--MyXB) none repeat scroll 0% 0% !important;
         border: 2px solid var(--Myborder) !important;
@@ -816,51 +957,63 @@ url-prefix("https://chat.google.com/") {
         visibility: visible;
         border-radius: 15px !important;
     }
+
     iframe[src*="https://gsuite.google.com/u/0/marketplace/appfinder"],
     div#glass-content {
         border-radius: 15px !important;
     }
+
     div.bse-bvF-I.bse-bvF-a9p.bse-bvF-I-JW,
     div.bse-bvF-I.bse-bvF-aLp.bse-bvF-I-JW {
         background-color: var(--MyX1) !important;
         border-radius: 50% !important;
     }
+
     div.J-KU.bvm.bAj.J-KU-JW,
     div.J-KU.bvm.bAj {
         border-radius: 50% !important;
     }
+
     .gb_hc {
         opacity: 1 !important;
     }
+
     input[value="Sign out all other web sessions"] {
         -moz-appearance: none !important;
         -webkit-appearance: none !important;
+        appearance: none !important;
         border: none !important;
         padding: 5px !important;
     }
+
     .lr,
     .gb_Z {
         background: transparent !important;
     }
+
     .gb_bf.gb_cf,
     .gb_xf.gb_Hf {
         border-radius: 50% !important;
     }
+
     button.gb_1e,
     button.gb_Ue {
         border-radius: 50% !important;
         width: 46px !important;
         height: 46px !important;
     }
+
     button.gb_Ue svg {
         filter: invert(0) !important;
         margin-left: -3px !important;
     }
+
     #\:3c::before:hover {
         background-image: none !important;
         background-color: transparent !important;
         color: #0000ff;
     }
+
     [class="YZrg6 HnRr5d iiFyne cd29Sd kWC5Rd"],
     a.gb_tb.gb_Hb,
     .azewN,
@@ -925,6 +1078,7 @@ url-prefix("https://chat.google.com/") {
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     /*added shit */
     [class="YZrg6 HnRr5d iiFyne cd29Sd kWC5Rd"]:hover,
     a.gb_tb.gb_Hb:hover,
@@ -1070,6 +1224,7 @@ url-prefix("https://chat.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     /*added shit */
     [class="YZrg6 HnRr5d iiFyne cd29Sd kWC5Rd"]:active,
     a.gb_tb.gb_Hb:active,
@@ -1194,19 +1349,24 @@ url-prefix("https://chat.google.com/") {
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .aJ6 {
         background-color: transparent !important;
     }
+
     li[class="YG3x7 A6oGoc wme6Eb c-P-p lebsnd"] li[class="YG3x7 SStZpd wme6Eb c-P-p lebsnd"] {
         background-color: var(--Myred2) !important;
     }
+
     .Yc.qa-l-ad {
         background-color: hsla(0, 0%, 29%, 0.4)
     }
+
     .pghO0c,
     .J-Ke {
         color: var(--Myred1) !important;
     }
+
     #\:gb,
     #\:gc,
     a.f0,
@@ -1227,15 +1387,18 @@ url-prefix("https://chat.google.com/") {
     .J-Ke:hover {
         color: var(--MyW) !important;
     }
+
     .ya {
         background-color: var(--Myred3) !important;
         border-radius: 25px !important;
     }
+
     .NLK4Q {
         text-align: center !important;
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
     }
+
     .nH.aiS,
     td[class="gU bx2"],
     .Uz .aw4 .J-J5-Ji,
@@ -1243,6 +1406,7 @@ url-prefix("https://chat.google.com/") {
     .Uz {
         display: none !important;
     }
+
     .hO,
     div[class="av"] {
         -moz-appearance: none !important;
@@ -1252,58 +1416,71 @@ url-prefix("https://chat.google.com/") {
         color: var(--MyW) !important;
         font: bolder !important;
     }
+
     li.d-Na-N:nth-child(10)>span:nth-child(1),
     .d-Na-N-M7-awE {
         color: var(--Mytext) !important;
     }
+
     .gb_Zc>.gb_Oc {
         background-color: transparent !important;
     }
+
     .gb_Oc {
         color: var(--Mytext) !important;
         background-color: var(--Myred2) !important;
     }
+
     .ewURgf,
     .yO {
         background-color: var(--MyB) !important;
     }
+
     .zE {
         color: var(--Myblue1) !important;
         text-shadow: 1px -1px 0 var(--MyB) !important;
         font-weight: bold !important;
         background-color: var(--Mygray2) !important;
     }
+
     .x7 {
         background-color: var(--MyX4) !important;
     }
+
     .kf-Pk-hc.kf-Ok-Zb-Md {
         background-color: transparent !important;
         background-image: none !important;
     }
+
     .kf-Pk-hc.kf-Ok-Zb-Md,
     .btb {
         background-image: linear-gradient(to right, rgba(161, 48, 48, 0.438), rgba(31, 20, 20, 0.05) 100%, transparent) !important;
     }
+
     div[class="mu0Qnb"]:hover,
     li[class="Yx Bb"]:hover,
     .aqw {
         background-color: var(--MyX1) !important;
     }
+
     .hO:hover,
     div[class="av"]:hover {
         background-color: var(--Myred1) !important;
     }
+
     div[class="J-KU-Jg J-KU-Jg-Zc aj5"] {
         background-color: var(--Mygray3) !important;
         border-bottom: 25px solid var(--Mygray3) !important;
         border-top: 25px solid var(--Mygray3) !important;
     }
+
     .gb_2f.gb_ob,
     div[class="CLIscc Y5Dake"],
     .kT,
     div[class="tk TmwRj pj GjkoZd"] {
         background-color: var(--Mygray3) !important;
     }
+
     div[class="vh"] {
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
@@ -1311,33 +1488,39 @@ url-prefix("https://chat.google.com/") {
         padding: 2px !important;
         width: 375px !important;
     }
+
     span[id="link_undo"] {
         text-decoration: none !important;
         color: var(--MyB) !important;
     }
+
     .sV,
     span[id="link_undo"]:hover {
         text-decoration: none !important;
         color: var(--MyW) !important;
     }
+
     span[class="l7"] {
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
         border: 1px solid var(--MyW) !important;
         padding: 2px !important;
     }
+
     /* -----------------------------------POP UP CONFIGURE-------------------- */
     .gb_ub.gb_aa.gb_g {
         background-color: var(--Mygray2) !important;
         border-radius: 15px;
         border: 1px solid var(--Myborder) !important;
     }
+
     .p4a,
     #mpiv-bar {
         background-color: var(--Mygray2) !important;
         color: var(--Mytext) !important;
         border-color: var(--Myborder) !important;
     }
+
     .uoJAie.Ps0Yfc,
     .gb_wb.gb_ba.gb_g,
     .gb_Nb,
@@ -1350,18 +1533,22 @@ url-prefix("https://chat.google.com/") {
         background-color: var(--Mygray3) !important;
         color: var(--Mytext) !important;
     }
+
     .xS,
     span.y2,
     span.zF,
     .ld-Na-Jo.d-Na-N-ax3 {
         color: var(--MyW) !important;
     }
+
     span.yP {
         color: var(--Mygray2) !important;
     }
+
     td.yX.xY div.yW {
         color: var(--Mygray1) !important;
     }
+
     td.yX.xY,
     div.yW {
         background-color: initial !important;
@@ -1369,10 +1556,12 @@ url-prefix("https://chat.google.com/") {
         border-color: none !important;
         color: initial !important;
     }
+
     li.d-Na-N-UX.d-Na-N-ax3,
     li.d-Na-N {
         background-color: transparent !important;
     }
+
     .A0,
     img.gZ.T-I-J3,
     img.g1.T-I-J3,
@@ -1381,37 +1570,45 @@ url-prefix("https://chat.google.com/") {
     .Uy {
         filter: invert(1) !important;
     }
+
     .fbc {
         border-color: var(--Myred2) !important;
         background-color: var(--Myred2) !important;
     }
+
     #data-tooltips {
         background-color: var(--Myred2) !important;
         color: var(--MyW) !important;
     }
+
     body.xE,
     #nlpt,
     .msg,
     #loading {
         background-color: var(--Myback) !important;
     }
+
     .zJLCge,
     .msgb {
         color: var(--MyW) !important;
     }
+
     #nlpt::before {
         background-color: var(--MyX1) !important;
     }
+
     .gb_ea,
     .lpb,
     .lpt {
         color: var(--Myred1) !important;
         background-color: var(--Myred2) !important;
     }
+
     /* -----------------------------------BANNER--------------------- */
     .gb_Hd {
         background-color: transparent !important;
     }
+
     .gb_Hf,
     .gb_Lc,
     .gb_mb,
@@ -1422,41 +1619,51 @@ url-prefix("https://chat.google.com/") {
         background-image: none !important;
         background: transparent !important;
     }
+
     #gb {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     /* Here is search */
     .gb_gf,
     .gb_yf.gb_sf {
         text-align: center !important;
         background-color: transparent !important;
     }
+
     .gb_ff.gb_pf {
         display: none !important;
     }
+
     .gb_ba,
     .gb_tb.gb_aa.gb_g {
         border-radius: 15px !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     .gb_of.gb_if {
         height: 30px !important;
     }
+
     .gb_8e.gb_if {
         margin-bottom: 5px !important
     }
+
     .gb_Nc,
     .gb_fb {
         background: transparent !important;
     }
+
     #aso_search_form_anchor {
         background-color: transparent !important;
     }
+
     .J-Z {
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+
     .aaA,
     .e5,
     .fu,
@@ -1466,10 +1673,12 @@ url-prefix("https://chat.google.com/") {
     .J-Z-M-I-JG {
         filter: invert(1);
     }
+
     .ve-Ci-ic.ve-Di-ie.ve-ao-Di {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     .gb_ld,
     .gb_Bd,
     .ha,
@@ -1479,27 +1688,33 @@ url-prefix("https://chat.google.com/") {
     .gb_fb.gb_8c.gb_Qg.gb_R.gb_Ff.gb_ob {
         background: transparent !important;
     }
+
     #\:4 {
         background: black !important;
     }
+
     .VO,
     .PDDglc,
     a[href] {
         color: var(--TwitterBlue) !important;
     }
+
     div[aria-label="Theme"],
     .OG,
     .gmail_attr,
     .go {
         color: var(--TwitterRed) !important;
     }
+
     span.h8.LJOhwe:hover {
         color: var(--Myred1) !important;
     }
+
     .ST,
     .Q2 {
         color: var(--MyW) !important;
     }
+
     .rhhJr,
     .Kj-JD,
     div[role="alertdialog"],
@@ -1517,74 +1732,96 @@ url-prefix("https://chat.google.com/") {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     .rhhJr,
     .ajA.SK {
         border-radius: 15px !important;
         border: 1px solid var(--MyW) !important;
     }
+
     table.gstl_50.gstt {
         margin-top: 10px !important;
         border-radius: 25px !important;
     }
+
+    .Q0.QW,
+    .VM.aiL,
     .zS.Uf,
     [role="menu"],
     .Ce-bo-mf-bo-sh {
         background-color: var(--Mygray1) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
+    button.OB::before {
+        color: var(--MyW) !important;
+    }
+
     table>tbody>tr,
     table[role="presentation"]>tbody,
     table[role="presentation"]>tbody>tr>td>table,
     .gb_Bf.gb_vf>.gstl_50.gstt {
         background-color: transparent !important;
     }
+
     .gb_F.gb_na {
         border: none !important;
     }
+
     tbody,
     table,
     tr,
     td {
         background-color: transparent !important;
     }
+
     tbody,
     table,
     tr,
     td {
         background: transparent !important;
     }
+
     .gb_D:hover,
     .FH:hover {
         filter: invert(1) !important;
     }
+
     .IU.nn {
         background-color: var(--Mygray3) !important;
     }
+
     .YysZRb,
     .mVSsPb {
         color: var(--TwitterBlue) !important;
     }
+
     .X5KVDc.lqDipf.ILmtpd>svg:hover,
     .cs3SAb {
         color: var(--TwitterRed) !important;
     }
+
     .X5KVDc.lqDipf.ILmtpd>svg,
     .RffVmb.AL18ce,
     .YGvwud {
         color: var(--MyW) !important;
     }
+
     .DYLA1c.q8ixdb {
         border: 1px solid var(--MyW) !important;
     }
+
     button.OB:hover,
     button.SV:hover {
         filter: invert(1) !important;
     }
+
     #\:6i img[role="menu"],
     #\:6i {
         filter: invert(0) !important;
         color: var(--MyW) !important;
     }
+
     .HxMcae.uq.pq7K0e.c-N-K.ffYF5e.ffYF5e-p:hover,
     .zDiulc.uq.pq7K0e.c-N-K.ffYF5e.ffYF5e-p:hover,
     button.zDiulc:hover,
@@ -1592,46 +1829,60 @@ url-prefix("https://chat.google.com/") {
     [role="button"]:hover svg {
         filter: invert(1) !important;
     }
+
     .aiC {
         background-color: var(--Myred3) !important;
     }
+
     .Nt {
         border-color: var(--Myred1) !important;
     }
+
     .aiA {
         background-color: var(--Myred1) !important;
     }
+
     .adp {
         background: transparent !important;
     }
+
     .msg {
         background: transparent !important;
         color: var(--Myred1) !important;
     }
+
     div[style="bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0"],
     .la-i {
         background: var(--MyB) !important;
     }
+
     div[style="animation:1.7s cubic-bezier(.17,0,.1,.87)1.2s kf-s;background:#fafbfb;border-radius:330px;height:660px;left:50%;margin:-406px -330px;top:50%;transform:scale(0);width:660px"] {
         background: var(--MyX1) !important;
     }
+
     .la-k .la-m {
         background: transparent !important;
     }
+
     .la-b .la-m {
         background: #f1f3f4;
     }
+
     .oAzRtb.krjOGe[role="textbox"],
     div[role="textbox"] {
         height: 15px !important;
     }
+
     .Bl2pUd.krjOGe {
         background: var(--Myred3) !important;
     }
+
     .aqvEkc {
         color: var(--MyW) !important;
     }
+
     button.gb_cf.gb_df {
         left: 0px !important;
     }
+
 }
