@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.13
+@version      0.0.14
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -79,6 +79,13 @@
         text-align: center !important;
     }
 
+    [class="css-175oi2r r-1awozwy r-nsiyw1 r-18u37iz r-1777fci r-15d164r r-1sp51qo r-13qz1uu"],
+    [class="css-175oi2r r-1awozwy r-1tw7wh r-18u37iz r-1777fci r-1rngwi6 r-1yd117h r-gu64tb"],
+    [class="css-175oi2r r-y47klf r-19u6a5r r-vuvdlw r-u9wvl5"] {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+
     .css-175oi2r>a,
     [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"],
     [role="menuitem"],
@@ -101,7 +108,7 @@
 
     [class="css-146c3p1 r-1loqt21"][style*="color: rgb(255, 255, 255)"],
     .css-175oi2r>a:hover,
-    [class*="css-175oi2r r-1loqt21 r-1otgn73"][style*="background-color: rgb(255, 255, 255)"],
+    [class*="css-175oi2r r-1loqt21 r-1otgn73"][style*="background-color: rgb(255, 255, 255)"]:not(.r-1fuqb1j.r-11f147o.r-gu64tb),
     [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"]:hover,
     [aria-label="Compose post"]:hover,
     [role="menuitem"]:hover,
