@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.40
+@version      0.0.41
 @description  Github Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -136,6 +136,7 @@ url-prefix("wss://live.github.com") {
         color: var(--Mygreen1) !important;
     }
 
+    tr[id*="folder-row"]:hover,
     div[class="Box-row Box-row--focus-gray py-2 mt-0 border-top-0 d-flex position-relative js-navigation-item navigation-focus"]:hover,
     tr.js-navigation-item:hover {
         background-color: var(--MyX1) !important;
@@ -231,6 +232,7 @@ url-prefix("wss://live.github.com") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    .PRIVATE_TreeView-item-container:hover,
     li>a.UnderlineNav-item.selected,
     summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"]:hover,
     .menu-item:hover,
