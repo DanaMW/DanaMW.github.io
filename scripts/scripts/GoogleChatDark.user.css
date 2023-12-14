@@ -2,7 +2,7 @@
 @name         Google Chat Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleChatDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleChatDark.user.css
-@version      0.0.47
+@version      0.0.48
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -73,6 +73,10 @@ url-prefix("https://docs.google.com/") {
     a {
         color: var(--MyW) !important;
         background-color: transparent !important;
+    }
+
+    .HQLhSc {
+        background: transparent !important;
     }
 
     a:hover {
@@ -242,6 +246,7 @@ url-prefix("https://docs.google.com/") {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
+    .OMT1se.umOBzc,
     .Fy8Smc.EZfvIe,
     [class="g3VIld qRVtHc CzgMb Up8vH Whe8ub hFEqNb J9Nfi iWO5td u3bW4e"],
     .anJ,
@@ -339,6 +344,7 @@ url-prefix("https://docs.google.com/") {
         text-transform: none;
     }
 
+    .XKUUFc,
     [role="listbox"],
     .hqlnxe,
     [role="menu"] {
@@ -468,9 +474,14 @@ url-prefix("https://docs.google.com/") {
         background-color: var(--Mygray3) !important;
     }
 
+    svg,
+    svg>g,
+    svg>rect,
     svg>circle,
-    svg>path {
-        filter: invert(1) !important;
+    svg>path[d="M6.7,17.9v-3.7l4-1.8c0.4-0.2,0.4-0.7,0-0.9l-4-1.8V6.1L19.8,12L6.7,17.9z M23.7,11.5L5.4,3.3  c-0.1,0-0.1,0-0.2,0C5,3.3,4.7,3.5,4.7,3.8v5.9v4.8v5.9c0,0.3,0.2,0.5,0.5,0.5c0.1,0,0.1,0,0.2,0l18.3-8.2  C24.1,12.3,24.1,11.7,23.7,11.5z"],
+    svg>path[d*="m"] {
+        filter: invert(0) !important;
+        color: var(--Mygreen1) !important;
     }
 
     .T-I.T-I-KE.L3.aDV::before {
