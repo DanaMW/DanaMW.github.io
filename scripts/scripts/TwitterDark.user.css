@@ -636,6 +636,16 @@ domain("twimg.com") {
         background-color: var(--Myred1) !important;
     }
 
+    .r-1cvl2hr,
+    .r-l5o3uw {
+
+        background-color: var(--MyX1) !important;
+    }
+
+    .r-1teesnx {
+        box-shadow: 0 0 0 2px rgb(255, 100, 100);
+    }
+
     .tooltip {
         background-color: var(--MyX1) !important;
         opacity: 0.4;
