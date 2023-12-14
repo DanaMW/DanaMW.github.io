@@ -2,50 +2,66 @@
 @name         PowerShell Gallery Dark
 @namespace    http://danamw.github.io/scripts/scripts/PowerShellGalleryDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PowerShellGalleryDark.user.css
-@version      0.0.8
+@version      0.0.9
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("powershellgallery.com") {
+
     html,
     body {
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     span,
     a,
     h2,
     h3 {
         color: var(--MyW) !important;
     }
+
     a:hover {
         color: var(--Myred1) !important;
     }
+
     p {
         color: var(--Mytext) !important;
     }
+
+    nav.navbar.navbar-inverse {
+        border-color: var(--Myred1) !important;
+    }
+
     th {
         color: var(--Myred1) !important;
     }
+
+    [aria-label="Package search bar"],
     .panel-body,
     nav,
     ul.dropdown-menu,
@@ -53,6 +69,7 @@
         background-color: transparent !important;
         background-image: none !important;
     }
+
     #cancel-change-notifications,
     li[role="presentation"] a,
     button {
@@ -70,6 +87,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     #cancel-change-notifications:hover,
     li[role="presentation"] a:hover,
     button:hover {
@@ -89,6 +107,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     #cancel-change-notifications:active,
     li[role="presentation"] a:active,
     button:active {
@@ -108,10 +127,12 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .search-container,
     .jumbotron {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     .panel-body,
     #profile-picture-container,
     ul.dropdown-menu,
@@ -119,10 +140,13 @@
     .shadowbox {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
-    nav {
+
+    nav.navbar.navbar-inverse>div {
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
+    select,
     #install-item-text,
     input {
         background-color: var(--Mygray3) !important;
@@ -131,12 +155,15 @@
         color: var(--MyW) !important;
         border: 2px solid var(--Myred2) !important;
     }
+
     footer.footer {
         display: none !important;
     }
+
     .tag {
         background-color: var(--MyX1) !important;
     }
+
     a[href="#manual-download"],
     a[href="#azure-automation"],
     a[href="#install-item"] {
