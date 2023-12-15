@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.70
+@version      0.0.71
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -13,7 +13,7 @@
 
 @-moz-document domain("youtube.com"),
 domain("studio.youtube.com"),
-url-prefix("https://tv.youtube.com/") {
+domain("tv.youtube.com") {
 
     :not(.style-scope)[hidden] {
         display: initial !important;
@@ -459,6 +459,7 @@ url-prefix("https://tv.youtube.com/") {
     #item-title,
     yt-formatted-string {
         color: var(--MyW) !important;
+        background: transparent !important;
     }
 
     .header-container,
@@ -614,6 +615,8 @@ url-prefix("https://tv.youtube.com/") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    .selectable.style-scope.ytu-nav-bar.paper-selection-overlay-above:hover,
+    .selectable.style-scope.ytu-nav-bar.selected.paper-selection-overlay-above,
     ytu-intent-chip a:hover,
     #simplebox-placeholder:hover,
     [class="ytp-time-display notranslate style-scope ytd-player"]:hover,
@@ -779,10 +782,11 @@ url-prefix("https://tv.youtube.com/") {
         color: var(--MyW) !important;
     }
 
+    svg g,
     div[class*="table-cell"],
     div[id*="metrics-table"],
     svg {
-        color: var(--MyW) !important;
+        color: var(--Mygreen1) !important;
     }
 
     .yt-help-icon.yt-sprite {
@@ -942,6 +946,14 @@ url-prefix("https://tv.youtube.com/") {
         background: url("https://danamw.github.io/img/ytbg.jpg") repeat !important;
     }
 
+    .style-scope.ytu-player-controller,
+    .yt-simple-endpoint.style-scope.ytu-endpoint,
+    .ypc-video-title-text.style-scope.ytu-player-controller,
+    .help-panel-search-result {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+
     .header,
     #header-section {
         background-color: var(--Myred3) !important;
@@ -962,6 +974,7 @@ url-prefix("https://tv.youtube.com/") {
         background-image: linear-gradient(to top, var(--Mygray3), var(--Mygray2), var(--Mygray1) 100%, transparent) !important;
     }
 
+    .help-panel-search-result,
     div[class="layout horizontal style-scope yta-card-container"],
     .button-area,
     .footer.style-scope.ytcp-dialog,
@@ -1064,7 +1077,12 @@ url-prefix("https://tv.youtube.com/") {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
-    .yt-simple-endpoint.style-scope.ytu-endpoint,
+    #id-player-nav-bar,
+    #id-nav-bar-slot,
+    .yt-simple-endpoint.style-scope.ytu-endpoint {
+        background-color: var(--MyX4) !important;
+    }
+
     .container.style-scope.ytu-epg-row,
     ytd-destination-button-renderer:hover {
         background-color: var(--Myred3) !important;
