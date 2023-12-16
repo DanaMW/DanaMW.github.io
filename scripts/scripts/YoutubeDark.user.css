@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.71
+@version      0.0.72
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -1096,11 +1096,11 @@ domain("tv.youtube.com") {
     }
 
     #ryd-bar-container {
-        background-color: var(--Mygreen3) !important;
+        background-color: var(--Myred3) !important;
     }
 
     #ryd-bar {
-        background-color: var(--Mygreen1) !important;
+        background-color: var(--Myred1) !important;
     }
 
     canvas {
