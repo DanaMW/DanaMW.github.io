@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        UserContent File
 @namespace   https://danamw.github.io/scripts/firefox/userContent.user.css
-@version     0.0.52
+@version     0.0.53
 @description Mozilla UserContent File
 @author      Dana L. Meli-Wischman
 @homepageURL https://danamw.github.io
@@ -484,8 +484,9 @@ search-textbox:hover {
     background-color: var(--Myred1) !important;
 }
 
-[role="menu"],
-.radiorow,
+/*[role="menu"],*/
+
+.addon,
 .buttonrow {
     background-color: var(--Mygray3) !important;
 }
