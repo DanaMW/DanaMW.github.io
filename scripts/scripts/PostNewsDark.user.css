@@ -2,7 +2,7 @@
 @name         Post News Dark
 @namespace    http://danamw.github.io/scripts/scripts/PostNewsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PostNewsDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -101,6 +101,10 @@ url-prefix("https://js.stripe.com/") {
         background-color: var(--MyB) !important;
     }
 
+    .contain-content {
+        background-color: transparent !important;
+    }
+
     [class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"],
     [role="button"],
     a[aria-label="Compose a post"]>div,
@@ -165,14 +169,16 @@ url-prefix("https://js.stripe.com/") {
         background-color: transparent !important;
     }
 
+    header,
     section[class="contain-content w-full"] {
         background-image: none !important;
         background-color: transparent !important;
     }
 
-    header,
+    #header,
     section[class="contain-content w-full"] {
         background-color: var(--Myred3) !important;
+        opacity: 1.0 !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
 
