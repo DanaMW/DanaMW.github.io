@@ -2,14 +2,15 @@
 @name         PeacockTV Dark
 @namespace    http://danamw.github.io/scripts/scripts/PeacockTVDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/PeacockTVDark.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("peacocktv.com") {
-     html,
+
+    html,
     body {
         background-color: var(--MyB) !important;
     }
@@ -165,5 +166,14 @@
         padding: 8px;
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
+    }
+
+
+    .rc-slider-handle {
+        background-color: var(--Myred1) !important;
+    }
+
+    .rc-slider-track {
+        background-color: var(--Mygreen1) !important;
     }
 }
