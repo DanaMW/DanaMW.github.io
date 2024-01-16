@@ -2,38 +2,46 @@
 @name         Discord Dark
 @namespace    httpS://danamw.github.io/scripts/scripts/DiscordDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/DiscordDark.user.css
-@version      0.0.99
+@version      0.1.00
 @description  Dark Discord Style
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document domain("discord.com") {
+
     body,
     head,
     html {
         background-color: var(--MyB) !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     pre {
         border-radius: 5px !important;
     }
+
     code.hljs {
         overflow-x: visible !important;
         overflow-y: visible !important;
@@ -41,25 +49,33 @@
         border-radius: 5px !important;
         border: 1px solid var(--MyW) !important;
     }
+
     div[class*="divider"] {
         background-color: var(--Myred1) !important;
     }
+
     span[class^="username"][role="button"]:hover {
         color: var(--MyW) !important;
     }
+
     div[class^="nameTag"] strong.user-name {
         font-weight: bold !important;
     }
+
     [class^="spinner"] * {
         animation: none !important;
     }
+
     div[class^="listItem"]>div:nth-child(1)>span:nth-child(1),
     div[class^="containerDefault"] div[class^="unread"] {
         background-color: var(--Mygreen1) !important;
     }
-    time[class^="edited"] {
+
+    time[id*="message-timestamp"],
+    time>i {
         color: var(--Mygreen1) !important;
     }
+
     button[aria-label="Send a gift"],
     textarea[disabled],
     div[class*="wrapper"][class*="newBadge"],
@@ -70,23 +86,28 @@
     link[rel="chrome-webstore-item"] {
         display: none !important
     }
+
     div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyCenter"][class*="alignStretch"][class*="noWrap"][class*="guildInfo"],
     div[class*="class=content"] {
         background-color: transparent !important;
     }
+
     #app-mount div[class*="spacer"]:nth-child(2) {
         background-color: var(--MyB) !important;
     }
+
     div[class*="title"][class*="base"][class*="size16"],
     section[class*="title"][class*="container"] {
         background-color: var(--Myred3) !important;
         background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     div[class^="chat"] div[class*="topic"][class*="expandable"] {
         text-align: center !important;
         font-weight: bolder !important;
         font-size: 1.25em !important;
     }
+
     span[class^="botTag"] {
         padding-right: 5px !important;
         padding-left: 5px !important;
@@ -95,76 +116,94 @@
         border: 1px solid var(--MyW) !important;
         background-color: var(--MyB) !important;
     }
+
     div[class*="switchEnabled"][class*="switch"][class*="valueUnchecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"],
     div[class*="flexChild"][class*="switchEnabled"][class*="switch"][class*="valueUnchecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"] {
         background-color: var(--Myred3) !important;
     }
+
     div[class*="switchEnabled"][class*="switch"][class*="valueChecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"],
     div[class*="flexChild"][class*="switchEnabled"][class*="switch"][class*="valueChecked"][class*="value"][class*="sizeDefault"][class*="size"][class*="themeDefault"] {
         background-color: var(--Myred2) !important;
     }
+
     div[class*="valueUnchecked"][class*="size"]::after {
         background-color: var(--Mygreen3) !important;
     }
+
     div[class*="valueChecked"][class*="size"]::after {
         background-color: var(--Mygreen1) !important;
     }
+
     #app-mount * div[class*="unread-1Dp-OI"] {
         background-color: var(--Mygreen1) !important;
     }
+
     div[class*="nameUnreadText"][class*="name"][class*="overflowEllipsis"] {
         color: var(--Mygreen1) !important;
     }
+
     div[class*="messages"],
     div[class*="scroller"][class*="systemPad"][class*="messages"],
     div[class^="chatContent"],
     div[class*="messagesWrapper"] {
         background: var(--MyB) !important;
     }
+
     span[class*="dividerContent"] {
         color: var(--MyW) !important;
         font-weight: normal;
     }
+
     hr[class*="dividerEnabled"][class*="divider"] {
         border: 1px solid var(--Myred3) !important;
         opacity: 1;
     }
+
     span[class*="dividerContent"]::before,
     span[class*="dividerContent"]::after {
         border: 1px solid var(--Myred1) !important;
         opacity: 1;
     }
+
     div[class*="category"],
     div[class*="searchBar"][class*="searchBarLight"][class*="searchBar"] {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     div[modal] {
         border: 1px solid var(--MyW) !important;
     }
+
     div[class*="scroller"][class*="systemPad"][class*="members"],
     div[class^="emojiPicker"],
     div.scrollerWrapPolyfill-DBQCMm:nth-child(3) {
         background-color: var(--Mygray3) !important;
     }
+
     #app-mount div[class^="chat"] form {
         margin: 0px !important;
         padding: 0px !important;
     }
+
     #app-mount * div[class^="chat"],
     #app-mount .theme-dark div[class^="chat"] {
         border-radius: 5px;
         border: 1px solid var(--Myborder) !important;
     }
+
     header {
         background-color: var(--Myred3) !important;
         background: radial-gradient(ellipse farthest-corner at center, hsl(0, 90%, 50%) 20%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 30%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     header>span[class*="name"] {
         text-align: center !important;
         color: var(--MyW) !important;
         font-weight: bolder !important;
     }
+
     #app-mount * .container-1>div:nth-child(1)>div:nth-child(1),
     #app-mount * .container-2>div:nth-child(1)>div:nth-child(1),
     #app-mount * .container-3>div:nth-child(1)>div:nth-child(1),
@@ -173,13 +212,16 @@
         background-color: var(--Myred2) !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     div[class^="guild"][class*="selected"]:hover {
         background-color: var(--Myred1) !important;
     }
+
     a[class^="guild"][class*="guildsAdd"][class*="guildsDiscover"],
     svg[xmlns] {
         border-radius: 50% !important;
     }
+
     div[class*="search"] div[class*="searchBar"][class*="searchBar"] {
         opacity: 0 !important;
         color: var(--MyW) !important;
@@ -187,23 +229,29 @@
         border-color: transparent !important;
         background-color: transparent !important;
     }
+
     div[class*="search"].popout-open div[class*="searchBar"][class*="searchBar"] {
         opacity: 1 !important;
     }
+
     div[data-contents="true"] {
         border: 1px solid var(--Myborder) !important;
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="members"] {
         border-left: 1px solid var(--MyW) !important;
     }
+
     div[class*="description"][class*="formText"][class*="marginBottom20"][class*="modeDefault"][class*="primary"] {
         color: var(--MyW) !important;
     }
+
     a[class*="anchor-3Z"] {
         color: var(--MyB) !important;
     }
+
     time[class^="timestamp"] {
         color: var(--MyW) !important;
         background-color: var(--MyX1) !important;
@@ -212,38 +260,47 @@
         padding: 3px !important;
         margin-left: 15px !important;
     }
+
     time[id*="message-timestamp"] {
         color: var(--MyW) !important;
         font-weight: bold;
     }
+
     div[class*="metadata"] {
         color: var(--MyW) !important;
     }
+
     .friends-action.friends-action-cancel,
     .friends-action.friends-action-voice-call {
         background-color: transparent !important;
         color: var(--MyW) !important;
     }
+
     .friends-action.friends-action-cancel:hover,
     .friends-action.friends-action-voice-call:hover {
         background-color: var(--Myred1) !important;
         color: var(--MyW) !important;
     }
+
     div[class*="memberOnline"]>div:hover,
     div[class*="memberOffline"]>div:hover {
         color: var(--MyB) !important;
     }
+
     div[class^="flex"][class*="flex"][class*="vertical"],
     div[class^="channels"][class*="vertical"] {
         background-color: var(--Mygray3) !important;
     }
+
     div[class*="channel"] {
         background-color: transparent !important;
         background-image: none !important;
     }
+
     div[class*="iconWrapper"] svg[class*="icon"] {
         color: var(--MyW) !important;
     }
+
     svg[class*="icon"][role="button"],
     div[class*="children"] h3[class*="title"][class*="title"][class*="base"][class*="size16"][role="button"],
     svg[class*="icon"],
@@ -259,6 +316,7 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
+
     svg[class*="icon"][role="button"]:hover,
     div[class*="children"] h3[class*="title"][class*="title"][class*="base"][class*="size16"][role="button"]:hover,
     svg[class*="icon"]:hover,
@@ -275,82 +333,101 @@
         transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
     }
+
     h3[role="button"] {
         padding-top: 3px !important;
         padding-bottom: 4px !important;
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
+
     span[class*="username"] {
         background-color: transparent !important;
         color: var(--MyW) !important;
         text-shadow: 0px 0px var(--MyW) !important;
     }
+
     .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="scrollerWrap"] {
         border: none !important;
         width: 70px !important;
         max-width: 70px !important;
     }
+
     .wrapper-1Rf91z div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="scrollerWrap"] div[class*="scroller"][class*="systemPad"][class*="scroller"] {
         border: 1px solid var(--Mytext) !important;
         background-color: var(--Myred3) !important;
         width: 70px !important;
         max-width: 70px !important;
     }
+
     div[class*="scroller"][class*="firefoxFixScrollFlex"][class*="systemPad"][class*="scroller"] {
         border-right: 1px solid var(--MyW) !important;
     }
+
     #app-mount * div[class^="chat"] .message-group {
         border-color: var(--Myborder) !important;
     }
+
     #app-mount .message-group h2 .timestamp {
         color: var(--Myblue1) !important;
     }
+
     #app-mount .message-group .mentioned div[class*="messages"] {
         background: transparent;
         padding-left: 10px;
     }
+
     #app-mount .message-group .mentioned .message-text .markup {
         color: var(--MyW) !important;
     }
+
     #app-mount .message-group .mentioned .message-text:after {
         border-left: 4px solid var(--Myborder) !important;
         background: transparent;
         left: 0;
     }
+
     #app-mount .message-group div[class*="markup"] {
         color: var(--MyW) !important;
     }
+
     #app-mount .account {
         background-color: var(--MyX1) !important;
         border-top: 1px solid var(--Myborder) !important;
     }
+
     #app-mount a[class^="anchor"] {
         background-color: transparent !important;
         color: var(--Mygreen2) !important;
         text-shadow: 1px -1px 0 var(--MyW) !important;
     }
+
     #app-mount a[class^="anchor"]:hover {
         background-color: transparent !important;
         color: var(--Mygreen1) !important;
         text-shadow: 1px -1px 0 var(--Mygreen1) !important;
         text-decoration: none !important;
     }
+
     div[class*="membersWrap"][class*="hiddenMembers"] {
         background-color: var(--Mygray3) !important;
         border-left: 1px solid var(--MyW) !important;
     }
+
     div[class*="scroller"][class*="systemPad"][class*="scroller"] {
         border-right: 1px solid var(--MyW) !important;
     }
+
     div[class^="emojiPicker"],
     div.scrollerWrapPolyfill-DBQCMm:nth-child(3) {
         background-color: var(--Mygray3) !important;
     }
+
     div[class*="inner"][class*="flex"][class*="innerNoAutocomplete"] {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     form[class^="form"],
     div[class*="channelTextArea"][class*="channelTextArea"],
     #channel-text-area-wrapper {
@@ -358,6 +435,7 @@
         padding: 0px !important;
         color: var(--MyW) !important;
     }
+
     div[class*="inner"],
     div[class*="channelTextArea"][class*="channelTextArea"],
     div[class*="textArea"][class*="textAreaSlate"],
@@ -366,138 +444,171 @@
         color: var(--MyW) !important;
         background-color: #131313 !important;
     }
+
     div[class*="inner"][class*="flex"][class*="innerNoAutocomplete"] {
         background-color: #202020 !important;
         color: var(--MyW) !important;
         border: 1px solid var(--Myred1) !important;
         width: calc(100% - 40px)px !important;
     }
+
     button[class^="emojiButton"],
     button#submit-text,
     textarea {
         margin-right: 10px !important;
     }
+
     #app-mount * div[class*="channelTextArea"] div[class*="upload"],
     #app-mount * .theme-dark div[class*="channelTextArea"] div[class*="upload"] {
         border-right-color: var(--Myred1) !important;
     }
+
     button[class^="guild"][class*="guilds-add"] {
         border-radius: 50% !important;
     }
+
     #app-mount * div[class^="buttonContainer"]:hover,
     #app-mount * #voice-connection div[class^="buttonContainer"]:hover {
         border: 1px solid var(--Myborder) !important;
     }
+
     #app-mount * div[class^="buttonContainer"][class*="button"]:hover,
     #app-mount * div[class^="buttonContainer"][class*="btn-Reaction"]:hover {
         background-color: var(--Myred2) !important;
         color: var(--Myborder) !important;
     }
+
     #app-mount * div[class^="spinner"],
     #app-mount * div[class^="typing"] {
         background-color: var(--Myred2) !important;
     }
+
     div[class*="webhookRow"][class*="margin-bottom"][class*="cardPrimaryEditable"][class*="card"] {
         border-radius: 50px;
         border: 1px solid var(--MyB) !important;
     }
+
     div[class*="separator"][class*="marginTop8"][class*="marginBottom8"] {
         background-color: var(--Myblue1) !important;
         height: 5px !important;
         border: 1px solid var(--MyB) !important;
     }
+
     #app-mount * div[class*="radioGroup"] {
         border: 1px solid var(--Myborder) !important;
         margin-top: -2px !important;
         margin-bottom: -2px !important;
     }
+
     div[class*="sidebar"] {
         border: 2px solid var(--Myborder) !important;
         background-color: var(--Mygray2) !important;
     }
+
     div[class*="item"][class*="marginBottom"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="cardPrimaryEditable"][class*="card"] {
         border-radius: 5px !important;
         text-align: center !important;
     }
+
     #app-mount * h4[class*="title"] {
         text-align: center !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
     }
+
     div[class*="inputWrapper"][class*="vertical"][class*="flex"][class*="directionColumn"] {
         border: 1px solid var(--Myblue2) !important;
     }
+
     .actions div.action.join,
     .actions div.action.create {
         background-color: var(--MyX1) !important;
     }
+
     li>div[class*="mentioned"] {
         background-color: var(--MyX6) !important;
     }
+
     li>div[class*="mentioned"]:hover {
         background-color: var(--Myyellow3) !important;
     }
+
     li>div[class*="mentioned"]::before {
         background-color: var(--Myyellow1) !important;
         width: 4px !important;
     }
+
     .form-inner,
     .create-guild-container.deprecated {
         background-color: var(--Myblue2) !important;
         border-radius: 5px !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     #app-mount * div[class*="formNotice"],
     #app-mount * div[class*="userInfoViewing"] {
         border-radius: 5px !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     #app-mount * div[class*="authedApp"] {
         background-color: var(--Mygreen3) !important;
         border-radius: 5px !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     div[class^="guildinner"] {
         -moz-user-drag: element !important;
         -webkit-user-drag: element !important;
         transform: scale(0.75, 0.75);
     }
+
     div[class*="avatar"][class*="small"] {
         border: 1px solid var(--Myborder) !important;
     }
+
     div[class*="avatar"] {
         border: 1px solid var(--Myborder) !important;
         border-radius: 50%;
     }
+
     div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"][class*="root"] {
         border-radius: 5px !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     #app-mount * div[class*="modal"] {
         text-align: center !important;
     }
+
     #app-mount * .comment {
         text-align: justify !important;
     }
+
     #app-mount * div[class*="message"] div[class*="embedFields"],
     #app-mount * div[class*="contentSelectedText"] [class*="iconSpacing"] {
         background: transparent !important
     }
+
     #app-mount * input[class*="quickMessage"] {
         border-radius: 5px !important;
         border: 1px solid var(--Myblue1) !important;
     }
+
     #app-mount * div[class*="userPopout"] {
         border-radius: 5px !important;
         border: 1px solid var(--MyW) !important;
     }
+
     #app-mount * div[class^="channels"].btn-friends a {
         background: none !important;
         background-color: var(--Myblue3) !important;
         border-radius: 5px !important;
         border: 1px solid var(--MyW) !important;
     }
+
     .tab-bar-item.tab-bar-item-primary,
     #app-mount * .channel.btn-friends.selected a {
         background: none !important;
@@ -505,68 +616,86 @@
         border-radius: 5px !important;
         border: 1px solid var(--MyW) !important;
     }
+
     .tab-bar-item.selected {
         background-color: var(--Myred1) !important;
         color: var(--MyW) !important;
     }
+
     div[class*="scroller"]>span:nth-child(1)>header:nth-child(2) {
         color: var(--MyW) !important;
         text-align: center;
     }
+
     #app-mount * #friends {
         position: relative;
         margin-bottom: 3px !important;
     }
+
     #app-mount * div[class^="chat"] div[class*="wrapperAudio"] {
         background-color: var(--Mygray2) !important;
     }
+
     #app-mount * div[class^="chat"] div[class*="audioControls"] {
         background-color: var(--Mygray3) !important;
     }
+
     #app-mount * div[class^="chat"] .accessory svg[class*="metadataIcon"] g {
         filter: invert(1)
     }
+
     div[class*="titleText"] {
         border: 2px outset var(--MyW) !important;
     }
+
     div[class*="messagesPopoutWrap"] {
         border-radius: 5px !important;
     }
+
     #app-mount * span[class*="botTagRegular"][class*="botTag"] {
         background-color: var(--Myblue1) !important;
     }
+
     #app-mount * [class^="anchor"],
     #app-mount * .markup {
         color: var(--MyW) !important;
     }
+
     .search div[data-contents="true"] {
         background: transparent !important;
         border: 0 !important;
     }
+
     .search.focused div[data-contents="true"] {
         background: var(--Mygray3) !important;
         border: 1px solid var(--MyW) !important;
     }
+
     span[class^="bubble"] {
         color: var(--MyW) !important;
         background-color: var(--Myred1) !important;
     }
+
     div[class^="grabber"] {
         border-color: var(--MyW) !important;
     }
+
     div[class^="grabber"]:active {
         background-color: var(--Myred1) !important;
     }
+
     div[class*="marginTop40"] div[class*="bar"],
     div[class*="pttTools"] * div[class*="bar"],
     .volume * div[class*="bar"] {
         background-color: var(--Myred3);
     }
+
     div[class*="marginTop40"] div[class*="bar"]>div,
     div[class*="pttTools"] * div[class*="bar"]>div,
     .volume * div[class*="bar"]>div {
         background-color: var(--Myred1) !important;
     }
+
     div[class*="menu"],
     div[class*="buttons"][class*="container"],
     div[class*="wrapper"],
@@ -580,14 +709,17 @@
         background-image: none !important;
         background-color: transparent !important;
     }
+
     div[class*="buttons"][class*="container"],
     div[class*="wrapper"],
     div[aria-label="More"][role=button] {
         fill: none !important;
     }
+
     div[class*="blobContainer"] {
         border-radius: 50% !important;
     }
+
     div[class*="iconVisibility"][class*="wrapper"][class*="modeSelected"],
     li>div>[class*="iconVisibility"][class*="wrapper"],
     div[role="listitem"]:not([class*="clickable"]):not([class*="message"]),
@@ -617,6 +749,7 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     div[class*="iconVisibility"][class*="wrapper"][class*="modeSelected"]:hover,
     li>div>[class*="iconVisibility"][class*="wrapper"]:hover,
     div[role="listitem"]:hover:not([class*="clickable"]):not([class*="message"]),
@@ -667,6 +800,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     div[role="listitem"]:active:not([class*="clickable"]):not([class*="message"]),
     div[aria-label="More"][role=button]:active,
     div[class*="expandedFolderIconWrapper"]:active,
@@ -701,6 +835,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     div[class*="footer"],
     div[class*="menu"],
     div[class*="resultsGroup"],
@@ -710,10 +845,12 @@
         background-color: var(--Mygray2) !important;
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     span[class^="content"] {
         background-color: var(--MyX1) !important;
         border: 1px solid var(--MyW) !important;
     }
+
     /*
     [class*="header"]:not(h2),
     */
@@ -739,6 +876,7 @@
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     div[class*="accountList"][class*="marginBottom20"][class*="cardPrimary"][class*="card"],
     #app-mount * div[class*="formNotice"],
     #app-mount * div[class*="userInfoViewing"],
@@ -756,14 +894,17 @@
         border: 2px ridge var(--MyW) !important;
         box-shadow: 0 0 2px var(--Myblue1) !important;
     }
+
     code.inline,
     form div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
         background: transparent !important;
     }
+
     div[class*="preview"][class*="cardPrimaryOutline"][class*="card"] {
         background-color: var(--MyB) !important;
         border: 1px solid var(--Myborder) !important;
     }
+
     h2[class*="membersGroup"][class*="container"] {
         background-color: var(--MyX1) !important;
         font-weight: bolder !important;
@@ -772,64 +913,78 @@
         text-shadow: 1px 1px 0 var(--MyW) !important;
         margin-left: 10px !important;
     }
+
     form,
     div[class*="flex"][class*="flex"][class*="vertical"][class*="flex"][class*="directionColumn"][class*="justifyStart"][class*="alignStretch"][class*="noWrap"] {
         background-color: transparent !important;
         box-sizing: border-box !important;
     }
+
     div[class*="grid-"] {
         border-bottom: 1px solid var(--MyW) !important;
         border-right: 1px solid var(--MyW) !important;
         border-top: 1px solid var(--MyW) !important;
         border-radius: 0px 5px 5px 0px !important;
     }
+
     div[class="menu"],
     div[class*="embedWrapper"] {
         border-radius: 0px 5px 5px 0px !important;
     }
+
     div[class*="result"] {
         background-color: transparent !important;
     }
+
     input[class*="addFriendInput"] {
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     div[class*="scrollerWrapPolyfill"][class*="scrollerWrap"][class*="scrollerThemed"][class*="scrollerFade"] {
         border-left: 1px solid var(--MyW) !important;
         border-right: 1px solid var(--MyW) !important;
     }
+
     div[class*="mediaBarWrapper"][class*="fakeEdges"],
     div[class*="buffer"][class*="fakeEdges"] {
         background-color: var(--Myred3) !important;
         color: var(--Myred3) !important;
     }
+
     div[class*="mediaBarPreview"][class*="fakeEdges"] {
         background-color: var(--Mygreen1) !important;
     }
+
     div[class*="mediaBarProgress"][class*="fakeEdges"] {
         background-color: var(--Myred1) !important;
     }
+
     div[class*="search"][class*="open"] {
         border: none !important;
         background-color: transparent !important;
     }
+
     div[class*="search"][class*="open"][class*="focused"] {
         border: 1px solid var(--Myred1) !important;
         border-radius: 25px !important;
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     .DraftEditor-root,
     div[role="textbox"],
     span[data-offset-key="algb1-0-0"] span[data-text="true"] {
         color: var(--MyW) !important;
     }
+
     div[class*="listItem"]>div[class*="guildSeparator"] {
         color: var(--Myred1) !important;
         background-color: var(--Myred1) !important;
     }
+
     div[role="listitem"][class*="clickable"]:not([class*="member"]):not([class*="message"]),
     nav[aria-label="Servers sidebar"],
     nav[class*="wrapper"][class*="guilds"],
@@ -837,42 +992,53 @@
         background-color: var(--Myred3) !important;
         border-right: 1px solid var(--MyW) !important;
     }
+
     nav[class*="wrapper"][class*="guilds"] {
         border: 1px solid var(--MyW) !important;
     }
+
     div[class*="pill"] {
         color: var(--Mygreen1) !important;
     }
+
     div[class*="scroller"][class*="none"][class*="scrollerBase"] {
         background-color: var(--Myred3) !important;
         border: 1px solid var(--MyW) !important;
     }
+
     div[class*="fieldList"],
     div[class*="sidebarRegionScroller"] {
         background-color: var(--MyB) !important;
     }
+
     div[class*="contentRegionScroller"] {
         background-color: var(--Mygray3) !important;
     }
+
     svg[class*="slider"] rect {
         background-color: var(--Myred1) !important;
     }
+
     div[class*="flex"][class*="flex"][class*="horizontal"][class*="horizontal"][class*="flex"][class*="directionRow"][class*="justifyStart"][class*="alignCenter"][class*="noWrap"][class*="header"] {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     svg[class*="icon"] {
         border: none !important;
     }
+
     div[class^="members"] {
         border-left: 1px solid var(--MyW) !important;
     }
+
     textarea {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
         border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
+
     input {
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
@@ -880,6 +1046,7 @@
         border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
+
     .tooltip {
         background-color: var(--MyX1) !important;
         opacity: 0.4;
@@ -888,6 +1055,7 @@
         border-radius: 2px;
         border: 1px solid var(--MyW) !important;
     }
+
     /*
     div[class*="bar"] {
         background: var(--Myred3) !important;
@@ -897,10 +1065,15 @@
         background-color: var(--Myred1) !important;
         color: var(--Myred1) !important;
     }
+
     [class*="groupStart"] {
         border-top: 1px solid var(--Myred2) !important;
     }
-    div[role="article"] {
-        border: none !important;
+
+    div[role="article"] [class*="grid"] {
+        border-right: 1px solid var(--MyW) !important;
+        border-top: 1px solid var(--MyW) !important;
+        border-bottom: 1px solid var(--MyW) !important;
+        border-left: none !important;
     }
 }
