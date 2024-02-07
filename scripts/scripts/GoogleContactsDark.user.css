@@ -2,7 +2,7 @@
 @name         Google Contacts Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleContactsDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleContactsDark.user.css
-@version      0.0.44
+@version      0.0.45
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -11,15 +11,13 @@
 @-moz-document domain("contacts.google.com"),
 url-prefix("https://maps.googleapis.com") {
 
-    .QkOsze,
+    html,
     body {
-        background-color: var(--Myback) !important;
+        background-color: var(--MyB) !important;
     }
 
-    .vRMGwf.oJeWuf,
-    .CAX6Sd,
-    .z80M1 {
-        color: var(--MyW) !important;
+    .stock {
+        display: none !important;
     }
 
     * {
@@ -44,416 +42,175 @@ url-prefix("https://maps.googleapis.com") {
         background: var(--Mygreen2) !important;
     }
 
-    .BUKp6c.TMOHoc.w6Uk4b,
-    .ZdTvdf,
-    .HQw1re,
-    .as9eHe,
-    .gb_A.gb_z.gb_U.gb_7b.gb_B.gb_H,
-    .gb_C.gb_v,
-    .gb_C.gb_u,
-    .JAPqpe.K0NPx,
-    .ZvpjBb.C8Dkz {
-        background-color: var(--Mygray3) !important;
-    }
-
-    .wuyg4e,
-    .jlpDMe,
-    .gb_r,
-    a.hUL4le[target="_blank"],
+    .Ko4REb,
+    i,
+    p,
     a {
         color: var(--MyW) !important;
+        background-color: transparent !important;
     }
 
     a:hover {
-        color: var(--MyW) !important;
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
     }
 
-    .sSe4od,
-    .DRlHd,
-    div[class*="VfPpkd-WsjYwc"],
-    .JuD4Cc,
-    .u3WVdc.jBmls {
-        background-color: var(--Mygray2) !important;
+    .YvDwpb,
+    .LY2gHf,
+    h1 {
+        color: var(--TwitterBlue) !important;
     }
 
-    .gb_m,
-    .as7S4c,
-    .gb_6d.gb_Ce.gb_ee {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        background-color: transparent !important;
-        box-shadow: none !important;
-    }
-
-    svg>path:hover {
-        color: var(--Mygreen1) !important;
-    }
-
-    .uFNHRc {
-        color: var(--MyB) !important;
-    }
-
-    .gb_t,
-    span[role="menuitem"] {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-
-    [role="heading"] {
+    .FX4Q3d,
+    h2 {
         color: var(--TwitterRed) !important;
     }
 
-    .U26fgb.iZrPLc {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        display: initial !important;
+
+    .qfAujf,
+    small {
+        color: var(--TwitterPink) !important;
     }
 
-    .wX4xVc-Bz112c-LgbsSe.Nhvcdd {
+    .ca2xib,
+    .aCwS6b,
+    h3,
+    h4,
+    h5,
+    strong {
         color: var(--MyW) !important;
     }
 
-    .RBHQF-ksKsZd,
-    span[role="row"],
-    .gb_f,
-    a[aria-label="More Google apps"],
-    .MkjOTb.oKubKe,
-    span[role="menuitem"],
-    div[aria-label="Main menu"],
-    div[data-alignbottom="true"],
-    .gb_E.gb_zf,
-    .gb_D.gb_Hf,
-    .gb_c,
-    .jqJLq,
-    button:not([aria-label="Search"]),
-    .VfPpkd-BIzmGd.VfPpkd-BIzmGd-OWXEXe-X9G3K.bgpk6e,
-    .E6Tb7b {
+    [class*="d5NbRd-EScbFb-JIbuQc"],
+    button {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
         color: var(--Mytext) !important;
         background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom,
-                hsl(0, 0%, 0%) 0%,
-                transparent 99%),
-            linear-gradient(180deg,
-                hsla(0, 0%, 66%, 0.5) 48%,
-                rgba(0, 0, 0, 0.4) 49%,
-                rgba(0, 0, 0, 0.8) 100%,
-                hsla(0, 0%, 66%, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-        -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-        transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
-    a[role="button"]:hover,
-    span[role="row"]:hover,
-    .gb_f:hover,
-    a[aria-label="More Google apps"]:hover,
-    .MkjOTb.oKubKe:hover,
-    span[role="menuitem"]:hover,
-    div[aria-label="Main menu"]:hover,
-    div[aria-selected="true"]:not([role="option"]),
-    .jqJLq:hover,
-    button:hover:not([aria-label="Search"]):not([disabled=""]),
-    .jqJLq.ncJ6qe,
-    .VfPpkd-BIzmGd.VfPpkd-BIzmGd-OWXEXe-X9G3K.bgpk6e:hover,
-    .jqJLq:hover,
-    .E6Tb7b:hover {
+    [class*="d5NbRd-EScbFb-JIbuQc"]:hover,
+    button:hover {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
         background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom,
-                var(--Myred1) 0%,
-                transparent 99%),
-            linear-gradient(180deg,
-                hsla(0, 0%, 66%, 0.5) 48%,
-                rgba(0, 0, 0, 0.4) 49%,
-                rgba(0, 0, 0, 0.8) 100%,
-                hsla(0, 0%, 66%, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
         outline: none !important;
-        opacity: 1 !important;
+        opacity: 1.0 !important;
         color: var(--MyW) !important;
-        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
-    span[role="row"]:active,
-    .gb_f:active,
-    a[aria-label="More Google apps"]:active,
-    .MkjOTb.oKubKe:active,
-    span[role="menuitem"]:active,
-    div[aria-label="Main menu"]:active div[aria-selected="true"]:not([role="option"]):active,
-    .jqJLq:active,
-    button:active:not([aria-label="Search"]):not([disabled=""]),
-    .jqJLq.ncJ6qe:active,
-    .VfPpkd-BIzmGd.VfPpkd-BIzmGd-OWXEXe-X9G3K.bgpk6e:active,
-    .jqJLq:active,
-    .E6Tb7b:active {
+    [class*="d5NbRd-EScbFb-JIbuQc"]:active,
+    button:active {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
         border: none !important;
         box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
         background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom,
-                var(--Mygreen1) 0%,
-                transparent 99%),
-            linear-gradient(180deg,
-                rgba(168, 168, 168, 0.5) 48%,
-                hsla(0, 0%, 0%, 0.4) 49%,
-                rgba(0, 0, 0, 0.8) 100%,
-                rgba(168, 168, 168, 0.2)) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
         outline: none !important;
-        opacity: 1 !important;
+        opacity: 1.0 !important;
         color: var(--MyW) !important;
-        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
 
-    button[disabled=""] {
-        opacity: 0.5 !important;
-    }
-
-    .gb_Sd.gb_qe.gb_1d {
-        background-color: none !important;
-    }
-
-    header#gb {
+    .gb_0d {
         background-image: none !important;
-        background: transparent !important;
-    }
-
-    .gb_Sd.gb_qe.gb_1d,
-    header#gb {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom,
-                var(--Myred1) 0%,
-                transparent 99%),
-            linear-gradient(180deg,
-                hsla(0, 0%, 66%, 0.5) 48%,
-                rgba(0, 0, 0, 0.4) 49%,
-                rgba(0, 0, 0, 0.8) 100%,
-                hsla(0, 0%, 66%, 0.2)) !important;
-    }
-
-    .dFPtBe {
         background-color: transparent !important;
-        color: var(--MyW) !important;
     }
 
-    .eLHmEe,
-    .AxOyFc,
-    .F1pOBe {
-        color: var(--MyW) !important;
+    header,
+    .stock_navbar {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
 
-    .jqJLq:hover a,
-    .jqJLq:hover .CAX6Sd {
-        color: var(--MyW) !important;
+    .k831u {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
 
-    .gb_Oc,
-    .e2txse,
-    .W81Qsb {
-        background-color: var(--Mygray2) !important;
+    .FCRmr.Y2gHof,
+    .eVDL2-WsjYwc {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
 
-    .ndJi5d {
-        color: var(--MyW) !important;
-    }
-
-    div[jsname="fwDn5b"],
-    a.L8jIaf {
-        color: var(--MyW) !important;
-    }
-
-    a[class*="AuCDse"]:hover,
-    a.jnnKcb,
-    .eQMted,
-    a.L8jIaf {
-        background-color: var(--MyX1) !important;
-    }
-
-    .RANAid {
-        filter: invert(1);
-    }
-
-    .JvO9cb,
-    .PWsB5e,
-    div[aria-label="Google apps"],
-    .gb_J.gb_A,
-    .gb_J.gb_B,
-    div[role="region"] {
+    textarea {
         background-color: var(--Mygray3) !important;
-    }
-
-    .ONOzI {
-        background-color: var(--Mygray2) !important;
-    }
-
-    span[aria-label="Phone number"],
-    .PDfZbf,
-    .VfPpkd-vQzf8d,
-    .VfPpkd-Q0XOV,
-    .VfPpkd-nBWOSb,
-    form,
-    form.gb_ne.gb_la.gb_rc,
-    .yNVtPc.ZAGvjd.Ny5lGc,
-    form.gb_if.gb_Of {
-        background: transparent !important;
-    }
-
-    #contactName.y4sJgd {
         color: var(--MyW) !important;
-        text-shadow: 1 -1 var(--Myblue3) !important;
-    }
-
-    input[type="text"] {
+        border-radius: 15px !important;
         border: 1px solid var(--Myred1) !important;
     }
 
-    .ncFHed,
-    textarea,
     input {
-        color: var(--MyW) !important;
         background-color: var(--Mygray3) !important;
-    }
-
-    input[aria-label="Search"] {
-        height: 25px !important;
-        margin-top: 8px !important;
-        border: 2px solid var(--Myborder) !important;
+        color: var(--MyW) !important;
         border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
         text-align: center !important;
     }
 
-    div[role="dialog"] {
-        color: var(--Mytext) !important;
-        background-color: var(--Mygray2) !important;
-        border: 2px solid var(--Myborder) !important;
-        border-radius: 15px !important;
-    }
 
-    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  dlP5vf eZjKfd"],
-    .BPX1ed.jrhe5d {
-        background-color: var(--Mygray2) !important;
-    }
-
-    .jrhe5d {
-        background-color: var(--Mygray1) !important;
-    }
-
-    div[role="menubar"] {
-        background-color: var(--Myred3) !important;
-    }
-
-    .OabDMe.cXrdqd.Y2Zypf {
-        background-color: var(--Mygreen1) !important;
-    }
-
-    .tuQOVc {
-        background-color: var(--Myred1) !important;
-    }
-
-    .k831u,
-    div[role="navigation"] {
-        background-color: transparent !important;
-    }
-
-    .FwR7Pc {
-        background-color: var(--Myred2) !important;
-    }
-
-    .l2IUpb:hover,
-    div[jsname="Qa4sye"]:hover,
-    div[jscontroller="kxccwc"] div[class="HgcLF "] {
+    .tooltip {
         background-color: var(--MyX1) !important;
+        opacity: 0.4;
+        color: var(--MyW) !important;
+        padding: 8px;
+        border-radius: 2px;
+        border: 1px solid var(--MyW) !important;
+    }
+
+    .W7Nbnf {
+        background-color: var(--MyX1) !important;
+        opacity: 0.4;
+        color: var(--MyW) !important;
+        padding: 4px;
+        border-radius: 2px;
+        border: 1px solid var(--MyW) !important;
+    }
+
+    .iUZlrc,
+    .ZdTvdf,
+    .HQw1re,
+    [class="zQTmif SSPGKf eejsDc"],
+    .as9eHe {
+        background-color: var(--Mygray1) !important;
     }
 
     [class="aHij0b-WsjYwc j3urvf jVwmLb"],
-    .ulW7rf,
-    [aria-label*="Birthday:"],
-    .b26zWc.kTeh9.nkZfFf:hover,
-    .sdnrlc.g5h8P,
-    .GCNTjc,
-    .fbkutb {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top,
-                rgba(65, 21, 21, 0.8),
-                rgba(97, 22, 22, 0.8),
-                rgba(189, 38, 38, 0.8) 100%,
-                transparent) !important;
+    [class="QkOsze GQymqc NDbU2d eO2Zfd"],
+    .dFPtBe,
+    .fBXTic,
+    [class="QkOsze GQymqc NDbU2d"],
+    .xn36Yc {
+        background-color: var(--Mygray2) !important;
     }
 
-    .qsYKIe,
-    .Pq6Kmc {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top,
-                rgba(0, 0, 0, 0.8),
-                rgba(41, 41, 41, 0.9),
-                rgba(75, 75, 75, 0.9) 100%,
-                transparent) !important;
-    }
-
-    .ca2xib {
-        color: var(--Myyellow1) !important;
-    }
-
-    .Xb9hP,
-    inoput[type="tel"],
-    input[type="text"] {
-        text-align: center !important;
-    }
-
-    [role="button"],
-    svg {
-        filter: invert(0) !important;
-    }
-
-    svg:hover {
-        filter: invert(1) !important;
-    }
-
-    a.AuCDse.kTeh9L,
-    div[class="E6Tb7b iMwYAb"]>span#c392.PDfZbf[role="button"] {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-
-    span#c392.PDfZbf[role="button"] {
-        background: transparent !important;
-    }
-
-    a.AuCDse.kTeh9L:hover {
-        background-color: var(--MyX1) !important;
-    }
-
-    .DOt6Qd {
-        color: var(--TwitterBlue) !important;
-    }
-
-    .CO1lLb {
-        color: var(--Myyellow1) !important;
-    }
-
-    div[class="VfPpkd-WsjYwc VfPpkd-WsjYwc-OWXEXe-INsAgc KC1dQ Usd1Ac AaN0Dd  dlP5vf eZjKfd ItcExd  ctrAd A6HzBf"],
-    .OA0qNb.ncFHed {
-        border: 2px solid var(--MyW) !important;
+    .ANsHh.eejsDc,
+    .FttnIe {
+        background-color: var(--Mygray3) !important;
     }
 }
