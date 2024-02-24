@@ -2,13 +2,16 @@
 @name         Google Translate Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleTranslateDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleTranslateDark.user.css
-@version      0.0.19
+@version      0.0.20
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("translate.google.com") {
+
+    .OPPzxe,
+    .cJ1Ndf,
     c-wiz,
     .WFnNle,
     .frame,
@@ -16,23 +19,29 @@
         background-color: var(--Myback) !important;
         color: var(--MyW) !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     span,
     .PxXj2d,
     .ft-icon-txt,
@@ -44,6 +53,7 @@
     a {
         color: var(--MyW) !important;
     }
+
     .gt-cd-tl,
     q::before,
     q::after,
@@ -51,12 +61,14 @@
     a:hover {
         color: var(--Myred1) !important;
     }
+
     .sugg-fade,
     .ls-left-arrow,
     .ls-right-arrow,
     .swap-wrap {
         display: none !important;
     }
+
     .gb_r,
     .gt-cd-cl,
     .gt-baf-cell,
@@ -68,6 +80,7 @@
         background-color: transparent !important;
         color: var(--MyW) !important;
     }
+
     .gt-baf-hl,
     .gt-baf-cell.gt-baf-word-clickable,
     .gt-baf-word-clickable,
@@ -77,12 +90,14 @@
     .gt-cd-cl {
         background-color: var(--MyX1) !important;
     }
+
     .Llmcnf,
     .gt-baf-back,
     .language_list_item,
     li[role="menuitem"]:hover a {
         color: var(--MyW) !important;
     }
+
     a[aria-label="More Google apps"],
     .gb_d,
     div[role="button"],
@@ -103,9 +118,11 @@
         transition-timing-function: linear !important;
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
+
     .gb_6d.gb_Ae.gb_ee.gb_de {
         border: none !important;
     }
+
     span.MtFg0:hover,
     a[aria-label="More Google apps"]:hover,
     .gb_d:hover,
@@ -133,6 +150,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
+
     a[aria-label="More Google apps"]:active,
     .gb_d:active,
     div[role="button"]:active,
@@ -156,6 +174,7 @@
         transition-timing-function: linear !important;
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
+
     .zpzJBc,
     .KjuTac,
     .Dwvecf,
@@ -163,37 +182,46 @@
     div[role="menu"] {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     .zWtKC,
     .zpzJBc {
         background-color: var(--Myred3) !important;
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     #spelling-correction,
     .gt-score-dot {
         background-color: var(--Myred2) !important;
     }
+
     .starbutton {
         color: var(--Myred1) !important;
     }
+
     .gt-def-synonym-title,
     div[id*="sugg-item"] {
         color: var(--Myred1) !important;
     }
+
     .filled.gt-score-dot {
         background-color: var(--Myred1) !important;
     }
+
     .jfk-button-img,
     svg {
         filter: invert(1);
     }
+
     jfk-button-img:hover {
         filter: invert(0);
     }
+
     .gt-cd,
     .gt-cc-t {
         background-color: var(--Myred3) !important;
         box-shadow: var(--Myred3) !important;
     }
+
     #tl_list-search-box,
     .language-list-search-box,
     .language_list_languages.language_list_tl_list.tw-ll-top,
@@ -202,9 +230,12 @@
         background-color: var(--Myred3) !important;
         color: var(--MyW) !important;
     }
+
     .ls-right-arrow {
         box-shadow: none !important;
     }
+
+    [class="QcsUad sMVRZe wneUed"],
     .sl-wrap,
     .tl-wrap,
     .gt-cc-t,
@@ -217,26 +248,31 @@
         background-color: var(--Mygray3) !important;
         color: var(--MyW) !important;
     }
+
     input[placeholder="Search languages"],
     #tl_list-search-box[placeholder="Search languages"] {
         color: var(--MyW) !important;
     }
+
     .result.tlid-copy-target,
     textarea {
         background-color: var(--Mygray3) !important;
         border: 1px solid var(--MyW) !important;
         color: var(--MyW) !important;
     }
+
     .KkbLmb,
     div[role="region"],
     .gb_H.gb_z,
     .gb_H.gb_y {
         background-color: var(--Mygray3) !important;
     }
+
     .gb_Kc {
         background-image: none !important;
         background-color: transparent !important;
     }
+
     .qSb8Pe.RCaXn.KKjvXb,
     .qSb8Pe:hover,
     .Bcbxbe:hover,
@@ -244,17 +280,21 @@
         background-color: var(--Myred3) !important;
         background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
     }
+
     .ft-icon-oval {
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
         border: 1px solid var(--MyB) !important;
     }
+
     .ft-icon-oval:hover {
         background-color: var(--Myred1) !important;
     }
+
     .TcXXXb {
         color: var(--TwitterBlue) !important;
     }
+
     .FwR7Pc,
     .PG9puc,
     .ordo2:hover,
@@ -262,22 +302,28 @@
         background-color: var(--MyX1) !important;
         color: var(--MyW) !important;
     }
+
     .ordo2.RCaXn.KKjvXb,
     .ySES5:hover {
         background-color: var(--Myred1) !important;
     }
+
     .vSUSRc {
         background: var(--Mygray2) !important;
     }
+
     svg>path {
         filter: invert(1) !important;
     }
+
     i {
         color: var(--Myred1) !important;
     }
+
     .GQpbTd {
         background-color: var(--Mygray2) !important;
     }
+
     .PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb,
     span[class="VfPpkd-AznF2e-wEcVzc VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb"],
     .yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-YVzG2b::before,
