@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.87
+@version      0.0.88
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -185,6 +185,8 @@ domain("twimg.com") {
         width: 235px !important;
     }
 
+    a[data-testid="editProfileButton"],
+    [class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"],
     a[aria-label="Grok"],
     a[class="css-175oi2r r-6koalj r-eqz5dr r-16y2uox r-1habvwh r-oyd9sg r-13qz1uu r-1ny4l3l r-1loqt21"],
     a[aria-label="Premium"],
@@ -235,6 +237,8 @@ domain("twimg.com") {
         box-shadow: 0 1px 4px 1px var(--MyB) !important;
     }
 
+    a[data-testid="editProfileButton"]:hover,
+    [class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:hover,
     a[aria-label="Grok"]:hover,
     a[aria-label="Premium"]:hover,
     a[aria-label="Post"]:hover,
@@ -292,6 +296,8 @@ domain("twimg.com") {
         text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
     }
 
+    a[data-testid="editProfileButton"]:active,
+    [class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:active,
     a[aria-label="Grok"]:active,
     a[aria-label="Premium"]:active,
     a[aria-label="Post"]:active,
