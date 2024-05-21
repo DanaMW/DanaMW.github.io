@@ -2,333 +2,409 @@
 @name         Google Translate Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleTranslateDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleTranslateDark.user.css
-@version      0.0.21
+@version      0.0.22
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("translate.google.com") {
+	.OPPzxe,
+	.cJ1Ndf,
+	c-wiz,
+	.WFnNle,
+	.frame,
+	body {
+		background-color: var(--Myback) !important;
+		color: var(--MyW) !important;
+	}
 
-    .OPPzxe,
-    .cJ1Ndf,
-    c-wiz,
-    .WFnNle,
-    .frame,
-    body {
-        background-color: var(--Myback) !important;
-        color: var(--MyW) !important;
-    }
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
 
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
 
-    ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
 
-    ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
 
-    ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
+	span,
+	.PxXj2d,
+	.ft-icon-txt,
+	.cd-expand-label,
+	.gt-card-ttl-txt,
+	q,
+	.gt-def-row,
+	.tlid-translation,
+	a {
+		color: var(--MyW) !important;
+	}
 
-    span,
-    .PxXj2d,
-    .ft-icon-txt,
-    .cd-expand-label,
-    .gt-card-ttl-txt,
-    q,
-    .gt-def-row,
-    .tlid-translation,
-    a {
-        color: var(--MyW) !important;
-    }
+	.gt-cd-tl,
+	q::before,
+	q::after,
+	.gt-ct-text,
+	a:hover {
+		color: var(--Myred1) !important;
+	}
 
-    .gt-cd-tl,
-    q::before,
-    q::after,
-    .gt-ct-text,
-    a:hover {
-        color: var(--Myred1) !important;
-    }
+	.sugg-fade,
+	.ls-left-arrow,
+	.ls-right-arrow,
+	.swap-wrap {
+		display: none !important;
+	}
 
-    .sugg-fade,
-    .ls-left-arrow,
-    .ls-right-arrow,
-    .swap-wrap {
-        display: none !important;
-    }
+	.gb_r,
+	.gt-cd-cl,
+	.gt-baf-cell,
+	.gb_uc,
+	#gb,
+	li[role="menuitem"]:hover,
+	li[role="menuitem"] {
+		background-image: none !important;
+		background-color: transparent !important;
+		color: var(--MyW) !important;
+	}
 
-    .gb_r,
-    .gt-cd-cl,
-    .gt-baf-cell,
-    .gb_uc,
-    #gb,
-    li[role="menuitem"]:hover,
-    li[role="menuitem"] {
-        background-image: none !important;
-        background-color: transparent !important;
-        color: var(--MyW) !important;
-    }
+	.gt-baf-hl,
+	.gt-baf-cell.gt-baf-word-clickable,
+	.gt-baf-word-clickable,
+	.gt-baf-term-text.gt-baf-word-selected,
+	.gt-baf-word-selected,
+	.trans-target-highlight,
+	.gt-cd-cl {
+		background-color: var(--MyX1) !important;
+	}
 
-    .gt-baf-hl,
-    .gt-baf-cell.gt-baf-word-clickable,
-    .gt-baf-word-clickable,
-    .gt-baf-term-text.gt-baf-word-selected,
-    .gt-baf-word-selected,
-    .trans-target-highlight,
-    .gt-cd-cl {
-        background-color: var(--MyX1) !important;
-    }
+	.Llmcnf,
+	.gt-baf-back,
+	.language_list_item,
+	li[role="menuitem"]:hover a {
+		color: var(--MyW) !important;
+	}
 
-    .Llmcnf,
-    .gt-baf-back,
-    .language_list_item,
-    li[role="menuitem"]:hover a {
-        color: var(--MyW) !important;
-    }
+	a[aria-label="More Google apps"],
+	.gb_d,
+	div[role="button"],
+	.language_list_item_wrapper,
+	li[role="menuitem"],
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
 
-    a[aria-label="More Google apps"],
-    .gb_d,
-    div[role="button"],
-    .language_list_item_wrapper,
-    li[role="menuitem"],
-    button {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
+	.gb_6d.gb_Ae.gb_ee.gb_de {
+		border: none !important;
+	}
 
-    .gb_6d.gb_Ae.gb_ee.gb_de {
-        border: none !important;
-    }
+	[class="qSb8Pe KKjvXb"][role="option"][aria-selected="true"],
+	span.MtFg0:hover,
+	a[aria-label="More Google apps"]:hover,
+	.gb_d:hover,
+	.gb_uc,
+	div[role="button"][aria-pressed="true"],
+	div[role="button"]:hover,
+	#gb,
+	.language_list_item_wrapper:hover,
+	div[class*="item-selected"],
+	li[role="menuitem"]:hover,
+	button:hover {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+	}
 
-    span.MtFg0:hover,
-    a[aria-label="More Google apps"]:hover,
-    .gb_d:hover,
-    .gb_uc,
-    div[role="button"][aria-pressed="true"],
-    div[role="button"]:hover,
-    #gb,
-    .language_list_item_wrapper:hover,
-    div[class*="item-selected"],
-    li[role="menuitem"]:hover,
-    button:hover {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
+	a[aria-label="More Google apps"]:active,
+	.gb_d:active,
+	div[role="button"]:active,
+	.language_list_item_wrapper:active,
+	div[class*="item-selected"]:active,
+	li[role="menuitem"]:active,
+	button:active {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+	}
 
-    a[aria-label="More Google apps"]:active,
-    .gb_d:active,
-    div[role="button"]:active,
-    .language_list_item_wrapper:active,
-    div[class*="item-selected"]:active,
-    li[role="menuitem"]:active,
-    button:active {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
+	.zpzJBc,
+	.KjuTac,
+	.Dwvecf,
+	.gb_rc,
+	div[role="menu"] {
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
 
-    .zpzJBc,
-    .KjuTac,
-    .Dwvecf,
-    .gb_rc,
-    div[role="menu"] {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
+	.zWtKC,
+	.zpzJBc {
+		background-color: var(--Myred3) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
+	}
 
-    .zWtKC,
-    .zpzJBc {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
+	#spelling-correction,
+	.gt-score-dot {
+		background-color: var(--Myred2) !important;
+	}
 
-    #spelling-correction,
-    .gt-score-dot {
-        background-color: var(--Myred2) !important;
-    }
+	.starbutton {
+		color: var(--Myred1) !important;
+	}
 
-    .starbutton {
-        color: var(--Myred1) !important;
-    }
+	.gt-def-synonym-title,
+	div[id*="sugg-item"] {
+		color: var(--Myred1) !important;
+	}
 
-    .gt-def-synonym-title,
-    div[id*="sugg-item"] {
-        color: var(--Myred1) !important;
-    }
+	.filled.gt-score-dot {
+		background-color: var(--Myred1) !important;
+	}
 
-    .filled.gt-score-dot {
-        background-color: var(--Myred1) !important;
-    }
+	.jfk-button-img,
+	svg {
+		filter: invert(1);
+	}
 
-    .jfk-button-img,
-    svg {
-        filter: invert(1);
-    }
+	jfk-button-img:hover {
+		filter: invert(0);
+	}
 
-    jfk-button-img:hover {
-        filter: invert(0);
-    }
+	.gt-cd,
+	.gt-cc-t {
+		background-color: var(--Myred3) !important;
+		box-shadow: var(--Myred3) !important;
+	}
 
-    .gt-cd,
-    .gt-cc-t {
-        background-color: var(--Myred3) !important;
-        box-shadow: var(--Myred3) !important;
-    }
+	#tl_list-search-box,
+	.language-list-search-box,
+	.language_list_languages.language_list_tl_list.tw-ll-top,
+	.language_list_languages.language_list_sl_list.tw-ll-top,
+	div.language-list {
+		background-color: var(--Myred3) !important;
+		color: var(--MyW) !important;
+	}
 
-    #tl_list-search-box,
-    .language-list-search-box,
-    .language_list_languages.language_list_tl_list.tw-ll-top,
-    .language_list_languages.language_list_sl_list.tw-ll-top,
-    div.language-list {
-        background-color: var(--Myred3) !important;
-        color: var(--MyW) !important;
-    }
+	.ls-right-arrow {
+		box-shadow: none !important;
+	}
 
-    .ls-right-arrow {
-        box-shadow: none !important;
-    }
+	[class="QcsUad sMVRZe wneUed"],
+	.sl-wrap,
+	.tl-wrap,
+	.gt-cc-t,
+	.source-wrap,
+	.tlid-results-container.results-container.empty,
+	.tlid-result.result-dict-wrapper,
+	.result.tlid-copy-target,
+	.source-input,
+	input {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+	}
 
-    [class="QcsUad sMVRZe wneUed"],
-    .sl-wrap,
-    .tl-wrap,
-    .gt-cc-t,
-    .source-wrap,
-    .tlid-results-container.results-container.empty,
-    .tlid-result.result-dict-wrapper,
-    .result.tlid-copy-target,
-    .source-input,
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
+	input[placeholder="Search languages"],
+	#tl_list-search-box[placeholder="Search languages"] {
+		color: var(--MyW) !important;
+	}
 
-    input[placeholder="Search languages"],
-    #tl_list-search-box[placeholder="Search languages"] {
-        color: var(--MyW) !important;
-    }
+	div[class="QcsUad sMVRZe hCXDsb wneUed"] {
+		border-color: var(--Myred2) !important;
+	}
 
-    .result.tlid-copy-target,
-    textarea {
-        background-color: var(--Mygray3) !important;
-        border: 1px solid var(--MyW) !important;
-        color: var(--MyW) !important;
-    }
+	[class="QcsUad sMVRZe hCXDsb wneUed"],
+	.result.tlid-copy-target,
+	textarea {
+		background-color: var(--Mygray3) !important;
+		border: 1px solid var(--MyW) !important;
+		color: var(--MyW) !important;
+	}
 
-    .KkbLmb,
-    div[role="region"],
-    .gb_H.gb_z,
-    .gb_H.gb_y {
-        background-color: var(--Mygray3) !important;
-    }
+	.KkbLmb,
+	div[role="region"],
+	.gb_H.gb_z,
+	.gb_H.gb_y {
+		background-color: var(--Mygray3) !important;
+	}
 
-    .gb_Kc {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
+	.gb_Kc {
+		background-image: none !important;
+		background-color: transparent !important;
+	}
 
-    .qSb8Pe.RCaXn.KKjvXb,
-    .qSb8Pe:hover,
-    .Bcbxbe:hover,
-    .gb_Kc {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
+	.qSb8Pe.RCaXn.KKjvXb,
+	.qSb8Pe:hover,
+	.Bcbxbe:hover,
+	.gb_Kc {
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+	}
 
-    .ft-icon-oval {
-        background-color: var(--MyX1) !important;
-        color: var(--MyW) !important;
-        border: 1px solid var(--MyB) !important;
-    }
+	.ft-icon-oval {
+		background-color: var(--MyX1) !important;
+		color: var(--MyW) !important;
+		border: 1px solid var(--MyB) !important;
+	}
 
-    .ft-icon-oval:hover {
-        background-color: var(--Myred1) !important;
-    }
+	.ft-icon-oval:hover {
+		background-color: var(--Myred1) !important;
+	}
 
-    .TcXXXb {
-        color: var(--TwitterBlue) !important;
-    }
+	.pWIpbc,
+	.TcXXXb {
+		color: var(--TwitterBlue) !important;
+	}
 
-    .FwR7Pc,
-    .PG9puc,
-    .ordo2:hover,
-    .ySES5 {
-        background-color: var(--MyX1) !important;
-        color: var(--MyW) !important;
-    }
+	.FwR7Pc,
+	.PG9puc,
+	.ordo2:hover,
+	.ySES5 {
+		background-color: var(--MyX1) !important;
+		color: var(--MyW) !important;
+	}
 
-    .ordo2.RCaXn.KKjvXb,
-    .ySES5:hover {
-        background-color: var(--Myred1) !important;
-    }
+	.ordo2.RCaXn.KKjvXb,
+	.ySES5:hover {
+		background-color: var(--Myred1) !important;
+	}
 
-    .vSUSRc {
-        background: var(--Mygray2) !important;
-    }
+	.vSUSRc {
+		background: var(--Mygray2) !important;
+	}
 
-    svg>path {
-        filter: invert(1) !important;
-    }
+	svg > path {
+		filter: invert(1) !important;
+	}
 
-    i {
-        color: var(--Myred1) !important;
-    }
+	i {
+		color: var(--Myred1) !important;
+	}
 
-    .GQpbTd {
-        background-color: var(--Mygray2) !important;
-    }
+	.GQpbTd {
+		background-color: var(--Mygray2) !important;
+	}
 
-    .PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb,
-    span[class="VfPpkd-AznF2e-wEcVzc VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb"],
-    .yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-YVzG2b::before,
-    .yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-YVzG2b::after {
-        background-color: var(--Mygreen1) !important;
-        border-color: var(--Mygreen1) !important;
-    }
+	.PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb,
+	span[class="VfPpkd-AznF2e-wEcVzc VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb"],
+	.yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-YVzG2b::before,
+	.yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-YVzG2b::after {
+		background-color: var(--Mygreen1) !important;
+		border-color: var(--Mygreen1) !important;
+	}
+
+	.X4DQ0::after,
+	.vLsFwd.lyY31c::after {
+		background: transparent !important;
+	}
+
+	.Jp7KKb {
+		color: var(--MyW) !important;
+	}
+
+	.ThbbSd {
+		background: var(--Myred3) !important;
+		border: 1px solid var(--MyW) !important;
+	}
 }
