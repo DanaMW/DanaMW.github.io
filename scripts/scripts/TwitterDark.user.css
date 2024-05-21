@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.91
+@version      0.0.92
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -201,6 +201,8 @@ domain("twimg.com") {
 	.css-1dbjc4n.r-1awozwy.r-sdzlij.r-18u37iz.r-1777fci.r-dnmrzs.r-1sp51qo.r-o7ynqc.r-6416eg {
 		width: 235px !important;
 	}
+
+	[class*="css-175oi2r r-1awozwy r-18u37iz"],
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"],
 	a[data-testid="editProfileButton"],
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"],
@@ -270,6 +272,8 @@ domain("twimg.com") {
 		transition-timing-function: linear !important;
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
+
+	[class*="css-175oi2r r-1awozwy r-18u37iz"]:hover,
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:hover,
 	a[data-testid="editProfileButton"]:hover,
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:hover,
@@ -349,6 +353,7 @@ domain("twimg.com") {
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
+	[class*="css-175oi2r r-1awozwy r-18u37iz"]:active,
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:active,
 	a[data-testid="editProfileButton"]:active,
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:active,
@@ -423,6 +428,28 @@ domain("twimg.com") {
 		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
 		transition-timing-function: linear !important;
 		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-37j5jr r-n6v787 r-1cwl3u0 r-16dba41 r-1mmae3n r-3pj75a"] {
+		background-color: var(--Mygray1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
+
+	[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"] {
+		background-color: var(--Myred3) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
 	}
 
 	div[class="css-175oi2r r-xoduu5 r-1kihuf0 r-sdzlij r-1p0dtai r-hdaws3 r-s8bhmr r-u8s1d r-13qz1uu"] {
