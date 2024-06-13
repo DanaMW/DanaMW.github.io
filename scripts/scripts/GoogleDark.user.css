@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.85
+@version      0.2.86
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -114,6 +114,10 @@ url-prefix("https://bard.google.com/")
 	#rcnt {
 		position: relative !important;
 		left: calc(1vw + var(--cmove) - 10vw) !important;
+	}
+
+	#rcnt.GyAeWb.gIatYd {
+		margin-left: -425px !important;
 	}
 
 	* {
@@ -473,6 +477,7 @@ url-prefix("https://bard.google.com/")
 		height: 45px !important;
 	}
 
+	.YmvwI,
 	.hdtb-mitem.hdtb-msel,
 	.hdtb-mitem > .hide-focus-ring,
 	.hdtb-mitem.hdtb-imb > a.hide-focus-ring,
@@ -484,8 +489,10 @@ url-prefix("https://bard.google.com/")
 	div[role="tab"].hdtb-mitem.hdtb-imb:not([aria-expanded]) {
 		border-bottom: var(--Myred1) !important;
 		width: 100px !important;
+		/*
 		min-width: 100px !important;
 		max-width: 100px !important;
+		*/
 	}
 
 	div[role="tab"][aria-selected="false"].hdtb-mitem.hdtb-imb:not(
@@ -571,6 +578,7 @@ url-prefix("https://bard.google.com/")
 		max-width: 78px !important;
 	}
 
+	.YmvwI,
 	.Tg7LZd,
     .GKS7s,
     mat-sidenav.response-container.ng-star-inserted,
@@ -692,6 +700,8 @@ url-prefix("https://bard.google.com/")
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	.YmvwI[selected],
+	.YmvwI:hover,
 	.Tg7LZd:hover,
     .GKS7s:hover,
     a.zItAnd.FOU1zf:hover,
@@ -849,6 +859,7 @@ url-prefix("https://bard.google.com/")
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
+	.YmvwI:active,
 	.Tg7LZd:active,
     .GKS7s:active,
     a.zItAnd.FOU1zf:active,
@@ -1559,9 +1570,12 @@ url-prefix("https://bard.google.com/")
 		background: transparent !important;
 	}
 
+	.moredetailsareatitle,
+	.moredetailsareatitlelink,
+	.moredetailsareaheader,
 	.oldgiscontent.fullsizeimagearea,
 	.oldgiscontent.moredetailsarea {
-		background-color: var(--MyX4) !important;
+		background-color: var(--Myred3) !important;
 	}
 
 	.oldgisrelatedthumbdata.oldgisrelatedcurrentselection {
