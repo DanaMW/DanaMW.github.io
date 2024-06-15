@@ -2,7 +2,7 @@
 @name         StarDock Dark
 @namespace    https://danamw.github.io/scripts/scripts/StarDockDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StarDockDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -184,6 +184,7 @@ url-prefix("https://www.wincustomize.com/")
 		background-image: none !important;
 	}
 
+	.tabbox div a,
 	.icon,
 	.node_container,
 	a[id*="_Content__Products__TabRepeater__TabLink"],
@@ -223,6 +224,8 @@ url-prefix("https://www.wincustomize.com/")
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	.tabbox div a:hover,
+	.tabbox div a.selected,
 	.icon:hover,
 	.node_container:hover,
 	.node_container.selected,
