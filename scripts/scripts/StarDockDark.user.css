@@ -2,7 +2,7 @@
 @name         StarDock Dark
 @namespace    https://danamw.github.io/scripts/scripts/StarDockDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StarDockDark.user.css
-@version      0.0.16
+@version      0.0.17
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -10,255 +10,320 @@
 
 @-moz-document domain("stardock.com"),
 url-prefix("https://support.stardock.com/"),
-domain("stardock.us") {
-    [class*="rw_full"]::before,
-    .tray,
-    .forum,
-    #ctl00_ctl00__Body,
-    #aspnetForm section.apps,
-    section,
-    body {
-        background-image: none !important;
-        background-color: var(--MyB) !important;
-    }
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
-     ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
-     ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
-    td[background="/images/header-bg1.gif"] {
-        opacity: 0 !important;
-    }
-    div.notice.warning {
-        display: none !important;
-    }
-    .container {
-        background: transparent !important;
-    }
-    [id="rw_full"]::before {
-        background-color: var(--MyB) !important;
-    }
-    .icon {
-        color: var(--MyW) !important;
-    }
-    table,
-    tbody,
-    article,
-    .content {
-        background-color: var(--Mygray2) !important;
-        border-radius: 15px !important;
-        border: 2px solid var(--MyW) !important;
-    }
-    #rw_header .rw_header_background::before,
-    #rw_header .rw_header_background .rw_preview_background,
-    .message.None,
-    header.container {
-        background-color: var(--Myred3) !important;
-    }
-    .breadcrumbs,
-    div.head,
-    div.header {
-        background-color: var(--Myred2) !important;
-        color: var(--MyW) !important;
-    }
-    header h2 {
-        text-align: center !important;
-    }
-    li.item {
-        background-image: none !important;
-        border: 1px solid var(--MyB) !important;
-    }
-    .subheader,
-    .collapse_sidebar,
-    aside,
-    .tray,
-    div[id*="mceu_"],
-    h2,
-    li.item,
-    div.top {
-        background-color: var(--Myred3) !important;
-    }
-    .info,
-    li a,
-    p,
-    h1,
-    a:not(.button) {
-        color: var(--MyW) !important;
-    }
-    .submenu>a[href]:hover {
-        background-color: var(--MyX1) !important;
-    }
-    li a:hover,
+domain("stardock.us"),
+url-prefix("https://www.wincustomize.com/")
+{
+	[class*="rw_full"]::before,
+	.tray,
+	.forum,
+	#ctl00_ctl00__Body,
+	#aspnetForm section.apps,
+	section,
+	body {
+		background-image: none !important;
+		background-color: var(--MyB) !important;
+	}
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
+	td[background="/images/header-bg1.gif"] {
+		opacity: 0 !important;
+	}
+	div.notice.warning {
+		display: none !important;
+	}
+	.container {
+		background: transparent !important;
+	}
+	[id="rw_full"]::before {
+		background-color: var(--MyB) !important;
+	}
+	.icon {
+		color: var(--MyW) !important;
+	}
+	table,
+	tbody,
+	article,
+	.content {
+		background-color: var(--Mygray2) !important;
+		border-radius: 15px !important;
+		border: 2px solid var(--MyW) !important;
+	}
+	#rw_header .rw_header_background::before,
+	#rw_header .rw_header_background .rw_preview_background,
+	.message.None,
+	header.container {
+		background-color: var(--Myred3) !important;
+	}
+	.breadcrumbs,
+	div.head,
+	div.header {
+		background-color: var(--Myred2) !important;
+		color: var(--MyW) !important;
+	}
+	header h2 {
+		text-align: center !important;
+	}
+	li.item {
+		background-image: none !important;
+		border: 1px solid var(--MyB) !important;
+	}
+	.subheader,
+	.collapse_sidebar,
+	aside,
+	.tray,
+	div[id*="mceu_"],
+	li.item,
+	div.top {
+		background-color: var(--Myred3) !important;
+	}
+
+	h2 {
+		color: var(--Myyellow1) !important;
+	}
+
+	span,
+	.nowrap {
+		color: var(--TwitterBlue) !important;
+	}
+
+	.info,
+	li a,
+	p,
+	h1,
+	a:not(.button) {
+		color: var(--MyW) !important;
+	}
+	.submenu > a[href]:hover {
+		background-color: var(--MyX1) !important;
+	}
+	li a:hover,
     h3,
     /*:not(.button):not(.bvlbutton)*/
     a:hover {
-        color: var(--Myred1) !important;
-    }
-    label {
-        color: var(--Myred1) !important;
-    }
-    #Table1 {
-        background: none !important;
-        background-color: transparent !important;
-    }
-    .breadcrumb {
-        color: var(--Myyellow1) !important;
-    }
-    .children_nodes.open,
-    .menu_container {
-        background-color: var(--Mygray3) !important;
-    }
-    .document {
-        background-color: var(--Mygray1) !important;
-    }
-    [class*="byline_info"],
-    .date {
-        color: var(--TwitterBlue) !important;
-    }
-    .counter {
-        color: var(--TwitterRed) !important;
-    }
-    form header,
-    #Table1,
-    body>header {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        border-bottom-color: var(--MyB) !important;
-        border-top-color: var(--MyX1) !important;
-        border-right-color: var(--MyB) !important;
-        border-left-color: var(--MyB) !important;
-        background-color: var(--Myred1) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
-    }
-    .node_container,
-    .head,
-    header h3 a,
-    span[class="		active    "] a {
-        background-image: none !important;
-    }
-    .icon,
-    .node_container,
-    a[id*="_Content__Products__TabRepeater__TabLink"],
-    .bvlbutton,
-    .button[target="_blank"][href],
-    input[type="submit"],
-    .button.newpost,
-    a[id*="_Content__Products__CategoryRepeater"],
-    div.product,
-    button {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-    .icon:hover,
-    .node_container:hover,
-    .node_container.selected,
-    .submenu::after:hover,
-    .bvlbutton:hover,
-    .button[target="_blank"][href]:hover,
-    input[type="submit"]:hover,
-    .button.newpost:hover,
-    a[id*="_Content__Products__CategoryRepeater"]:hover,
-    .products .product:hover,
-    button:hover {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--MyX1) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-    .submenu::after:active,
-    .bvlbutton:active,
-    .button[target="_blank"][href]:active,
-    input[type="submit"]:active,
-    .button.newpost:active,
-    a[id*="_Content__Products__CategoryRepeater"]:active,
-    .products .product:active,
-    button:active {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--MyX3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-    .menu.show {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border: 1px solid var(--Myred1) !important;
-        border-radius: 5px !important;
-    }
-    .head,
-    .message.None,
-    aside,
-    a[href] {
-        border-radius: 15px !important;
-    }
-    a[href]:hover {
-        background-color: var(--MyX1) !important;
-        border-radius: 15px !important;
-    }
-    /*
+		color: var(--Myred1) !important;
+	}
+	label {
+		color: var(--Myred1) !important;
+	}
+	#Table1 {
+		background: none !important;
+		background-color: transparent !important;
+	}
+	.breadcrumb {
+		color: var(--Myyellow1) !important;
+	}
+
+	.submenu2,
+	.children_nodes.open,
+	.menu_container {
+		background-color: var(--Mygray3) !important;
+	}
+	.document {
+		background-color: var(--Mygray1) !important;
+	}
+	[class*="byline_info"],
+	.date {
+		color: var(--TwitterBlue) !important;
+	}
+	.counter {
+		color: var(--TwitterRed) !important;
+	}
+	form header,
+	#Table1,
+	body > header {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		border-bottom-color: var(--MyB) !important;
+		border-top-color: var(--MyX1) !important;
+		border-right-color: var(--MyB) !important;
+		border-left-color: var(--MyB) !important;
+		background-color: var(--Myred1) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
+	}
+
+	.node_container,
+	.head,
+	header h3 a,
+	span[class="		active    "] a {
+		background-image: none !important;
+	}
+
+	.icon,
+	.node_container,
+	a[id*="_Content__Products__TabRepeater__TabLink"],
+	.bvlbutton,
+	.button[target="_blank"][href],
+	input[type="submit"],
+	.button.newpost,
+	a[id*="_Content__Products__CategoryRepeater"],
+	div.product,
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border-top: 1px solid var(--Myred2) !important;
+		border-left: 1px solid var(--Myred2) !important;
+		border-bottom: 1px solid var(--Myred3) !important;
+		border-right: 1px solid var(--Myred3) !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
+
+	.icon:hover,
+	.node_container:hover,
+	.node_container.selected,
+	.submenu::after:hover,
+	.bvlbutton:hover,
+	.button[target="_blank"][href]:hover,
+	input[type="submit"]:hover,
+	.button.newpost:hover,
+	a[id*="_Content__Products__CategoryRepeater"]:hover,
+	.products .product:hover,
+	button:hover {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border-top: 1px solid var(--Myred3) !important;
+		border-left: 1px solid var(--Myred3) !important;
+		border-bottom: 1px solid var(--Myred2) !important;
+		border-right: 1px solid var(--Myred2) !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--MyX1) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	.submenu::after:active,
+	.bvlbutton:active,
+	.button[target="_blank"][href]:active,
+	input[type="submit"]:active,
+	.button.newpost:active,
+	a[id*="_Content__Products__CategoryRepeater"]:active,
+	.products .product:active,
+	button:active {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border-top: 1px solid var(--Mygreen2) !important;
+		border-left: 1px solid var(--Mygreen2) !important;
+		border-bottom: 1px solid var(--Mygreen3) !important;
+		border-right: 1px solid var(--Mygreen3) !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--MyX3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	.menu.show {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border: 1px solid var(--Myred1) !important;
+		border-radius: 5px !important;
+	}
+
+	.head,
+	.message.None,
+	aside,
+	a[href] {
+		border-radius: 15px !important;
+	}
+
+	a[href]:hover {
+		background-color: var(--MyX1) !important;
+		border-radius: 15px !important;
+	}
+
+	/*
     a[href*="href=href=/accounts/logout.axd"],
     a[href*="href=https://store.stardock.com/myaccount/products"],
     a[href*="https://forums.stardock.com"] {
@@ -271,61 +336,88 @@ domain("stardock.us") {
         color: var(--MyW) !important;
     }
     */
-    span::after:hover {
-        background-image: none !important;
-        background-color: none !important;
-    }
-    .welcome {
-        color: var(--Myred1) !important;
-    }
-    .submenu>a[href],
-    select,
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-    }
-    footer,
-    #sidebar-twitter,
-    .sy-box,
-    img[id*="StardockAdReplyImage"] {
-        display: none !important;
-    }
-    header,
-    .menu,
-    .postinfo {
-        background-color: var(--Mygray2) !important;
-    }
-    .headline {
-        background-color: var(--Mygray2) !important;
-        color: var(--Myblue1) !important;
-    }
-    span.submenu {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 2px solid var(--MyW) !important;
-    }
-    .tabs li {
-        background-color: var(--Myred2) !important;
-        color: var(--MyW) !important;
-    }
-    .tabs li:hover,
-    .tabs li:hover a,
-    li.selected {
-        background-image: none !important;
-        background-color: var(--Myred1) !important;
-        color: var(--Mygreen1) !important;
-    }
-    .qtip,
-    .qtip-content,
-    .tooltip {
-        background-image: none !important;
-        background: transparent !important;
-    }
-    .qtip-content,
-    .tooltip {
-        background: var(--MyX1) !important;
-        border: 1px solid var(--MyW) !important;
-        color: var(--MyW) !important;
-    }
+
+	span::after:hover {
+		background-image: none !important;
+		background-color: none !important;
+	}
+
+	.welcome {
+		color: var(--Myred1) !important;
+	}
+
+	.submenu > a[href],
+	select,
+	input {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+	}
+
+	footer,
+	#sidebar-twitter,
+	.sy-box,
+	img[id*="StardockAdReplyImage"] {
+		display: none !important;
+	}
+
+	header,
+	.menu,
+	.postinfo {
+		background-color: var(--Mygray2) !important;
+	}
+
+	.headline {
+		background-color: var(--Mygray2) !important;
+		color: var(--Myblue1) !important;
+	}
+
+	span.submenu {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 2px solid var(--MyW) !important;
+	}
+
+	.tabs li {
+		background-color: var(--Myred2) !important;
+		color: var(--MyW) !important;
+	}
+
+	.tabs li:hover,
+	.tabs li:hover a,
+	li.selected {
+		background-image: none !important;
+		background-color: var(--Myred1) !important;
+		color: var(--Mygreen1) !important;
+	}
+
+	.qtip,
+	.qtip-content,
+	.tooltip {
+		background-image: none !important;
+		background: transparent !important;
+	}
+
+	.qtip-content,
+	.tooltip {
+		background: var(--MyX1) !important;
+		border: 1px solid var(--MyW) !important;
+		color: var(--MyW) !important;
+	}
+
+	.activationreport {
+		text-align: center;
+	}
+
+	.featherlight-content {
+		background-color: var(--Myback) !important;
+		border: 1px solid var(--MyW) !important;
+	}
+
+	div.l,
+	div.m,
+	div.r {
+		background-image: none !important;
+		background-color: var(--Myred3) !important;
+	}
 }
