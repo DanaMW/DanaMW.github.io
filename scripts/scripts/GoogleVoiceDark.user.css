@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.1.2
+@version      0.1.3
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -16,532 +16,602 @@ domain("googleusercontent.com"),
 domain("myaccount.google.com"),
 url-prefix("https://ogs.google.com/"),
 domain("docs.google.com") {
-
-    .container,
-    .messages-container,
-    div[class="layout-align-start-center layout-row flex B3EWm-ipGt7"],
-    div[class="layout-align-center-center layout-column flex-nogrow B3EWm-s4tt0c"],
-    div[class="layout-align-center-stretch layout-column flex-nogrow B3EWm-WTKh3d"],
-    gv-contact-list,
-    .layout-column.aKQtkf-tJHJj,
-    gv-message-entry,
-    gv-message-entry div,
-    gv-message-list,
-    md-content,
-    ng-transclude,
-    #contact-list,
-    .did-display,
-    gv-inbox-summary-ng2,
-    .I6IB7e-LwH6nd,
-    .md-body-1.tDBuBb-haAclf.layout-align-center-center.layout-column.flex,
-    .YYoZ8c-VeKiLd.layout-align-start-center.layout-row,
-    .layout-row.uM2Vn-A9KrYd,
-    div[aria-label="Voicemail player controls"],
-    .YYoZ8c-VeKiLd,
-    md-virtual-repeat-container,
-    html,
-    head,
-    body {
-        background-color: var(--MyB) !important;
-    }
-
-    form[action="/search"] {
-        position: relative !important;
-    }
-
-    form[action="/search"] {
-        margin: 0 auto;
-        width: var(--twidth) !important;
-        left: calc(1px + var(--tmove)) !important;
-        background-color: transparent !important;
-    }
-
-    .stock {
-        display: none !important;
-    }
-
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-
-    ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
-
-    ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
-
-    .le-Rm-pf-cb,
-    .phone-number-details,
-    .secondary-text,
-    .dOUild-Od0oM,
-    ng-transclude,
-    gv-thread-item-detail,
-    gv-annotation,
-    .grey-700,
-    .internalSubheader,
-    .notificationText,
-    span,
-    .device-label,
-    .deviceLabel,
-    p,
-    a {
-        color: var(--MyW) !important;
-        background-color: transparent !important;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: var(--TwitterRed) !important;
-        text-decoration: none !important;
-    }
-
-    .primary-text,
-    div[class="GHQeBe-qdm4Zd gmat-subhead-1"],
-    .grey-900,
-    .call-as-label,
-    h3,
-    h1 {
-        color: var(--TwitterBlue) !important;
-    }
-
-    .phone-number,
-    .phone-number-name,
-    .internalHeader,
-    .header,
-    h2 {
-        color: var(--TwitterRed) !important;
-    }
-
-    small {
-        color: var(--TwitterPink) !important;
-    }
-
-    .dnd-status,
-    gmat-input-chip,
-    .gb_Rb,
-    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"],
-    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"],
-    .gb_jb.gb_fb,
-    a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"],
-    a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"],
-    .mat-option,
-    a[role="tab"],
-    [role="button"]:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]):not([aria-selected="true"]),
-    button:not([aria-label="Search"]):not(.video-overlay) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-
-    .dnd-status:hover,
-    gmat-input-chip:hover,
-    .mat-ripple.container.ng-star-inserted.batch-selected.batch-selecting::before,
-    .container.mat-ripple.read.ng-star-inserted.batch-selected.batch-selecting::before,
-    .gb_Rb:hover,
-    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:hover,
-    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:hover,
-    .gb_jb.gb_fb:hover,
-    .md-ink-ripple::before,
-    [role="button"][aria-selected="true"],
-    a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:hover,
-    a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"]:hover,
-    .mat-option:hover,
-    a[role="tab"]:hover,
-    [role="button"]:hover:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
-    button:hover:not([aria-label="Search"]):not(.video-overlay) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-
-    .dnd-status:active,
-    gmat-input-chip:active,
-    .gb_Rb:active,
-    a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:active,
-    a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:active,
-    .gb_jb.gb_fb:active,
-    a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:active,
-    a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"]:active,
-    a[role="tab"]:active,
-    [role="button"]:active:not([aria-label="Search"]):not([aria-label="Google apps"]):not([aria-label*="Google Account"]),
-    button:active:not([aria-label="Search"]):not(.video-overlay) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-
-    .md-body-1 {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-
-    header,
-    .stock_navbar {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
-
-    gv-basic-dialog>mat-dialog-actions,
-    [class="je-yi-hc je-Gf-ne"],
-    .layout-align-start-center.layout-column,
-    .ge-Ei-If.ge-Ci-Zb-If,
-    .md-virtual-repeat-scroller,
-    [class*="layout-align"][aria-label="Dialpad"]:not([layout-align="start start"]),
-    .block-container,
-    md-sidenav,
-    div[aria-label="Account Information"],
-    .help-panel-views,
-    div[class="mat-form-field-outline ng-tns-c23-145 ng-star-inserted"],
-    div[class^="ng-star-inserted"]:not([role="tablist"]),
-    gv-account-number {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-
-    gv-basic-dialog>h2,
-    .he-mi-ic,
-    [class*="le-oi-ic le-pi-pe"],
-    .anonymous-caller-id-banner,
-    .cdk-dialog-container,
-    [class*="le-Ai-ic"],
-    .le-Ci-ic,
-    .le-zi-ic,
-    .le-yi-ic,
-    [class*="fe-yi-ic fe-zi-je"],
-    gv-tel-registration-banner-ng2>.container,
-    [class="md-body-1 gvMessageEntry-thumbnailWrapper"],
-    gv-thread-details-header>.header,
-    gv-message-list-header,
-    .gvMessageListHeader-messageHeader,
-    .mat-menu-content,
-    .ge-zi-ic.ge-Ai-ke,
-    .ge-Ci-ic.ge-Di-ke.ge-eo-Di,
-    .ge-Di-ic.ge-Ei-ke,
-    .ge-Di-If.ge-Ei-If>.ge-Di-ic.ge-Ei-ke.ge-fo-Ei,
-    .active-call-wrapper,
-    .layout-align-center-center.layout-row.TK1dEe-haAclf,
-    .ge-Ei-hc.ge-Df-ke,
-    .ge-Fi-ke,
-    div.ge-Gi-ic.ge-Hi-ke,
-    [class="banner"],
-    div[class="layout-align-start-center layout-row YYoZ8c-VeKiLd"],
-    .did-display,
-    p[class="gmat-overline REV3g-t1uKQe grey-700"],
-    .VInAq-tJHJj,
-    simple-snack-bar,
-    md-dialog-actions,
-    .md-dialog-content,
-    .section,
-    div[class="layout-fill layout-align-center-center layout-column"],
-    mat-dialog-container {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-
-    [class="je-yi-hc je-Gf-ne"],
-    .je-Gf-tc {
-        text-align: center !important;
-    }
-
-    .fFW7wc.XKSfm-Sx9Kwc-xJ5Hnf {
-        background: var(--MyB) !important;
-    }
-
-    textarea {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-        text-align: center !important;
-    }
-
-    input[aria-label="Search"] {
-        color: var(--MyW) !important;
-        height: 25px !important;
-        margin-top: 8px !important;
-    }
-
-    input[placeholder] {
-        color: var(--MyW) !important;
-    }
-
-    div[aria-label="Account Information"] {
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    div[class*="Bqxti-VCkuzd"] {
-        background-color: var(--Myred2) !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    div[class*="Bqxti-MJZihc"] {
-        background-color: var(--Myblue2) !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    .md-body-1.B3EWm-pfZwlb,
-    .mat-checked {
-        background-color: transparent !important;
-    }
-
-    /* this is the bad connect bar */
-    .zQ5vdd-haAclf,
-    .full-snackbar,
-    gv-device-icon>.icon {
-        background-color: var(--MyX1) !important;
-    }
-
-    p[class="gmat-overline REV3g-t1uKQe grey-700"],
-    .did-display {
-        text-align: center !important;
-    }
-
-    [class="le-sn-pf-fe"],
-    [class="le-Rm-pf-Rm-hh"],
-    [role="option"]>[class="ge-Ym-jf-Ym-lh"],
-    gv-side-nav {
-        background-color: var(--Myred3) !important;
-    }
-
-    gv-inbox-summary-ng2,
-    .md-virtual-repeat-scroller,
-    gv-side-nav {
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    .le-Ym-qf-Ym-ih,
-    .ge-dn-jf-dn-ph {
-        background-color: var(--Mygray2) !important;
-    }
-
-
-    [class="LVal7b "],
-    div[aria-label="Google apps"],
-    [class="le-eb le-qj le-do"],
-    [class="je-wi-Zb-xi-Yb-fh"],
-    gv-dialpad {
-        background-color: var(--Mygray3) !important;
-    }
-
-    .Lvwayc,
-    .Lvwayc.eejsDc,
-    md-menu-content.md-default-theme,
-    md-menu-content {
-        background: var(--Mygray3) !important;
-    }
-
-    iframe#sksotdehhtnb,
-    .ee-Li-ie {
-        background-color: var(--Mygray3) !important;
-        border-top: 1px solid var(--Myred1) !important;
-    }
-
-    .md-body-1.B3EWm-pfZwlb,
-    .ee-hn-hf-hn-qh {
-        background-color: var(--Myred3) !important;
-    }
-
-    .ee-hn-hf-cb {
-        color: var(--MyW) !important;
-    }
-
-    .GYQtq-ocIXwb {
-        background: var(--MyB) !important;
-    }
-
-    .q2hAhb-RZ063d {
-        border-top: 1px solid var(--Myred1) !important;
-        border-bottom: 1px solid var(--Myred1) !important;
-    }
-
-    .outer-circle,
-    .gvPageRoot [_nghost-uai-c32] .inner-circle[_ngcontent-uai-c32],
-    .inner-circle {
-        background-color: var(--Mygreen1) !important;
-    }
-
-    #contact-list,
-    .mat-form-field-wrapper,
-    .input-row,
-    section.root.show {
-        background-image: none !important;
-        background: var(--Myred3) !important;
-    }
-
-    .rkljfb-ymuZHc .rkljfb-rVkNNe.rkljfb-rVkNNe.rkljfb-rVkNNe,
-    .gvPageRoot [_nghost-hfp-c299] .container.batch-selected[_ngcontent-hfp-c299] .batch-selection[_ngcontent-hfp-c299] {
-        background-color: var(--MyX2) !important;
-    }
-
-    .message-row>.avatar,
-    .status>.sender-timestamp {
-        background-color: transparent !important;
-        border: none !important;
-        color: var(--Mytext) !important;
-    }
-
-    md-divider {
-        background-color: var(--Myred1) !important;
-        color: var(--Myred1) !important;
-        border-color: var(--Myred1) !important;
-    }
-
-    .gmat-body-2,
-    .md-button,
-    md-menu-item {
-        color: var(--MyW) !important;
-    }
-
-    * {
-        border-color: var(--Myred1) !important;
-    }
-
-    .mat-slide-toggle-bar.mat-slide-toggle-bar-no-side-margin {
-        background-color: var(--Myred3) !important;
-        border: 0.5px solid var(--MyW) !important;
-    }
-
-    .mat-slide-toggle-thumb {
-        background-color: var(--Myorange2) !important;
-    }
-
-    .mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb {
-        background-color: var(--Mygreen1) !important;
-    }
-
-    .gvPageRoot .bubble,
-    [class*="bubble"] {
-        background-color: var(--Myred2) !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    .gvPageRoot .incoming .bubble,
-    .gvMessageItem-incoming.gvMessageItem-bubble,
-    .gvMessageItem-incoming.gvMessageItem-bubble a {
-        background-color: var(--Myblue2) !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    mat-divider {
-        border-color: var(--Myred1) !important;
-    }
-
-    .picker.modal-dialog-bg {
-        background-color: var(--MyB) !important;
-    }
-
-    .ge-Ym-jf-cb {
-        color: var(--MyW) !important;
-        text-decoration: none !important;
-    }
-
-    .gb_Se {
-        border: none !important;
-    }
-
-    md-input-container.md-default-theme .md-input:-moz-placeholder,
-    md-input-container .md-input:-moz-placeholder,
-    md-input-container.md-default-theme .md-input::placeholder,
-    md-input-container .md-input::placeholder {
-        color: var(--Mytext) !important;
-    }
-
-    .md-input-has-value label {
-        background-color: var(--Myyellow1) !important;
-        color: var(--MyB) !important;
-    }
-
-    .gb_Te {
-        border: none !important;
-    }
-
-    [class*="mat-form-field"] {
-        border-top: 1px !important;
-    }
-
-    .gb_Xe {
-        border: none !important;
-    }
-
-    [class="le-Zm-qf-Zm-jh"] {
-        background-color: var(--Mygray2) !important;
-    }
-
-    svg>g,
-    svg>path {
-        color: var(--Mygreen1) !important;
-    }
-
-    .gb_Ze {
-        border: none;
-    }
-
-    .anonymous-caller-id-banner>div {
-        color: var(--Myyellow1) !important;
-    }
-
-    .mat-mdc-snack-bar-label {
-        background-color: var(--MyX1) !important;
-        opacity: 0.4;
-        color: var(--MyW) !important;
-        border-radius: 2px;
-        border: 1px solid var(--MyW) !important;
-    }
-
-    .mat-mdc-menu-content {
-        background-color: var(--Mygray3) !important;
-    }
+	.container,
+	.messages-container,
+	div[class="layout-align-start-center layout-row flex B3EWm-ipGt7"],
+	div[class="layout-align-center-center layout-column flex-nogrow B3EWm-s4tt0c"],
+	div[class="layout-align-center-stretch layout-column flex-nogrow B3EWm-WTKh3d"],
+	gv-contact-list,
+	.layout-column.aKQtkf-tJHJj,
+	gv-message-entry,
+	gv-message-entry div,
+	gv-message-list,
+	md-content,
+	ng-transclude,
+	#contact-list,
+	.did-display,
+	gv-inbox-summary-ng2,
+	.I6IB7e-LwH6nd,
+	.md-body-1.tDBuBb-haAclf.layout-align-center-center.layout-column.flex,
+	.YYoZ8c-VeKiLd.layout-align-start-center.layout-row,
+	.layout-row.uM2Vn-A9KrYd,
+	div[aria-label="Voicemail player controls"],
+	.YYoZ8c-VeKiLd,
+	md-virtual-repeat-container,
+	html,
+	head,
+	body {
+		background-color: var(--MyB) !important;
+	}
+
+	form[action="/search"] {
+		position: relative !important;
+	}
+
+	form[action="/search"] {
+		margin: 0 auto;
+		width: var(--twidth) !important;
+		left: calc(1px + var(--tmove)) !important;
+		background-color: transparent !important;
+	}
+
+	.stock {
+		display: none !important;
+	}
+
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
+
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
+
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
+
+	.le-Rm-pf-cb,
+	.phone-number-details,
+	.secondary-text,
+	.dOUild-Od0oM,
+	ng-transclude,
+	gv-thread-item-detail,
+	gv-annotation,
+	.grey-700,
+	.internalSubheader,
+	.notificationText,
+	span,
+	.device-label,
+	.deviceLabel,
+	p,
+	a {
+		color: var(--MyW) !important;
+		background-color: transparent !important;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: var(--TwitterRed) !important;
+		text-decoration: none !important;
+	}
+
+	.primary-text,
+	div[class="GHQeBe-qdm4Zd gmat-subhead-1"],
+	.grey-900,
+	.call-as-label,
+	h3,
+	h1 {
+		color: var(--TwitterBlue) !important;
+	}
+
+	.phone-number,
+	.phone-number-name,
+	.internalHeader,
+	.header,
+	h2 {
+		color: var(--TwitterRed) !important;
+	}
+
+	small {
+		color: var(--TwitterPink) !important;
+	}
+
+	[id*="mat-mdc-chip-"],
+	.dnd-status,
+	gmat-input-chip,
+	.gb_Rb,
+	a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"],
+	a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"],
+	.gb_jb.gb_fb,
+	a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"],
+	a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"],
+	.mat-option,
+	a[role="tab"],
+	[role="button"]:not([aria-label="Search"]):not(
+			[aria-label="Google apps"]
+		):not([aria-label*="Google Account"]):not([aria-selected="true"]),
+	button:not([aria-label="Search"]):not(.video-overlay) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
+
+	[id*="mat-mdc-chip-"]:hover,
+	.dnd-status:hover,
+	gmat-input-chip:hover,
+	.mat-ripple.container.ng-star-inserted.batch-selected.batch-selecting::before,
+	.container.mat-ripple.read.ng-star-inserted.batch-selected.batch-selecting::before,
+	.gb_Rb:hover,
+	a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:hover,
+	a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:hover,
+	.gb_jb.gb_fb:hover,
+	.md-ink-ripple::before,
+	[role="button"][aria-selected="true"],
+	a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:hover,
+	a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"]:hover,
+	.mat-option:hover,
+	a[role="tab"]:hover,
+	[role="button"]:hover:not([aria-label="Search"]):not(
+			[aria-label="Google apps"]
+		):not([aria-label*="Google Account"]),
+	button:hover:not([aria-label="Search"]):not(.video-overlay) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	[id*="mat-mdc-chip-"]:active,
+	.dnd-status:active,
+	gmat-input-chip:active,
+	.gb_Rb:active,
+	a[class="gb_Db gb_5f gb_dg gb_Re gb_5c"]:active,
+	a[class="gb_sb gb_4f gbp1 gb_Re gb_5c"]:active,
+	.gb_jb.gb_fb:active,
+	a[class="gb_Hb gb_eg gb_mg gb_1e gb_7c"]:active,
+	a[class="gb_vb gb_dg gbp1 gb_1e gb_7c"]:active,
+	a[role="tab"]:active,
+	[role="button"]:active:not([aria-label="Search"]):not(
+			[aria-label="Google apps"]
+		):not([aria-label*="Google Account"]),
+	button:active:not([aria-label="Search"]):not(.video-overlay) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	.md-body-1 {
+		background-image: none !important;
+		background-color: transparent !important;
+	}
+
+	header,
+	.stock_navbar {
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+	}
+
+	gv-basic-dialog > mat-dialog-actions,
+	[class="je-yi-hc je-Gf-ne"],
+	.layout-align-start-center.layout-column,
+	.ge-Ei-If.ge-Ci-Zb-If,
+	.md-virtual-repeat-scroller,
+	[class*="layout-align"][aria-label="Dialpad"]:not(
+			[layout-align="start start"]
+		),
+	.block-container,
+	md-sidenav,
+	div[aria-label="Account Information"],
+	.help-panel-views,
+	div[class="mat-form-field-outline ng-tns-c23-145 ng-star-inserted"],
+	div[class^="ng-star-inserted"]:not([role="tablist"]),
+	gv-account-number {
+		background-color: var(--Mygray1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
+
+	gv-send-attachment-list > div,
+	div[aria-label="Select recipients"],
+	gv-basic-dialog > h2,
+	.he-mi-ic,
+	[class*="le-oi-ic le-pi-pe"],
+	.anonymous-caller-id-banner,
+	.cdk-dialog-container,
+	[class*="le-Ai-ic"],
+	.le-Ci-ic,
+	.le-zi-ic,
+	.le-yi-ic,
+	[class*="fe-yi-ic fe-zi-je"],
+	gv-tel-registration-banner-ng2 > .container,
+	[class="md-body-1 gvMessageEntry-thumbnailWrapper"],
+	gv-thread-details-header > .header,
+	gv-message-list-header,
+	.gvMessageListHeader-messageHeader,
+	.mat-menu-content,
+	.ge-zi-ic.ge-Ai-ke,
+	.ge-Ci-ic.ge-Di-ke.ge-eo-Di,
+	.ge-Di-ic.ge-Ei-ke,
+	.ge-Di-If.ge-Ei-If > .ge-Di-ic.ge-Ei-ke.ge-fo-Ei,
+	.active-call-wrapper,
+	.layout-align-center-center.layout-row.TK1dEe-haAclf,
+	.ge-Ei-hc.ge-Df-ke,
+	.ge-Fi-ke,
+	div.ge-Gi-ic.ge-Hi-ke,
+	[class="banner"],
+	div[class="layout-align-start-center layout-row YYoZ8c-VeKiLd"],
+	.did-display,
+	p[class="gmat-overline REV3g-t1uKQe grey-700"],
+	.VInAq-tJHJj,
+	simple-snack-bar,
+	md-dialog-actions,
+	.md-dialog-content,
+	.section,
+	div[class="layout-fill layout-align-center-center layout-column"],
+	mat-dialog-container {
+		background-color: var(--Myred3) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
+	}
+
+	[class="je-yi-hc je-Gf-ne"],
+	.je-Gf-tc {
+		text-align: center !important;
+	}
+
+	.fFW7wc.XKSfm-Sx9Kwc-xJ5Hnf {
+		background: var(--MyB) !important;
+	}
+
+	textarea {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+	}
+
+	input {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+		text-align: center !important;
+	}
+
+	input[aria-label="Search"] {
+		color: var(--MyW) !important;
+		height: 25px !important;
+		margin-top: 8px !important;
+	}
+
+	input[placeholder] {
+		color: var(--MyW) !important;
+	}
+
+	div[aria-label="Account Information"] {
+		border: 1px solid var(--Myred1) !important;
+	}
+
+	div[class*="Bqxti-VCkuzd"] {
+		background-color: var(--Myred2) !important;
+		border: 1px solid var(--Myred1) !important;
+	}
+
+	div[class*="Bqxti-MJZihc"] {
+		background-color: var(--Myblue2) !important;
+		border: 1px solid var(--Myred1) !important;
+	}
+
+	.md-body-1.B3EWm-pfZwlb,
+	.mat-checked {
+		background-color: transparent !important;
+	}
+
+	/* this is the bad connect bar */
+	.zQ5vdd-haAclf,
+	.full-snackbar,
+	gv-device-icon > .icon {
+		background-color: var(--MyX1) !important;
+	}
+
+	p[class="gmat-overline REV3g-t1uKQe grey-700"],
+	.did-display {
+		text-align: center !important;
+	}
+
+	[class="le-sn-pf-fe"],
+	[class="le-Rm-pf-Rm-hh"],
+	[role="option"] > [class="ge-Ym-jf-Ym-lh"],
+	gv-side-nav {
+		background-color: var(--Myred3) !important;
+	}
+
+	gv-inbox-summary-ng2,
+	.md-virtual-repeat-scroller,
+	gv-side-nav {
+		border: 1px solid var(--Myred1) !important;
+	}
+
+	.le-Ym-qf-Ym-ih,
+	.ge-dn-jf-dn-ph {
+		background-color: var(--Mygray2) !important;
+	}
+
+	[class="LVal7b "],
+	div[aria-label="Google apps"],
+	[class="le-eb le-qj le-do"],
+	[class="je-wi-Zb-xi-Yb-fh"],
+	gv-dialpad {
+		background-color: var(--Mygray3) !important;
+	}
+
+	.Lvwayc,
+	.Lvwayc.eejsDc,
+	md-menu-content.md-default-theme,
+	md-menu-content {
+		background: var(--Mygray3) !important;
+	}
+
+	iframe#sksotdehhtnb,
+	.ee-Li-ie {
+		background-color: var(--Mygray3) !important;
+		border-top: 1px solid var(--Myred1) !important;
+	}
+
+	.md-body-1.B3EWm-pfZwlb,
+	.ee-hn-hf-hn-qh {
+		background-color: var(--Myred3) !important;
+	}
+
+	.ee-hn-hf-cb {
+		color: var(--MyW) !important;
+	}
+
+	.GYQtq-ocIXwb {
+		background: var(--MyB) !important;
+	}
+
+	.q2hAhb-RZ063d {
+		border-top: 1px solid var(--Myred1) !important;
+		border-bottom: 1px solid var(--Myred1) !important;
+	}
+
+	.outer-circle,
+	.gvPageRoot [_nghost-uai-c32] .inner-circle[_ngcontent-uai-c32],
+	.inner-circle {
+		background-color: var(--Mygreen1) !important;
+	}
+
+	#contact-list,
+	.mat-form-field-wrapper,
+	.input-row,
+	section.root.show {
+		background-image: none !important;
+		background: var(--Myred3) !important;
+	}
+
+	.rkljfb-ymuZHc .rkljfb-rVkNNe.rkljfb-rVkNNe.rkljfb-rVkNNe,
+	.gvPageRoot
+		[_nghost-hfp-c299]
+		.container.batch-selected[_ngcontent-hfp-c299]
+		.batch-selection[_ngcontent-hfp-c299] {
+		background-color: var(--MyX2) !important;
+	}
+
+	.message-row > .avatar,
+	.status > .sender-timestamp {
+		background-color: transparent !important;
+		border: none !important;
+		color: var(--Mytext) !important;
+	}
+
+	md-divider {
+		background-color: var(--Myred1) !important;
+		color: var(--Myred1) !important;
+		border-color: var(--Myred1) !important;
+	}
+
+	.gmat-body-2,
+	.md-button,
+	md-menu-item {
+		color: var(--MyW) !important;
+	}
+
+	* {
+		border-color: var(--Myred1) !important;
+	}
+
+	.mat-slide-toggle-bar.mat-slide-toggle-bar-no-side-margin {
+		background-color: var(--Myred3) !important;
+		border: 0.5px solid var(--MyW) !important;
+	}
+
+	.mat-slide-toggle-thumb {
+		background-color: var(--Myorange2) !important;
+	}
+
+	.mat-slide-toggle.mat-primary.mat-checked .mat-slide-toggle-thumb {
+		background-color: var(--Mygreen1) !important;
+	}
+
+	.gvPageRoot .bubble,
+	[class*="bubble"] {
+		background-color: var(--Myred2) !important;
+		border: 1px solid var(--Myred1) !important;
+	}
+
+	.gvPageRoot .incoming .bubble,
+	.gvMessageItem-incoming.gvMessageItem-bubble,
+	.gvMessageItem-incoming.gvMessageItem-bubble a {
+		background-color: var(--Myblue2) !important;
+		border: 1px solid var(--Myred1) !important;
+	}
+
+	mat-divider {
+		border-color: var(--Myred1) !important;
+	}
+
+	.picker.modal-dialog-bg {
+		background-color: var(--MyB) !important;
+	}
+
+	.ge-Ym-jf-cb {
+		color: var(--MyW) !important;
+		text-decoration: none !important;
+	}
+
+	.gb_Se {
+		border: none !important;
+	}
+
+	md-input-container.md-default-theme .md-input:-moz-placeholder,
+	md-input-container .md-input:-moz-placeholder,
+	md-input-container.md-default-theme .md-input::placeholder,
+	md-input-container .md-input::placeholder {
+		color: var(--Mytext) !important;
+	}
+
+	.md-input-has-value label {
+		background-color: var(--Myyellow1) !important;
+		color: var(--MyB) !important;
+	}
+
+	.gb_Te {
+		border: none !important;
+	}
+
+	[class*="mat-form-field"] {
+		border-top: 1px !important;
+	}
+
+	.gb_Xe {
+		border: none !important;
+	}
+
+	[class="le-Zm-qf-Zm-jh"] {
+		background-color: var(--Mygray2) !important;
+	}
+
+	svg > g,
+	svg > path {
+		color: var(--Mygreen1) !important;
+	}
+
+	.gb_Ze {
+		border: none;
+	}
+
+	.anonymous-caller-id-banner > div {
+		color: var(--Myyellow1) !important;
+	}
+
+	.mat-mdc-snack-bar-label {
+		background-color: var(--MyX1) !important;
+		opacity: 0.4;
+		color: var(--MyW) !important;
+		border-radius: 2px;
+		border: 1px solid var(--MyW) !important;
+	}
+
+	.mat-mdc-menu-content {
+		background-color: var(--Mygray3) !important;
+	}
 }
