@@ -2,7 +2,7 @@
 @name         My Router Dark
 @namespace    https://danamw.github.io/scripts/scripts/MyRouterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MyRouterDark.user.css
-@version      0.0.15
+@version      0.0.16
 @author       Dana L. Meli-Wischman
 @description  My Router Dark
 @homepageURL  https://danamw.github.io
@@ -11,7 +11,8 @@
 @-moz-document url-prefix("http://192.168.0.1/"),
 url-prefix("http://192.168.1.1/"),
 url-prefix("http://remote.localdomain.net/"),
-url-prefix("https://use1-eweb.tplinkcloud.com/") {
+url-prefix("https://use1-eweb.tplinkcloud.com/"),
+url-prefix("http://tplinkwifi.net/") {
     html,
     body {
         background-color: var(--MyB) !important;
