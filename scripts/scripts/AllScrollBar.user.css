@@ -2,7 +2,7 @@
 @name 		  All For Scrollbars
 @namespace    http://danamw.github.io/scripts/scripts/AllScrollBar.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AllScrollBar.user.css
-@version      0.0.21
+@version      0.0.22
 @author       Dana L. Meli-Wischman
 @description  Scrollbars Style.
 @homepageURL  https://DanaMW.github.io
@@ -39,7 +39,7 @@ regexp("moz-extension://.*")
 	}
 
 	p {
-		color: var(--MyW) !important;
+		color: initial-value !important;
 	}
 
 	::-moz-scrollbar,
