@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.0.95
+@version      0.0.96
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -202,10 +202,9 @@ domain("twimg.com") {
 	.css-1dbjc4n.r-1awozwy.r-sdzlij.r-18u37iz.r-1777fci.r-dnmrzs.r-1sp51qo.r-o7ynqc.r-6416eg {
 		width: 235px !important;
 	}
-
-	/*
-	[class*="css-175oi2r r-1awozwy r-18u37iz"],
-	*/
+	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-1mnahxq r-19yznuf r-64el8z r-1fkl15p r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"],
+	[class="css-175oi2r r-1awozwy r-18u37iz"]
+		> a[class="css-175oi2r r-16y2uox r-dnmrzs r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"],
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"],
 	a[data-testid="editProfileButton"],
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"],
@@ -276,9 +275,9 @@ domain("twimg.com") {
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
-	/*
-	[class*="css-175oi2r r-1awozwy r-18u37iz"]:hover,
-	*/
+	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-1mnahxq r-19yznuf r-64el8z r-1fkl15p r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:hover,
+	[class="css-175oi2r r-1awozwy r-18u37iz"]
+		> a[class="css-175oi2r r-16y2uox r-dnmrzs r-o7ynqc r-6416eg r-g2wdr4 r-1ny4l3l r-1loqt21"],
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:hover,
 	a[data-testid="editProfileButton"]:hover,
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:hover,
@@ -358,9 +357,9 @@ domain("twimg.com") {
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
-	/*
-	[class*="css-175oi2r r-1awozwy r-18u37iz"]:active,
-	*/
+	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-1mnahxq r-19yznuf r-64el8z r-1fkl15p r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:active,
+	[class="css-175oi2r r-1awozwy r-18u37iz"]
+		> a[class="css-175oi2r r-16y2uox r-dnmrzs r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:active,
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:active,
 	a[data-testid="editProfileButton"]:active,
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:active,
@@ -448,6 +447,7 @@ domain("twimg.com") {
 		) !important;
 	}
 
+	[class="css-175oi2r r-kemksi r-16y2uox r-1dqxon3 r-16wqof"],
 	[class="css-175oi2r r-1wtj0ep r-1mmae3n r-3pj75a r-1ny4l3l"] {
 		background-color: var(--Myred3) !important;
 		background-image: linear-gradient(
@@ -494,6 +494,7 @@ domain("twimg.com") {
 		border: 1px solid var(--MyW) !important;
 	}
 
+	[class="css-175oi2r r-kemksi r-16y2uox r-1dqxon3 r-16wqof"],
 	div[data-testid="confirmationSheetDialog"],
 	.css-1dbjc4n.r-bjte33.r-sdzlij.r-16y2uox.r-1wbh5a2.r-1j3t67a.r-1w50u8q {
 		border: 1px solid var(--MyW) !important;
