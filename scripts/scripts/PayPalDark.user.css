@@ -2,7 +2,7 @@
 @name         paypal.com
 @namespace    http://danamw.github.io/scripts/scripts/-----.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/-----.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -71,6 +71,8 @@ domain("paypalobjects.com") {
 		color: var(--MyW) !important;
 	}
 
+	#_ul-btn_18pa1_1,
+	#_signup-button_18pa1_1,
 	button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -98,6 +100,8 @@ domain("paypalobjects.com") {
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	#_ul-btn_18pa1_1:hover,
+	#_signup-button_18pa1_1:hover,
 	button:hover {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -127,6 +131,8 @@ domain("paypalobjects.com") {
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
+	#_ul-btn_18pa1_1:active,
+	#_signup-button_18pa1_1:active,
 	button:active {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -213,6 +219,13 @@ domain("paypalobjects.com") {
 		border-radius: 15px !important;
 		border: 1px solid var(--Myred1) !important;
 		text-align: center !important;
+	}
+
+	.ccpaCookieBanner_container {
+		background-color: var(--My4) !important;
+		color: var(--MyW) !important;
+		border-radius: 2px;
+		border: 1px solid var(--MyW) !important;
 	}
 
 	.tooltip {
