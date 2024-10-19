@@ -8,7 +8,8 @@
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("paypal.com") {
+@-moz-document domain("paypal.com"),
+domain("paypalobjects.com") {
 	html,
 	body {
 		background-color: var(--MyB) !important;
