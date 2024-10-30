@@ -11,43 +11,43 @@
 @namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 :root {
-    scrollbar-width: thin;
-    scrollbar-color: var(--Myred1) var(--Myred3);
+	scrollbar-width: thin;
+	scrollbar-color: var(--Myred1) var(--Myred3);
 }
 
 *:focus,
 *:focus-visible,
 *:-moz-focusring {
-    border-color: var(--Mygreen1) !important;
+	border-color: var(--Mygreen1) !important;
 }
 
 .downloadProgress::-moz-progress-bar {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: none !important;
-    background-image: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background-color: none !important;
+	background-image: none !important;
 }
 
 progress::-moz-progress-bar {
-    background-color: var(--Myred1) !important;
+	background-color: var(--Myred1) !important;
 }
 
 progress.red::-webkit-progress-value {
-    background-color: var(--Myred1) !important;
+	background-color: var(--Myred1) !important;
 }
 
 .downloadProgress::-moz-progress-bar {
-    background-color: var(--Myred1) !important;
+	background-color: var(--Myred1) !important;
 }
 
 ::-moz-progress-bar {
-    background-color: var(--Myred1) !important;
+	background-color: var(--Myred1) !important;
 }
 
 .main-content,
 deck#content-deck {
-    background: var(--Myback) !important;
-    color: var(--MyW) !important;
+	background: var(--Myback) !important;
+	color: var(--MyW) !important;
 }
 
 #browser,
@@ -57,7 +57,7 @@ window,
 browser[contextmenu="contentAreaContextMenu"],
 browser.webextension-popup-browser,
 browser[type="content-primary"],
-browser[type="content"]>html browser[type="content"],
+browser[type="content"] > html browser[type="content"],
 browser[type="content"],
 #newtab-window,
 #content,
@@ -67,49 +67,51 @@ tabbrowser tabpanels,
 tabbrowser#content,
 html:not(#ublock0-epicker),
 html:not(#ublock0-epicker) body,
-#appcontent>#content,
+#appcontent > #content,
 html,
 body {
-    background: var(--Mygray3) !important;
-    color: var(--MyW) !important;
+	background: var(--Mygray3) !important;
+	color: var(--MyW) !important;
 }
 
 #tabbrowser-tabs {
-    background: var(--Mygray3) !important;
+	background: var(--Mygray3) !important;
 }
 
 notification.animated[value="Protocol Registration: web+mastodon"] {
-    display: none !important;
+	display: none !important;
 }
 
 .bookmark-item[scheme="about"] .toolbarbutton-icon,
 .bookmark-item[type="menu"] .toolbarbutton-icon {
-    background: url(data:image/png;base64,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ABYABSd/A5YCvwJ7r/kZAAxCC/4AAAAGAPQADT2RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////wAB////////AAH///////8AAdWXQ6I0kaV5wZ45ryuuUOv///////8AAf///////wAB////////AAH///////8AAf///////wAB////////AAHoAkxcPFdPetXQQ780qqWK////////AAH///////8AAf///////wABAP///////wAB////////AAH///////8AAeZnS9Y8FAiy////////AAH///////8AAf///////wAB////////AAH///////8AAf///////wAB////////AAH///////8AAcUjO74trAj0////////AAH///////8AAf///////wAB6FyNAGZ7dasAAAAASUVORK5CYII=) no-repeat;
-    height: 0 !important;
-    width: 0 !important;
-    padding-left: 16px !important;
-    padding-top: 16px !important;
+	background: url(data:image/png;base64,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ABYABSd/A5YCvwJ7r/kZAAxCC/4AAAAGAPQADT2RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////wAB////////AAH///////8AAdWXQ6I0kaV5wZ45ryuuUOv///////8AAf///////wAB////////AAH///////8AAf///////wAB////////AAHoAkxcPFdPetXQQ780qqWK////////AAH///////8AAf///////wABAP///////wAB////////AAH///////8AAeZnS9Y8FAiy////////AAH///////8AAf///////wAB////////AAH///////8AAf///////wAB////////AAH///////8AAcUjO74trAj0////////AAH///////8AAf///////wAB6FyNAGZ7dasAAAAASUVORK5CYII=)
+		no-repeat;
+	height: 0 !important;
+	width: 0 !important;
+	padding-left: 16px !important;
+	padding-top: 16px !important;
 }
 
 .bookmark-item[label="Porn Sites"] .toolbarbutton-icon {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEX////MzMyZmZlmZmYzMzMAAADzj3ppAAAAm0lEQVQIHQGQAG//AAAAAAAAABAAAAAVQAAABVAAAAAFUgAABVAAAAAFVVAANVAAAAABVVIAVVAAAAAABVVRVTAAAAAAAUVSVRAAAAAAABRVUAAAAAAAAlVVUAAAAAAAFQVVVQAAAAAANVVVVRAAAAAABVVVVQAAAAAABFVVVAAAAAAAAARFMAAAAAAAATQjMQAAAAAAABIwAAAAvHcNF9cD5BAAAAAASUVORK5CYII=) no-repeat !important;
-    height: 0 !important;
-    width: 0 !important;
-    padding-left: 16px !important;
-    padding-top: 16px !important;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAElBMVEX////MzMyZmZlmZmYzMzMAAADzj3ppAAAAm0lEQVQIHQGQAG//AAAAAAAAABAAAAAVQAAABVAAAAAFUgAABVAAAAAFVVAANVAAAAABVVIAVVAAAAAABVVRVTAAAAAAAUVSVRAAAAAAABRVUAAAAAAAAlVVUAAAAAAAFQVVVQAAAAAANVVVVRAAAAAABVVVVQAAAAAABFVVVAAAAAAAAARFMAAAAAAAATQjMQAAAAAAABIwAAAAvHcNF9cD5BAAAAAASUVORK5CYII=)
+		no-repeat !important;
+	height: 0 !important;
+	width: 0 !important;
+	padding-left: 16px !important;
+	padding-top: 16px !important;
 }
 
-.bookmark-item[label='[ CBS News ]'] .toolbarbutton-icon {
-    filter: invert(1)
+.bookmark-item[label="[ CBS News ]"] .toolbarbutton-icon {
+	filter: invert(1);
 }
 
 #background-fake {
-    filter: blur(0) !important;
+	filter: blur(0) !important;
 }
 
 menu menupopup[label*="Save In"] {
-    -moz-box-ordinal-group: 1 !important;
-    box-ordinal-group: 1 !important;
+	-moz-box-ordinal-group: 1 !important;
+	box-ordinal-group: 1 !important;
 }
 
 #customization-palette-container,
@@ -119,13 +121,18 @@ menu menupopup[label*="Save In"] {
 #customization-spacer,
 #customization-footer,
 #customization-container {
-    background-color: var(--Mygray3) !important;
-    color: var(--MyW) !important;
+	background-color: var(--Mygray3) !important;
+	color: var(--MyW) !important;
 }
 
 .customizationmode-button {
-    background-image: -moz-linear-gradient(top, var(--Mygray1), var(--Mygray2), var(--Mygray3)) !important;
-    color: var(--Mygray1) !important;
+	background-image: -moz-linear-gradient(
+		top,
+		var(--Mygray1),
+		var(--Mygray2),
+		var(--Mygray3)
+	) !important;
+	color: var(--Mygray1) !important;
 }
 
 menu:hover,
@@ -134,79 +141,86 @@ menuitem:hover,
 .menu-iconic.bookmark-item:hover,
 .menu-iconic.bookmark-item.subviewbutton:hover,
 .customizationmode-button:hover {
-    background-image: -moz-linear-gradient(top, var(--Myred1), var(--Myred2), var(--Myred3)) !important;
-    color: var(--MyW) !important;
+	background-image: -moz-linear-gradient(
+		top,
+		var(--Myred1),
+		var(--Myred2),
+		var(--Myred3)
+	) !important;
+	color: var(--MyW) !important;
 }
 
 findbar {
-    background-color: var(--Mygray3) !important;
+	background-color: var(--Mygray3) !important;
 }
 
 tooltip {
-    -moz-appearance: initial !important;
-    appearance: initial !important;
-    padding: 0px !important;
+	-moz-appearance: initial !important;
+	appearance: initial !important;
+	padding: 0px !important;
 }
 
 .list-section-heading {
-    color: var(--Myred1) !important;
+	color: var(--Myred1) !important;
 }
 
 #statuspanel-label,
 tooltip {
-    -moz-appearance: none !important;
-    appearance: none;
-    background-color: var(--MyX1) !important;
-    color: var(--MyW) !important;
-    text-shadow: 1px -1px 0 var(--MyW) !important;
-    border: none !important;
-    border-color: var(--MyW) !important;
-    border-radius: 10px !important;
-    padding: 6px 6px !important;
-    text-align: center
+	-moz-appearance: none !important;
+	appearance: none;
+	background-color: var(--MyX1) !important;
+	color: var(--MyW) !important;
+	text-shadow: 1px -1px 0 var(--MyW) !important;
+	border: none !important;
+	border-color: var(--MyW) !important;
+	border-radius: 10px !important;
+	padding: 6px 6px !important;
+	text-align: center;
 }
 
-.browserContainer>#statuspanel>#statuspanel-inner>#statuspanel-label {
-    -moz-appearance: none !important;
-    appearance: none;
-    background-color: var(--MyX1) !important;
-    color: var(--Myred1) !important;
-    text-shadow: 1px -1px 0 var(--MyW) !important;
-    border: none !important;
-    border-color: var(--MyX1) !important;
-    border-radius: 10px !important;
-    padding: 6px 6px !important;
-    text-align: center
+.browserContainer > #statuspanel > #statuspanel-inner > #statuspanel-label {
+	-moz-appearance: none !important;
+	appearance: none;
+	background-color: var(--MyX1) !important;
+	color: var(--Myred1) !important;
+	text-shadow: 1px -1px 0 var(--MyW) !important;
+	border: none !important;
+	border-color: var(--MyX1) !important;
+	border-radius: 10px !important;
+	padding: 6px 6px !important;
+	text-align: center;
 }
 
 #navigator-toolbox[inFullscreen="true"] #PersonalToolbar {
-    visibility: unset !important;
+	visibility: unset !important;
 }
 
 .groupbox-title {
-    background-color: var(--Myred2) !important;
-    color: var(--MyW) !important;
+	background-color: var(--Myred2) !important;
+	color: var(--MyW) !important;
 }
 
 #webext-panels-browser,
 #template-container,
 #bookmarks-view,
 #historyTree {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--Mygray3) !important;
-    color: var(--MyW) !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background-color: var(--Mygray3) !important;
+	color: var(--MyW) !important;
 }
 
 .deck {
-    background-color: var(--Mygray3) !important;
-    color: var(--MyW) !important;
+	background-color: var(--Mygray3) !important;
+	color: var(--MyW) !important;
 }
 
 .contextmenu,
 popup:not(#autoscroller),
 .popup-internal-box,
-.popup-internal-box:not(#options-popup):not(#custom-insert-popup):not(#toggler-popup):not(#insert-popup),
+.popup-internal-box:not(#options-popup):not(#custom-insert-popup):not(
+		#toggler-popup
+	):not(#insert-popup),
 #PanelUI-helpView,
 #PanelUI-menu-button,
 #appMenu-zoomReset-button,
@@ -214,14 +228,16 @@ popup:not(#autoscroller),
 .panel-subviews,
 .panel-subview-footer,
 [class^="PanelUI-"] {
-    -moz-appearance: initial !important;
-    appearance: initial !important;
+	-moz-appearance: initial !important;
+	appearance: initial !important;
 }
 
 .contextmenu,
 popup:not(#autoscroller),
 .popup-internal-box,
-.popup-internal-box:not(#options-popup):not(#custom-insert-popup):not(#toggler-popup):not(#insert-popup),
+.popup-internal-box:not(#options-popup):not(#custom-insert-popup):not(
+		#toggler-popup
+	):not(#insert-popup),
 #PanelUI-helpView,
 #PanelUI-menu-button,
 #appMenu-zoomReset-button,
@@ -229,30 +245,30 @@ popup:not(#autoscroller),
 .panel-subviews,
 .panel-subview-footer,
 [class^="PanelUI-"] {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--Mygray3) !important;
-    color: var(--MyW) !important;
-    border-radius: 3px !important;
-    border: 1px ridge var(--Myred1) !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background-color: var(--Mygray3) !important;
+	color: var(--MyW) !important;
+	border-radius: 3px !important;
+	border: 1px ridge var(--Myred1) !important;
 }
 
 menupopup,
 context-menu,
-menupopup>menu>menupopup {
-    max-height: 500px !important;
-    overflow-y: auto !important;
+menupopup > menu > menupopup {
+	max-height: 500px !important;
+	overflow-y: auto !important;
 }
 
 .webextension-popup-browser {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--Mygray3) !important;
-    color: var(--MyW) !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background-color: var(--Mygray3) !important;
+	color: var(--MyW) !important;
 }
 
 .panel-arrow {
-    filter: invert(33%);
+	filter: invert(33%);
 }
 
 .autocomplete-textbox-container,
@@ -263,100 +279,100 @@ menupopup>menu>menupopup {
 .ac-separator,
 .ac-url,
 .ac-action {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--Mygray3) !important;
-    color: var(--MyW) !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background-color: var(--Mygray3) !important;
+	color: var(--MyW) !important;
 }
 
 #urlbar-background,
 #urlbar {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--MyB) !important;
-    color: var(--MyW) !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background-color: var(--MyB) !important;
+	color: var(--MyW) !important;
 }
 
 #urlbar-background {
-    -moz-border-radius: 15px !important;
-    border-radius: 15px !important;
+	-moz-border-radius: 15px !important;
+	border-radius: 15px !important;
 }
 
 #urlbar {
-    border: 1px solid var(--Myred1) !important;
-    -moz-border-radius: 15px !important;
-    border-radius: 15px !important;
-    -moz-border-corner-fit: scale !important;
-    padding-right: 1px !important;
+	border: 1px solid var(--Myred1) !important;
+	-moz-border-radius: 15px !important;
+	border-radius: 15px !important;
+	-moz-border-corner-fit: scale !important;
+	padding-right: 1px !important;
 }
 
 #urlbar-input {
-    text-align: center !important;
+	text-align: center !important;
 }
 
 .urlbarView {
-    margin: 0 auto !important;
-    border-radius: 15px !important;
-    border-right: 1px solid var(--MyW) !important;
-    border-left: 1px solid var(--MyW) !important;
-    left: 0% !important;
-    right: 0% !important;
+	margin: 0 auto !important;
+	border-radius: 15px !important;
+	border-right: 1px solid var(--MyW) !important;
+	border-left: 1px solid var(--MyW) !important;
+	left: 0% !important;
+	right: 0% !important;
 }
 
-#PopupAutoCompleteRichResult[selected=true],
-.autocomplete-richlistitem[selected=true],
-.autocomplete-textbox-container[selected=true],
-#urlbar[selected=true],
-.ac-title[selected=true],
-.ac-title-tex[selected=true],
-.ac-separator[selected=true],
-.ac-url[selected=true],
-.ac-action[selected=true] {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background-color: var(--Myred1) !important;
-    color: var(--MyW) !important;
+#PopupAutoCompleteRichResult[selected="true"],
+.autocomplete-richlistitem[selected="true"],
+.autocomplete-textbox-container[selected="true"],
+#urlbar[selected="true"],
+.ac-title[selected="true"],
+.ac-title-tex[selected="true"],
+.ac-separator[selected="true"],
+.ac-url[selected="true"],
+.ac-action[selected="true"] {
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background-color: var(--Myred1) !important;
+	color: var(--MyW) !important;
 }
 
 #identity-box {
-    border-radius: 25px !important;
+	border-radius: 25px !important;
 }
 
 #tracking-protection-icon-container:hover {
-    background-color: var(--MyX3) !important;
-    border-radius: 25px !important;
+	background-color: var(--MyX3) !important;
+	border-radius: 25px !important;
 }
 
 arrowscrollbox {
-    border: 1px solid var(--Myred1) !important;
+	border: 1px solid var(--Myred1) !important;
 }
 
 #tabbrowser-arrowscrollbox {
-    border: none !important;
+	border: none !important;
 }
 
 menuseparator {
-    appearance: none !important;
-    border-top: 2px solid var(--Myred1) !important;
-    border-bottom: none !important;
-    padding: 0 !important;
-    margin: 2px 1em !important;
+	appearance: none !important;
+	border-top: 2px solid var(--Myred1) !important;
+	border-bottom: none !important;
+	padding: 0 !important;
+	margin: 2px 1em !important;
 }
 
 toolbar,
 menubar {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background: var(--Mygray3) !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background: var(--Mygray3) !important;
 }
 
 .customizationmode-button,
 .toolbarbutton-1,
 toolbarbutton {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background: none !important;
-    border-style: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background: none !important;
+	border-style: none !important;
 }
 
 .menuitem-iconic,
@@ -372,28 +388,39 @@ button,
 .toolbarbutton-1,
 #alltabs-button,
 toolbarbutton {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    color: var(--Mytext) !important;
-    background-color: var(--MyB) !important;
-    background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    text-shadow: 1px 1px 0 var(--Myred1) !important;
-    -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-    -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-    transition: border-color .3s ease, box-shadow .7s ease !important;
-    transition-timing-function: linear !important;
-    box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	color: var(--Mytext) !important;
+	background-color: var(--MyB) !important;
+	background-image: radial-gradient(
+			ellipse farthest-corner at center bottom,
+			hsl(0, 0%, 0%) 0%,
+			transparent 99%
+		),
+		linear-gradient(
+			180deg,
+			hsla(0, 0%, 66%, 0.5) 48%,
+			rgba(0, 0, 0, 0.4) 49%,
+			rgba(0, 0, 0, 0.8) 100%,
+			hsla(0, 0%, 66%, 0.2)
+		) !important;
+	text-shadow: 1px 1px 0 var(--Myred1) !important;
+	-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+	-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+	transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+	transition-timing-function: linear !important;
+	box-shadow: 0 1px 4px 1px var(--MyB) !important;
 }
 
 toolbarbutton focus,
 toolbarbutton:-moz-focusring {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    outline: none !important;
-    background: none !important;
-    border-style: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	outline: none !important;
+	background: none !important;
+	border-style: none !important;
 }
 
 .customizationmode-button:hover,
@@ -402,21 +429,21 @@ toolbarbutton:-moz-focusring {
 .toolbarbutton-1[open="true"],
 toolbarbutton:active,
 toolbarbutton:hover {
-    -moz-appearance: none !important;
-    -webkit-appearance: none !important;
-    appearance: none !important;
-    background: none !important;
-    border-style: none !important;
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
+	appearance: none !important;
+	background: none !important;
+	border-style: none !important;
 }
 
 .toolbarbutton-1[open="true"] .toolbarbutton-icon,
 .toolbarbutton-1[open="true"] .toolbarbutton-badge-stack,
 .toolbarbutton-1:hover .toolbarbutton-icon,
 .toolbarbutton-1:hover .toolbarbutton-badge-stack {
-    -moz-appearance: none !important;
-    appearance: none !important;
-    background: none !important;
-    border: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	background: none !important;
+	border: none !important;
 }
 
 .menuitem-iconic:hover,
@@ -438,21 +465,32 @@ button:hover,
 .toolbarbutton-1[open="true"] .toolbarbutton-icon,
 .toolbarbutton-1[open="true"] .toolbarbutton-badge-stack,
 toolbarbutton:hover:not([disabled="true"]) {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none !important;
-    box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-    background-color: var(--MyX1) !important;
-    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    outline: none !important;
-    opacity: 1.0 !important;
-    color: var(--MyW) !important;
-    -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-    -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-    transition: background .2s, box-shadow .4s, border-color .2s !important;
-    transition-timing-function: linear !important;
-    text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none !important;
+	box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+	background-color: var(--MyX1) !important;
+	background-image: radial-gradient(
+			ellipse farthest-corner at center bottom,
+			var(--Myred1) 0%,
+			transparent 99%
+		),
+		linear-gradient(
+			180deg,
+			hsla(0, 0%, 66%, 0.5) 48%,
+			rgba(0, 0, 0, 0.4) 49%,
+			rgba(0, 0, 0, 0.8) 100%,
+			hsla(0, 0%, 66%, 0.2)
+		) !important;
+	outline: none !important;
+	opacity: 1 !important;
+	color: var(--MyW) !important;
+	-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+	-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+	transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+	transition-timing-function: linear !important;
+	text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 }
 
 .menuitem-iconic:active,
@@ -471,155 +509,176 @@ button:active,
 toolbarbutton:active,
 #alltabs-button:active,
 .toolbarbutton-1:active {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    border: none !important;
-    box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-    background-color: var(--MyX3) !important;
-    background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-    outline: none !important;
-    opacity: 1.0 !important;
-    color: var(--MyW) !important;
-    -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-    -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-    transition: background .2s, box-shadow .4s, border-color .2s !important;
-    transition-timing-function: linear !important;
-    text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border: none !important;
+	box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+	background-color: var(--MyX3) !important;
+	background-image: radial-gradient(
+			ellipse farthest-corner at center bottom,
+			var(--Mygreen1) 0%,
+			transparent 99%
+		),
+		linear-gradient(
+			180deg,
+			rgba(168, 168, 168, 0.5) 48%,
+			hsla(0, 0%, 0%, 0.4) 49%,
+			rgba(0, 0, 0, 0.8) 100%,
+			rgba(168, 168, 168, 0.2)
+		) !important;
+	outline: none !important;
+	opacity: 1 !important;
+	color: var(--MyW) !important;
+	-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+	-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+	transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+	transition-timing-function: linear !important;
+	text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
 }
 
 .tab-close-button {
-    padding: 5px !important;
+	padding: 5px !important;
 }
 
 #identity-box:hover {
-    background-color: var(--MyX2) !important;
+	background-color: var(--MyX2) !important;
 }
 
 .tabbrowser-tab:not([selected="true"]):hover .tab-line {
-    background-color: var(--Myred1) !important;
+	background-color: var(--Myred1) !important;
 }
 
 .tab-line[selected]:hover,
 .tab-line[selected],
 .tab-line {
-    background-color: var(--Myred1) !important;
+	background-color: var(--Myred1) !important;
 }
 
 .tab-loading-burst[bursting]::before {
-    fill: var(--MyW) !important;
+	fill: var(--MyW) !important;
 }
 
 .tabbrowser-tab {
-    -moz-appearance: none !important;
-    appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
 }
 
 .toolbar-items {
-    border: none !important;
+	border: none !important;
 }
 
 tab {
-    border-right: 1px solid var(--Mygray2) !important;
-    border-left: 1px solid var(--Mygray2) !important;
-    border-top-left-radius: 0.5px !important;
-    border-top-right-radius: 0.5px !important;
+	border-right: 1px solid var(--Mygray2) !important;
+	border-left: 1px solid var(--Mygray2) !important;
+	border-top-left-radius: 0.5px !important;
+	border-top-right-radius: 0.5px !important;
 }
 
 .identity-box-button,
 .extensionPage {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .titlebar-spacer {
-    background-color: var(--Mygray3) !important;
+	background-color: var(--Mygray3) !important;
 }
 
 .tabbrowser-tab {
-    background-color: var(--Myred3) !important;
+	background-color: var(--Myred3) !important;
 }
 
 .tabbrowser-tab .tab-content[selected] {
-    background-color: var(--Myred2) !important;
-    border-top: 2px solid var(--Mygreen1) !important;
+	background-color: var(--Myred2) !important;
+	border-top: 2px solid var(--Mygreen1) !important;
 }
 
 .tabbrowser-tab:hover .tab-content[selected] {
-    color: var(--MyW) !important;
-    text-shadow: 1px 1px 0 var(--MyB) !important;
-    background-color: var(--Myred1) !important;
+	color: var(--MyW) !important;
+	text-shadow: 1px 1px 0 var(--MyB) !important;
+	background-color: var(--Myred1) !important;
 }
 
 .tabbrowser-tab:hover .tab-content {
-    color: var(--MyW) !important;
-    text-shadow: 1px 1px 0 var(--MyB) !important;
-    background-color: var(--Myred1) !important;
-    text-align: center !important;
+	color: var(--MyW) !important;
+	text-shadow: 1px 1px 0 var(--MyB) !important;
+	background-color: var(--Myred1) !important;
+	text-align: center !important;
 }
 
-tabbrowser-tab:not([labelendaligned], :hover)>.tab-stack>.tab-content>.tab-close-button {
-    padding-inline-start: 0;
-    width: 17px;
+tabbrowser-tab:not([labelendaligned], :hover)
+	> .tab-stack
+	> .tab-content
+	> .tab-close-button {
+	padding-inline-start: 0;
+	width: 17px;
 }
 
 #alertBox[animate] {
-    animation-timing-function: cubic-bezier(.12, 1.23, .48, 1.09);
-    animation-duration: 10s !important;
+	animation-timing-function: cubic-bezier(0.12, 1.23, 0.48, 1.09);
+	animation-duration: 10s !important;
 }
 
 #alertBox[animate][clicked] {
-    animation-duration: 3s !important;
-    animation-name: alert-clicked-animation;
+	animation-duration: 3s !important;
+	animation-name: alert-clicked-animation;
 }
 
 #alertBox[animate][closing] {
-    animation-duration: 3s !important;
-    animation-name: alert-closing-animation;
+	animation-duration: 3s !important;
+	animation-name: alert-closing-animation;
 }
 
 #alertBox[animate]:not([clicked]):not([closing]):hover {
-    opacity: 1 !important;
-    animation-play-state: paused !important;
+	opacity: 1 !important;
+	animation-play-state: paused !important;
 }
 
 #alertBox {
-    background: -moz-linear-gradient(top, rgba(188, 50, 53, 1) 0%, rgba(153, 12, 14, 1) 34%, rgba(147, 29, 31, 1) 67%, rgba(79, 15, 16, 1) 100%);
-    color: var(--Mytext) !important;
-    border-radius: 5px !important;
-    border: 5px solid var(--MyB) !important;
-    box-shadow: none !important;
-    z-index: 2147483647;
+	background: -moz-linear-gradient(
+		top,
+		rgba(188, 50, 53, 1) 0%,
+		rgba(153, 12, 14, 1) 34%,
+		rgba(147, 29, 31, 1) 67%,
+		rgba(79, 15, 16, 1) 100%
+	);
+	color: var(--Mytext) !important;
+	border-radius: 5px !important;
+	border: 5px solid var(--MyB) !important;
+	box-shadow: none !important;
+	z-index: 2147483647;
 }
 
 window#alertNotification {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 #alertBox #alertSourceLabel,
 #alertBox #alertTitleLabel {
-    background-color: transparent !important;
-    color: var(--MyW) !important;
-    font-weight: bold;
-    z-index: 1000000;
+	background-color: transparent !important;
+	color: var(--MyW) !important;
+	font-weight: bold;
+	z-index: 1000000;
 }
 
 menuitem,
 [role="menuitem"],
 label {
-    color: var(--MyW) !important;
+	color: var(--MyW) !important;
 }
 
 #contentAreaContextMenu,
 .menupopup-arrowscrollbox,
 .panel-arrowcontent {
-    background-color: var(--Mygray3) !important;
+	background-color: var(--Mygray3) !important;
 }
 
 menuseparator,
 .small-separator {
-    background-color: var(--Myred1) !important;
+	background-color: var(--Myred1) !important;
 }
 
+/*
 #urlbar[breakout],
 #urlbar[breakout][breakout-extend] {
     --urlbar-height: 28px !important;
@@ -642,31 +701,32 @@ menuseparator,
     box-shadow: 0 1px 4px rgba(0, 0, 0, .05) !important;
     animation: none !important;
 }
+*/
 
 #tabbrowser-arrowscrollbox {
-    pointer-events: none
+	pointer-events: none;
 }
 
 toolbarbutton#scrollbutton-up,
 toolbarbutton#scrollbutton-down {
-    pointer-events: auto
+	pointer-events: auto;
 }
 
 .tabbrowser-tab,
 #tabs-newtab-button,
 .tabs-newtab-button {
-    pointer-events: auto
+	pointer-events: auto;
 }
 
 .new-tab-popup,
-.new-tab-popup>* {
-    pointer-events: auto
+.new-tab-popup > * {
+	pointer-events: auto;
 }
 
 browser#html-view-browser {
-    background: var(--MyB) !important;
+	background: var(--MyB) !important;
 }
 
 toolbarbutton.toolbarbutton-1 {
-    height: 42px !important;
+	height: 42px !important;
 }
