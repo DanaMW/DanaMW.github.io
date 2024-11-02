@@ -9,451 +9,540 @@
 
 @-moz-document url-prefix("about"),
 url("about:addons") {
-
-    span[data-l10n-id="discopane-intro"],
-    .warning,
-    .addon-card-message[type="warning"],
-    .addon-card-message[type="warning"],
-    #private-browsing-notice {
-        display: none !important;
-    }
-
-    *:focus,
-    *:focus-visible,
-    *:-moz-focusring {
-        border-color: var(--Myred1) !important;
-    }
-
-    .main-heading,
-    .main-search,
-    .sticky-container,
-    html,
-    body {
-        background-color: var(--MyB) !important;
-    }
-
-    section h2.list-section-heading {
-        color: var(--Myred1) !important;
-    }
-
-    .addon[privateBrowsing="true"] .description.privateBrowsing-notice {
-        background-color: transparent !important;
-        color: var(--Mygreen1) !important;
-    }
-
-    .addon[privateBrowsing="false"] .description.privateBrowsing-notice {
-        display: block !important;
-        margin-left: 40px !important;
-        background-color: transparent !important;
-        color: var(--MyB) !important;
-    }
-
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-
-    .addon.card {
-        max-width: 100% !important;
-        width: 100% !important;
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        margin-top: 1px !important;
-        margin-bottom: 1px !important;
-    }
-
-    textbox {
-        border: none !important;
-        text-align: center !important;
-    }
-
-    button.more-options-button {
-        color: var(--MyW) !important;
-    }
-
-    button.more-options-button:hover {
-        background-color: var(--MyX1) !important;
-    }
-
-    *|*.category,
-    td.cell-edit,
-    td.cell-reset,
-    menulist,
-    .sidebar-footer-button,
-    #help-button,
-    #preferencesButton,
-    button:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete):not(.more-options-button):not([role="menuitem"]):not(.back-button) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-
-    .addon:hover .name {
-        color: var(--MyW) !important;
-    }
-
-    .addon .name {
-        color: var(--Myred1) !important;
-        filter: blur(0) !important;
-        text-shadow: none !important;
-    }
-
-    #categories>.category:hover,
-    #categories>.category[selected],
-    [selected],
-    richlistitem.category[selected],
-    #categories>.category[selected],
-    #categories>.category.selected td.cell-edit:hover,
-    td.cell-reset:hover,
-    menulist:hover,
-    .sidebar-footer-button:hover,
-    .category[aria-selected="true"],
-    .category[selected="true"],
-    .category:hover,
-    button[role="menuitem"]:hover,
-    #help-button:hover,
-    #preferencesButton:hover,
-    button:hover:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete):not(.more-options-button):not([role="menuitem"]):not(.back-button) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-
-    #help-button:active,
-    #preferencesButton:active,
-    button:active:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(.button-reset):not(.button-toggle):not(.button-add):not(.button-save):not(.button-delete):not(.more-options-button):not([role="menuitem"]):not(.back-button) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-        transition-timing-function: linear !important;
-    }
-
-    label#warningTitle.title-text {
-        color: var(--Myred1) !important;
-    }
-
-    #isDefaultLabel,
-    .defaultBrowserBox {
-        color: var(--Myred1) !important;
-    }
-
-    #alwaysCheckDefault,
-    .content-box,
-    .search-container,
-    .pane-container {
-        color: var(--Mytext) !important;
-    }
-
-    .relnotes body {
-        background-color: transparent !important;
-    }
-
-    ::-moz-progress-bar {
-        background-color: var(--Myred1) !important;
-    }
-
-    .addon-view[notification="warning"] {
-        --view-highlight-color: var(--Myback) !important;
-    }
-
-    #header-search:hover,
-    #header-search {
-        -moz-appearance: none !important;
-        appearance: none;
-        background-color: var(--MyB) !important;
-        border: none !important;
-    }
-
-    #category-search[disabled="true"] {
-        pointer-events: none !important;
-    }
-
-    .addon {
-        -moz-appearance: none !important;
-        appearance: none;
-    }
-
-    .disabled-postfix {
-        color: var(--Mygreen2) !important;
-    }
-
-    panel-item,
-    span[data-l10n-id="addon-updates-none-found"],
-    [role="menuitem"],
-    label,
-    .text-link,
-    .update-postfix {
-        color: var(--MyW) !important;
-    }
-
-    .creator {
-        color: var(--Mytext) !important;
-    }
-
-    .detail-view,
-    #updates-container,
-    #detail-name-container,
-    #detail-desc,
-    #detail-fulldesc,
-    .category,
-    #label,
-    #detail-name,
-    #detail-version {
-        color: var(--Mytext) !important;
-    }
-
-    .addon-view[active="true"] .content-inner-container .basicinfo-container .name-container {
-        color: var(--Myred1) !important;
-    }
-
-    .addon-view[active="true"] .content-inner-container .advancedinfo-container .description-outer-container .description-container .description {
-        color: var(--Mytext) !important;
-    }
-
-    .addon-view[active="false"] .content-inner-container .basicinfo-container .name-container .name {
-        color: var(--Myred3) !important;
-    }
-
-    .addon-view[active="false"] .content-inner-container .advancedinfo-container .description-outer-container .description-container .description {
-        color: var(--Myred3) !important;
-    }
-
-    .text-link:hover {
-        color: var(--MyW) !important;
-    }
-
-    #detail-state-menulist {
-        background-color: var(--Myblue2) !important;
-        color: var(--MyB) !important;
-    }
-
-    .category[selected="true"]:hover {
-        color: var(--MyW) !important;
-    }
-
-    .category[aria-selected="true"]:hover {
-        color: var(--MyW) !important;
-    }
-
-    .text-link:hover {
-        color: var(--MyW) !important;
-    }
-
-    #addons-page {
-        -moz-appearance: none;
-        appearance: none;
-        background: none !important;
-        background-color: var(--MyB) !important;
-        color: var(--Mytext) !important;
-    }
-
-    addon-target-container {
-        color: var(--MyB) !important;
-        background-color: var(--Mygray1) !important;
-    }
-
-    .debug-button {
-        color: var(--MyW) !important;
-    }
-
-    p {
-        color: var(--MyW) !important;
-    }
-
-    #ltr,
-    li a,
-    a {
-        color: var(--MyW) !important;
-    }
-
-    a:link:hover {
-        color: var(--Myred1) !important;
-    }
-
-    .container,
-    li a:hover,
-    a:hover {
-        color: var(--Myred1) !important;
-        transition: width 110%, height 110%;
-    }
-
-    th,
-    div[data-l10n-id="profiles-subtitle"],
-    h3,
-    h2,
-    h1 {
-        color: var(--MyW) !important;
-        text-align: center;
-        text-shadow: 1px -1px 0 var(--Myred1) !important;
-    }
-
-    .notice-box,
-    td {
-        background-color: var(--Mygray2) !important;
-    }
-
-    #aboutLogoContainer {
-        -moz-appearance: none !important;
-        appearance: none;
-        padding-left: 70px;
-        border: none !important
-    }
-
-    .dropmarker-icon {
-        filter: invert(1);
-    }
-
-    .message-bar,
-    .extension-controlled,
-    .updateSettingCrossUserWarningContainer {
-        background-color: var(--Myblue2) !important;
-        color: var(--MyW) !important;
-    }
-
-    .content,
-    .addon.extension {
-        background-color: var(--Myred3) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myborder) !important;
-        color: var(--MyW) !important;
-    }
-
-    .card {
-        color: var(--Mytext) !important;
-    }
-
-    dd {
-        color: var(--MyW) !important;
-    }
-
-    .card:hover {
-        color: var(--MyW) !important;
-        box-shadow: 0 0 20px var(--Myred1) !important;
-    }
-
-    section .list-section-heading,
-    dd:hover {
-        color: var(--Myred1) !important;
-    }
-
-    .textbox-input,
-    #searchFilter,
-    #header-utils-btn,
-    #textbox-input-box,
-    .header-button,
-    .alert {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyB) !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    label {
-        background-color: transparent !important;
-    }
-
-    button>.box-inherit.button-box,
-    dropmarker {
-        color: var(--MyW) !important;
-    }
-
-    aside,
-    main,
-    .card,
-    addon-card {
-        background-image: none !important;
-        background-color: transparent
-    }
-
-    html,
-    body,
-    #addons-page,
-    .app,
-    main {
-        background-color: var(--MyB) !important;
-    }
-
-    .card.addon {
-        margin-bottom: 15px !important;
-        border: none !important;
-    }
-
-    .downloadMainArea:hover,
-    .download.download-state:hover,
-    .download.download-state[selected="true"],
-    .card:hover,
-    .content-blocking-category.selected {
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-
-    .card,
-    .notice-box,
-    .content-blocking-category {
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-
-    #about-config-search,
-    td.cell-value,
-    input:not([type="checkbox"]):not([type="radio"]) {
-        -moz-appearance: none;
-        appearance: none;
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        text-align: center !important;
-        border-radius: 5px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
+	span[data-l10n-id="discopane-intro"],
+	.warning,
+	.addon-card-message[type="warning"],
+	.addon-card-message[type="warning"],
+	#private-browsing-notice {
+		display: none !important;
+	}
+
+	*:focus,
+	*:focus-visible,
+	*:-moz-focusring {
+		border-color: var(--Myred1) !important;
+	}
+
+	.main-heading,
+	.main-search,
+	.sticky-container,
+	html,
+	body {
+		background-color: var(--MyB) !important;
+	}
+
+	section h2.list-section-heading {
+		color: var(--Myred1) !important;
+	}
+
+	.addon[privateBrowsing="true"] .description.privateBrowsing-notice {
+		background-color: transparent !important;
+		color: var(--Mygreen1) !important;
+	}
+
+	.addon[privateBrowsing="false"] .description.privateBrowsing-notice {
+		display: block !important;
+		margin-left: 40px !important;
+		background-color: transparent !important;
+		color: var(--MyB) !important;
+	}
+
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
+
+	.addon.card {
+		max-width: 100% !important;
+		width: 100% !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		margin-top: 1px !important;
+		margin-bottom: 1px !important;
+	}
+
+	textbox {
+		border: none !important;
+		text-align: center !important;
+	}
+
+	button.more-options-button {
+		color: var(--MyW) !important;
+	}
+
+	button.more-options-button:hover {
+		background-color: var(--MyX1) !important;
+	}
+
+	*|*.category,
+	td.cell-edit,
+	td.cell-reset,
+	menulist,
+	.sidebar-footer-button,
+	#help-button,
+	#preferencesButton,
+	button:not([data-l10n-id="addon-options-button"]):not(.button-edit):not(
+			.button-reset
+		):not(.button-toggle):not(.button-add):not(.button-save):not(
+			.button-delete
+		):not(.more-options-button):not([role="menuitem"]):not(.back-button) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
+
+	.addon:hover .name {
+		color: var(--MyW) !important;
+	}
+
+	.addon .name {
+		color: var(--Myred1) !important;
+		filter: blur(0) !important;
+		text-shadow: none !important;
+	}
+
+	#categories > .category:hover,
+	#categories > .category[selected],
+	[selected],
+	richlistitem.category[selected],
+	#categories > .category[selected],
+	#categories > .category.selected td.cell-edit:hover,
+	td.cell-reset:hover,
+	menulist:hover,
+	.sidebar-footer-button:hover,
+	.category[aria-selected="true"],
+	.category[selected="true"],
+	.category:hover,
+	button[role="menuitem"]:hover,
+	#help-button:hover,
+	#preferencesButton:hover,
+	button:hover:not([data-l10n-id="addon-options-button"]):not(
+			.button-edit
+		):not(.button-reset):not(.button-toggle):not(.button-add):not(
+			.button-save
+		):not(.button-delete):not(.more-options-button):not(
+			[role="menuitem"]
+		):not(.back-button) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	#help-button:active,
+	#preferencesButton:active,
+	button:active:not([data-l10n-id="addon-options-button"]):not(
+			.button-edit
+		):not(.button-reset):not(.button-toggle):not(.button-add):not(
+			.button-save
+		):not(.button-delete):not(.more-options-button):not(
+			[role="menuitem"]
+		):not(.back-button) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+		transition-timing-function: linear !important;
+	}
+
+	label#warningTitle.title-text {
+		color: var(--Myred1) !important;
+	}
+
+	#isDefaultLabel,
+	.defaultBrowserBox {
+		color: var(--Myred1) !important;
+	}
+
+	#alwaysCheckDefault,
+	.content-box,
+	.search-container,
+	.pane-container {
+		color: var(--Mytext) !important;
+	}
+
+	.relnotes body {
+		background-color: transparent !important;
+	}
+
+	::-moz-progress-bar {
+		background-color: var(--Myred1) !important;
+	}
+
+	.addon-view[notification="warning"] {
+		--view-highlight-color: var(--Myback) !important;
+	}
+
+	#header-search:hover,
+	#header-search {
+		-moz-appearance: none !important;
+		appearance: none;
+		background-color: var(--MyB) !important;
+		border: none !important;
+	}
+
+	#category-search[disabled="true"] {
+		pointer-events: none !important;
+	}
+
+	.addon {
+		-moz-appearance: none !important;
+		appearance: none;
+	}
+
+	.disabled-postfix {
+		color: var(--Mygreen2) !important;
+	}
+
+	panel-item,
+	span[data-l10n-id="addon-updates-none-found"],
+	[role="menuitem"],
+	label,
+	.text-link,
+	.update-postfix {
+		color: var(--MyW) !important;
+	}
+
+	.creator {
+		color: var(--Mytext) !important;
+	}
+
+	.detail-view,
+	#updates-container,
+	#detail-name-container,
+	#detail-desc,
+	#detail-fulldesc,
+	.category,
+	#label,
+	#detail-name,
+	#detail-version {
+		color: var(--Mytext) !important;
+	}
+
+	.addon-view[active="true"]
+		.content-inner-container
+		.basicinfo-container
+		.name-container {
+		color: var(--Myred1) !important;
+	}
+
+	.addon-view[active="true"]
+		.content-inner-container
+		.advancedinfo-container
+		.description-outer-container
+		.description-container
+		.description {
+		color: var(--Mytext) !important;
+	}
+
+	.addon-view[active="false"]
+		.content-inner-container
+		.basicinfo-container
+		.name-container
+		.name {
+		color: var(--Myred3) !important;
+	}
+
+	.addon-view[active="false"]
+		.content-inner-container
+		.advancedinfo-container
+		.description-outer-container
+		.description-container
+		.description {
+		color: var(--Myred3) !important;
+	}
+
+	.text-link:hover {
+		color: var(--MyW) !important;
+	}
+
+	#detail-state-menulist {
+		background-color: var(--Myblue2) !important;
+		color: var(--MyB) !important;
+	}
+
+	.category[selected="true"]:hover {
+		color: var(--MyW) !important;
+	}
+
+	.category[aria-selected="true"]:hover {
+		color: var(--MyW) !important;
+	}
+
+	.text-link:hover {
+		color: var(--MyW) !important;
+	}
+
+	#addons-page {
+		-moz-appearance: none;
+		appearance: none;
+		background: none !important;
+		background-color: var(--MyB) !important;
+		color: var(--Mytext) !important;
+	}
+
+	addon-target-container {
+		color: var(--MyB) !important;
+		background-color: var(--Mygray1) !important;
+	}
+
+	.debug-button {
+		color: var(--MyW) !important;
+	}
+
+	p {
+		color: var(--MyW) !important;
+	}
+
+	#ltr,
+	li a,
+	a {
+		color: var(--MyW) !important;
+	}
+
+	a:link:hover {
+		color: var(--Myred1) !important;
+	}
+
+	.container,
+	li a:hover,
+	a:hover {
+		color: var(--Myred1) !important;
+		transition: width 110%, height 110%;
+	}
+
+	th,
+	div[data-l10n-id="profiles-subtitle"],
+	h3,
+	h2,
+	h1 {
+		color: var(--MyW) !important;
+		text-align: center;
+		text-shadow: 1px -1px 0 var(--Myred1) !important;
+	}
+
+	.notice-box,
+	td {
+		background-color: var(--Mygray2) !important;
+	}
+
+	#aboutLogoContainer {
+		-moz-appearance: none !important;
+		appearance: none;
+		padding-left: 70px;
+		border: none !important;
+	}
+
+	.dropmarker-icon {
+		filter: invert(1);
+	}
+
+	.message-bar,
+	.extension-controlled,
+	.updateSettingCrossUserWarningContainer {
+		background-color: var(--Myblue2) !important;
+		color: var(--MyW) !important;
+	}
+
+	.content,
+	.addon.extension {
+		background-color: var(--Myred3) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myborder) !important;
+		color: var(--MyW) !important;
+	}
+
+	.card {
+		color: var(--Mytext) !important;
+	}
+
+	dd {
+		color: var(--MyW) !important;
+	}
+
+	.card:hover {
+		color: var(--MyW) !important;
+		box-shadow: 0 0 20px var(--Myred1) !important;
+	}
+
+	section .list-section-heading,
+	dd:hover {
+		color: var(--Myred1) !important;
+	}
+
+	.textbox-input,
+	#searchFilter,
+	#header-utils-btn,
+	#textbox-input-box,
+	.header-button,
+	.alert {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyB) !important;
+		border: 1px solid var(--Myred1) !important;
+	}
+
+	label {
+		background-color: transparent !important;
+	}
+
+	button > .box-inherit.button-box,
+	dropmarker {
+		color: var(--MyW) !important;
+	}
+
+	aside,
+	main,
+	.card,
+	addon-card {
+		background-image: none !important;
+		background-color: transparent;
+	}
+
+	html,
+	body,
+	#addons-page,
+	.app,
+	main {
+		background-color: var(--MyB) !important;
+	}
+
+	.card.addon {
+		margin-bottom: 15px !important;
+		border: none !important;
+	}
+
+	.downloadMainArea:hover,
+	.download.download-state:hover,
+	.download.download-state[selected="true"],
+	.card:hover,
+	.content-blocking-category.selected {
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
+	}
+
+	.card,
+	.notice-box,
+	.content-blocking-category {
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
+
+	#about-config-search,
+	td.cell-value,
+	input:not([type="checkbox"]):not([type="radio"]) {
+		-moz-appearance: none;
+		appearance: none;
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		text-align: center !important;
+		border-radius: 5px !important;
+		border: 1px solid var(--Myred1) !important;
+	}
 }
 
 #addons-page {
-    background-color: var(--MyB) !important;
+	background-color: var(--MyB) !important;
 }
 
 .addon.card {
-    max-width: 100% !important;
-    width: 100% !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    margin-bottom: 15px !important;
-    border: none !important;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+	max-width: 100% !important;
+	width: 100% !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-bottom: 15px !important;
+	border: none !important;
+	background-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.8),
+		rgba(41, 41, 41, 0.9),
+		rgba(75, 75, 75, 0.9) 100%,
+		transparent
+	) !important;
 }
 
 .addon.card:hover {
-    background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+	background-image: linear-gradient(
+		to top,
+		rgba(65, 21, 21, 0.8),
+		rgba(97, 22, 22, 0.8),
+		rgba(189, 38, 38, 0.8) 100%,
+		transparent
+	) !important;
 }
 
 .textbox-input,
@@ -463,86 +552,102 @@ span[data-l10n-id="addon-updates-none-found"],
 label,
 .text-link,
 .update-postfix {
-    color: var(--MyW) !important;
+	color: var(--MyW) !important;
 }
 
 search-textbox {
-    border: 1px solid var(--TwitterRed) !important;
-    border-radius: 25px !important;
+	border: 1px solid var(--TwitterRed) !important;
+	border-radius: 25px !important;
 }
 
 search-textbox:hover {
-    border: 1px solid var(--TwitterBlue) !important;
+	border: 1px solid var(--TwitterBlue) !important;
 }
 
 .back-button {
-    color: var(--MyW) !important;
-    background-color: var(--MyX1) !important;
+	color: var(--MyW) !important;
+	background-color: var(--MyX1) !important;
 }
 
 .back-button:hover {
-    background-color: var(--Myred1) !important;
+	background-color: var(--Myred1) !important;
 }
 
 /*[role="menu"],*/
 
 .addon,
 .buttonrow {
-    background-color: var(--Mygray3) !important;
+	background-color: var(--Mygray3) !important;
 }
 
 @-moz-document url("about:performance") {
-    #dispatch-tbody {
-        background-color: var(--MyB) !important;
-        color: var(--MyW) !important;
-    }
+	#dispatch-tbody {
+		background-color: var(--MyB) !important;
+		color: var(--MyW) !important;
+	}
 
-    tr[data-l10n-id="item"] {
-        background-color: var(--MyB) !important;
-    }
+	tr[data-l10n-id="item"] {
+		background-color: var(--MyB) !important;
+	}
 
-    tr[data-l10n-id="item"]:hover {
-        background-color: var(--MyX1) !important;
-    }
+	tr[data-l10n-id="item"]:hover {
+		background-color: var(--MyX1) !important;
+	}
 
-    td {
-        background-color: var(--MyB) !important;
-    }
+	td {
+		background-color: var(--MyB) !important;
+	}
 
-    td:hover {
-        background-color: var(--MyX1) !important;
-    }
+	td:hover {
+		background-color: var(--MyX1) !important;
+	}
 
-    #dispatch-thead>tr>td {
-        background-color: var(--Myred3) !important;
-    }
+	#dispatch-thead > tr > td {
+		background-color: var(--Myred3) !important;
+	}
 }
 
 @-moz-document url("about:about") {
-    ul>li:hover {
-        background-color: var(--MyX1) !important;
-    }
+	ul > li:hover {
+		background-color: var(--MyX1) !important;
+	}
 }
 
 @-moz-document url("about:preferences") {
-
-    richlistitem,
-    richlistbox#handlersView {
-        background: var(--Myblue2) !important;
-    }
+	richlistitem,
+	richlistbox#handlersView {
+		background: var(--Myblue2) !important;
+	}
 }
 
 @-moz-document url("about:addons") {
+	#content,
+	#sidebar,
+	#full {
+		background: var(--MyB) !important;
+	}
 
-    #content,
-    #sidebar,
-    #full {
-        background: var(--MyB) !important;
-    }
+	search-textbox,
+	input[placeholder="Search addons.mozilla.org"],
+	search-addons search-textbox input[mozactionhint="search"] {
+		color: var(--MyW) !important;
+	}
+}
 
-    search-textbox,
-    input[placeholder="Search addons.mozilla.org"],
-    search-addons search-textbox input[mozactionhint="search"] {
-        color: var(--MyW) !important;
-    }
+#action-box {
+	background: -moz-linear-gradient(
+		top,
+		rgba(188, 50, 53, 1) 0%,
+		rgba(153, 12, 14, 1) 34%,
+		rgba(147, 29, 31, 1) 67%,
+		rgba(79, 15, 16, 1) 100%
+	);
+	color: var(--Mytext) !important;
+	border-radius: 5px !important;
+	border: 1px solid var(--Myred1) !important;
+	box-shadow: none !important;
+}
+
+.page-subtitle {
+	color: var(--MyW) !important;
 }
