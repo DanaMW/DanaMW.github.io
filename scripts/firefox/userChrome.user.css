@@ -584,21 +584,27 @@ tab {
 	background-color: var(--Mygray3) !important;
 }
 
+.tabbrowser-tab[label="Quickdial"],
 .tabbrowser-tab {
 	background-color: var(--Myred3) !important;
 }
 
+.tabbrowser-tab[label="Quickdial"] .tab-content[selected],
 .tabbrowser-tab .tab-content[selected] {
 	background-color: var(--Myred2) !important;
 	border-top: 2px solid var(--Mygreen1) !important;
 }
 
-.tabbrowser-tab:hover .tab-content[selected] {
+.tabbrowser-tab[label="Quickdial"]:hover
+	.tab-content[selected]
+	.tabbrowser-tab:hover
+	.tab-content[selected] {
 	color: var(--MyW) !important;
 	text-shadow: 1px 1px 0 var(--MyB) !important;
 	background-color: var(--Myred1) !important;
 }
 
+.tabbrowser-tab[label="Quickdial"]:hover .tab-content,
 .tabbrowser-tab:hover .tab-content {
 	color: var(--MyW) !important;
 	text-shadow: 1px 1px 0 var(--MyB) !important;
@@ -634,6 +640,7 @@ tabbrowser-tab:not([labelendaligned], :hover)
 	animation-play-state: paused !important;
 }
 
+#action-box,
 #alertBox {
 	background: -moz-linear-gradient(
 		top,
