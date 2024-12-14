@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.86
+@version      0.2.87
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -578,6 +578,8 @@ url-prefix("https://bard.google.com/")
 		max-width: 78px !important;
 	}
 
+	.p8Jhnd,
+	.niO4u.VDgVie.SlP8xc,
 	.YmvwI,
 	.Tg7LZd,
     .GKS7s,
@@ -654,7 +656,7 @@ url-prefix("https://bard.google.com/")
     #TEPD0b,
     input.ksb,
     .hdtb-msel,
-    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]):not(.WpHeLc):not(.rIbAWc):not(.hdtb-dd-b):not(.ExCKkf.z1asCe.rzyADb):not([class*="viewerfooter-navigation-button"]):not(.widget-viewer-header-flag-button):not(.uquUgf.NhRr3b),
+    [role="button"]:not(.Fx4vi):not(.gb_nc):not(.gb_b):not(.JeEise):not(#irc_cb):not(.XCKyNd):not(.gb_x):not([title="Google apps"]):not([aria-label="Search"]):not([aria-label="Google apps"]):not(.gmlSVb):not(.Xvesr):not([aria-label="About this Result"]):not(.WpHeLc):not(.rIbAWc):not(.hdtb-dd-b):not(.ExCKkf.z1asCe.rzyADb):not([class*="viewerfooter-navigation-button"]):not(.widget-viewer-header-flag-button):not(.uquUgf.NhRr3b):not(.njFjte),
     .gb_O,
     .gb_fa,
     g-left-button,
@@ -700,6 +702,8 @@ url-prefix("https://bard.google.com/")
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	.kHtcsd:hover,
+	.niO4u.VDgVie.SlP8xc:hover,
 	.YmvwI[selected],
 	.YmvwI:hover,
 	.Tg7LZd:hover,
@@ -859,6 +863,7 @@ url-prefix("https://bard.google.com/")
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
+	.niO4u.VDgVie.SlP8xc:active,
 	.YmvwI:active,
 	.Tg7LZd:active,
     .GKS7s:active,
