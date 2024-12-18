@@ -2,7 +2,7 @@
 @name         Walmart Dark
 @namespace    http://danamw.github.io/scripts/scripts/WalmartDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/WalmartDark.user.css
-@version      0.0.17
+@version      0.0.18
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -10,273 +10,337 @@
 
 @-moz-document domain("walmart.com"),
 domain("walmartimages.com") {
-    .bg-dark-blue,
-    footer,
-    html,
-    body {
-        background-color: var(--MyB) !important;
-    }
-    .stock {
-        display: none !important;
-    }
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
-     ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
-     ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
-    .word-normal,
-    p,
-    a {
-        color: var(--MyW) !important;
-        background-color: transparent !important;
-    }
-    a:hover {
-        color: var(--Myred1) !important;
-        text-decoration: none !important;
-    }
-    h1 {
-        color: var(--TwitterBlue) !important;
-    }
-    h2 {
-        color: var(--TwitterRed) !important;
-    }
-    small {
-        color: var(--TwitterPink) !important;
-    }
-    .f5,
-    .f7,
-    h3,
-    h4,
-    h5,
-    strong {
-        color: var(--MyW) !important;
-    }
-    .bg-blue {
-        background-color: var(--Myred3) !important;
-    }
-    a[aria-label="Previous Page"],
-    a[aria-label="Next Page"],
-    a[aria-label*="Go to Page"],
-    .dib.relative>a,
-    span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"],
-    .flex.pa3.pa4-l.shadow-1.br3,
-    a.white.no-underline.highlight-focus-hover.ph2,
-    .w_AC.w_AF.w_AI,
-    button {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-    label:hover,
-    a[aria-label="Previous Page"]:hover,
-    a[aria-label="Next Page"]:hover,
-    a[aria-label*="Go to Page"]:hover,
-    a[aria-current="page"],
-    .sans-serif.pa1.lh-copy.border-box.bg-white,
-    .dib.relative>a:hover,
-    span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:hover,
-    .flex.pa3.pa4-l.shadow-1.br3:hover,
-    a.white.no-underline.highlight-focus-hover.ph2:hover,
-    li.list:hover,
-    .w_AC.w_AF.w_AI:hover,
-    a.desktop-header-flyout-link:hover,
-    .pa4>a:hover,
-    .w_Cx.w_Cy,
-    button:hover {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-    a[aria-label="Previous Page"]:active,
-    a[aria-label="Next Page"]:active,
-    a[aria-label*="Go to Page"]:active,
-    a[aria-current="page"]:active,
-    .sans-serif.pa1.lh-copy.border-box.bg-white:active,
-    .dib.relative>a:active,
-    span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:active,
-    .flex.pa3.pa4-l.shadow-1.br3.bg-washed-blue:active,
-    a.white.no-underline.highlight-focus-hover.ph2:active,
-    li.list:active,
-    .w_AC.w_AF.w_AI:active,
-    button:active {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-    .stock {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    header,
-    .stock_navbar {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
-    .flex.items-center.items-top-l.justify-left,
-    [class="w_R w_U w-50 mr3"],
-    [class="w_R w_U w-50 pb4 mb1"],
-    .pa4,
-    .w_Cc,
-    .w_T,
-    .pa3,
-    footer,
-    .w_AT,
-    [data-testid="sticky-buy-box"]>div>div,
-    .w_h {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-    [class="flex justify-between pv3 ph3 ph4-m"],
-    .flex.justify-center.pv3,
-    .w_F0.w_F2,
-    .w_GL.w_GN,
-    h2.mb0.mt3.f5.lh-copy.dark-gray,
-    .black>.items-center,
-    .bg-washed-blue.items-center,
-    a[link-identifier="viewAllDepartment"] {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-    h2.mb0.mt3.f5.lh-copy.dark-gray {
-        text-align: center !important;
-    }
-    textarea {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    a[link-identifier="viewAllDepartment"] {
-        text-align: center !important;
-    }
-    select,
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-        text-align: center !important;
-    }
-    .w_E2.w_E5.w_FB.absolute,
-    .w_E2.w_E8.w_FC.mr1.mt1.ph1,
-    .tooltip {
-        background-color: var(--MyX1) !important;
-        opacity: 0.7;
-        color: var(--MyW) !important;
-        border-radius: 2px;
-        border: 1px solid var(--MyW) !important;
-    }
-    * {
-        border-color: var(--Myred1) !important;
-    }
-    .black {
-        color: var(--MyW) !important;
-    }
-    [class="w_R w_U od-print-view"],
-    [class="bg-near-white ba1 mb3 pv2 w-100 h-100 flex justify-center items-center"],
-    .bg-white {
-        background: var(--Mygray3) !important;
-    }
-    .w_Hm,
-    .w_Hg.w_Hh.w_Hi::before,
-    .bg-washed-blue.list {
-        background-color: var(--Mygray3) !important;
-    }
-    .w_DF.b.w_DH.w_DL,
-    .mid-gray {
-        color: var(--TwitterBlue) !important;
-    }
-    .mid-gray>div {
-        color: var(--MyW) !important;
-    }
-    .dark-gray {
-        color: var(--MyW) !important;
-    }
-    .green {
-        color: var(--Mygreen2) !important;
-    }
-    .b--near-white>div,
-    .bg-washed-blue:not(footer),
-    .ph4.pt4.pb2,
-    div[data-testid="account-flyout"] {
-        background-color: var(--Mygray3) !important;
-    }
-    #text {
-        color: var(--Myyellow1) !important;
-    }
-    .w_6,
-    .w_DF.ml.w_DH.w_DL {
-        color: var(--Myyellow1) !important;
-    }
-    .mr1.mt1.ph1,
-    .w_E2.w_E8.w_FC.mr1.mt1.ph1,
-    [role="alert"],
-    .w_IZ {
-        background-color: var(--MyX1) !important;
-    }
-    .mr1.mt1.ph1,
-    .w_Da .w_Db {
-        color: var(--MyW) !important;
-    }
-    .w_Da.w_Dc .w_Db::after {
-        background-color: var(--Mygreen1) !important;
-    }
-    .w_E9.w_FF.w_FI.absolute,
-    .w_E2.w_E8.w_FB.absolute {
-        background-color: var(--MyX3) !important;
-        color: var(--MyW) !important;
-        border: 1px solid var(--MyW) !important;
-    }
-    .w_P_3h {
-        background-color: var(--Myred1) !important;
-    }
-    /*
+	.bg-dark-blue,
+	footer,
+	html,
+	body {
+		background-color: var(--MyB) !important;
+	}
+	.stock {
+		display: none !important;
+	}
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
+	.word-normal,
+	p,
+	a {
+		color: var(--MyW) !important;
+		background-color: transparent !important;
+	}
+	a:hover {
+		color: var(--Myred1) !important;
+		text-decoration: none !important;
+	}
+	h1 {
+		color: var(--TwitterBlue) !important;
+	}
+	h2 {
+		color: var(--TwitterRed) !important;
+	}
+	small {
+		color: var(--TwitterPink) !important;
+	}
+	.f5,
+	.f7,
+	h3,
+	h4,
+	h5,
+	strong {
+		color: var(--MyW) !important;
+	}
+	.bg-blue {
+		background-color: var(--Myred3) !important;
+	}
+
+	nav a.sub-nav-link,
+	a[aria-label="Previous Page"],
+	a[aria-label="Next Page"],
+	a[aria-label*="Go to Page"],
+	.dib.relative > a,
+	span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"],
+	.flex.pa3.pa4-l.shadow-1.br3,
+	a.white.no-underline.highlight-focus-hover.ph2,
+	.w_AC.w_AF.w_AI,
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
+
+	nav a.sub-nav-link:hover,
+	label:hover,
+	a[aria-label="Previous Page"]:hover,
+	a[aria-label="Next Page"]:hover,
+	a[aria-label*="Go to Page"]:hover,
+	a[aria-current="page"],
+	.sans-serif.pa1.lh-copy.border-box.bg-white,
+	.dib.relative > a:hover,
+	span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:hover,
+	.flex.pa3.pa4-l.shadow-1.br3:hover,
+	a.white.no-underline.highlight-focus-hover.ph2:hover,
+	li.list:hover,
+	.w_AC.w_AF.w_AI:hover,
+	a.desktop-header-flyout-link:hover,
+	.pa4 > a:hover,
+	.w_Cx.w_Cy,
+	button:hover {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	nav a.sub-nav-link:active,
+	a[aria-label="Previous Page"]:active,
+	a[aria-label="Next Page"]:active,
+	a[aria-label*="Go to Page"]:active,
+	a[aria-current="page"]:active,
+	.sans-serif.pa1.lh-copy.border-box.bg-white:active,
+	.dib.relative > a:active,
+	span[class="pv1 dib b mv3 ml3 ph3 f6 ba br4 b--black black bg-white hover-white hover-bg-black outline-0 no-underline"]:active,
+	.flex.pa3.pa4-l.shadow-1.br3.bg-washed-blue:active,
+	a.white.no-underline.highlight-focus-hover.ph2:active,
+	li.list:active,
+	.w_AC.w_AF.w_AI:active,
+	button:active {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+	}
+	.stock {
+		background-image: none !important;
+		background-color: transparent !important;
+	}
+
+	.header-navigation,
+	header,
+	.stock_navbar {
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+	}
+	.flex.items-center.items-top-l.justify-left,
+	[class="w_R w_U w-50 mr3"],
+	[class="w_R w_U w-50 pb4 mb1"],
+	.pa4,
+	.w_Cc,
+	.w_T,
+	.pa3,
+	footer,
+	.w_AT,
+	[data-testid="sticky-buy-box"] > div > div,
+	.w_h {
+		background-color: var(--Mygray1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
+	[class="flex justify-between pv3 ph3 ph4-m"],
+	.flex.justify-center.pv3,
+	.w_F0.w_F2,
+	.w_GL.w_GN,
+	h2.mb0.mt3.f5.lh-copy.dark-gray,
+	.black > .items-center,
+	.bg-washed-blue.items-center,
+	a[link-identifier="viewAllDepartment"] {
+		background-color: var(--Myred3) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
+	}
+	h2.mb0.mt3.f5.lh-copy.dark-gray {
+		text-align: center !important;
+	}
+	textarea {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+	}
+	a[link-identifier="viewAllDepartment"] {
+		text-align: center !important;
+	}
+	select,
+	input {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+		text-align: center !important;
+	}
+	.w_E2.w_E5.w_FB.absolute,
+	.w_E2.w_E8.w_FC.mr1.mt1.ph1,
+	.tooltip {
+		background-color: var(--MyX1) !important;
+		opacity: 0.7;
+		color: var(--MyW) !important;
+		border-radius: 2px;
+		border: 1px solid var(--MyW) !important;
+	}
+	* {
+		border-color: var(--Myred1) !important;
+	}
+	.black {
+		color: var(--MyW) !important;
+	}
+	[class="w_R w_U od-print-view"],
+	[class="bg-near-white ba1 mb3 pv2 w-100 h-100 flex justify-center items-center"],
+	.bg-white {
+		background: var(--Mygray3) !important;
+	}
+	.w_Hm,
+	.w_Hg.w_Hh.w_Hi::before,
+	.bg-washed-blue.list {
+		background-color: var(--Mygray3) !important;
+	}
+	.w_DF.b.w_DH.w_DL,
+	.mid-gray {
+		color: var(--TwitterBlue) !important;
+	}
+	.mid-gray > div {
+		color: var(--MyW) !important;
+	}
+	.dark-gray {
+		color: var(--MyW) !important;
+	}
+	.green {
+		color: var(--Mygreen2) !important;
+	}
+	.b--near-white > div,
+	.bg-washed-blue:not(footer),
+	.ph4.pt4.pb2,
+	div[data-testid="account-flyout"] {
+		background-color: var(--Mygray3) !important;
+	}
+	#text {
+		color: var(--Myyellow1) !important;
+	}
+	.w_6,
+	.w_DF.ml.w_DH.w_DL {
+		color: var(--Myyellow1) !important;
+	}
+	.mr1.mt1.ph1,
+	.w_E2.w_E8.w_FC.mr1.mt1.ph1,
+	[role="alert"],
+	.w_IZ {
+		background-color: var(--MyX1) !important;
+	}
+	.mr1.mt1.ph1,
+	.w_Da .w_Db {
+		color: var(--MyW) !important;
+	}
+	.w_Da.w_Dc .w_Db::after {
+		background-color: var(--Mygreen1) !important;
+	}
+	.w_E9.w_FF.w_FI.absolute,
+	.w_E2.w_E8.w_FB.absolute {
+		background-color: var(--MyX3) !important;
+		color: var(--MyW) !important;
+		border: 1px solid var(--MyW) !important;
+	}
+	.w_P_3h {
+		background-color: var(--Myred1) !important;
+	}
+	/*
     Junk code did nothing yet
     circle.w_GpzO,
     circle.w_KFd8 {
