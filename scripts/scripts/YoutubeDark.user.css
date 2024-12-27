@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.79
+@version      0.0.80
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -871,15 +871,11 @@ domain("tv.youtube.com") {
 		box-shadow: none !important;
 	}
 
-	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark[hidden=""]
-		.ytSuggestionComponentSuggestion.ytSuggestionComponentSuggestionHover.ytSuggestionComponentPersonalizedSuggestion,
 	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark[hidden=""] {
 		margin-top: -10px;
 		background-color: transparent !important;
 	}
 
-	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark
-		.ytSuggestionComponentSuggestion.ytSuggestionComponentSuggestionHover.ytSuggestionComponentPersonalizedSuggestion,
 	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark {
 		margin-top: -10px;
 		background-color: var(--MyX4) !important;
