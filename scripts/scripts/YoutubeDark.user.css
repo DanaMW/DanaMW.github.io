@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.80
+@version      0.0.82
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -575,11 +575,6 @@ domain("tv.youtube.com") {
 		height: 25px !important;
 	}
 
-	/*
-    [class="ytp-volume-area style-scope ytd-player"],
-    [class="ytp-volume-control-slider style-scope ytd-player ytp-volume-control-hover"],
-    [class="ytp-volume-slider-handle style-scope ytd-player"],
-    */
 	ytu-intent-chip a,
 	#simplebox-placeholder,
 	[class="ytp-time-display notranslate"],
