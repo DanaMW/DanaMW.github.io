@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.39
+@version      0.1.40
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -1618,6 +1618,12 @@ url-prefix("https://chat.google.com/")
 	#data-tooltips {
 		background-color: var(--Myred2) !important;
 		color: var(--MyW) !important;
+	}
+
+	.tYFJLd.D4nKFc {
+		background-color: var(--Myred3) !important;
+		color: var(--MyW) !important;
+		border: 1px solid var(--MyW) !important;
 	}
 
 	body.xE,
