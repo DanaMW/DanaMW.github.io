@@ -2,7 +2,7 @@
 @name         InstaGram Dark
 @namespace    https://danamw.github.io/scripts/scripts/InstaGramDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/InstaGramDark.user.css
-@version      0.1.72
+@version      0.1.73
 @description  Instagram Dark
 @homepageURL  https://danamw.github.io
 @author       Dana L. Meli-Wischman
@@ -377,6 +377,7 @@ domain("cdninstagram.com") {
 		box-shadow: 0px 0px 40px var(--Mygreen1) !important;
 	}
 
+	[class="x6s0dn4 xvbhtw8 x1lq5wgf xgqcy7u x30kzoy x9jhf4c x1xcus5i xrvj5dj x1dh5ka xyamay9 x1l90r2v x1n2onr6 xgpatz3 x1mu97ne"],
 	[class="x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1n2onr6 x1plvlek xryxfnj x1c4vz4f x2lah0s x1q0g3np xqjyukv x6s0dn4 x1oa3qoh x1qughib"],
 	._ab05,
 	[class="_aa__ _ackf _ackh"],
@@ -391,6 +392,10 @@ domain("cdninstagram.com") {
 	._ae2s._ae3w._aggd,
 	[class="_ab8w  _ab94 _ab97 _ab9i _ab9k _ab9p _abcm"] {
 		background-color: var(--Myred3) !important;
+	}
+
+	[class="x6s0dn4 xvbhtw8 x1lq5wgf xgqcy7u x30kzoy x9jhf4c x1xcus5i xrvj5dj x1dh5ka xyamay9 x1l90r2v x1n2onr6 xgpatz3 x1mu97ne"] {
+		border: 1px solid var(--MyW) !important;
 	}
 
 	[class="_aacl _aaco _aacu _aacy _aad6 _aade"] {
