@@ -85,6 +85,8 @@
 		background-color: transparent !important;
 	}
 
+	[aria-label="Cancel"],
+	[aria-label="Publish post"],
 	[class="css-175oi2r r-1loqt21 r-1otgn73 r-1oszu61 r-16y2uox r-1777fci r-gu64tb r-5t7p9m"],
 	[aria-label="Load new notifications"],
 	[aria-label="Open post options menu"],
@@ -126,6 +128,9 @@
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	[aria-label="Cancel"]:hover,
+	[aria-label="Publish post"]:hover,
+	[aria-label="Anybody can interact"],
 	[class="css-175oi2r r-1loqt21 r-1otgn73 r-1oszu61 r-16y2uox r-1777fci r-gu64tb r-5t7p9m"]:hover,
 	[aria-label="Load new notifications"]:hover,
 	[aria-label="Open post options menu"]:hover,
@@ -172,6 +177,8 @@
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
+	[aria-label="Cancel"]:active,
+	[aria-label="Publish post"]:active,
 	[aria-label="Load new notifications"]:active,
 	[aria-label="Open post options menu"]:active,
 	[aria-label*="Reply"]:active,
