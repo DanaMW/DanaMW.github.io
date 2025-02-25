@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.18
+@version      0.0.19
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -85,6 +85,7 @@
 		background-color: transparent !important;
 	}
 
+	[aria-label*="Follow"],
 	[aria-label="Cancel"],
 	[aria-label="Publish post"],
 	[class="css-175oi2r r-1loqt21 r-1otgn73 r-1oszu61 r-16y2uox r-1777fci r-gu64tb r-5t7p9m"],
@@ -128,6 +129,7 @@
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	[aria-label*="Follow"]:hover,
 	[aria-label="Cancel"]:hover,
 	[aria-label="Publish post"]:hover,
 	[aria-label="Anybody can interact"],
@@ -177,6 +179,7 @@
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
+	[aria-label*="Follow"]:active,
 	[aria-label="Cancel"]:active,
 	[aria-label="Publish post"]:active,
 	[aria-label="Load new notifications"]:active,
@@ -351,4 +354,10 @@
 	[class="css-175oi2r r-xoduu5"] {
 		background-color: var(--Mygreen1) !important;
 	}
+
+	/*
+	.css-175oi2r {
+		background-color: var(--Mygray3) !important;
+	}
+	*/
 }
