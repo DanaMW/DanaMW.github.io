@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.24
+@version      0.0.25
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,6 +13,10 @@
     [class="css-g5y9jx r-633pao r-1wyyakw r-1p0dtai r-1d2f490 r-1xcajam r-zchlnj r-ipm5af"],
     html,
     body {
+        background-color: var(--MyB) !important;
+    }
+
+    .r-1niwhzg {
         background-color: var(--MyB) !important;
     }
 
@@ -70,6 +74,11 @@
     h5,
     strong {
         color: var(--MyW) !important;
+    }
+
+    div[role="link"][data-testid*="feedItem"]:hover {
+        border-right: 1px solid var(--Myred1) !important;
+        border-left: 1px solid var(--Myred1) !important;
     }
 
     button:not([aria-label*="video"]) {
@@ -169,6 +178,12 @@
         border: 1px solid var(--MyW) !important;
     }
 
+    div[data-testid*="feedItem-by"] {
+        border-top: 5px solid var(--MyB);
+        border-bottom: 5px solid var(--MyB);
+        background-color: var(--Mygray2) !important;
+    }
+
     div[data-testid*="feedItem-by"]:hover {
         background-color: var(--MyX4) !important;
     }
@@ -184,10 +199,8 @@
         background-color: var(--MyX1) !important;
     }
 
-    /*
-    [class="css-g5y9jx r-xoduu5 r-1p0dtai r-1hlnpa r-1wyvozj r-1i1dynu r-u8s1d r-1sffzi r-13qz1uu"] {
+    [class="css-g5y9jx r-wzwllv r-kdyh1x r-rs99b7 r-tbmifm r-u8s1d r-1w1br8q r-14eup4l r-16eto9q"] {
         background-color: var(--Mygreen1) !important;
     }
-    */
 
 }
