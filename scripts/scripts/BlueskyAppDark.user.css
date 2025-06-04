@@ -2,375 +2,192 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.23
+@version      0.0.24
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("bsky.app") {
-	html,
-	body {
-		background-color: var(--MyB) !important;
-	}
 
-	.stock {
-		display: none !important;
-	}
-
-	* {
-		text-decoration: none !important;
-		scrollbar-width: thin !important;
-		scrollbar-color: var(--Myred1) var(--Myred3) !important;
-	}
-
-	::-webkit-scrollbar {
-		background: var(--Myred3) !important;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background: var(--Myred1) !important;
-	}
-
-	::-webkit-scrollbar-thumb:hover {
-		background: var(--Mygreen1) !important;
-	}
-
-	::-webkit-scrollbar-thumb:active {
-		background: var(--Mygreen2) !important;
-	}
-
-	p,
-	a {
-		color: var(--MyW) !important;
-		background-color: transparent !important;
-	}
-
-	a:hover {
-		color: var(--Myred1) !important;
-		text-decoration: none !important;
-	}
-
-	h1 {
-		color: var(--TwitterBlue) !important;
-	}
-
-	h2 {
-		color: var(--TwitterRed) !important;
-	}
-
-	small {
-		color: var(--TwitterPink) !important;
-	}
-
-	h3,
-	h4,
-	h5,
-	strong {
-		color: var(--MyW) !important;
-	}
-
-	[class="css-1rynq56 r-wzwllv r-kdyh1x r-jwli3a r-1enofrn r-vw2c0b r-1liledf r-s1qlax r-u8s1d r-ipm5af"] {
-		background-color: var(--Mygreen1) !important;
-	}
-
-	.css-175oi2r > a {
-		text-align: center !important;
-	}
-
-	[class="css-175oi2r r-1awozwy r-nsiyw1 r-18u37iz r-1777fci r-15d164r r-1sp51qo r-13qz1uu"],
-	[class="css-175oi2r r-1awozwy r-1tw7wh r-18u37iz r-1777fci r-1rngwi6 r-1yd117h r-gu64tb"],
-	[class="css-175oi2r r-y47klf r-19u6a5r r-vuvdlw r-u9wvl5"] {
-		background-image: none !important;
-		background-color: transparent !important;
-	}
-
-	[aria-label="Compose reply"] > div,
-	[aria-label*="Browse topic"] > div,
-	[aria-label*="Follow"],
-	[aria-label="Cancel"],
-	[aria-label="Publish post"],
-	[class="css-175oi2r r-1loqt21 r-1otgn73 r-1oszu61 r-16y2uox r-1777fci r-gu64tb r-5t7p9m"],
-	[aria-label="Load new notifications"],
-	[aria-label="Open post options menu"],
-	[aria-label*="Reply"],
-	[aria-label*="Repost"],
-	[aria-label*="unlike"],
-	[aria-label*="like"],
-	[aria-label="Compose new post"],
-	[aria-label="Load new posts"],
-	[aria-label="New post"],
-	.css-175oi2r > a,
-	[class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"],
-	[role="menuitem"],
-	.r-1otgn73:not(.r-170w6zn):not(.css-175oi2r):not(
-			[aria-label="Play video"]
-		):not([aria-label="Pause video"]):not([aria-label="Unmute video"]),
-	button:not(.css-175oi2r.r-1otgn73):not([aria-label="Play video"]):not(
-			[aria-label="Pause video"]
-		):not([aria-label="Unmute video"]) {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		border: none !important;
-		color: var(--Mytext) !important;
-		background-color: var(--MyB) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				hsl(0, 0%, 0%) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-		text-shadow: 1px 1px 0 var(--Myred1) !important;
-		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition-timing-function: linear !important;
-		box-shadow: 0 1px 4px 1px var(--MyB) !important;
-	}
-
-	[aria-label="Compose reply"] > div:hover,
-	[aria-label*="Browse topic"] > div:hover,
-	[aria-label*="Follow"]:hover,
-	[aria-label="Cancel"]:hover,
-	[aria-label="Publish post"]:hover,
-	[aria-label="Anybody can interact"],
-	[class="css-175oi2r r-1loqt21 r-1otgn73 r-1oszu61 r-16y2uox r-1777fci r-gu64tb r-5t7p9m"]:hover,
-	[aria-label="Load new notifications"]:hover,
-	[aria-label="Open post options menu"]:hover,
-	[aria-label*="Reply"]:hover,
-	[aria-label*="Repost"]:hover,
-	[aria-label*="unlike"]:hover,
-	[aria-label*="like"]:hover,
-	[class="css-146c3p1 r-1loqt21"][style*="color: rgb(255, 255, 255)"]:hover,
-	.css-175oi2r > a:hover,
-	[class*="css-175oi2r r-1loqt21 r-1otgn73"][style*="background-color: rgb(255, 255, 255)"]:not(
-			.r-1fuqb1j.r-11f147o.r-gu64tb
-		),
-	[class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"]:hover,
-	[aria-label="Compose new post"]:hover,
-	[aria-label="Compose post"]:hover,
-	[role="menuitem"]:hover,
-	.r-1otgn73:hover:not(.r-170w6zn):not(.css-175oi2r):not(
-			[aria-label="Play video"]
-		):not([aria-label="Pause video"]):not([aria-label="Unmute video"]),
-	button:hover:not(.css-175oi2r.r-1otgn73):not([aria-label="Play video"]):not(
-			[aria-label="Pause video"]
-		):not([aria-label="Unmute video"]) {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		border: none !important;
-		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Myred1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-		outline: none !important;
-		opacity: 1 !important;
-		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-	}
-
-	[aria-label="Compose reply"] > div:active,
-	[aria-label*="Follow"]:active,
-	[aria-label="Cancel"]:active,
-	[aria-label="Publish post"]:active,
-	[aria-label="Load new notifications"]:active,
-	[aria-label="Open post options menu"]:active,
-	[aria-label*="Reply"]:active,
-	[aria-label*="Repost"]:active,
-	[aria-label*="unlike"]:active,
-	[aria-label*="like"]:active,
-	[class="css-146c3p1 r-1loqt21"][style*="color: rgb(255, 255, 255)"]:active,
-	.css-175oi2r > a:active,
-	[class="css-175oi2r r-y47klf r-vuvdlw r-u9wvl5"]:active,
-	[aria-label="Compose new post"]:active,
-	[aria-label="Compose post"]:active,
-	[role="menuitem"]:active,
-	.r-1otgn73:active:not(.r-170w6zn),
-	button:active:not([aria-label="Play video"]) {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		border: none !important;
-		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-		background-color: var(--Mygreen3) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Mygreen1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				rgba(168, 168, 168, 0.5) 48%,
-				hsla(0, 0%, 0%, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				rgba(168, 168, 168, 0.2)
-			) !important;
-		outline: none !important;
-		opacity: 1 !important;
-		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-	}
-
-	.css-175oi2r [class*="css-175oi2r r-5kkj8d r-1sp51qo"]:hover {
-		background-color: var(--Mygray2) !important;
-	}
-
-	[class="css-175oi2r r-1awozwy r-1llaxt6 r-eu3ka r-1777fci r-1b7u577 r-1aockid"] {
-		background-color: transparent !important;
-	}
-
-	[class="css-175oi2r r-1dzdj1l r-10ptun7 r-1janqcz r-1ow6zhx"] {
-		background-color: var(--Myred1) !important;
-	}
-
-	.css-146c3p1.r-1loqt21 {
-		padding-left: 10px;
-		padding-right: 5px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
-
-	/*
-    [class="css-175oi2r r-1loqt21 r-1otgn73"] {
-        border-radius: 50%;
+    [class="css-g5y9jx r-633pao r-1wyyakw r-1p0dtai r-1d2f490 r-1xcajam r-zchlnj r-ipm5af"],
+    html,
+    body {
+        background-color: var(--MyB) !important;
     }
 
-    [class="css-175oi2r r-1loqt21 r-1otgn73"]>div {
-        border-radius: 50%;
-        border: 2px solid var(--MyB) !important;
+    .stock {
+        display: none !important;
     }
 
-    [class="css-175oi2r r-1loqt21 r-1otgn73"]>div:hover {
-        border: 2px solid var(--Myred1) !important;
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
+
+    ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
+    }
+
+    p,
+    a {
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+    }
+
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+
+    h1 {
+        color: var(--TwitterBlue) !important;
+    }
+
+    h2 {
+        color: var(--TwitterRed) !important;
+    }
+
+    small {
+        color: var(--TwitterPink) !important;
+    }
+
+    h3,
+    h4,
+    h5,
+    strong {
+        color: var(--MyW) !important;
+    }
+
+    button:not([aria-label*="video"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
+        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition: border-color .3s ease, box-shadow .7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+
+    button:hover:not([aria-label*="video"]) {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--Mygreen3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1.0 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition: background .2s, box-shadow .4s, border-color .2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+
+    .stock {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+
+    header,
+    .stock_navbar {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
+    }
+
+    .stock {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
+    }
+
+    .stock {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
+    }
+
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+        text-align: center !important;
+    }
+
+    .tooltip {
+        background-color: var(--MyX1) !important;
+        opacity: 0.4;
+        color: var(--MyW) !important;
+        padding: 8px;
+        border-radius: 2px;
+        border: 1px solid var(--MyW) !important;
+    }
+
+    div[data-testid*="feedItem-by"]:hover {
+        background-color: var(--MyX4) !important;
+    }
+
+    div[role="tab"] {
+        background-color: var(--MyX3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+    }
+
+    div[role="tab"]:hover {
+        background-color: var(--MyX1) !important;
+    }
+
+    /*
+    [class="css-g5y9jx r-xoduu5 r-1p0dtai r-1hlnpa r-1wyvozj r-1i1dynu r-u8s1d r-1sffzi r-13qz1uu"] {
+        background-color: var(--Mygreen1) !important;
     }
     */
 
-	.stock {
-		background-image: none !important;
-		background-color: transparent !important;
-	}
-
-	[class="css-175oi2r r-150rngu r-18u37iz r-16y2uox r-1wbh5a2 r-lltvgl r-buy8e9 r-agouwx r-2eszeu"] {
-		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Myred1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-	}
-
-	[data-testid*="postThreadItem"],
-	[class="css-175oi2r r-5kkj8d r-18u37iz r-1l7z4oj r-95jzfe"],
-	.css-175oi2r[data-testid*="feedItem"],
-	[class="css-175oi2r r-5kkj8d r-1hfyk0a r-1loqt21"],
-	[class="css-175oi2r r-5kkj8d r-1hfyk0a r-1qfoi16 r-95jzfe"],
-	[class="css-175oi2r r-5kkj8d r-1loqt21 r-1hfyk0a r-ry3cjt"] {
-		background-color: var(--Mygray1) !important;
-		background-image: linear-gradient(
-			to top,
-			rgba(0, 0, 0, 0.8),
-			rgba(41, 41, 41, 0.9),
-			rgba(75, 75, 75, 0.9) 100%,
-			transparent
-		) !important;
-	}
-
-	[data-testid*="postThreadItem"]:hover,
-	.css-175oi2r[data-testid*="feedItem"]:hover,
-	[class="css-175oi2r r-5kkj8d r-1hfyk0a r-1loqt21"]:hover,
-	[class="css-175oi2r r-5kkj8d r-1hfyk0a r-1qfoi16 r-95jzfe"]:hover,
-	[class="css-175oi2r r-5kkj8d r-1loqt21 r-1hfyk0a r-ry3cjt"]:hover {
-		background-color: var(--Myred3) !important;
-		background-image: linear-gradient(
-			to top,
-			rgba(65, 21, 21, 0.8),
-			rgba(97, 22, 22, 0.8),
-			rgba(189, 38, 38, 0.8) 100%,
-			transparent
-		) !important;
-	}
-
-	.css-175oi2r[data-testid*="feedItem"]:hover {
-		box-shadow: 0px 0px 30px var(--Mygreen1) !important;
-	}
-
-	[class="css-175oi2r r-1niwhzg r-1udh08x"] > svg > path {
-		stroke: #ff0000 !important;
-	}
-
-	.css-175oi2r[data-testid*="feedItem"] {
-		margin-top: 10px !important;
-		margin-bottom: 10px !important;
-		border: 1px solid var(--MyW) !important;
-	}
-
-	[class="css-175oi2r r-q5xsgd r-1jj8364 r-lchren r-1ye8kvj r-13qz1uu r-1ljd8xs r-13l2t4g r-sa2ff0"] {
-		border: none !important;
-	}
-
-	textarea {
-		background-color: var(--Mygray3) !important;
-		color: var(--MyW) !important;
-		border-radius: 15px !important;
-		border: 1px solid var(--Myred1) !important;
-	}
-
-	input {
-		background-color: var(--Mygray3) !important;
-		color: var(--MyW) !important;
-		border-radius: 15px !important;
-		border: 1px solid var(--Myred1) !important;
-		text-align: center !important;
-	}
-
-	.tooltip {
-		background-color: var(--MyX1) !important;
-		opacity: 0.4;
-		color: var(--MyW) !important;
-		padding: 8px;
-		border-radius: 2px;
-		border: 1px solid var(--MyW) !important;
-	}
-
-	[class="css-175oi2r r-wzwllv r-kdyh1x r-rs99b7 r-tbmifm r-u8s1d r-1w1br8q r-14eup4l r-16eto9q"],
-	[class="css-175oi2r r-xoduu5"] {
-		background-color: var(--Mygreen1) !important;
-	}
-
-	[class="css-g5y9jx r-wzwllv r-kdyh1x r-rs99b7 r-tbmifm r-u8s1d r-1w1br8q r-14eup4l r-16eto9q"] {
-		background-color: var(--Mygreen1) !important;
-	}
 }
