@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.25
+@version      0.0.26
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -10,11 +10,14 @@
 
 @-moz-document domain("bsky.app") {
 
-    [class="css-g5y9jx r-633pao r-1wyyakw r-1p0dtai r-1d2f490 r-1xcajam r-zchlnj r-ipm5af"],
+
+    [class="css-g5y9jx r-13awgt0 r-1d5kdc7 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af"]>div>.css-g5y9jx.r-13awgt0,
+    [class="css-g5y9jx r-eqz5dr r-1pi2tsx r-13g33dw"],
     html,
     body {
         background-color: var(--MyB) !important;
     }
+
 
     .r-1niwhzg {
         background-color: var(--MyB) !important;
@@ -133,6 +136,7 @@
         text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
     }
 
+
     .stock {
         background-image: none !important;
         background-color: transparent !important;
@@ -202,5 +206,11 @@
     [class="css-g5y9jx r-wzwllv r-kdyh1x r-rs99b7 r-tbmifm r-u8s1d r-1w1br8q r-14eup4l r-16eto9q"] {
         background-color: var(--Mygreen1) !important;
     }
+
+    /*
+    .css-g5y9jx.r-1loqt21.r-1otgn73:hover {
+        background-color: var(--Myred1) !important;
+    }
+    */
 
 }
