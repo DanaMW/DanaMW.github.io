@@ -2,7 +2,7 @@
 @name        Reddit Dark
 @namespace    http://danamw.github.io/scripts/scripts/RedditDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/RedditDark.user.css
-@version      0.0.28
+@version      0.0.29
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -13,229 +13,216 @@ domain("redditinc.com"),
 domain("gfycat.com"),
 domain("redditmedia.com"),
 domain("embedly.com") {
-	html,
-	body {
-		background-color: var(--MyB) !important;
-	}
 
-	.stock {
-		display: none !important;
-	}
+    html,
+    body {
+        background-color: var(--MyB) !important;
+    }
 
-	* {
-		text-decoration: none !important;
-		scrollbar-width: thin !important;
-		scrollbar-color: var(--Myred1) var(--Myred3) !important;
-	}
+    .stock {
+        display: none !important;
+    }
 
-	::-webkit-scrollbar {
-		background: var(--Myred3) !important;
-	}
+    * {
+        text-decoration: none !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: var(--Myred1) var(--Myred3) !important;
+    }
 
-	::-webkit-scrollbar-thumb {
-		background: var(--Myred1) !important;
-	}
+    ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
 
-	::-webkit-scrollbar-thumb:hover {
-		background: var(--Mygreen1) !important;
-	}
+    ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
 
-	::-webkit-scrollbar-thumb:active {
-		background: var(--Mygreen2) !important;
-	}
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
 
-	p,
-	a {
-		color: var(--MyW) !important;
-		background-color: transparent !important;
-	}
+    ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
+    }
 
-	a:hover {
-		color: var(--Myred1) !important;
-		text-decoration: none !important;
-	}
+    p,
+    a {
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+    }
 
-	h1 {
-		color: var(--TwitterBlue) !important;
-	}
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
 
-	h2 {
-		color: var(--TwitterRed) !important;
-	}
+    h1 {
+        color: var(--TwitterBlue) !important;
+    }
 
-	small {
-		color: var(--TwitterPink) !important;
-	}
+    h2 {
+        color: var(--TwitterRed) !important;
+    }
 
-	h3,
-	h4,
-	h5,
-	strong {
-		color: var(--MyW) !important;
-	}
+    small {
+        color: var(--TwitterPink) !important;
+    }
 
-	button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		border: none !important;
-		color: var(--Mytext) !important;
-		background-color: var(--MyB) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				hsl(0, 0%, 0%) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-		text-shadow: 1px 1px 0 var(--Myred1) !important;
-		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition-timing-function: linear !important;
-		box-shadow: 0 1px 4px 1px var(--MyB) !important;
-	}
+    h3,
+    h4,
+    h5,
+    strong {
+        color: var(--MyW) !important;
+    }
 
-	button:hover {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		border: none !important;
-		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Myred1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-		outline: none !important;
-		opacity: 1 !important;
-		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-	}
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                hsl(0, 0%, 0%) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
 
-	button:active {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		border: none !important;
-		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-		background-color: var(--Mygreen3) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Mygreen1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				rgba(168, 168, 168, 0.5) 48%,
-				hsla(0, 0%, 0%, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				rgba(168, 168, 168, 0.2)
-			) !important;
-		outline: none !important;
-		opacity: 1 !important;
-		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-	}
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Myred1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
+        outline: none !important;
+        opacity: 1 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
 
-	.stock {
-		background-image: none !important;
-		background-color: transparent !important;
-	}
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none !important;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--Mygreen3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Mygreen1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                rgba(168, 168, 168, 0.5) 48%,
+                hsla(0, 0%, 0%, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
 
-	header,
-	.stock_navbar {
-		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Myred1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-	}
+    .stock {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
 
-	.stock {
-		background-color: var(--Mygray1) !important;
-		background-image: linear-gradient(
-			to top,
-			rgba(0, 0, 0, 0.8),
-			rgba(41, 41, 41, 0.9),
-			rgba(75, 75, 75, 0.9) 100%,
-			transparent
-		) !important;
-	}
+    header,
+    .stock_navbar {
+        background-color: var(--Myred3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Myred1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
+    }
 
-	.stock {
-		background-color: var(--Myred3) !important;
-		background-image: linear-gradient(
-			to top,
-			rgba(65, 21, 21, 0.8),
-			rgba(97, 22, 22, 0.8),
-			rgba(189, 38, 38, 0.8) 100%,
-			transparent
-		) !important;
-	}
+    .stock {
+        background-color: var(--Mygray1) !important;
+        background-image: linear-gradient(to top,
+                rgba(0, 0, 0, 0.8),
+                rgba(41, 41, 41, 0.9),
+                rgba(75, 75, 75, 0.9) 100%,
+                transparent) !important;
+    }
 
-	textarea {
-		background-color: var(--Mygray3) !important;
-		color: var(--MyW) !important;
-		border-radius: 15px !important;
-		border: 1px solid var(--Myred1) !important;
-	}
+    .stock {
+        background-color: var(--Myred3) !important;
+        background-image: linear-gradient(to top,
+                rgba(65, 21, 21, 0.8),
+                rgba(97, 22, 22, 0.8),
+                rgba(189, 38, 38, 0.8) 100%,
+                transparent) !important;
+    }
 
-	input {
-		background-color: var(--Mygray3) !important;
-		color: var(--MyW) !important;
-		border-radius: 15px !important;
-		border: 1px solid var(--Myred1) !important;
-		text-align: center !important;
-	}
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+    }
 
-	.tooltip {
-		background-color: var(--MyX1) !important;
-		opacity: 0.4;
-		color: var(--MyW) !important;
-		padding: 8px;
-		border-radius: 2px;
-		border: 1px solid var(--MyW) !important;
-	}
+    input {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--Myred1) !important;
+        text-align: center !important;
+    }
 
-	.grid-container {
-		background-color: var(--MyB) !important;
-	}
+    .tooltip {
+        background-color: var(--MyX1) !important;
+        opacity: 0.4;
+        color: var(--MyW) !important;
+        padding: 8px;
+        border-radius: 2px;
+        border: 1px solid var(--MyW) !important;
+    }
 
-	hr {
-		border: none !important;
-	}
+    .grid-container {
+        background-color: var(--MyB) !important;
+    }
 
-	article {
-		padding-top: 5px !important;
-	}
+    hr {
+        border: none !important;
+    }
+
+    article {
+        padding-top: 5px !important;
+    }
+
+    a[slot="title"],
+    a[class*="block text-neutral-content-strong m-0 visited:text-neutral-content-weak font-semibold text-16 xs:text-18 mb-2xs xs:mb-xs overflow-hidden"],
+    div[class*="text-neutral-content-strong visited:text-neutral-content-weak text-14 xs:text-18 font-semibold a cursor-pointer no-visited no-underline hover:no-underline"] {
+        user-select: all !important;
+    }
 }
