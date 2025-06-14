@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.29
+@version      0.0.30
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -84,7 +84,7 @@
         border-left: 1px solid var(--Myred1) !important;
     }
 
-    button:not([aria-label*="video"]):not([aria-label*="Video"]) {
+    button:not([aria-label*="video"]):not([aria-label*="Video"]):not([aria-label="Pause"]):not([aria-label="Play"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
@@ -102,7 +102,7 @@
 
     a[class="css-g5y9jx r-1loqt21 r-1otgn73"]:hover,
     div[role="menuitem"]:hover,
-    button:hover:not([aria-label*="video"]):not([aria-label*="Video"]) {
+    button:hover:not([aria-label*="video"]):not([aria-label*="Video"]):not([aria-label="Pause"]):not([aria-label="Play"]) {
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
