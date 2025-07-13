@@ -2,665 +2,650 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.54
+@version      0.0.55
 @description  Amazon Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("amazon.com") {
-	*,
-	html {
-		scrollbar-color: var(--Myred1) var(--Myred3);
-		scrollbar-width: thin;
-		text-decoration: none !important;
-	}
-
-	::-webkit-scrollbar {
-		background: var(--Myred3) !important;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background: var(--Myred1) !important;
-	}
-
-	::-webkit-scrollbar-thumb:hover {
-		background: var(--Mygreen1) !important;
-	}
-
-	::-webkit-scrollbar-thumb:active {
-		background: var(--Mygreen2) !important;
-	}
-
-	::marker {
-		color: var(--Mygreen1) !important;
-	}
-
-	li,
-	b,
-	br {
-		color: var(--Mygray1) !important;
-	}
-
-	#sw-atc-details-single-container,
-	.a-container,
-	#sw-full-view-container {
-		background-image: none !important;
-		background-color: transparent !important;
-	}
-
-	.a-page,
-	#a-page,
-	#sw-full-view-container,
-	.a-container,
-	.a-row,
-	#dp,
-	.stores-page,
-	.avu-content-aui,
-	.bg-hero,
-	div[role="main"],
-	.a-row #listPrivacy,
-	html,
-	#pageContent,
-	body {
-		background-color: var(--MyB);
-		color: var(--MyW);
-	}
-
-	.nav-searchbar,
-	.rhf-border {
-		border-color: transparent !important;
-	}
-
-	div[class="a-row a-spacing-medium widgetLink-group"],
-	[class="a-row a-spacing-medium"],
-	.nav-search-field,
-	.nav-searchbar {
-		background-color: transparent !important;
-	}
-
-	input:not([type="submit"]) {
-		background-color: var(--Mygray3) !important;
-		color: var(--MyW) !important;
-		text-align: center !important;
-		border-radius: 15px !important;
-		border: 1px solid var(--MyW) !important;
-	}
-
-	input[name="submit.addToCart"] {
-		padding: 0px !important;
-	}
-
-	*|*:any-link:not(svg|a) {
-		text-decoration: none !important;
-	}
-
-	td.top-header,
-	div[class*="nav-timeline"],
-	div[id*="nav-flyout"],
-	td[class*="comparison"],
-	tr[class*="comparison"],
-	tr[id*="comparison"] {
-		background-color: var(--Mygray3) !important;
-		color: var(--MyW) !important;
-	}
-
-	td.attribute.empty,
-	td.aplus-data-column.active.active-item {
-		background-color: var(--Mygray2) !important;
-		color: var(--MyW) !important;
-	}
-
-	td[class="a-text-left attribute a-text-bold"]:hover,
-	td.aplus-data-column.active.active-item:hover {
-		background-color: var(--Myred2) !important;
-		color: var(--MyW) !important;
-	}
-
-	li.selected[role="tab"] .a-row,
-	a:link,
-	*|*:link {
-		color: rgb(0, 0, 238);
-		text-decoration: none !important;
-	}
-
-	.milestone-bar_background {
-		background-color: transparent !important;
-	}
-
-	.hmenu-item.hmenu-title {
-		color: var(--Mygreen1) !important;
-	}
-
-	.milestone-marker::before,
-	.milestone-markers::after {
-		background-color: var(--Mygreen1) !important;
-	}
-
-	.card-lite.product-shoveler,
-	#promise-background-container {
-		background-color: transparent !important;
-	}
-
-	#cbcc_banner,
-	.rhf-divider-no-gradient {
-		border-color: var(--Myred1) !important;
-	}
-
-	.nav-timeline-dot.nav-timeline-icon {
-		background-color: var(--Myred1) !important;
-	}
-
-	.rhf-header,
-	.nav-title {
-		color: var(--Myred1) !important;
-	}
-
-	h2[class*="ya-card__heading"] {
-		color: var(--Mygreen1) !important;
-	}
-
-	ul > li > a,
-	ul.a-pagination li.a-normal,
-	.nav-search-scope.nav-sprite {
-		background-image: none !important;
-	}
-
-	td.prodDetAttrValue,
-	.a-button-text,
-	.nav-search-submit-text,
-	.fresh-shoveler .as-title-block .a-color-base,
-	.a-size-base.a-color-secondary,
-	span.description,
-	.a-size-small {
-		color: var(--MyW) !important;
-	}
-
-	[class*="tablemodule"] {
-		background-color: var(--Mygray3) !important;
-	}
-
-	.a-box:not(.a-box.delivery-box) .a-box-inner,
-	.s-pagination-item,
-	a.nav-a,
-	li[role="tab"],
-	a[class*="style__button"],
-	ul > li > a:not([style]),
-	#nav-hamburger-menu,
-	.a-disabled,
-	.a-normal > a,
-	.a-last > a,
-	.nav-search-scope.nav-sprite,
-	.wl-invite-button-contents,
-	input[type="submit"]:not(.a-button-text):not(.a-button-input),
-	.feed-left,
-	.feed-right,
-	.a-button-inner,
-	button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		border: none;
-		color: var(--Mytext) !important;
-		background-color: var(--MyB) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				hsl(0, 0%, 0%) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-		text-shadow: 1px 1px 0 var(--Myred1) !important;
-		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition-timing-function: linear !important;
-		box-shadow: 0 1px 4px 1px var(--MyB) !important;
-	}
-
-	#a-page[aria-hidden="true"] {
-		background-color: var(--MyXB) !important;
-	}
-
-	.a-disabled {
-		opacity: 0.5 !important;
-	}
-
-	.wl-invite-button-contents:hover {
-		filter: invert(0) !important;
-	}
-
-	.a-box:not(.a-box.delivery-box):not([id="my-lists-tab"]) .a-box-inner:hover,
-	.s-suggestion:hover,
-	.s-pagination-item:hover,
-	.s-pagination-item.s-pagination-selected,
-	.s-suggestion.is-hovered,
-	a.nav-a:hover,
-	.a-link-normal.item:hover,
-	li.selected[role="tab"],
-	a[class*="style__button"]:hover,
-	ul > li > a:hover:not([style]),
-	#nav-hamburger-menu:hover,
-	a.hmenu-item:hover,
-	.a-normal > a:hover,
-	.a-last > a:hover,
-	.a-selected > a,
-	.nav-search-scope.nav-sprite:hover,
-	li.a-spacing-micro:hover,
-	a.nav-link.nav-item:hover,
-	.wl-invite-button-contents:hover,
-	input[type="submit"]:hover,
-	.feed-left:hover:not(.feed-control-disabled),
-	.feed-right:hover:not(.feed-control-disabled),
-	.a-button-inner:hover,
-	button:hover {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-		background-color: var(--Myred1) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Myred1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-		outline: none !important;
-		opacity: 1 !important;
-		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-	}
-
-	.a-box:not(.a-box.delivery-box) .a-box-inner:active,
-	.s-pagination-item:active,
-	a.nav-a:active,
-	li.selected[role="tab"]:active,
-	li[role="tab"]:active,
-	a[class*="style__button"]:active,
-	ul > li > a:active:not([style]),
-	#nav-hamburger-menu:active,
-	a.hmenu-item:active,
-	.a-normal > a:active,
-	.a-last > a:active,
-	.a-selected > a:active,
-	.nav-search-scope.nav-sprite:active,
-	a.nav-link.nav-item:active,
-	.wl-invite-button-contents:active,
-	input[type="submit"]:active,
-	.feed-left:active:not(.feed-control-disabled),
-	.feed-right:active:not(.feed-control-disabled),
-	.a-button:active,
-	button:active {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-		background-color: var(--MyX3) !important;
-		background-image: radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Mygreen1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				rgba(168, 168, 168, 0.5) 48%,
-				hsla(0, 0%, 0%, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				rgba(168, 168, 168, 0.2)
-			) !important;
-		outline: none !important;
-		opacity: 1 !important;
-		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-	}
-
-	.gw-card-layout .desktop-row > div,
-	table,
-	#mako-subnav-helper,
-	.a-accordion-inner.accordion-row-content,
-	.a-box,
-	#ppu-container,
-	.content,
-	.card-1,
-	.card,
-	.a-popover-inner,
-	.a-box-inner {
-		background-image: none !important;
-		background-color: var(--Mygray2) !important;
-	}
-
-	tr:hover,
-	div[class*="bxc-grid-overlay"] {
-		background-color: var(--MyX1) !important;
-	}
-
-	.a-fixed-right-grid.wl-list.selected.a-spacing-micro.a-spacing-top-micro {
-		background-color: transparent !important;
-	}
-
-	#primeSubnav.a-container.a-global-nav-wrapper {
-		background-image: none !important;
-		background-color: transparent !important;
-	}
-
-	h2.header,
-	#primeSubnav.a-container.a-global-nav-wrapper,
-	header,
-	.a-popover-header,
-	.w-popover-header {
-		background-color: var(--Myred3) !important;
-	}
-
-	div[class*="style__navArea"],
-	#nav-main,
-	#nav-belt,
-	header,
-	#navbar,
-	p,
-	tr,
-	li span.a-list-item,
-	h2.header,
-	.a-text-left,
-	.a-color-secondary,
-	.a-section,
-	.a-color-base,
-	.a-price-fraction,
-	.a-price-whole,
-	.a-text-normal,
-	span.nav-text,
-	a {
-		color: var(--MyW) !important;
-		text-decoration: none !important;
-		background-color: transparent !important;
-	}
-
-	#mbc-price-1,
-	a:visited span.nav-text:hover,
-	a:hover {
-		color: var(--Myred1) !important;
-		text-decoration: none !important;
-	}
-
-	a:active {
-		color: var(--Mygreen1) !important;
-	}
-
-	h1,
-	.a-price-symbol {
-		color: var(--Mygreen2) !important;
-	}
-
-	.wl-list,
-	.rhf-frame,
-	.rhf-border,
-	.a-carousel-container,
-	.a-carousel-viewport,
-	.a-cardui,
-	.a-section {
-		background: var(--MyB) !important;
-	}
-
-	[class="a-accordion-row-a11y a-accordion-row a-declarative accordion-header mobb-header-css"],
-	.billboardRowWrapper,
-	div[id*="desktop"] {
-		background-color: var(--Mygray2) !important;
-	}
-
-	.a-popover-wrapper {
-		background-color: var(--Myred3) !important;
-		border-right: 1px solid var(--MyW) !important;
-		border-top: 1px solid var(--MyW) !important;
-		border-bottom: 1px solid var(--MyW) !important;
-		border-left: 1px solid var(--MyW) !important;
-	}
-
-	.a-popover-inner {
-		border-right: 1px solid var(--MyW) !important;
-	}
-
-	.nav-sprite,
-	.nav-search-submit-text {
-		color: var(--MyW) !important;
-	}
-
-	.a-icon.a-icon-close {
-		filter: invert(1) !important;
-	}
-
-	.a-tabs.a-declarative,
-	#nav-subnav {
-		background-color: var(--Myred3) !important;
-	}
-
-	li.a-tab-heading.a-active a,
-	div[aria-level="1"] {
-		background-color: transparent !important;
-	}
-
-	li.a-tab-heading.a-active:hover a {
-		color: var(--Mygreen1) !important;
-		border-top: 1px solid var(--Myred1) !important;
-	}
-
-	.nav-carousel-container,
-	.nav-template,
-	.nav-coreFlyout,
-	.hmenu {
-		background-color: var(--Mygray3) !important;
-	}
-
-	.holidayTracker2020-sceneContainer,
-	.snow-animation-canvas,
-	#themed-banner-container,
-	.holiday-cheer,
-	a[aria-label*="Amazon Pharmacy"],
-	#promoGrid,
-	div[class*="style__socialShare"],
-	#cbcc_content_container,
-	#navFooter,
-	.navFooterLine.navFooterLinkLine.navFooterPadItemLine.navFooterCopyright,
-	div[aria-label="More on Amazon.com"],
-	div[id*="ape_Gateway"],
-	#creative-wrapper > #ad,
-	#gw-desktop-herotator,
-	#gw-desktop-herotator .a-carousel-viewport,
-	#gw-desktop-herotator.tall .a-carousel-viewport::before {
-		display: none !important;
-	}
-
-	#gw-desktop-herotator.tall .a-carousel-container {
-		overflow: hidden !important;
-	}
-
-	.prime-sub-nav-item-container {
-		padding-right: 10px !important;
-		padding-left: 10px !important;
-	}
-
-	.sc-fvEvSO.jrukLV,
-	textarea {
-		background-color: var(--Mygray3) !important;
-		color: var(--MyW) !important;
-	}
-
-	.delivery-box__secondary-text,
-	a[role="link"] > span {
-		color: var(--Mygray1) !important;
-	}
-
-	.item {
-		color: var(--MyW) !important;
-	}
-
-	#nav-tools,
-	.nav-fill,
-	.nav-left,
-	#nav-search,
-	.persistent-header,
-	.sc-jRwbcX.bknLKA,
-	.apx-add-card-buttons-in-popover,
-	div[class="a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical"],
-	.a-row.ewc-compact-head,
-	div[class*="nav-flyout-buffer"],
-	div[class*="style__navArea"],
-	#hmenu-customer-profile,
-	header,
-	#navbar,
-	.a-tab-heading:hover,
-	.a-tab-heading.a-active,
-	.prime-sub-nav-item-container:hover {
-		background-color: var(--Myred1) !important;
-		background-image: linear-gradient(
-			to top,
-			rgba(65, 21, 21, 0.8),
-			rgba(97, 22, 22, 0.8),
-			rgba(189, 38, 38, 0.8) 100%,
-			transparent
-		) !important;
-		color: var(--MyW) !important;
-	}
-
-	.pt-floating-map-card,
-	.destination,
-	.a-accordion-inner,
-	.apm-sidemodule.apm-spacing,
-	.apm-sidemodule-textleft,
-	.apm-sidemodule-textright,
-	.apm-hovermodule-slides,
-	.apm-hovermodule,
-	.a-row.cardContainer,
-	ul[class*="style__grid"],
-	div[data-cel-widget*="search_result_"],
-	table,
-	#mako-subnav-helper,
-	.a-tab-heading,
-	.prime-sub-nav {
-		background-color: var(--Mygray3) !important;
-		background-image: linear-gradient(
-			to top,
-			rgba(0, 0, 0, 0.8),
-			rgba(41, 41, 41, 0.9),
-			rgba(75, 75, 75, 0.9) 100%,
-			transparent
-		) !important;
-	}
-
-	.a-expander-header,
-	span[id*="cr-lighthouse"]:hover {
-		background-color: var(--MyX1) !important;
-		color: var(--MyW) !important;
-	}
-
-	.a-expander-header:hover {
-		background-color: var(--Myred1) !important;
-		color: var(--MyW) !important;
-	}
-
-	.s-desktop-content {
-		background-color: var(--MyB) !important;
-	}
-
-	span[itemprop="name"] {
-		color: var(--MyB) !important;
-	}
-
-	.a-size-medium {
-		color: var(--TwitterBlue) !important;
-	}
-
-	th {
-		background-color: transparent !important;
-		color: var(--TwitterBlue) !important;
-	}
-
-	.checkout-quantity-badge,
-	.itemImages-quantityLabel,
-	.item-view-qty {
-		background-color: var(--Myyellow1) !important;
-		color: var(--MyB) !important;
-	}
-
-	.pt-status-milestone-label.active,
-	.pt-status-secondary-status,
-	bdi,
-	.a-color-price {
-		color: var(--Myyellow1) !important;
-	}
-
-	.sc-fiCwlc.cLBcAP,
-	.a-divider-inner,
-	div.a-form-actions,
-	div.a-container.sc-background-dark,
-	div[role="main"] {
-		background-image: none !important;
-		background-color: transparent !important;
-	}
-
-	.a-divider.a-divider-break.a-spacing-top-small h5 {
-		background-color: var(--MyX1) !important;
-		color: var(--Myyellow1) !important;
-	}
-
-	#apx-add-credit-card-action-test-id * .a-button-text {
-		color: var(--MyW) !important;
-	}
-
-	.status-card
-		.pt-status-milestones
-		.pt-status-milestone
-		.pt-status-milestone-marker.active,
-	.status-card
-		.pt-status-milestones
-		.pt-status-milestone
-		.pt-status-milestone-bar
-		.pt-status-milestone-bar-progress {
-		background-color: var(--Myred1) !important;
-	}
-
-	.pt-status-milestone-marker-check.active {
-		color: var(--Mygreen1) !important;
-	}
-
-	.pt-floating-map-card,
-	.destination.show-destination {
-		border: 1px solid var(--Myred1) !important;
-	}
-
-	div[class="lists-desktop-rio-icons"] img[role="presentation"] {
-		filter: invert(1);
-	}
-
-	[class="nav-search-submit nav-sprite"] {
-		color: var(--MyW) !important;
-		background-color: transparent !important;
-	}
-
-	.sc-fiCwlc.cLBcAP,
-	.tooltip {
-		background-color: var(--MyX1) !important;
-		opacity: 1;
-		color: var(--MyW) !important;
-		padding: 8px;
-		border-radius: 2px;
-		border: 1px solid var(--MyW) !important;
-	}
+
+    *,
+    html {
+        scrollbar-color: var(--Myred1) var(--Myred3);
+        scrollbar-width: thin;
+        text-decoration: none !important;
+    }
+
+    ::-webkit-scrollbar {
+        background: var(--Myred3) !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--Myred1) !important;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--Mygreen1) !important;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: var(--Mygreen2) !important;
+    }
+
+    ::marker {
+        color: var(--Mygreen1) !important;
+    }
+
+    li,
+    b,
+    br {
+        color: var(--Mygray1) !important;
+    }
+
+    #sw-atc-details-single-container,
+    .a-container,
+    #sw-full-view-container {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+
+    .a-page,
+    #a-page,
+    #sw-full-view-container,
+    .a-container,
+    .a-row,
+    #dp,
+    .stores-page,
+    .avu-content-aui,
+    .bg-hero,
+    div[role="main"],
+    .a-row #listPrivacy,
+    html,
+    #pageContent,
+    body {
+        background-color: var(--MyB);
+        color: var(--MyW);
+    }
+
+    .nav-searchbar,
+    .rhf-border {
+        border-color: transparent !important;
+    }
+
+    div[class="a-row a-spacing-medium widgetLink-group"],
+    [class="a-row a-spacing-medium"],
+    .nav-search-field,
+    .nav-searchbar {
+        background-color: transparent !important;
+    }
+
+    input:not([type="submit"]) {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+        text-align: center !important;
+        border-radius: 15px !important;
+        border: 1px solid var(--MyW) !important;
+    }
+
+    input[name="submit.addToCart"] {
+        padding: 0px !important;
+    }
+
+    *|*:any-link:not(svg|a) {
+        text-decoration: none !important;
+    }
+
+    td.top-header,
+    div[class*="nav-timeline"],
+    div[id*="nav-flyout"],
+    td[class*="comparison"],
+    tr[class*="comparison"],
+    tr[id*="comparison"] {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+
+    td.attribute.empty,
+    td.aplus-data-column.active.active-item {
+        background-color: var(--Mygray2) !important;
+        color: var(--MyW) !important;
+    }
+
+    td[class="a-text-left attribute a-text-bold"]:hover,
+    td.aplus-data-column.active.active-item:hover {
+        background-color: var(--Myred2) !important;
+        color: var(--MyW) !important;
+    }
+
+    li.selected[role="tab"] .a-row,
+    a:link,
+    *|*:link {
+        color: rgb(0, 0, 238);
+        text-decoration: none !important;
+    }
+
+    .milestone-bar_background {
+        background-color: transparent !important;
+    }
+
+    .hmenu-item.hmenu-title {
+        color: var(--Mygreen1) !important;
+    }
+
+    .milestone-marker::before,
+    .milestone-markers::after {
+        background-color: var(--Mygreen1) !important;
+    }
+
+    .card-lite.product-shoveler,
+    #promise-background-container {
+        background-color: transparent !important;
+    }
+
+    #cbcc_banner,
+    .rhf-divider-no-gradient {
+        border-color: var(--Myred1) !important;
+    }
+
+    .nav-timeline-dot.nav-timeline-icon {
+        background-color: var(--Myred1) !important;
+    }
+
+    .rhf-header,
+    .nav-title {
+        color: var(--Myred1) !important;
+    }
+
+    h2[class*="ya-card__heading"] {
+        color: var(--Mygreen1) !important;
+    }
+
+    ul>li>a,
+    ul.a-pagination li.a-normal,
+    .nav-search-scope.nav-sprite {
+        background-image: none !important;
+    }
+
+    td.prodDetAttrValue,
+    .a-button-text,
+    .nav-search-submit-text,
+    .fresh-shoveler .as-title-block .a-color-base,
+    .a-size-base.a-color-secondary,
+    span.description,
+    .a-size-small {
+        color: var(--MyW) !important;
+    }
+
+    [class*="tablemodule"] {
+        background-color: var(--Mygray3) !important;
+    }
+
+    .a-box:not(.a-box.delivery-box) .a-box-inner,
+    .s-pagination-item,
+    a.nav-a,
+    li[role="tab"],
+    a[class*="style__button"],
+    ul>li>a:not([style]),
+    #nav-hamburger-menu,
+    .a-disabled,
+    .a-normal>a,
+    .a-last>a,
+    .nav-search-scope.nav-sprite,
+    .wl-invite-button-contents,
+    input[type="submit"]:not(.a-button-text):not(.a-button-input),
+    .feed-left,
+    .feed-right,
+    .a-button-inner,
+    button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        color: var(--Mytext) !important;
+        background-color: var(--MyB) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                hsl(0, 0%, 0%) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
+        text-shadow: 1px 1px 0 var(--Myred1) !important;
+        -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+        transition-timing-function: linear !important;
+        box-shadow: 0 1px 4px 1px var(--MyB) !important;
+    }
+
+    #a-page[aria-hidden="true"] {
+        background-color: var(--MyXB) !important;
+    }
+
+    .a-disabled {
+        opacity: 0.5 !important;
+    }
+
+    .wl-invite-button-contents:hover {
+        filter: invert(0) !important;
+    }
+
+    .a-box:not(.a-box.delivery-box):not([id="my-lists-tab"]) .a-box-inner:hover,
+    .s-suggestion:hover,
+    .s-pagination-item:hover,
+    .s-pagination-item.s-pagination-selected,
+    .s-suggestion.is-hovered,
+    a.nav-a:hover,
+    .a-link-normal.item:hover,
+    li.selected[role="tab"],
+    a[class*="style__button"]:hover,
+    ul>li>a:hover:not([style]),
+    #nav-hamburger-menu:hover,
+    a.hmenu-item:hover,
+    .a-normal>a:hover,
+    .a-last>a:hover,
+    .a-selected>a,
+    .nav-search-scope.nav-sprite:hover,
+    li.a-spacing-micro:hover,
+    a.nav-link.nav-item:hover,
+    .wl-invite-button-contents:hover,
+    input[type="submit"]:hover,
+    .feed-left:hover:not(.feed-control-disabled),
+    .feed-right:hover:not(.feed-control-disabled),
+    .a-button-inner:hover,
+    button:hover {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+        background-color: var(--Myred1) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Myred1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                hsla(0, 0%, 66%, 0.5) 48%,
+                rgba(0, 0, 0, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                hsla(0, 0%, 66%, 0.2)) !important;
+        outline: none !important;
+        opacity: 1 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+    }
+
+    .a-box:not(.a-box.delivery-box) .a-box-inner:active,
+    .s-pagination-item:active,
+    a.nav-a:active,
+    li.selected[role="tab"]:active,
+    li[role="tab"]:active,
+    a[class*="style__button"]:active,
+    ul>li>a:active:not([style]),
+    #nav-hamburger-menu:active,
+    a.hmenu-item:active,
+    .a-normal>a:active,
+    .a-last>a:active,
+    .a-selected>a:active,
+    .nav-search-scope.nav-sprite:active,
+    a.nav-link.nav-item:active,
+    .wl-invite-button-contents:active,
+    input[type="submit"]:active,
+    .feed-left:active:not(.feed-control-disabled),
+    .feed-right:active:not(.feed-control-disabled),
+    .a-button:active,
+    button:active {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+        background-color: var(--MyX3) !important;
+        background-image: radial-gradient(ellipse farthest-corner at center bottom,
+                var(--Mygreen1) 0%,
+                transparent 99%),
+            linear-gradient(180deg,
+                rgba(168, 168, 168, 0.5) 48%,
+                hsla(0, 0%, 0%, 0.4) 49%,
+                rgba(0, 0, 0, 0.8) 100%,
+                rgba(168, 168, 168, 0.2)) !important;
+        outline: none !important;
+        opacity: 1 !important;
+        color: var(--MyW) !important;
+        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+        transition-timing-function: linear !important;
+        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+    }
+
+    .gw-card-layout .desktop-row>div,
+    table,
+    #mako-subnav-helper,
+    .a-accordion-inner.accordion-row-content,
+    .a-box,
+    #ppu-container,
+    .content,
+    .card-1,
+    .card,
+    .a-popover-inner {
+        background-image: none !important;
+        background-color: var(--Mygray2) !important;
+    }
+
+    tr:hover,
+    div[class*="bxc-grid-overlay"] {
+        background-color: var(--MyX1) !important;
+    }
+
+    .a-fixed-right-grid.wl-list.selected.a-spacing-micro.a-spacing-top-micro {
+        background-color: transparent !important;
+    }
+
+    #primeSubnav.a-container.a-global-nav-wrapper {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+
+    h2.header,
+    #primeSubnav.a-container.a-global-nav-wrapper,
+    header,
+    .a-popover-header,
+    .w-popover-header {
+        background-color: var(--Myred3) !important;
+    }
+
+    div[class*="style__navArea"],
+    #nav-main,
+    #nav-belt,
+    header,
+    #navbar,
+    p,
+    tr,
+    li span.a-list-item,
+    h2.header,
+    .a-text-left,
+    .a-color-secondary,
+    .a-section,
+    .a-color-base,
+    .a-price-fraction,
+    .a-price-whole,
+    .a-text-normal,
+    span.nav-text,
+    a {
+        color: var(--MyW) !important;
+        text-decoration: none !important;
+        background-color: transparent !important;
+    }
+
+    #mbc-price-1,
+    a:visited span.nav-text:hover,
+    a:hover {
+        color: var(--Myred1) !important;
+        text-decoration: none !important;
+    }
+
+    a:active {
+        color: var(--Mygreen1) !important;
+    }
+
+    h1,
+    .a-price-symbol {
+        color: var(--Mygreen2) !important;
+    }
+
+    .wl-list,
+    .rhf-frame,
+    .rhf-border,
+    .a-carousel-container,
+    .a-carousel-viewport,
+    .a-cardui,
+    .a-section {
+        background: var(--MyB) !important;
+    }
+
+    [class="a-accordion-row-a11y a-accordion-row a-declarative accordion-header mobb-header-css"],
+    .billboardRowWrapper,
+    div[id*="desktop"] {
+        background-color: var(--Mygray2) !important;
+    }
+
+    .a-popover-wrapper {
+        background-color: var(--Myred3) !important;
+        border-right: 1px solid var(--MyW) !important;
+        border-top: 1px solid var(--MyW) !important;
+        border-bottom: 1px solid var(--MyW) !important;
+        border-left: 1px solid var(--MyW) !important;
+    }
+
+    .a-popover-inner {
+        border-right: 1px solid var(--MyW) !important;
+    }
+
+    .nav-sprite,
+    .nav-search-submit-text {
+        color: var(--MyW) !important;
+    }
+
+    .a-icon.a-icon-close {
+        filter: invert(1) !important;
+    }
+
+    .a-tabs.a-declarative,
+    #nav-subnav {
+        background-color: var(--Myred3) !important;
+    }
+
+    li.a-tab-heading.a-active a,
+    div[aria-level="1"] {
+        background-color: transparent !important;
+    }
+
+    li.a-tab-heading.a-active:hover a {
+        color: var(--Mygreen1) !important;
+        border-top: 1px solid var(--Myred1) !important;
+    }
+
+    .nav-carousel-container,
+    .nav-template,
+    .nav-coreFlyout,
+    .hmenu {
+        background-color: var(--Mygray3) !important;
+    }
+
+    .holidayTracker2020-sceneContainer,
+    .snow-animation-canvas,
+    #themed-banner-container,
+    .holiday-cheer,
+    a[aria-label*="Amazon Pharmacy"],
+    #promoGrid,
+    div[class*="style__socialShare"],
+    #cbcc_content_container,
+    #navFooter,
+    .navFooterLine.navFooterLinkLine.navFooterPadItemLine.navFooterCopyright,
+    div[aria-label="More on Amazon.com"],
+    div[id*="ape_Gateway"],
+    #creative-wrapper>#ad,
+    #gw-desktop-herotator,
+    #gw-desktop-herotator .a-carousel-viewport,
+    #gw-desktop-herotator.tall .a-carousel-viewport::before {
+        display: none !important;
+    }
+
+    #gw-desktop-herotator.tall .a-carousel-container {
+        overflow: hidden !important;
+    }
+
+    .prime-sub-nav-item-container {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+
+    .sc-fvEvSO.jrukLV,
+    textarea {
+        background-color: var(--Mygray3) !important;
+        color: var(--MyW) !important;
+    }
+
+    .delivery-box__secondary-text,
+    a[role="link"]>span {
+        color: var(--Mygray1) !important;
+    }
+
+    .item {
+        color: var(--MyW) !important;
+    }
+
+    #nav-tools,
+    .nav-fill,
+    .nav-left,
+    #nav-search,
+    .persistent-header,
+    .sc-jRwbcX.bknLKA,
+    .apx-add-card-buttons-in-popover,
+    div[class="a-scroller ewc-scroller ewc-scroller--selected a-scroller-vertical"],
+    .a-row.ewc-compact-head,
+    div[class*="nav-flyout-buffer"],
+    div[class*="style__navArea"],
+    #hmenu-customer-profile,
+    header,
+    #navbar,
+    .a-tab-heading:hover,
+    .a-tab-heading.a-active,
+    .prime-sub-nav-item-container:hover {
+        background-color: var(--Myred1) !important;
+        background-image: linear-gradient(to top,
+                rgba(65, 21, 21, 0.8),
+                rgba(97, 22, 22, 0.8),
+                rgba(189, 38, 38, 0.8) 100%,
+                transparent) !important;
+        color: var(--MyW) !important;
+    }
+
+    .pt-floating-map-card,
+    .destination,
+    .a-accordion-inner,
+    .apm-sidemodule.apm-spacing,
+    .apm-sidemodule-textleft,
+    .apm-sidemodule-textright,
+    .apm-hovermodule-slides,
+    .apm-hovermodule,
+    .a-row.cardContainer,
+    ul[class*="style__grid"],
+    div[data-cel-widget*="search_result_"],
+    table,
+    #mako-subnav-helper,
+    .a-tab-heading,
+    .prime-sub-nav {
+        background-color: var(--Mygray3) !important;
+        background-image: linear-gradient(to top,
+                rgba(0, 0, 0, 0.8),
+                rgba(41, 41, 41, 0.9),
+                rgba(75, 75, 75, 0.9) 100%,
+                transparent) !important;
+    }
+
+    .a-expander-header,
+    span[id*="cr-lighthouse"]:hover {
+        background-color: var(--MyX1) !important;
+        color: var(--MyW) !important;
+    }
+
+    .a-expander-header:hover {
+        background-color: var(--Myred1) !important;
+        color: var(--MyW) !important;
+    }
+
+    .s-desktop-content {
+        background-color: var(--MyB) !important;
+    }
+
+    span[itemprop="name"] {
+        color: var(--MyB) !important;
+    }
+
+    .a-size-medium {
+        color: var(--TwitterBlue) !important;
+    }
+
+    th {
+        background-color: transparent !important;
+        color: var(--TwitterBlue) !important;
+    }
+
+    .checkout-quantity-badge,
+    .itemImages-quantityLabel,
+    .item-view-qty {
+        background-color: var(--Myyellow1) !important;
+        color: var(--MyB) !important;
+    }
+
+    .pt-status-milestone-label.active,
+    .pt-status-secondary-status,
+    bdi,
+    .a-color-price {
+        color: var(--Myyellow1) !important;
+    }
+
+    .sc-fiCwlc.cLBcAP,
+    .a-divider-inner,
+    div.a-form-actions,
+    div.a-container.sc-background-dark,
+    div[role="main"] {
+        background-image: none !important;
+        background-color: transparent !important;
+    }
+
+    .a-divider.a-divider-break.a-spacing-top-small h5 {
+        background-color: var(--MyX1) !important;
+        color: var(--Myyellow1) !important;
+    }
+
+    #apx-add-credit-card-action-test-id * .a-button-text {
+        color: var(--MyW) !important;
+    }
+
+    .status-card .pt-status-milestones .pt-status-milestone .pt-status-milestone-marker.active,
+    .status-card .pt-status-milestones .pt-status-milestone .pt-status-milestone-bar .pt-status-milestone-bar-progress {
+        background-color: var(--Myred1) !important;
+    }
+
+    .pt-status-milestone-marker-check.active {
+        color: var(--Mygreen1) !important;
+    }
+
+    .pt-floating-map-card,
+    .destination.show-destination {
+        border: 1px solid var(--Myred1) !important;
+    }
+
+    div[class="lists-desktop-rio-icons"] img[role="presentation"] {
+        filter: invert(1);
+    }
+
+    [class="nav-search-submit nav-sprite"] {
+        color: var(--MyW) !important;
+        background-color: transparent !important;
+    }
+
+    div[aria-haspopup="dialog"],
+    .profile-row,
+    .sc-fiCwlc.cLBcAP,
+    .tooltip {
+        background-color: var(--MyX1) !important;
+        opacity: 1;
+        color: var(--MyW) !important;
+        padding: 8px;
+        border-radius: 2px;
+        border: 1px solid var(--MyW) !important;
+    }
+
+    .a-row,
+    div.a-fixed-right-grid,
+    div.a-box-inner {
+        background-color: transparent !important;
+    }
 }
