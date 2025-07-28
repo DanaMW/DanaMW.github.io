@@ -2,7 +2,7 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.31
+@version      0.0.32
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -10,7 +10,7 @@
 
 @-moz-document domain("bsky.app") {
 
-
+    div[data-testid="HomeScreen"],
     [class="css-g5y9jx r-13awgt0 r-1d5kdc7 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af"]>div>.css-g5y9jx.r-13awgt0,
     [class="css-g5y9jx r-eqz5dr r-1pi2tsx r-13g33dw"],
     html,
@@ -204,8 +204,8 @@
     }
 
     div[data-testid*="feedItem-by"] {
-        border-top: 5px solid var(--MyB);
-        border-bottom: 5px solid var(--MyB);
+        border-top: 5px solid var(--MyB) !important;
+        border-bottom: 5px solid var(--MyB) !important;
         background-color: var(--Mygray2) !important;
     }
 
