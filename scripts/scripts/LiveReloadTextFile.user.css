@@ -18,45 +18,57 @@ url-prefix("https://danamw.github.io/dev/help/") {
         background-color: var(--backcolor) !important;
         color: var(--textcolor) !important;
     }
+
     td.regular {
         color: var(--MyW) !important;
     }
+
     td.secondary {
         color: var(--Myred1) !important;
     }
+
     * {
         text-decoration: none !important;
         scrollbar-width: thin !important;
         scrollbar-color: var(--Myred1) var(--Myred3) !important;
     }
-     ::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         background: var(--Myred3) !important;
     }
-     ::-webkit-scrollbar-thumb {
+
+    ::-webkit-scrollbar-thumb {
         background: var(--Myred1) !important;
     }
-     ::-webkit-scrollbar-thumb:hover {
+
+    ::-webkit-scrollbar-thumb:hover {
         background: var(--Mygreen1) !important;
     }
-     ::-webkit-scrollbar-thumb:active {
+
+    ::-webkit-scrollbar-thumb:active {
         background: var(--Mygreen2) !important;
     }
+
     a {
         color: var(--Mygreen1) !important;
     }
+
     .header {
         color: var(--Myred1) !important;
     }
+
     td,
     #wrapper {
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
     }
+
     th,
     h1,
     h2,
     pre {
         background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
     }
+
     code {
         background-color: var(--Mygray3) !important;
     }
