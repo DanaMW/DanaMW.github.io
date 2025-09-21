@@ -2,13 +2,13 @@
 @name         Google Keep Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleKeep.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleKeep.user.css
-@version      0.0.1
+@version      0.0.2
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
-@-moz-document domain("example.com") {
+@-moz-document domain("keep.google.com") {
 	html,
 	body {
 		background-color: var(--MyB) !important;
@@ -98,6 +98,8 @@
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	div.gk6SMd,
+	div[role="tab"]:hover,
 	button:hover {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -127,6 +129,7 @@
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
+	div[role="tab"]:active,
 	button:active {
 		-moz-appearance: none;
 		-webkit-appearance: none;
