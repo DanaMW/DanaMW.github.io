@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.84
+@version      0.0.85
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -987,7 +987,6 @@ domain("tv.youtube.com") {
 
 	#avatar-btn > yt-img-shadow > img#img {
 		border-radius: 50% !important;
-		border: 2px solid var(--MyW) !important;
 	}
 
 	paper-tooltip {
@@ -1029,6 +1028,9 @@ domain("tv.youtube.com") {
 		color: white;
 		border: 1px solid var(--MyW) !important;
 		text-transform: none;
+	}
+	yt-lockup-view-model:hover {
+		background: var(--MyX1) !important;
 	}
 
 	ytd-watch-flexy,
@@ -1109,7 +1111,6 @@ domain("tv.youtube.com") {
 	#right-arrow-button {
 		background-color: var(--Myred3) !important;
 	}
-
 	.badge.badge-style-type-verified > yt-icon > svg {
 		color: var(--TwitterBlue) !important;
 		transform: scale(1.25);
@@ -1140,6 +1141,14 @@ domain("tv.youtube.com") {
 	#table-header,
 	ytcp-sticky-header {
 		background: var(--Myred3) !important;
+	}
+
+	yt-badge-view-model {
+		background-color: var(--Mygreen2) !important;
+	}
+
+	.yt-badge-shape__text {
+		color: var(--MyB) !important;
 	}
 
 	#selectionBar.tp-yt-paper-tabs {
