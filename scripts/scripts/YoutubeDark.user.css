@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.86
+@version      0.0.87
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -1030,7 +1030,7 @@ domain("tv.youtube.com") {
 		text-transform: none;
 	}
 
-	/* working right here X1
+	/* working right here X1 */
 
 	ytd-rich-item-renderer.style-scope.ytd-rich-grid-renderer:hover,
 	yt-touch-feedback-shape[class*="hovered"],
