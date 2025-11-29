@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.1.1
+@version      0.1.3
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -206,6 +206,7 @@ domain("twimg.com") {
 		width: 235px !important;
 	}
 
+	[class="absolute inset-0 w-full h-full select-none flex items-center justify-center cursor-pointer"],
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-1ny4l3l"],
 	[class="css-175oi2r r-16y2uox r-1cwvpvk r-1noe1sz r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"],
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-1mnahxq r-19yznuf r-64el8z r-1fkl15p r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"],
@@ -283,6 +284,7 @@ domain("twimg.com") {
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	[class="absolute inset-0 w-full h-full select-none flex items-center justify-center cursor-pointer"]:hover,
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-pjtv4k r-1ny4l3l"]:hover,
 	[class="css-175oi2r r-16y2uox r-1cwvpvk r-1noe1sz r-o7ynqc r-6416eg r-1cuuowz r-1ny4l3l r-1loqt21"]:hover,
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-1mnahxq r-19yznuf r-64el8z r-1fkl15p r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:hover,
@@ -367,6 +369,7 @@ domain("twimg.com") {
 		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
 	}
 
+	[class="absolute inset-0 w-full h-full select-none flex items-center justify-center cursor-pointer"]:active,
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-15ysp7h r-4wgw6l r-3pj75a r-1loqt21 r-o7ynqc r-6416eg r-pjtv4k r-1ny4l3l"]:active,
 	[class="css-175oi2r r-16y2uox r-1cwvpvk r-1noe1sz r-o7ynqc r-6416eg r-1cuuowz r-1ny4l3l r-1loqt21"]:active,
 	[class="css-175oi2r r-16y2uox r-1cwvpvk r-1noe1sz r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:active,
