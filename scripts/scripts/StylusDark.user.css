@@ -2,83 +2,84 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.63
+@version      0.0.64
 @description  Additional styling for Stylus
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 ==/UserStyle== */
 
 @-moz-document regexp("chrome-extension://.*"),
-regexp("moz-extension://.*") {
-    input[type="checkbox"] {
-        background-color: var(--MyW) !important;
-    }
+regexp("moz-extension://.*")
+{
+	input[type="checkbox"] {
+		background-color: var(--MyW) !important;
+	}
 
-    img[src="https://www.google.com/s2/favicons?domain=ello.co"],
+	img[src="https://www.google.com/s2/favicons?domain=ello.co"],
     img[src="https://www.google.com/s2/favicons?domain=github.com"],
     img[src="https://www.google.com/s2/favicons?domain=githubusercontent.com"],
     svg[class="svg-icon select-arrow"] {
-        filter: invert(1) !important;
-    }
+		filter: invert(1) !important;
+	}
 
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
 
-    ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
 
-    ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
 
-    ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
 
-    /*
+	/*
     h2.style-name {
         max-width: 700px !important;
         width: 500px !important;
     }
     */
-    a.style-name {
-        color: var(--Mygray1) !important;
-    }
+	a.style-name {
+		color: var(--Mygray1) !important;
+	}
 
-    a:hover {
-        color: var(--Myred1) !important;
-    }
+	a:hover {
+		color: var(--Myred1) !important;
+	}
 
-    h2 {
-        color: var(--TwitterPink) !important;
-    }
+	h2 {
+		color: var(--TwitterPink) !important;
+	}
 
-    .disabled h2::after {
-        background-color: var(--MyX1) !important;
-        color: var(--Mytext) !important;
-    }
+	.disabled h2::after {
+		background-color: var(--MyX1) !important;
+		color: var(--Mytext) !important;
+	}
 
-    p.actions {
-        width: 200px !important;
-        align-content: center !important;
-    }
+	p.actions {
+		width: 200px !important;
+		align-content: center !important;
+	}
 
-    h2.style-name:hover .style-info,
-    .style-info:hover,
-    h2.style-name:hover .style-name-link,
-    .style-name-link:hover {
-        color: var(--TwitterRed) !important;
-    }
+	h2.style-name:hover .style-info,
+	.style-info:hover,
+	h2.style-name:hover .style-name-link,
+	.style-name-link:hover {
+		color: var(--TwitterRed) !important;
+	}
 
-    /*
+	/*
     span.target::before,
     span.target::after,
     span.target img {
@@ -102,530 +103,556 @@ regexp("moz-extension://.*") {
         display: before;
     }
     */
-    .style-info {
-        color: var(--Myyellow1) !important;
-    }
-
-    #header {
-        color: var(--Mytext) !important;
-        border: 1px solid var(--Myborder) !important;
-        background-color: var(--Myred3) !important;
-    }
-
-    input[type="checkbox"]:not(.slider):checked+.svg-icon.checked {
-        display: inline-flex;
-        transition: fill 0.1s ease 0s;
-    }
-
-    .svg-icon.checked {
-        position: absolute;
-        height: 8px;
-        width: 8px;
-        display: none;
-        fill: var(--MyW) !important;
-        margin: 2px 0px 0px 2px;
-    }
-
-    input[type="checkbox"]:not(.slider) {
-        background-color: var(--MyB) !important;
-        color: var(--Mytext) !important;
-        border: 1px solid var(--MyW) !important;
-    }
-
-    .svg-icon:hover {
-        -moz-animation: 500ms infinite alternate flash;
-        -webkit-animation: 500ms infinite alternate flash;
-        animation: 500ms infinite alternate flash;
-    }
-
-    @keyframes flash {
-        0% {
-            filter: brightness(0%);
-        }
-
-        25% {
-            filter: brightness(25%);
-        }
-
-        50% {
-            filter: brightness(50%);
-        }
-
-        75% {
-            filter: brightness(75%);
-        }
-
-        100% {
-            filter: brightness(100%);
-        }
-    }
-
-    newUI .entry .style-name:hover::before,
-    #filters-stats {
-        background-color: var(--Myred2) !important;
-    }
-
-    select {
-        color: var(--Mytext) !important;
-        border: 1px groove var(--MyB) !important;
-    }
-
-    #installed::after {
-        background-color: var(--Myback) !important;
-    }
-
-    #apply-all-updates,
-    a#unfile-all-styles,
-    a#sync-dropbox-import,
-    a#file-all-styles,
-    a#sync-dropbox-export,
-    button:not(.fake) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Myred2) !important;
-        border-left: 1px solid var(--Myred2) !important;
-        border-bottom: 1px solid var(--Myred3) !important;
-        border-right: 1px solid var(--Myred3) !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom,
-                hsl(0, 0%, 0%) 0%,
-                transparent 99%),
-            linear-gradient(180deg,
-                hsla(0, 0%, 66%, 0.5) 48%,
-                rgba(0, 0, 0, 0.4) 49%,
-                rgba(0, 0, 0, 0.8) 100%,
-                hsla(0, 0%, 66%, 0.2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-        -webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-        transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-
-    a#unfile-all-styles:hover,
-    a#sync-dropbox-import:hover,
-    a#file-all-styles:hover,
-    a#sync-dropbox-export:hover,
-    button:hover:not(.fake):not([disabled]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Myred3) !important;
-        border-left: 1px solid var(--Myred3) !important;
-        border-bottom: 1px solid var(--Myred2) !important;
-        border-right: 1px solid var(--Myred2) !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom,
-                var(--Myred1) 0%,
-                transparent 99%),
-            linear-gradient(180deg,
-                hsla(0, 0%, 66%, 0.5) 48%,
-                rgba(0, 0, 0, 0.4) 49%,
-                rgba(0, 0, 0, 0.8) 100%,
-                hsla(0, 0%, 66%, 0.2)) !important;
-        outline: none !important;
-        opacity: 1 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-
-    a#unfile-all-styles:active,
-    a#sync-dropbox-import:active,
-    a#file-all-styles:active,
-    a#sync-dropbox-export:active,
-    button:active:not(.fake):not([disabled]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border-top: 1px solid var(--Mygreen2) !important;
-        border-left: 1px solid var(--Mygreen2) !important;
-        border-bottom: 1px solid var(--Mygreen3) !important;
-        border-right: 1px solid var(--Mygreen3) !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom,
-                var(--Mygreen1) 0%,
-                transparent 99%),
-            linear-gradient(180deg,
-                rgba(168, 168, 168, 0.5) 48%,
-                hsla(0, 0%, 0%, 0.4) 49%,
-                rgba(0, 0, 0, 0.8) 100%,
-                rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-
-    body {
-        color: var(--Mytext) !important;
-    }
-
-    newUI .entry .style-name:hover::before {
-        filter: brightness(150%);
-        background-color: var(--MyW) !important;
-    }
-
-    a,
-    a:visited {
-        color: var(--Mytext) !important;
-    }
-
-    #save-button {
-        color: var(--MyB) !important;
-    }
-
-    #save-button:hover {
-        opacity: 0.1;
-    }
-
-    #save-button:after {
-        color: var(--MyB) !important;
-        content: "d" !important;
-    }
-
-    body.dirty #save-button {
-        color: var(--MyW) !important;
-    }
-
-    #apply-all-updates,
-    body.dirty #save-button:hover {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        box-shadow: inset 0 0 4px 0 var(--MyB) !important;
-        border-bottom-color: var(--MyB) !important;
-        border-top-color: var(--Mygray3) !important;
-        border-right-color: var(--MyB) !important;
-        border-left-color: var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom,
-                var(--Myred1) 0%,
-                transparent 99%),
-            linear-gradient(180deg,
-                hsla(0, 0%, 66%, 0.5) 48%,
-                rgba(0, 0, 0, 0.4) 49%,
-                rgba(0, 0, 0, 0.8) 100%,
-                hsla(0, 0%, 66%, 0.2)) !important;
-        outline: none !important;
-        opacity: 1 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        -webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
-    }
-
-    body.dirty #save-button:after {
-        color: var(--MyW) !important;
-        content: "?" !important;
-    }
-
-    #apply-all-updates:hover {
-        filter: brightness(130%);
-    }
-
-    .newUI .entry:nth-child(2n) {
-        background-color: var(--MyB) !important;
-    }
-
-    .svg-icon:hover,
-    .newUI .entry:hover .svg-icon:hover {
-        fill: var(--MyW) !important;
-    }
-
-    .newUI .no-update:not(.update-problem):not(.update-done) .up-to-date,
-    .newUI .can-update .update {
-        color: var(--MyB);
-    }
-
-    a.update::after {
-        background-color: var(--Mygreen2) !important;
-        color: var(--MyB) !important;
-        border: 1px solid var(--MyB) !important;
-        border-radius: 5px !important;
-    }
-
-    a.update::after:hover rect:hover {
-        background-color: var(--Mygreen1) !important;
-        color: var(--MyB) !important;
-        border: 1px solid var(--MyB) !important;
-        border-radius: 5px !important;
-    }
-
-    .warning {
-        color: var(--Myred1) !important;
-    }
-
-    #confirm>div {
-        background-color: var(--Mygray3);
-        border: solid 2px rgba(0, 0, 0, 0.5);
-    }
-
-    .CodeMirror-linewidget .applies-to {
-        color: var(--Mytext) !important;
-        background: var(--Myback) !important;
-        border-style: none !important;
-    }
-
-    .CodeMirror-linewidget .applies-to>label {
-        color: var(--Mytext) !important;
-    }
-
-    select#manage.newUI.sort {
-        height: 20px !important;
-    }
-
-    svg[class="svg-icon checked"] {
-        filter: invert(1) !important;
-    }
-
-    .menu-items-wrapper,
-    #options-title,
-    select#manage.newUI.sort,
-    select,
-    #message-box.danger #message-box-title {
-        background-color: var(--Myred1) !important;
-        background-image: linear-gradient(to top,
-                rgba(80, 0, 0, 0.8),
-                rgba(170, 0, 0, 0.8),
-                rgba(80, 0, 0, 0.8) 100%,
-                transparent) !important;
-    }
-
-    option,
-    #options,
-    #help-popup,
-    #message-box>div,
-    #message-box-buttons,
-    #message-box-title,
-    .dropdown-content {
-        background-color: var(--Mygray3) !important;
-    }
-
-    select#manage.newUI.sort,
-    select {
-        width: 200px !important;
-    }
-
-    select#manage\.searchMode {
-        width: 185px !important;
-    }
-
-    #actions.block,
-    .odd {
-        background-image: linear-gradient(to left,
-                rgba(20, 20, 20, 0.8),
-                rgba(75, 75, 75, 0.8),
-                rgba(20, 20, 20, 0.8) 100%,
-                transparent) !important;
-    }
-
-    .even {
-        background-image: linear-gradient(to left,
-                rgba(80, 0, 0, 0.8),
-                rgba(170, 0, 0, 0.8),
-                rgba(80, 0, 0, 0.8) 100%,
-                transparent) !important;
-    }
-
-    /*  Normal Ones Below */
-    .stock {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top,
-                rgba(0, 0, 0, 0.8),
-                rgba(41, 41, 41, 0.9),
-                rgba(75, 75, 75, 0.9) 100%,
-                transparent) !important;
-    }
-
-    header {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top,
-                rgba(65, 21, 21, 0.8),
-                rgba(97, 22, 22, 0.8),
-                rgba(189, 38, 38, 0.8) 100%,
-                transparent) !important;
-    }
-
-    #stylus {
-        background-color: var(--MyB) !important;
-    }
-
-    #searchMode {
-        width: 150px !important;
-    }
-
-    button.install {
-        width: 200px !important;
-    }
-
-    .update.fake::after {
-        background-color: var(--Mygreen1) !important;
-    }
-
-    #link-usw {
-        display: none !important;
-    }
-
-    select.fit-width {
-        width: 240px !important;
-    }
-
-    #message-box.center-dialog.injection-order>div {
-        border: 1px solid var(--MyW) !important;
-    }
-
-    .onoffswitch span::before {
-        background: var(--knob, #06483e);
-    }
-
-    .onoffswitch input:checked+span::before {
-        right: 0;
-        background-color: var(--Myred1) !important;
-        box-shadow: 3px 6px 18px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    /* CodeMirror Below */
-    .main,
-    .CodeMirror {
-        background: #460101 !important;
-        color: #ffffff !important;
-        line-height: 1.5em !important;
-        font-size: 16px !important;
-        height: 100%;
-        font-weight: bold !important;
-        outline: transparent !important;
-        border: 1px solid #ffffff !important;
-    }
-
-    .CodeMirror .CodeMirror-selected {
-        background: #a12525 !important;
-        color: #ffd900;
-    }
-
-    .CodeMirror .CodeMirror-line::selection,
-    .CodeMirror .CodeMirror-line>span::selection,
-    .CodeMirror .CodeMirror-line>span>span::selection {
-        background: #a12525 !important;
-    }
-
-    .CodeMirror .CodeMirror-line::-moz-selection,
-    .CodeMirror .CodeMirror-line>span::-moz-selection,
-    .CodeMirror .CodeMirror-line>span>span::-moz-selection {
-        background: #a12525;
-    }
-
-    .CodeMirror .CodeMirror-gutters {
-        background: #460101;
-        border-right: 2px solid #a12525;
-    }
-
-    .CodeMirror .CodeMirror-guttermarker {
-        color: #0f0;
-    }
-
-    .CodeMirror-guttermarker-subtle {
-        color: #ffe8e8;
-    }
-
-    .CodeMirror .CodeMirror-linenumber {
-        color: #ffffff;
-    }
-
-    .CodeMirror-cursor {
-        border-left: 1px solid #00ff00;
-    }
-
-    .CodeMirror span.cm-keyword {
-        color: #00ff00;
-        font-weight: bold;
-    }
-
-    .CodeMirror span.cm-atom {
-        color: #3ff;
-    }
-
-    .CodeMirror span.cm-number {
-        color: #fbff00;
-    }
-
-    .CodeMirror span.cm-def {
-        color: #91b4ff;
-    }
-
-    .CodeMirror span.cm-variable {
-        color: #f6c;
-    }
-
-    .CodeMirror span.cm-variable-2 {
-        color: #c44eff;
-    }
-
-    .CodeMirror span.cm-variable-3,
-    .CodeMirror span.cm-type {
-        color: #ad7cec;
-    }
-
-    .CodeMirror span.cm-property {
-        color: #62ffa0;
-    }
-
-    .CodeMirror span.cm-operator {
-        color: #ecffb9;
-    }
-
-    .CodeMirror span.cm-comment {
-        color: #00ff00;
-    }
-
-    .CodeMirror span.cm-string {
-        color: #39c;
-    }
-
-    .CodeMirror span.cm-meta {
-        color: #ffffff;
-    }
-
-    .CodeMirror span.cm-qualifier {
-        color: #fff700;
-    }
-
-    .CodeMirror span.cm-builtin {
-        color: #ffffff;
-    }
-
-    .CodeMirror span.cm-bracket {
-        color: #ffff00;
-    }
-
-    .CodeMirror span.cm-tag {
-        color: #ffbd40;
-    }
-
-    .CodeMirror .cm-overlay,
-    .CodeMirror span.cm-attribute {
-        color: #fff700;
-    }
-
-    .CodeMirror span.cm-error {
-        color: #ff0000;
-    }
-
-    .CodeMirror .CodeMirror-activeline-background {
-        background: #921111;
-    }
+	.style-info {
+		color: var(--Myyellow1) !important;
+	}
+
+	#header {
+		color: var(--Mytext) !important;
+		border: 1px solid var(--Myborder) !important;
+		background-color: var(--Myred3) !important;
+	}
+
+	input[type="checkbox"]:not(.slider):checked .svg-icon.checked {
+		display: inline-flex;
+		transition: fill 0.1s ease 0s;
+	}
+
+	.svg-icon.checked {
+		position: absolute;
+		height: 8px;
+		width: 8px;
+		display: none;
+		fill: var(--MyW) !important;
+		margin: 2px 0px 0px 2px;
+	}
+
+	input[type="checkbox"]:not(.slider) {
+		background-color: var(--MyB) !important;
+		color: var(--MyW) !important;
+		border: 1px solid var(--MyW) !important;
+	}
+
+	.svg-icon:hover {
+		-moz-animation: 500ms infinite alternate flash;
+		-webkit-animation: 500ms infinite alternate flash;
+		animation: 500ms infinite alternate flash;
+	}
+
+	@keyframes flash {
+		0% {
+			filter: brightness(0%);
+		}
+
+		25% {
+			filter: brightness(25%);
+		}
+
+		50% {
+			filter: brightness(50%);
+		}
+
+		75% {
+			filter: brightness(75%);
+		}
+
+		100% {
+			filter: brightness(100%);
+		}
+	}
+
+	newUI .entry .style-name:hover::before,
+	#filters-stats {
+		background-color: var(--Myred2) !important;
+	}
+
+	select {
+		color: var(--Mytext) !important;
+		border: 1px groove var(--MyB) !important;
+	}
+
+	#installed::after {
+		background-color: var(--Myback) !important;
+	}
+
+	#apply-all-updates,
+	a#unfile-all-styles,
+	a#sync-dropbox-import,
+	a#file-all-styles,
+	a#sync-dropbox-export,
+	button:not(.fake) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border-top: 1px solid var(--Myred2) !important;
+		border-left: 1px solid var(--Myred2) !important;
+		border-bottom: 1px solid var(--Myred3) !important;
+		border-right: 1px solid var(--Myred3) !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
+
+	a#unfile-all-styles:hover,
+	a#sync-dropbox-import:hover,
+	a#file-all-styles:hover,
+	a#sync-dropbox-export:hover,
+	button:hover:not(.fake):not([disabled]) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border-top: 1px solid var(--Myred3) !important;
+		border-left: 1px solid var(--Myred3) !important;
+		border-bottom: 1px solid var(--Myred2) !important;
+		border-right: 1px solid var(--Myred2) !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	a#unfile-all-styles:active,
+	a#sync-dropbox-import:active,
+	a#file-all-styles:active,
+	a#sync-dropbox-export:active,
+	button:active:not(.fake):not([disabled]) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border-top: 1px solid var(--Mygreen2) !important;
+		border-left: 1px solid var(--Mygreen2) !important;
+		border-bottom: 1px solid var(--Mygreen3) !important;
+		border-right: 1px solid var(--Mygreen3) !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+	}
+
+	body {
+		color: var(--Mytext) !important;
+	}
+
+	newUI .entry .style-name:hover::before {
+		filter: brightness(150%);
+		background-color: var(--MyW) !important;
+	}
+
+	a,
+	a:visited {
+		color: var(--Mytext) !important;
+	}
+
+	#save-button {
+		color: var(--MyB) !important;
+	}
+
+	#save-button:hover {
+		opacity: 0.1;
+	}
+
+	#save-button:after {
+		color: var(--MyB) !important;
+		content: "d" !important;
+	}
+
+	body.dirty #save-button {
+		color: var(--MyW) !important;
+	}
+
+	#apply-all-updates,
+	body.dirty #save-button:hover {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		box-shadow: inset 0 0 4px 0 var(--MyB) !important;
+		border-bottom-color: var(--MyB) !important;
+		border-top-color: var(--Mygray3) !important;
+		border-right-color: var(--MyB) !important;
+		border-left-color: var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image: radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
+	}
+
+	body.dirty #save-button:after {
+		color: var(--MyW) !important;
+		content: "?" !important;
+	}
+
+	#apply-all-updates:hover {
+		filter: brightness(130%);
+	}
+
+	.newUI .entry:nth-child(2n) {
+		background-color: var(--MyB) !important;
+	}
+
+	.svg-icon:hover,
+	.newUI .entry:hover .svg-icon:hover {
+		fill: var(--MyW) !important;
+	}
+
+	.newUI .no-update:not(.update-problem):not(.update-done) .up-to-date,
+	.newUI .can-update .update {
+		color: var(--MyB);
+	}
+
+	a.update::after {
+		background-color: var(--Mygreen2) !important;
+		color: var(--MyB) !important;
+		border: 1px solid var(--MyB) !important;
+		border-radius: 5px !important;
+	}
+
+	a.update::after:hover rect:hover {
+		background-color: var(--Mygreen1) !important;
+		color: var(--MyB) !important;
+		border: 1px solid var(--MyB) !important;
+		border-radius: 5px !important;
+	}
+
+	.warning {
+		color: var(--Myred1) !important;
+	}
+
+	#confirm > div {
+		background-color: var(--Mygray3);
+		border: solid 2px rgba(0, 0, 0, 0.5);
+	}
+
+	.CodeMirror-linewidget .applies-to {
+		color: var(--Mytext) !important;
+		background: var(--Myback) !important;
+		border-style: none !important;
+	}
+
+	.CodeMirror-linewidget .applies-to > label {
+		color: var(--Mytext) !important;
+	}
+
+	select#manage.newUI.sort {
+		height: 20px !important;
+	}
+
+	svg[class="svg-icon checked"] {
+		filter: invert(1) !important;
+	}
+
+	.menu-items-wrapper,
+	#options-title,
+	select#manage.newUI.sort,
+	select,
+	#message-box.danger #message-box-title {
+		background-color: var(--Myred1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(80, 0, 0, 0.8),
+			rgba(170, 0, 0, 0.8),
+			rgba(80, 0, 0, 0.8) 100%,
+			transparent
+		) !important;
+	}
+
+	option,
+	#options,
+	#help-popup,
+	#message-box > div,
+	#message-box-buttons,
+	#message-box-title,
+	.dropdown-content {
+		background-color: var(--Mygray3) !important;
+	}
+
+	select#manage.newUI.sort,
+	select {
+		width: 200px !important;
+	}
+
+	select#manage\.searchMode {
+		width: 185px !important;
+	}
+
+	#actions.block,
+	.odd {
+		background-image: linear-gradient(
+			to left,
+			rgba(20, 20, 20, 0.8),
+			rgba(75, 75, 75, 0.8),
+			rgba(20, 20, 20, 0.8) 100%,
+			transparent
+		) !important;
+	}
+
+	.even {
+		background-image: linear-gradient(
+			to left,
+			rgba(80, 0, 0, 0.8),
+			rgba(170, 0, 0, 0.8),
+			rgba(80, 0, 0, 0.8) 100%,
+			transparent
+		) !important;
+	}
+
+	/*  Normal Ones Below */
+	.stock {
+		background-color: var(--Mygray1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
+
+	header {
+		background-color: var(--Myred3) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
+	}
+
+	#stylus {
+		background-color: var(--MyB) !important;
+	}
+
+	#searchMode {
+		width: 150px !important;
+	}
+
+	button.install {
+		width: 200px !important;
+	}
+
+	.update.fake::after {
+		background-color: var(--Mygreen1) !important;
+	}
+
+	#link-usw {
+		display: none !important;
+	}
+
+	select.fit-width {
+		width: 240px !important;
+	}
+
+	#message-box.center-dialog.injection-order > div {
+		border: 1px solid var(--MyW) !important;
+	}
+
+	.onoffswitch span::before {
+		background: var(--knob, #06483e);
+	}
+
+	.onoffswitch input:checked + span::before {
+		right: 0;
+		background-color: var(--Myred1) !important;
+		box-shadow: 3px 6px 18px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	/* CodeMirror Below */
+	.main,
+	.CodeMirror {
+		background: #460101 !important;
+		color: #ffffff !important;
+		line-height: 1.5em !important;
+		font-size: 16px !important;
+		height: 100%;
+		font-weight: bold !important;
+		outline: transparent !important;
+		border: 1px solid #ffffff !important;
+	}
+
+	.CodeMirror .CodeMirror-selected {
+		background: #a12525 !important;
+		color: #ffd900;
+	}
+
+	.CodeMirror .CodeMirror-line::selection,
+	.CodeMirror .CodeMirror-line > span::selection,
+	.CodeMirror .CodeMirror-line > span > span::selection {
+		background: #a12525 !important;
+	}
+
+	.CodeMirror .CodeMirror-line::-moz-selection,
+	.CodeMirror .CodeMirror-line > span::-moz-selection,
+	.CodeMirror .CodeMirror-line > span > span::-moz-selection {
+		background: #a12525;
+	}
+
+	.CodeMirror .CodeMirror-gutters {
+		background: #460101;
+		border-right: 2px solid #a12525;
+	}
+
+	.CodeMirror .CodeMirror-guttermarker {
+		color: #0f0;
+	}
+
+	.CodeMirror-guttermarker-subtle {
+		color: #ffe8e8;
+	}
+
+	.CodeMirror .CodeMirror-linenumber {
+		color: #ffffff;
+	}
+
+	.CodeMirror-cursor {
+		border-left: 1px solid #00ff00;
+	}
+
+	.CodeMirror span.cm-keyword {
+		color: #00ff00;
+		font-weight: bold;
+	}
+
+	.CodeMirror span.cm-atom {
+		color: #3ff;
+	}
+
+	.CodeMirror span.cm-number {
+		color: #fbff00;
+	}
+
+	.CodeMirror span.cm-def {
+		color: #91b4ff;
+	}
+
+	.CodeMirror span.cm-variable {
+		color: #f6c;
+	}
+
+	.CodeMirror span.cm-variable-2 {
+		color: #c44eff;
+	}
+
+	.CodeMirror span.cm-variable-3,
+	.CodeMirror span.cm-type {
+		color: #ad7cec;
+	}
+
+	.CodeMirror span.cm-property {
+		color: #62ffa0;
+	}
+
+	.CodeMirror span.cm-operator {
+		color: #ecffb9;
+	}
+
+	.CodeMirror span.cm-comment {
+		color: #00ff00;
+	}
+
+	.CodeMirror span.cm-string {
+		color: #39c;
+	}
+
+	.CodeMirror span.cm-meta {
+		color: #ffffff;
+	}
+
+	.CodeMirror span.cm-qualifier {
+		color: #fff700;
+	}
+
+	.CodeMirror span.cm-builtin {
+		color: #ffffff;
+	}
+
+	.CodeMirror span.cm-bracket {
+		color: #ffff00;
+	}
+
+	.CodeMirror span.cm-tag {
+		color: #ffbd40;
+	}
+
+	.CodeMirror .cm-overlay,
+	.CodeMirror span.cm-attribute {
+		color: #fff700;
+	}
+
+	.CodeMirror span.cm-error {
+		color: #ff0000;
+	}
+
+	.CodeMirror .CodeMirror-activeline-background {
+		background: #921111;
+	}
 }
