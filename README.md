@@ -1,3 +1,3 @@
 # DanaMW.github.io
 My attempt at a website
-©2025 Me
+©2026 Me
