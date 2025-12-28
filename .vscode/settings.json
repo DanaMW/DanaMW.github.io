@@ -17,5 +17,8 @@
         "Otsg",
         "Spoutible",
         "YYFH"
+    ],
+    "spellchecker.ignoreWordsList": [
+        "©2026"
     ]
 }
