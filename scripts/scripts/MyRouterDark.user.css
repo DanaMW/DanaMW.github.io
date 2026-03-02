@@ -2,7 +2,7 @@
 @name         My Router Dark
 @namespace    https://danamw.github.io/scripts/scripts/MyRouterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/MyRouterDark.user.css
-@version      0.0.16
+@version      0.0.17
 @author       Dana L. Meli-Wischman
 @description  My Router Dark
 @homepageURL  https://danamw.github.io
@@ -10,230 +10,332 @@
 
 @-moz-document url-prefix("http://192.168.0.1/"),
 url-prefix("http://192.168.1.1/"),
+url-prefix("http://192.168.0.1/"),
 url-prefix("http://remote.localdomain.net/"),
 url-prefix("https://use1-eweb.tplinkcloud.com/"),
-url-prefix("http://tplinkwifi.net/") {
-    html,
-    body {
-        background-color: var(--MyB) !important;
-    }
-    .stock {
-        display: none !important;
-    }
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
-     ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
-     ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
-    * {
-        border: var(--Myred1) !important;
-    }
-    p,
-    a {
-        color: var(--MyW) !important;
-        background-color: transparent !important;
-    }
-    .name,
-    a:hover {
-        color: var(--Myred1) !important;
-        text-decoration: none !important;
-    }
-    h1 {
-        color: var(--TwitterBlue) !important;
-    }
-    h2 {
-        color: var(--TwitterRed) !important;
-    }
-    small {
-        color: var(--TwitterPink) !important;
-    }
-    .td-content,
-    .widget-wrap-outer.paragraph-wrap-outer,
-    .duration-container.widget-container,
-    .content,
-    h3,
-    h4,
-    h5,
-    strong {
-        color: var(--MyW) !important;
-    }
-    .text-wrap-display {
-        color: var(--TwitterBlue) !important;
-    }
-    .status-total-num,
-    .text {
-        color: var(--Mygreen1) !important;
-    }
-    .icon {
-        background-color: transparent !important;
-    }
-    .time-machine-step-title,
-    .status-total,
-    .unit {
-        color: var(--TwitterBlue) !important;
-    }
-    .time-machine-note {
-        color: var(--TwitterRed) !important;
-    }
-    em {
-        color: var(--Myyellow1) !important;
-    }
-    #login_login.btn.form-control,
-    .button-button,
-    input.combobox-text,
-    .navigator-li,
-    button {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-    #login_login.btn.form-control:hover,
-    .button-button:hover,
-    input.combobox-text:hover,
-    .navigator-li:hover,
-    li.combobox-list:hover,
-    li.selected,
-    button:hover {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-    #login_login.btn.form-control:active,
-    .button-button:active,
-    button:active {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-    [class="login-card container widget-container panel-container form"] {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-    header,
-    .stock_navbar {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
-    .paging-wrap,
-    .devicesList-item-content,
-    .msg-btn-wrap,
-    #navigator {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-    [class="container grid-header-container"],
-    .widget-title,
-    .login-card-wrap,
-    .panel-header {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-    textarea {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-        text-align: center !important;
-    }
-    [class="container widget-container notice-bar-container success"] {
-        background-color: var(--MyX1) !important;
-        opacity: 0.7;
-        color: var(--MyW) !important;
-        border: 1px solid var(--MyW) !important;
-    }
-    .tip-text-box,
-    .tooltip {
-        background-color: var(--MyX1) !important;
-        opacity: 0.7;
-        color: var(--MyW) !important;
-        padding: 8px;
-        border-radius: 2px;
-        border: 1px solid var(--Myyellow1) !important;
-    }
-    .widget-content.msg-content-container,
-    .page-content-container {
-        background-color: var(--Myred3) !important;
-    }
-    .combobox-list-wrap {
-        background-color: var(--Mygray3) !important;
-    }
-    [class="logout-confirm-msg global-confirm container widget-container msg-container prompt"],
-    .combobox-list-wrap,
-    [id*="widget"].networkmap-panel {
-        border: 2px solid var(--MyW) !important;
-    }
-    .widget-wrap-outer.paragraph-wrap-outer,
-    .panel-title-text {
-        color: var(--Myyellow1) !important;
-    }
-    .panel-header {
-        text-align: center;
-    }
-    li[class="navigator-li navigator-li-level1  has-sub-navi opened has-child-selected"] {
-        background-color: var(--Mygray2) !important;
-    }
-    /*
+url-prefix("http://tplinkwifi.net/")
+{
+	.body-wrap,
+	html,
+	body {
+		background-color: var(--MyB) !important;
+	}
+	.stock {
+		display: none !important;
+	}
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
+	* {
+		border: var(--Myred1) !important;
+	}
+	p,
+	a {
+		color: var(--MyW) !important;
+		background-color: transparent !important;
+	}
+	.name,
+	a:hover {
+		color: var(--Myred1) !important;
+		text-decoration: none !important;
+	}
+	h1 {
+		color: var(--TwitterBlue) !important;
+	}
+	h2 {
+		color: var(--TwitterRed) !important;
+	}
+	8 small {
+		color: var(--TwitterPink) !important;
+	}
+	.td-content,
+	.widget-wrap-outer.paragraph-wrap-outer,
+	.duration-container.widget-container,
+	.content,
+	h3,
+	h4,
+	h5,
+	strong {
+		color: var(--MyW) !important;
+	}
+	.text-wrap-display {
+		color: var(--TwitterBlue) !important;
+	}
+	.status-total-num,
+	.text {
+		color: var(--Mygreen1) !important;
+	}
+	.icon {
+		background-color: transparent !important;
+	}
+	.time-machine-step-title,
+	.status-total,
+	.unit {
+		color: var(--TwitterBlue) !important;
+	}
+	.time-machine-note {
+		color: var(--TwitterRed) !important;
+	}
+	em {
+		color: var(--Myyellow1) !important;
+	}
+	li.su-sub-menu,
+	li.su-menu-item,
+	#login_login.btn.form-control,
+	.button-button,
+	input.combobox-text,
+	.navigator-li,
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		-webkit-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
+
+	li.su-sub-menu:hover,
+	li.su-menu-item:hover,
+	[aria-expanded="true"],
+	#login_login.btn.form-control:hover,
+	.button-button:hover,
+	input.combobox-text:hover,
+	.navigator-li:hover,
+	li.combobox-list:hover,
+	li.selected,
+	button:hover {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow:
+			1px 1px 1px var(--MyB),
+			-1px -1px 1px var(--Myred2) !important;
+	}
+	#login_login.btn.form-control:active,
+	.button-button:active,
+	button:active {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow:
+			1px 1px 1px var(--Mygreen3),
+			-1px -1px 1px var(--Myred2) !important;
+	}
+	[class="login-card container widget-container panel-container form"] {
+		background-image: none !important;
+		background-color: transparent !important;
+	}
+	header,
+	.stock_navbar {
+		background-color: var(--Myred3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+	}
+	.paging-wrap,
+	.devicesList-item-content,
+	.msg-btn-wrap,
+	#navigator {
+		background-color: var(--Mygray1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
+	[role="dialog"],
+	.su-card,
+	[class="container grid-header-container"],
+	.widget-title,
+	.login-card-wrap,
+	.panel-header {
+		background-color: var(--Myred3) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(151, 52, 52, 0.8),
+			rgba(165, 28, 28, 0.8),
+			rgba(189, 38, 38, 0.527) 100%,
+			transparent
+		) !important;
+	}
+	textarea {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+	}
+	input {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+		text-align: center !important;
+	}
+	[class="container widget-container notice-bar-container success"] {
+		background-color: var(--MyX1) !important;
+		opacity: 0.7;
+		color: var(--MyW) !important;
+		border: 1px solid var(--MyW) !important;
+	}
+	.tip-text-box,
+	.tooltip {
+		background-color: var(--MyX1) !important;
+		opacity: 0.7;
+		color: var(--MyW) !important;
+		padding: 8px;
+		border-radius: 2px;
+		border: 1px solid var(--Myyellow1) !important;
+	}
+	.widget-content.msg-content-container,
+	.page-content-container {
+		background-color: var(--Myred3) !important;
+	}
+	.combobox-list-wrap {
+		background-color: var(--Mygray3) !important;
+	}
+	[class="logout-confirm-msg global-confirm container widget-container msg-container prompt"],
+	.combobox-list-wrap,
+	[id*="widget"].networkmap-panel {
+		border: 2px solid var(--MyW) !important;
+	}
+	.widget-wrap-outer.paragraph-wrap-outer,
+	.panel-title-text {
+		color: var(--Myyellow1) !important;
+	}
+	.panel-header {
+		text-align: center;
+	}
+	li[class="navigator-li navigator-li-level1  has-sub-navi opened has-child-selected"] {
+		background-color: var(--Mygray2) !important;
+	}
+	/*
     .widget-wrap.text-wrap {
         background-color: var(--Mygray2) !important;
     }
     */
-    li.navigator-li.selected::after {
-        border-bottom-color: var(--TwitterPink) !important;
-    }
-    .error-tips-wrapper {
-        background-color: var(--Myred2) !important;
-        color: var(--Myyellow1) !important;
-    }
+	li.navigator-li.selected::after {
+		border-bottom-color: var(--TwitterPink) !important;
+	}
+	.error-tips-wrapper {
+		background-color: var(--Myred2) !important;
+		color: var(--Myyellow1) !important;
+	}
+	li.su-menu-item.su-menu-item--1.is-active::before {
+		background-color: var(--Mygreen1) !important;
+	}
 }
