@@ -2,208 +2,303 @@
 @name         Business Insider Dark
 @namespace    http://danamw.github.io/scripts/scripts/BusinessInsiderDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BusinessInsiderDark.user.css
-@version      0.0.14
+@version      0.0.15
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("businessinsider.com") {
-    html,
-    body {
-        background-color: var(--MyB) !important;
-    }
-    div[class*="ad-placeholder"],
-    div[id*="Player-Div"],
-    .stock {
-        display: none !important;
-    }
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
-     ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
-     ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
-     ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
-    td,
-    .snapshot,
-    div[class*="data-item"] h1,
-    p,
-    a {
-        color: var(--MyW) !important;
-        background-color: transparent !important;
-    }
-    a:hover {
-        color: var(--MyW) !important;
-        text-decoration: none !important;
-    }
-    .instrument-description {
-        color: var(--Mytext) !important;
-    }
-    .graviton {
-        text-align: center !important;
-    }
-    h2.asset-header,
-    h1,
-    h2.header-underline {
-        color: var(--TwitterBlue) !important;
-        text-align: center !important;
-    }
-    ul li {
-        color: var(--TwitterPink) !important;
-    }
-    .left-menu__submenu__item,
-    .icon-set.share-button,
-    .button,
-    button {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-    .left-menu__submenu__item:hover,
-    .left-menu__text:hover,
-    .button:hover,
-    button:hover {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-    .left-menu__submenu__item:active,
-    .button:active,
-    button:active {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-    header,
-    .input-group {
-        background-image: none !important;
-        background-color: transparent !important;
-        border: none !important;
-    }
-    header {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
-    .component.drawer,
-    .site-header__markets-now-section {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
-    aside,
-    .responsivePosition,
-    .site-header__first-row {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-        text-align: center !important;
-    }
-    .article-title {
-        color: var(--TwitterBlue) !important;
-    }
-    .site-header__bi-logo a.logo,
-    .site-header__mi-logo a.logo {
-        Color: var(--TwitterBlue) !important;
-        filter: invert(1) !important;
-    }
-    script#myFinance-widget-script {
-        display: none !important;
-    }
-    b,
-    li::marker {
-        color: var(--TwitterRed) !important;
-    }
-    strong {
-        color: var(--MyW);
-    }
-    div[class*="markets-now_"] {
-        color: var(--MyW) !important;
-    }
-    div[class*="negative-updated"] {
-        background-color: var(--Myred1) !important;
-        color: var(--MyW) !important;
-    }
-    div[class*="positive-updated"] {
-        background-color: var(--Mygreen1) !important;
-        color: var(--MyW) !important;
-    }
-    /*
+	#site-footer,
+	html,
+	body {
+		background-color: var(--MyB) !important;
+	}
+	div[class*="ad-placeholder"],
+	div[id*="Player-Div"],
+	.stock {
+		display: none !important;
+	}
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
+	td,
+	.snapshot,
+	div[class*="data-item"] h1,
+	p,
+	a {
+		color: var(--MyW) !important;
+		background-color: transparent !important;
+	}
+	a:hover {
+		color: var(--MyW) !important;
+		text-decoration: none !important;
+	}
+	.instrument-description {
+		color: var(--Mytext) !important;
+	}
+	.graviton {
+		text-align: center !important;
+	}
+	h2.asset-header,
+	h1,
+	h2.header-underline {
+		color: var(--TwitterBlue) !important;
+		text-align: center !important;
+	}
+	ul li {
+		color: var(--TwitterPink) !important;
+	}
+
+	.left-menu__submenu__item,
+	.icon-set.share-button,
+	.button,
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		-webkit-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
+	[class="main-section grid-lines masthead-animation main-animated with-mi-search"],
+	.left-menu__submenu__item:hover,
+	.left-menu__text:hover,
+	.button:hover,
+	button:hover {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow:
+			1px 1px 1px var(--MyB),
+			-1px -1px 1px var(--Myred2) !important;
+	}
+	.left-menu__submenu__item:active,
+	.button:active,
+	button:active {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow:
+			1px 1px 1px var(--Mygreen3),
+			-1px -1px 1px var(--Myred2) !important;
+	}
+	header,
+	.input-group {
+		background-image: none !important;
+		background-color: transparent !important;
+		border: none !important;
+	}
+	header {
+		background-color: var(--Myred3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+	}
+	.component.drawer,
+	.site-header__markets-now-section {
+		background-color: var(--Mygray1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
+	[class="bottom-section grid-lines with-markets-insider-banner"],
+	[class="vertical-nav grid-lines is-mi with-post-overline component-loaded"],
+	aside,
+	.responsivePosition,
+	.site-header__first-row {
+		background-color: var(--Myred3) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
+	}
+	input {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+		text-align: center !important;
+	}
+	.article-title {
+		color: var(--TwitterBlue) !important;
+	}
+	.site-header__bi-logo a.logo,
+	.site-header__mi-logo a.logo {
+		color: var(--TwitterBlue) !important;
+		filter: invert(1) !important;
+	}
+	script#myFinance-widget-script {
+		display: none !important;
+	}
+	b,
+	li::marker {
+		color: var(--TwitterRed) !important;
+	}
+	strong {
+		color: var(--MyW);
+	}
+	div[class*="markets-now_"] {
+		color: var(--MyW) !important;
+	}
+	div[class*="negative-updated"] {
+		background-color: var(--Myred1) !important;
+		color: var(--MyW) !important;
+	}
+	div[class*="positive-updated"] {
+		background-color: var(--Mygreen1) !important;
+		color: var(--MyW) !important;
+	}
+	/*
     span[class="push-data "][style*="background-color: rgb(255, 255, 255)"] {
         background-color: transparent !important;
     }
     */
-    .price-section__label,
-    span[class="push-data "] {
-        color: var(--TwitterBlue) !important;
-    }
-    span[class="price-section__current-value"] {
-        color: var(--MyW) !important;
-    }
-    span[class="price-section__current-value price-section__current-value--negative-updated"] {
-        color: var(--MyW) !important;
-        background-color: var(--Myred1) !important;
-    }
-    span[class="price-section__current-value price-section__current-value--positive-updated"] {
-        color: var(--MyW) !important;
-        background-color: var(--Mygreen1) !important;
-    }
-    span[class="price-section__absolute-value"] {
-        color: var(--Mytext) !important;
-    }
-    span[class*="price-section"]::after {
-        color: var(--MyW) !important;
-    }
-    nav>span>a {
-        border-color: var(--Mygreen1) !important;
-        border-width: 2px !important;
-    }
+	.text-right[data-animation=""],
+	.price-section__label,
+	span[class="push-data "] {
+		color: var(--TwitterBlue) !important;
+	}
+	span[class="price-section__current-value"] {
+		color: var(--MyW) !important;
+	}
+	span[class="price-section__current-value price-section__current-value--negative-updated"] {
+		color: var(--MyW) !important;
+		background-color: var(--Myred1) !important;
+	}
+	span[class="price-section__current-value price-section__current-value--positive-updated"] {
+		color: var(--MyW) !important;
+		background-color: var(--Mygreen1) !important;
+	}
+	.table__th,
+	span[class="price-section__absolute-value"] {
+		color: var(--Mytext) !important;
+	}
+	span[class*="price-section"]::after {
+		color: var(--MyW) !important;
+	}
+	nav > span > a {
+		border-color: var(--Mygreen1) !important;
+		border-width: 2px !important;
+	}
 }
