@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.41
+@version      0.1.43
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -75,6 +75,7 @@ url-prefix("https://chat.google.com/")
 		filter: invert(1) !important;
 	}
 
+	svg > path,
 	li,
 	div[dir="auto"],
 	#\:2u,
@@ -413,10 +414,10 @@ url-prefix("https://chat.google.com/")
 	}
 
 	html[stylus-iframe="https://mail.google.com"],
-    iframe[src*="https://docs.google.com/picker"],
-    div[role="dialog"],
-    div[aria-label="Account Information"],
-    .ajA.SK {
+	iframe[src*="https://docs.google.com/picker"],
+	div[role="dialog"],
+	div[aria-label="Account Information"],
+	.ajA.SK {
 		background-color: var(--Mygray3) !important;
 		color: var(--MyW) !important;
 	}
@@ -959,7 +960,7 @@ url-prefix("https://chat.google.com/")
 	}
 
 	iframe[src*="https://gsuite.google.com/u/0/marketplace/appfinder"],
-    div#glass-content {
+	div#glass-content {
 		border-radius: 15px !important;
 	}
 
@@ -1015,62 +1016,77 @@ url-prefix("https://chat.google.com/")
 	}
 
 	[class="YZrg6 HnRr5d iiFyne cd29Sd kWC5Rd"],
-    a.gb_tb.gb_Hb,
-    .azewN,
-    a[role="button"].gb_td,
-    div[role="tab"],
-    li[aria-grabbed="false"]>a,
-    span[role="button"]:not([aria-label="Close"]):not([aria-label="Not starred"]):not([aria-label*="Starred"]):not(.PDfZbf),
-    div[role="button"]:not([aria-label="Search mail"]):not(.zDiulc):not(.HxMcae):not(.lr):not([aria-label*="side panel"]):not(.uq):not([aria-label="Search mail"]),
-    a[aria-label="More Google apps"],
-    a.gb_c,
-    button:not([aria-label="Search mail"]):not(.gGnOIc):not(.zDiulc):not(.uq):not(.rE):not([role="checkbox"]):not(.gb_Ve):not([aria-label="Clear search"]):not([aria-label="Search Mail"]):not([aria-label="Advanced search options"]):not([title="Remove attachment"]):not([aria-label="Search all conversations"]):not(.OB):not(.SV):not(.OB):not(.Cy),
-    select,
-    tr.To,
-    .gb_fa,
-    .gb_Cb a[href*="https://myaccount.google.com"],
-    a#gb_71,
-    .CL,
-    #\:kx,
-    #\:kz,
-    .f1,
-    .gb_xf.gb_Hf,
-    .gb_fa.gb_ng,
-    input[value="Sign out all other web sessions"],
-    .gb_hc,
-    .gb_O,
-    .ams,
-    button[name="urs"],
-    span.x2,
-    #\:4bo,
-    button[key="send"],
-    button[key="cancel"],
-    div.J-KU.bvm.bAj,
-    button[class="Izwf5d S2zqnf z-b-G fTj9Ab"],
-    button[class="LbWtad cmX6We Wxsg2c hH1ADf z-b-ua"],
-    button[name="cancel"],
-    .z-b-G,
-    .aoo,
-    .J-at1-auR,
-    .d-Na-JX-I,
-    .J-JN-M-I,
-    .gb_ka,
-    .gb_ja,
-    a[href*="https://myaccount.google.com/"],
-    a[href*="https://accounts.google.com/AddSession"],
-    div[class*="J-KU"][aria-selected="false"]:not(hover),
-    div[class*="J-KU"][aria-selected="true"]:not(hover),
-    .akh,
-    #gbqfb,
-    .T-I,
-    .TN {
+	a.gb_tb.gb_Hb,
+	.azewN,
+	a[role="button"].gb_td,
+	div[role="tab"],
+	li[aria-grabbed="false"] > a,
+	span[role="button"]:not([aria-label="Close"]):not(
+			[aria-label="Not starred"]
+		):not([aria-label*="Starred"]):not(.PDfZbf),
+	div[role="button"]:not([aria-label="Search mail"]):not(.zDiulc):not(
+			.HxMcae
+		):not(.lr):not([aria-label*="side panel"]):not(.uq):not(
+			[aria-label="Search mail"]
+		),
+	a[aria-label="More Google apps"],
+	a.gb_c,
+	button:not([aria-label="Search mail"]):not(.gGnOIc):not(.zDiulc):not(
+			.uq
+		):not(.rE):not([role="checkbox"]):not(.gb_Ve):not(
+			[aria-label="Clear search"]
+		):not([aria-label="Search Mail"]):not(
+			[aria-label="Advanced search options"]
+		):not([title="Remove attachment"]):not(
+			[aria-label="Search all conversations"]
+		):not(.OB):not(.SV):not(.OB):not(.Cy),
+	select,
+	tr.To,
+	.gb_fa,
+	.gb_Cb a[href*="https://myaccount.google.com"],
+	a#gb_71,
+	.CL,
+	#\:kx,
+	#\:kz,
+	.f1,
+	.gb_xf.gb_Hf,
+	.gb_fa.gb_ng,
+	input[value="Sign out all other web sessions"],
+	.gb_hc,
+	.gb_O,
+	.ams,
+	button[name="urs"],
+	span.x2,
+	#\:4bo,
+	button[key="send"],
+	button[key="cancel"],
+	div.J-KU.bvm.bAj,
+	button[class="Izwf5d S2zqnf z-b-G fTj9Ab"],
+	button[class="LbWtad cmX6We Wxsg2c hH1ADf z-b-ua"],
+	button[name="cancel"],
+	.z-b-G,
+	.aoo,
+	.J-at1-auR,
+	.d-Na-JX-I,
+	.J-JN-M-I,
+	.gb_ka,
+	.gb_ja,
+	a[href*="https://myaccount.google.com/"],
+	a[href*="https://accounts.google.com/AddSession"],
+	div[class*="J-KU"][aria-selected="false"]:not(hover),
+	div[class*="J-KU"][aria-selected="true"]:not(hover),
+	.akh,
+	#gbqfb,
+	.T-I,
+	.TN {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		appearance: none;
 		border: none !important;
 		color: var(--Mytext) !important;
 		background-color: var(--MyB) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				hsl(0, 0%, 0%) 0%,
 				transparent 99%
@@ -1083,9 +1099,15 @@ url-prefix("https://chat.google.com/")
 				hsla(0, 0%, 66%, 0.2)
 			) !important;
 		text-shadow: 1px 1px 0 var(--Myred1) !important;
-		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-moz-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		-webkit-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
 		transition-timing-function: linear !important;
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
@@ -1225,7 +1247,8 @@ url-prefix("https://chat.google.com/")
 		border: none !important;
 		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
 		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Myred1) 0%,
 				transparent 99%
@@ -1240,11 +1263,22 @@ url-prefix("https://chat.google.com/")
 		outline: none !important;
 		opacity: 1 !important;
 		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
 		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+		text-shadow:
+			1px 1px 1px var(--MyB),
+			-1px -1px 1px var(--Myred2) !important;
 	}
 
 	/*added shit */
@@ -1361,7 +1395,8 @@ url-prefix("https://chat.google.com/")
 		border: none !important;
 		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
 		background-color: var(--Mygreen3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Mygreen1) 0%,
 				transparent 99%
@@ -1376,11 +1411,22 @@ url-prefix("https://chat.google.com/")
 		outline: none !important;
 		opacity: 1 !important;
 		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
 		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+		text-shadow:
+			1px 1px 1px var(--Mygreen3),
+			-1px -1px 1px var(--Myred2) !important;
 	}
 
 	.aJ6 {
@@ -1667,7 +1713,8 @@ url-prefix("https://chat.google.com/")
 
 	#gb {
 		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Myred1) 0%,
 				transparent 99%
@@ -1771,6 +1818,7 @@ url-prefix("https://chat.google.com/")
 		color: var(--MyW) !important;
 	}
 
+	.YEY9Zd,
 	.rhhJr,
 	.Kj-JD,
 	div[role="alertdialog"],
