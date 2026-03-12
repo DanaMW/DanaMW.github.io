@@ -2,13 +2,51 @@
 @name         Google Messages Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleMessagesDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleMessagesDark.user.css
-@version      0.0.1
+@version      0.0.3
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
+@-moz-document domain("messages.google.com"),
+url-prefix("https://messages.google.com/"),
+url-prefix("https://messages.google.com/web/"),
+domain("messages.android.com") {
+	body.dark-theme mw-main-landing {
+		--main-landing-host-bg-color: var(--MyB) !important;
+		--main-landing-image-fill-color: var(--Myred1) !important;
+		--main-landing-title-color: var(--Myyellow1) !important;
+	}
 
-@-moz-document domain("messages.google.com") {
+	body.dark-theme.material-next-msg mws-message-part-content {
+		--incoming-bg-color: var(--Mygray2) !important;
+		--xms-outgoing-bg-color: var(--Myred1) !important;
+		--xms-outgoing-color: var(--Myred2) !important;
+		--rcs-incoming-bg-color: var(--Myblue2) !important;
+		--rcs-outgoing-bg-color: linear-gradient(
+			130deg,
+			var(--MyX1) 30%,
+			var(--MyX1) 95%
+		);
+	}
+
+	.part-content-container {
+		background: var(--rcs-outgoing-bg-color);
+	}
+
+	div.compose-container,
+	div.input-background {
+		background-color: transparent;
+		background-image: none;
+	}
+
+	div.compose-container,
+	div.input-background {
+		background: var(--MyB) !important;
+	}
+
+	#loader.dark,
+	.bottom-anchored-content,
+	.main-landing.ng-star-inserted,
 	html,
 	body {
 		background-color: var(--MyB) !important;
@@ -63,6 +101,8 @@
 		color: var(--TwitterPink) !important;
 	}
 
+	.text-msg.msg-content,
+	.fab-label,
 	h3,
 	h4,
 	h5,
@@ -70,6 +110,8 @@
 		color: var(--MyW) !important;
 	}
 
+	.list-item,
+	mw-fab-link > a,
 	button {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -104,6 +146,10 @@
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	[class="mdc-button mat-mdc-button-base gmat-mdc-button mdc-button--raised mat-mdc-raised-button primary-button action-button mat-primary ng-star-inserted"]:hover,
+	.list-item:hover,
+	.header,
+	mw-fab-link > a:hover,
 	button:hover {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -145,6 +191,8 @@
 			-1px -1px 1px var(--Myred2) !important;
 	}
 
+	.list-item:active,
+	mw-fab-link > a:active,
 	button:active {
 		-moz-appearance: none;
 		-webkit-appearance: none;
@@ -184,6 +232,10 @@
 		text-shadow:
 			1px 1px 1px var(--Mygreen3),
 			-1px -1px 1px var(--Myred2) !important;
+	}
+
+	.fab-icon {
+		color: var(--Mygreen1) !important;
 	}
 
 	.stock {
@@ -246,9 +298,10 @@
 		text-align: center !important;
 	}
 
+	.tombstone-message-part,
 	.tooltip {
 		background-color: var(--MyX1) !important;
-		opacity: 0.4;
+		opacity: 0.5;
 		color: var(--MyW) !important;
 		padding: 8px;
 		border-radius: 2px;
