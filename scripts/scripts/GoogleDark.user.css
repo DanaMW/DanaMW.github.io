@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.92
+@version      0.2.93
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -274,7 +274,7 @@ url-prefix("https://bard.google.com/")
 	}
 
 	input[aria-label="Search Google Maps"],
-	input[aria-label="Search Google Account"],
+	input[aria-label="Google Account"],
 	input[aria-label="Search"] {
 		text-align: center !important;
 		color: var(--MyW) !important;
@@ -1267,7 +1267,10 @@ url-prefix("https://bard.google.com/")
 		color: var(--MyW) !important;
 	}
 
-	.fM33ce.dRYYxd,
+	.fM33ce.dRYYxd {
+		background-color: transparent !important;
+	}
+
 	[class=" I6g62c R2b1Pb"],
 	[class="  QW4Pie"],
 	.DRBylb {
@@ -2542,5 +2545,10 @@ url-prefix("https://bard.google.com/")
 	.R1QWuf {
 		border-bottom: 3px solid var(--Myred1) !important;
 		border-bottom-color: var(--Myred1) !important;
+	}
+
+	.gLFyf {
+		border: 2px solid var(--Myred1) !important;
+		border-radius: 25px !important;
 	}
 }
