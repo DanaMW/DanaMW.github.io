@@ -2,238 +2,332 @@
 @name         Bluesky App Dark
 @namespace    http://danamw.github.io/scripts/scripts/BlueskyAppDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/BlueskyAppDark.user.css
-@version      0.0.32
+@version      0.0.33
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
 ==/UserStyle== */
 
 @-moz-document domain("bsky.app") {
+	div[data-testid="HomeScreen"],
+	[class="css-g5y9jx r-13awgt0 r-1d5kdc7 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af"]
+		> div
+		> .css-g5y9jx.r-13awgt0,
+	[class="css-g5y9jx r-eqz5dr r-1pi2tsx r-13g33dw"],
+	html,
+	body {
+		background-color: var(--MyB) !important;
+	}
 
-    div[data-testid="HomeScreen"],
-    [class="css-g5y9jx r-13awgt0 r-1d5kdc7 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af"]>div>.css-g5y9jx.r-13awgt0,
-    [class="css-g5y9jx r-eqz5dr r-1pi2tsx r-13g33dw"],
-    html,
-    body {
-        background-color: var(--MyB) !important;
-    }
+	.r-1niwhzg {
+		background-color: var(--MyB) !important;
+	}
 
+	.stock {
+		display: none !important;
+	}
 
-    .r-1niwhzg {
-        background-color: var(--MyB) !important;
-    }
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+	}
 
-    .stock {
-        display: none !important;
-    }
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
 
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-    }
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
 
-    ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
 
-    ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
 
-    ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
+	p,
+	a {
+		color: var(--MyW) !important;
+		background-color: transparent !important;
+	}
 
-    ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
+	a:hover {
+		color: var(--Myred1) !important;
+		text-decoration: none !important;
+	}
 
-    p,
-    a {
-        color: var(--MyW) !important;
-        background-color: transparent !important;
-    }
+	h1 {
+		color: var(--TwitterBlue) !important;
+	}
 
-    a:hover {
-        color: var(--Myred1) !important;
-        text-decoration: none !important;
-    }
+	h2 {
+		color: var(--TwitterRed) !important;
+	}
 
-    h1 {
-        color: var(--TwitterBlue) !important;
-    }
+	small {
+		color: var(--TwitterPink) !important;
+	}
 
-    h2 {
-        color: var(--TwitterRed) !important;
-    }
+	h3,
+	h4,
+	h5,
+	strong {
+		color: var(--MyW) !important;
+	}
 
-    small {
-        color: var(--TwitterPink) !important;
-    }
+	div[role="link"][data-testid*="feedItem"]:hover {
+		border-right: 1px solid var(--Myred1) !important;
+		border-left: 1px solid var(--Myred1) !important;
+	}
 
-    h3,
-    h4,
-    h5,
-    strong {
-        color: var(--MyW) !important;
-    }
+	[aria-label="Compose new post"],
+	button:not([aria-label*="video"]):not([aria-label*="Video"]):not(
+			[aria-label="Pause"]
+		):not([aria-label="Play"]):not(.css-g5y9jx.r-1loqt21.r-1otgn73) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		color: var(--Mytext) !important;
+		background-color: var(--MyB) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		-webkit-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
 
-    div[role="link"][data-testid*="feedItem"]:hover {
-        border-right: 1px solid var(--Myred1) !important;
-        border-left: 1px solid var(--Myred1) !important;
-    }
+	[aria-label="Following"]:hover,
+	[aria-label="Latest From Follows"]:hover,
+	[aria-label="Discover"]:hover,
+	a[class="css-g5y9jx r-1loqt21 r-1otgn73"]:hover,
+	div[role="menuitem"]:hover,
+	button:hover:not([aria-label*="video"]):not([aria-label*="Video"]):not(
+			[aria-label="Pause"]
+		):not([aria-label="Play"]) {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow:
+			1px 1px 1px var(--MyB),
+			-1px -1px 1px var(--Myred2) !important;
+	}
 
-    button:not([aria-label*="video"]):not([aria-label*="Video"]):not([aria-label="Pause"]):not([aria-label="Play"]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
+	button:active {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow:
+			1px 1px 1px var(--Mygreen3),
+			-1px -1px 1px var(--Myred2) !important;
+	}
 
-    a[class="css-g5y9jx r-1loqt21 r-1otgn73"]:hover,
-    div[role="menuitem"]:hover,
-    button:hover:not([aria-label*="video"]):not([aria-label*="Video"]):not([aria-label="Pause"]):not([aria-label="Play"]) {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
+	.stock {
+		background-image: none !important;
+		background-color: transparent !important;
+	}
 
-    button:active {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
+	header,
+	.stock_navbar {
+		background-color: var(--Myred3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+	}
 
+	.stock {
+		background-color: var(--Mygray1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(0, 0, 0, 0.8),
+			rgba(41, 41, 41, 0.9),
+			rgba(75, 75, 75, 0.9) 100%,
+			transparent
+		) !important;
+	}
 
-    .stock {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
+	.stock {
+		background-color: var(--Myred3) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
+	}
 
-    header,
-    .stock_navbar {
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-    }
+	textarea {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+	}
 
-    .stock {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(41, 41, 41, 0.9), rgba(75, 75, 75, 0.9) 100%, transparent) !important;
-    }
+	input {
+		background-color: var(--Mygray3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+		text-align: center !important;
+	}
 
-    .stock {
-        background-color: var(--Myred3) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
+	.tooltip {
+		background-color: var(--MyX1) !important;
+		opacity: 0.4;
+		color: var(--MyW) !important;
+		padding: 8px;
+		border-radius: 2px;
+		border: 1px solid var(--MyW) !important;
+	}
 
-    textarea {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
+	div[role="dialog"],
+	div[role="menu"] > div {
+		background-color: var(--Myred3) !important;
+		opacity: 1;
+		color: var(--MyW) !important;
+		padding: 8px;
+		border-radius: 2px;
+		border: 1px solid var(--MyW) !important;
+	}
 
-    input {
-        background-color: var(--Mygray3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-        text-align: center !important;
-    }
+	div[style*="padding: 16px"] {
+		background-color: var(--Mygray3) !important;
+		opacity: 1;
+		color: var(--MyW) !important;
+		padding: 8px;
+		border-radius: 2px;
+		border: 1px solid var(--MyW) !important;
+	}
 
-    .tooltip {
-        background-color: var(--MyX1) !important;
-        opacity: 0.4;
-        color: var(--MyW) !important;
-        padding: 8px;
-        border-radius: 2px;
-        border: 1px solid var(--MyW) !important;
-    }
+	div[data-testid*="feedItem-by"] {
+		border-top: 5px solid var(--MyB) !important;
+		border-bottom: 5px solid var(--MyB) !important;
+		background-color: var(--Mygray2) !important;
+	}
 
-    div[role="dialog"],
-    div[role="menu"]>div {
-        background-color: var(--Myred3) !important;
-        opacity: 1;
-        color: var(--MyW) !important;
-        padding: 8px;
-        border-radius: 2px;
-        border: 1px solid var(--MyW) !important;
-    }
+	div[data-testid*="feedItem-by"]:hover {
+		background-color: var(--MyX4) !important;
+		box-shadow: 0px 0px 40px var(--Mygreen1) !important;
+	}
 
-    div[style*="padding: 16px"] {
-        background-color: var(--Mygray3) !important;
-        opacity: 1;
-        color: var(--MyW) !important;
-        padding: 8px;
-        border-radius: 2px;
-        border: 1px solid var(--MyW) !important;
-    }
+	div[role="tab"] {
+		background-color: var(--Myred3) !important;
+		color: var(--MyW) !important;
+		border-radius: 15px !important;
+		border: 1px solid var(--Myred1) !important;
+	}
 
-    div[data-testid*="feedItem-by"] {
-        border-top: 5px solid var(--MyB) !important;
-        border-bottom: 5px solid var(--MyB) !important;
-        background-color: var(--Mygray2) !important;
-    }
+	.css-g5y9jx.r-1loqt21.r-1otgn73 > div:hover:not(.button),
+	div[role="tab"]:hover {
+		background-color: var(--Myred1) !important;
+	}
 
-    div[data-testid*="feedItem-by"]:hover {
-        background-color: var(--MyX4) !important;
-        box-shadow: 0px 0px 40px var(--Mygreen1) !important;
-    }
+	[class="css-g5y9jx r-wzwllv r-kdyh1x r-rs99b7 r-tbmifm r-u8s1d r-1w1br8q r-14eup4l r-16eto9q"] {
+		background-color: var(--Mygreen1) !important;
+	}
 
-    div[role="tab"] {
-        background-color: var(--Myred3) !important;
-        color: var(--MyW) !important;
-        border-radius: 15px !important;
-        border: 1px solid var(--Myred1) !important;
-    }
-
-    .css-g5y9jx.r-1loqt21.r-1otgn73>div:hover:not(.button),
-    div[role="tab"]:hover {
-        background-color: var(--Myred1) !important;
-    }
-
-    [class="css-g5y9jx r-wzwllv r-kdyh1x r-rs99b7 r-tbmifm r-u8s1d r-1w1br8q r-14eup4l r-16eto9q"] {
-        background-color: var(--Mygreen1) !important;
-    }
-
-    /*
+	/*
     .css-g5y9jx.r-1loqt21.r-1otgn73:hover {
         background-color: var(--Myred1) !important;
     }
     */
-
 }
