@@ -2,7 +2,7 @@
 @name         Google Messages Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleMessagesDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleMessagesDark.user.css
-@version      0.0.3
+@version      0.0.4
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -148,6 +148,7 @@ domain("messages.android.com") {
 
 	[class="mdc-button mat-mdc-button-base gmat-mdc-button mdc-button--raised mat-mdc-raised-button primary-button action-button mat-primary ng-star-inserted"]:hover,
 	.list-item:hover,
+	.list-item.selected,
 	.header,
 	mw-fab-link > a:hover,
 	button:hover {
