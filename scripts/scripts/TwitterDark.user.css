@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.1.4
+@version      0.1.5
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -143,7 +143,8 @@ domain("twimg.com") {
 		z-index: 1000 !important;
 		opacity: 1 !important;
 		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Myred1) 0%,
 				transparent 99%
@@ -216,6 +217,7 @@ domain("twimg.com") {
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"],
 	a[data-testid="editProfileButton"],
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"],
+	a[aria-label="Creator Studio"],
 	a[aria-label="Grok"],
 	a[class="css-175oi2r r-6koalj r-eqz5dr r-16y2uox r-1habvwh r-oyd9sg r-13qz1uu r-1ny4l3l r-1loqt21"],
 	a[aria-label*="Jobs"],
@@ -265,7 +267,8 @@ domain("twimg.com") {
 		border: none !important;
 		color: var(--Mytext) !important;
 		background-color: var(--MyB) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				hsl(0, 0%, 0%) 0%,
 				transparent 99%
@@ -278,9 +281,15 @@ domain("twimg.com") {
 				hsla(0, 0%, 66%, 0.2)
 			) !important;
 		text-shadow: 1px 1px 0 var(--Myred1) !important;
-		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-moz-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		-webkit-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
 		transition-timing-function: linear !important;
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
@@ -296,6 +305,7 @@ domain("twimg.com") {
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:hover,
 	a[data-testid="editProfileButton"]:hover,
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:hover,
+	a[aria-label="Creator Studio"]:hover,
 	a[aria-label="Grok"]:hover,
 	a[aria-label="Premium"]:hover,
 	a[aria-label="Post"]:hover,
@@ -350,7 +360,8 @@ domain("twimg.com") {
 		border: none !important;
 		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
 		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Myred1) 0%,
 				transparent 99%
@@ -365,11 +376,22 @@ domain("twimg.com") {
 		outline: none !important;
 		opacity: 1 !important;
 		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
 		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+		text-shadow:
+			1px 1px 1px var(--MyB),
+			-1px -1px 1px var(--Myred2) !important;
 	}
 
 	[role="tab"][aria-selected="true"]:active,
@@ -384,6 +406,7 @@ domain("twimg.com") {
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:active,
 	a[data-testid="editProfileButton"]:active,
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:active,
+	a[aria-label="Creator Studio"]:active,
 	a[aria-label="Grok"]:active,
 	a[aria-label="Premium"]:active,
 	a[aria-label="Post"]:active,
@@ -435,7 +458,8 @@ domain("twimg.com") {
 		border: none !important;
 		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
 		background-color: var(--Mygreen3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Mygreen1) 0%,
 				transparent 99%
@@ -450,11 +474,22 @@ domain("twimg.com") {
 		outline: none !important;
 		opacity: 1 !important;
 		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
 		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+		text-shadow:
+			1px 1px 1px var(--Mygreen3),
+			-1px -1px 1px var(--Myred2) !important;
 	}
 
 	[class="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-37j5jr r-n6v787 r-1cwl3u0 r-16dba41 r-1mmae3n r-3pj75a"] {
