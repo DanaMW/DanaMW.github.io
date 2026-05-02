@@ -2,7 +2,7 @@
 @name         Google Messages Dark
 @namespace    http://danamw.github.io/scripts/scripts/GoogleMessagesDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleMessagesDark.user.css
-@version      0.0.4
+@version      0.0.5
 @author       Dana L Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -262,7 +262,7 @@ domain("messages.android.com") {
 			) !important;
 	}
 
-	.stock {
+	.is-focused {
 		background-color: var(--Mygray1) !important;
 		background-image: linear-gradient(
 			to top,
@@ -273,7 +273,11 @@ domain("messages.android.com") {
 		) !important;
 	}
 
-	.stock {
+	.list-item.selected[_ngcontent-ng-c1525649314]::after {
+		background-color: var(--Mygreen1) !important;
+	}
+
+	.stock:hover {
 		background-color: var(--Myred3) !important;
 		background-image: linear-gradient(
 			to top,
