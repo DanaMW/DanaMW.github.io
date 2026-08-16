@@ -2,7 +2,7 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.90
+@version      0.0.91
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -800,11 +800,19 @@ domain("tv.youtube.com") {
 		background: none !important;
 	}
 
-	ytd-watch-flexy[flexy_][is-two-columns_] #transcript-loader.ytd-watch-flexy,
-	ytd-watch-flexy[flexy_][is-two-columns_] #playlist.ytd-watch-flexy,
-	ytd-playlist-panel-renderer#playlist {
-		background: none !important;
-		background-image: none !important;
+	/* --------------------------REWORKING SEARCHBOX--------------------- */
+	#search-container.ytd-searchbox-spt {
+		background-color: transparent !important;
+		border-color: transparent !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+
+	#container.style-scope.ytd-searchbox {
+		background-color: transparent !important;
+		border-color: transparent !important;
+		border: none !important;
+		box-shadow: none !important;
 	}
 
 	ytd-universal-watch-card-renderer {
@@ -948,7 +956,9 @@ domain("tv.youtube.com") {
 	/* ---------------------------TOP BANNER----------------------------- */
 	.sbfl_b,
 	ytcp-header,
+	/*
 	#container.style-scope.ytd-masthead,
+	*/
 	#masthead.masthead-finish,
 	div#masthead-container.style-scope.ytd-app {
 		background-color: transparent !important;
@@ -970,7 +980,9 @@ domain("tv.youtube.com") {
 
 	ytcp-header,
 	#yt-masthead-container,
+	/*
 	#container.style-scope.ytd-masthead,
+	*/
 	#masthead.masthead-finish,
 	div#masthead-container.style-scope.ytd-app {
 		-moz-appearance: none;
