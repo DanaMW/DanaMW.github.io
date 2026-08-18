@@ -2,20 +2,15 @@
 @name         YouTube Dark
 @namespace    https://danamw.github.io/scripts/scripts/YoutubeDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/YoutubeDark.user.css
-@version      0.0.91
+@version      0.0.92
 @description  YouTube Tweaks and color changes with buttons added.
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
 @preprocessor default
-@var range smove "Slide Search Bar"[10, 7, 75, 1, "vw"]
-@var range swidth "Resize search input"[750, 100, 1000, 1, "px"]
 ==/UserStyle== */
 @-moz-document domain("youtube.com"),
 domain("studio.youtube.com"),
 domain("tv.youtube.com") {
-	:not(.style-scope)[hidden] {
-		display: initial !important;
-	}
 	#movie_player,
 	#container,
 	#player-container-outer,
@@ -371,26 +366,11 @@ domain("tv.youtube.com") {
 		border-radius: 50% !important;
 	}
 
-	#center {
-		position: absolute !important;
-	}
-
-	#center {
-		position: absolute !important;
-		width: var(--swidth) !important;
-	}
-
-	#center {
-		position: absolute !important;
-		left: var(--smove);
-	}
-
 	.ytSearchboxComponentInputBox {
 		border: none !important;
 	}
 
 	.ytSearchboxComponentInputBox,
-	yt-searchbox,
 	#secondary,
 	.style-scope.ytd-watch-flexy {
 		background-color: transparent !important;
@@ -634,6 +614,7 @@ domain("tv.youtube.com") {
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	#container.style-scope.ytd-masthead,
 	.selectable.style-scope.ytu-nav-bar.paper-selection-overlay-above:hover,
 	.selectable.style-scope.ytu-nav-bar.selected.paper-selection-overlay-above,
 	ytu-intent-chip a:hover,
@@ -800,21 +781,6 @@ domain("tv.youtube.com") {
 		background: none !important;
 	}
 
-	/* --------------------------REWORKING SEARCHBOX--------------------- */
-	#search-container.ytd-searchbox-spt {
-		background-color: transparent !important;
-		border-color: transparent !important;
-		border: none !important;
-		box-shadow: none !important;
-	}
-
-	#container.style-scope.ytd-searchbox {
-		background-color: transparent !important;
-		border-color: transparent !important;
-		border: none !important;
-		box-shadow: none !important;
-	}
-
 	ytd-universal-watch-card-renderer {
 		padding-left: 100px !important;
 	}
@@ -891,50 +857,6 @@ domain("tv.youtube.com") {
 		background-color: transparent !important;
 	}
 
-	/* --------------------------REWORKING SEARCHBOX--------------------- */
-	#search-container.ytd-searchbox-spt {
-		background-color: transparent !important;
-		border-color: transparent !important;
-		border: none !important;
-		box-shadow: none !important;
-	}
-
-	#container.style-scope.ytd-searchbox {
-		background-color: transparent !important;
-		border-color: transparent !important;
-		border: none !important;
-		box-shadow: none !important;
-	}
-
-	yt-searchbox:not(.yt-searchbox-filled-query)
-		.ytSuggestionComponentPersonalizedSuggestion {
-		background-color: transparent !important;
-		display: none !important;
-	}
-
-	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark[hidden="true"],
-	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark[hidden=""] {
-		background-color: transparent !important;
-	}
-
-	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark {
-		margin-top: -10px;
-		background-color: var(--MyX4) !important;
-	}
-
-	/*
-	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark[hidden="true"],
-	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark[hidden=""] {
-		margin-top: -10px;
-		background-color: transparent !important;
-	}
-
-	.ytSearchboxComponentSuggestionsContainer.ytSearchboxComponentSuggestionsContainerDark {
-		margin-top: -10px;
-		background-color: var(--MyX4) !important;
-	}
-	*/
-
 	input,
 	#input,
 	input#query-input,
@@ -951,92 +873,6 @@ domain("tv.youtube.com") {
 
 	ytd-guide-entry-renderer {
 		border-radius: 25px !important;
-	}
-
-	/* ---------------------------TOP BANNER----------------------------- */
-	.sbfl_b,
-	ytcp-header,
-	/*
-	#container.style-scope.ytd-masthead,
-	*/
-	#masthead.masthead-finish,
-	div#masthead-container.style-scope.ytd-app {
-		background-color: transparent !important;
-		background: none !important;
-	}
-
-	ytcp-header {
-		background-color: var(--MyB) !important;
-		height: 60px !important;
-		border: none !important;
-	}
-
-	#masthead-positioner,
-	#yt-masthead-container {
-		background-color: var(--MyB) !important;
-		height: 35px !important;
-		border: none !important;
-	}
-
-	ytcp-header,
-	#yt-masthead-container,
-	/*
-	#container.style-scope.ytd-masthead,
-	*/
-	#masthead.masthead-finish,
-	div#masthead-container.style-scope.ytd-app {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		appearance: none;
-		background-color: var(--Myred3) !important;
-		background:
-			radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Myred1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-		opacity: 1 !important;
-		z-index: 10000 !important;
-	}
-
-	.nav-bar,
-	ytd-masthead#masthead.chunked.masthead-finish {
-		background-color: var(--Myred3) !important;
-		background-image:
-			radial-gradient(
-				ellipse farthest-corner at center bottom,
-				var(--Myred1) 0%,
-				transparent 99%
-			),
-			linear-gradient(
-				180deg,
-				hsla(0, 0%, 66%, 0.5) 48%,
-				rgba(0, 0, 0, 0.4) 49%,
-				rgba(0, 0, 0, 0.8) 100%,
-				hsla(0, 0%, 66%, 0.2)
-			) !important;
-		outline: none !important;
-		opacity: 1 !important;
-		color: var(--MyW) !important;
-		-webkit-transition:
-			background 0.2s,
-			box-shadow 0.4s,
-			border-color 0.2s !important;
-		transition:
-			background 0.2s,
-			box-shadow 0.4s,
-			border-color 0.2s !important;
-		transition-timing-function: linear !important;
-		text-shadow:
-			1px 1px 1px var(--MyB),
-			-1px -1px 1px var(--Mygray1) !important;
 	}
 
 	#avatar-btn > yt-img-shadow > img#img {
