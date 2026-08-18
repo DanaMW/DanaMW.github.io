@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.60
+@version      0.0.61
 @description  Amazon Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
@@ -742,6 +742,7 @@
 		background-color: var(--Mygray2) !important;
 	}
 
+	.price-block-label,
 	.price-block-container
 		.price-block-text
 		.price-block-message
