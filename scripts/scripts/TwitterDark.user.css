@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.1.5
+@version      0.1.6
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -217,6 +217,7 @@ domain("twimg.com") {
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"],
 	a[data-testid="editProfileButton"],
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"],
+	a[aria-label="History"],
 	a[aria-label="Creator Studio"],
 	a[aria-label="Grok"],
 	a[class="css-175oi2r r-6koalj r-eqz5dr r-16y2uox r-1habvwh r-oyd9sg r-13qz1uu r-1ny4l3l r-1loqt21"],
@@ -305,6 +306,7 @@ domain("twimg.com") {
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:hover,
 	a[data-testid="editProfileButton"]:hover,
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:hover,
+	a[aria-label="History"]:hover,
 	a[aria-label="Creator Studio"]:hover,
 	a[aria-label="Grok"]:hover,
 	a[aria-label="Premium"]:hover,
@@ -406,6 +408,7 @@ domain("twimg.com") {
 	[class="css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-1ny4l3l r-1loqt21"]:active,
 	a[data-testid="editProfileButton"]:active,
 	[class="css-175oi2r r-1awozwy r-18u37iz r-16y2uox r-ymttw5 r-1yzf0co"]:active,
+	a[aria-label="History"]:active,
 	a[aria-label="Creator Studio"]:active,
 	a[aria-label="Grok"]:active,
 	a[aria-label="Premium"]:active,
@@ -866,13 +869,7 @@ domain("twimg.com") {
 		appearance: revert;
 	}
 
-	/*
-	ul[role="list"],
-	li[role="listitem"],
-	div[data-testid="swipe-to-dismiss"] {
-		background-image: none !important;
-		background: transparent !important;
-	     background: initial !important;
+	[class*="css-g5y9jx r-kemksi"] {
+		border: none !important;
 	}
-    */
 }
