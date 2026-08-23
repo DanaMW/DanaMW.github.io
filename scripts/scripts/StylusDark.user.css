@@ -2,7 +2,7 @@
 @name         Stylus Dark
 @namespace    https://danamw.github.io/scripts/scripts/StylusDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/StylusDark.user.css
-@version      0.0.64
+@version      0.0.65
 @description  Additional styling for Stylus
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -16,9 +16,9 @@ regexp("moz-extension://.*")
 	}
 
 	img[src="https://www.google.com/s2/favicons?domain=ello.co"],
-    img[src="https://www.google.com/s2/favicons?domain=github.com"],
-    img[src="https://www.google.com/s2/favicons?domain=githubusercontent.com"],
-    svg[class="svg-icon select-arrow"] {
+	img[src="https://www.google.com/s2/favicons?domain=github.com"],
+	img[src="https://www.google.com/s2/favicons?domain=githubusercontent.com"],
+	svg[class="svg-icon select-arrow"] {
 		filter: invert(1) !important;
 	}
 
@@ -190,7 +190,8 @@ regexp("moz-extension://.*")
 		border-right: 1px solid var(--Myred3) !important;
 		color: var(--Mytext) !important;
 		background-color: var(--MyB) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				hsl(0, 0%, 0%) 0%,
 				transparent 99%
@@ -203,9 +204,15 @@ regexp("moz-extension://.*")
 				hsla(0, 0%, 66%, 0.2)
 			) !important;
 		text-shadow: 1px 1px 0 var(--Myred1) !important;
-		-moz-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		-webkit-transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
-		transition: border-color 0.3s ease, box-shadow 0.7s ease !important;
+		-moz-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		-webkit-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
 		transition-timing-function: linear !important;
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
@@ -224,7 +231,8 @@ regexp("moz-extension://.*")
 		border-right: 1px solid var(--Myred2) !important;
 		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
 		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Myred1) 0%,
 				transparent 99%
@@ -239,11 +247,22 @@ regexp("moz-extension://.*")
 		outline: none !important;
 		opacity: 1 !important;
 		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
 		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
+		text-shadow:
+			1px 1px 1px var(--MyB),
+			-1px -1px 1px var(--Myred2) !important;
 	}
 
 	a#unfile-all-styles:active,
@@ -260,7 +279,8 @@ regexp("moz-extension://.*")
 		border-right: 1px solid var(--Mygreen3) !important;
 		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
 		background-color: var(--Mygreen3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Mygreen1) 0%,
 				transparent 99%
@@ -275,13 +295,25 @@ regexp("moz-extension://.*")
 		outline: none !important;
 		opacity: 1 !important;
 		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
 		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
+		text-shadow:
+			1px 1px 1px var(--Mygreen3),
+			-1px -1px 1px var(--Myred2) !important;
 	}
 
+	button.icon:hover,
 	body {
 		color: var(--Mytext) !important;
 	}
@@ -324,7 +356,8 @@ regexp("moz-extension://.*")
 		border-right-color: var(--MyB) !important;
 		border-left-color: var(--MyB) !important;
 		background-color: var(--Myred3) !important;
-		background-image: radial-gradient(
+		background-image:
+			radial-gradient(
 				ellipse farthest-corner at center bottom,
 				var(--Myred1) 0%,
 				transparent 99%
@@ -339,11 +372,22 @@ regexp("moz-extension://.*")
 		outline: none !important;
 		opacity: 1 !important;
 		color: var(--MyW) !important;
-		-moz-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		-webkit-transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
-		transition: background 0.2s, box-shadow 0.4s, border-color 0.2s !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
 		transition-timing-function: linear !important;
-		text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Mygray1) !important;
+		text-shadow:
+			1px 1px 1px var(--MyB),
+			-1px -1px 1px var(--Mygray1) !important;
 	}
 
 	body.dirty #save-button:after {
