@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.94
+@version      0.2.95
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -33,6 +33,10 @@ url-prefix("https://www.googletagmanager.com/"),
 url-prefix("https://console.actions.google.com/"),
 url-prefix("https://bard.google.com/")
 {
+	[class="s6JM6d ufC5Cb ZPOWwb EYIWQc"],
+	.at5KUb.t4YKeb,
+	.rIMkxf.rwhS2,
+	.s7d4ef.X6JNf.PFXse,
 	.YNk70c,
 	.B6Rt6d.zcLWac.eejsDc,
 	.tkcine,
@@ -390,6 +394,7 @@ url-prefix("https://bard.google.com/")
 		color: var(--MyW) !important;
 	}
 
+	.raGCNe,
 	.vJOb1e.aIfcHf,
 	div[data-hveid="CA8QAA"],
 	.CkrTOd,
@@ -1157,6 +1162,7 @@ url-prefix("https://bard.google.com/")
 		background-color: var(--Myred1) !important;
 	}
 
+	.N8RrG.rAdPSe,
 	.vJ10Cb,
 	.pzaG1c,
 	.Mw2I7.UkaFJe,
@@ -2557,5 +2563,9 @@ url-prefix("https://bard.google.com/")
 		border: 2px solid var(--Myred1) !important;
 		border-radius: 25px !important;
 		height: 25px !important;
+	}
+
+	.d4un9b.tmSOTb {
+		border-bottom: 1px solid var(--Myred1) !important;
 	}
 }
