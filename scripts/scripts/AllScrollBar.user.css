@@ -29,11 +29,11 @@ regexp("moz-extension://.*")
 		background: var(--Mygreen2) !important;
 	}
 	textarea {
-		border-radius: 5px !important;
+		border-radius: 25px !important;
 		border: 1px solid var(--Myred1) !important;
 	}
 	input {
-		border-radius: 15px !important;
+		border-radius: 25px !important;
 		border: 1px solid var(--Myred1) !important;
 		text-align: center !important;
 	}
