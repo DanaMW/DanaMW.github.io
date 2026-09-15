@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.43
+@version      0.1.44
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -55,7 +55,9 @@ url-prefix("https://chat.google.com/")
 
 	.iNstf,
     /* EMAILFIX */
-    div[style="color:rgb(33,33,33)"],
+	span,
+	div[id*="email-temp"]>div,
+	div[style="color:rgb(33,33,33)"],
     div[name="divtagdefaultwrapper"],
     .ip.iq,
     table,
