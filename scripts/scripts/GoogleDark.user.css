@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.2.98
+@version      0.2.99
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -113,14 +113,28 @@ url-prefix("https://bard.google.com/")
 		overflow: hidden !important;
 	}
 
-	#rcnt {
+	body:not(a[href*="udm=2"]) #rcnt {
 		position: relative !important;
 		left: calc(1vw + var(--cmove) - 10vw) !important;
 	}
 
-	#rcnt.GyAeWb.gIatYd {
+	body:not(a[href*="udm=2"]) #rcnt.GyAeWb.gIatYd {
 		margin-left: -425px !important;
 	}
+
+	body:has(a[href*="udm=2"]) #rcnt {
+		right: initial !important;
+		left: initial !important;
+		margin: 0 !important;
+		border: 2px solid var(--Myred1) !important;
+	}
+
+	/*
+	#rcnt {
+		position: relative !important;
+		left: calc(1vw + var(--cmove) - 10vw) !important;
+    }
+    */
 
 	.C6AK7c,
 	.mXwfNd,
@@ -2573,5 +2587,10 @@ url-prefix("https://bard.google.com/")
 
 	.d4un9b.tmSOTb {
 		border-bottom: 1px solid var(--Myred1) !important;
+	}
+
+	div.acUsEb .Ij8KCd {
+		background: var(--Myred3) !important;
+		filter: opacity(0.2) !important;
 	}
 }
