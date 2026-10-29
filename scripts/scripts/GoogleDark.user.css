@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.3.01
+@version      0.3.02
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -123,9 +123,10 @@ url-prefix("https://bard.google.com/")
 		margin: 0 !important;
 		border: none !important;
 	}
-	#rso,
-	.MjjYud,
-	#gevUs {
+
+	body:not(a[href*="udm=2"]) #rso,
+	body:not(a[href*="udm=2"]) .MjjYud,
+	body:not(a[href*="udm=2"]) #gevUs {
 		width: 1500px !important;
 	}
 
@@ -2593,5 +2594,9 @@ url-prefix("https://bard.google.com/")
 	div.acUsEb .Ij8KCd {
 		background: var(--Myred3) !important;
 		filter: opacity(0.2) !important;
+	}
+
+	#rhs {
+		display: none !important;
 	}
 }
