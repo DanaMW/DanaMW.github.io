@@ -11,677 +11,806 @@
 @-moz-document domain("github.com"),
 domain(githubusercontent.com),
 domain(githubapp.com),
-url-prefix("wss://live.github.com") {
-    a[class="filter-item "] {
-        background-color: none !important;
-    }
-
-    button.width-full.text-left.btn-link.more-repos-link.js-more-repos-link {
-        text-align: center !important;
-        text-decoration: none !important;
-    }
-
-    * {
-        text-decoration: none !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: var(--Myred1) var(--Myred3) !important;
-        border-color: var(--Myred1) !important;
-    }
-
-    ::-webkit-scrollbar {
-        background: var(--Myred3) !important;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: var(--Myred1) !important;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: var(--Mygreen1) !important;
-    }
-
-    ::-webkit-scrollbar-thumb:active {
-        background: var(--Mygreen2) !important;
-    }
-
-    html,
-    body {
-        background-color: var(--Myback) !important;
-        color: var(--MyW) !important;
-    }
-
-    article.markdown-body.entry-content>pre,
-    article h2,
-    article h1,
-    pre {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-    }
-
-    article.markdown-body-entry-content pre,
-    article h2,
-    article h1 {
-        border-color: var(--Myred1) !important;
-    }
-
-    #readme * pre {
-        border-color: var(--TwitterBlue) !important;
-    }
-
-    h3,
-    p,
-    a {
-        color: var(--MyW) !important;
-    }
-
-    a:hover {
-        color: var(--Myred1) !important;
-    }
-
-    .gh-header-hide-if-sticky {
-        background-color: var(--Myback) !important;
-    }
-
-    .UnderlineNav-item {
-        height: 50px !important;
-    }
-
-    a.UnderlineNav-item.selected {
-        filter: brightness(125%);
-        border-color: var(--Myred1) !important;
-    }
-
-    [class="UnderlineNav-item js-responsive-underlinenav-item js-selected-navigation-item selected"]::after {
-        background-color: var(--Mygreen1) !important;
-    }
-
-    h3 a {
-        padding: 5px !important;
-    }
-
-    /* Finish here when you get a chance */
-    [id*="tab"].selected,
-    ul.UnderlineNav-body,
-    .UnderlineNav-item.selected,
-    .UnderlineNav-item[aria-current]:not([aria-current="false"]),
-    .UnderlineNav-item[role="tab"][aria-selected="true"] {
-        border-bottom-color: 1px solid var(--Mygreen1) !important;
-        color: var(--Myyellow1) !important;
-        box-shadow: 0px 1px var(--Mygreen1) !important;
-    }
-
-    .header-search-key-slash:hover {
-        filter: invert(0.25) !important;
-    }
-
-    svg.octicon.octicon-bell:hover {
-        color: var(--MyW) !important;
-    }
-
-    .octicon.octicon-mark-github:hover,
-    svg.octicon.octicon-bell.blankslate-icon:hover {
-        color: var(--Myred1) !important;
-    }
-
-    .social-count,
-    .topic-tag.topic-tag-link {
-        background-color: var(--MyX1) !important;
-        color: var(--MyW) !important;
-    }
-
-    .topic-tag.topic-tag-link:hover,
-    .topic-tag:hover {
-        background-color: var(--Myred1) !important;
-        color: var(--Mygreen1) !important;
-    }
-
-    tr[id*="folder-row"]:hover,
-    div[class="Box-row Box-row--focus-gray py-2 mt-0 border-top-0 d-flex position-relative js-navigation-item navigation-focus"]:hover,
-    tr.js-navigation-item:hover {
-        background-color: var(--MyX1) !important;
-    }
-
-    .js-selected-navigation-item {
-        border-top: 3px solid var(--Myred3) !important;
-        padding: 0px 5px 0px 5px !important;
-    }
-
-    .js-selected-navigation-item.selected {
-        border-top: 3px solid var(--Myred1) !important;
-        border-color: var(--Myred1) !important;
-    }
-
-    .js-selected-navigation-item.selected:hover {
-        border-color: var(--Myred1) !important;
-    }
-
-    .label,
-    .ajax-pagination-form button.ajax-pagination-btn {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-
-    summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"],
-    .menu-item,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.previous_page.disabled:hover,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.previous_page,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.previous_page,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page.disabled:hover,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a[aria-label*="Page"],
-    .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary,
-    .d-flex.flex-justify-between.mb-3 a.btn.btn-primary,
-    .ajax-pagination-form button.ajax-pagination-btn,
-    .d-inline-flex .btn,
-    #user-projects-list .btn,
-    .btn-mktg,
-    #partial-discussion-header .btn,
-    #partial-new-comment-form-actions button.btn.btn-primary,
-    .flash>.btn.btn-sm.btn-primary.flash-action,
-    .toolbar-item,
-    .tabnav-tab,
-    .UnderlineNav-item,
-    .js-selected-navigation-item,
-    li a[href]:not(.notification-list-item-link),
-    button.btn.btn-primary::before,
-    button.btn.btn-primary::after,
-    button.btn.btn-primary,
-    .filter-item,
-    details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset summary.btn.btn-sm.btn-primary,
-    .btn.btn-sm.empty-icon.float-right.BtnGroup-item,
-    .btn.btn-sm.new-pull-request-btn,
-    .btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw,
-    .mr-2.header-search-key-slash,
-    details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset,
-    .js-repos-container .btn.btn-sm.btn-primary.text-white,
-    .State,
-    .btn.btn-sm.btn-primary,
-    div.d-flex a.text-center.btn.btn-primary.ml-3,
-    a.btn.btn-primary.float-right,
-    div[class="repository-content "] div.subnav a.btn.btn-primary.float-right,
-    a.btn.btn-primary.ml-1,
-    a.btn.btn-primary.btn-outline,
-    a.btn.btn-primary.mr-5,
-    a.btn.btn-primary.ml-3,
-    span.d-inline-block.px-2,
-    button.btn.btn-primary,
-    a.header-search-scope,
-    a.btn.btn-sm.btn-primary,
-    a.btn.btn-sm.btn-primary.float-right,
-    a[class="filter-item "],
-    .mt-2 a.btn,
-    .TableObject .TableObject-item a.btn.btn-primary.ml-3,
-    .gh-header-show a.btn.btn-sm.btn-primary.float-right,
-    .btn,
-    .HeaderNavlink,
-    button {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        color: var(--Mytext) !important;
-        background-color: var(--MyB) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, hsl(0, 0%, 0%) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        text-shadow: 1px 1px 0 var(--Myred1) !important;
-        -moz-transition: border-color .3s ease, box-shadow .7s ease !important;
-        -webkit-transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition: border-color .3s ease, box-shadow .7s ease !important;
-        transition-timing-function: linear !important;
-        box-shadow: 0 1px 4px 1px var(--MyB) !important;
-    }
-
-    .PRIVATE_TreeView-item-container:hover,
-    li>a.UnderlineNav-item.selected,
-    summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"]:hover,
-    .menu-item:hover,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap:hover,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.previous_page:not(disabled):hover,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page:hover,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a[aria-label*="Page"]:hover,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] em.current,
-    .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary:hover,
-    .d-flex.flex-justify-between.mb-3 a.btn.btn-primary:hover,
-    .ajax-pagination-form .ajax-pagination-btn:hover,
-    .d-inline-flex .btn:hover,
-    #user-projects-list .btn:hover,
-    .btn-mktg:hover,
-    .flash>.btn.btn-sm.btn-primary.flash-action:hover,
-    .dropdown-item:hover,
-    .toolbar-item:hover,
-    .TableObject .TableObject-item a.btn.btn-primary.ml-3:hover,
-    .tabnav-tab:hover,
-    .tabnav-tab.selected,
-    .UnderlineNav-item:hover,
-    .UnderlineNav-item.selected,
-    .js-selected-navigation-item.selected,
-    .js-selected-navigation-item:hover,
-    li a[href]:hover:not(.notification-list-item-link),
-    a[class*="filter-item"][href*="/"]:hover,
-    .filter-item.css-truncate:hover,
-    details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset summary.btn.btn-sm.btn-primary:hover,
-    .btn.btn-sm.empty-icon.float-right.BtnGroup-item:hover,
-    .btn.btn-sm.new-pull-request-btn:hover,
-    .btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw:hover,
-    .js-repos-container .btn.btn-sm.btn-primary.text-white:hover,
-    .State:hover,
-    header[role="banner"],
-    div[role="banner"],
-    summary.btn.btn-sm.btn-primary:hover,
-    div.d-flex a.text-center.btn.btn-primary.ml-3:hover,
-    div[class="repository-content "] div.subnav a.btn.btn-primary.float-right:hover,
-    a.btn.btn-primary.float-right:hover,
-    a.btn.btn-primary.ml-1:hover,
-    a.btn.btn-primary.btn-outline:hover,
-    a.btn.btn-primary.mr-5:hover,
-    a.btn.btn-primary.ml-3:hover,
-    span.d-inline-block.px-2:hover,
-    button.btn.btn-primary:hover,
-    button.btn-link.tabnav-tab.write-tab.js-write-tab.selected,
-    a.header-search-scope:hover,
-    a.btn.btn-sm.btn-primary:hover,
-    a.btn.btn-sm.btn-primary.float-right:hover,
-    a[class="filter-item "]:hover,
-    .filter-item.selected,
-    .mt-2 a.btn:hover,
-    .gh-header-show a.btn.btn-sm.btn-primary.float-right:hover,
-    .btn:hover,
-    .HeaderNavlink:hover,
-    button:hover {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
-        background-color: var(--Myred3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Myred1) 0%, transparent 99%), linear-gradient(180deg, hsla(0, 0%, 66%, .5) 48%, rgba(0, 0, 0, .4) 49%, rgba(0, 0, 0, .8) 100%, hsla(0, 0%, 66%, .2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--MyB), -1px -1px 1px var(--Myred2) !important;
-    }
-
-    summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"]:active,
-    .menu-item:active,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] span.gap:active,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.previous_page:not(disabled):active,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a.next_page:active,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] a[aria-label*="Page"]:active,
-    div[class="paginate-container d-none d-md-flex flex-md-justify-center"] em.current:active,
-    .file-navigation.in-mid-page.mb-2.d-flex.flex-items-start * .btn.btn-sm.ml-2.btn-primary:active,
-    .d-flex.flex-justify-between.mb-3 a.btn.btn-primary:active,
-    .ajax-pagination-form button.ajax-pagination-btn:active,
-    .d-inline-flex .btn:active,
-    #user-projects-list .btn:active,
-    .btn-mktg:active,
-    .flash>.btn.btn-sm.btn-primary.flash-action:active,
-    .toolbar-item:active,
-    .TableObject .TableObject-item a.btn.btn-primary.ml-3:active,
-    .tabnav-tab:active,
-    .tabnav-tab.selected:active,
-    .UnderlineNav-item:active,
-    .UnderlineNav-item.selected:active,
-    .js-selected-navigation-item.selected:active,
-    .js-selected-navigation-item:active,
-    li a[href]:active:not(.notification-list-item-link),
-    a[class*="filter-item"][href*="/"]:active,
-    .filter-item.css-truncate:active,
-    details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset summary.btn.btn-sm.btn-primary:active,
-    .btn.btn-sm.empty-icon.float-right.BtnGroup-item:active,
-    .btn.btn-sm.new-pull-request-btn:active,
-    .btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw:active,
-    .js-repos-container .btn.btn-sm.btn-primary.text-white:active,
-    .State:active,
-    summary.btn.btn-sm.btn-primary:active,
-    div.d-flex a.text-center.btn.btn-primary.ml-3:active,
-    div[class="repository-content "] div.subnav a.btn.btn-primary.float-right:active,
-    a.btn.btn-primary.float-right:active,
-    a.btn.btn-primary.ml-1:active,
-    a.btn.btn-primary.btn-outline:active,
-    a.btn.btn-primary.mr-5:active,
-    a.btn.btn-primary.ml-3:active,
-    span.d-inline-block.px-2:active,
-    button.btn.btn-primary:active,
-    button.btn-link.tabnav-tab.write-tab.js-write-tab.selected:active,
-    a.header-search-scope:active,
-    a.btn.btn-sm.btn-primary:active,
-    a.btn.btn-sm.btn-primary.float-right:active,
-    a[class="filter-item "]:active,
-    .filter-item.selected:active,
-    .mt-2 a.btn:active,
-    .gh-header-show a.btn.btn-sm.btn-primary.float-right:active,
-    .btn:active,
-    .HeaderNavlink:active,
-    button:active {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        border: none !important;
-        box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
-        background-color: var(--Mygreen3) !important;
-        background-image: radial-gradient(ellipse farthest-corner at center bottom, var(--Mygreen1) 0%, transparent 99%), linear-gradient(180deg, rgba(168, 168, 168, 0.5) 48%, hsla(0, 0%, 0%, 0.4) 49%, rgba(0, 0, 0, 0.8) 100%, rgba(168, 168, 168, 0.2)) !important;
-        outline: none !important;
-        opacity: 1.0 !important;
-        color: var(--MyW) !important;
-        -moz-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        -webkit-transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition: background .2s, box-shadow .4s, border-color .2s !important;
-        transition-timing-function: linear !important;
-        text-shadow: 1px 1px 1px var(--Mygreen3), -1px -1px 1px var(--Myred2) !important;
-    }
-
-    a[class="u-photo d-block tooltipped tooltipped-s"] {
-        border: 2px solid var(--Myborder) !important;
-        border-radius: 5px !important;
-    }
-
-    .Counter {
-        background-color: var(--MyX1) !important;
-        border: 1px solid var(--MyW) !important;
-        font-weight: bold;
-        color: var(--MyW) !important;
-    }
-
-    modal-dialog {
-        border: 1px solid var(--MyW) !important;
-    }
-
-    li>.UnderlineNav-item {
-        --color-primer-border-active: var(--Mygreen1) !important;
-    }
-
-    .header-search {
-        background: transparent !important;
-    }
-
-    input,
-    input#your-repos-filter,
-    .js-user-status-container,
-    .form-control,
-    .js-site-search-form {
-        border-radius: 25px !important;
-        border: 1px solid var(--Myred1) !important;
-        background-color: var(--MyB) !important;
-        color: var(--MyW) !important;
-        text-align: center !important;
-    }
-
-    .sidebar {
-        background-image: none !important;
-        background-color: transparent !important;
-    }
-
-    div[class="blankslate "],
-    .sidebar,
-    details-menu {
-        background-color: var(--Mygray1) !important;
-        background-image: linear-gradient(to top, rgba(34, 33, 33, 0.8), rgba(61, 61, 61, 0.9), rgba(97, 97, 97, 0.9) 100%, transparent) !important;
-        color: var(--MyW) !important;
-    }
-
-    .turbo-progress-bar {
-        background-color: var(--Myred1) !important;
-        height: 5px !important;
-    }
-
-    #user-repositories-list {
-        border: 1px solid var(--MyB) !important;
-    }
-
-    li.col-12.d-flex.flex-justify-between.width-full.py-4.border-bottom {
-        background-color: var(--Mygray3) !important;
-    }
-
-    li.col-12.d-flex.flex-justify-between.width-full.py-4.border-bottom:hover,
-    .BorderGrid-row:hover,
-    .Box-header,
-    .pagehead,
-    .d-table.table-fixed.width-full.Box-row--drag-hide.position-relative:hover,
-    .flash,
-    .header-nav-current-user.css-truncate a[role="menuitem"] {
-        background-color: var(--Myred2) !important;
-        background-image: linear-gradient(to top, rgba(65, 21, 21, 0.8), rgba(97, 22, 22, 0.8), rgba(189, 38, 38, 0.8) 100%, transparent) !important;
-    }
-
-    .BorderGrid-row {
-        text-align: center !important;
-    }
-
-    div[class="position-relative d-md-flex flex-wrap flex-justify-between flex-items-center border-bottom color-border-secondary pb-3"],
-    div[class="col-12 d-block width-full py-4 border-bottom color-border-secondary"],
-    .border-bottom.color-border-secondary.py-3,
-    li[class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public fork"],
-    .public.source.border-bottom,
-    .border-bottom.border-gray-dark.py-3,
-    .d-flex,
-    .d-table,
-    .UnderlineNav,
-    .position-relative.d-md-flex.flex-wrap.flex-justify-between.flex-items-center.border-bottom.border-gray-dark.pb-3,
-    .d-block,
-    li[class*="col-12 d-flex width-full py-4 border-bottom public"],
-    div[class="d-table table-fixed col-12 width-full py-4 border-bottom border-gray-light"],
-    div[class="col-12 d-block width-full py-4 border-bottom"],
-    .Box.pinned-item-list-item {
-        border-color: var(--Myred1) !important;
-    }
-
-    div[class="mt-4 position-sticky top-0 d-none d-md-block bg-white width-full border-bottom color-border-secondary"],
-    div[class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light "] {
-        border-color: var(--Mygreen1) !important;
-    }
-
-    ul li[class*="notifications-list-item p-0 pl-2 pb-2 pb-md-0 position-relative border-0 js-notifications-list-item js-navigation-item border-bottom border-gray-light"]:hover {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        background-color: var(--MyX1) !important;
-    }
-
-    .Box.pinned-item-list-item:hover,
-    clipboard-copy:hover,
-    .bg-gray.p-3.border-bottom,
-    .extended-markdown,
-    .product-callout,
-    .list-group-item:hover,
-    .timeline-comment-label {
-        background-color: var(--MyX1) !important;
-    }
-
-    a[class="u-photo d-block tooltipped tooltipped-s"],
-    img.avatar {
-        border-radius: 50% !important;
-    }
-
-    .Label {
-        background-color: var(--Mygreen1) !important;
-        color: var(--MyB) !important;
-    }
-
-    .Box,
-    .blankslate {
-        background-color: var(--MyB) !important;
-        border-radius: 15px !important;
-        border-color: var(--Myred1) !important;
-    }
-
-    .js-indicator-modifier.mail-status.unread {
-        height: 14px !important;
-        width: 14px !important;
-    }
-
-    .CodeMirror {
-        background: #460101 !important;
-        color: #ffffff !important;
-        line-height: 1.5em !important;
-        font-size: 16px !important;
-        height: 100%;
-        font-weight: bold !important;
-        outline: transparent !important;
-        border: 1px solid #ffffff !important;
-    }
-
-    .CodeMirror .CodeMirror-selected {
-        background: #a12525 !important;
-        color: #ffd900
-    }
-
-    .CodeMirror .CodeMirror-line::selection,
-    .CodeMirror .CodeMirror-line>span::selection,
-    .CodeMirror .CodeMirror-line>span>span::selection {
-        background: #a12525 !important;
-    }
-
-    .CodeMirror .CodeMirror-line::-moz-selection,
-    .CodeMirror .CodeMirror-line>span::-moz-selection,
-    .CodeMirror .CodeMirror-line>span>span::-moz-selection {
-        background: #a12525
-    }
-
-    .CodeMirror .CodeMirror-gutter .CodeMirror-lint-markers,
-    .CodeMirror-gutter .CodeMirror-lint-markers,
-    .CodeMirror .CodeMirror-gutter .CodeMirror-foldgutter,
-    .CodeMirror-gutter .CodeMirror-foldgutter,
-    .CodeMirror .CodeMirror-gutter .CodeMirror-bookmarks,
-    .CodeMirror-gutter .CodeMirror-bookmarks,
-    .CodeMirror .CodeMirror-gutter.CodeMirror-linenumbers,
-    .CodeMirror-gutter.CodeMirror-linenumbers,
-    .CodeMirror .CodeMirror-gutter.gutter,
-    .CodeMirror .CodeMirror-gutters {
-        background: #460101;
-        border-right: 2px solid #a12525;
-    }
-
-    .CodeMirror .CodeMirror-guttermarker {
-        color: #0f0;
-    }
-
-    .CodeMirror-guttermarker-subtle {
-        color: #ffe8e8;
-    }
-
-    .CodeMirror .CodeMirror-linenumber {
-        color: #FFFFFF;
-    }
-
-    .CodeMirror-cursor {
-        border-left: 1px solid #00FF00;
-    }
-
-    .CodeMirror span.cm-keyword {
-        color: #00FF00;
-        font-weight: bold;
-    }
-
-    .CodeMirror span.cm-atom {
-        color: #3FF;
-    }
-
-    .CodeMirror span.cm-number {
-        color: #fbff00;
-    }
-
-    .CodeMirror span.cm-def {
-        color: #91b4ff;
-    }
-
-    .CodeMirror span.cm-variable {
-        color: #F6C;
-    }
-
-    .CodeMirror span.cm-variable-2 {
-        color: #c44eff;
-    }
-
-    .CodeMirror span.cm-variable-3,
-    .CodeMirror span.cm-type {
-        color: #ad7cec;
-    }
-
-    .CodeMirror span.cm-property {
-        color: #62FFA0;
-    }
-
-    .CodeMirror span.cm-operator {
-        color: #ecffb9;
-    }
-
-    .CodeMirror span.cm-comment {
-        color: #00FF00;
-    }
-
-    .CodeMirror span.cm-string {
-        color: #39C;
-    }
-
-    .CodeMirror span.cm-meta {
-        color: #ffffff;
-    }
-
-    .CodeMirror span.cm-qualifier {
-        color: #FFF700;
-    }
-
-    .CodeMirror span.cm-builtin {
-        color: #ffffff;
-    }
-
-    .CodeMirror span.cm-bracket {
-        color: #ffff00;
-    }
-
-    .CodeMirror span.cm-tag {
-        color: #FFBD40;
-    }
-
-    .CodeMirror .cm-overlay,
-    .CodeMirror span.cm-attribute {
-        color: #FFF700;
-    }
-
-    .CodeMirror span.cm-error {
-        color: #FF0000;
-    }
-
-    .CodeMirror .CodeMirror-activeline-background {
-        background: #921111;
-    }
-
-    .Box-body {
-        background-color: var(--MyB) !important;
-    }
-
-    p,
-    article {
-        background-color: transparent !important;
-    }
-
-    .TableObject:hover,
-    div[role="grid"] div[role="row"].navigation-focus {
-        background-color: var(--MyX1) !important;
-    }
-
-    .menu-heading {
-        text-align: center !important;
-    }
-
-    [role="tooltip"],
-    [id*="tooltip"],
-    tool-tip,
-    .tooltip {
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        appearance: none;
-        background-color: var(--MyX1) !important;
-        --color-neutral-emphasis-plus: var(--MyX1) !important;
-        opacity: 0.4;
-        color: var(--MyW) !important;
-        padding: 8px;
-        border-radius: 2px;
-        border: 1px solid var(--MyW) !important;
-    }
+url-prefix("wss://live.github.com")
+{
+	a[class="filter-item "] {
+		background-color: none !important;
+	}
+
+	button.width-full.text-left.btn-link.more-repos-link.js-more-repos-link {
+		text-align: center !important;
+		text-decoration: none !important;
+	}
+
+	* {
+		text-decoration: none !important;
+		scrollbar-width: thin !important;
+		scrollbar-color: var(--Myred1) var(--Myred3) !important;
+		border-color: var(--Myred1) !important;
+	}
+
+	::-webkit-scrollbar {
+		background: var(--Myred3) !important;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: var(--Myred1) !important;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: var(--Mygreen1) !important;
+	}
+
+	::-webkit-scrollbar-thumb:active {
+		background: var(--Mygreen2) !important;
+	}
+
+	html,
+	body {
+		background-color: var(--Myback) !important;
+		color: var(--MyW) !important;
+	}
+
+	article.markdown-body.entry-content > pre,
+	article h2,
+	article h1,
+	pre {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+	}
+
+	article.markdown-body-entry-content pre,
+	article h2,
+	article h1 {
+		border-color: var(--Myred1) !important;
+	}
+
+	h1,
+	h2,
+	b {
+		color: var(--TwitterBlue) !important;
+	}
+
+	#readme * pre {
+		border-color: var(--TwitterBlue) !important;
+	}
+
+	blockquote > span,
+	p > span,
+	h3,
+	p,
+	a {
+		color: var(--MyW) !important;
+	}
+
+	a:hover {
+		color: var(--Myred1) !important;
+	}
+
+	[class*="bar"],
+	footer,
+	[class*="Primer_Brand"],
+	section,
+	header,
+	nav,
+	.gh-header-hide-if-sticky {
+		background-color: var(--Myback) !important;
+	}
+
+	.UnderlineNav-item {
+		height: 50px !important;
+	}
+
+	a.UnderlineNav-item.selected {
+		filter: brightness(125%);
+		border-color: var(--Myred1) !important;
+	}
+
+	[class="UnderlineNav-item js-responsive-underlinenav-item js-selected-navigation-item selected"]::after {
+		background-color: var(--Mygreen1) !important;
+	}
+
+	h3 a {
+		padding: 5px !important;
+	}
+
+	/* Finish here when you get a chance */
+	[id*="tab"].selected,
+	ul.UnderlineNav-body,
+	.UnderlineNav-item.selected,
+	.UnderlineNav-item[aria-current]:not([aria-current="false"]),
+	.UnderlineNav-item[role="tab"][aria-selected="true"] {
+		border-bottom-color: 1px solid var(--Mygreen1) !important;
+		color: var(--Myyellow1) !important;
+		box-shadow: 0px 1px var(--Mygreen1) !important;
+	}
+
+	.header-search-key-slash:hover {
+		filter: invert(0.25) !important;
+	}
+
+	svg.octicon.octicon-bell:hover {
+		color: var(--MyW) !important;
+	}
+
+	.octicon.octicon-mark-github:hover,
+	svg.octicon.octicon-bell.blankslate-icon:hover {
+		color: var(--Myred1) !important;
+	}
+
+	.social-count,
+	.topic-tag.topic-tag-link {
+		background-color: var(--MyX1) !important;
+		color: var(--MyW) !important;
+	}
+
+	.topic-tag.topic-tag-link:hover,
+	.topic-tag:hover {
+		background-color: var(--Myred1) !important;
+		color: var(--Mygreen1) !important;
+	}
+
+	tr[id*="folder-row"]:hover,
+	div[class="Box-row Box-row--focus-gray py-2 mt-0 border-top-0 d-flex position-relative js-navigation-item navigation-focus"]:hover,
+	tr.js-navigation-item:hover {
+		background-color: var(--MyX1) !important;
+	}
+
+	.js-selected-navigation-item {
+		border-top: 3px solid var(--Myred3) !important;
+		padding: 0px 5px 0px 5px !important;
+	}
+
+	.js-selected-navigation-item.selected {
+		border-top: 3px solid var(--Myred1) !important;
+		border-color: var(--Myred1) !important;
+	}
+
+	.js-selected-navigation-item.selected:hover {
+		border-color: var(--Myred1) !important;
+	}
+
+	a[class*="Button-module"] {
+		background-image: none !important;
+	}
+
+	[class*="menuWrapper"],
+	.label,
+	.ajax-pagination-form button.ajax-pagination-btn {
+		background-image: none !important;
+		background-color: transparent !important;
+	}
+
+	a[class*="Button-module"],
+	summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"],
+	.menu-item,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		span.gap,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		span.previous_page.disabled:hover,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		span.previous_page,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a.previous_page,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a.next_page,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a.next_page.disabled:hover,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a[aria-label*="Page"],
+	.file-navigation.in-mid-page.mb-2.d-flex.flex-items-start
+		*
+		.btn.btn-sm.ml-2.btn-primary,
+	.d-flex.flex-justify-between.mb-3 a.btn.btn-primary,
+	.ajax-pagination-form button.ajax-pagination-btn,
+	.d-inline-flex .btn,
+	#user-projects-list .btn,
+	.btn-mktg,
+	#partial-discussion-header .btn,
+	#partial-new-comment-form-actions button.btn.btn-primary,
+	.flash > .btn.btn-sm.btn-primary.flash-action,
+	.toolbar-item,
+	.tabnav-tab,
+	.UnderlineNav-item,
+	.js-selected-navigation-item,
+	li a[href]:not(.notification-list-item-link),
+	button.btn.btn-primary::before,
+	button.btn.btn-primary::after,
+	button.btn.btn-primary,
+	.filter-item,
+	details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset
+		summary.btn.btn-sm.btn-primary,
+	.btn.btn-sm.empty-icon.float-right.BtnGroup-item,
+	.btn.btn-sm.new-pull-request-btn,
+	.btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw,
+	.mr-2.header-search-key-slash,
+	details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset,
+	.js-repos-container .btn.btn-sm.btn-primary.text-white,
+	.State,
+	.btn.btn-sm.btn-primary,
+	div.d-flex a.text-center.btn.btn-primary.ml-3,
+	a.btn.btn-primary.float-right,
+	div[class="repository-content "] div.subnav a.btn.btn-primary.float-right,
+	a.btn.btn-primary.ml-1,
+	a.btn.btn-primary.btn-outline,
+	a.btn.btn-primary.mr-5,
+	a.btn.btn-primary.ml-3,
+	span.d-inline-block.px-2,
+	button.btn.btn-primary,
+	a.header-search-scope,
+	a.btn.btn-sm.btn-primary,
+	a.btn.btn-sm.btn-primary.float-right,
+	a[class="filter-item "],
+	.mt-2 a.btn,
+	.TableObject .TableObject-item a.btn.btn-primary.ml-3,
+	.gh-header-show a.btn.btn-sm.btn-primary.float-right,
+	.btn,
+	.HeaderNavlink,
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		color: var(--MyW) !important;
+		background-color: var(--MyB) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				hsl(0, 0%, 0%) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		text-shadow: 1px 1px 0 var(--Myred1) !important;
+		-moz-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		-webkit-transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition:
+			border-color 0.3s ease,
+			box-shadow 0.7s ease !important;
+		transition-timing-function: linear !important;
+		box-shadow: 0 1px 4px 1px var(--MyB) !important;
+	}
+
+	a[class*="Button-module"]:hover,
+	.PRIVATE_TreeView-item-container:hover,
+	li > a.UnderlineNav-item.selected,
+	summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"]:hover,
+	.menu-item:hover,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		span.gap:hover,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a.previous_page:not(disabled):hover,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a.next_page:hover,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a[aria-label*="Page"]:hover,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		em.current,
+	.file-navigation.in-mid-page.mb-2.d-flex.flex-items-start
+		*
+		.btn.btn-sm.ml-2.btn-primary:hover,
+	.d-flex.flex-justify-between.mb-3 a.btn.btn-primary:hover,
+	.ajax-pagination-form .ajax-pagination-btn:hover,
+	.d-inline-flex .btn:hover,
+	#user-projects-list .btn:hover,
+	.btn-mktg:hover,
+	.flash > .btn.btn-sm.btn-primary.flash-action:hover,
+	.dropdown-item:hover,
+	.toolbar-item:hover,
+	.TableObject .TableObject-item a.btn.btn-primary.ml-3:hover,
+	.tabnav-tab:hover,
+	.tabnav-tab.selected,
+	.UnderlineNav-item:hover,
+	.UnderlineNav-item.selected,
+	.js-selected-navigation-item.selected,
+	.js-selected-navigation-item:hover,
+	li a[href]:hover:not(.notification-list-item-link),
+	a[class*="filter-item"][href*="/"]:hover,
+	.filter-item.css-truncate:hover,
+	details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset
+		summary.btn.btn-sm.btn-primary:hover,
+	.btn.btn-sm.empty-icon.float-right.BtnGroup-item:hover,
+	.btn.btn-sm.new-pull-request-btn:hover,
+	.btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw:hover,
+	.js-repos-container .btn.btn-sm.btn-primary.text-white:hover,
+	.State:hover,
+	header[role="banner"],
+	div[role="banner"],
+	summary.btn.btn-sm.btn-primary:hover,
+	div.d-flex a.text-center.btn.btn-primary.ml-3:hover,
+	div[class="repository-content "]
+		div.subnav
+		a.btn.btn-primary.float-right:hover,
+	a.btn.btn-primary.float-right:hover,
+	a.btn.btn-primary.ml-1:hover,
+	a.btn.btn-primary.btn-outline:hover,
+	a.btn.btn-primary.mr-5:hover,
+	a.btn.btn-primary.ml-3:hover,
+	span.d-inline-block.px-2:hover,
+	button.btn.btn-primary:hover,
+	button.btn-link.tabnav-tab.write-tab.js-write-tab.selected,
+	a.header-search-scope:hover,
+	a.btn.btn-sm.btn-primary:hover,
+	a.btn.btn-sm.btn-primary.float-right:hover,
+	a[class="filter-item "]:hover,
+	.filter-item.selected,
+	.mt-2 a.btn:hover,
+	.gh-header-show a.btn.btn-sm.btn-primary.float-right:hover,
+	.btn:hover,
+	.HeaderNavlink:hover,
+	button:hover {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--MyB) !important;
+		background-color: var(--Myred3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Myred1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				hsla(0, 0%, 66%, 0.5) 48%,
+				rgba(0, 0, 0, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				hsla(0, 0%, 66%, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow:
+			1px 1px 1px var(--MyB),
+			-1px -1px 1px var(--Myred2) !important;
+	}
+
+	summary[class="Button--primary Button--medium Button flex-1 d-inline-flex"]:active,
+	.menu-item:active,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		span.gap:active,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a.previous_page:not(disabled):active,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a.next_page:active,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		a[aria-label*="Page"]:active,
+	div[class="paginate-container d-none d-md-flex flex-md-justify-center"]
+		em.current:active,
+	.file-navigation.in-mid-page.mb-2.d-flex.flex-items-start
+		*
+		.btn.btn-sm.ml-2.btn-primary:active,
+	.d-flex.flex-justify-between.mb-3 a.btn.btn-primary:active,
+	.ajax-pagination-form button.ajax-pagination-btn:active,
+	.d-inline-flex .btn:active,
+	#user-projects-list .btn:active,
+	.btn-mktg:active,
+	.flash > .btn.btn-sm.btn-primary.flash-action:active,
+	.toolbar-item:active,
+	.TableObject .TableObject-item a.btn.btn-primary.ml-3:active,
+	.tabnav-tab:active,
+	.tabnav-tab.selected:active,
+	.UnderlineNav-item:active,
+	.UnderlineNav-item.selected:active,
+	.js-selected-navigation-item.selected:active,
+	.js-selected-navigation-item:active,
+	li a[href]:active:not(.notification-list-item-link),
+	a[class*="filter-item"][href*="/"]:active,
+	.filter-item.css-truncate:active,
+	details.get-repo-select-menu.js-get-repo-select-menu.position-relative.details-overlay.details-reset
+		summary.btn.btn-sm.btn-primary:active,
+	.btn.btn-sm.empty-icon.float-right.BtnGroup-item:active,
+	.btn.btn-sm.new-pull-request-btn:active,
+	.btn.btn-sm.btn-with-count.disabled.tooltipped.tooltipped-sw:active,
+	.js-repos-container .btn.btn-sm.btn-primary.text-white:active,
+	.State:active,
+	summary.btn.btn-sm.btn-primary:active,
+	div.d-flex a.text-center.btn.btn-primary.ml-3:active,
+	div[class="repository-content "]
+		div.subnav
+		a.btn.btn-primary.float-right:active,
+	a.btn.btn-primary.float-right:active,
+	a.btn.btn-primary.ml-1:active,
+	a.btn.btn-primary.btn-outline:active,
+	a.btn.btn-primary.mr-5:active,
+	a.btn.btn-primary.ml-3:active,
+	span.d-inline-block.px-2:active,
+	button.btn.btn-primary:active,
+	button.btn-link.tabnav-tab.write-tab.js-write-tab.selected:active,
+	a.header-search-scope:active,
+	a.btn.btn-sm.btn-primary:active,
+	a.btn.btn-sm.btn-primary.float-right:active,
+	a[class="filter-item "]:active,
+	.filter-item.selected:active,
+	.mt-2 a.btn:active,
+	.gh-header-show a.btn.btn-sm.btn-primary.float-right:active,
+	.btn:active,
+	.HeaderNavlink:active,
+	button:active {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none !important;
+		box-shadow: inset 0px 0px 4px 0px var(--Mygreen3) !important;
+		background-color: var(--Mygreen3) !important;
+		background-image:
+			radial-gradient(
+				ellipse farthest-corner at center bottom,
+				var(--Mygreen1) 0%,
+				transparent 99%
+			),
+			linear-gradient(
+				180deg,
+				rgba(168, 168, 168, 0.5) 48%,
+				hsla(0, 0%, 0%, 0.4) 49%,
+				rgba(0, 0, 0, 0.8) 100%,
+				rgba(168, 168, 168, 0.2)
+			) !important;
+		outline: none !important;
+		opacity: 1 !important;
+		color: var(--MyW) !important;
+		-moz-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		-webkit-transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition:
+			background 0.2s,
+			box-shadow 0.4s,
+			border-color 0.2s !important;
+		transition-timing-function: linear !important;
+		text-shadow:
+			1px 1px 1px var(--Mygreen3),
+			-1px -1px 1px var(--Myred2) !important;
+	}
+
+	a[class="u-photo d-block tooltipped tooltipped-s"] {
+		border: 2px solid var(--Myborder) !important;
+		border-radius: 5px !important;
+	}
+
+	.Counter {
+		background-color: var(--MyX1) !important;
+		border: 1px solid var(--MyW) !important;
+		font-weight: bold;
+		color: var(--MyW) !important;
+	}
+
+	modal-dialog {
+		border: 1px solid var(--MyW) !important;
+	}
+
+	li > .UnderlineNav-item {
+		--color-primer-border-active: var(--Mygreen1) !important;
+	}
+
+	.header-search {
+		background: transparent !important;
+	}
+
+	input,
+	input#your-repos-filter,
+	.js-user-status-container,
+	.form-control,
+	.js-site-search-form {
+		border-radius: 25px !important;
+		border: 1px solid var(--Myred1) !important;
+		background-color: var(--MyB) !important;
+		color: var(--MyW) !important;
+		text-align: center !important;
+	}
+
+	.sidebar {
+		background-image: none !important;
+		background-color: transparent !important;
+	}
+
+	div[class="blankslate "],
+	.sidebar,
+	details-menu {
+		background-color: var(--Mygray1) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(34, 33, 33, 0.8),
+			rgba(61, 61, 61, 0.9),
+			rgba(97, 97, 97, 0.9) 100%,
+			transparent
+		) !important;
+		color: var(--MyW) !important;
+	}
+
+	.turbo-progress-bar {
+		background-color: var(--Myred1) !important;
+		height: 5px !important;
+	}
+
+	#user-repositories-list {
+		border: 1px solid var(--MyB) !important;
+	}
+
+	li.col-12.d-flex.flex-justify-between.width-full.py-4.border-bottom {
+		background-color: var(--Mygray3) !important;
+	}
+
+	li.col-12.d-flex.flex-justify-between.width-full.py-4.border-bottom:hover,
+	.BorderGrid-row:hover,
+	.Box-header,
+	.pagehead,
+	.d-table.table-fixed.width-full.Box-row--drag-hide.position-relative:hover,
+	.flash,
+	.header-nav-current-user.css-truncate a[role="menuitem"] {
+		background-color: var(--Myred2) !important;
+		background-image: linear-gradient(
+			to top,
+			rgba(65, 21, 21, 0.8),
+			rgba(97, 22, 22, 0.8),
+			rgba(189, 38, 38, 0.8) 100%,
+			transparent
+		) !important;
+	}
+
+	.BorderGrid-row {
+		text-align: center !important;
+	}
+
+	div[class="position-relative d-md-flex flex-wrap flex-justify-between flex-items-center border-bottom color-border-secondary pb-3"],
+	div[class="col-12 d-block width-full py-4 border-bottom color-border-secondary"],
+	.border-bottom.color-border-secondary.py-3,
+	li[class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public fork"],
+	.public.source.border-bottom,
+	.border-bottom.border-gray-dark.py-3,
+	.d-flex,
+	.d-table,
+	.UnderlineNav,
+	.position-relative.d-md-flex.flex-wrap.flex-justify-between.flex-items-center.border-bottom.border-gray-dark.pb-3,
+	.d-block,
+	li[class*="col-12 d-flex width-full py-4 border-bottom public"],
+	div[class="d-table table-fixed col-12 width-full py-4 border-bottom border-gray-light"],
+	div[class="col-12 d-block width-full py-4 border-bottom"],
+	.Box.pinned-item-list-item {
+		border-color: var(--Myred1) !important;
+	}
+
+	div[class="mt-4 position-sticky top-0 d-none d-md-block bg-white width-full border-bottom color-border-secondary"],
+	div[class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light "] {
+		border-color: var(--Mygreen1) !important;
+	}
+
+	ul
+		li[class*="notifications-list-item p-0 pl-2 pb-2 pb-md-0 position-relative border-0 js-notifications-list-item js-navigation-item border-bottom border-gray-light"]:hover {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		background-color: var(--MyX1) !important;
+	}
+
+	.Box.pinned-item-list-item:hover,
+	clipboard-copy:hover,
+	.bg-gray.p-3.border-bottom,
+	.extended-markdown,
+	.product-callout,
+	.list-group-item:hover,
+	.timeline-comment-label {
+		background-color: var(--MyX1) !important;
+	}
+
+	a[class="u-photo d-block tooltipped tooltipped-s"],
+	img.avatar {
+		border-radius: 50% !important;
+	}
+
+	.Label {
+		background-color: var(--Mygreen1) !important;
+		color: var(--MyB) !important;
+	}
+
+	.Box,
+	.blankslate {
+		background-color: var(--MyB) !important;
+		border-radius: 15px !important;
+		border-color: var(--Myred1) !important;
+	}
+
+	.js-indicator-modifier.mail-status.unread {
+		height: 14px !important;
+		width: 14px !important;
+	}
+
+	.CodeMirror {
+		background: #460101 !important;
+		color: #ffffff !important;
+		line-height: 1.5em !important;
+		font-size: 16px !important;
+		height: 100%;
+		font-weight: bold !important;
+		outline: transparent !important;
+		border: 1px solid #ffffff !important;
+	}
+
+	.CodeMirror .CodeMirror-selected {
+		background: #a12525 !important;
+		color: #ffd900;
+	}
+
+	.CodeMirror .CodeMirror-line::selection,
+	.CodeMirror .CodeMirror-line > span::selection,
+	.CodeMirror .CodeMirror-line > span > span::selection {
+		background: #a12525 !important;
+	}
+
+	.CodeMirror .CodeMirror-line::-moz-selection,
+	.CodeMirror .CodeMirror-line > span::-moz-selection,
+	.CodeMirror .CodeMirror-line > span > span::-moz-selection {
+		background: #a12525;
+	}
+
+	.CodeMirror .CodeMirror-gutter .CodeMirror-lint-markers,
+	.CodeMirror-gutter .CodeMirror-lint-markers,
+	.CodeMirror .CodeMirror-gutter .CodeMirror-foldgutter,
+	.CodeMirror-gutter .CodeMirror-foldgutter,
+	.CodeMirror .CodeMirror-gutter .CodeMirror-bookmarks,
+	.CodeMirror-gutter .CodeMirror-bookmarks,
+	.CodeMirror .CodeMirror-gutter.CodeMirror-linenumbers,
+	.CodeMirror-gutter.CodeMirror-linenumbers,
+	.CodeMirror .CodeMirror-gutter.gutter,
+	.CodeMirror .CodeMirror-gutters {
+		background: #460101;
+		border-right: 2px solid #a12525;
+	}
+
+	.CodeMirror .CodeMirror-guttermarker {
+		color: #0f0;
+	}
+
+	.CodeMirror-guttermarker-subtle {
+		color: #ffe8e8;
+	}
+
+	.CodeMirror .CodeMirror-linenumber {
+		color: #ffffff;
+	}
+
+	.CodeMirror-cursor {
+		border-left: 1px solid #00ff00;
+	}
+
+	.CodeMirror span.cm-keyword {
+		color: #00ff00;
+		font-weight: bold;
+	}
+
+	.CodeMirror span.cm-atom {
+		color: #3ff;
+	}
+
+	.CodeMirror span.cm-number {
+		color: #fbff00;
+	}
+
+	.CodeMirror span.cm-def {
+		color: #91b4ff;
+	}
+
+	.CodeMirror span.cm-variable {
+		color: #f6c;
+	}
+
+	.CodeMirror span.cm-variable-2 {
+		color: #c44eff;
+	}
+
+	.CodeMirror span.cm-variable-3,
+	.CodeMirror span.cm-type {
+		color: #ad7cec;
+	}
+
+	.CodeMirror span.cm-property {
+		color: #62ffa0;
+	}
+
+	.CodeMirror span.cm-operator {
+		color: #ecffb9;
+	}
+
+	.CodeMirror span.cm-comment {
+		color: #00ff00;
+	}
+
+	.CodeMirror span.cm-string {
+		color: #39c;
+	}
+
+	.CodeMirror span.cm-meta {
+		color: #ffffff;
+	}
+
+	.CodeMirror span.cm-qualifier {
+		color: #fff700;
+	}
+
+	.CodeMirror span.cm-builtin {
+		color: #ffffff;
+	}
+
+	.CodeMirror span.cm-bracket {
+		color: #ffff00;
+	}
+
+	.CodeMirror span.cm-tag {
+		color: #ffbd40;
+	}
+
+	.CodeMirror .cm-overlay,
+	.CodeMirror span.cm-attribute {
+		color: #fff700;
+	}
+
+	.CodeMirror span.cm-error {
+		color: #ff0000;
+	}
+
+	.CodeMirror .CodeMirror-activeline-background {
+		background: #921111;
+	}
+
+	.Box-body {
+		background-color: var(--MyB) !important;
+	}
+
+	p,
+	article {
+		background-color: transparent !important;
+	}
+
+	.TableObject:hover,
+	div[role="grid"] div[role="row"].navigation-focus {
+		background-color: var(--MyX1) !important;
+	}
+
+	.menu-heading {
+		text-align: center !important;
+	}
+
+	[role="tooltip"],
+	[id*="tooltip"],
+	tool-tip,
+	.tooltip {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		background-color: var(--MyX1) !important;
+		--color-neutral-emphasis-plus: var(--MyX1) !important;
+		opacity: 0.4;
+		color: var(--MyW) !important;
+		padding: 8px;
+		border-radius: 2px;
+		border: 1px solid var(--MyW) !important;
+	}
 }
