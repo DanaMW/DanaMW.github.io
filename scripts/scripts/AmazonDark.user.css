@@ -2,7 +2,7 @@
 @name         Amazon Dark
 @namespace    https://danamw.github.io/scripts/scripts/AmazonDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/AmazonDark.user.css
-@version      0.0.64
+@version      0.0.65
 @description  Amazon Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
@@ -421,6 +421,7 @@
 		background-color: var(--Myred3) !important;
 	}
 
+	.a-link-normal,
 	div[class*="style__navArea"],
 	#nav-main,
 	#nav-belt,
@@ -759,6 +760,8 @@
 		filter: invert(1) !important;
 	}
 
+	.a-cardui,
+	#twister-plus-inline-twister-card,
 	#searchDropdownBox {
 		background-color: var(--Mygray2) !important;
 		color: var(--MyW) !important;

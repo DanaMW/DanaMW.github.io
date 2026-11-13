@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.1.11
+@version      0.1.12
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -16,6 +16,8 @@ domain("googleusercontent.com"),
 domain("myaccount.google.com"),
 url-prefix("https://ogs.google.com/"),
 domain("docs.google.com") {
+	.right-panel,
+	.left-panel,
 	gv-thread-details,
 	mat-card,
 	.mat-mdc-card,
@@ -135,6 +137,7 @@ domain("docs.google.com") {
 		color: var(--TwitterPink) !important;
 	}
 
+	mat-form-field,
 	[id*="mat-mdc-chip-"],
 	.dnd-status,
 	gmat-input-chip,
@@ -183,6 +186,7 @@ domain("docs.google.com") {
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	mat-form-field:hover,
 	[id*="mat-mdc-chip-"]:hover,
 	.dnd-status:hover,
 	gmat-input-chip:hover,
@@ -242,6 +246,7 @@ domain("docs.google.com") {
 			-1px -1px 1px var(--Myred2) !important;
 	}
 
+	mat-form-field:active,
 	[id*="mat-mdc-chip-"]:active,
 	.dnd-status:active,
 	gmat-input-chip:active,
@@ -474,6 +479,7 @@ domain("docs.google.com") {
 		background-color: var(--Mygray2) !important;
 	}
 
+	.block,
 	[class="LVal7b "],
 	div[aria-label="Google apps"],
 	[class="le-eb le-qj le-do"],
@@ -519,6 +525,10 @@ domain("docs.google.com") {
 		background-color: var(--Mygreen1) !important;
 	}
 
+	.no-threads,
+	.empty-card-filler,
+	gv-call-sidebar,
+	.messaging-view,
 	#contact-list,
 	.mat-form-field-wrapper,
 	.input-row,
@@ -650,7 +660,16 @@ domain("docs.google.com") {
 		border: 1px solid var(--MyW) !important;
 	}
 
+	.mdc-switch__track::before,
 	.mat-mdc-menu-content {
 		background-color: var(--Mygray3) !important;
+	}
+
+	#mat-select-0-panel {
+		background-color: var(--Mygray3) !important;
+	}
+
+	mat-option {
+		background-color: var(--Mygray1) !important;
 	}
 }
