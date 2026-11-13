@@ -2,7 +2,7 @@
 @name         Gmail Dark
 @namespace    https://danamw.github.io/scripts/scripts/GmailDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GmailDark.user.css
-@version      0.1.44
+@version      0.1.45
 @author       Dana L. Meli-Wischman
 @homepageURL  https://DanaMW.github.io
 @preprocessor default
@@ -1017,6 +1017,7 @@ url-prefix("https://chat.google.com/")
 		color: #0000ff;
 	}
 
+	li[role="menuitem"],
 	[class="YZrg6 HnRr5d iiFyne cd29Sd kWC5Rd"],
 	a.gb_tb.gb_Hb,
 	.azewN,
@@ -1114,6 +1115,8 @@ url-prefix("https://chat.google.com/")
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	li[role="menuitem"]:hover,
+	.dQsGZc,
 	/*added shit */
 	[class="YZrg6 HnRr5d iiFyne cd29Sd kWC5Rd"]:hover,
     a.gb_tb.gb_Hb:hover,
@@ -1284,6 +1287,7 @@ url-prefix("https://chat.google.com/")
 	}
 
 	/*added shit */
+	li[role="menuitem"]:active,
 	[class="YZrg6 HnRr5d iiFyne cd29Sd kWC5Rd"]:active,
     a.gb_tb.gb_Hb:active,
     .azewN:active,
@@ -1449,6 +1453,7 @@ url-prefix("https://chat.google.com/")
 		color: var(--Myred1) !important;
 	}
 
+	li[role="menuitem"] > span,
 	#\:gb,
 	#\:gc,
 	a.f0,
@@ -1820,6 +1825,7 @@ url-prefix("https://chat.google.com/")
 		color: var(--MyW) !important;
 	}
 
+	.zVSmpd.kMEVYd.eAxLvd,
 	.YEY9Zd,
 	.rhhJr,
 	.Kj-JD,
@@ -1968,6 +1974,7 @@ url-prefix("https://chat.google.com/")
 		color: var(--Myred1) !important;
 	}
 
+	/*
 	div[style="bottom:0;left:0;overflow:hidden;position:absolute;right:0;top:0"],
 	.la-i {
 		background: var(--MyB) !important;
@@ -1976,6 +1983,7 @@ url-prefix("https://chat.google.com/")
 	div[style="animation:1.7s cubic-bezier(.17,0,.1,.87)1.2s kf-s;background:#fafbfb;border-radius:330px;height:660px;left:50%;margin:-406px -330px;top:50%;transform:scale(0);width:660px"] {
 		background: var(--MyX1) !important;
 	}
+    */
 
 	.T-I.T-I-KE.L3::before,
 	.gb_vd.gb_qd.gb_sd,
@@ -2002,5 +2010,37 @@ url-prefix("https://chat.google.com/")
 
 	button.gb_cf.gb_df {
 		left: 0px !important;
+	}
+
+	.a2oM9e,
+	.DfF22b,
+	.fcn6qb {
+		background-color: var(--Mygray3) !important;
+		border: 1px var(--MyW) solid !important;
+		color: var(--MyW) !important;
+	}
+
+	.aHij0b-aLs.mhvkBc,
+	.t1IGPc.RuSUmb {
+		background-color: var(--Mygray3) !important;
+	}
+
+	input[aria-label="Ask Gmail"],
+	[aria-label="Ask Gemini"] {
+		background-color: var(--Mygray3) !important;
+		border-radius: 15px;
+		color: var(--MyW) !important;
+		text-align: center !important;
+	}
+
+	.TIYGAd {
+		--ae-richtextinput-placeholder-color: var(--Mytext) !important;
+		--ae-richtextinput-focus-placeholder-color: var(--Mygray2) !important;
+	}
+
+	.qC38hb > h2 {
+		width: 246px !important;
+		text-align: center !important;
+		text-shadow: 0 2 2 black !important;
 	}
 }
