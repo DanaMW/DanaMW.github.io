@@ -2,7 +2,7 @@
 @name         Twitter Dark
 @namespace    https://danamw.github.io/scripts/scripts/TwitterDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/TwitterDark.user.css
-@version      0.1.9
+@version      0.1.10
 @description  My Twitter Dark
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -297,6 +297,8 @@ domain("twimg.com") {
 		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	a[role="link"]:hover,
+	a[data-testid="settings"]:hover,
 	[role="tab"][aria-selected="true"],
 	[role="tab"][aria-selected="false"]:hover,
 	[class="absolute inset-0 w-full h-full select-none flex items-center justify-center cursor-pointer"]:hover,
@@ -524,7 +526,7 @@ domain("twimg.com") {
 		) !important;
 	}
 
-	div[class="css-175oi2r r-xoduu5 r-1kihuf0 r-sdzlij r-1p0dtai r-hdaws3 r-s8bhmr r-u8s1d r-13qz1uu"] {
+	div[class*="r-xoduu5 r-1kihuf0 r-sdzlij r-1p0dtai r-hdaws3 r-s8bhmr r-u8s1d r-13qz1uu"] {
 		background-color: var(--Mygreen1) !important;
 	}
 
@@ -812,6 +814,7 @@ domain("twimg.com") {
 		margin-right: -400px !important;
 	}
 
+	[role="menu"],
 	.css-175oi2r.r-nsbfu8,
 	.css-1dbjc4n.r-nsbfu8,
 	div[class="css-1dbjc4n r-t23y2h r-1wbh5a2 r-rsyp9y r-1pjcn9w r-htvplk r-1udh08x r-1potc6q"],
@@ -877,5 +880,17 @@ domain("twimg.com") {
 
 	[class*="css-g5y9jx r-kemksi"] {
 		border: none !important;
+	}
+
+	div[data-testid="HoverCard"] {
+		background-color: var(--Myred3) !important;
+		border: 1px solid var(--MyW) !important;
+		color: var(--MyW) !important;
+	}
+
+	[role="menu"] {
+		background-color: var(--Mygray3) !important;
+		border-radius: 25px !important;
+		border: 1px solid var(--MyW) !important;
 	}
 }
