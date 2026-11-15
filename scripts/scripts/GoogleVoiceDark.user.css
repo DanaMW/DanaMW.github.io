@@ -2,7 +2,7 @@
 @name         Google Voice Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleVoiceDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleVoiceDark.user.css
-@version      0.1.12
+@version      0.1.13
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -16,6 +16,7 @@ domain("googleusercontent.com"),
 domain("myaccount.google.com"),
 url-prefix("https://ogs.google.com/"),
 domain("docs.google.com") {
+	.message-entry-container,
 	.right-panel,
 	.left-panel,
 	gv-thread-details,
@@ -461,6 +462,7 @@ domain("docs.google.com") {
 		text-align: center !important;
 	}
 
+	.root,
 	[class="le-sn-pf-fe"],
 	[class="le-Rm-pf-Rm-hh"],
 	[role="option"] > [class="ge-Ym-jf-Ym-lh"],
