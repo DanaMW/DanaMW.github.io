@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.42
+@version      0.0.43
 @description  Github Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -22,7 +22,7 @@ url-prefix("wss://live.github.com")
 		text-decoration: none !important;
 	}
 
-	* {
+	*:not(td):not(.ContributionCalendar-day) {
 		text-decoration: none !important;
 		scrollbar-width: thin !important;
 		scrollbar-color: var(--Myred1) var(--Myred3) !important;
@@ -115,6 +115,11 @@ url-prefix("wss://live.github.com")
 
 	h3 a {
 		padding: 5px !important;
+	}
+
+	.js-highlight-blob {
+		z-index: 850000;
+		opacity: 1;
 	}
 
 	/* Finish here when you get a chance */
@@ -285,7 +290,9 @@ url-prefix("wss://live.github.com")
 	}
 
 	div[data-light-theme="light"][data-dark-theme="dark"],
-	div[class*="bar"],
+	div[class*="bar"]:not(.layout):not(.Layout-sidebar):not(.Layout-main):not(
+			[data-view-component="true"]
+		),
 	header,
 	a[class*="Button-module"]:hover,
 	.PRIVATE_TreeView-item-container:hover,
@@ -495,12 +502,6 @@ url-prefix("wss://live.github.com")
 		text-shadow:
 			1px 1px 1px var(--Mygreen3),
 			-1px -1px 1px var(--Myred2) !important;
-	}
-
-	div[data-light-theme="light"][data-dark-theme="dark"],
-	div[class*="bar"],
-	header {
-		background-color: var(--Myred1) !important;
 	}
 
 	a[class="u-photo d-block tooltipped tooltipped-s"] {
