@@ -2,7 +2,7 @@
 @name         NPR Dark
 @namespace    http://danamw.github.io/scripts/scripts/NPRDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/NPRDark.user.css
-@version      0.0.11
+@version      0.0.12
 @author       Dana L. Meli-Wischman
 @description  Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -14,6 +14,7 @@
 		background-color: var(--MyB) !important;
 	}
 
+	iframe[id*="offer"],
 	#onetrust-consent-sdk,
 	iframe[name*="__privateStripeMetricsController"],
 	section[class="callout callout--donation"],
@@ -270,6 +271,9 @@
 
 	.tp-modal {
 		z-index: 0 !important;
-		display:;
+	}
+
+	.audio-module {
+		background-color: var(--Myblue2) !important;
 	}
 }
