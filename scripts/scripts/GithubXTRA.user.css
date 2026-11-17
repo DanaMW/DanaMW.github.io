@@ -2,7 +2,7 @@
 @name         GithubXTRA
 @namespace    http://danamw.github.io/scripts/scripts/GithubXTRA.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GithubXTRA.user.css
-@version      0.0.41
+@version      0.0.42
 @description  Github Tweaks
 @author       Dana L. Meli-Wischman
 @homepageURL  https://danamw.github.io
@@ -88,14 +88,16 @@ url-prefix("wss://live.github.com")
 		color: var(--Myred1) !important;
 	}
 
-	[class*="bar"],
+	div[style*="position:relative"],
+	[class*="Primer_Brand__CTABanner-module__CTABanner-container"][class*="Primer_Brand__CTABanner-module__CTABanner-container--rounded"][class*="Primer_Brand__CTABanner-module__CTABanner-container--background"],
+	[class*="Primer_Brand__Hero-module__Hero-imageWrapper"][class*="heroImageWrapper"][class*="removeBorder"][class*="withDither"][class*="ditherHost"],
 	footer,
-	[class*="Primer_Brand"],
 	section,
-	header,
 	nav,
 	.gh-header-hide-if-sticky {
 		background-color: var(--Myback) !important;
+		--brand-CTABanner-background-color: var(--MyBack) !important;
+		--brand-color-canvas-subtle: var(--Myback) !important;
 	}
 
 	.UnderlineNav-item {
@@ -175,6 +177,8 @@ url-prefix("wss://live.github.com")
 		background-image: none !important;
 	}
 
+	[span],
+	[aria-label="Breadcrumbs"],
 	[class*="menuWrapper"],
 	.label,
 	.ajax-pagination-form button.ajax-pagination-btn {
@@ -278,9 +282,11 @@ url-prefix("wss://live.github.com")
 			border-color 0.3s ease,
 			box-shadow 0.7s ease !important;
 		transition-timing-function: linear !important;
-		box-shadow: 0 1px 4px 1px var(--MyB) !important;
 	}
 
+	div[data-light-theme="light"][data-dark-theme="dark"],
+	div[class*="bar"],
+	header,
 	a[class*="Button-module"]:hover,
 	.PRIVATE_TreeView-item-container:hover,
 	li > a.UnderlineNav-item.selected,
@@ -489,6 +495,12 @@ url-prefix("wss://live.github.com")
 		text-shadow:
 			1px 1px 1px var(--Mygreen3),
 			-1px -1px 1px var(--Myred2) !important;
+	}
+
+	div[data-light-theme="light"][data-dark-theme="dark"],
+	div[class*="bar"],
+	header {
+		background-color: var(--Myred1) !important;
 	}
 
 	a[class="u-photo d-block tooltipped tooltipped-s"] {
@@ -812,5 +824,14 @@ url-prefix("wss://live.github.com")
 		padding: 8px;
 		border-radius: 2px;
 		border: 1px solid var(--MyW) !important;
+	}
+
+	[class*="menu"] [class*="searchSlot"] {
+		background-color: transparent !important;
+	}
+
+	ul[id*="-menu"][aria-label="GitHub Desktop download options menu"],
+	[class*="Dropdown"] {
+		background-color: var(--Mygray2) !important;
 	}
 }
