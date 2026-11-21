@@ -2,7 +2,7 @@
 @name         Google Dark
 @namespace    https://danamw.github.io/scripts/scripts/GoogleDark.user.css
 @updateURL    https://raw.githubusercontent.com/danamw/danamw.github.io/master/scripts/scripts/GoogleDark.user.css
-@version      0.3.03
+@version      0.3.04
 @author       Dana L. Meli-Wischman
 @description  Google Dark Style.
 @homepageURL  https://DanaMW.github.io
@@ -33,6 +33,10 @@ url-prefix("https://www.googletagmanager.com/"),
 url-prefix("https://console.actions.google.com/"),
 url-prefix("https://bard.google.com/")
 {
+	.Lv2Cle,
+	.rIMkxf,
+	.oGdvd,
+	.ggMvvb,
 	[class="s6JM6d ufC5Cb ZPOWwb EYIWQc"],
 	.at5KUb.t4YKeb,
 	.rIMkxf.rwhS2,
@@ -137,6 +141,10 @@ url-prefix("https://bard.google.com/")
 		left: calc(1vw + var(--cmove) - 10vw) !important;
 	}
 
+	.Lv2Cle {
+		left: calc(1vw + var(--cmove) - 10vw) !important;
+	}
+
 	.C6AK7c,
 	.mXwfNd,
 	.R1QWuf {
@@ -183,6 +191,7 @@ url-prefix("https://bard.google.com/")
 		border: none !important;
 	}
 
+	.at5KUb > div,
 	.gb_Fd.gb_jb.gb_ud,
 	.m3xpad.vLnCgb,
 	.bqVbBf.jfFgAc.CqMNyc,
@@ -2600,6 +2609,10 @@ url-prefix("https://bard.google.com/")
 		display: none !important;
 	}
 	div[class=""] {
+		background-color: var(--MyB) !important;
+	}
+
+	.at5KUb > div {
 		background-color: var(--MyB) !important;
 	}
 }
